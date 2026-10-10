@@ -136,7 +136,7 @@ The height of the launch pad under the capsule, before and after the pass:
 | launch pad | 27 590.370, then 27 596.407 mm (6.037 mm) | 27 574.836, then 27 574.834 mm (0.002 mm) |
 
 Without this mod, the launch pad comes back 6 mm higher after the *Switch To*: the draw of every loading
-([Checking the culprit: loading the same save](../../checking-the-culprit-loading.md)). With it, it comes
+([Checking the statics: loading the same save](../../checking-the-culprit-loading/the-statics.md)). With it, it comes
 back where it was: had it been left behind during the pass, it would have come back by as much. Each log
 shows one error, `Material doesn't have a texture property '_MainTex'`, the first time Kerbal Konstructs
 shows the launch pad in the session: without this mod, as it was placed, in the same session; with it, as the

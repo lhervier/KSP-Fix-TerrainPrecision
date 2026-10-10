@@ -32,7 +32,7 @@ the last line of the one before; the bottom line of each is the reading in progr
 
 The first line of this first screenshot is not a round trip: it is the scene opening, the craft handed
 back by the save and coming to rest 513.774 mm higher than the save held it. That is what
-[Checking the culprit: loading the same save](checking-the-culprit-loading.md) is about, and it is left
+[Checking the ground: loading the same save](checking-the-culprit-loading/the-ground.md) is about, and it is left
 aside here. The five other screenshots are in
 [`imgs/checking-the-culprit-approach/landed-vessel`](../imgs/checking-the-culprit-approach/landed-vessel),
 `2-stock.png` to `6-stock.png`. *Moved* — how far the craft ends up from the height it was handed back

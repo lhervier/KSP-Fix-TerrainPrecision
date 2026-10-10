@@ -31,7 +31,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, both instrum
 times by its script, [`run-loading.py`](automation/run-loading.py). On Real Solar System, the same,
 plus Real Solar System 20.1.3.0 and what it requires (Kopernicus 248, Modular Flight Integrator,
 KSPTextureLoader, the RSS textures). Read in
-[Checking the culprit: loading the same save](../docs/checking-the-culprit-loading.md).
+[Checking the ground: loading the same save](../docs/checking-the-culprit-loading/the-ground.md).
 
 The saves, a capsule on a small flat fuel tank, made by
 [Making the save](../docs/checking-the-culprit-loading/making-the-save.md):
@@ -128,7 +128,7 @@ flat grass west of the KSC and a rover 26 m from it. Read in
 The install of [The loading protocol](#the-loading-protocol): the six loadings of
 [the runway protocol](../docs/checking-the-culprit-loading/the-runway-protocol.md), played by its script,
 [`run-runway.py`](automation/run-runway.py). Read in
-[Checking the culprit: loading the same save](../docs/checking-the-culprit-loading.md).
+[Checking the statics: loading the same save](../docs/checking-the-culprit-loading/the-statics.md).
 
 The saves:
 
@@ -164,7 +164,7 @@ KSP Diag - Terrain Height, KSP Diag - Floating Origin and KSP-MCPServer: one run
 [the driving protocol](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-driving.md),
 played by its script, `run-driving.py`; on Earth, Real Solar System 20.1.3.0 and what it requires as
 well. Each log holds one line per quad this mod placed, with how far it was moved. Read in
-[Driving on while the world moves](../docs/checking-the-culprit-driving.md).
+[Checking the ground: driving on while the world moves](../docs/checking-the-culprit-driving/the-ground.md).
 
 - [`driving-diag2-fix.log`](checking-the-culprit-driving/driving-diag2-fix.log) — on Kerbin, `driving-kerbin.sfs`; what the
   script printed in [`driving-diag2-fix-script.txt`](checking-the-culprit-driving/driving-diag2-fix-script.txt), and every
@@ -179,7 +179,7 @@ well. Each log holds one line per quad this mod placed, with how far it was move
 The install of [The driving protocol](#the-driving-protocol): three moves of the origin of
 [the protocol of the runway and the grass while the world moves](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-driving-runway.md),
 played by its script, `run-driving-runway.py`, from `driving-runway-kerbin.sfs`. Read in
-[Driving on while the world moves](../docs/checking-the-culprit-driving.md#on-kerbin). Earth is under
+[Checking the statics: driving on while the world moves](../docs/checking-the-culprit-driving/the-statics.md#by-the-runway-of-the-ksc). Earth is under
 [On Real Solar System](#on-real-solar-system).
 
 - [`driving-runway-diag2-fix.log`](checking-the-culprit-driving/driving-runway-diag2-fix.log) — this mod as it is
@@ -213,7 +213,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, this mod at 
 KSP Diag - Terrain Quads, KSP Diag - Floating Origin and KSP-MCPServer: on each body, one flight of
 [the protocol of the quads of the highest level, in flight](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-protocol-flight.md),
 `Quad-Rocket` launched from the launchpad, played by its script, `run-flight.py`, and read by its
-`analyse-flight.py`. Read in [In flight](../docs/checking-the-culprit-flight.md).
+`analyse-flight.py`. Read in [Checking the ground: in flight](../docs/checking-the-culprit-flight/the-ground.md).
 
 - [`flight-kerbin-fix.log`](checking-the-culprit-flight/flight-kerbin-fix.log) — on Kerbin, from the launchpad of the
   Space Center, 73 *Logs*; what the script printed in [`flight-kerbin-fix-script.txt`](checking-the-culprit-flight/flight-kerbin-fix-script.txt), what each *Log*
@@ -619,7 +619,7 @@ With this mod:
   [`driving-runway-earth-rss-diag2-fix-script.txt`](checking-the-culprit-driving/driving-runway-earth-rss-diag2-fix-script.txt),
   and every line it recorded in
   [`driving-runway-earth-rss-diag2-fix-lines.json`](checking-the-culprit-driving/driving-runway-earth-rss-diag2-fix-lines.json).
-  Read in [Driving on while the world moves](../docs/checking-the-culprit-driving.md#on-earth).
+  Read in [Checking the statics: driving on while the world moves](../docs/checking-the-culprit-driving/the-statics.md#by-the-runway-of-the-ksc-at-cape-canaveral).
 - [`station-kourou-rss-fix.log`](non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss-fix.log) —
   [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) added: one session, a rover driven by its `drive_to` tool
   in 500 m legs toward the CommNet ground station of Kourou, from 28.86 km to 27.30 km, then
@@ -631,8 +631,8 @@ With this mod:
 
 The readings of [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter) with
 [the scatter fix](../docs/the-fix-scatter.md)
-on, read in [Checking the culprit: loading the same save](../docs/checking-the-culprit-loading.md#the-scatter-over-twelve-loads),
-[Checking the culprit: in flight](../docs/checking-the-culprit-flight.md#the-rocks-along-a-flight),
+on, read in [Checking the scatter: loading the same save](../docs/checking-the-culprit-loading/the-scatter.md),
+[Checking the scatter: in flight](../docs/checking-the-culprit-flight/the-scatter.md),
 [The scatter holders](../docs/non-regression/stock/the-scatter-holders.md) and
 [Kopernicus: scatter with colliders](../docs/non-regression/kopernicus/scatter-with-colliders.md),
 kept as they were logged, copied out of `KSP.log`, in the folder of the page that reads them: for the

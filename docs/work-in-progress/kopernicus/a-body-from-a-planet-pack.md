@@ -11,7 +11,7 @@ safeguard leaves that terrain as stock builds it: no fix, silently, apart from o
 the log.
 
 *To test:* the campaign of
-[KSP Diag - Landed Vessel](../../checking-the-culprit-loading.md#the-craft-over-six-loads),
+[KSP Diag - Landed Vessel](../../checking-the-culprit-loading/the-ground.md#the-craft-over-six-loads),
 run on such a body. A
 single landing already answers half of it: with this mod installed, the log carries either
 `<body>: terrain placed in double precision` or the safeguard's warning.

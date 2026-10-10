@@ -55,9 +55,9 @@ the frame they were built in: two Harmony patches, off by default (`fixScatter =
 the other fixes of this mod in [The fix: the scatter](../../the-fix-scatter.md), along with why it is off
 and when to turn it on. With it, every holder is drawn exactly on its quad, and no vertex moves by more
 than 0.125 mm over the twelve loads
-([Checking the culprit: loading the same save](../../checking-the-culprit-loading.md#the-scatter-over-twelve-loads)),
+([Checking the scatter: loading the same save](../../checking-the-culprit-loading/the-scatter.md)),
 nor along a flight
-([Checking the culprit: in flight](../../checking-the-culprit-flight.md#the-rocks-along-a-flight)).
+([Checking the scatter: in flight](../../checking-the-culprit-flight/the-scatter.md)).
 
 Parallax's own scatter is not stock scatter, and is a point of Work in progress:
 [Parallax: its terrain and its scatter](../../work-in-progress/parallax/its-terrain-and-its-scatter.md).

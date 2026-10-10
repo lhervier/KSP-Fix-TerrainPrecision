@@ -52,7 +52,7 @@ Gilly, each loaded six times. Spread over the six loads:
 | Gilly | 0.280 mm | 0.055 mm | 0.264 mm | 0.005 mm |
 
 Without Principia, the same saves spread *Settled* over 43.7, 18.2, 7.3 and 2.3 mm on stock, and over
-0.010 to 0.060 mm with this mod ([Checking the culprit: loading the same save](../../checking-the-culprit-loading.md#the-craft-over-six-loads)).
+0.010 to 0.060 mm with this mod ([Checking the ground: loading the same save](../../checking-the-culprit-loading/the-ground.md#the-craft-over-six-loads)).
 On stock, the spread is a draw from load to load: on Gilly, where a float's step is 1.95 mm, the six
 loads of this series happened to fall within 0.28 mm.
 
@@ -75,7 +75,7 @@ For the quads of level 10, in millimetres, the median, the 90th percentile and t
 | **the step between cousins, one at least built during the flight** | **6.494 / 18.534 / 36.162** | **0.063 / 0.214 / 0.821** |
 
 Without Principia, the last line reads 4.520 / 16.930 / 22.454 on stock and 0.060 / 0.202 / 0.674 with
-this mod ([Checking the culprit: in flight](../../checking-the-culprit-flight.md#on-kerbin)): with this
+this mod ([Checking the ground: in flight](../../checking-the-culprit-flight/the-ground.md#on-kerbin)): with this
 mod, the same median and 90th percentile, and 0.15 mm more at the very largest. Under
 100 m/s, nothing moved either way. The log shows no warning and no error from this mod.
 

@@ -180,5 +180,5 @@ of the runway and the grass while the world moves of KSP Diag - Terrain Height. 
 deck moves by −231.84 and +33.84 mm, together with the grass: what the runway fix holds the origin
 against. With this mod, the deck moves by 0.034 mm at most, and the grass by 0.119 mm, within the spread
 of the lines taken at the same spot. The readings are in
-[Checking the culprit: driving on while the world moves](../../checking-the-culprit-driving.md#on-earth).
+[Checking the statics: driving on while the world moves](../../checking-the-culprit-driving/the-statics.md#by-the-runway-of-the-ksc-at-cape-canaveral).
 For this defect, the hold has nothing left to correct either.

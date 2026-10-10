@@ -28,7 +28,7 @@ as a 600 km float again.
 
 That a static comes back somewhere else at every load, and not together with the ground around it, is
 checked on the runway of the KSC in
-[Checking the culprit: loading the same save](checking-the-culprit-loading.md), and while a rover
-drives by it in [Checking the culprit: driving on while the world moves](checking-the-culprit-driving.md).
+[Checking the statics: loading the same save](checking-the-culprit-loading/the-statics.md), and while a rover
+drives by it in [Checking the statics: driving on while the world moves](checking-the-culprit-driving/the-statics.md).
 On a launch site of Making History, it is checked on the deck of the Desert Launch Site in
 [Checking the culprit: launching from a launch pad of Making History](checking-the-culprit-launch-pad.md).

@@ -111,7 +111,7 @@ all the way down, is still to fly.
 ## Kerbal Konstructs
 
 Its statics carry the same defect as the KSC's, and this mod corrects them: measured on a runway it
-placed on the Mun, in [Checking the culprit: loading the same save](checking-the-culprit-loading.md).
+placed on the Mun, in [Checking the statics: loading the same save](checking-the-culprit-loading/the-statics.md).
 Its group editor needs a patch of this mod: [Limits and solutions](limits-and-solutions.md#kerbal-konstructs).
 
 ### A section of the runway at the first loading

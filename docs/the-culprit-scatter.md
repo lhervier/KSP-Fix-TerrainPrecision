@@ -78,5 +78,5 @@ the holder from its quad, so that no transform in its chain holds one. How exact
 [The fix: the scatter](the-fix-scatter.md).
 
 That the scatter comes back somewhere else at every load, on stock and with the terrain fix alone, is
-checked in [Checking the culprit: loading the same save](checking-the-culprit-loading.md#the-scatter-over-twelve-loads),
-and along a flight in [Checking the culprit: in flight](checking-the-culprit-flight.md#the-rocks-along-a-flight).
+checked in [Checking the scatter: loading the same save](checking-the-culprit-loading/the-scatter.md),
+and along a flight in [Checking the scatter: in flight](checking-the-culprit-flight/the-scatter.md).

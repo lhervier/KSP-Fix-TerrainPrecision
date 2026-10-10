@@ -144,7 +144,7 @@ stand on are touched.
   [Real Solar System](https://github.com/KSP-RO/RealSolarSystem): the ground comes back over 43.6 mm on
   Kerbin and 292.3 mm on Earth, within 0.3 mm with this mod.
 
-  **→ Full chapter: [Checking the culprit: loading the same save](docs/checking-the-culprit-loading.md)**
+  **→ Full chapter: [Checking the ground: loading the same save](docs/checking-the-culprit-loading/the-ground.md)**
 
 - **Coming back to a craft left parked**, driving away until it unloads, then back, six times in one
   flight: its ground comes back over 49.3 mm, and over 0.010 mm with this mod.
@@ -159,13 +159,13 @@ stand on are touched.
 - **Driving on while the world moves**, every 500 m a rover drives: the ground under it jumps by about
   25 mm on Kerbin and up to 243 mm on Earth; with this mod, no jump is left.
 
-  **→ Full chapter: [Checking the culprit: driving on while the world moves](docs/checking-the-culprit-driving.md)**
+  **→ Full chapter: [Checking the ground: driving on while the world moves](docs/checking-the-culprit-driving/the-ground.md)**
 
 - **In flight**, a rocket from the launchpad to the sea, its quads written about once a second: two quads
   of the highest level built at different moments step by up to 22.5 mm where they meet on Kerbin and
   289 mm on Earth, and by 0.67 mm and 2.1 mm at most with this mod.
 
-  **→ Full chapter: [Checking the culprit: in flight](docs/checking-the-culprit-flight.md)**
+  **→ Full chapter: [Checking the ground: in flight](docs/checking-the-culprit-flight/the-ground.md)**
 
 **What it makes worse.** Where the quads this mod corrects meet coarser ones, stock already leaves a
 crack, and this mod widens it: the median of the largest gap of a load goes from 157 mm to 225 mm on
@@ -200,13 +200,13 @@ set itself on it.
   Kerbal Konstructs does the same, over 17.7 mm, and holds within 0.015 mm with this mod from the second
   loading on.
 
-  **→ Full chapter: [Checking the culprit: loading the same save, the deck of a runway](docs/checking-the-culprit-loading.md#the-deck-of-a-runway)**
+  **→ Full chapter: [Checking the statics: loading the same save, the deck of a runway](docs/checking-the-culprit-loading/the-statics.md#the-deck-of-a-runway)**
 
 - **Driving on while the world moves**, by the runway of the KSC: every 500 m, its deck moves with the
   grass, by up to 54.8 mm on Kerbin and 231.8 mm on Earth. With the terrain fix alone, the grass holds and
   the deck still moves, by up to 41.6 mm; with this mod as installed, neither does, within 0.07 mm.
 
-  **→ Full chapter: [Checking the culprit: driving on while the world moves, by the runway](docs/checking-the-culprit-driving.md#by-the-runway-of-the-ksc)**
+  **→ Full chapter: [Checking the statics: driving on while the world moves, by the runway](docs/checking-the-culprit-driving/the-statics.md#by-the-runway-of-the-ksc)**
 
 - **Launching from a launch pad of Making History**, the Desert Launch Site, in six sessions of the game:
   the deck the craft stands on spreads over 592.8 mm, and 0.001 mm with this mod; its feet stand on the
@@ -254,12 +254,12 @@ and turning it on is yours to weigh.
   back more than 94 mm apart against the ground, 130 mm with this mod as installed by default; with its
   scatter fix on, none more than 0.125 mm.
 
-  **→ Full chapter: [Checking the culprit: loading the same save, the scatter](docs/checking-the-culprit-loading.md#the-scatter-over-twelve-loads)**
+  **→ Full chapter: [Checking the scatter: loading the same save](docs/checking-the-culprit-loading/the-scatter.md)**
 
 - **In flight** over the Mun, the scatter is drawn up to 26.5 mm off its quads without the scatter fix,
   and exactly on them with it.
 
-  **→ Full chapter: [Checking the culprit: in flight, the rocks](docs/checking-the-culprit-flight.md#the-rocks-along-a-flight)**
+  **→ Full chapter: [Checking the scatter: in flight](docs/checking-the-culprit-flight/the-scatter.md)**
 
 ## The ground anchor
 

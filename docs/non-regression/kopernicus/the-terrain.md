@@ -33,7 +33,7 @@ on, which only [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-
 reads. That surface was read on Earth in [Real Solar System](../../non-regression.md#real-solar-system),
 a stock body rebuilt by Kopernicus: Real Solar System's Earth is Kerbin, reconfigured by Kopernicus 248
 to another radius and another terrain. The protocol is the one of
-[Checking the culprit: loading the same save](../../checking-the-culprit-loading.md#the-ground-over-six-loads):
+[Checking the ground: loading the same save](../../checking-the-culprit-loading/the-ground.md#the-ground-over-six-loads):
 one save, loaded six times, with and without this fix. Under the craft, the collision surface spreads
 over 292.3 mm without this mod and 0.283 mm with it, and the craft, loaded again and again with this
 mod, never moved.

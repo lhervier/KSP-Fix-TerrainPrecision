@@ -30,7 +30,7 @@ the player switches to a craft far away. It never runs while a craft is already 
 
 **It hides the symptom, not the defect.** It moves the craft, never the ground: with it on, as in
 every series of
-[Checking the culprit: loading the same save](../../checking-the-culprit-loading.md), the ground is still
+[Checking the ground: loading the same save](../../checking-the-culprit-loading/the-ground.md), the ground is still
 built somewhere else at each load, by 48.7 mm on the Moon and 292.3 mm on Earth, and the craft still
 comes to rest somewhere else, by 49.2 mm and 292.4 mm. All it can do is keep the craft from being
 thrown, and it does not always manage that.
@@ -40,7 +40,7 @@ thrown, and it does not always manage that.
 No instrument is needed for this one: the same saves, Real Solar
 System as released, reloaded from the pause menu again and again, watching whether the craft jumps or
 tips over; some series are the six loads of an instrument in
-[Checking the culprit: loading the same save](../../checking-the-culprit-loading.md). Real Solar System
+[Checking the ground: loading the same save](../../checking-the-culprit-loading/the-ground.md). Real Solar System
 leaves one line in `KSP.log` each time the craft goes off rails, which counts the loads:
 `[RSS-VGPE] CheckGroundCollision()` for a landed craft, where its workaround runs,
 `[RSS-VGPE] Vessel going off rails in PRELAUNCH` for a craft in *prelaunch*, where stock's pass runs
@@ -110,7 +110,7 @@ the very first load.
 KSP moves the floating origin back onto it, and stock places the ground under it again, somewhere else.
 On Earth, across such a move, the ground under a rover driving on the grass by the KSC moved by 159 to
 243 mm without this mod, and the rover was seen to jump; with this mod, a move changes nothing
-([Checking the culprit: driving on while the world moves](../../checking-the-culprit-driving.md#on-earth)).
+([Checking the ground: driving on while the world moves](../../checking-the-culprit-driving/the-ground.md#on-earth)).
 The craft does not go off rails there, so the workaround does not run.
 
 ## With this mod

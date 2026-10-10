@@ -21,7 +21,7 @@ vector any more.
   under the quad, with zero position, identity rotation and unit scale. From then on it follows the quad
   through everything stock does to it, floating origin shifts (`PQ.FastUpdateSubQuadsPosition`) and
   re-placements (`PQ.PreciseUpdateSubQuadsPosition`) included, with nothing more to do
-  ([measured along a flight](checking-the-culprit-flight.md#the-rocks-along-a-flight)).
+  ([measured along a flight](checking-the-culprit-flight/the-scatter.md)).
 - **Before `PQSLandControl.LandClassScatter.DestroyQuad`**, which returns a holder to its pool when its
   quad is destroyed: the holder goes back under the pool's container, where stock keeps its free holders,
   before the quad itself goes back to the PQS cache to be reused elsewhere. A prefix, because the stock
@@ -40,7 +40,7 @@ way looks closed. Three reasons, from the plainest to the heaviest:
   `localPosition` and `SetPositionAndRotation` all end in that same float. Under the sphere, that number is
   the 600 km vector, where a float changes in steps of 62.5 mm on Kerbin, while the offsets to be taken out
   are the ones measured in
-  [Checking the culprit: loading the same save](checking-the-culprit-loading.md#the-scatter-over-twelve-loads),
+  [Checking the scatter: loading the same save](checking-the-culprit-loading/the-scatter.md),
   up to 110 mm. No value that can be written puts the holder where it belongs.
 - **The frame it hangs in is single precision as well.** Even given a perfect local position, the holder is
   drawn through the sphere's matrix, over that same 600 km. That product is what rounds differently at

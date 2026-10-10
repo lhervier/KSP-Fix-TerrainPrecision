@@ -64,7 +64,7 @@ loads:
 | the ground under the craft on the runway | 0.268 mm | 0.171 mm |
 
 Hundredths to tenths of a millimetre either way, where stock spreads the same readings over 88 to 130 mm
-([Checking the culprit: loading the same save](../../checking-the-culprit-loading.md)). In both series, one
+([Checking the statics: loading the same save](../../checking-the-culprit-loading/the-statics.md)). In both series, one
 load out of six sets the craft on the grass down 0.23 mm higher than the five others, while the ground
 under it does not move: the craft's own settling, with or without Deferred.
 

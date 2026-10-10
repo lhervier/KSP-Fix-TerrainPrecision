@@ -10,7 +10,7 @@ the same way every time. What a player with a long-running save should expect:
   draw, and comes back on the corrected ground; once it has been loaded and saved again with the fix
   installed, both sides agree and the question never comes back;
 - **the corrected ground is among the stock draws, not a worse one** — the readings are in
-  [KSP Diag - Terrain Height, with this mod](../../checking-the-culprit-loading.md#the-ground-over-six-loads);
+  [KSP Diag - Terrain Height, with this mod](../../checking-the-culprit-loading/the-ground.md#the-ground-over-six-loads);
 - **the failure becomes repairable**: raising a craft by a few centimetres in the `.sfs` is a permanent
   repair once the ground is stable, where in stock the next loading draws the ground under it again.
 
@@ -21,6 +21,6 @@ more than 10 cm off, and logs `Moving Vessel` when it does
 ([Real Solar System: the ground workaround](../real-solar-system/the-ground-workaround.md)). Without this
 mod, on the save made without it, it had to move the craft at 6 loads out of 14. On the save made again with this
 mod, it ran at 36 of the 42 loads — 24 in a row, and the six of each instrument in
-[Checking the culprit: loading the same save](../../checking-the-culprit-loading.md) — and never once had
+[Checking the ground: loading the same save](../../checking-the-culprit-loading/the-ground.md) — and never once had
 to move the craft: no `Moving Vessel` line in `KSP.log`. At the six other loads, the workaround turned
 off, the craft came to rest within 0.364 mm.
