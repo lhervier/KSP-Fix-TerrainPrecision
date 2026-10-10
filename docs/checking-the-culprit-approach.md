@@ -66,23 +66,37 @@ Over the whole series, the craft comes to rest across a spread of 46.8 mm withou
 
 ## The ground, over six round trips
 
-**On stock**
-([the readings](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-measurements-approach.md)).
-The height KSP computes reads the same digits on every line of the six round trips. *Difference*,
-across each round trip:
+**On stock.** One screenshot per round trip, the table cleared between them, so that its first line is
+the last line of the one before; the bottom line of each is the reading in progress, not a record:
 
-| round trip | 1 | 2 | 3 | 4 | 5 | 6 |
-|---|---|---|---|---|---|---|
-| *Difference* moved by | −28.722 mm | +6.495 mm | −24.546 mm | +28.226 mm | +6.381 mm | −37.167 mm |
+![Without this mod, the first round trip, read by Diag TerrainHeight](../imgs/checking-the-culprit-approach/terrain-height/1-stock.png)
+
+The five others are in [`imgs/checking-the-culprit-approach/terrain-height`](../imgs/checking-the-culprit-approach/terrain-height),
+`2-stock.png` to `6-stock.png`. The height KSP computes reads 64,785.030 mm on every line of the six
+round trips, so every change below is a change of the ground under the craft. *Difference*:
+
+| round trip | line 2, before | line 4, back in range | line 5, settled | across the round trip |
+|---|---|---|---|---|
+| 1 | +99.198 mm | +70.476 mm | +70.476 mm | **−28.722 mm** |
+| 2 | +70.476 mm | +76.974 mm | +76.971 mm | **+6.495 mm** |
+| 3 | +76.971 mm | +52.432 mm | +52.425 mm | **−24.546 mm** |
+| 4 | +52.425 mm | +80.627 mm | +80.651 mm | **+28.226 mm** |
+| 5 | +80.651 mm | +87.034 mm | +87.032 mm | **+6.381 mm** |
+| 6 | +87.032 mm | +49.865 mm | +49.865 mm | **−37.167 mm** |
+
+Line 1 of every round trip carries the same numbers as line 2, to the micrometre — except at the
+opening of the scene, the first line of all, where the craft handed back by the save is still
+settling, three thousandths of a millimetre away.
 
 Over the whole series, *Difference* spreads over 49.3 mm. From the moment the craft is back in range,
 still packed, to the moment physics takes it over, it moves by 0.023 mm at most.
 
 **With this mod**, in that same install, the same session:
 
-![With this mod, the first round trip, read by Diag TerrainHeight](../imgs/checking-the-culprit-approach/terrain-height/1.png)
+![With this mod, the first round trip, read by Diag TerrainHeight](../imgs/checking-the-culprit-approach/terrain-height/1-fix.png)
 
-The five others are in [`imgs/checking-the-culprit-approach/terrain-height`](../imgs/checking-the-culprit-approach/terrain-height).
+The five others are in [`imgs/checking-the-culprit-approach/terrain-height`](../imgs/checking-the-culprit-approach/terrain-height),
+`2-fix.png` to `6-fix.png`.
 
 | round trip | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|

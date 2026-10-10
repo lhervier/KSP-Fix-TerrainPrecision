@@ -1,0 +1,7 @@
+23:15:54 launch 1: ground under craft 824329.019 mm, ground KSP computes 820000.000 mm
+23:17:16 launch 2: ground under craft 824329.019 mm, ground KSP computes 820000.000 mm
+23:18:35 launch 3: ground under craft 824260.216 mm, ground KSP computes 820000.000 mm
+23:20:00 launch 4: ground under craft 824329.019 mm, ground KSP computes 820000.000 mm
+23:21:18 launch 5: ground under craft 823736.212 mm, ground KSP computes 820000.000 mm
+23:22:36 launch 6: ground under craft 824329.019 mm, ground KSP computes 820000.000 mm
+23:22:43 done

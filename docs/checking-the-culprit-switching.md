@@ -48,8 +48,11 @@ The capsule comes to rest across a spread of 112.0 mm without this mod, and 0.02
 
 ## The ground, over six rounds
 
-**On stock**
-([the readings](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-measurements-switching.md)).
+**On stock.** The first line of each round is taken as the save opens, flying the rover, the second a
+few seconds after switching to the capsule; the bottom line is the reading in progress, not a record:
+
+![Without this mod, six rounds of loading the save and switching to the capsule, read by Diag TerrainHeight](../imgs/checking-the-culprit-switching/terrain-height/six-rounds-stock.png)
+
 The height KSP computes reads 64,784.828 mm on all twelve lines. *Difference*, as the save opens:
 
 | round | 1 | 2 | 3 | 4 | 5 | 6 |
@@ -62,7 +65,7 @@ thousandths of a millimetre.
 
 **With this mod**, in that same install, the same session:
 
-![With this mod, six rounds of loading the save and switching to the capsule, read by Diag TerrainHeight](../imgs/checking-the-culprit-switching/terrain-height/six-rounds.png)
+![With this mod, six rounds of loading the save and switching to the capsule, read by Diag TerrainHeight](../imgs/checking-the-culprit-switching/terrain-height/six-rounds-fix.png)
 
 All twelve lines, before and after the switch, read between −1.694 and −1.696 mm.
 

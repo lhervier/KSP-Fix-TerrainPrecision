@@ -35,6 +35,13 @@ built somewhere else at each load, by 48.7 mm on the Moon and 292.3 mm on Earth,
 comes to rest somewhere else, by 49.2 mm and 292.4 mm. All it can do is keep the craft from being
 thrown, and it does not always manage that.
 
+**It moves the craft, not the ground under it.** The pass moves the craft straight up or down, so the
+spot under it stays the same, and KSP Diag - Terrain Height reads the same ground there. On Earth,
+without this mod, at the three loads where stock's pass moved the craft (`Moving Vessel down` 0.165 and
+0.123 m, `Moving Vessel up` 0.128 m), the height KSP computes reads 73,707.984, 73,707.998 and
+73,707.961 mm, between the 73,707.949 and 73,708.009 mm of two loads it did not touch
+([Checking the ground: loading the same save](../../checking-the-culprit-loading/the-ground.md#the-ground-over-six-loads)).
+
 ## Reloading until something happens
 
 No instrument is needed for this one: the same saves, Real Solar
@@ -143,6 +150,4 @@ The workaround may well have other uses, outside the scope of this fix.
   the situation of the craft, from `PRELAUNCH` to `LANDED`, the situation in which the workaround runs.
 
 Copy a save into the folder of a sandbox game and load it from that game. The logs of every series of
-this page are listed in [`diag`](../../../diag/README.md#on-real-solar-system); the series of Diag
-TerrainHeight without this mod are in
-[its own `diag` folder](https://github.com/lhervier/KSP-Diag-TerrainHeight/tree/main/diag/runs).
+this page are listed in [`diag`](../../../diag/README.md#on-real-solar-system).

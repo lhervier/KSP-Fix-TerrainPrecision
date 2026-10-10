@@ -6,8 +6,7 @@ you switch to is read, without driving anywhere, by
 [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel). The columns it fills are
 in [its window](https://github.com/lhervier/KSP-Diag-LandedVessel/blob/main/docs/the-window.md).
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), installed alongside,
-records at the same moments; what it adds is in
-[its own page of the protocol](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-switching.md).
+records at the same moments: [The ground under the capsule](#the-ground-under-the-capsule).
 The protocol is the same without this mod and with it.
 
 Two craft are landed about two kilometres apart. You load the save while flying one of them, then
@@ -55,6 +54,13 @@ craft from what holds it in place, and the next line would be measuring that.
 and every round must start from that same height.
 
 One round says nothing on its own: it is the series that is worth reading, not a line.
+
+## The ground under the capsule
+
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) reads the ground under the capsule, at the same two moments.
+It reads under your target when you have set one on another craft, and under the craft you are
+flying otherwise: as the rover's target when the save opens, then as the craft you fly after the
+switch. A capsule that slides moves the spot its ray is fired at.
 
 ## Played by a script
 

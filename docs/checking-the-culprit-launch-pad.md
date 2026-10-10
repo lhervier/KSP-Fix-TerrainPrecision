@@ -4,7 +4,7 @@ Part of [Terrain Precision Fix](../README.md): the measurements that check [the 
 
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) takes the readings: it
 measures the ground under a craft, here the deck of the launch pad the craft stands on. It has its own
-page, with its method and its protocol.
+page, with its method.
 
 This fix is built on top of [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes),
 the base most players run, so the campaign on this page is run in an install that has it: KSP 1.12.5
@@ -17,10 +17,14 @@ sets it on the ground once in a session of the game, when a craft is first launc
 itself if one of its feet is under the ground, then stretches its legs down to the ground
 ([Measuring a launch pad against the ground](the-fix-statics.md#measuring-a-launch-pad-against-the-ground)).
 So a capsule is launched from it in six sessions, one launch each, and the deck under it is read each
-time. It is [the launch pad protocol](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-launch-pad.md)
-of the instrument, played by its script,
-[`run-launch-pad.py`](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-launch-pad.md#played-by-a-script),
-once without this mod and once with it. The sessions with this mod are logged in
+time. It is [the launch pad protocol](checking-the-culprit-launch-pad/the-protocol.md), played by its
+script, [`run-launch-pad.py`](../diag/automation/run-launch-pad.py), once without this mod and once with
+it. The sessions without this mod are logged in
+[`launch-pad-stock-1.log`](../diag/checking-the-culprit-launch-pad/launch-pad-stock-1.log) to
+[`launch-pad-stock-6.log`](../diag/checking-the-culprit-launch-pad/launch-pad-stock-6.log), with what the
+script printed in [`launch-pad-stock-script.txt`](../diag/checking-the-culprit-launch-pad/launch-pad-stock-script.txt)
+and every line it recorded in [`launch-pad-stock-lines.json`](../diag/checking-the-culprit-launch-pad/launch-pad-stock-lines.json).
+The sessions with this mod are logged in
 [`launch-pad-fix-1.log`](../diag/checking-the-culprit-launch-pad/launch-pad-fix-1.log) to
 [`launch-pad-fix-6.log`](../diag/checking-the-culprit-launch-pad/launch-pad-fix-6.log); what the script printed is in
 [`launch-pad-fix-script.txt`](../diag/checking-the-culprit-launch-pad/launch-pad-fix-script.txt), and every line it recorded in
@@ -28,8 +32,10 @@ once without this mod and once with it. The sessions with this mod are logged in
 
 ## The deck, over six launches
 
-**On stock**
-([the readings](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-measurements-launch-pad.md)).
+**On stock**, the first launch:
+
+![Without this mod, the capsule on the deck of the Desert Launch Site, read by Diag TerrainHeight](../imgs/checking-the-culprit-launch-pad/table-1-stock.png)
+
 The height KSP computes reads 820,000.000 mm at all twelve launches, the ground the game flattens around
 the launch site. *Difference*, the deck the capsule stands on above that ground:
 
@@ -39,28 +45,43 @@ the launch site. *Difference*, the deck the capsule stands on above that ground:
 | *Difference*, with this mod | +3,720.300 mm | +3,720.300 mm | +3,720.300 mm | +3,720.300 mm | +3,720.300 mm | +3,720.299 mm |
 
 Without this mod, `KSP.log` holds a line written by the launch pad in every session but the fifth, saying
-it moved itself up *so legs are above ground*. With this mod, it holds no such line in any session, and
+it moved itself up *so legs are above ground*: by 0.02490234 m in sessions 1, 2, 4 and 6, by
+0.002441406 m in session 3. With this mod, it holds no such line in any session, and
 one line of this mod in each: the launch pad taken out of its terrain sphere while its legs are measured.
 
 **With this mod**, in that same install, with this mod as the only difference, the first launch:
 
-![With this mod, the capsule on the deck of the Desert Launch Site, read by Diag TerrainHeight](../imgs/checking-the-culprit-launch-pad/table-1.png)
+![With this mod, the capsule on the deck of the Desert Launch Site, read by Diag TerrainHeight](../imgs/checking-the-culprit-launch-pad/table-1-fix.png)
 
 The deck spreads over 592.8 mm without this mod, and 0.001 mm with it.
 
 ## The feet, over six launches
 
-With this mod, the foot of the launch pad nearest the camera, from the south-west of the capsule, at
-each launch; the same view without this mod is in
-[the readings of the instrument](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-measurements-launch-pad.md):
+The foot of the launch pad nearest the camera, from the south-west of the capsule, at each launch.
+
+**On stock:**
 
 | | |
 |---|---|
-| ![Launch 1](../imgs/checking-the-culprit-launch-pad/foot-1.png) | ![Launch 2](../imgs/checking-the-culprit-launch-pad/foot-2.png) |
+| ![Launch 1](../imgs/checking-the-culprit-launch-pad/foot-1-stock.png) | ![Launch 2](../imgs/checking-the-culprit-launch-pad/foot-2-stock.png) |
 | launch 1 | launch 2 |
-| ![Launch 3](../imgs/checking-the-culprit-launch-pad/foot-3.png) | ![Launch 4](../imgs/checking-the-culprit-launch-pad/foot-4.png) |
+| ![Launch 3](../imgs/checking-the-culprit-launch-pad/foot-3-stock.png) | ![Launch 4](../imgs/checking-the-culprit-launch-pad/foot-4-stock.png) |
 | launch 3 | launch 4 |
-| ![Launch 5](../imgs/checking-the-culprit-launch-pad/foot-5.png) | ![Launch 6](../imgs/checking-the-culprit-launch-pad/foot-6.png) |
+| ![Launch 5](../imgs/checking-the-culprit-launch-pad/foot-5-stock.png) | ![Launch 6](../imgs/checking-the-culprit-launch-pad/foot-6-stock.png) |
+| launch 5 | launch 6 |
+
+On the screenshots, the frame stands above the sand in the five sessions where the launch pad lifted
+itself, on the sand in session 5.
+
+**With this mod:**
+
+| | |
+|---|---|
+| ![Launch 1](../imgs/checking-the-culprit-launch-pad/foot-1-fix.png) | ![Launch 2](../imgs/checking-the-culprit-launch-pad/foot-2-fix.png) |
+| launch 1 | launch 2 |
+| ![Launch 3](../imgs/checking-the-culprit-launch-pad/foot-3-fix.png) | ![Launch 4](../imgs/checking-the-culprit-launch-pad/foot-4-fix.png) |
+| launch 3 | launch 4 |
+| ![Launch 5](../imgs/checking-the-culprit-launch-pad/foot-5-fix.png) | ![Launch 6](../imgs/checking-the-culprit-launch-pad/foot-6-fix.png) |
 | launch 5 | launch 6 |
 
 ## What the measurements say

@@ -130,20 +130,39 @@ surface a ray pointed straight down hits, against the height KSP computes for th
 never moves; the first is what your landing legs touch. *Difference* is the first minus the second. How
 both are read is in [This mod's demonstration](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/this-mods-demonstration.md).
 
-**On stock.** Its campaigns, detailed in [The measurements: loading the same save](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-measurements-loading.md):
-the same sessions, read at the same moments under the capsule on its tank, following
-[its protocol](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-loading.md).
-The craft only marks the spot the ray is fired at.
-Over those six loads:
+**On stock.** The same sessions, read at the same moments under the capsule on its tank. The craft
+only marks the spot the ray is fired at. In each screenshot, the bottom line is the loading in
+progress, still live, and is not counted.
 
-| series | spread of *Difference* | spread of the height KSP computes |
-|---|---|---|
-| Kerbin | 43.6 mm | 0.000 mm |
-| Mun | 18.0 mm | 0.136 mm |
-| Minmus | 7.3 mm | 0.000 mm |
-| Gilly | 2.3 mm | 0.008 mm |
-| the Moon | 48.7 mm | 4.985 mm |
-| Earth | 292.3 mm | 0.697 mm |
+![Without this mod, the capsule on its tank, six loads of the same save, on Kerbin](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/00-kerbin-stock.png)
+
+![Without this mod, the capsule on its tank, six loads of the same save, on the Mun](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/10-mune-stock.png)
+
+![Without this mod, the capsule on its tank, six loads of the same save, on Minmus](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/20-minmus-stock.png)
+
+![Without this mod, the capsule on its tank, six loads of the same save, on Gilly](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/30-gilly-stock.png)
+
+![Without this mod, the capsule on its tank, six loads of the same save, on the Moon](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/40-moon-stock.png)
+
+![Without this mod, the capsule on its tank, six loads of the same save, on Earth](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/50-earth-stock.png)
+
+*Difference*, read off those screenshots, carries the whole of the movement of either column:
+
+| load | Kerbin | Mun | Minmus | Gilly | the Moon | Earth |
+|---|---|---|---|---|---|---|
+| 1 | +27.795 mm | −37.413 mm | −3.905 mm | +7.220 mm | −48.070 mm | +192.020 mm |
+| 2 | +58.264 mm | −33.981 mm | −4.448 mm | +6.919 mm | −56.829 mm | −43.698 mm *(moved down)* |
+| 3 | +14.647 mm | −43.858 mm | −7.966 mm | +7.240 mm | −96.777 mm | +66.833 mm |
+| 4 | +50.702 mm | −25.814 mm | −9.451 mm | +7.671 mm | −74.229 mm | −1.436 mm *(moved down)* |
+| 5 | +30.752 mm | −29.548 mm | −10.639 mm | +9.236 mm | −91.447 mm | +41.406 mm |
+| 6 | +25.109 mm | −42.072 mm | −11.222 mm | +7.277 mm | −53.370 mm | +248.589 mm *(moved up)* |
+| **lowest to highest** | **43.6 mm** | **18.0 mm** | **7.3 mm** | **2.3 mm** | **48.7 mm** | **292.3 mm** |
+| *the same, for the height KSP computes* | *0.000 mm* | *0.136 mm* | *0.000 mm* | *0.008 mm* | *4.985 mm* | *0.697 mm* |
+
+*(moved up)*, *(moved down)*: the loads where the craft was moved onto the ground before its physics
+started, as in the table of the craft. The pass moves the craft straight up or down, so the spot under
+it stays the same: at those three loads, the height KSP computes reads 73,707.984, 73,707.998 and
+73,707.961 mm, between the 73,707.949 and 73,708.009 mm of two loads it did not touch.
 
 On the Moon, the craft came back inside the ground at every load and was pushed out of it, coming to
 rest a little to one side each time; the height KSP computes follows the spot read, which accounts for
@@ -155,19 +174,19 @@ is the only difference.
 
 As before, the bottom line of each screenshot is the loading in progress, and is not counted.
 
-![With this mod, the capsule on its tank, six loads of the same save, on Kerbin](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/00-kerbin.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Kerbin](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/00-kerbin-fix.png)
 
-![With this mod, the capsule on its tank, six loads of the same save, on the Mun](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/10-mune.png)
+![With this mod, the capsule on its tank, six loads of the same save, on the Mun](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/10-mune-fix.png)
 
-![With this mod, the capsule on its tank, six loads of the same save, on Minmus](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/20-minmus.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Minmus](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/20-minmus-fix.png)
 
-![With this mod, the capsule on its tank, six loads of the same save, on Gilly](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/30-gilly.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Gilly](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/30-gilly-fix.png)
 
-![With this mod, the capsule on its tank, six loads of the same save, on the Moon](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/40-moon.png)
+![With this mod, the capsule on its tank, six loads of the same save, on the Moon](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/40-moon-fix.png)
 
 *Real Solar System's own workaround ran at every load and never had to move the craft: no `Moving Vessel` line — see [Real Solar System's own workaround](../non-regression/real-solar-system/the-ground-workaround.md).*
 
-![With this mod, the capsule on its tank, six loads of the same save, on Earth](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/50-earth.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Earth](../../imgs/checking-the-culprit-loading/the-ground/terrain-height/50-earth-fix.png)
 
 *The craft is in prelaunch, where stock runs the same pass at every load, and it never had to move the craft: no `Moving Vessel` line — see [Real Solar System's own workaround](../non-regression/real-solar-system/the-ground-workaround.md).*
 
@@ -195,10 +214,7 @@ within two: 0.4 to 1.9 steps, series after series.
 **It is the ground that moves, not only the craft.** The craft never moved and the spot never changed,
 yet the height KSP computes held still while the collision surface wandered: by more than four
 centimetres on Kerbin, nearly thirty on Earth in Real Solar System. The ground itself is not built in the same
-place twice. The full readings are in
-[The measurements: loading the same save](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-measurements-loading.md),
-and what else they show in
-[What the measurements show: loading the same save](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/what-the-measurements-show-loading.md).
+place twice.
 
 **With this mod, both stop moving.** On Kerbin, the craft's spread goes from several centimetres to a
 hundredth of a millimetre; on the other stock worlds too, what is left stays in the hundredths of a

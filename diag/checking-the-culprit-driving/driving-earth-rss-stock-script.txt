@@ -1,0 +1,13 @@
+10:46:23   move1-1   Difference    426.907 mm  Ground KSP computes    73692.704 mm  Origin distance  499.7 m  Shifts 2
+10:46:37   move1-2   Difference    267.768 mm  Ground KSP computes    73694.628 mm  Origin distance    0.5 m  Shifts 1
+10:47:12   move1-3   Difference    243.492 mm  Ground KSP computes    73717.427 mm  Origin distance    1.8 m  Shifts 0
+10:47:12 move 1: 0.73 m from 1 to 2, 1.33 m from 2 to 3
+10:48:30   move2-1   Difference    311.326 mm  Ground KSP computes    72807.880 mm  Origin distance  499.7 m  Shifts 0
+10:49:04   move2-2   Difference     68.345 mm  Ground KSP computes    72788.322 mm  Origin distance    0.6 m  Shifts 1
+10:49:38   move2-3   Difference    -12.779 mm  Ground KSP computes    72866.719 mm  Origin distance    2.0 m  Shifts 0
+10:49:38 move 2: 0.84 m from 1 to 2, 1.44 m from 2 to 3
+10:50:37   move3-1   Difference   -507.817 mm  Ground KSP computes    71611.003 mm  Origin distance  499.7 m  Shifts 0
+10:51:13   move3-2   Difference   -276.286 mm  Ground KSP computes    71610.879 mm  Origin distance    0.6 m  Shifts 1
+10:51:48   move3-3   Difference   -194.253 mm  Ground KSP computes    71525.237 mm  Origin distance    1.9 m  Shifts 0
+10:51:48 move 3: 0.79 m from 1 to 2, 1.39 m from 2 to 3
+10:51:50 done

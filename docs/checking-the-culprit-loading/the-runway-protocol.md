@@ -6,8 +6,7 @@ a runway is read, where [the loading protocol](the-protocol.md) tells you not to
 [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel). The columns it fills
 are in [its window](https://github.com/lhervier/KSP-Diag-LandedVessel/blob/main/docs/the-window.md).
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), installed alongside,
-records at the same moments; what it adds is in
-[its own page of the protocol](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-runway.md).
+records at the same moments: [The deck and the ground](#the-deck-and-the-ground).
 The protocol is the same without this mod and with it.
 
 A craft on the runway rests on the runway deck, a structure the game puts in place its own way, not on
@@ -91,6 +90,14 @@ On the Mun, do the same with `runway-mun-kk.sfs`, the craft on the ground taking
 on the grass. Kerbal Konstructs must be installed, and the two files of its runway copied into
 `GameData` ([The same on the Mun](#the-same-on-the-mun-with-a-runway-placed-by-a-mod)): the save alone
 does not hold the runway.
+
+## The deck and the ground
+
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) reads under both craft, at the same moments. Its ray is fired
+from above the craft and stops at the first surface it meets: under the craft on the runway, the deck,
+about four metres above the ground KSP computes underneath; under the other craft, the terrain. So it
+reads the deck itself at every loading, and the step between the deck and the ground beside it. It
+reads under the target when one is set, as Diag LandedVessel does: keep the save without one.
 
 ## Played by a script
 

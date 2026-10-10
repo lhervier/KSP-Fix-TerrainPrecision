@@ -7,8 +7,7 @@ craft loaded into a scene already running is read, step by step, by
 from the first line to the last, it is one single flight. The columns it fills are in
 [its window](https://github.com/lhervier/KSP-Diag-LandedVessel/blob/main/docs/the-window.md).
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), installed alongside,
-records at the same moments; what it adds is in
-[its own page of the protocol](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-approach.md).
+records at the same moments: [The ground under the parked craft](#the-ground-under-the-parked-craft).
 The protocol is the same without this mod and with it.
 
 A craft is parked on bare ground. A rover drives far enough for the game to unload it, then comes
@@ -98,6 +97,23 @@ into the save, and the next reading would be taken against that instead of the o
 
 **Then do it again.** One round trip says nothing: the size of the reading is not the same twice, and
 a round trip can come back within a millimetre. It is the series that is worth reading, not a line.
+
+## The ground under the parked craft
+
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) reads the ground under the parked craft at the same stops. For
+it, all five lines are readings: its ray reads the ground whatever the game is doing to the craft, so
+a packed craft reads as well as a loaded one.
+
+| line | what the line is worth, for Diag TerrainHeight |
+|---|---|
+| 1 | the ground as the round trip starts |
+| 2 | the same ground, read once the rover has driven off |
+| 3 | nothing to read, in its window as well |
+| 4 | the ground the craft comes back to, before physics takes it over |
+| 5 | the ground it settles on |
+
+Waiting before line 5 matters to it too: the craft settling moves the spot the ray is fired at, by a
+few hundredths of a millimetre.
 
 ## Played by a script
 

@@ -13,10 +13,11 @@ and a spot on the deck, P, two or three times each before a move of the origin a
 lines a move. A script drives the rover through
 [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) and parks it on the same spots to within a
 centimetre. It is the
-[protocol of the runway and the grass while the world moves](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-driving-runway.md)
-of KSP Diag - Terrain Height, on the saves it publishes, in the same install; on Earth, Real Solar System is built without its runway fix, which keeps the floating origin from
+[protocol of the runway and the grass while the world moves](the-runway-protocol.md), on its saves,
+in the same install, played by its script,
+[`run-driving-runway.py`](../../diag/automation/run-driving-runway.py); on Earth, Real Solar System is built without its runway fix, which keeps the floating origin from
 moving at 500 m once a craft has rolled onto the deck
-([`rss-20.1.3-without-its-runway-fix.diff`](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/diag/rss-20.1.3-without-its-runway-fix.diff);
+([`rss-20.1.3-without-its-runway-fix.diff`](../../diag/non-regression/real-solar-system/the-runway-fix/rss-20.1.3-without-its-runway-fix.diff);
 see [Real Solar System: the runway fix](../non-regression/real-solar-system/the-runway-fix.md)). This mod corrects
 the terrain and the statics separately, each with its own setting (`fixTerrain`, `fixStatics`), so on
 Kerbin the runway is read three ways: on stock, with the terrain fix alone, and with both. On Earth, on
@@ -36,9 +37,31 @@ Across each move, in millimetres:
 | with both fixes | 1 | +0.007 | −0.019 | −0.026 | 0.034 |
 | | 2 | −0.002 | −0.068 | −0.066 | 0.102 |
 
-**On stock**
-([the readings](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-measurements-driving-runway.md)),
-one run, a third move left out where the grass is no longer flat.
+**On stock**, one run, logged in [`driving-runway-stock.log`](../../diag/checking-the-culprit-driving/driving-runway-stock.log); what
+the script printed is in [`driving-runway-stock-script.txt`](../../diag/checking-the-culprit-driving/driving-runway-stock-script.txt),
+and every line it recorded in [`driving-runway-stock-lines.json`](../../diag/checking-the-culprit-driving/driving-runway-stock-lines.json).
+G stood 474 to 481 m from the origin of the world before each move, and the rover stopped 14 to 15 cm
+from each spot. **Ground KSP computes** reads the same digits at a spot on every line of a move, to
+within a thousandth of a millimetre. In *Difference*, in millimetres:
+
+| move | G before | G after | P before | P after |
+|---|---|---|---|---|
+| 1 | −16.774, −16.782, −16.782 | −71.576, −71.649 | +3539.496, +3539.502 | +3484.653, +3484.651 |
+| 2 | −55.219, −55.205, −55.208 | −1.364, −1.425 | +3025.245, +3025.253 | +3079.021, +3079.027 |
+
+The first move, Diag FloatingOrigin then Diag TerrainHeight:
+
+![Without this mod, the first move, read by Diag FloatingOrigin](../../imgs/checking-the-culprit-driving/the-statics/stock-move1-diag3.png)
+
+![Without this mod, the first move, read by Diag TerrainHeight](../../imgs/checking-the-culprit-driving/the-statics/stock-move1-diag2.png)
+
+The second move, in [`stock-move2-diag3.png`](../../imgs/checking-the-culprit-driving/the-statics/stock-move2-diag3.png)
+and [`stock-move2-diag2.png`](../../imgs/checking-the-culprit-driving/the-statics/stock-move2-diag2.png).
+A third move, about 1.5 km east of the save, is left out: there, *Difference* reads about 0.7 m below
+the computed height on the grass, the rover stopped 19 to 41 cm from the spots, and the lines taken at
+a spot spread over up to 26.7 mm, as much as a move does
+([`stock-move3-diag3.png`](../../imgs/checking-the-culprit-driving/the-statics/stock-move3-diag3.png),
+[`stock-move3-diag2.png`](../../imgs/checking-the-culprit-driving/the-statics/stock-move3-diag2.png)).
 
 **With the terrain fix alone**, an earlier run, played with an earlier version of the script, `fixStatics = false` in this mod's settings, the only line changed. The
 session is logged in
@@ -74,9 +97,23 @@ Across each move, in millimetres:
 | with this mod | 1 | +0.053 | +0.034 | −0.020 | 0.137 |
 | | 2 | +0.119 | −0.001 | −0.119 | 0.282 |
 
-**On stock**
-([the readings](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-measurements-driving-runway.md#on-earth)),
-one run, two moves.
+**On stock**, one run, two moves, logged in
+[`driving-runway-earth-rss-stock.log`](../../diag/checking-the-culprit-driving/driving-runway-earth-rss-stock.log); what the script
+printed is in [`driving-runway-earth-rss-stock-script.txt`](../../diag/checking-the-culprit-driving/driving-runway-earth-rss-stock-script.txt),
+and every line it recorded in [`driving-runway-earth-rss-stock-lines.json`](../../diag/checking-the-culprit-driving/driving-runway-earth-rss-stock-lines.json).
+G stood 475 to 477 m from the origin of the world before each move, and the rover stopped 13 to 16 cm
+from each spot. **Ground KSP computes** reads the same digits at a spot on every line of a move, to
+within two hundredths of a millimetre. In *Difference*, in millimetres:
+
+| move | G before | G after | P before | P after |
+|---|---|---|---|---|
+| 1 | +178.813, +178.829, +178.917 | −52.899, −53.122 | +4080.191, +4080.188 | +3848.372, +3848.336 |
+| 2 | −127.158, −127.109, −127.126 | −92.807, −93.080 | +3680.736, +3680.735 | +3714.574, +3714.573 |
+
+![On Earth, without this mod, the first move, read by Diag TerrainHeight](../../imgs/checking-the-culprit-driving/the-statics/earth-stock-move1-diag2.png)
+
+The other screenshots, read by both instruments, are `earth-stock-move*.png` in
+[`imgs/checking-the-culprit-driving/the-statics/`](../../imgs/checking-the-culprit-driving/the-statics).
 
 **With this mod**, on the same save. The session is logged in
 [`driving-runway-earth-rss-diag2-fix.log`](../../diag/checking-the-culprit-driving/driving-runway-earth-rss-diag2-fix.log),

@@ -48,15 +48,15 @@ In KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1 and
 248, Modular Flight Integrator, KSPTextureLoader, the RSS textures).
 [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) draws the
 colliders around the active craft where the physics places them, each in a colour of its own, and lists
-them by name. The craft is the rover of KSP Diag - Terrain Height,
-[`Diag2-Rover.craft`](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/craft/Diag2-Rover.craft),
+them by name. The craft is the rover of the driving protocol,
+[`Diag2-Rover.craft`](../../../diag/checking-the-culprit-driving/Diag2-Rover.craft),
 launched from the SPH onto the runway at Cape Canaveral.
 
 To see the runway without the runway fix, Real Solar System is built from the sources of its release
 20.1.3.0 with `RSSRunwayFix` kept from doing anything: it returns at the top of its `Start`, so it
 leaves the sections as stock does, never touches the floating origin, and never holds it. The version
 of the assembly is set to that of the release
-([`rss-20.1.3-without-its-runway-fix.diff`](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/diag/rss-20.1.3-without-its-runway-fix.diff)).
+([`rss-20.1.3-without-its-runway-fix.diff`](../../../diag/non-regression/real-solar-system/the-runway-fix/rss-20.1.3-without-its-runway-fix.diff)).
 In every session below, the colliders of the sections were on at every load.
 
 **Real Solar System as released, without this mod.** The rover, launched from the SPH, rests in the air

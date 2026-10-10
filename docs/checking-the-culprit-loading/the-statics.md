@@ -93,11 +93,22 @@ loading to the sixth, the first loading apart.
 
 ## The deck of a runway
 
-**On a runway, and on the ground beside it, on stock**
-([the readings](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-measurements-runway.md)).
+**On a runway, and on the ground beside it, on stock.** The same sessions as for the craft; the odd
+lines under the craft on the ground, the even lines under the craft on the runway.
+
+On Kerbin, on the runway of the KSC:
+
+![Six loadings on Kerbin without this mod, read by Diag TerrainHeight: the ground under the craft on the grass, then under the craft on the runway](../../imgs/checking-the-culprit-loading/the-statics/terrain-height/six-loads-stock.png)
+
+On the Mun, on a runway placed by Kerbal Konstructs:
+
+![Six loadings on the Mun without this mod, read by Diag TerrainHeight: the ground under the craft on the ground, then under the craft on the runway placed by Kerbal Konstructs](../../imgs/checking-the-culprit-loading/the-statics/terrain-height/six-loads-mun-kk-stock.png)
+
 The height KSP computes reads the same under each craft at every loading: 64,784.990 mm on the grass of
-Kerbin and 64,785.047 mm under its runway, within three hundredths of a millimetre on the Mun. On a
-runway, the ray meets the deck, above that height. *Ground under craft*:
+Kerbin and 64,785.047 mm under its runway; on the Mun, 4,123,942.923 to 4,123,942.950 mm under the
+ground and 4,121,155.656 or .657 mm under the runway. On a runway, the ray meets the deck, above that
+height: on the Mun, where the ground slopes, the deck stands 1.6 m above the terrain KSP computes under
+it, and the ground the ray meets beside it 0.4 m below. *Ground under craft*:
 
 | loading | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -115,11 +126,11 @@ the same digits as on stock.
 
 On Kerbin, on the runway of the KSC:
 
-![Six loadings on Kerbin with this mod, read by Diag TerrainHeight: the ground under the craft on the grass, then under the craft on the runway](../../imgs/checking-the-culprit-loading/the-statics/terrain-height/six-loads.png)
+![Six loadings on Kerbin with this mod, read by Diag TerrainHeight: the ground under the craft on the grass, then under the craft on the runway](../../imgs/checking-the-culprit-loading/the-statics/terrain-height/six-loads-fix.png)
 
 On the Mun, on a runway placed by Kerbal Konstructs:
 
-![Six loadings on the Mun with this mod, read by Diag TerrainHeight: the ground under the craft on the ground, then under the craft on the runway placed by Kerbal Konstructs](../../imgs/checking-the-culprit-loading/the-statics/terrain-height/six-loads-mun-kk.png)
+![Six loadings on the Mun with this mod, read by Diag TerrainHeight: the ground under the craft on the ground, then under the craft on the runway placed by Kerbal Konstructs](../../imgs/checking-the-culprit-loading/the-statics/terrain-height/six-loads-mun-kk-fix.png)
 
 On Kerbin, the grass spreads over 89.5 mm without this mod, and 0.013 mm with it; the deck of the runway,
 over 116.5 mm without it, and 0.177 mm with it; the step between the two, over 38.3 mm without it, and

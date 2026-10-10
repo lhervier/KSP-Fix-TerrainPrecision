@@ -19,10 +19,6 @@ screenshots in [`imgs/non-regression/stock/an-anchor-on-a-static/`](../imgs/non-
 A file that several pages use is in the folder of the page that measures with it. The scripts that play
 the protocols are in [`automation/`](automation).
 
-The logs of the sessions without this mod read by
-[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) alone, and the saves of
-the protocols only it plays, are in [its own `diag` folder](https://github.com/lhervier/KSP-Diag-TerrainHeight/tree/main/diag).
-
 ## The loading protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, both instruments and
@@ -159,29 +155,56 @@ The logs, without this mod (`-stock`) and with it (`-fix`):
 
 ## The driving protocol
 
-KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, this mod at `logLevel = Debug`,
-KSP Diag - Terrain Height, KSP Diag - Floating Origin and KSP-MCPServer: one run of three shifts of
-[the driving protocol](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-driving.md),
-played by its script, `run-driving.py`; on Earth, Real Solar System 20.1.3.0 and what it requires as
-well. Each log holds one line per quad this mod placed, with how far it was moved. Read in
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Height, KSP Diag
+- Floating Origin and KSP-MCPServer, without this mod and with it, at `logLevel = Debug`: one run of
+three shifts of [the driving protocol](../docs/checking-the-culprit-driving/the-protocol.md), played by
+its script, [`run-driving.py`](automation/run-driving.py); on Earth, Real Solar System 20.1.3.0 and what
+it requires as well. Each log with this mod holds one line per quad it placed, with how far it was
+moved. Read in
 [Checking the ground: driving on while the world moves](../docs/checking-the-culprit-driving/the-ground.md).
 
-- [`driving-diag2-fix.log`](checking-the-culprit-driving/driving-diag2-fix.log) — on Kerbin, `driving-kerbin.sfs`; what the
-  script printed in [`driving-diag2-fix-script.txt`](checking-the-culprit-driving/driving-diag2-fix-script.txt), and every
-  line it recorded in [`driving-diag2-fix-lines.json`](checking-the-culprit-driving/driving-diag2-fix-lines.json).
-- [`driving-earth-rss-diag2-fix.log`](checking-the-culprit-driving/driving-earth-rss-diag2-fix.log) — on Earth,
-  `driving-earth-rss.sfs`; what the script printed in
-  [`driving-earth-rss-diag2-fix-script.txt`](checking-the-culprit-driving/driving-earth-rss-diag2-fix-script.txt), and
-  every line it recorded in [`driving-earth-rss-diag2-fix-lines.json`](checking-the-culprit-driving/driving-earth-rss-diag2-fix-lines.json).
+The saves, [`Diag2-Rover`](checking-the-culprit-driving/Diag2-Rover.craft) alone on the grass south of
+the runway of the KSC, facing due south:
+
+- [`driving-kerbin.sfs`](checking-the-culprit-driving/driving-kerbin.sfs) — on Kerbin;
+- [`driving-earth-rss.sfs`](checking-the-culprit-driving/driving-earth-rss.sfs) — on Earth, by the KSC
+  at Cape Canaveral; it loads only on Real Solar System.
+
+The logs:
+
+- [`driving-stock.log`](checking-the-culprit-driving/driving-stock.log) and
+  [`driving-diag2-fix.log`](checking-the-culprit-driving/driving-diag2-fix.log) — on Kerbin, without this
+  mod and with it; what the script printed in
+  [`driving-stock-script.txt`](checking-the-culprit-driving/driving-stock-script.txt) and
+  [`driving-diag2-fix-script.txt`](checking-the-culprit-driving/driving-diag2-fix-script.txt), and every
+  line it recorded in [`driving-stock-lines.json`](checking-the-culprit-driving/driving-stock-lines.json)
+  and [`driving-diag2-fix-lines.json`](checking-the-culprit-driving/driving-diag2-fix-lines.json).
+- [`driving-earth-rss-stock.log`](checking-the-culprit-driving/driving-earth-rss-stock.log) and
+  [`driving-earth-rss-diag2-fix.log`](checking-the-culprit-driving/driving-earth-rss-diag2-fix.log) — on
+  Earth, the same; what the script printed in
+  [`driving-earth-rss-stock-script.txt`](checking-the-culprit-driving/driving-earth-rss-stock-script.txt)
+  and [`driving-earth-rss-diag2-fix-script.txt`](checking-the-culprit-driving/driving-earth-rss-diag2-fix-script.txt),
+  and every line it recorded in
+  [`driving-earth-rss-stock-lines.json`](checking-the-culprit-driving/driving-earth-rss-stock-lines.json)
+  and [`driving-earth-rss-diag2-fix-lines.json`](checking-the-culprit-driving/driving-earth-rss-diag2-fix-lines.json).
+- [`driving-earth-rss-stock-1.log`](checking-the-culprit-driving/driving-earth-rss-stock-1.log) and
+  [`driving-earth-rss-stock-2.log`](checking-the-culprit-driving/driving-earth-rss-stock-2.log) — two
+  earlier runs on Earth without this mod, played by hand and watched, where the rover was seen to jump.
 
 ## The protocol of the runway and the grass while the world moves
 
-The install of [The driving protocol](#the-driving-protocol): three moves of the origin of
-[the protocol of the runway and the grass while the world moves](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-driving-runway.md),
-played by its script, `run-driving-runway.py`, from `driving-runway-kerbin.sfs`. Read in
+The install of [The driving protocol](#the-driving-protocol): the moves of the origin of
+[the protocol of the runway and the grass while the world moves](../docs/checking-the-culprit-driving/the-runway-protocol.md),
+played by its script, [`run-driving-runway.py`](automation/run-driving-runway.py), from
+[`driving-runway-kerbin.sfs`](checking-the-culprit-driving/driving-runway-kerbin.sfs), `Diag2-Rover`
+alone on the grass by the north edge of the runway of the KSC. Read in
 [Checking the statics: driving on while the world moves](../docs/checking-the-culprit-driving/the-statics.md#by-the-runway-of-the-ksc). Earth is under
 [On Real Solar System](#on-real-solar-system).
 
+- [`driving-runway-stock.log`](checking-the-culprit-driving/driving-runway-stock.log) — without this mod,
+  three moves; what the script printed in
+  [`driving-runway-stock-script.txt`](checking-the-culprit-driving/driving-runway-stock-script.txt), and
+  every line it recorded in [`driving-runway-stock-lines.json`](checking-the-culprit-driving/driving-runway-stock-lines.json).
 - [`driving-runway-diag2-fix.log`](checking-the-culprit-driving/driving-runway-diag2-fix.log) — this mod as it is
   installed; what the script printed in
   [`driving-runway-diag2-fix-script.txt`](checking-the-culprit-driving/driving-runway-diag2-fix-script.txt), and every
@@ -195,15 +218,21 @@ played by its script, `run-driving-runway.py`, from `driving-runway-kerbin.sfs`.
 
 ## The launch pad protocol
 
-KSP 1.12.5 with the Making History expansion, Harmony, ModuleManager, KSP Community Fixes 1.41.1, this
-mod, [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) and KSP-MCPServer:
-six launches of `Capsule.craft` from the Desert Launch Site, one session of the game each, by the script
-of [the launch pad protocol](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-launch-pad.md),
-`run-launch-pad.py`. Read in
+KSP 1.12.5 with the Making History expansion, Harmony, ModuleManager, KSP Community Fixes 1.41.1,
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) and KSP-MCPServer,
+without this mod and with it: six launches of
+[`Capsule.craft`](checking-the-culprit-launch-pad/Capsule.craft), a Mk1 command pod on an FL-T100 tank,
+from the Desert Launch Site, one session of the game each, by the script of
+[the launch pad protocol](../docs/checking-the-culprit-launch-pad/the-protocol.md),
+[`run-launch-pad.py`](automation/run-launch-pad.py). Read in
 [Launching from a launch pad of Making History](../docs/checking-the-culprit-launch-pad.md).
 
-- [`launch-pad-fix-1.log`](checking-the-culprit-launch-pad/launch-pad-fix-1.log), [`launch-pad-fix-2.log`](checking-the-culprit-launch-pad/launch-pad-fix-2.log), [`launch-pad-fix-3.log`](checking-the-culprit-launch-pad/launch-pad-fix-3.log), [`launch-pad-fix-4.log`](checking-the-culprit-launch-pad/launch-pad-fix-4.log), [`launch-pad-fix-5.log`](checking-the-culprit-launch-pad/launch-pad-fix-5.log) and [`launch-pad-fix-6.log`](checking-the-culprit-launch-pad/launch-pad-fix-6.log) — the `KSP.log`
-  of each session; what the
+- [`launch-pad-stock-1.log`](checking-the-culprit-launch-pad/launch-pad-stock-1.log), [`launch-pad-stock-2.log`](checking-the-culprit-launch-pad/launch-pad-stock-2.log), [`launch-pad-stock-3.log`](checking-the-culprit-launch-pad/launch-pad-stock-3.log), [`launch-pad-stock-4.log`](checking-the-culprit-launch-pad/launch-pad-stock-4.log), [`launch-pad-stock-5.log`](checking-the-culprit-launch-pad/launch-pad-stock-5.log) and [`launch-pad-stock-6.log`](checking-the-culprit-launch-pad/launch-pad-stock-6.log) — the `KSP.log`
+  of each session without this mod; what the script printed in
+  [`launch-pad-stock-script.txt`](checking-the-culprit-launch-pad/launch-pad-stock-script.txt), and every
+  line it recorded in [`launch-pad-stock-lines.json`](checking-the-culprit-launch-pad/launch-pad-stock-lines.json).
+- [`launch-pad-fix-1.log`](checking-the-culprit-launch-pad/launch-pad-fix-1.log), [`launch-pad-fix-2.log`](checking-the-culprit-launch-pad/launch-pad-fix-2.log), [`launch-pad-fix-3.log`](checking-the-culprit-launch-pad/launch-pad-fix-3.log), [`launch-pad-fix-4.log`](checking-the-culprit-launch-pad/launch-pad-fix-4.log), [`launch-pad-fix-5.log`](checking-the-culprit-launch-pad/launch-pad-fix-5.log) and [`launch-pad-fix-6.log`](checking-the-culprit-launch-pad/launch-pad-fix-6.log) — the same
+  with this mod; what the
   script printed in [`launch-pad-fix-script.txt`](checking-the-culprit-launch-pad/launch-pad-fix-script.txt), and every line
   it recorded in [`launch-pad-fix-lines.json`](checking-the-culprit-launch-pad/launch-pad-fix-lines.json).
 
@@ -557,6 +586,9 @@ otherwise:
   Diag TerrainHeight: the first load of `reload-moon-rss-resave.sfs`, where the craft tipped over.
 - [`reload-earth-rss-stock.log`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-stock.log) —
   Diag LandedVessel alone: six loads of `reload-earth-rss-resave.sfs`.
+- [`reload-moon-rss-resave-stock-diag2.log`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-resave-stock-diag2.log) —
+  Diag TerrainHeight: six loads of `reload-moon-rss-resave.sfs`, where the craft jumped once and tipped
+  over once.
 
 With this mod:
 
@@ -603,15 +635,25 @@ With this mod:
   without this mod,
   [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) added, and
   Real Solar System built from the sources of its release 20.1.3.0 with the change
-  [`rss-20.1.3-without-its-runway-fix.diff`](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/diag/rss-20.1.3-without-its-runway-fix.diff),
-  which keeps its runway fix from doing anything: one session, the rover of KSP Diag - Terrain Height
+  [`rss-20.1.3-without-its-runway-fix.diff`](non-regression/real-solar-system/the-runway-fix/rss-20.1.3-without-its-runway-fix.diff),
+  which keeps its runway fix from doing anything: one session, the rover of the driving protocol
   launched from the SPH onto the runway at Cape Canaveral several times, and reloaded many times
   between, 23 entries in flight. Read in
   [Seeing it](../docs/non-regression/real-solar-system/the-runway-fix.md#seeing-it).
 - [`runway-earth-rss-without-runway-fix-fix.log`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-without-runway-fix-fix.log) —
   the same install, with this mod: one session, the protocol of
   [Seeing it](../docs/non-regression/real-solar-system/the-runway-fix.md#seeing-it), 37 entries in flight.
-- [`driving-runway-earth-rss-diag2-fix.log`](checking-the-culprit-driving/driving-runway-earth-rss-diag2-fix.log) —
+- [`driving-runway-earth-rss-stock.log`](checking-the-culprit-driving/driving-runway-earth-rss-stock.log) — without
+  this mod,
+  [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), Diag FloatingOrigin and
+  KSP-MCPServer added, Real Solar System built without its runway fix as above: the protocol of the
+  runway and the grass while the world moves, from `driving-runway-earth-rss.sfs`, two moves of the
+  origin; what the script printed in
+  [`driving-runway-earth-rss-stock-script.txt`](checking-the-culprit-driving/driving-runway-earth-rss-stock-script.txt),
+  and every line it recorded in
+  [`driving-runway-earth-rss-stock-lines.json`](checking-the-culprit-driving/driving-runway-earth-rss-stock-lines.json).
+  Read in [Checking the statics: driving on while the world moves](../docs/checking-the-culprit-driving/the-statics.md#by-the-runway-of-the-ksc-at-cape-canaveral).
+- [`driving-runway-earth-rss-diag2-fix.log`](checking-the-culprit-driving/driving-runway-earth-rss-diag2-fix.log) — the same with this mod,
   [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), Diag FloatingOrigin and
   [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) added, Real Solar System built without its
   runway fix as above: the protocol of the runway and the grass while the world moves, played by its

@@ -6,8 +6,7 @@ comes back with a save is read, step by step, by
 [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel). The columns it fills are
 in [its window](https://github.com/lhervier/KSP-Diag-LandedVessel/blob/main/docs/the-window.md).
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), installed alongside,
-records at the same moments; what it adds is in
-[its own page of the protocol](https://github.com/lhervier/KSP-Diag-TerrainHeight/blob/main/docs/the-protocol-loading.md).
+records at the same moments: [The ground under the craft](#the-ground-under-the-craft).
 The protocol is the same without this mod and with it.
 
 ## The save
@@ -56,6 +55,18 @@ closes it again.
 If nothing were wrong, the table would read **On rails** the same value on every line — KSP handing
 the craft back exactly where it left it, loading after loading — and **Moved** the same value on every
 line too.
+
+## The ground under the craft
+
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) reads the ground under the same craft, at the same moments:
+press *Record* in its window too, at each loading. The craft only marks the spot its ray is fired at,
+and what it is made of does not change the reading. The same rules hold, for a reason of their own: a
+craft that slides, or whose throttle is open, moves that spot, and the readings creep with it.
+
+![Six loadings recorded in the window of Diag TerrainHeight](../../imgs/checking-the-culprit-loading/the-protocol/80-terrain-height.png)
+
+Its **Ground KSP computes** column says that the same spot was read every time. A line where it reads
+otherwise was taken somewhere else: a craft that jumped or tipped over came to rest on another spot.
 
 ## Played by a script
 
