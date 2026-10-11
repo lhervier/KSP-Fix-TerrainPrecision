@@ -57,6 +57,21 @@ Les tests encore ouverts de [Real Solar System](docs/work-in-progress.md#real-so
   dans le mécanisme de réglages de KSPCF qu'un patch se désactive, avant d'écrire qu'un joueur peut le
   couper, charger, relever un vaisseau et le remettre ; un outil de migration du `.sfs` seulement si un
   coût réel apparaît.
+- **Spécialiser les README des Diags migrés : plus aucun renvoi au correctif** (Lionel, 2026-10-11).
+  Diag LandedVessel, Diag TerrainHeight et Diag TerrainQuads, dont les campagnes viennent de passer
+  ici, ne doivent plus parler que de leur instrument, sans faire référence à ce mod. La thèse
+  d'ouverture et le chapitre *Why it matters* disparaissent : déjà sortis des README de LandedVessel et
+  TerrainHeight, il en reste la phrase d'intro qui renvoie à `#why-the-moving-ground-matters`. Restent
+  aussi `## Measured campaigns` (liens vers nos pages de campagne), **à retirer lui aussi** (Lionel,
+  2026-10-11) : ces Diags serviront à d'autres bugs que la précision du terrain, et ne doivent pas avoir
+  à changer à chaque nouvel usage. Et des liens dans leurs pages `docs\` (`this-mods-demonstration.md`
+  de TerrainHeight, `what-it-shows.md` de TerrainQuads, qui renvoie à `the-culprit-ground.md`). Diag
+  Scatter, en cours de migration, suit la même règle. Cela fait tomber une règle posée au départ,
+  intenable maintenant que ce mod est aussi gros et aussi documenté (et ça ne fera qu'augmenter) : un
+  Diag renvoie au correctif pour le pourquoi (`readme-publics.md` de `kspmod`, « Le plan d'un README de
+  Diag », points 2 et 5, et « Un fait, un propriétaire », « Ce qu'un Diag lie chez le correctif ») ; la mettre
+  à jour, ainsi que la mise en garde « ne pas renommer `Why the moving ground matters` » de
+  `mods/TerrainPrecisionFix.md`. Le sens inverse reste : ce mod cite et lie ses instruments.
 - **Poster sur #435** une fois sûr de ce que Diag FloatingOrigin montre aux chargements, comme le commentaire
   l'annonce.
 - **Rejouer toutes les campagnes en automatique, et reconstituer mesures et logs** (Lionel,

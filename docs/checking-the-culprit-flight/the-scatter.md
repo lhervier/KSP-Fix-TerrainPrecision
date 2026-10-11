@@ -20,15 +20,15 @@ it was a mod of its own**, Rock Precision Fix 0.1.0, installed next to Terrain P
 same two patches as this mod's scatter fix, whose lines in its log are tagged `[RockPrecisionFix]`.
 
 The instrument reads the rocks along a flight, following
-[its protocol](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/measuring-the-rocks.md#over-a-flight),
+[The protocol: the rocks, along a flight](the-scatter-protocol.md),
 in KSP 1.12.5 with Harmony, ModuleManager and KSP Community Fixes 1.41.1:
 the save
-[`ref-mune-5km.sfs`](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/diag/README.md#the-saves),
+[`ref-mune-5km.sfs`](../../diag/checking-the-culprit-flight/scatter/ref-mune-5km.sfs),
 a Mk1 command pod in a circular equatorial orbit 5 km over the Mun, loaded once, one record 30 s into the
-flight, then every two minutes, and one after the pod crashed into the relief. The records with both
-fixes are in [`diag/runs`](../../diag/README.md#the-scatter-fix-the-rocks-over-a-flight), and those with the
-terrain fix alone with
-[the instrument](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/diag/README.md#the-rocks-over-a-flight).
+flight, then every two minutes, and one after the pod crashed into the relief. The records are in
+[`mun-5km-tpf-rocks.log`](../../diag/checking-the-culprit-flight/scatter/mun-5km-tpf-rocks.log), with the
+terrain fix alone, and [`mun-5km-both-rocks.log`](../../diag/checking-the-culprit-flight/scatter/mun-5km-both-rocks.log),
+with both fixes; each file holds the six records and the line of `KSP.log` reporting the crash.
 
 ## The readings
 
@@ -47,7 +47,19 @@ the same vertices, come out up to 0.7 mm and 1.6 mm apart from one flight to the
 | 5 | `Mun Xn013331113` | −1.5 mm | −1.9 to −0.5 mm | 0.000 mm, 152 holders |
 | 6, after the crash | `Mun Zn200000011` | −15.8 mm | −16.9 to −16.3 mm | 0.000 mm, 568 holders |
 
-**With the terrain fix alone**, no holder is drawn on its quad, at any record: over the 1,600, the
+**With the terrain fix alone**, record by record:
+
+| record | holders | *up* of the holders' matrices | largest *across* | largest gap between a holder's centre and its quad's |
+|---|---|---|---|---|
+| 1 | 344 | −25.9 to +13.3 mm | 10.0 mm | 25.2 mm |
+| 2 | 168 | −17.7 to +17.5 mm | 10.0 mm | 22.6 mm |
+| 3 | 144 | −26.5 to +9.4 mm | 9.9 mm | 22.5 mm |
+| 4 | 224 | −20.1 to +18.6 mm | 8.2 mm | 20.1 mm |
+| 5 | 152 | −13.8 to +21.1 mm | 10.0 mm | 20.1 mm |
+| 6, after the crash | 568 | −25.7 to +17.4 mm | 10.0 mm | 24.0 mm |
+
+The matrices of the quads stand on their centres, *up* and *across* 0.000 mm, in every record. No holder
+is drawn on its quad, at any record: over the 1,600, the
 *up* of their matrices runs from −26.5 to +21.1 mm, never 0, 9.0 mm on average (root mean square), about
 what the twelve loads of the Mun gave. The offset does not grow along the flight, but it does not go away
 either.

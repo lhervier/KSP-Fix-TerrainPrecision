@@ -14,7 +14,7 @@ Whether the quads still hang in the frame this fix computes: the series of
 Diag - Scatter also logs, at every load, the distance from the centre of Kerbin to the transform of
 each terrain quad around the kerbal — the very number this fix places. On Kopernicus 1.12.1.247 with the
 collider patch, over the six loads of each install, for the 173 quads present in all six of them
-([the logs](https://github.com/lhervier/KSP-Diag-Scatter/tree/main/diag/runs), files
+([the logs](../../../diag/non-regression/kopernicus/scatter-with-colliders), files
 `collider-stock-load*.log` and `collider-tpf-load*.log`):
 
 | install | spread of a quad's height over six loads, median | at worst |

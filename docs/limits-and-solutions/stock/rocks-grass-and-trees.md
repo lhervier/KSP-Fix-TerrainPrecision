@@ -40,7 +40,7 @@ Kerbin, and within a tenth of a millimetre of it three times out of four on the 
 they never do: the ground is now placed in double precision and the holder is not.
 
 [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter) measures it, on two
-saves of its own, one on Kerbin and one on the Mun, each loaded twelve times per series ([the readings](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/what-the-readings-show.md#the-rocks)):
+saves, one on Kerbin and one on the Mun, each loaded twelve times per series ([the readings](../../checking-the-culprit-loading/the-scatter.md#on-stock-and-with-the-terrain-fix-alone)):
 the height of a measured point of an object above the ground under it comes back 94 mm apart over the
 twelve loads for half of those points on Kerbin in stock, and 130 mm with the terrain fix; on the Mun,
 31 mm either way. The same kind of error, of the same order and wider on Kerbin, but where stock draws

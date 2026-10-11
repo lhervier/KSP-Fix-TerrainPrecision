@@ -683,34 +683,63 @@ With this mod:
   [`automation/run-station-approach.py`](automation/run-station-approach.py). Read in
   [A CommNet ground station from a planet pack](../docs/non-regression/real-solar-system/a-commnet-ground-station.md).
 
-## The scatter fix
+## The scatter
 
-The readings of [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter) with
-[the scatter fix](../docs/the-fix-scatter.md)
-on, read in [Checking the scatter: loading the same save](../docs/checking-the-culprit-loading/the-scatter.md),
+The readings of [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter), in three
+configurations: on stock, with this mod as installed by default — its terrain fix alone (`tpf` in the
+names of the files) — and with [the scatter fix](../docs/the-fix-scatter.md) on as well (`both`). They
+are read in [Checking the scatter: loading the same save](../docs/checking-the-culprit-loading/the-scatter.md),
 [Checking the scatter: in flight](../docs/checking-the-culprit-flight/the-scatter.md),
 [The scatter holders](../docs/non-regression/stock/the-scatter-holders.md) and
 [Kopernicus: scatter with colliders](../docs/non-regression/kopernicus/scatter-with-colliders.md),
 kept as they were logged, copied out of `KSP.log`, in the folder of the page that reads them: for the
 rocks after a load, one file per load, each holding the last record taken after that load; for the rocks
 over a flight and for the holder pools, one file per flight or session, holding every record taken
-during it. The scatter fix was then a mod of its own, Rock Precision Fix 0.1.0, installed next to this
-mod: the same two patches, whose lines in these logs are tagged `[RockPrecisionFix]`.
+during it. The series with this mod were taken with Terrain Precision Fix 0.1.0; those with the scatter
+fix, when it was a mod of its own, Rock Precision Fix 0.1.0, installed next to it: the same two patches,
+whose lines in these logs are tagged `[RockPrecisionFix]`.
 
-The procedure, the saves and the format of a record belong to the instrument:
-[its protocol](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/measuring-the-rocks.md#load-after-load),
-[the saves](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/diag/README.md#the-saves) and
-[the log](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/measuring-the-rocks.md#the-log).
+The protocols are [the scatter, load after load](../docs/checking-the-culprit-loading/the-scatter-protocol.md)
+and [the rocks, along a flight](../docs/checking-the-culprit-flight/the-scatter-protocol.md), and the
+chapters *The protocol* of [The scatter holders](../docs/non-regression/stock/the-scatter-holders.md#the-protocol)
+and [Kopernicus: scatter with colliders](../docs/non-regression/kopernicus/scatter-with-colliders.md#the-protocol).
+What a record holds, line by line, is in
+[the instrument's page](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/what-it-measures.md#the-log).
 
-### The scatter fix: the rocks, over twelve loads
+The saves:
 
-KSP 1.12.5 on Windows. `GameData` holding Harmony, ModuleManager, KSP Community Fixes 1.41.1,
-this mod, 0.1.0, KSP Diag - Scatter and Rock Precision Fix 0.1.0. Both fixes at `logLevel = Info`. Terrain scatter on, the log flushed at once. KSP was
-started once, and in that session `reference-kerbin.sfs` then `reference-mune.sfs` were each loaded twelve
-times, with `Alt+F6` pressed after each load once the scene had settled.
+- [`reference-kerbin.sfs`](checking-the-culprit-loading/scatter/reference-kerbin.sfs) and [`reference-mune.sfs`](checking-the-culprit-loading/scatter/reference-mune.sfs)
+  — a single Mk1 command pod landed on Kerbin, about 8 km north-west of the KSC, where the scatter is
+  grass and trees, and on the Mun, where it is rocks;
+- [`ref-mune-5km.sfs`](checking-the-culprit-flight/scatter/ref-mune-5km.sfs) — a single Mk1 command pod in a circular equatorial
+  orbit 5 km over the Mun, the same save as
+  [PQSBench's](https://github.com/lhervier/KSP-PQSBench/blob/main/perfs/README.md);
+- [`ref-kerbin-scatter-collider-eva.sfs`](non-regression/kopernicus/scatter-with-colliders/ref-kerbin-scatter-collider-eva.sfs) — a Mk1 command pod
+  landed in a desert of Kerbin, with Jebediah out on EVA, standing on a boulder next to it.
 
-Both fixes wrote to `KSP.log` that they were installed, and that they had acted on each body before its
-first record:
+### The scatter: the rocks, over twelve loads
+
+KSP 1.12.5 on Windows. `GameData` holding Harmony, ModuleManager, KSP Community Fixes 1.41.1 and KSP
+Diag - Scatter, the same build throughout: nothing else on stock, this mod added for `tpf`, both fixes
+for `both`. Terrain scatter on, the log flushed at once. Each series is one save loaded twelve times,
+with *Record the rocks* pressed after each load once the scene had settled.
+
+| load | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Kerbin, stock | [`1`](checking-the-culprit-loading/scatter/kerbin-stock-load1.log) | [`2`](checking-the-culprit-loading/scatter/kerbin-stock-load2.log) | [`3`](checking-the-culprit-loading/scatter/kerbin-stock-load3.log) | [`4`](checking-the-culprit-loading/scatter/kerbin-stock-load4.log) | [`5`](checking-the-culprit-loading/scatter/kerbin-stock-load5.log) | [`6`](checking-the-culprit-loading/scatter/kerbin-stock-load6.log) | [`7`](checking-the-culprit-loading/scatter/kerbin-stock-load7.log) | [`8`](checking-the-culprit-loading/scatter/kerbin-stock-load8.log) | [`9`](checking-the-culprit-loading/scatter/kerbin-stock-load9.log) | [`10`](checking-the-culprit-loading/scatter/kerbin-stock-load10.log) | [`11`](checking-the-culprit-loading/scatter/kerbin-stock-load11.log) | [`12`](checking-the-culprit-loading/scatter/kerbin-stock-load12.log) |
+| Kerbin, `tpf` | [`1`](checking-the-culprit-loading/scatter/kerbin-tpf-load1.log) | [`2`](checking-the-culprit-loading/scatter/kerbin-tpf-load2.log) | [`3`](checking-the-culprit-loading/scatter/kerbin-tpf-load3.log) | [`4`](checking-the-culprit-loading/scatter/kerbin-tpf-load4.log) | [`5`](checking-the-culprit-loading/scatter/kerbin-tpf-load5.log) | [`6`](checking-the-culprit-loading/scatter/kerbin-tpf-load6.log) | [`7`](checking-the-culprit-loading/scatter/kerbin-tpf-load7.log) | [`8`](checking-the-culprit-loading/scatter/kerbin-tpf-load8.log) | [`9`](checking-the-culprit-loading/scatter/kerbin-tpf-load9.log) | [`10`](checking-the-culprit-loading/scatter/kerbin-tpf-load10.log) | [`11`](checking-the-culprit-loading/scatter/kerbin-tpf-load11.log) | [`12`](checking-the-culprit-loading/scatter/kerbin-tpf-load12.log) |
+| Kerbin, `both` | [`1`](checking-the-culprit-loading/scatter/kerbin-both-load1.log) | [`2`](checking-the-culprit-loading/scatter/kerbin-both-load2.log) | [`3`](checking-the-culprit-loading/scatter/kerbin-both-load3.log) | [`4`](checking-the-culprit-loading/scatter/kerbin-both-load4.log) | [`5`](checking-the-culprit-loading/scatter/kerbin-both-load5.log) | [`6`](checking-the-culprit-loading/scatter/kerbin-both-load6.log) | [`7`](checking-the-culprit-loading/scatter/kerbin-both-load7.log) | [`8`](checking-the-culprit-loading/scatter/kerbin-both-load8.log) | [`9`](checking-the-culprit-loading/scatter/kerbin-both-load9.log) | [`10`](checking-the-culprit-loading/scatter/kerbin-both-load10.log) | [`11`](checking-the-culprit-loading/scatter/kerbin-both-load11.log) | [`12`](checking-the-culprit-loading/scatter/kerbin-both-load12.log) |
+| the Mun, stock | [`1`](checking-the-culprit-loading/scatter/mun-stock-load1.log) | [`2`](checking-the-culprit-loading/scatter/mun-stock-load2.log) | [`3`](checking-the-culprit-loading/scatter/mun-stock-load3.log) | [`4`](checking-the-culprit-loading/scatter/mun-stock-load4.log) | [`5`](checking-the-culprit-loading/scatter/mun-stock-load5.log) | [`6`](checking-the-culprit-loading/scatter/mun-stock-load6.log) | [`7`](checking-the-culprit-loading/scatter/mun-stock-load7.log) | [`8`](checking-the-culprit-loading/scatter/mun-stock-load8.log) | [`9`](checking-the-culprit-loading/scatter/mun-stock-load9.log) | [`10`](checking-the-culprit-loading/scatter/mun-stock-load10.log) | [`11`](checking-the-culprit-loading/scatter/mun-stock-load11.log) | [`12`](checking-the-culprit-loading/scatter/mun-stock-load12.log) |
+| the Mun, `tpf` | [`1`](checking-the-culprit-loading/scatter/mun-tpf-load1.log) | [`2`](checking-the-culprit-loading/scatter/mun-tpf-load2.log) | [`3`](checking-the-culprit-loading/scatter/mun-tpf-load3.log) | [`4`](checking-the-culprit-loading/scatter/mun-tpf-load4.log) | [`5`](checking-the-culprit-loading/scatter/mun-tpf-load5.log) | [`6`](checking-the-culprit-loading/scatter/mun-tpf-load6.log) | [`7`](checking-the-culprit-loading/scatter/mun-tpf-load7.log) | [`8`](checking-the-culprit-loading/scatter/mun-tpf-load8.log) | [`9`](checking-the-culprit-loading/scatter/mun-tpf-load9.log) | [`10`](checking-the-culprit-loading/scatter/mun-tpf-load10.log) | [`11`](checking-the-culprit-loading/scatter/mun-tpf-load11.log) | [`12`](checking-the-culprit-loading/scatter/mun-tpf-load12.log) |
+| the Mun, `both` | [`1`](checking-the-culprit-loading/scatter/mun-both-load1.log) | [`2`](checking-the-culprit-loading/scatter/mun-both-load2.log) | [`3`](checking-the-culprit-loading/scatter/mun-both-load3.log) | [`4`](checking-the-culprit-loading/scatter/mun-both-load4.log) | [`5`](checking-the-culprit-loading/scatter/mun-both-load5.log) | [`6`](checking-the-culprit-loading/scatter/mun-both-load6.log) | [`7`](checking-the-culprit-loading/scatter/mun-both-load7.log) | [`8`](checking-the-culprit-loading/scatter/mun-both-load8.log) | [`9`](checking-the-culprit-loading/scatter/mun-both-load9.log) | [`10`](checking-the-culprit-loading/scatter/mun-both-load10.log) | [`11`](checking-the-culprit-loading/scatter/mun-both-load11.log) | [`12`](checking-the-culprit-loading/scatter/mun-both-load12.log) |
+
+- **Stock**: Kerbin's loads 1 to 6 in one session of KSP, its loads 7 to 12 in another, where the Mun's
+  twelve loads were also taken.
+- **`tpf`**: Kerbin's twelve loads in a single session, the Mun's loads 1 to 6 in the same session, its
+  loads 7 to 12 in another.
+- **`both`**: one session, `reference-kerbin.sfs` then `reference-mune.sfs`, both fixes at
+  `logLevel = Info`. Both wrote to `KSP.log` that they were installed, and that they had acted on each
+  body before its first record:
 
 ```
 [RockPrecisionFix] Version 0.1.0.0 installed, log level Info
@@ -721,12 +750,7 @@ first record:
 [RockPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was +8.51 mm off)
 ```
 
-| load | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Kerbin | [`1`](checking-the-culprit-loading/scatter/kerbin-both-load1.log) | [`2`](checking-the-culprit-loading/scatter/kerbin-both-load2.log) | [`3`](checking-the-culprit-loading/scatter/kerbin-both-load3.log) | [`4`](checking-the-culprit-loading/scatter/kerbin-both-load4.log) | [`5`](checking-the-culprit-loading/scatter/kerbin-both-load5.log) | [`6`](checking-the-culprit-loading/scatter/kerbin-both-load6.log) | [`7`](checking-the-culprit-loading/scatter/kerbin-both-load7.log) | [`8`](checking-the-culprit-loading/scatter/kerbin-both-load8.log) | [`9`](checking-the-culprit-loading/scatter/kerbin-both-load9.log) | [`10`](checking-the-culprit-loading/scatter/kerbin-both-load10.log) | [`11`](checking-the-culprit-loading/scatter/kerbin-both-load11.log) | [`12`](checking-the-culprit-loading/scatter/kerbin-both-load12.log) |
-| the Mun | [`1`](checking-the-culprit-loading/scatter/mun-both-load1.log) | [`2`](checking-the-culprit-loading/scatter/mun-both-load2.log) | [`3`](checking-the-culprit-loading/scatter/mun-both-load3.log) | [`4`](checking-the-culprit-loading/scatter/mun-both-load4.log) | [`5`](checking-the-culprit-loading/scatter/mun-both-load5.log) | [`6`](checking-the-culprit-loading/scatter/mun-both-load6.log) | [`7`](checking-the-culprit-loading/scatter/mun-both-load7.log) | [`8`](checking-the-culprit-loading/scatter/mun-both-load8.log) | [`9`](checking-the-culprit-loading/scatter/mun-both-load9.log) | [`10`](checking-the-culprit-loading/scatter/mun-both-load10.log) | [`11`](checking-the-culprit-loading/scatter/mun-both-load11.log) | [`12`](checking-the-culprit-loading/scatter/mun-both-load12.log) |
-
-Every record of Kerbin ends on the same line, but for its number:
+Every record of Kerbin, in the three series, ends on the same line, but for its number:
 
 ```
 End of record 1: 64 quads with rocks, 118 holders (0 not built yet); nearest quad 'Kerbin Zn3010000130': 218 rocks, 1780 vertices measured, 0 without ground under them
@@ -739,32 +763,32 @@ End of record 13: 128 quads with rocks, 128 holders (0 not built yet); nearest q
 ```
 
 So every record was taken once all the holders were built, and all the records of a body name the same
-nearest quad: its objects and their measured vertices compare one by one from one load to the next.
+nearest quad: its objects and their measured vertices compare one by one from one load to the next, and
+from one series to another.
 
-### The scatter fix: the rocks, over a flight
+### The scatter: the rocks, over a flight
 
 Where the rocks are drawn once the terrain has kept building and destroying quads under a moving craft,
-with the world origin following it.
+with the world origin following it. The install above, `tpf` and `both`, with the build of KSP Diag -
+Scatter of [the holder pools](#the-scatter-the-holder-pools-over-a-flight) below. `ref-mune-5km.sfs`
+loaded once, then *Record the rocks* pressed 30 s into the flight, again every two minutes, and once more
+after the pod crashed.
 
-The same install as above, with the build of KSP Diag - Scatter of
-[the holder pools](#the-scatter-fix-the-holder-pools-over-a-flight) below. `ref-mune-5km.sfs` loaded once, then `Alt+F6`
-pressed 30 s into the flight, again every two minutes, and once more after the pod crashed, following
-[its protocol](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/measuring-the-rocks.md#over-a-flight).
+| flight | records |
+|---|---|
+| `tpf` | [`mun-5km-tpf-rocks.log`](checking-the-culprit-flight/scatter/mun-5km-tpf-rocks.log) |
+| `both` | [`mun-5km-both-rocks.log`](checking-the-culprit-flight/scatter/mun-5km-both-rocks.log) |
 
-Both fixes wrote to `KSP.log` that they had acted on the Mun before the first record:
+With both fixes, they wrote to `KSP.log` that they had acted on the Mun before the first record:
 
 ```
 [TerrainPrecisionFix] Mun: terrain placed in double precision (first quad corrected by 17.46 mm)
 [RockPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was -15.15 mm off)
 ```
 
-| flight | records |
-|---|---|
-| with both fixes | [`mun-5km-both-rocks.log`](checking-the-culprit-flight/scatter/mun-5km-both-rocks.log) |
-
-The file holds the six records and the line of `KSP.log` reporting the crash, between the fifth and the
+Each file holds the six records and the line of `KSP.log` reporting the crash, between the fifth and the
 sixth. Every record has all its holders built, and 200 vertices measured on its nearest quad, all of them
-with ground under them:
+with ground under them; the two flights name the same quads, record for record:
 
 | record | quads with rocks | holders | nearest quad |
 |---|---|---|---|
@@ -775,33 +799,26 @@ with ground under them:
 | 5 | 152 | 152 | `Mun Xn013331113` |
 | 6, after the crash | 568 | 568 | `Mun Zn200000011` |
 
-Those are, record for record, the quads of the same flight with this mod without the scatter fix, and the same
-nearest quads: their vertices compare one by one from one flight to the other.
+### The scatter: the holder pools, over a flight
 
-### The scatter fix: the holder pools, over a flight
+The install above, `tpf` and `both`, with a later build of KSP Diag - Scatter: the first one with the
+holder record. `ref-mune-5km.sfs` loaded once, then *Record the holder pools* pressed 30 s into the
+flight, again about every two minutes, and once more after the pod crashed.
 
-The scatter fix takes each holder out of the pool's container while its quad is in use, and hangs it back there
-when the quad is handed back. This series checks that every holder does go back, and that none is lost on
-the way.
+| flight | records |
+|---|---|
+| `tpf` | [`mun-5km-tpf-holders.log`](non-regression/stock/the-scatter-holders/mun-5km-tpf-holders.log) |
+| `both` | [`mun-5km-both-holders.log`](non-regression/stock/the-scatter-holders/mun-5km-both-holders.log) |
 
-The same install as above, with a later build of KSP Diag - Scatter: the first one
-with the holder record. `ref-mune-5km.sfs` loaded once, then `Alt+Shift+F6` pressed 30 s into the flight,
-again about every two minutes, and once more after the pod crashed, following
-[its protocol](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/checking-the-holder-pools.md#over-a-flight).
-
-Both fixes wrote to `KSP.log` that they had acted on the Mun before the first record:
+With both fixes, they wrote to `KSP.log` that they had acted on the Mun before the first record:
 
 ```
 [TerrainPrecisionFix] Mun: terrain placed in double precision (first quad corrected by 14.82 mm)
 [RockPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was -1.34 mm off)
 ```
 
-| flight | records |
-|---|---|
-| with both fixes | [`mun-5km-both-holders.log`](non-regression/stock/the-scatter-holders/mun-5km-both-holders.log) |
-
-The file holds the six records and the line of `KSP.log` reporting the crash, between the fifth and the
-sixth. Every record ends on `0 broken rules`:
+Each file holds the six records and the line of `KSP.log` reporting the crash, between the fifth and the
+sixth. Every record of both flights ends on `0 broken rules`, with the same counts, record for record:
 
 | record | holders in use | free | broken rules |
 |---|---|---|---|
@@ -812,21 +829,18 @@ sixth. Every record ends on `0 broken rules`:
 | 5 | 152 | 232 | 0 |
 | 6, after the crash | 568 | 40 | 0 |
 
-Those counts are, record for record, those of the flight with this mod without the scatter fix: the flight
-takes as many holders out of the pool, at the same moments, with the scatter fix as without it.
+### The scatter: the holder pools, across scene switches
 
-### The scatter fix: the holder pools, across scene switches
-
-The scatter fix hangs a holder from its quad, and the quads of the most detailed level are shared by every body.
-Leaving a body switches its terrain off: this series checks that its holders go back to their pools
-before stock destroys them, and that none travels on a quad to the next body.
-
-The same install and build as the flight above. One session, following
-[its protocol](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/checking-the-holder-pools.md#across-scene-switches):
+The same install and build as the flight above, `tpf` and `both`. One session each:
 `reference-mune.sfs` loaded from the Space Center, back to the Space Center, then `reference-kerbin.sfs`,
-with `Alt+Shift+F6` pressed in each of the three scenes.
+with *Record the holder pools* pressed in each of the three scenes.
 
-Both fixes wrote to `KSP.log` that they had acted on each body before its first record:
+| session | records |
+|---|---|
+| `tpf` | [`scenes-tpf-holders.log`](non-regression/stock/the-scatter-holders/scenes-tpf-holders.log) |
+| `both` | [`scenes-both-holders.log`](non-regression/stock/the-scatter-holders/scenes-both-holders.log) |
+
+With both fixes, they wrote to `KSP.log` that they had acted on each body before its first record:
 
 ```
 [TerrainPrecisionFix] Kerbin: terrain placed in double precision (first quad corrected by 16.50 mm)
@@ -835,12 +849,9 @@ Both fixes wrote to `KSP.log` that they had acted on each body before its first 
 [RockPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was -0.40 mm off)
 ```
 
-| session | records |
-|---|---|
-| with both fixes | [`scenes-both-holders.log`](non-regression/stock/the-scatter-holders/scenes-both-holders.log) |
-
-The file holds the three records, the line of `KSP.log` marking the arrival in each scene, and those of
-both fixes. Every record ends on `0 in no pool` and `0 broken rules`:
+Each file holds the three records, the line of `KSP.log` marking the arrival in each scene, and those of
+the fixes. Every record of both sessions ends on `0 in no pool` and `0 broken rules`, with the same
+counts:
 
 | record | scene | pools | holders in use | free |
 |---|---|---|---|---|
@@ -848,37 +859,32 @@ both fixes. Every record ends on `0 in no pool` and `0 broken rules`:
 | 2 | the Space Center | Kerbin's `Tree00`, `Grass00`, `boulder`, `Pine00`, `cactus` | 4 | 316 |
 | 3 | Kerbin | the same five | 118 | 202 |
 
-Those are, pool for pool, the counts of the same session with this mod without the scatter fix. The Mun's pool
-is gone from the second record on, and no holder of the Mun turned up under a quad of Kerbin.
-
-### The scatter fix: the colliders
+### The scatter: the colliders
 
 A different install, because stock scatter has no collider: the one above, plus
 [Kopernicus](https://github.com/Kopernicus/Kopernicus) 1.12.1.247 and the
 [Stock Scatter Collider Enabler Patch](https://github.com/Poodmund/Stock-Scatter-Collider-Enabler-Patch)
 1.0.1, which gives every stock object of scatter a collision mesh of its own shape.
 
-One series, following
-[its protocol](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/measuring-the-rocks.md#with-colliders-on-the-scatter):
-`ref-kerbin-scatter-collider-eva.sfs`, a kerbal standing on a boulder in a desert of Kerbin, loaded six
-times in one session, each load with a record and a picture of the kerbal's feet.
+Three series, `ref-kerbin-scatter-collider-eva.sfs` loaded six times in one session each, each load with
+a record and a picture of the kerbal's feet.
 
 | load | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
-| with both fixes | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-both-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-both-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-both-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-both-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-both-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-both-load6.log) |
+| stock | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load6.log) |
+| its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load6.png) |
+| `tpf` | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load6.log) |
+| its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load6.png) |
+| `both` | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-both-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-both-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-both-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-both-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-both-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-both-load6.log) |
 | its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load6.png) |
 
-Every record ends on the same line, but for its number:
+Every record of the three series ends on the same line, but for its number:
 
 ```
 End of record 1: 173 quads with rocks, 306 holders (0 not built yet); nearest quad 'Kerbin Xn0131000203': 6 rocks, 60 vertices measured, 0 without ground under them, 6 colliders measured
 ```
 
 The same nearest quad throughout, carrying the same six objects with a collider — one `boulder` and five
-`cactus` — so they compare one by one from one load to the next, and with the two series taken without the scatter fix.
-
-### The scatter fix: the other configurations
-
-Stock and this mod without the scatter fix, on the same saves, are kept with
-[KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/diag/README.md),
-the colliders included.
+`cactus` — so they compare one by one from one load to the next, and from one series to another. The
+records of the `tpf` series are numbered 6 to 11: its session had already served for loads that were not
+kept.
