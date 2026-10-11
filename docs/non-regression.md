@@ -186,7 +186,7 @@ a row with this mod, the craft never moved, and the workaround never had anythin
 
 **Checked on Earth — with this mod, the runway is where it is drawn, with no step.** Real Solar System
 turns off the colliders of the runway's sections and holds the floating origin on it. Built without that
-fix, with this mod, 37 entries in flight showed no step, and a move of the origin moved nothing.
+fix, with this mod, the runway stood within 0.3 mm over thirty loads, and a move of the origin moved nothing.
 
 **→ Full chapter: [Real Solar System: the runway fix](non-regression/real-solar-system/the-runway-fix.md)**
 

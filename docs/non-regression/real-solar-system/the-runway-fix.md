@@ -2,11 +2,11 @@
 
 Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Real Solar System](../../non-regression.md#real-solar-system).
 
-**Status: checked on Earth — with this mod, a craft finds the runway of the KSC where it is drawn, with
-no step on it, and the runway no longer moves when the floating origin does; so neither half of Real
-Solar System's runway fix has anything left to correct for this defect.** The runway is a static, placed like the buildings of the KSC
-([The culprit: the statics](../../the-culprit-statics.md)), and this mod places it in double while a
-craft is near ([The fix: the statics](../../the-fix-statics.md)).
+**Status: checked on Earth — with this mod, the runway of the KSC stands at the same height at every load,
+with no step on it, and the runway no longer moves when the floating origin does; so neither half of Real
+Solar System's runway fix has anything left to correct for this defect.** The runway is a static, placed
+like the buildings of the KSC ([The culprit: the statics](../../the-culprit-statics.md)), and this mod
+places it in double while a craft is near ([The fix: the statics](../../the-fix-statics.md)).
 
 ## What Real Solar System does
 
@@ -35,137 +35,144 @@ way. Both change at every load. Depending on the load, a craft on the runway the
 
 - **the runway it touches above or below the runway it sees**: it rests in the air above the deck, or
   with its wheels sunk into it;
-- **a step between the colliders of two sections**, which a wheel climbs;
-- **a step between the decks of two sections** whose colliders line up: seen, not felt.
+- **a step between the colliders of two sections**, which a wheel climbs.
 
-Turning the sections' colliders off removes the step a wheel climbs: only `runway_collider` is left, in
-one piece. It cannot bring that piece back to the deck the game draws, nor line the decks up.
+Turning the sections' colliders off removes the step: only `runway_collider` is left, in one piece. It
+cannot bring that piece back to the deck the game draws.
 
-## Seeing it
+## The test
 
-In KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1 and
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1 and
 [Real Solar System](https://github.com/KSP-RO/RealSolarSystem) 20.1.3.0 with what it requires (Kopernicus
-248, Modular Flight Integrator, KSPTextureLoader, the RSS textures).
-[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) draws the
-colliders around the active craft where the physics places them, each in a colour of its own, and lists
-them by name. The craft is the rover of the driving protocol,
-[`Diag2-Rover.craft`](../../../diag/checking-the-culprit-driving/Diag2-Rover.craft),
-launched from the SPH onto the runway at Cape Canaveral.
+248, Modular Flight Integrator, KSPTextureLoader, the RSS textures), and two instruments:
+
+- [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) draws the colliders around the
+  active craft where the physics places them, each in a colour of its own: here the end of the runway,
+  `End09`, in magenta, and its fourth section, `Section4`, in cyan. It shows the step;
+- [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) reads, under a craft,
+  the ground the physics touches and the ground KSP computes for the same spot. Every figure below is
+  one of its lines: the first minus the second, in millimetres.
 
 To see the runway without the runway fix, Real Solar System is built from the sources of its release
 20.1.3.0 with `RSSRunwayFix` kept from doing anything: it returns at the top of its `Start`, so it
 leaves the sections as stock does, never touches the floating origin, and never holds it. The version
 of the assembly is set to that of the release
 ([`rss-20.1.3-without-its-runway-fix.diff`](../../../diag/non-regression/real-solar-system/the-runway-fix/rss-20.1.3-without-its-runway-fix.diff)).
-In every session below, the colliders of the sections were on at every load.
 
-**Real Solar System as released, without this mod.** The rover, launched from the SPH, rests in the air
-above the deck, `runway_collider` being the only collider left under it.
+The craft is the rover of the driving protocol,
+[`Diag2-Rover.craft`](../../../diag/checking-the-culprit-driving/Diag2-Rover.craft), twice. In a new
+sandbox game, at noon at Cape Canaveral:
 
-![Real Solar System as released, without this mod: the rover launched from the SPH](../../../imgs/non-regression/real-solar-system/the-runway-fix/10-as-released-rover-above-the-deck.png)
+1. a first rover, launched from the SPH onto the runway, is driven to the edge between `End09` and
+   `Section4`, then 70 m north, down the bank, onto the grass: the witness of the ground, left there;
+2. a second rover is launched from the SPH, driven east along the runway to 8 m before that edge, and
+   saved (F5);
+3. that save is loaded ten times (F9). At each load, Diag Terrain Height records three lines: under the
+   witness on the grass (set as the target), under the rover 8 m before the edge, on `End09`, and under
+   it 10 m past the edge, on `Section4`, where it drives at 2 m/s. Then the rover backs up until its back
+   wheels stand on `End09` and its front wheels on `Section4`, and the camera looks at it from beside;
+4. the rover is recovered, and 2 and 3 are played again, twice: three launches, thirty loads.
 
-*Real Solar System as released, without this mod: the rover 46 seconds after its launch from the SPH.*
+When a step stops the rover at the edge, it goes round by the grass: south down the bank of `End09`, east
+on the grass past the edge, then north up the bank of `Section4`, which rises from the grass with no step,
+and on to the same spot 10 m past the edge. In the sessions below, no step stopped it.
 
-**Without the runway fix, without this mod.** One session, the rover launched from the SPH several
-times, and reloaded many times between, until each case showed; 23 entries in flight, logged in
-[`runway-earth-rss-without-runway-fix.log`](../../../diag/non-regression/real-solar-system/the-runway-fix/runway-earth-rss-without-runway-fix.log).
-The views from below the deck were taken with the flight camera moved under it.
+That is played without this mod, then with it at its defaults with `logLevel = Debug`, then with Real
+Solar System as released, once without this mod and once with it: one launch, the rover read 8 m before
+the edge.
 
-*Sunk into the deck.* One load, the rover just launched:
+*Played by a script.* [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) plays the test through
+[`diag/automation/run-runway-fix.py`](../../../diag/automation/run-runway-fix.py), the rover in the
+`Ships/SPH` folder of the game: it starts the game itself from the main menu, and takes a screenshot of
+the table of Diag Terrain Height every four loads. Every step is one a player can take: the test plays
+just as well by hand.
 
-![The rover sunk into the deck, runway_collider drawn](../../../imgs/non-regression/real-solar-system/the-runway-fix/20-without-runway-fix-sunk.png)
+## Seeing it
 
-*Without the runway fix, without this mod, Diag Colliders: the rover just launched, seen from beside it with
-the camera below the deck, `runway_collider` (yellow) alone drawn.*
+### Without the runway fix, without this mod
 
-![The same, from three quarters](../../../imgs/non-regression/real-solar-system/the-runway-fix/20b-without-runway-fix-sunk-three-quarters.png)
+The runway is never at the same height twice, and the grass beside it does not follow. Over the thirty
+loads, as Diag Terrain Height reads them:
 
-*The same, seen from three quarters behind.*
+| | lowest | highest |
+|---|---|---|
+| the grass, under the witness | −29.503 mm | +683.012 mm |
+| the runway, 8 m before the edge | +3 433.022 mm | +4 674.030 mm |
+| the runway, 10 m past the edge | +3 549.503 mm | +4 790.597 mm |
 
-![The same, End09_Mesh drawn](../../../imgs/non-regression/real-solar-system/the-runway-fix/20c-without-runway-fix-sunk-end09.png)
+Past the edge, the runway stands **116.5 mm higher** than before it at 26 loads of the 30. At the four
+others, it stands 0.5 to 3.2 mm lower: no step.
 
-*The same, `End09_Mesh` (magenta), the end of the runway, alone drawn.*
+![The table of Diag Terrain Height after four loads](../../../imgs/non-regression/real-solar-system/the-runway-fix/20-without-runway-fix-table.png)
 
-*A step a wheel climbs.* The same load, the rover driven from the end of the runway onto its fourth
-section:
+*Without the runway fix, without this mod: the table of Diag Terrain Height after the first four loads of
+the first launch, three lines a load: the grass, before the edge, past it.*
 
-![The edge of the fourth section ahead of the rover](../../../imgs/non-regression/real-solar-system/the-runway-fix/22a-without-runway-fix-step-from-above.png)
+![The rover astride the edge, nose up](../../../imgs/non-regression/real-solar-system/the-runway-fix/21-without-runway-fix-step.png)
 
-*The same load, the rover at the edge of the fourth section, `End09_Mesh` (magenta) and
-`Section4_Mesh` (cyan) drawn.*
+*The same session: a load with the step, the rover backed onto the edge, its back wheels on `End09`
+(magenta), its front wheels on `Section4` (cyan).*
 
-![The fourth section and runway_collider from below the deck](../../../imgs/non-regression/real-solar-system/the-runway-fix/22b-without-runway-fix-step-from-below.png)
+![The rover astride the edge, Section4 below End09](../../../imgs/non-regression/real-solar-system/the-runway-fix/22-without-runway-fix-step-down.png)
 
-*The same, from below the deck, `runway_collider` (yellow) and `Section4_Mesh` (cyan) drawn.*
+*The same session: a load where the collider of `Section4` (cyan) lies below that of `End09` (magenta).*
 
-![The rover climbing onto the fourth section](../../../imgs/non-regression/real-solar-system/the-runway-fix/22-without-runway-fix-step-climbed.png)
+![The rover astride the edge, in the air above the deck](../../../imgs/non-regression/real-solar-system/the-runway-fix/23-without-runway-fix-step-in-the-air.png)
 
-*The same, the rover driven onto the fourth section, `End09_Mesh` (magenta) and `Section4_Mesh` (cyan)
-drawn.*
+*The same session, another launch: a load with the step, the runway at its highest of the thirty loads.*
 
-*In the air above the deck.* Another load, the rover just launched:
+### Without the runway fix, with this mod
 
-![The rover in the air, every collider drawn](../../../imgs/non-regression/real-solar-system/the-runway-fix/21-without-runway-fix-in-the-air.png)
+The runway stands at the same height at every load, and so does the grass:
 
-*Without the runway fix, without this mod, Diag Colliders: the rover just launched, seen from beside it, every
-collider drawn.*
+| | lowest | highest |
+|---|---|---|
+| the grass, under the witness | +7.184 mm | +7.749 mm |
+| the runway, 8 m before the edge | +3 778.051 mm | +3 778.344 mm |
+| the runway, 10 m past the edge | +3 774.873 mm | +3 775.180 mm |
 
-![The same, from the front](../../../imgs/non-regression/real-solar-system/the-runway-fix/21b-without-runway-fix-in-the-air-front.png)
+Past the edge, the runway stands 3.1 or 3.2 mm lower than before it at every load: the slope of the deck
+over 18 m, with no step.
 
-*The same, from the front.*
+![The table of Diag Terrain Height after four loads, with this mod](../../../imgs/non-regression/real-solar-system/the-runway-fix/30-with-this-mod-table.png)
 
-![The same, runway_collider drawn](../../../imgs/non-regression/real-solar-system/the-runway-fix/21c-without-runway-fix-in-the-air-runway-collider.png)
+*Without the runway fix, with this mod: the table of Diag Terrain Height after the first four loads of the
+first launch.*
 
-*The same, from beside it, `runway_collider` (yellow) alone drawn.*
+![The rover astride the edge, level](../../../imgs/non-regression/real-solar-system/the-runway-fix/31-with-this-mod-astride.png)
 
-![The same, runway_collider drawn, from the front](../../../imgs/non-regression/real-solar-system/the-runway-fix/21d-without-runway-fix-in-the-air-runway-collider-front.png)
+*The same session: the rover backed onto the edge, at the first load.*
 
-*The same, from the front.*
+### Real Solar System as released
 
-*A step only seen.* The same load, the rover driven to the fourth section:
+The runway fix turns the sections' colliders off: `runway_collider` alone holds the rover, and no step is
+left. It does not bring `runway_collider` back to the deck the game draws. One launch, the rover read 8 m
+before the edge:
 
-![A step between two decks, with their colliders lined up](../../../imgs/non-regression/real-solar-system/the-runway-fix/23-without-runway-fix-step-only-seen.png)
+| | the runway, 8 m before the edge |
+|---|---|
+| without this mod | +4 460.347 mm |
+| with this mod | +3 777.974 mm |
 
-*The same load, the rover at the edge of the fourth section, `End09_Mesh` (magenta), `runway_collider`
-(yellow) and `Section4_Mesh` (cyan) drawn.*
+With this mod, the runway stands where it stood at every load without the runway fix, within 0.1 mm.
 
-**Without the runway fix, with this mod**, at its defaults with `logLevel = Debug`. One session, logged
-in
-[`runway-earth-rss-without-runway-fix-fix.log`](../../../diag/non-regression/real-solar-system/the-runway-fix/runway-earth-rss-without-runway-fix-fix.log):
+![Real Solar System as released, without this mod: the wheels sunk into the deck](../../../imgs/non-regression/real-solar-system/the-runway-fix/10-as-released-sunk.png)
 
-1. Launch the rover from the SPH, and save (F5); load that save five times (F9).
-2. Drive the rover to just before the fourth section, drawn in cyan by Diag Colliders; stop, and save.
-3. Load that save ten times. At each load, look at the wheels from beside the rover, then drive onto
-   the fourth section, watching the navball for a jolt.
-4. Recover the rover, launch it again from the SPH, and do 2 and 3 again; then a third time.
+*Real Solar System as released, without this mod: the rover 8 m before the edge, the sections' colliders
+off (pale blue).*
 
-![The rover just launched, every collider drawn](../../../imgs/non-regression/real-solar-system/the-runway-fix/29-with-this-mod-launched.png)
+![Real Solar System as released, with this mod: the wheels on the deck](../../../imgs/non-regression/real-solar-system/the-runway-fix/11-as-released-with-this-mod.png)
 
-*Without the runway fix, with this mod, Diag Colliders: step 1, the rover just launched, every collider drawn.*
-
-![The rover stopped just before the fourth section](../../../imgs/non-regression/real-solar-system/the-runway-fix/30-with-this-mod-stopped-before-section4.png)
-
-*The same: step 2, the rover stopped just before the fourth section.*
-
-![The wheels on the deck](../../../imgs/non-regression/real-solar-system/the-runway-fix/31-with-this-mod-wheels-on-the-deck.png)
-
-*The same: step 3, the wheels seen from beside the rover.*
-
-![The rover on the fourth section](../../../imgs/non-regression/real-solar-system/the-runway-fix/32-with-this-mod-onto-section4.png)
-
-*The same: step 3, the rover driven onto the fourth section; the navball shows no jolt.*
-
-At every load, the wheels stood on the deck, the colliders lay on the deck, and the rover drove onto
-the fourth section without a jolt and without a step to see. The log shows the KSC taken out of its
-sphere at each of the 37 entries in flight, corrected by 68 mm to 1.54 m depending on the load.
+*Real Solar System as released, with this mod: the same, `runway_collider` in yellow.*
 
 ## What the results show
 
-**Without this mod, the runway is not where it is drawn, and not in the same place twice.** As
-released, with only `runway_collider` left, a craft can still rest in the air above the deck; without
-the runway fix, it can also rest sunk into it, climb a step between two sections, or roll past a step
-it only sees. The runway fix removes the one step a wheel can climb, the only part of the defect it
-can reach.
+**Without this mod, the runway is not where it is drawn, and not in the same place twice.** Without the
+runway fix, it stands more than a metre higher at one load than at another, and a step of 116.5 mm lies
+between two of its sections at most loads; the grass beside it moves too, but not with it. As released,
+with only `runway_collider` left, there is no step, but the runway is still where the physics rounded it:
+a craft can rest with its wheels sunk into the deck. The runway fix removes the step, the only part of the
+defect it can reach.
 
 **With this mod, the runway is where it is drawn, in one piece.** The KSC and everything under it are
 placed in double while a craft is near, so what the game draws and what the physics touches come from
@@ -182,3 +189,7 @@ against. With this mod, the deck moves by 0.034 mm at most, and the grass by 0.1
 of the lines taken at the same spot. The readings are in
 [Checking the statics: driving on while the world moves](../../checking-the-culprit-driving/the-statics.md#by-the-runway-of-the-ksc-at-cape-canaveral).
 For this defect, the hold has nothing left to correct either.
+
+The logs, what the script printed, every line of Diag Terrain Height and the screenshots of its table, for
+every session, are in
+[`diag/non-regression/real-solar-system/the-runway-fix/`](../../../diag/README.md#on-real-solar-system).

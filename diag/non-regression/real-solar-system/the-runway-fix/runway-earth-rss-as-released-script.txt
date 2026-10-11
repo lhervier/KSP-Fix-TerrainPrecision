@@ -1,0 +1,7 @@
+23:23:57 closed: dialog 'IntroKSC', pressing 'Merci, j'ai compris'
+23:26:17 witness parked at 28.613488, -80.615334
+23:28:07 launch 1 load  0 before  ground under craft 78499.571 mm, KSP computes 74039.223 mm: +4460.347 mm
+23:28:10 screenshot 001-launch1-load00-before.png, heading 104.8, pitch -0.08 deg
+23:28:11 screenshot 002-launch1-load00-table.png
+23:28:15 closed: recovery report
+23:28:21 done: 1 readings, in D:\ksp-dev\campagnes\2026-10-11-runway-fix-rss\tel-que-publie\stock\run

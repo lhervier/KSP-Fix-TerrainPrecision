@@ -1,0 +1,1082 @@
+[
+ {
+  "launch": 1,
+  "load": 1,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.69698680937,
+   "ComputedTerrainMm": 73855.96086177975
+  },
+  "pitch": -0.009938527307798066,
+  "heading": 90.07866956255594
+ },
+ {
+  "launch": 1,
+  "load": 1,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.38311704248,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010114119450898719,
+  "heading": 90.06041440691482
+ },
+ {
+  "launch": 1,
+  "load": 1,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.23406675458,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009288884365306435,
+  "heading": 89.93923613388017
+ },
+ {
+  "launch": 1,
+  "load": 2,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.66308666766,
+   "ComputedTerrainMm": 73855.94930592924
+  },
+  "pitch": -0.011093071489602827,
+  "heading": 90.08637739016375
+ },
+ {
+  "launch": 1,
+  "load": 2,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.3747388646,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.01034241656345506,
+  "heading": 90.06753630468208
+ },
+ {
+  "launch": 1,
+  "load": 2,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.24597650766,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010716082881097908,
+  "heading": 90.00260958202823
+ },
+ {
+  "launch": 1,
+  "load": 3,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.53748384863,
+   "ComputedTerrainMm": 73855.97660206258
+  },
+  "pitch": -0.009701106931185428,
+  "heading": 90.1386554538372
+ },
+ {
+  "launch": 1,
+  "load": 3,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.41159409285,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009725526053324116,
+  "heading": 90.15675488161204
+ },
+ {
+  "launch": 1,
+  "load": 3,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.2578266561,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.01017875100131144,
+  "heading": 90.26724916778436
+ },
+ {
+  "launch": 1,
+  "load": 4,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.67557570338,
+   "ComputedTerrainMm": 73856.0182088986
+  },
+  "pitch": -0.01000240404802741,
+  "heading": 90.09865361110029
+ },
+ {
+  "launch": 1,
+  "load": 4,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.39404425025,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010002697674413315,
+  "heading": 90.08830848977271
+ },
+ {
+  "launch": 1,
+  "load": 4,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.25686646253,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010316536468389656,
+  "heading": 90.03376030496695
+ },
+ {
+  "launch": 1,
+  "load": 5,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.66052459925,
+   "ComputedTerrainMm": 73856.00071679801
+  },
+  "pitch": -0.010013191932167974,
+  "heading": 90.12557461800073
+ },
+ {
+  "launch": 1,
+  "load": 5,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.37089063972,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.00993605957774474,
+  "heading": 90.14211404421323
+ },
+ {
+  "launch": 1,
+  "load": 5,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.21479396522,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.00967315344009168,
+  "heading": 90.39486535389682
+ },
+ {
+  "launch": 1,
+  "load": 6,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.5075436905,
+   "ComputedTerrainMm": 73855.9498814866
+  },
+  "pitch": -0.00914106374114765,
+  "heading": 90.12793714693395
+ },
+ {
+  "launch": 1,
+  "load": 6,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.39415042102,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009661069126773995,
+  "heading": 90.14719389347289
+ },
+ {
+  "launch": 1,
+  "load": 6,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.24037460238,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009354878047305263,
+  "heading": 90.34119198643857
+ },
+ {
+  "launch": 1,
+  "load": 7,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.7026855722,
+   "ComputedTerrainMm": 73856.00707493722
+  },
+  "pitch": -0.010372511504643609,
+  "heading": 90.11767506662525
+ },
+ {
+  "launch": 1,
+  "load": 7,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.49053671956,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010575784805770885,
+  "heading": 90.12641533569432
+ },
+ {
+  "launch": 1,
+  "load": 7,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.35917504132,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010379444841701049,
+  "heading": 90.10739731103017
+ },
+ {
+  "launch": 1,
+  "load": 8,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.64928074181,
+   "ComputedTerrainMm": 73855.9687230736
+  },
+  "pitch": -0.009302666981090417,
+  "heading": 90.12446936746247
+ },
+ {
+  "launch": 1,
+  "load": 8,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.37731862813,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009129985125386715,
+  "heading": 90.14009807343948
+ },
+ {
+  "launch": 1,
+  "load": 8,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.2549386248,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009288148434312042,
+  "heading": 90.06733046264411
+ },
+ {
+  "launch": 1,
+  "load": 9,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.67612332106,
+   "ComputedTerrainMm": 73855.95525894314
+  },
+  "pitch": -0.009170204927856127,
+  "heading": 90.11879191859484
+ },
+ {
+  "launch": 1,
+  "load": 9,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.31323804706,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.00951307193521204,
+  "heading": 90.12833232815508
+ },
+ {
+  "launch": 1,
+  "load": 9,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.19769581407,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009810466250524168,
+  "heading": 90.14950486532193
+ },
+ {
+  "launch": 1,
+  "load": 10,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.7406155467,
+   "ComputedTerrainMm": 73855.99162336439
+  },
+  "pitch": -0.00961512632965565,
+  "heading": 90.07305739309429
+ },
+ {
+  "launch": 1,
+  "load": 10,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.27418024093,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009545127300237936,
+  "heading": 90.0365161995411
+ },
+ {
+  "launch": 1,
+  "load": 10,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.09585569054,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010511156431248852,
+  "heading": 89.95804070114347
+ },
+ {
+  "launch": 2,
+  "load": 1,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.65006864071,
+   "ComputedTerrainMm": 73856.32065683603
+  },
+  "pitch": -0.009468296532367448,
+  "heading": 90.00424529865272
+ },
+ {
+  "launch": 2,
+  "load": 1,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.4161342904,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009468896052919566,
+  "heading": 89.95930074496414
+ },
+ {
+  "launch": 2,
+  "load": 1,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.2635570839,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.01003396300512936,
+  "heading": 89.78777156856906
+ },
+ {
+  "launch": 2,
+  "load": 2,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.68883866817,
+   "ComputedTerrainMm": 73856.34338483214
+  },
+  "pitch": -0.009209216264072615,
+  "heading": 90.05122537179095
+ },
+ {
+  "launch": 2,
+  "load": 2,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.41728447378,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.00960103708646011,
+  "heading": 90.05438636619434
+ },
+ {
+  "launch": 2,
+  "load": 2,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.22652862966,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009497049932693865,
+  "heading": 89.957839208348
+ },
+ {
+  "launch": 2,
+  "load": 3,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.54671046138,
+   "ComputedTerrainMm": 73856.33692797273
+  },
+  "pitch": -0.009731701419505401,
+  "heading": 90.04589186530944
+ },
+ {
+  "launch": 2,
+  "load": 3,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.3976521939,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009788370490212198,
+  "heading": 90.04370190597294
+ },
+ {
+  "launch": 2,
+  "load": 3,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.21576160938,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010472422032215115,
+  "heading": 89.97664035973284
+ },
+ {
+  "launch": 2,
+  "load": 4,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.69548458606,
+   "ComputedTerrainMm": 73856.3032913953
+  },
+  "pitch": -0.010584937875382228,
+  "heading": 90.04864749104664
+ },
+ {
+  "launch": 2,
+  "load": 4,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.34173931181,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010875209881766799,
+  "heading": 90.04904350357664
+ },
+ {
+  "launch": 2,
+  "load": 4,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.20842185616,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010726925350162635,
+  "heading": 90.04512333762389
+ },
+ {
+  "launch": 2,
+  "load": 5,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.70821017772,
+   "ComputedTerrainMm": 73856.33905883878
+  },
+  "pitch": -0.010302176700707046,
+  "heading": 90.05001743092467
+ },
+ {
+  "launch": 2,
+  "load": 5,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.30261072516,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009909012729126577,
+  "heading": 90.0513999230482
+ },
+ {
+  "launch": 2,
+  "load": 5,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.20075427741,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.0098397076521078,
+  "heading": 89.98383028477137
+ },
+ {
+  "launch": 2,
+  "load": 6,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.64197358489,
+   "ComputedTerrainMm": 73856.34644608945
+  },
+  "pitch": -0.00947944477968487,
+  "heading": 90.07278031208092
+ },
+ {
+  "launch": 2,
+  "load": 6,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.3879571259,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009678847881024437,
+  "heading": 90.09784493410247
+ },
+ {
+  "launch": 2,
+  "load": 6,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.30158112198,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009928593932453355,
+  "heading": 90.22731349304348
+ },
+ {
+  "launch": 2,
+  "load": 7,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.59958164394,
+   "ComputedTerrainMm": 73856.3197888434
+  },
+  "pitch": -0.011050704744817142,
+  "heading": 90.04334493516033
+ },
+ {
+  "launch": 2,
+  "load": 7,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.56707560271,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.011217286138159508,
+  "heading": 90.03859362271248
+ },
+ {
+  "launch": 2,
+  "load": 7,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.403581433,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.011098188514002684,
+  "heading": 90.02975980037345
+ },
+ {
+  "launch": 2,
+  "load": 8,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.68356086314,
+   "ComputedTerrainMm": 73856.34370706975
+  },
+  "pitch": -0.009752367492479501,
+  "heading": 90.07627264877226
+ },
+ {
+  "launch": 2,
+  "load": 8,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.35969241709,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009706079054568701,
+  "heading": 90.10465346513554
+ },
+ {
+  "launch": 2,
+  "load": 8,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.26572054625,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010059204749329845,
+  "heading": 90.17168041640478
+ },
+ {
+  "launch": 2,
+  "load": 9,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.57641778886,
+   "ComputedTerrainMm": 73856.32227919996
+  },
+  "pitch": -0.009764399768187954,
+  "heading": 90.0455686618231
+ },
+ {
+  "launch": 2,
+  "load": 9,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.46849510819,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009875527663268222,
+  "heading": 90.04293954359999
+ },
+ {
+  "launch": 2,
+  "load": 9,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.28671255708,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009557952059135587,
+  "heading": 89.95078129089444
+ },
+ {
+  "launch": 2,
+  "load": 10,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.60734980553,
+   "ComputedTerrainMm": 73856.31893202662
+  },
+  "pitch": -0.010477726621914745,
+  "heading": 90.07871679119292
+ },
+ {
+  "launch": 2,
+  "load": 10,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.37933587283,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010169525342604572,
+  "heading": 90.11000251368831
+ },
+ {
+  "launch": 2,
+  "load": 10,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.25166223198,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010723175518463858,
+  "heading": 90.33745006799674
+ },
+ {
+  "launch": 3,
+  "load": 1,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.60458284616,
+   "ComputedTerrainMm": 73856.36874567717
+  },
+  "pitch": -0.009299996752488614,
+  "heading": 90.07549630193877
+ },
+ {
+  "launch": 3,
+  "load": 1,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.33820494264,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009136422078091863,
+  "heading": 90.0389935112053
+ },
+ {
+  "launch": 3,
+  "load": 1,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.2055310309,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.00917434797354676,
+  "heading": 89.8250845978757
+ },
+ {
+  "launch": 3,
+  "load": 2,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.85251954198,
+   "ComputedTerrainMm": 73856.38416185975
+  },
+  "pitch": -0.009760737126281243,
+  "heading": 90.12151386851717
+ },
+ {
+  "launch": 3,
+  "load": 2,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.34255515039,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009841267395687005,
+  "heading": 90.13157373862141
+ },
+ {
+  "launch": 3,
+  "load": 2,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.19122219086,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.00998836153509686,
+  "heading": 90.16786679463836
+ },
+ {
+  "launch": 3,
+  "load": 3,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.61315101385,
+   "ComputedTerrainMm": 73856.33601527661
+  },
+  "pitch": -0.010236627944856932,
+  "heading": 90.11402920955764
+ },
+ {
+  "launch": 3,
+  "load": 3,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.41844583303,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010374932904887347,
+  "heading": 90.11642692771795
+ },
+ {
+  "launch": 3,
+  "load": 3,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.27426729351,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010750655081456359,
+  "heading": 90.12058096524072
+ },
+ {
+  "launch": 3,
+  "load": 4,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.76291606575,
+   "ComputedTerrainMm": 73856.354852207
+  },
+  "pitch": -0.0104468482727088,
+  "heading": 90.10906444620143
+ },
+ {
+  "launch": 3,
+  "load": 4,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.34384782612,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010286848820908032,
+  "heading": 90.10653265577365
+ },
+ {
+  "launch": 3,
+  "load": 4,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.20305930078,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010687315701692752,
+  "heading": 90.2265242067359
+ },
+ {
+  "launch": 3,
+  "load": 5,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.6703370139,
+   "ComputedTerrainMm": 73856.32094647735
+  },
+  "pitch": -0.009928417171335219,
+  "heading": 90.12004040932858
+ },
+ {
+  "launch": 3,
+  "load": 5,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.36225355417,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009892292662287822,
+  "heading": 90.12833841425076
+ },
+ {
+  "launch": 3,
+  "load": 5,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.26236592233,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009631107098696579,
+  "heading": 90.13688370191308
+ },
+ {
+  "launch": 3,
+  "load": 6,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.66426572204,
+   "ComputedTerrainMm": 73856.38608969748
+  },
+  "pitch": -0.009651122613384928,
+  "heading": 90.11890692750794
+ },
+ {
+  "launch": 3,
+  "load": 6,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.43774563074,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009980451773698214,
+  "heading": 90.12617505740259
+ },
+ {
+  "launch": 3,
+  "load": 6,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.2866184935,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009938947253154381,
+  "heading": 90.14164369199736
+ },
+ {
+  "launch": 3,
+  "load": 7,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.5733500123,
+   "ComputedTerrainMm": 73856.38894047588
+  },
+  "pitch": -0.009738335659951339,
+  "heading": 90.09691870193929
+ },
+ {
+  "launch": 3,
+  "load": 7,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.39897839725,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009743772880075142,
+  "heading": 90.08176443866613
+ },
+ {
+  "launch": 3,
+  "load": 7,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.18106798083,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.00975605800800601,
+  "heading": 89.9443137515174
+ },
+ {
+  "launch": 3,
+  "load": 8,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.83467447013,
+   "ComputedTerrainMm": 73856.35759774595
+  },
+  "pitch": -0.009814410919008058,
+  "heading": 90.11849690891694
+ },
+ {
+  "launch": 3,
+  "load": 8,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.40265898407,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009741853109456576,
+  "heading": 90.12536865586365
+ },
+ {
+  "launch": 3,
+  "load": 8,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.28530439734,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009636888802706876,
+  "heading": 90.11700363619025
+ },
+ {
+  "launch": 3,
+  "load": 9,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.67592494935,
+   "ComputedTerrainMm": 73856.33980017155
+  },
+  "pitch": -0.010075660767817837,
+  "heading": 90.11102335871873
+ },
+ {
+  "launch": 3,
+  "load": 9,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.37380940467,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.01039599880609139,
+  "heading": 90.11027188560948
+ },
+ {
+  "launch": 3,
+  "load": 9,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.20408654958,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010312211225006258,
+  "heading": 90.15895084195967
+ },
+ {
+  "launch": 3,
+  "load": 10,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73863.61315939575,
+   "ComputedTerrainMm": 73856.35244380683
+  },
+  "pitch": -0.009367816578766721,
+  "heading": 90.1359808911716
+ },
+ {
+  "launch": 3,
+  "load": 10,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.27862264961,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009022122887182356,
+  "heading": 90.16047442591847
+ },
+ {
+  "launch": 3,
+  "load": 10,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77814.15781099349,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.0095019512225267,
+  "heading": 90.2278691586976
+ }
+]

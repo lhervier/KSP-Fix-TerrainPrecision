@@ -1,0 +1,165 @@
+22:49:58 closed: dialog 'IntroKSC', pressing 'Merci, j'ai compris'
+22:52:18 witness parked at 28.613490, -80.615338
+22:54:12 launch 1 load  1 grass   ground under craft 73863.697 mm, KSP computes 73855.961 mm: +7.736 mm
+22:54:18 launch 1 load  1 before  ground under craft 77817.383 mm, KSP computes 74039.223 mm: +3778.160 mm
+22:54:20 screenshot 001-launch1-load01-before.png, heading 90.0, pitch -0.01 deg
+22:54:37 launch 1 load  1 past    ground under craft 77814.234 mm, KSP computes 74039.223 mm: +3775.011 mm, across
+22:54:53 screenshot 002-launch1-load01-astride.png, heading 89.9, pitch -0.01 deg
+22:55:02 launch 1 load  2 grass   ground under craft 73863.663 mm, KSP computes 73855.949 mm: +7.714 mm
+22:55:07 launch 1 load  2 before  ground under craft 77817.375 mm, KSP computes 74039.223 mm: +3778.152 mm
+22:55:09 screenshot 003-launch1-load02-before.png, heading 90.1, pitch -0.01 deg
+22:55:26 launch 1 load  2 past    ground under craft 77814.246 mm, KSP computes 74039.223 mm: +3775.023 mm, across
+22:55:42 screenshot 004-launch1-load02-astride.png, heading 90.0, pitch -0.01 deg
+22:55:52 launch 1 load  3 grass   ground under craft 73863.537 mm, KSP computes 73855.977 mm: +7.561 mm
+22:55:57 launch 1 load  3 before  ground under craft 77817.412 mm, KSP computes 74039.223 mm: +3778.188 mm
+22:55:59 screenshot 005-launch1-load03-before.png, heading 90.2, pitch -0.01 deg
+22:56:16 launch 1 load  3 past    ground under craft 77814.258 mm, KSP computes 74039.223 mm: +3775.035 mm, across
+22:56:32 screenshot 006-launch1-load03-astride.png, heading 90.4, pitch -0.01 deg
+22:56:41 launch 1 load  4 grass   ground under craft 73863.676 mm, KSP computes 73856.018 mm: +7.657 mm
+22:56:46 launch 1 load  4 before  ground under craft 77817.394 mm, KSP computes 74039.223 mm: +3778.171 mm
+22:56:48 screenshot 007-launch1-load04-before.png, heading 90.1, pitch -0.01 deg
+22:57:05 launch 1 load  4 past    ground under craft 77814.257 mm, KSP computes 74039.223 mm: +3775.034 mm, across
+22:57:22 screenshot 008-launch1-load04-astride.png, heading 90.0, pitch -0.01 deg
+22:57:23 screenshot 009-launch1-load04-table.png
+22:57:33 launch 1 load  5 grass   ground under craft 73863.661 mm, KSP computes 73856.001 mm: +7.660 mm
+22:57:38 launch 1 load  5 before  ground under craft 77817.371 mm, KSP computes 74039.223 mm: +3778.148 mm
+22:57:40 screenshot 010-launch1-load05-before.png, heading 90.1, pitch -0.01 deg
+22:57:57 launch 1 load  5 past    ground under craft 77814.215 mm, KSP computes 74039.223 mm: +3774.992 mm, across
+22:58:13 screenshot 011-launch1-load05-astride.png, heading 90.5, pitch -0.01 deg
+22:58:22 launch 1 load  6 grass   ground under craft 73863.508 mm, KSP computes 73855.950 mm: +7.558 mm
+22:58:27 launch 1 load  6 before  ground under craft 77817.394 mm, KSP computes 74039.223 mm: +3778.171 mm
+22:58:29 screenshot 012-launch1-load06-before.png, heading 90.2, pitch -0.01 deg
+22:58:46 launch 1 load  6 past    ground under craft 77814.240 mm, KSP computes 74039.223 mm: +3775.017 mm, across
+22:59:02 screenshot 013-launch1-load06-astride.png, heading 90.4, pitch -0.01 deg
+22:59:12 launch 1 load  7 grass   ground under craft 73863.703 mm, KSP computes 73856.007 mm: +7.696 mm
+22:59:17 launch 1 load  7 before  ground under craft 77817.491 mm, KSP computes 74039.223 mm: +3778.267 mm
+22:59:19 screenshot 014-launch1-load07-before.png, heading 90.1, pitch -0.01 deg
+22:59:36 launch 1 load  7 past    ground under craft 77814.359 mm, KSP computes 74039.223 mm: +3775.136 mm, across
+22:59:52 screenshot 015-launch1-load07-astride.png, heading 90.1, pitch -0.01 deg
+23:00:01 launch 1 load  8 grass   ground under craft 73863.649 mm, KSP computes 73855.969 mm: +7.681 mm
+23:00:06 launch 1 load  8 before  ground under craft 77817.377 mm, KSP computes 74039.223 mm: +3778.154 mm
+23:00:08 screenshot 016-launch1-load08-before.png, heading 90.1, pitch -0.01 deg
+23:00:25 launch 1 load  8 past    ground under craft 77814.255 mm, KSP computes 74039.223 mm: +3775.032 mm, across
+23:00:42 screenshot 017-launch1-load08-astride.png, heading 90.1, pitch -0.01 deg
+23:00:43 screenshot 018-launch1-load08-table.png
+23:00:52 launch 1 load  9 grass   ground under craft 73863.676 mm, KSP computes 73855.955 mm: +7.721 mm
+23:00:57 launch 1 load  9 before  ground under craft 77817.313 mm, KSP computes 74039.223 mm: +3778.090 mm
+23:00:59 screenshot 019-launch1-load09-before.png, heading 90.1, pitch -0.01 deg
+23:01:16 launch 1 load  9 past    ground under craft 77814.198 mm, KSP computes 74039.223 mm: +3774.975 mm, across
+23:01:33 screenshot 020-launch1-load09-astride.png, heading 90.2, pitch -0.01 deg
+23:01:42 launch 1 load 10 grass   ground under craft 73863.741 mm, KSP computes 73855.992 mm: +7.749 mm
+23:01:47 launch 1 load 10 before  ground under craft 77817.274 mm, KSP computes 74039.223 mm: +3778.051 mm
+23:01:49 screenshot 021-launch1-load10-before.png, heading 90.0, pitch -0.01 deg
+23:02:06 launch 1 load 10 past    ground under craft 77814.096 mm, KSP computes 74039.223 mm: +3774.873 mm, across
+23:02:22 screenshot 022-launch1-load10-astride.png, heading 89.9, pitch -0.01 deg
+23:02:23 screenshot 023-launch1-load10-table.png
+23:02:27 closed: recovery report
+23:04:21 launch 2 load  1 grass   ground under craft 73863.650 mm, KSP computes 73856.321 mm: +7.329 mm
+23:04:26 launch 2 load  1 before  ground under craft 77817.416 mm, KSP computes 74039.223 mm: +3778.193 mm
+23:04:28 screenshot 024-launch2-load01-before.png, heading 89.9, pitch -0.01 deg
+23:04:45 launch 2 load  1 past    ground under craft 77814.264 mm, KSP computes 74039.223 mm: +3775.040 mm, across
+23:05:01 screenshot 025-launch2-load01-astride.png, heading 89.7, pitch -0.01 deg
+23:05:10 launch 2 load  2 grass   ground under craft 73863.689 mm, KSP computes 73856.343 mm: +7.345 mm
+23:05:16 launch 2 load  2 before  ground under craft 77817.417 mm, KSP computes 74039.223 mm: +3778.194 mm
+23:05:18 screenshot 026-launch2-load02-before.png, heading 90.1, pitch -0.01 deg
+23:05:35 launch 2 load  2 past    ground under craft 77814.227 mm, KSP computes 74039.223 mm: +3775.003 mm, across
+23:05:51 screenshot 027-launch2-load02-astride.png, heading 90.0, pitch -0.01 deg
+23:06:00 launch 2 load  3 grass   ground under craft 73863.547 mm, KSP computes 73856.337 mm: +7.210 mm
+23:06:05 launch 2 load  3 before  ground under craft 77817.398 mm, KSP computes 74039.223 mm: +3778.174 mm
+23:06:07 screenshot 028-launch2-load03-before.png, heading 90.0, pitch -0.01 deg
+23:06:24 launch 2 load  3 past    ground under craft 77814.216 mm, KSP computes 74039.223 mm: +3774.993 mm, across
+23:06:41 screenshot 029-launch2-load03-astride.png, heading 89.9, pitch -0.01 deg
+23:06:50 launch 2 load  4 grass   ground under craft 73863.695 mm, KSP computes 73856.303 mm: +7.392 mm
+23:06:55 launch 2 load  4 before  ground under craft 77817.342 mm, KSP computes 74039.223 mm: +3778.119 mm
+23:06:57 screenshot 030-launch2-load04-before.png, heading 90.0, pitch -0.01 deg
+23:07:14 launch 2 load  4 past    ground under craft 77814.208 mm, KSP computes 74039.223 mm: +3774.985 mm, across
+23:07:30 screenshot 031-launch2-load04-astride.png, heading 90.1, pitch -0.01 deg
+23:07:31 screenshot 032-launch2-load04-table.png
+23:07:41 launch 2 load  5 grass   ground under craft 73863.708 mm, KSP computes 73856.339 mm: +7.369 mm
+23:07:46 launch 2 load  5 before  ground under craft 77817.303 mm, KSP computes 74039.223 mm: +3778.079 mm
+23:07:48 screenshot 033-launch2-load05-before.png, heading 90.1, pitch -0.01 deg
+23:08:05 launch 2 load  5 past    ground under craft 77814.201 mm, KSP computes 74039.223 mm: +3774.978 mm, across
+23:08:21 screenshot 034-launch2-load05-astride.png, heading 90.0, pitch -0.01 deg
+23:08:30 launch 2 load  6 grass   ground under craft 73863.642 mm, KSP computes 73856.346 mm: +7.296 mm
+23:08:35 launch 2 load  6 before  ground under craft 77817.388 mm, KSP computes 74039.223 mm: +3778.165 mm
+23:08:37 screenshot 035-launch2-load06-before.png, heading 90.1, pitch -0.01 deg
+23:08:54 launch 2 load  6 past    ground under craft 77814.302 mm, KSP computes 74039.223 mm: +3775.078 mm, across
+23:09:11 screenshot 036-launch2-load06-astride.png, heading 90.3, pitch -0.01 deg
+23:09:20 launch 2 load  7 grass   ground under craft 73863.600 mm, KSP computes 73856.320 mm: +7.280 mm
+23:09:25 launch 2 load  7 before  ground under craft 77817.567 mm, KSP computes 74039.223 mm: +3778.344 mm
+23:09:27 screenshot 037-launch2-load07-before.png, heading 90.0, pitch -0.01 deg
+23:09:44 launch 2 load  7 past    ground under craft 77814.404 mm, KSP computes 74039.223 mm: +3775.180 mm, across
+23:10:00 screenshot 038-launch2-load07-astride.png, heading 90.0, pitch -0.01 deg
+23:10:10 launch 2 load  8 grass   ground under craft 73863.684 mm, KSP computes 73856.344 mm: +7.340 mm
+23:10:15 launch 2 load  8 before  ground under craft 77817.360 mm, KSP computes 74039.223 mm: +3778.136 mm
+23:10:17 screenshot 039-launch2-load08-before.png, heading 90.1, pitch -0.01 deg
+23:10:35 launch 2 load  8 past    ground under craft 77814.266 mm, KSP computes 74039.223 mm: +3775.043 mm, across
+23:10:51 screenshot 040-launch2-load08-astride.png, heading 90.3, pitch -0.01 deg
+23:10:52 screenshot 041-launch2-load08-table.png
+23:11:02 launch 2 load  9 grass   ground under craft 73863.576 mm, KSP computes 73856.322 mm: +7.254 mm
+23:11:07 launch 2 load  9 before  ground under craft 77817.468 mm, KSP computes 74039.223 mm: +3778.245 mm
+23:11:09 screenshot 042-launch2-load09-before.png, heading 90.0, pitch -0.01 deg
+23:11:26 launch 2 load  9 past    ground under craft 77814.287 mm, KSP computes 74039.223 mm: +3775.064 mm, across
+23:11:42 screenshot 043-launch2-load09-astride.png, heading 90.0, pitch -0.01 deg
+23:11:51 launch 2 load 10 grass   ground under craft 73863.607 mm, KSP computes 73856.319 mm: +7.288 mm
+23:11:56 launch 2 load 10 before  ground under craft 77817.379 mm, KSP computes 74039.223 mm: +3778.156 mm
+23:11:59 screenshot 044-launch2-load10-before.png, heading 90.1, pitch -0.01 deg
+23:12:16 launch 2 load 10 past    ground under craft 77814.252 mm, KSP computes 74039.223 mm: +3775.028 mm, across
+23:12:32 screenshot 045-launch2-load10-astride.png, heading 90.5, pitch -0.01 deg
+23:12:33 screenshot 046-launch2-load10-table.png
+23:12:37 closed: recovery report
+23:14:31 launch 3 load  1 grass   ground under craft 73863.605 mm, KSP computes 73856.369 mm: +7.236 mm
+23:14:36 launch 3 load  1 before  ground under craft 77817.338 mm, KSP computes 74039.223 mm: +3778.115 mm
+23:14:38 screenshot 047-launch3-load01-before.png, heading 90.0, pitch -0.01 deg
+23:14:55 launch 3 load  1 past    ground under craft 77814.206 mm, KSP computes 74039.223 mm: +3774.982 mm, across
+23:15:11 screenshot 048-launch3-load01-astride.png, heading 89.7, pitch -0.01 deg
+23:15:21 launch 3 load  2 grass   ground under craft 73863.853 mm, KSP computes 73856.384 mm: +7.468 mm
+23:15:26 launch 3 load  2 before  ground under craft 77817.343 mm, KSP computes 74039.223 mm: +3778.119 mm
+23:15:28 screenshot 049-launch3-load02-before.png, heading 90.1, pitch -0.01 deg
+23:15:45 launch 3 load  2 past    ground under craft 77814.191 mm, KSP computes 74039.223 mm: +3774.968 mm, across
+23:16:01 screenshot 050-launch3-load02-astride.png, heading 90.2, pitch -0.01 deg
+23:16:11 launch 3 load  3 grass   ground under craft 73863.613 mm, KSP computes 73856.336 mm: +7.277 mm
+23:16:16 launch 3 load  3 before  ground under craft 77817.418 mm, KSP computes 74039.223 mm: +3778.195 mm
+23:16:18 screenshot 051-launch3-load03-before.png, heading 90.1, pitch -0.01 deg
+23:16:35 launch 3 load  3 past    ground under craft 77814.274 mm, KSP computes 74039.223 mm: +3775.051 mm, across
+23:16:51 screenshot 052-launch3-load03-astride.png, heading 90.2, pitch -0.01 deg
+23:17:00 launch 3 load  4 grass   ground under craft 73863.763 mm, KSP computes 73856.355 mm: +7.408 mm
+23:17:05 launch 3 load  4 before  ground under craft 77817.344 mm, KSP computes 74039.223 mm: +3778.121 mm
+23:17:08 screenshot 053-launch3-load04-before.png, heading 90.1, pitch -0.01 deg
+23:17:25 launch 3 load  4 past    ground under craft 77814.203 mm, KSP computes 74039.223 mm: +3774.980 mm, across
+23:17:41 screenshot 054-launch3-load04-astride.png, heading 90.2, pitch -0.01 deg
+23:17:42 screenshot 055-launch3-load04-table.png
+23:17:51 launch 3 load  5 grass   ground under craft 73863.670 mm, KSP computes 73856.321 mm: +7.349 mm
+23:17:56 launch 3 load  5 before  ground under craft 77817.362 mm, KSP computes 74039.223 mm: +3778.139 mm
+23:17:58 screenshot 056-launch3-load05-before.png, heading 90.1, pitch -0.01 deg
+23:18:15 launch 3 load  5 past    ground under craft 77814.262 mm, KSP computes 74039.223 mm: +3775.039 mm, across
+23:18:31 screenshot 057-launch3-load05-astride.png, heading 90.2, pitch -0.01 deg
+23:18:41 launch 3 load  6 grass   ground under craft 73863.664 mm, KSP computes 73856.386 mm: +7.278 mm
+23:18:46 launch 3 load  6 before  ground under craft 77817.438 mm, KSP computes 74039.223 mm: +3778.215 mm
+23:18:48 screenshot 058-launch3-load06-before.png, heading 90.1, pitch -0.01 deg
+23:19:05 launch 3 load  6 past    ground under craft 77814.287 mm, KSP computes 74039.223 mm: +3775.063 mm, across
+23:19:21 screenshot 059-launch3-load06-astride.png, heading 90.2, pitch -0.01 deg
+23:19:31 launch 3 load  7 grass   ground under craft 73863.573 mm, KSP computes 73856.389 mm: +7.184 mm
+23:19:36 launch 3 load  7 before  ground under craft 77817.399 mm, KSP computes 74039.223 mm: +3778.176 mm
+23:19:38 screenshot 060-launch3-load07-before.png, heading 90.1, pitch -0.01 deg
+23:19:55 launch 3 load  7 past    ground under craft 77814.181 mm, KSP computes 74039.223 mm: +3774.958 mm, across
+23:20:11 screenshot 061-launch3-load07-astride.png, heading 89.9, pitch -0.01 deg
+23:20:20 launch 3 load  8 grass   ground under craft 73863.835 mm, KSP computes 73856.358 mm: +7.477 mm
+23:20:25 launch 3 load  8 before  ground under craft 77817.403 mm, KSP computes 74039.223 mm: +3778.179 mm
+23:20:28 screenshot 062-launch3-load08-before.png, heading 90.1, pitch -0.01 deg
+23:20:45 launch 3 load  8 past    ground under craft 77814.285 mm, KSP computes 74039.223 mm: +3775.062 mm, across
+23:21:01 screenshot 063-launch3-load08-astride.png, heading 90.1, pitch -0.01 deg
+23:21:02 screenshot 064-launch3-load08-table.png
+23:21:11 launch 3 load  9 grass   ground under craft 73863.676 mm, KSP computes 73856.340 mm: +7.336 mm
+23:21:16 launch 3 load  9 before  ground under craft 77817.374 mm, KSP computes 74039.223 mm: +3778.151 mm
+23:21:18 screenshot 065-launch3-load09-before.png, heading 90.1, pitch -0.01 deg
+23:21:35 launch 3 load  9 past    ground under craft 77814.204 mm, KSP computes 74039.223 mm: +3774.981 mm, across
+23:21:51 screenshot 066-launch3-load09-astride.png, heading 90.2, pitch -0.01 deg
+23:22:01 launch 3 load 10 grass   ground under craft 73863.613 mm, KSP computes 73856.352 mm: +7.261 mm
+23:22:06 launch 3 load 10 before  ground under craft 77817.279 mm, KSP computes 74039.223 mm: +3778.055 mm
+23:22:08 screenshot 067-launch3-load10-before.png, heading 90.2, pitch -0.01 deg
+23:22:25 launch 3 load 10 past    ground under craft 77814.158 mm, KSP computes 74039.223 mm: +3774.935 mm, across
+23:22:41 screenshot 068-launch3-load10-astride.png, heading 90.3, pitch -0.01 deg
+23:22:42 screenshot 069-launch3-load10-table.png
+23:22:46 closed: recovery report
+23:22:52 done: 90 readings, in D:\ksp-dev\campagnes\2026-10-11-runway-fix-rss\sans-runwayfix\fix\run

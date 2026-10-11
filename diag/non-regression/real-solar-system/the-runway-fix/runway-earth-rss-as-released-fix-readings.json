@@ -1,0 +1,14 @@
+[
+ {
+  "launch": 1,
+  "load": 0,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77817.19697080553,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010640178453601623,
+  "heading": 90.09138115968096
+ }
+]
