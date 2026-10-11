@@ -19,7 +19,7 @@ Les tests encore ouverts de [Real Solar System](docs/work-in-progress.md#real-so
 1. **Une release GitHub sur chaque dépôt vers lequel l'issue envoie le lecteur.** Aucun n'en a : ce
    dépôt, Diag LandedVessel, Diag TerrainHeight, Diag FloatingOrigin et Diag TerrainQuads (le cas
    [The seam between subdivision levels](docs/limits-and-solutions/stock/the-seam-between-subdivision-levels.md)
-   en dépend : liens, images et *Get it*). L'issue commence par faire installer Diag LandedVessel, et les trois README des
+   en dépend : l'instrument, sa page *What it shows* et *Get it*). L'issue commence par faire installer Diag LandedVessel, et les trois README des
    Diags renvoient vers `releases/latest` dans *Get it*, qui donne une 404 aujourd'hui — sur la page
    même où arrive un mainteneur depuis la première consigne du repro. `build.bat` produit déjà le
    dossier `GameData` ; la release, c'est ce dossier zippé. PQS Bench et Stock Quad Cache ne sont cités

@@ -30,11 +30,238 @@ a craft never stands on that edge. It is seen from the craft, some distance away
 
 ## The seam in stock
 
-How stock joins a quad of the highest level to a coarser one, why the vertices the two share do not
-land on the same point even in stock, and how far apart they are, load after load, belong to
-[KSP Diag - Terrain Quads](https://github.com/lhervier/KSP-Diag-TerrainQuads), which draws the seam and
-measures it: [What it shows](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/what-it-shows.md#the-seam)
-and [What the measurements show](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/what-the-measurements-show-seam.md).
+Where a quad of the highest level meets a coarser one, the finer quad leaves out every other vertex of
+the edge they share, and takes triangles that rest on the vertices both quads share, so that its edge
+runs along the same segments as the coarser one. [KSP Diag - Terrain Quads](https://github.com/lhervier/KSP-Diag-TerrainQuads) draws those
+triangles, on both sides of the seam; how stock picks them is in
+[its page](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/what-it-shows.md#the-seam).
+
+That join holds only as long as the vertices both quads share land on the same point. They do not, even
+in stock. Where they do not, the edge of the finer quad runs a little above or below the edge of the
+coarser one, and nothing joins the two: the terrain has a step, and a crack along the seam.
+
+![A side view across the edge between a coarser quad and a quad of the highest level: the two lines of terrain do not meet at the edge, leaving a step between them](../../../imgs/limits-and-solutions/stock/the-seam-between-subdivision-levels/step.svg)
+
+### Why the shared vertices do not meet
+
+The game places every terrain vertex in two steps, in `PQS.BuildVertexSurfaceRelative`:
+
+```csharp
+planetRel = base.transform.TransformPoint(vertRel);
+buildQuad.verts[vertexIndex] = buildQuad.transform.InverseTransformPoint(planetRel);
+```
+
+The first line takes the vertex from the centre of the body to the world, through the matrix of the
+terrain sphere: its result depends on `vertRel` and on that matrix, not on the quad's `Transform`. The
+second line expresses that world position relative to the quad's own `Transform`, as rounded. Read
+alone, this says that two quads built in the same frame of the sphere put a vertex they share on the
+same point. [The measurements](#measured-without-this-mod) say they do not: the vertices are apart at
+every load.
+
+Part of the gap comes before those two lines, from `vertRel` itself. Its direction from the centre of
+the body is computed in `PQS.BuildQuad`, in float, through the matrix of the quad being built:
+
+```csharp
+vbData.globalV = buildQuad.quadMatrix.MultiplyPoint3x4(cacheVerts[vertexIndex]);
+vbData.directionFromCenter = vbData.globalV.normalized;
+```
+
+The two quads of a seam reach a vertex they share through two different matrices, and the two
+directions can differ by the precision of a float, about 6 × 10⁻⁸: some 0.4 m along the ground at the
+radius of Earth, some 40 mm at the radius of Kerbin. That is the order of what the measurements give
+beside the coarser vertex. Most of the gap is vertical, though, the finer quad above or below the
+coarser one: about twice what it is beside on Earth, and several times more on Kerbin. Where that part
+comes from has not been traced.
+
+The matrix of the terrain sphere does not stay put either. Its position and rotation are held in float
+numbers, far from the origin of the world, and it changes when the origin of the world moves, or when
+the sphere turns; two quads built before and after such a change do not round the vertex they share
+the same way. That matrix keeps changing, at every load and during a flight, and is never put back
+where it was: [KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin) records it
+([at every load](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/docs/what-the-measurements-show-loading.md),
+[during a flight](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/docs/what-the-measurements-show-rotating-frame.md)).
+
+### Measured without this mod
+
+The two cases of [the protocol](the-seam-between-subdivision-levels/the-protocol.md), played by its
+script, `run-revert.py`, through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), with
+KSP Diag - Terrain Quads; the craft is `Diag3-Rocket`, a small rocket that comes with
+[KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin/tree/main/craft).
+Each table gives the last line of the log of KSP Diag - Terrain Quads after each load, the first load
+being the launch itself. A load is worth looking at when the finer quad is above the coarser one at the
+largest gap, on land: the script took its two screenshots there, at the size of the window, 1280 × 720,
+the game's interface hidden. On Kerbin it stopped at the first such load. On Earth the crack does not
+show at every such load, so it went on to the eighth (`--candidates 8`), and the pair shown is the one
+where the crack shows best. The logs, what the script printed and every reading are in
+[the runs](../../../diag/README.md#the-seam-between-subdivision-levels).
+
+**On Earth**, Real Solar System 20.1.3.0 as released, with what it requires (Kopernicus 248, Modular
+Flight Integrator, KSPTextureLoader, the RSS textures), on KSP 1.12.5 with Harmony, ModuleManager and
+KSP Community Fixes 1.41.1; the craft on the launchpad at Cape Canaveral, launched at UT 64,800 s for
+daylight, then reverted to launch 78 times: 79 loads. On Earth the highest level is 11, and every load
+ended with 60 seams between 49 quads of level 11 and 23 quads of level 10, 480 shared vertices.
+
+Over the 79 loads, the largest gap of a load went from 0.76 m to 2.82 m, and the mean over all shared
+vertices from 0.28 m to 2.08 m. At the largest gap, the finer quad was above the coarser one at 24 loads,
+and on land at 8 of them, each time by more than 0.5 m. The two screenshots were taken at each of those
+8 loads. In metres:
+
+| Load | Gap, mean | Gap, max | Finer quad at the largest gap | Beside | From the craft | Largest gap |
+|---:|---:|---:|---|---:|---:|---|
+| 11 | 0.41 | 1.18 | 1.04 above | 0.56 | 39.7 km | on land |
+| 12 | 0.65 | 1.46 | 1.26 above | 0.74 | 35.9 km | on land |
+| 16 | 0.72 | 1.58 | 1.39 above | 0.75 | 38.5 km | on land |
+| 19 | 0.62 | 1.42 | 1.24 above | 0.68 | 42.8 km | on land |
+| 46 | 0.46 | 1.03 | 0.85 above | 0.60 | 36.0 km | on land |
+| 53 | 0.60 | 1.49 | 1.30 above | 0.71 | 39.2 km | on land |
+| 67 | 0.35 | 1.03 | 0.84 above | 0.59 | 36.0 km | on land |
+| 79 | 0.31 | 0.89 | 0.78 above | 0.43 | 42.6 km | on land |
+
+At load 12, a dark line runs through the foot of the yellow line and along the seam; at loads 11, 16
+and 19 it shows as a dashed line, at loads 46, 53 and 67 as a dotted one, and at load 79 it can barely
+be seen. The step is not what decides: load 16 had the largest one, 1.39 m. An earlier session of 17
+loads, which stopped at the first load worth looking at, showed no crack that could be seen on its
+screenshot.
+
+<details>
+<summary>The 79 loads</summary>
+
+| Load | Gap, mean | Gap, max | Finer quad at the largest gap | Beside | From the craft | Largest gap |
+|---:|---:|---:|---|---:|---:|---|
+| 1 | 0.50 | 1.28 | 1.12 above | 0.61 | 36.7 km | under the sea |
+| 2 | 0.52 | 1.46 | 1.27 above | 0.71 | 38.8 km | under the sea |
+| 3 | 0.57 | 1.34 | 1.17 below | 0.65 | 40.3 km | under the sea |
+| 4 | 0.37 | 1.00 | 0.87 above | 0.49 | 37.7 km | under the sea |
+| 5 | 0.39 | 1.07 | 0.93 below | 0.52 | 40.3 km | on land |
+| 6 | 0.32 | 1.03 | 0.82 below | 0.63 | 35.5 km | on land |
+| 7 | 1.03 | 1.83 | 1.61 below | 0.87 | 38.4 km | on land |
+| 8 | 1.09 | 1.74 | 1.53 below | 0.83 | 40.2 km | on land |
+| 9 | 1.91 | 2.66 | 2.33 below | 1.29 | 38.8 km | under the sea |
+| 10 | 0.32 | 0.97 | 0.84 above | 0.47 | 33.1 km | under the sea |
+| 11 | 0.41 | 1.18 | 1.04 above | 0.56 | 39.7 km | on land |
+| 12 | 0.65 | 1.46 | 1.26 above | 0.74 | 35.9 km | on land |
+| 13 | 1.24 | 2.00 | 1.75 below | 0.97 | 39.5 km | under the sea |
+| 14 | 0.36 | 1.12 | 0.98 below | 0.54 | 37.9 km | on land |
+| 15 | 0.41 | 1.08 | 0.91 below | 0.59 | 38.4 km | on land |
+| 16 | 0.72 | 1.58 | 1.39 above | 0.75 | 38.5 km | on land |
+| 17 | 0.41 | 1.27 | 1.05 below | 0.72 | 43.0 km | on land |
+| 18 | 0.37 | 1.07 | 0.88 above | 0.62 | 41.5 km | under the sea |
+| 19 | 0.62 | 1.42 | 1.24 above | 0.68 | 42.8 km | on land |
+| 20 | 0.32 | 0.99 | 0.83 above | 0.54 | 41.5 km | under the sea |
+| 21 | 0.30 | 0.86 | 0.75 below | 0.42 | 43.0 km | under the sea |
+| 22 | 0.32 | 1.23 | 1.07 above | 0.60 | 40.0 km | under the sea |
+| 23 | 0.33 | 1.02 | 0.87 below | 0.54 | 40.2 km | on land |
+| 24 | 0.33 | 0.98 | 0.78 below | 0.60 | 38.8 km | on land |
+| 25 | 0.42 | 1.26 | 1.06 below | 0.68 | 39.2 km | under the sea |
+| 26 | 1.26 | 2.07 | 1.82 below | 0.99 | 43.3 km | on land |
+| 27 | 0.35 | 1.04 | 0.87 above | 0.56 | 38.8 km | under the sea |
+| 28 | 0.41 | 1.07 | 0.88 above | 0.61 | 35.3 km | under the sea |
+| 29 | 0.54 | 1.30 | 1.13 below | 0.66 | 35.8 km | under the sea |
+| 30 | 0.38 | 1.14 | 0.93 above | 0.67 | 37.4 km | under the sea |
+| 31 | 1.11 | 1.90 | 1.67 below | 0.91 | 40.1 km | on land |
+| 32 | 0.46 | 1.11 | 0.97 below | 0.53 | 40.9 km | on land |
+| 33 | 1.63 | 2.48 | 2.17 below | 1.19 | 37.2 km | on land |
+| 34 | 0.70 | 1.53 | 1.29 below | 0.81 | 37.2 km | under the sea |
+| 35 | 0.57 | 1.38 | 1.19 below | 0.69 | 35.1 km | under the sea |
+| 36 | 1.22 | 1.88 | 1.66 below | 0.89 | 35.9 km | under the sea |
+| 37 | 1.12 | 1.93 | 1.65 below | 1.00 | 35.3 km | under the sea |
+| 38 | 1.72 | 2.68 | 2.36 below | 1.28 | 40.3 km | under the sea |
+| 39 | 0.34 | 0.96 | 0.81 below | 0.51 | 39.7 km | under the sea |
+| 40 | 0.69 | 1.40 | 1.23 below | 0.68 | 38.1 km | under the sea |
+| 41 | 0.40 | 1.21 | 1.04 above | 0.62 | 32.7 km | under the sea |
+| 42 | 0.34 | 0.91 | 0.74 below | 0.53 | 34.3 km | under the sea |
+| 43 | 0.52 | 1.35 | 1.18 below | 0.64 | 34.8 km | under the sea |
+| 44 | 0.38 | 1.07 | 0.93 below | 0.52 | 38.0 km | under the sea |
+| 45 | 0.72 | 1.64 | 1.44 below | 0.80 | 39.7 km | under the sea |
+| 46 | 0.46 | 1.03 | 0.85 above | 0.60 | 36.0 km | on land |
+| 47 | 0.28 | 0.81 | 0.62 below | 0.52 | 41.5 km | on land |
+| 48 | 0.54 | 1.25 | 1.01 below | 0.73 | 38.8 km | on land |
+| 49 | 0.49 | 1.14 | 1.00 below | 0.54 | 39.7 km | on land |
+| 50 | 0.41 | 1.21 | 1.03 below | 0.63 | 38.8 km | under the sea |
+| 51 | 0.57 | 1.32 | 1.11 above | 0.72 | 35.2 km | under the sea |
+| 52 | 0.34 | 0.92 | 0.71 above | 0.58 | 33.2 km | under the sea |
+| 53 | 0.60 | 1.49 | 1.30 above | 0.71 | 39.2 km | on land |
+| 54 | 1.50 | 2.12 | 1.83 below | 1.06 | 35.7 km | under the sea |
+| 55 | 0.74 | 1.60 | 1.34 below | 0.86 | 38.8 km | on land |
+| 56 | 1.52 | 2.25 | 1.95 below | 1.13 | 34.6 km | under the sea |
+| 57 | 0.87 | 1.67 | 1.46 below | 0.82 | 37.2 km | under the sea |
+| 58 | 1.78 | 2.53 | 2.22 below | 1.20 | 35.5 km | on land |
+| 59 | 0.52 | 1.29 | 1.07 below | 0.72 | 38.7 km | on land |
+| 60 | 0.77 | 1.43 | 1.25 below | 0.69 | 40.1 km | on land |
+| 61 | 0.82 | 1.58 | 1.37 above | 0.79 | 33.8 km | under the sea |
+| 62 | 0.64 | 1.38 | 1.21 below | 0.66 | 36.7 km | under the sea |
+| 63 | 2.08 | 2.82 | 2.47 below | 1.37 | 38.6 km | under the sea |
+| 64 | 0.33 | 0.88 | 0.72 above | 0.51 | 37.5 km | under the sea |
+| 65 | 0.29 | 0.76 | 0.66 below | 0.37 | 37.6 km | under the sea |
+| 66 | 0.53 | 1.37 | 1.14 below | 0.76 | 37.3 km | under the sea |
+| 67 | 0.35 | 1.03 | 0.84 above | 0.59 | 36.0 km | on land |
+| 68 | 0.57 | 1.21 | 1.05 below | 0.61 | 37.7 km | under the sea |
+| 69 | 0.36 | 1.01 | 0.86 below | 0.52 | 39.0 km | under the sea |
+| 70 | 1.66 | 2.57 | 2.26 below | 1.22 | 40.9 km | under the sea |
+| 71 | 0.58 | 1.43 | 1.23 below | 0.74 | 38.9 km | under the sea |
+| 72 | 0.42 | 1.23 | 1.08 below | 0.59 | 34.5 km | on land |
+| 73 | 0.98 | 1.68 | 1.47 below | 0.81 | 37.7 km | under the sea |
+| 74 | 0.80 | 1.52 | 1.25 below | 0.85 | 32.5 km | on land |
+| 75 | 0.28 | 0.90 | 0.75 below | 0.50 | 41.2 km | under the sea |
+| 76 | 0.29 | 0.98 | 0.74 below | 0.63 | 39.2 km | on land |
+| 77 | 0.36 | 1.14 | 0.99 above | 0.56 | 35.4 km | under the sea |
+| 78 | 0.35 | 1.02 | 0.89 below | 0.49 | 42.7 km | under the sea |
+| 79 | 0.31 | 0.89 | 0.78 above | 0.43 | 42.6 km | on land |
+
+</details>
+
+**Load 12, the finer quad 1.26 m above**, the camera 37.0 km from the craft:
+
+![Without this mod, on Earth, load 12: grassland under a blue sky, the yellow line standing in the middle, a thin dark line running from its foot down to the right](../../../imgs/limits-and-solutions/stock/the-seam-between-subdivision-levels/earth-stock-largest-gap.png)
+
+![The same place, the same camera, with the triangles: a red area on the left, a green band on the right, meeting along the dark line](../../../imgs/limits-and-solutions/stock/the-seam-between-subdivision-levels/earth-stock-seams.png)
+
+*Without this mod, on Real Solar System as released: the craft on the launchpad at Cape Canaveral, load
+12, the camera beyond the seam and looking back towards the craft; KSP Diag - Terrain Quads drawing the
+yellow line only, then the triangles of the coarser quad in red and of the finer one in green.*
+
+**On Kerbin**, stock KSP 1.12.5 with Harmony, ModuleManager and KSP Community Fixes 1.41.1; the craft on
+the launchpad at the Space Center, launched at UT 3,600 s for daylight, reverted to launch until a step
+of at least 50 mm. On Kerbin the highest level is 10, and every load ended with 56 seams between 44
+quads of level 10 and 20 quads of level 9, 448 shared vertices. In millimetres:
+
+| Load | Gap, mean | Gap, max | Finer quad at the largest gap | Beside | From the craft | Largest gap |
+|---:|---:|---:|---|---:|---:|---|
+| 1 | 45.5 | 117.7 | 115.6 below | 22.3 | 6.7 km | under the sea |
+| 2 | 62.6 | 141.2 | 134.6 below | 42.7 | 6.7 km | under the sea |
+| 3 | 151.3 | 237.0 | 237.0 below | 1.3 | 8.1 km | on land |
+| 4 | 224.5 | 312.1 | 310.2 below | 33.9 | 7.1 km | under the sea |
+| 5 | 71.1 | 156.5 | 156.0 below | 11.4 | 6.6 km | on land |
+| 6 | 67.9 | 168.6 | 167.2 below | 21.1 | 6.3 km | on land |
+| 7 | 64.2 | 140.0 | 131.2 above | 48.9 | 8.1 km | on land |
+
+**Load 7, the finer quad 131 mm above**, the camera 8.4 km from the craft:
+
+![Without this mod, on Kerbin, load 7: green hills, the yellow line standing in the middle](../../../imgs/limits-and-solutions/stock/the-seam-between-subdivision-levels/kerbin-stock-largest-gap.png)
+
+![The same place, the same camera, with the triangles: a green band on the left, a red one on the right, meeting at the foot of the line](../../../imgs/limits-and-solutions/stock/the-seam-between-subdivision-levels/kerbin-stock-seams.png)
+
+*Without this mod, on stock KSP: the craft on the launchpad at the Space Center, load 7, the same way.*
+
+**The seam is open.** On Earth, over seventy-nine loads, the largest gap of a load went from 0.76 m to
+2.82 m, and the mean over all shared vertices from 0.28 m to 2.08 m. On Kerbin, over seven loads, the
+largest gap went from 118 mm to 312 mm, and the mean from 46 mm to 225 mm: much smaller, as the
+precision of a float is finer on a smaller body, but there as well. The gap changes from one load to the
+next, and so does its direction: at the largest gap, the finer quad was above the coarser one in 24
+loads of 79 on Earth, and in one of seven on Kerbin.
+
+**It can be seen, but it takes looking for.** On Kerbin, the first load where the finer quad was above,
+on land, showed a straight dark line through the foot of the yellow line. On Earth, it took more: of
+the eight such loads among 79, one showed a clear dark line, six a dashed or dotted one, and one barely
+anything. In both cases, the screenshot taken right after, with the triangles drawn, puts the line on
+the edge between the coarser quad and the finer one.
+
+**Where to look from.** The seam is looked at from beyond it, the camera on the side of the coarser
+quad, at loads where the finer quad was above at the largest gap — 131 mm above on Kerbin, 0.78 m to
+1.39 m on Earth — the camera some 50 m beyond the foot of the yellow line and 20 m above it. Which side
+is higher is only a hint: how close the camera stands, and how the seam runs across the view, matter at
+least as much. A crack can also show elsewhere along the seam than at the largest gap: the log only
+describes that one vertex.
 
 ## What this fix changes
 
@@ -58,9 +285,9 @@ How much wider the seam gets is measured in [The seam with this mod](#the-seam-w
 ## The seam with this mod
 
 The same measurement as without this mod, with this mod installed: the two cases of
-[the protocol of KSP Diag - Terrain Quads](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-protocol-seam.md),
-played by its script, `run-revert.py`, through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer),
-in the installs of [its measurements](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-measurements-seam.md), this mod added; the craft is `Diag3-Rocket`. The
+[the protocol](the-seam-between-subdivision-levels/the-protocol.md), played by its script,
+`run-revert.py`, through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), in the installs of
+[Measured without this mod](#measured-without-this-mod), this mod added; the craft is `Diag3-Rocket`. The
 script reverts to launch until the first load where the finer quad is above the coarser one at the
 largest gap, on land, with a step of at least 0.5 m on Earth and 50 mm on Kerbin, and takes two
 screenshots there, at the size of the window, 1280 × 720, the camera some 50 m beyond the foot of the
@@ -119,8 +346,7 @@ line only, then the triangles of the coarser quad in red and of the finer one in
 
 *With this mod, on stock KSP: the craft on the launchpad at the Space Center, load 10, the same way.*
 
-Next to the same measurements without this mod
-([KSP Diag - Terrain Quads](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-measurements-seam.md)):
+Next to the same measurements without this mod ([Measured without this mod](#measured-without-this-mod)):
 
 | | Loads | Gap, max | Median of the gap max | Gap, mean | Finer quad above |
 |---|---:|---|---:|---|---:|
@@ -157,22 +383,12 @@ on a 1920 × 1080 window). Click it for the full resolution.*
 The camera can be brought close to the seam, though: pulled back from the craft far enough to stand
 just beyond it, and turned back towards the craft. From there, the gap shows as a thin dark line along
 the seam, where the terrain is open and what lies behind it shows through; best when the finer quad,
-the one further from the camera, is the higher. In stock:
-
-![Without this mod: grassland, a yellow vertical line, and a thin dark line running from its foot](https://raw.githubusercontent.com/lhervier/KSP-Diag-TerrainQuads/main/imgs/earth-stock-largest-gap.png)
-
-![The same place, the same camera, with the triangles of the two quads drawn](https://raw.githubusercontent.com/lhervier/KSP-Diag-TerrainQuads/main/imgs/earth-stock-seams.png)
-
-*Without this mod, on Real Solar System as released: a craft on the launchpad at Cape Canaveral, the
-camera beyond the seam, 37.0 km from the craft, at the 12th of 79 loads; two screenshots at 1280 × 720
-from the same camera, with
-KSP Diag - Terrain Quads drawing, first, only a yellow line on the vertex of the largest gap, then
-the triangles of the coarser quad in red and of the finer one in green.*
+the one further from the camera, is the higher. In stock, the two screenshots of load 12 in
+[Measured without this mod](#measured-without-this-mod) show it, the camera 37.0 km from the craft.
 
 It takes looking for: without this mod, of the eight loads among 79 where the finer quad was above, on
-land, the crack showed clearly at this one only, for a step of 1.26 m, and as a dashed or dotted line at
-most others
-([what the measurements show](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/what-the-measurements-show-seam.md));
+land, the crack showed clearly at that one only, for a step of 1.26 m, and as a dashed or dotted line at
+most others;
 with this mod, wider, it shows more readily (see [The seam with this mod](#the-seam-with-this-mod)).
 
 ## A possible solution

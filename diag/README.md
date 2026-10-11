@@ -311,11 +311,24 @@ with this mod as installed. Read in
 
 ## The seam between subdivision levels
 
-[KSP Diag - Terrain Quads](https://github.com/lhervier/KSP-Diag-TerrainQuads) and KSP-MCPServer added to
-this mod at `logLevel = Debug`, the craft `Diag3-Rocket` on the launchpad reverted to launch by the
-script of its protocol, `run-revert.py`, until the finer quad is above at the largest gap, on land.
-Read in [The seam with this mod](../docs/limits-and-solutions/stock/the-seam-between-subdivision-levels.md#the-seam-with-this-mod).
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
+[KSP Diag - Terrain Quads](https://github.com/lhervier/KSP-Diag-TerrainQuads) and KSP-MCPServer, without
+this mod and with it at `logLevel = Debug`: the craft `Diag3-Rocket` on the launchpad, reverted to
+launch by the script of [the protocol of the seam](../docs/limits-and-solutions/stock/the-seam-between-subdivision-levels/the-protocol.md),
+[`run-revert.py`](automation/run-revert.py), until the finer quad is above at the largest gap, on land:
+`--min-step 500 --ut 64800` on Earth, `--min-step 50 --ut 3600` on Kerbin. Read in
+[Measured without this mod](../docs/limits-and-solutions/stock/the-seam-between-subdivision-levels.md#measured-without-this-mod) and
+[The seam with this mod](../docs/limits-and-solutions/stock/the-seam-between-subdivision-levels.md#the-seam-with-this-mod).
 
+- [`revert-earth-rss-stock.log`](limits-and-solutions/stock/the-seam-between-subdivision-levels/revert-earth-rss-stock.log) — on Earth, Real Solar System
+  20.1.3.0 as released and what it requires added, at Cape Canaveral, without this mod, with
+  `--candidates 8 --max-reverts 80`: 79 loads, the screenshots taken at 8 of them; what the script
+  printed in [`revert-earth-rss-stock-script.txt`](limits-and-solutions/stock/the-seam-between-subdivision-levels/revert-earth-rss-stock-script.txt),
+  and every reading in [`revert-earth-rss-stock-readings.json`](limits-and-solutions/stock/the-seam-between-subdivision-levels/revert-earth-rss-stock-readings.json).
+- [`revert-kerbin-stock.log`](limits-and-solutions/stock/the-seam-between-subdivision-levels/revert-kerbin-stock.log) — on Kerbin, at the Space Center,
+  without this mod, seven loads; what the script printed in
+  [`revert-kerbin-stock-script.txt`](limits-and-solutions/stock/the-seam-between-subdivision-levels/revert-kerbin-stock-script.txt), and every reading in
+  [`revert-kerbin-stock-readings.json`](limits-and-solutions/stock/the-seam-between-subdivision-levels/revert-kerbin-stock-readings.json).
 - [`revert-earth-rss-fix-diag4.log`](limits-and-solutions/stock/the-seam-between-subdivision-levels/revert-earth-rss-fix-diag4.log) — on Earth, Real Solar
   System 20.1.3.0 as released and what it requires added, at Cape Canaveral, nine loads; what the
   script printed in [`revert-earth-rss-fix-diag4-script.txt`](limits-and-solutions/stock/the-seam-between-subdivision-levels/revert-earth-rss-fix-diag4-script.txt),
