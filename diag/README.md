@@ -238,12 +238,26 @@ from the Desert Launch Site, one session of the game each, by the script of
 
 ## The protocol of the quads of the highest level, in flight
 
-KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, this mod at `logLevel = Debug`,
-KSP Diag - Terrain Quads, KSP Diag - Floating Origin and KSP-MCPServer: on each body, one flight of
-[the protocol of the quads of the highest level, in flight](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-protocol-flight.md),
-`Quad-Rocket` launched from the launchpad, played by its script, `run-flight.py`, and read by its
-`analyse-flight.py`. Read in [Checking the ground: in flight](../docs/checking-the-culprit-flight/the-ground.md).
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Quads, KSP Diag
+- Floating Origin and KSP-MCPServer, without this mod and with it at `logLevel = Debug`: on each body,
+one flight of [the protocol of the quads of the highest level, in flight](../docs/checking-the-culprit-flight/the-protocol.md),
+[`Quad-Rocket`](checking-the-culprit-flight/Quad-Rocket.craft) launched from the launchpad, played by its script,
+[`run-flight.py`](automation/run-flight.py), and read by [`analyse-flight.py`](automation/analyse-flight.py).
+Read in [Checking the ground: in flight](../docs/checking-the-culprit-flight/the-ground.md).
 
+- [`flight-kerbin-stock.log`](checking-the-culprit-flight/flight-kerbin-stock.log) — on Kerbin, from the launchpad of the Space Center, 72 *Logs*, without this mod; what the script printed in
+  [`flight-kerbin-stock-script.txt`](checking-the-culprit-flight/flight-kerbin-stock-script.txt), what each *Log* answered in
+  [`flight-kerbin-stock-readings.json`](checking-the-culprit-flight/flight-kerbin-stock-readings.json), the two files of the *Logs* in
+  [`flight-kerbin-stock-logs.csv`](checking-the-culprit-flight/flight-kerbin-stock-logs.csv) and [`flight-kerbin-stock-quads.zip`](checking-the-culprit-flight/flight-kerbin-stock-quads.zip)
+  (zipped: 42 MB once unzipped), and what `analyse-flight.py` printed in
+  [`flight-kerbin-stock-analysis.txt`](checking-the-culprit-flight/flight-kerbin-stock-analysis.txt).
+- [`flight-earth-rss-stock.log`](checking-the-culprit-flight/flight-earth-rss-stock.log) — on Earth, Real Solar System 20.1.3.0 as released and what it requires added, from the
+  launchpad of Cape Canaveral, 55 *Logs*, without this mod; what the script printed in
+  [`flight-earth-rss-stock-script.txt`](checking-the-culprit-flight/flight-earth-rss-stock-script.txt), what each *Log* answered in
+  [`flight-earth-rss-stock-readings.json`](checking-the-culprit-flight/flight-earth-rss-stock-readings.json), the two files of the *Logs* in
+  [`flight-earth-rss-stock-logs.csv`](checking-the-culprit-flight/flight-earth-rss-stock-logs.csv) and [`flight-earth-rss-stock-quads.zip`](checking-the-culprit-flight/flight-earth-rss-stock-quads.zip)
+  (zipped: 40 MB once unzipped), and what `analyse-flight.py` printed in
+  [`flight-earth-rss-stock-analysis.txt`](checking-the-culprit-flight/flight-earth-rss-stock-analysis.txt).
 - [`flight-kerbin-fix.log`](checking-the-culprit-flight/flight-kerbin-fix.log) — on Kerbin, from the launchpad of the
   Space Center, 73 *Logs*; what the script printed in [`flight-kerbin-fix-script.txt`](checking-the-culprit-flight/flight-kerbin-fix-script.txt), what each *Log*
   answered in [`flight-kerbin-fix-readings.json`](checking-the-culprit-flight/flight-kerbin-fix-readings.json), the two
@@ -516,7 +530,7 @@ mod at `logLevel = Debug`, or not: each session is here twice, `-without-this-mo
   and [`loading-principia-fix-lines.json`](non-regression/principia/the-bodies-it-moves-and-turns/loading-principia-fix-lines.json).
 - [`flight-principia-without-this-mod.log`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod.log) and
   [`flight-principia-fix.log`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix.log) — one flight each of
-  [the protocol of the quads of the highest level, in flight](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-protocol-flight.md),
+  [the protocol of the quads of the highest level, in flight](../docs/checking-the-culprit-flight/the-protocol.md),
   from the launchpad of the Space Center, KSP Diag - Terrain Quads and KSP Diag - Floating Origin; for each,
   as for the flights of [In flight](#the-protocol-of-the-quads-of-the-highest-level-in-flight), what the
   script printed, the readings, the logs, the quads (49 MB once unzipped) and the analysis:

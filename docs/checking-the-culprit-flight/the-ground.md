@@ -27,18 +27,25 @@ launchpad and left to fly until it falls into the sea, about a minute later; abo
 of the body to each of its vertices. Two quads of the highest level that share an edge should put its
 vertices at the same distance; the step between them is how far apart they are. *Siblings* are two
 quads split from the same quad, at the same moment; *cousins* any other two. It is
-[the protocol of the quads of the highest level, in flight](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-protocol-flight.md)
-of KSP Diag - Terrain Quads, played by its script,
-[`run-flight.py`](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-protocol-flight.md#played-by-a-script),
-and read by its `analyse-flight.py`: on each body, one flight without this mod, one with it, the same
+[the protocol of the quads of the highest level, in flight](the-protocol.md), played by its script,
+[`run-flight.py`](../../diag/automation/run-flight.py), and read by
+[`analyse-flight.py`](../../diag/automation/analyse-flight.py): on each body, one flight without this mod, one with it, the same
 craft and the same steps.
 
 ## On Kerbin
 
 From the launchpad of the Space Center; the highest subdivision level of Kerbin is 10.
 
-**On stock**, one flight, 72 *Logs*, up to 957 m and 653 m/s
-([the readings](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-measurements-flight.md#on-kerbin)).
+**On stock**, one flight, 72 *Logs* over 71 seconds of game time. The first one on the launchpad, the
+engine lit and the clamp still holding; the craft then rose to 957 m and reached 653 m/s, and the last
+*Log* was taken 30 m above the sea. The world moved 2,365 times: once as the scene opened, none while
+the craft was slower than 100 m/s, then every frame from about 235 m/s on. 356 quads of level 10 were
+written, most of them in several *Logs*. The session is logged in [`flight-kerbin-stock.log`](../../diag/checking-the-culprit-flight/flight-kerbin-stock.log); what the script printed is in
+[`flight-kerbin-stock-script.txt`](../../diag/checking-the-culprit-flight/flight-kerbin-stock-script.txt), what each *Log* answered in
+[`flight-kerbin-stock-readings.json`](../../diag/checking-the-culprit-flight/flight-kerbin-stock-readings.json), the two files of the *Logs* in
+[`flight-kerbin-stock-logs.csv`](../../diag/checking-the-culprit-flight/flight-kerbin-stock-logs.csv) and [`flight-kerbin-stock-quads.zip`](../../diag/checking-the-culprit-flight/flight-kerbin-stock-quads.zip) (zipped: 42 MB once unzipped), and what
+`analyse-flight.py` printed in [`flight-kerbin-stock-analysis.txt`](../../diag/checking-the-culprit-flight/flight-kerbin-stock-analysis.txt). Of the 9,103 shared edges between cousins, 2,940 have a step of more than 1 mm, 1,882 of more
+than 5 mm, and 1,120 of more than 10 mm.
 
 **With this mod**, in that same install, with this mod as the only difference, at `logLevel = Debug`.
 The session is logged in [`flight-kerbin-fix.log`](../../diag/checking-the-culprit-flight/flight-kerbin-fix.log); what
@@ -73,8 +80,14 @@ causes.
 From the launchpad of Cape Canaveral; the highest subdivision level of Earth is 11. The same craft flies
 a lower and shorter curve there than on Kerbin.
 
-**On stock**, one flight, 55 *Logs*, up to 565 m and 488 m/s
-([the readings](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-measurements-flight.md#on-earth-in-real-solar-system)).
+**On stock**, one flight, 55 *Logs* over 52 seconds of game time, up to 565 m and 488 m/s, the last
+*Log* taken 30 m above the sea. The world moved 1,392 times: once as the scene opened, none while the
+craft was slower than 100 m/s, then every frame from about 238 m/s on. 224 quads of level 11 were
+written. The session is logged in [`flight-earth-rss-stock.log`](../../diag/checking-the-culprit-flight/flight-earth-rss-stock.log); what the script printed is in
+[`flight-earth-rss-stock-script.txt`](../../diag/checking-the-culprit-flight/flight-earth-rss-stock-script.txt), what each *Log* answered in
+[`flight-earth-rss-stock-readings.json`](../../diag/checking-the-culprit-flight/flight-earth-rss-stock-readings.json), the two files of the *Logs* in
+[`flight-earth-rss-stock-logs.csv`](../../diag/checking-the-culprit-flight/flight-earth-rss-stock-logs.csv) and [`flight-earth-rss-stock-quads.zip`](../../diag/checking-the-culprit-flight/flight-earth-rss-stock-quads.zip) (zipped: 40 MB once unzipped), and what
+`analyse-flight.py` printed in [`flight-earth-rss-stock-analysis.txt`](../../diag/checking-the-culprit-flight/flight-earth-rss-stock-analysis.txt).
 
 **With this mod**, in that same install, with this mod as the only difference, at `logLevel = Debug`.
 The session is logged in [`flight-earth-rss-fix.log`](../../diag/checking-the-culprit-flight/flight-earth-rss-fix.log);
@@ -128,7 +141,8 @@ not been checked on its own.
 after a move only when the active craft is landed or slower than 100 m/s (`FloatingOrigin.FixedUpdate`), and
 the floating origin did not move while these craft were that slow; a rover driving on the ground covers
 that case ([Checking the culprit: driving on while the world moves](../checking-the-culprit-driving.md)).
-Nor do they say anything of the statics.
+Nor do they say anything of the statics, nor of a gap beside an edge: the *Log* writes distances from
+the centre of the body, so a step up or down shows, a gap or an overlap along the ground does not.
 
 **Two bodies are enough.** Kerbin and Earth are the two ends of what a player lands on: a float's step of
 62.5 mm and of 500 mm at the radius of the body, a stock body and one made by Kopernicus. The code that

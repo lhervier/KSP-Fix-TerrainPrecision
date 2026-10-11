@@ -56,10 +56,10 @@ Without Principia, the same saves spread *Settled* over 43.7, 18.2, 7.3 and 2.3 
 On stock, the spread is a draw from load to load: on Gilly, where a float's step is 1.95 mm, the six
 loads of this series happened to fall within 0.28 mm.
 
-**In flight.** [The protocol of the quads of the highest level, in flight](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-protocol-flight.md)
-of KSP Diag - Terrain Quads, with KSP Diag - Floating Origin, played by its script,
-[`run-flight.py`](https://github.com/lhervier/KSP-Diag-TerrainQuads/blob/main/docs/the-protocol-flight.md#played-by-a-script),
-and read by its `analyse-flight.py`: `Quad-Rocket` launched from the launchpad of the Space Center, one
+**In flight.** [The protocol of the quads of the highest level, in flight](../../checking-the-culprit-flight/the-protocol.md)
+read by KSP Diag - Terrain Quads, with KSP Diag - Floating Origin, played by its script,
+[`run-flight.py`](../../../diag/automation/run-flight.py),
+and read by [`analyse-flight.py`](../../../diag/automation/analyse-flight.py): `Quad-Rocket` launched from the launchpad of the Space Center, one
 *Log* about every second until it falls into the sea. Both flights start from the same game, which holds
 no state of Principia yet. Under Principia the rocket goes a little higher and faster than without it:
 84 *Logs* without this mod and 83 with it, up to 1,142 m and 1,126 m, into the sea at 738 m/s and 732 m/s,
