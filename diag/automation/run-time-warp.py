@@ -2,7 +2,7 @@
 day at the KSC, to see its lights come on and go off.
 
 It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Colliders installed, wait
+Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Terrain Height installed, wait
 for the main menu, put the craft file in saves/<folder>/Ships/SPH, then run:
 
     python run-time-warp.py --folder <a new game> --ut 3600 --out out
@@ -15,11 +15,11 @@ It starts that game itself from the main menu, in sandbox, then:
 3. warps to the night at the KSC, as Warp To of the map view does, and waits for its lights to come on;
 4. warps to the next noon at the KSC, the same way, and waits for them to go off.
 
-At the launch and at the end of each warp, once the craft has settled, it presses the button of KSP Diag -
-Colliders that logs the colliders under each craft: the runway's, with its height above the terrain the game
-computes there. It takes a screenshot at each of these moments, the camera turned towards the VAB, 1 km to the
-south-east, with KSP Diag - Colliders drawing nothing. It writes every reading to readings.json, prints the height
-under the craft each time, ends at the space centre, and leaves KSP running (unless --quit is given).
+At the launch and at the end of each warp, once the craft has settled, it presses Record in the window of KSP
+Diag - Terrain Height: the ground under the craft, the runway, and the ground KSP computes there, in millimetres
+above sea level. It takes a screenshot at each of these moments, the camera turned towards the VAB, 1 km to the
+south-east, and one of the table at the end. It writes every reading to readings.json, prints the height under the
+craft each time, ends at the space centre, and leaves KSP running (unless --quit is given).
 """
 import argparse
 import os
@@ -43,12 +43,10 @@ OPTIONS = None
 
 
 def shoot(session, name):
-    """Takes a screenshot towards the VAB, the craft beside it, without the colliders KSP Diag - Colliders draws."""
+    """Takes a screenshot towards the VAB, the craft beside it."""
     call("set_camera", distance=OPTIONS.camera_distance, heading=OPTIONS.camera_heading,
          pitch=OPTIONS.camera_pitch, aim_heading=OPTIONS.camera_aim)
-    call("colliders_set_display", mode=2)
     session.shoot(name)
-    call("colliders_set_display", mode=0)
 
 
 def warp_highest(days):
@@ -130,6 +128,7 @@ def main():
     session.arrived("at noon", launchpad=False)
     shoot(session, "noon")
 
+    session.finish()
     # Quitting KSP from flight logs an exception of its own user interface as it is torn down.
     call("go_to_scene", scene="SPACECENTER")
     common.at_space_centre()

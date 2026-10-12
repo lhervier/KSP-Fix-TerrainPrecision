@@ -4,9 +4,9 @@ Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression
 
 **Status: checked on Kerbin and on the Mun.** On the ground, a craft on the runway through three days of time
 warp at the highest rate, then a night and a day: the KSC stays out of its sphere throughout, and the runway
-stays within 0.04 mm under the craft, as without this mod. In flight, a craft passing 3 km over a static of
+stays within 0.12 mm under the craft, as without this mod. In flight, a craft passing 3 km over a static of
 the Mun in time warp on rails: the static follows it out of its sphere and back, and a capsule standing on it
-reads it within 0.002 mm before and after the pass, against 6 mm without this mod.
+reads it within 0.008 mm before and after the pass, against 10.7 mm without this mod.
 
 *Why.* Time warp does not turn the body under a static this mod has taken out of its sphere. Whether KSP
 turns the body or the world around the craft depends on the craft's altitude alone, not on the time warp
@@ -41,16 +41,16 @@ A new sandbox game, its universal time set to 3 600 s, in daylight at the KSC. T
 4. *Warp To* the next noon at the KSC.
 
 At the launch and at the end of each warp, once the craft has settled,
-[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) logs the colliders under it (its
-button *Log the colliders under each craft*): the runway's, with its height above the terrain the game
-computes there.
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) records a line (its button
+*Record*): the ground under the craft, the runway, and the ground KSP computes for the same spot.
 
-KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Colliders, and this mod
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Height, and this mod
 with its defaults at `logLevel = Debug`. Then the same without this mod.
 
 *Played by a script.* [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) plays the test through
 [`diag/automation/run-time-warp.py`](../../../diag/automation/run-time-warp.py), the rover in the
-`Ships/SPH` folder of the game: it starts the game itself from the main menu. *Warp To* is the one of the
+`Ships/SPH` folder of the game: it starts the game itself from the main menu, and takes a screenshot of the
+table of Diag Terrain Height at the end. *Warp To* is the one of the
 map view, or of an alarm. Every step is one a player can take: the test plays just as well by hand.
 
 ### The result
@@ -60,23 +60,25 @@ goes back under it only when the game leaves the flight for the space centre, af
 between, through the three days at 100 000× and the two *Warp To*:
 
 ```
-[TerrainPrecisionFix] [DEBUG] Kerbin static 'KSC': out of its sphere, corrected by 106.87 mm
+[TerrainPrecisionFix] [DEBUG] Kerbin static 'KSC': out of its sphere, corrected by 3.17 mm
 Warping to UT:137318.0. Max Rate Allowed: 5.0x.
-Real-time resumed. Current UT is: 137318.0. TgtUT Error is -0.0063s. (Undershot)
+Real-time resumed. Current UT is: 137318.0. TgtUT Error is -0.0137s. (Undershot)
 Warping to UT:150278.0. Max Rate Allowed: 5.0x.
-Real-time resumed. Current UT is: 150278.0. TgtUT Error is -0.0085s. (Undershot)
+Real-time resumed. Current UT is: 150278.0. TgtUT Error is -0.0115s. (Undershot)
 [TerrainPrecisionFix] [DEBUG] Kerbin static 'KSC': back under its sphere
 ```
 
-The height of the runway under the rover, lowest and highest over its four readings:
+The height of the runway under the rover above the ground KSP computes, lowest and highest over its four
+readings:
 
 | | without this mod | with this mod |
 |---|---|---|
-| runway | 4 299.942 to 4 299.984 mm (0.042 mm) | 4 301.354 to 4 301.385 mm (0.031 mm) |
+| runway | 4 248.879 to 4 248.999 mm (0.120 mm) | 4 301.261 to 4 301.372 mm (0.111 mm) |
 
 The logs with this mod and without it show no error.
 
-The logs, what the script printed and every reading of KSP Diag - Colliders, for both sessions, are in
+The logs, what the script printed, every line of Diag Terrain Height and a screenshot of its table, for
+both sessions, are in
 [`diag/non-regression/stock/time-warp/`](../../../diag/README.md#the-time-warp-protocol).
 
 ## In flight, low over a static
@@ -104,17 +106,18 @@ the launch pad is in [`diag/non-regression/stock/time-warp/warp-static-mun-kk/`]
    back to normal time;
 5. *Switch To* the capsule, from the map view.
 
-At the first loading and after the pass, once the capsule has settled, KSP Diag - Colliders logs the
-colliders under it: the launch pad's, with its height above the terrain the game computes there, 27.6 m
+At the first loading and after the pass, once the capsule has settled, KSP Diag - Terrain Height records a
+line: the ground under the capsule, the launch pad, and the ground KSP computes for the same spot, 27.6 m
 below the deck on this slope.
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, Kerbal Konstructs 1.12.3 and its
-CustomPreLaunchChecks, KSP Diag - Colliders, and this mod with its defaults at `logLevel = Debug`. Then the
-same without this mod.
+CustomPreLaunchChecks, KSP Diag - Terrain Height, and this mod with its defaults at `logLevel = Debug`. Then
+the same without this mod.
 
 *Played by a script*,
 [`diag/automation/run-time-warp-flyover.py`](../../../diag/automation/run-time-warp-flyover.py), the save and
-the rover in the game. The same holds: every step is one a player can take.
+the rover in the game, and a screenshot of the table of Diag Terrain Height at the end. The same holds:
+every step is one a player can take.
 
 ### The result
 
@@ -123,24 +126,26 @@ ground. In the log with this mod, the launch pad goes out of its sphere as the r
 back under it as it leaves, ten seconds later, all of it in time warp. Stripped of the rest:
 
 ```
-[TerrainPrecisionFix] [DEBUG] Mun static 'NewGroup': out of its sphere, corrected by 20.84 mm
+[TerrainPrecisionFix] [DEBUG] Mun static 'NewGroup': out of its sphere, corrected by 31.15 mm
 [TerrainPrecisionFix] [DEBUG] Mun static 'NewGroup': back under its sphere
 [FLIGHT GLOBALS]: Switching To Vessel Capsule ----------------------
-[TerrainPrecisionFix] [DEBUG] Mun static 'NewGroup': out of its sphere, corrected by 26.37 mm
+[TerrainPrecisionFix] [DEBUG] Mun static 'NewGroup': out of its sphere, corrected by 24.20 mm
 ```
 
-The height of the launch pad under the capsule, before and after the pass:
+The height of the launch pad under the capsule above the ground KSP computes, before and after the pass:
 
 | | without this mod | with this mod |
 |---|---|---|
-| launch pad | 27 590.370, then 27 596.407 mm (6.037 mm) | 27 574.836, then 27 574.834 mm (0.002 mm) |
+| launch pad | 27 608.905, then 27 598.229 mm (10.676 mm) | 27 575.044, then 27 575.036 mm (0.008 mm) |
 
-Without this mod, the launch pad comes back 6 mm higher after the *Switch To*: the draw of every loading
+Without this mod, the launch pad comes back 10.7 mm lower after the *Switch To*: the draw of every loading
 ([Checking the statics: loading the same save](../../checking-the-culprit-loading/the-statics.md)). With it, it comes
-back where it was: had it been left behind during the pass, it would have come back by as much. Each log
-shows one error, `Material doesn't have a texture property '_MainTex'`, the first time Kerbal Konstructs
-shows the launch pad in the session: without this mod, as it was placed, in the same session; with it, as the
-save is first loaded, before this mod takes anything out of its sphere.
+back where it was: had it been left behind during the pass, it would have come back by as much. Both logs
+show the same four errors, as the save is first loaded, before this mod takes anything out of its sphere:
+`CompileID failed because it reached the scene root without finding a 'SpaceCenter' game object`,
+`Triggers on concave MeshColliders are not supported` twice, and `Material doesn't have a texture property
+'_MainTex'`, the first time Kerbal Konstructs shows the launch pad.
 
-The logs, what the script printed and every reading of KSP Diag - Colliders, for both sessions, are in
+The logs, what the script printed, every line of Diag Terrain Height and a screenshot of its table, for both
+sessions, are in
 [`diag/non-regression/stock/time-warp/`](../../../diag/README.md#the-time-warp-flyover-protocol).

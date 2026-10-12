@@ -2,21 +2,21 @@
 moves the floating origin at every frame, then the craft landed on that static is read again.
 
 It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer, KSP Diag - Colliders and Kerbal Konstructs
+Python 3: no AI, no package to install. Start KSP with KSP-MCPServer, KSP Diag - Terrain Height and Kerbal Konstructs
 with the launch pad of warp-static-mun-kk/ installed, put warp-static-mun-kk.sfs and the rover's craft file in
 the game, wait for the main menu, then run:
 
     python run-time-warp-flyover.py --folder <the game> --save warp-static-mun-kk --out out
 
 It loads the save, a capsule landed on a launch pad Kerbal Konstructs placed near the highest point of the
-Mun's equator, reads the colliders under it with KSP Diag - Colliders, leaves for the space centre and launches
+Mun's equator, reads the ground under it with KSP Diag - Terrain Height, leaves for the space centre and launches
 the rover onto the runway. Then, for each pass:
 
 1. it puts the rover with Set Orbit on a circular orbit of the Mun, --altitude metres up, whose southernmost
    point is over the capsule, --lead metres before it (from the second pass, after switching to the rover);
 2. time warps on rails at --rate, as the . key does, until the rover has passed over the capsule and is
    farther than --away metres from it, then back to normal time;
-3. switches to the capsule, as Switch To of the map view does, and reads the colliders under it again.
+3. switches to the capsule, as Switch To of the map view does, and reads the ground under it again.
 
 It prints the closest the rover came to the capsule, writes every reading to readings.json, ends at the space
 centre, and leaves KSP running (unless --quit is given).
@@ -127,6 +127,7 @@ def main():
         call("switch_vessel", vessel=capsule["id"])
         session.arrived("after pass %d" % n, launchpad=False)
 
+    session.finish()
     # Quitting KSP from flight logs an exception of its own user interface as it is torn down.
     call("go_to_scene", scene="SPACECENTER")
     common.at_space_centre()

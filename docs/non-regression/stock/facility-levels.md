@@ -4,7 +4,7 @@ Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression
 
 **Status: checked on Kerbin.** At each of their three levels, a craft launched onto the launchpad stands on
 the launchpad of that level, and one launched onto the runway on the runway of that level, as without this
-mod. With it, each stays within 0.25 mm through its arrivals; without it, they move by up to 145 mm.
+mod. With it, each stays within 0.24 mm through its arrivals; without it, they move by up to 174 mm.
 
 *Why.* KSP finds an upgradeable facility by its path below the KSC, as it does a destructible building, and
 builds each level by replacing the model of the facility below the KSC, which this mod moves out of its
@@ -34,18 +34,19 @@ the launchpad and the runway, starting from the first, the one a new career star
 4. the launchpad and the runway upgraded from their menus (*Upgrade*), for the next level.
 
 That makes four arrivals on each of the three launchpads and the three runways. At each one, once the
-craft has settled, [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) logs the
-colliders under it (its button *Log the colliders under each craft*): the facility's, with its height above
-the terrain the game computes there.
+craft has settled, [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight)
+records a line (its button *Record*): the ground under the craft, the facility, and the ground KSP computes
+for the same spot.
 
-KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Colliders, and this mod
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Height, and this mod
 with its defaults at `logLevel = Debug`. Then the same without this mod.
 
 *Played by a script.* [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) plays the test through
 [`diag/automation/run-facility-levels.py`](../../../diag/automation/run-facility-levels.py), the rocket in the
 `Ships/VAB` folder of the game and the rover in its `Ships/SPH` folder: it starts and sets up the career
-itself from the main menu, and closes the guide of a new career wherever it shows. Every step is one a
-player can take: the test plays just as well by hand.
+itself from the main menu, closes the guide of a new career wherever it shows, and takes a screenshot of
+the table of Diag Terrain Height every twelve arrivals. Every step is one a player can take: the test plays
+just as well by hand.
 
 ## The result
 
@@ -54,25 +55,24 @@ the right):
 
 ![The menus of the launchpad and the runway, at each level](../../../imgs/non-regression/stock/facility-levels/facility-levels-menus.png)
 
-At each level, the collider under the craft is the one of the model of that level, the same with this mod
-and without it: `LP_lev2/collider`, `LP_lev3 1/LP_barsAlpha` and `launchpad/Launch Pad` for the launchpad,
-`Facility/runway_lev1_v2`, then `Facility/runway_collider` for the runway (at its two last levels, the end of
-the runway, `End09`, lies under the rover too).
-
-The height of the facility under the craft, lowest and highest over its arrivals:
+At each level, the craft stands on the model of that level, at a height of its own: with this mod, at the
+same height at every arrival, higher at each level; without it, around the same heights, within the spread
+of its arrivals. The height of the facility under the craft above the ground KSP computes, lowest and
+highest over its arrivals:
 
 | | without this mod | with this mod |
 |---|---|---|
-| launchpad, level 1 | 2 695.250 to 2 717.082 mm (21.832 mm) | 2 747.132 to 2 747.212 mm (0.080 mm) |
-| launchpad, level 2 | 4 894.831 to 5 039.569 mm (144.738 mm) | 4 954.407 to 4 954.445 mm (0.038 mm) |
-| launchpad, level 3 | 7 619.376 to 7 664.255 mm (44.878 mm) | 7 628.951 to 7 629.070 mm (0.119 mm) |
-| runway, level 1 | 4 060.587 to 4 180.585 mm (119.998 mm) | 4 064.050 to 4 064.212 mm (0.162 mm) |
-| runway, level 2 | 4 113.730 to 4 175.263 mm (61.534 mm) | 4 116.592 to 4 116.831 mm (0.239 mm) |
-| runway, level 3 | 4 283.828 to 4 363.766 mm (79.938 mm) | 4 300.969 to 4 301.201 mm (0.233 mm) |
+| launchpad, level 1 | 2 716.217 to 2 722.470 mm (6.253 mm) | 2 747.132 to 2 747.240 mm (0.108 mm) |
+| launchpad, level 2 | 4 876.859 to 4 980.296 mm (103.437 mm) | 4 954.367 to 4 954.433 mm (0.066 mm) |
+| launchpad, level 3 | 7 617.780 to 7 766.939 mm (149.159 mm) | 7 628.918 to 7 628.981 mm (0.063 mm) |
+| runway, level 1 | 4 044.329 to 4 195.717 mm (151.388 mm) | 4 063.833 to 4 063.972 mm (0.139 mm) |
+| runway, level 2 | 4 099.778 to 4 143.807 mm (44.029 mm) | 4 116.663 to 4 116.759 mm (0.096 mm) |
+| runway, level 3 | 4 218.304 to 4 392.319 mm (174.015 mm) | 4 301.077 to 4 301.316 mm (0.239 mm) |
 
 Before every exit from the flight, the log with this mod shows the KSC put back under its sphere, and
 after every arrival, taken out again: 24 times each. The logs with this mod show no error that the logs
 without it do not show.
 
-The logs, what the script printed and every reading of KSP Diag - Colliders, for both sessions, are in
+The logs, what the script printed, every line of Diag Terrain Height and the screenshots of its table, for
+both sessions, are in
 [`diag/non-regression/stock/facility-levels/`](../../../diag/README.md#the-facility-levels-protocol).

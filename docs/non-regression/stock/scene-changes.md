@@ -4,7 +4,7 @@ Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression
 
 **Status: checked on Kerbin and on Earth in Real Solar System.** With this mod, after every way of
 leaving a flight and coming back to the craft on the launchpad, the launchpad is where it was, within
-0.2 mm; without it, it moves by up to 67 mm on Kerbin and 938 mm on Earth. A craft launched from the
+0.14 mm; without it, it moves by up to 121 mm on Kerbin and 599 mm on Earth. A craft launched from the
 VAB stands on the launchpad, one launched from the SPH on the runway, and every building of the space
 centre opens.
 
@@ -42,12 +42,12 @@ flight and coming back to the craft each time:
 
 That makes eleven arrivals of the craft on the launchpad, with the launch that starts the game, and one of
 the rover on the runway. At each one, once the craft has settled,
-[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) logs the colliders under each craft
-(its button *Log the colliders under each craft*): the launchpad's or the runway's, with its height above
-the terrain the game computes there. In a sandbox game, three of the buildings of step 3 only show a dialog
-saying they are closed in that mode: hence the career.
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) records a line (its button
+*Record*): the ground under the craft, the launchpad or the runway, and the ground KSP computes for the same
+spot. In a sandbox game, three of the buildings of step 3 only show a dialog saying they are closed in that
+mode: hence the career.
 
-KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Colliders, and this mod
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Height, and this mod
 with its defaults at `logLevel = Debug`; on Earth, Real Solar System 20.1.3.0 and what it requires
 (Kopernicus 248, Modular Flight Integrator, KSPTextureLoader, the RSS textures). Then the same without this
 mod.
@@ -58,10 +58,11 @@ mod.
 in the `Ships/VAB` folder of the game and
 [`Diag3-Rover.craft`](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/craft/Diag3-Rover.craft)
 in its `Ships/SPH` folder: it starts and sets up the career itself from the main menu, and closes the
-guide of a new career by its button wherever it shows. Each way of leaving the flight is a script of its
+guide of a new career by its button wherever it shows; it takes a screenshot of the table of Diag Terrain
+Height at the end. Each way of leaving the flight is a script of its
 own, in [`diag/automation/scene-changes/`](../../../diag/automation/scene-changes/), that can also be played
 alone. Every step is one a player can take: the test
-plays just as well by hand, pressing *Log the colliders under each craft* at each arrival.
+plays just as well by hand, pressing *Record* of Diag Terrain Height at each arrival.
 
 ## The result
 
@@ -69,15 +70,15 @@ The height of the launchpad under the craft, lowest and highest over its eleven 
 
 | | without this mod | with this mod |
 |---|---|---|
-| Kerbin | 2 700.795 to 2 767.968 mm (67.173 mm) | 2 747.055 to 2 747.249 mm (0.193 mm) |
-| Earth | 3 316.901 to 4 255.051 mm (938.150 mm) | 3 581.708 to 3 581.821 mm (0.113 mm) |
+| Kerbin | 2 660.817 to 2 781.323 mm (120.506 mm) | 2 747.132 to 2 747.237 mm (0.105 mm) |
+| Earth | 3 302.721 to 3 901.777 mm (599.056 mm) | 3 581.686 to 3 581.821 mm (0.135 mm) |
 
-Back from the other body, the launchpad reads 2 746.312 mm on Kerbin and 3 997.469 mm on Earth without
-this mod, 2 747.249 mm and 3 581.710 mm with it: within 0.022 mm of the arrival before it on Kerbin, and
-0.045 mm on Earth.
+Back from the other body, the launchpad reads 2 693.563 mm on Kerbin and 3 465.798 mm on Earth without
+this mod, 2 747.222 mm and 3 581.782 mm with it: within 0.009 mm of the arrival before it on Kerbin, and
+0.030 mm on Earth.
 
-The rover, launched from the SPH, stands on the runway: the runway is under it, 4 092.747 mm above the
-terrain on Kerbin and 4 359.758 mm on Earth without this mod, 4 064.025 mm and 3 861.470 mm with it. One
+The rover, launched from the SPH, stands on the runway: the runway is under it, 4 031.609 mm above the
+terrain on Kerbin and 3 905.569 mm on Earth without this mod, 4 064.285 mm and 3 861.164 mm with it. One
 launch from the SPH per session gives one reading, not a spread.
 
 Without this mod, KSP places the KSC again at every arrival, rounded each time in a different way
@@ -102,24 +103,28 @@ is open on the craft on the launchpad. Stripped of the rest:
 setting new dominant body: Mun
 [TerrainPrecisionFix] [DEBUG] Kerbin static 'KSC': back under its sphere
 [HighLogic]: =========================== Scene Change : From FLIGHT to FLIGHT =====================
-[TerrainPrecisionFix] [DEBUG] Kerbin static 'KSC': out of its sphere, corrected by 78.23 mm
+[TerrainPrecisionFix] [DEBUG] Kerbin static 'KSC': out of its sphere, corrected by 121.10 mm
 ```
 
 At the space centre, every building opens and closes as without this mod, and the recovery report places
 the craft on the launchpad.
 
-Each log with this mod shows one error that the log without it does not show this time, both of the
-interface of the game, and neither of them about the statics:
+The logs with this mod show errors that the logs without it do not show this time, all of the interface of
+the game, and none of them about the statics:
 
-- on Kerbin, a `NullReferenceException` of the tooltip of a crew hatch (`CrewHatchController.HideTooltip`),
-  which the logs on Earth show with this mod and without it;
-- on Earth, a `NullReferenceException` of the Knowledge Base when the map view changes its focus
-  (`KnowledgeBase.OnMapFocusChange`), which an earlier session on Earth without this mod shows too
-  ([`scene-changes-earth-rss-without-this-mod-earlier.log`](../../../diag/non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-earlier.log)).
+- on Kerbin and on Earth, a `NullReferenceException` of the Knowledge Base when the map view changes its
+  focus (`KnowledgeBase.OnMapFocusChange`), which an earlier session on Earth without this mod shows too
+  ([`scene-changes-earth-rss-without-this-mod-earlier.log`](../../../diag/non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-earlier.log)),
+  and so does the session of [Destroyed buildings](destroyed-buildings.md) without this mod;
+- on Earth, as KSP quits at the end of the session, a `NullReferenceException` of the tooltip of a crew
+  hatch (`CrewHatchController.HideTooltip`);
+- on Kerbin, more of the `NullReferenceException` of KSP Community Fixes as the pointer passes over a part
+  in the map view (`BlockMapViewPartClick`), which every log shows, with this mod and without it: 18
+  against 9 on Kerbin, 18 each on Earth.
 
 The script stays a few seconds at the space centre at every arrival there, as a player looking at it
 would: leaving it within its first frames loses the anchor of its camera for the rest of the session, a
 bug of the game without this mod, which a script going straight on would trigger.
 
-The logs, what the script printed and every reading of KSP Diag - Colliders are in
+The logs, what the script printed, every line of Diag Terrain Height and a screenshot of its table are in
 [`diag/non-regression/stock/scene-changes/`](../../../diag/README.md#the-scene-changes-protocol).

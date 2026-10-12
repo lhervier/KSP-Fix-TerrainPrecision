@@ -1,7 +1,7 @@
 """Plays the scene changes protocol: a craft on the launchpad through every way of leaving the flight and coming back.
 
 It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Colliders installed, wait
+Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Terrain Height installed, wait
 for the main menu, then run:
 
     python run-scene-changes.py --folder <your career game> --craft VAB/<craft>.craft --out out
@@ -26,10 +26,11 @@ craft onto the launchpad, then plays each case of the folder scene-changes, in t
    launchpad as Switch To of the map view does.
 
 --cases plays some of them only, in that order. Each case can also be played alone, as a script of that folder
-taking the same arguments. At every arrival in flight, once the craft has settled, it presses the button of KSP
-Diag - Colliders that logs the colliders under each craft: the launchpad's, and its height above the terrain the
-game computes there. It takes a screenshot of every scene and screen it goes through, writes every reading to
-readings.json, prints the height of the launchpad at each arrival, and leaves KSP running (unless --quit is
+taking the same arguments. At every arrival in flight, once the craft has settled, it presses Record in the
+window of KSP Diag - Terrain Height: the ground under the craft, the launchpad, and the ground KSP computes there,
+in millimetres above sea level. Every twelve readings, and at the end, it takes a screenshot of the table, its
+window alone, then clears it. It takes a screenshot of every scene and screen it goes through, writes every reading
+to readings.json, prints the height of the launchpad at each arrival, and leaves KSP running (unless --quit is
 given).
 
 A new case is a script of the folder scene-changes (see its common.py), added to CASES below. The cases after

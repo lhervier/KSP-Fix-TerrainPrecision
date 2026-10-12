@@ -6,9 +6,10 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3622.4199999999796,
+   "ut": 3622.3999999999796,
+   "warpRate": 1,
    "vessel": {
-    "id": "99b0edda-2f12-423c-bdd1-3a76e2a1142c",
+    "id": "2553ba71-8bd7-4c4d-9d90-89dbd5b8f3bd",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
@@ -17,35 +18,19 @@
     "longitude": -74.55768886737845,
     "altitude": 72.57194089179393,
     "heightFromTerrain": 5.040104866027832,
-    "surfaceSpeed": 0.000156799142365161,
+    "surfaceSpeed": 0.00015679914235571955,
     "heading": 290.1666833271415,
+    "pitch": 89.96212294458441,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7108524744008606,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "99b0edda-2f12-423c-bdd1-3a76e2a1142c",
-    "situation": "PRELAUNCH",
-    "latitude": -0.09717842232211672,
-    "longitude": -74.55768886737845,
-    "colliders": [
-     {
-      "name": "collider",
-      "parent": "LP_lev2",
-      "heightMm": 2747.131702490151,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.82581005990505,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 67531.83706267737,
+   "ComputedTerrainMm": 64784.70550547354
+  }
  },
  {
   "step": 5,
@@ -54,46 +39,31 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3622.7599999999793,
+   "ut": 3622.7199999999793,
+   "warpRate": 1,
    "vessel": {
-    "id": "99b0edda-2f12-423c-bdd1-3a76e2a1142c",
+    "id": "2553ba71-8bd7-4c4d-9d90-89dbd5b8f3bd",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.09717842056913928,
-    "longitude": -74.55768886777255,
-    "altitude": 72.5720035204431,
-    "heightFromTerrain": 5.040109634399414,
-    "surfaceSpeed": 0.000133199888315647,
-    "heading": 290.6194796920403,
+    "latitude": -0.09717842174748033,
+    "longitude": -74.55768886768348,
+    "altitude": 72.57205529604107,
+    "heightFromTerrain": 5.0401105880737305,
+    "surfaceSpeed": 0.00016358971603376885,
+    "heading": 290.09050099859826,
+    "pitch": 89.96201259100953,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.710867289214828,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "99b0edda-2f12-423c-bdd1-3a76e2a1142c",
-    "situation": "PRELAUNCH",
-    "latitude": -0.09717842056913928,
-    "longitude": -74.55768886777255,
-    "colliders": [
-     {
-      "name": "collider",
-      "parent": "LP_lev2",
-      "heightMm": 2747.1896805800498,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.8221072377637,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 67531.94555907976,
+   "ComputedTerrainMm": 64784.70550547354
+  }
  },
  {
   "step": 6,
@@ -102,46 +72,31 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3623.039999999979,
+   "ut": 3623.019999999979,
+   "warpRate": 1,
    "vessel": {
-    "id": "99b0edda-2f12-423c-bdd1-3a76e2a1142c",
+    "id": "2553ba71-8bd7-4c4d-9d90-89dbd5b8f3bd",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.09717842205322398,
-    "longitude": -74.55768886757704,
-    "altitude": 72.57202324050013,
-    "heightFromTerrain": 5.040110111236572,
-    "surfaceSpeed": 0.00015260134594027863,
-    "heading": 290.4803733017477,
+    "latitude": -0.09717842210617476,
+    "longitude": -74.55768886813037,
+    "altitude": 72.57200157269835,
+    "heightFromTerrain": 5.040106296539307,
+    "surfaceSpeed": 0.0001570285006749586,
+    "heading": 290.04207255131035,
+    "pitch": 89.96199185171474,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7108811781024758,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "99b0edda-2f12-423c-bdd1-3a76e2a1142c",
-    "situation": "PRELAUNCH",
-    "latitude": -0.09717842205322398,
-    "longitude": -74.55768886757704,
-    "colliders": [
-     {
-      "name": "collider",
-      "parent": "LP_lev2",
-      "heightMm": 2747.2073883982375,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.82221189513803,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 67531.89569967799,
+   "ComputedTerrainMm": 64784.70550547354
+  }
  },
  {
   "step": 7,
@@ -151,45 +106,30 @@
    "scene": "FLIGHT",
    "paused": false,
    "ut": 3634.139999999969,
+   "warpRate": 1,
    "vessel": {
-    "id": "99b0edda-2f12-423c-bdd1-3a76e2a1142c",
+    "id": "2553ba71-8bd7-4c4d-9d90-89dbd5b8f3bd",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.09717856560450955,
-    "longitude": -74.55768891005087,
-    "altitude": 72.57199852995109,
-    "heightFromTerrain": 5.040081977844238,
-    "surfaceSpeed": 0.00017244695189784338,
-    "heading": 266.60450681051896,
+    "latitude": -0.09717855686039839,
+    "longitude": -74.55768889952294,
+    "altitude": 72.5719741738867,
+    "heightFromTerrain": 5.040081024169922,
+    "surfaceSpeed": 0.00011490189530372451,
+    "heading": 267.3673085814771,
+    "pitch": 89.96248233530608,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7113959928300883,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "99b0edda-2f12-423c-bdd1-3a76e2a1142c",
-    "situation": "PRELAUNCH",
-    "latitude": -0.09717856560450955,
-    "longitude": -74.55768891005087,
-    "colliders": [
-     {
-      "name": "collider",
-      "parent": "LP_lev2",
-      "heightMm": 2747.211869689636,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.8163277991116,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 67531.89401142299,
+   "ComputedTerrainMm": 64784.70550500788
+  }
  },
  {
   "step": 9,
@@ -198,46 +138,31 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3647.519999999957,
+   "ut": 3652.539999999952,
+   "warpRate": 1,
    "vessel": {
-    "id": "e6af9ff7-ea69-4628-a5f3-b7e42ec85b41",
+    "id": "620a704c-5e9e-499f-8b65-6ec70dc34b22",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.04890439473384631,
-    "longitude": -74.71016128465698,
-    "altitude": 69.59394332952797,
-    "heightFromTerrain": 0.7449406981468201,
-    "surfaceSpeed": 0.00013918089868487544,
-    "heading": 90.47313945664365,
+    "latitude": -0.04890420678585271,
+    "longitude": -74.71015539995003,
+    "altitude": 69.59545755863655,
+    "heightFromTerrain": 0.7464796304702759,
+    "surfaceSpeed": 0.00015230163287609428,
+    "heading": 90.40403349114021,
+    "pitch": -0.02950211663635834,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7118243266251976,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "e6af9ff7-ea69-4628-a5f3-b7e42ec85b41",
-    "situation": "PRELAUNCH",
-    "latitude": -0.048904394760669545,
-    "longitude": -74.71016128457147,
-    "colliders": [
-     {
-      "name": "runway_lev1_v2",
-      "parent": "Facility",
-      "heightMm": 4064.0502786263824,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -2.466355566866696,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 68848.97760872263,
+   "ComputedTerrainMm": 64785.01378709916
+  }
  },
  {
   "step": 10,
@@ -246,46 +171,31 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3647.7799999999565,
+   "ut": 3652.839999999952,
+   "warpRate": 1,
    "vessel": {
-    "id": "e6af9ff7-ea69-4628-a5f3-b7e42ec85b41",
+    "id": "620a704c-5e9e-499f-8b65-6ec70dc34b22",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.04890432155193223,
-    "longitude": -74.71016129501211,
-    "altitude": 69.59715829184279,
-    "heightFromTerrain": 0.7481447458267212,
-    "surfaceSpeed": 0.0001589892480670985,
-    "heading": 90.46438792012141,
+    "latitude": -0.048904262462782906,
+    "longitude": -74.71015551556488,
+    "altitude": 69.59533070656471,
+    "heightFromTerrain": 0.7464879155158997,
+    "surfaceSpeed": 0.0001182771246572423,
+    "heading": 90.46857551926102,
+    "pitch": -0.028435544885395677,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7118382151929341,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "e6af9ff7-ea69-4628-a5f3-b7e42ec85b41",
-    "situation": "PRELAUNCH",
-    "latitude": -0.04890432155193223,
-    "longitude": -74.71016129501211,
-    "colliders": [
-     {
-      "name": "runway_lev1_v2",
-      "parent": "Facility",
-      "heightMm": 4064.0883918385953,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -2.4563998449593782,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 68848.84719108231,
+   "ComputedTerrainMm": 64785.013786982745
+  }
  },
  {
   "step": 11,
@@ -294,46 +204,31 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3648.0799999999563,
+   "ut": 3653.1799999999516,
+   "warpRate": 1,
    "vessel": {
-    "id": "e6af9ff7-ea69-4628-a5f3-b7e42ec85b41",
+    "id": "620a704c-5e9e-499f-8b65-6ec70dc34b22",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.04890406344590779,
-    "longitude": -74.71016154252214,
-    "altitude": 69.595632177894,
-    "heightFromTerrain": 0.7464667558670044,
-    "surfaceSpeed": 0.00020522848995362008,
-    "heading": 90.39679936318751,
+    "latitude": -0.04890427789424876,
+    "longitude": -74.7101554554385,
+    "altitude": 69.59535700606648,
+    "heightFromTerrain": 0.7464362978935242,
+    "surfaceSpeed": 9.251870358316659e-05,
+    "heading": 90.40482900632118,
+    "pitch": -0.028243318632797405,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7118539561006927,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "e6af9ff7-ea69-4628-a5f3-b7e42ec85b41",
-    "situation": "PRELAUNCH",
-    "latitude": -0.04890406344938888,
-    "longitude": -74.71016154275246,
-    "colliders": [
-     {
-      "name": "runway_lev1_v2",
-      "parent": "Facility",
-      "heightMm": 4064.1767936758697,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -2.4832499912008643,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 68848.89653802384,
+   "ComputedTerrainMm": 64785.01378686633
+  }
  },
  {
   "step": 12,
@@ -342,46 +237,31 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3659.219999999946,
+   "ut": 3664.3399999999415,
+   "warpRate": 1,
    "vessel": {
-    "id": "e6af9ff7-ea69-4628-a5f3-b7e42ec85b41",
+    "id": "620a704c-5e9e-499f-8b65-6ec70dc34b22",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.048904218335784636,
-    "longitude": -74.71016138570042,
-    "altitude": 69.59729441965465,
-    "heightFromTerrain": 0.7481695413589478,
-    "surfaceSpeed": 0.0001573065027673659,
-    "heading": 90.45321509909009,
+    "latitude": -0.04890436019297486,
+    "longitude": -74.71015552228829,
+    "altitude": 69.59704819403123,
+    "heightFromTerrain": 0.7480872273445129,
+    "surfaceSpeed": 0.00028403352933375955,
+    "heading": 90.43257772337333,
+    "pitch": -0.10989953220428177,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7123706225816651,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "e6af9ff7-ea69-4628-a5f3-b7e42ec85b41",
-    "situation": "PRELAUNCH",
-    "latitude": -0.04890421867593009,
-    "longitude": -74.71016138574062,
-    "colliders": [
-     {
-      "name": "runway_lev1_v2",
-      "parent": "Facility",
-      "heightMm": 4064.2123707802966,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -2.4539048317819834,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 68848.9855750231,
+   "ComputedTerrainMm": 64785.0137866335
+  }
  },
  {
   "step": 16,
@@ -390,58 +270,31 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3688.15999999992,
+   "ut": 3698.2399999999107,
+   "warpRate": 1,
    "vessel": {
-    "id": "87613e4c-d24d-4db3-8d22-a4bdaedd9816",
+    "id": "185a47f0-79b5-47e8-aea6-def61e352b7a",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.09717900286865801,
-    "longitude": -74.55761999277429,
-    "altitude": 74.77921765029896,
-    "heightFromTerrain": 5.040105819702148,
-    "surfaceSpeed": 9.964719690307752e-05,
-    "heading": 272.5451869871501,
+    "latitude": -0.09717903867617866,
+    "longitude": -74.55762210738142,
+    "altitude": 74.77913270122372,
+    "heightFromTerrain": 5.040060043334961,
+    "surfaceSpeed": 5.097447691027711e-05,
+    "heading": 262.17733290614075,
+    "pitch": 89.95662537861611,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7143637709564047,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "87613e4c-d24d-4db3-8d22-a4bdaedd9816",
-    "situation": "PRELAUNCH",
-    "latitude": -0.09717900286865801,
-    "longitude": -74.55761999277429,
-    "colliders": [
-     {
-      "name": "LP_barsAlpha",
-      "parent": "LP_lev3 1",
-      "heightMm": 4954.406912438571,
-      "active": true
-     },
-     {
-      "name": "LP_main",
-      "parent": "LP_main",
-      "heightMm": 4787.917819921859,
-      "active": true
-     },
-     {
-      "name": "LP_main",
-      "parent": "LP_lev3 1",
-      "heightMm": 4737.941908882931,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.82507512997836,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 69739.07228757162,
+   "ComputedTerrainMm": 64784.70555949025
+  }
  },
  {
   "step": 17,
@@ -450,58 +303,31 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3688.4399999999196,
+   "ut": 3698.5199999999104,
+   "warpRate": 1,
    "vessel": {
-    "id": "87613e4c-d24d-4db3-8d22-a4bdaedd9816",
+    "id": "185a47f0-79b5-47e8-aea6-def61e352b7a",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.0971790456707256,
-    "longitude": -74.55762014606147,
-    "altitude": 74.77921226772014,
-    "heightFromTerrain": 5.0400614738464355,
-    "surfaceSpeed": 4.10201426082527e-05,
-    "heading": 264.18400086925135,
+    "latitude": -0.09717902780912423,
+    "longitude": -74.55762208308033,
+    "altitude": 74.77919637458399,
+    "heightFromTerrain": 5.040058612823486,
+    "surfaceSpeed": 2.8904939105387116e-05,
+    "heading": 263.9170342177914,
+    "pitch": 89.96026442209296,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7143767339868708,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "87613e4c-d24d-4db3-8d22-a4bdaedd9816",
-    "situation": "PRELAUNCH",
-    "latitude": -0.0971790456707256,
-    "longitude": -74.55762014606147,
-    "colliders": [
-     {
-      "name": "LP_barsAlpha",
-      "parent": "LP_lev3 1",
-      "heightMm": 4954.445191076957,
-      "active": true
-     },
-     {
-      "name": "LP_main",
-      "parent": "LP_main",
-      "heightMm": 4787.981552770361,
-      "active": true
-     },
-     {
-      "name": "LP_main",
-      "parent": "LP_lev3 1",
-      "heightMm": 4737.967673456296,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.82065798342228,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 69739.1387935495,
+   "ComputedTerrainMm": 64784.70555949025
+  }
  },
  {
   "step": 18,
@@ -510,58 +336,31 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3688.7399999999193,
+   "ut": 3698.83999999991,
+   "warpRate": 1,
    "vessel": {
-    "id": "87613e4c-d24d-4db3-8d22-a4bdaedd9816",
+    "id": "185a47f0-79b5-47e8-aea6-def61e352b7a",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.0971790460723811,
-    "longitude": -74.55762014599495,
-    "altitude": 74.77919602708425,
-    "heightFromTerrain": 5.040060997009277,
-    "surfaceSpeed": 3.913789838039039e-05,
-    "heading": 264.1177554801331,
+    "latitude": -0.09717899788692508,
+    "longitude": -74.55762203001485,
+    "altitude": 74.7792083802633,
+    "heightFromTerrain": 5.040079593658447,
+    "surfaceSpeed": 6.51314103506242e-05,
+    "heading": 268.73799646966603,
+    "pitch": 89.9666460324109,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7143915489490897,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "87613e4c-d24d-4db3-8d22-a4bdaedd9816",
-    "situation": "PRELAUNCH",
-    "latitude": -0.0971790460723811,
-    "longitude": -74.55762014599495,
-    "colliders": [
-     {
-      "name": "LP_barsAlpha",
-      "parent": "LP_lev3 1",
-      "heightMm": 4954.429521807469,
-      "active": true
-     },
-     {
-      "name": "LP_main",
-      "parent": "LP_main",
-      "heightMm": 4787.9649645183235,
-      "active": true
-     },
-     {
-      "name": "LP_main",
-      "parent": "LP_lev3 1",
-      "heightMm": 4737.954813637771,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.8181492332369,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 69739.12950081285,
+   "ComputedTerrainMm": 64784.70555972308
+  }
  },
  {
   "step": 19,
@@ -570,705 +369,426 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3699.839999999909,
+   "ut": 3709.9399999999,
+   "warpRate": 1,
    "vessel": {
-    "id": "87613e4c-d24d-4db3-8d22-a4bdaedd9816",
+    "id": "185a47f0-79b5-47e8-aea6-def61e352b7a",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.09717904064873155,
-    "longitude": -74.55762018296569,
-    "altitude": 74.77917787106708,
-    "heightFromTerrain": 5.040060997009277,
-    "surfaceSpeed": 5.290433916363681e-05,
-    "heading": 263.5599214704919,
+    "latitude": -0.09717902434507354,
+    "longitude": -74.55762219873435,
+    "altitude": 74.77920716186054,
+    "heightFromTerrain": 5.040078639984131,
+    "surfaceSpeed": 0.00016978210838073637,
+    "heading": 264.40374399961195,
+    "pitch": 89.94740400591749,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7149054373693128,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "87613e4c-d24d-4db3-8d22-a4bdaedd9816",
-    "situation": "PRELAUNCH",
-    "latitude": -0.09717904064873155,
-    "longitude": -74.55762018296569,
-    "colliders": [
-     {
-      "name": "LP_barsAlpha",
-      "parent": "LP_lev3 1",
-      "heightMm": 4954.410831676796,
-      "active": true
-     },
-     {
-      "name": "LP_main",
-      "parent": "LP_main",
-      "heightMm": 4787.917283014394,
-      "active": true
-     },
-     {
-      "name": "LP_main",
-      "parent": "LP_lev3 1",
-      "heightMm": 4737.949203350581,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.8243137737736,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 69739.12856495008,
+   "ComputedTerrainMm": 64784.70555949025
+  }
  },
  {
-  "step": 21,
+  "step": 22,
   "arrival": "level 2 runway: launched from the SPH",
   "launchpad": false,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3713.239999999897,
+   "ut": 3729.4799999998822,
+   "warpRate": 1,
    "vessel": {
-    "id": "9ecb08c4-1a07-46b1-8baa-3f2c23961162",
+    "id": "19198811-b70f-4c2e-ba6a-f0ba6e4615d9",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.04854962073493988,
-    "longitude": -74.7131626733606,
-    "altitude": 69.6460427630227,
-    "heightFromTerrain": 0.7442224025726318,
-    "surfaceSpeed": 0.0001412871249300839,
-    "heading": 90.41140372253312,
+    "latitude": -0.0485494953206713,
+    "longitude": -74.71315873489552,
+    "altitude": 69.64603108447045,
+    "heightFromTerrain": 0.7442864179611206,
+    "surfaceSpeed": 0.00015545875542144963,
+    "heading": 90.42987303274191,
+    "pitch": -0.12073015788838361,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7153780210651608,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "9ecb08c4-1a07-46b1-8baa-3f2c23961162",
-    "situation": "PRELAUNCH",
-    "latitude": -0.04854962073493988,
-    "longitude": -74.7131626733606,
-    "colliders": [
-     {
-      "name": "runway_collider",
-      "parent": "Facility",
-      "heightMm": 4116.750344517641,
-      "active": true
-     },
-     {
-      "name": "runway1",
-      "parent": "End09",
-      "heightMm": 4105.691127944738,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -1.8310158047825098,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 68901.78081870545,
+   "ComputedTerrainMm": 64785.022075870074
+  }
  },
  {
-  "step": 22,
+  "step": 23,
   "arrival": "level 2 runway: revert to launch 1",
   "launchpad": false,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3713.4999999998968,
+   "ut": 3729.779999999882,
+   "warpRate": 1,
    "vessel": {
-    "id": "9ecb08c4-1a07-46b1-8baa-3f2c23961162",
+    "id": "19198811-b70f-4c2e-ba6a-f0ba6e4615d9",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.04854957657493331,
-    "longitude": -74.71316256691365,
-    "altitude": 69.6460993065266,
-    "heightFromTerrain": 0.7442638874053955,
-    "surfaceSpeed": 0.00020579515680291724,
-    "heading": 90.38389364878265,
+    "latitude": -0.04854958910291575,
+    "longitude": -74.71315870415386,
+    "altitude": 69.64599951705895,
+    "heightFromTerrain": 0.7442640066146851,
+    "surfaceSpeed": 0.00028430229776159457,
+    "heading": 90.3654359532114,
+    "pitch": -0.11957737168624728,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7153919100394429,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "9ecb08c4-1a07-46b1-8baa-3f2c23961162",
-    "situation": "PRELAUNCH",
-    "latitude": -0.0485495768143234,
-    "longitude": -74.7131625668141,
-    "colliders": [
-     {
-      "name": "runway_collider",
-      "parent": "Facility",
-      "heightMm": 4116.831089137122,
-      "active": true
-     },
-     {
-      "name": "runway1",
-      "parent": "End09",
-      "heightMm": 4105.688476352952,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -1.8655332969501615,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 68901.75033418927,
+   "ComputedTerrainMm": 64785.02207540441
+  }
  },
  {
-  "step": 23,
+  "step": 24,
   "arrival": "level 2 runway: revert to launch 2",
   "launchpad": false,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3713.8199999998965,
+   "ut": 3730.0799999998817,
+   "warpRate": 1,
    "vessel": {
-    "id": "9ecb08c4-1a07-46b1-8baa-3f2c23961162",
+    "id": "19198811-b70f-4c2e-ba6a-f0ba6e4615d9",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.048549490903880846,
-    "longitude": -74.71316257386492,
-    "altitude": 69.64588021335658,
-    "heightFromTerrain": 0.7441253662109375,
-    "surfaceSpeed": 0.0002673266439736786,
-    "heading": 90.37119193461047,
+    "latitude": -0.048549495205228076,
+    "longitude": -74.71315870812106,
+    "altitude": 69.6460082931444,
+    "heightFromTerrain": 0.7441771030426025,
+    "surfaceSpeed": 0.0006262653641967247,
+    "heading": 90.42386826587646,
+    "pitch": -0.1198464713397528,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7154057989173118,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "9ecb08c4-1a07-46b1-8baa-3f2c23961162",
-    "situation": "PRELAUNCH",
-    "latitude": -0.04854949083158919,
-    "longitude": -74.71316257355765,
-    "colliders": [
-     {
-      "name": "runway_collider",
-      "parent": "Facility",
-      "heightMm": 4116.592272883281,
-      "active": true
-     },
-     {
-      "name": "runway1",
-      "parent": "End09",
-      "heightMm": 4105.58200860396,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -1.8614075379446149,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 68901.76433022134,
+   "ComputedTerrainMm": 64785.022075870074
+  }
  },
  {
-  "step": 24,
+  "step": 25,
   "arrival": "level 2 runway: quickload",
   "launchpad": false,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3724.9599999998863,
+   "ut": 3741.1999999998716,
+   "warpRate": 1,
    "vessel": {
-    "id": "9ecb08c4-1a07-46b1-8baa-3f2c23961162",
+    "id": "19198811-b70f-4c2e-ba6a-f0ba6e4615d9",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.04854945561062617,
-    "longitude": -74.7131625731858,
-    "altitude": 69.64988258341327,
-    "heightFromTerrain": 0.7480180263519287,
-    "surfaceSpeed": 0.00012206285282657455,
-    "heading": 90.3348336010669,
+    "latitude": -0.04854945708972907,
+    "longitude": -74.71315864714593,
+    "altitude": 69.64971024694387,
+    "heightFromTerrain": 0.748058557510376,
+    "surfaceSpeed": 0.00028591278206816526,
+    "heading": 90.39139275478063,
+    "pitch": -0.1191855728405365,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7159206139015016,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "9ecb08c4-1a07-46b1-8baa-3f2c23961162",
-    "situation": "PRELAUNCH",
-    "latitude": -0.04854945561062617,
-    "longitude": -74.7131625731858,
-    "colliders": [
-     {
-      "name": "runway_collider",
-      "parent": "Facility",
-      "heightMm": 4116.750987712294,
-      "active": true
-     },
-     {
-      "name": "runway1",
-      "parent": "End09",
-      "heightMm": 4105.583513737656,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -1.8324570264667273,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 68901.68470866047,
+   "ComputedTerrainMm": 64785.022075870074
+  }
  },
  {
-  "step": 28,
+  "step": 29,
   "arrival": "level 3 launchpad: launched from the VAB",
   "launchpad": true,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3753.85999999986,
+   "ut": 3775.1599999998407,
+   "warpRate": 1,
    "vessel": {
-    "id": "6a7eaf5d-d44c-4829-8ab9-6217325a5cd6",
+    "id": "f48858ab-2028-44ed-af87-9a6926d95e3b",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.0971785707521677,
-    "longitude": -74.55768368562256,
-    "altitude": 77.45387907454278,
-    "heightFromTerrain": 5.040104866027832,
-    "surfaceSpeed": 8.499057882929043e-05,
-    "heading": 266.4371887067233,
+    "latitude": -0.09717859011102681,
+    "longitude": -74.55768684074151,
+    "altitude": 77.45378671819344,
+    "heightFromTerrain": 5.040114879608154,
+    "surfaceSpeed": 7.211609569385823e-05,
+    "heading": 263.77218632378805,
+    "pitch": 89.9533514273003,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7179247022526234,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "6a7eaf5d-d44c-4829-8ab9-6217325a5cd6",
-    "situation": "PRELAUNCH",
-    "latitude": -0.0971785707521677,
-    "longitude": -74.55768368562256,
-    "colliders": [
-     {
-      "name": "Launch Pad",
-      "parent": "launchpad",
-      "heightMm": 7629.07033029478,
-      "active": true
-     },
-     {
-      "name": "model_launchpad_ground_collider_v46",
-      "parent": "model_launchpad_ground_v46n",
-      "heightMm": 2847.72208717186,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.81346724182367,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 72413.6734532658,
+   "ComputedTerrainMm": 64784.70550663769
+  }
  },
  {
-  "step": 29,
+  "step": 30,
   "arrival": "level 3 launchpad: revert to launch 1",
   "launchpad": true,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3754.13999999986,
+   "ut": 3775.4399999998404,
+   "warpRate": 1,
    "vessel": {
-    "id": "6a7eaf5d-d44c-4829-8ab9-6217325a5cd6",
+    "id": "f48858ab-2028-44ed-af87-9a6926d95e3b",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.09717858951096141,
-    "longitude": -74.55768369494572,
-    "altitude": 77.45380665222183,
-    "heightFromTerrain": 5.0401105880737305,
-    "surfaceSpeed": 6.201733940898524e-05,
-    "heading": 263.584181879084,
+    "latitude": -0.09717859050023504,
+    "longitude": -74.55768684001664,
+    "altitude": 77.45380460552406,
+    "heightFromTerrain": 5.040119171142578,
+    "surfaceSpeed": 5.131881397569491e-05,
+    "heading": 263.46859767228773,
+    "pitch": 89.95336706449238,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7179376652176,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "6a7eaf5d-d44c-4829-8ab9-6217325a5cd6",
-    "situation": "PRELAUNCH",
-    "latitude": -0.09717858951096141,
-    "longitude": -74.55768369494572,
-    "colliders": [
-     {
-      "name": "Launch Pad",
-      "parent": "launchpad",
-      "heightMm": 7628.9885975420475,
-      "active": true
-     },
-     {
-      "name": "model_launchpad_ground_collider_v46",
-      "parent": "model_launchpad_ground_v46n",
-      "heightMm": 2847.6468932349235,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.81955681089312,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 72413.6861320585,
+   "ComputedTerrainMm": 64784.70550663769
+  }
  },
  {
-  "step": 30,
+  "step": 31,
   "arrival": "level 3 launchpad: revert to launch 2",
   "launchpad": true,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3754.4599999998595,
+   "ut": 3775.75999999984,
+   "warpRate": 1,
    "vessel": {
-    "id": "6a7eaf5d-d44c-4829-8ab9-6217325a5cd6",
+    "id": "f48858ab-2028-44ed-af87-9a6926d95e3b",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.09717858419484202,
-    "longitude": -74.55768367732034,
-    "altitude": 77.45379112567753,
-    "heightFromTerrain": 5.040135383605957,
-    "surfaceSpeed": 9.884691171220039e-05,
-    "heading": 264.10854337925366,
+    "latitude": -0.09717859014509483,
+    "longitude": -74.5576868835866,
+    "altitude": 77.45377512311097,
+    "heightFromTerrain": 5.040151119232178,
+    "surfaceSpeed": 0.00014999347960521642,
+    "heading": 264.1797420404081,
+    "pitch": 89.94808941365889,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7179524799113872,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "6a7eaf5d-d44c-4829-8ab9-6217325a5cd6",
-    "situation": "PRELAUNCH",
-    "latitude": -0.09717858419484202,
-    "longitude": -74.55768367732034,
-    "colliders": [
-     {
-      "name": "Launch Pad",
-      "parent": "launchpad",
-      "heightMm": 7628.950835671276,
-      "active": true
-     },
-     {
-      "name": "model_launchpad_ground_collider_v46",
-      "parent": "model_launchpad_ground_v46n",
-      "heightMm": 2847.619492094964,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.81624165177345,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 72413.62380876672,
+   "ComputedTerrainMm": 64784.70550652128
+  }
  },
  {
-  "step": 31,
+  "step": 32,
   "arrival": "level 3 launchpad: quickload",
   "launchpad": true,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3765.5599999998494,
+   "ut": 3786.87999999983,
+   "warpRate": 1,
    "vessel": {
-    "id": "6a7eaf5d-d44c-4829-8ab9-6217325a5cd6",
+    "id": "f48858ab-2028-44ed-af87-9a6926d95e3b",
     "name": "Diag3-Rocket",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.09717855592793058,
-    "longitude": -74.55768367390671,
-    "altitude": 77.45384593913332,
-    "heightFromTerrain": 5.040135383605957,
-    "surfaceSpeed": 4.356972798856162e-05,
-    "heading": 266.70794045160756,
+    "latitude": -0.09717854244209763,
+    "longitude": -74.55768674949206,
+    "altitude": 77.45380809379276,
+    "heightFromTerrain": 5.040131568908691,
+    "surfaceSpeed": 0.00011461090995821571,
+    "heading": 268.1661876907091,
+    "pitch": 89.96477334307252,
     "brakes": false,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7184672950986865,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rocket",
-    "id": "6a7eaf5d-d44c-4829-8ab9-6217325a5cd6",
-    "situation": "PRELAUNCH",
-    "latitude": -0.09717855592793058,
-    "longitude": -74.55768367390671,
-    "colliders": [
-     {
-      "name": "Launch Pad",
-      "parent": "launchpad",
-      "heightMm": 7629.00491093751,
-      "active": true
-     },
-     {
-      "name": "model_launchpad_ground_collider_v46",
-      "parent": "model_launchpad_ground_v46n",
-      "heightMm": 2847.7096314309165,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223323",
-      "parent": "PQStorage",
-      "heightMm": -175.81914539914578,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 72413.6742092669,
+   "ComputedTerrainMm": 64784.70550687052
+  }
  },
  {
-  "step": 33,
+  "step": 34,
   "arrival": "level 3 runway: launched from the SPH",
   "launchpad": false,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3778.9399999998373,
+   "ut": 3805.2799999998133,
+   "warpRate": 1,
    "vessel": {
-    "id": "6bd271c4-17b8-4ed8-81dc-30ea65ed22ba",
+    "id": "f1ddcfba-4288-4abe-ae4a-2bb82095471c",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.04859990883591069,
-    "longitude": -74.72447305171136,
-    "altitude": 69.83031076635234,
-    "heightFromTerrain": 0.7440851330757141,
-    "surfaceSpeed": 0.0002522089148105617,
-    "heading": 90.39798538018331,
+    "latitude": -0.04860000012401348,
+    "longitude": -74.72447400857884,
+    "altitude": 69.83103763801046,
+    "heightFromTerrain": 0.7447671294212341,
+    "surfaceSpeed": 0.0005513047563215601,
+    "heading": 90.40206763634455,
+    "pitch": -0.1308788548623197,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7188558490086296,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "6bd271c4-17b8-4ed8-81dc-30ea65ed22ba",
-    "situation": "PRELAUNCH",
-    "latitude": -0.04859990869002466,
-    "longitude": -74.72447305136464,
-    "colliders": [
-     {
-      "name": "runway_collider",
-      "parent": "Facility",
-      "heightMm": 4300.968747935258,
-      "active": true
-     },
-     {
-      "name": "End09_Mesh",
-      "parent": "End09",
-      "heightMm": 4301.128522143699,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -2.295894897542894,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 69086.12479886506,
+   "ComputedTerrainMm": 64785.04827967845
+  }
  },
  {
-  "step": 34,
+  "step": 35,
   "arrival": "level 3 runway: revert to launch 1",
   "launchpad": false,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3779.239999999837,
+   "ut": 3805.619999999813,
+   "warpRate": 1,
    "vessel": {
-    "id": "6bd271c4-17b8-4ed8-81dc-30ea65ed22ba",
+    "id": "f1ddcfba-4288-4abe-ae4a-2bb82095471c",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.04860009977000022,
-    "longitude": -74.72447330028905,
-    "altitude": 69.83047044638079,
-    "heightFromTerrain": 0.7442196607589722,
-    "surfaceSpeed": 0.00023145510316930685,
-    "heading": 90.4523844789601,
+    "latitude": -0.048599924987220454,
+    "longitude": -74.72447424539646,
+    "altitude": 69.83105720486492,
+    "heightFromTerrain": 0.7446870803833008,
+    "surfaceSpeed": 0.00045832559787066377,
+    "heading": 90.45445128839005,
+    "pitch": 0.034561669932629005,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7188715890915438,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "6bd271c4-17b8-4ed8-81dc-30ea65ed22ba",
-    "situation": "PRELAUNCH",
-    "latitude": -0.04860009991662934,
-    "longitude": -74.72447330084161,
-    "colliders": [
-     {
-      "name": "End09_Mesh",
-      "parent": "End09",
-      "heightMm": 4301.140192430466,
-      "active": true
-     },
-     {
-      "name": "runway_collider",
-      "parent": "Facility",
-      "heightMm": 4301.2014999985695,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -2.275804290547967,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 69086.1762292916,
+   "ComputedTerrainMm": 64785.04828060977
+  }
  },
  {
-  "step": 35,
+  "step": 36,
   "arrival": "level 3 runway: revert to launch 2",
   "launchpad": false,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3779.5599999998367,
+   "ut": 3805.9599999998127,
+   "warpRate": 1,
    "vessel": {
-    "id": "6bd271c4-17b8-4ed8-81dc-30ea65ed22ba",
+    "id": "f1ddcfba-4288-4abe-ae4a-2bb82095471c",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.0485999571755712,
-    "longitude": -74.72447323626332,
-    "altitude": 69.83054168033414,
-    "heightFromTerrain": 0.7442260384559631,
-    "surfaceSpeed": 6.933836216886344e-05,
-    "heading": 90.36788887303238,
+    "latitude": -0.04860000914911058,
+    "longitude": -74.7244743919781,
+    "altitude": 69.83110299671534,
+    "heightFromTerrain": 0.7446885108947754,
+    "surfaceSpeed": 0.00045479630347860047,
+    "heading": 90.394930963992,
+    "pitch": 0.032979417957381324,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7188873294251131,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "6bd271c4-17b8-4ed8-81dc-30ea65ed22ba",
-    "situation": "PRELAUNCH",
-    "latitude": -0.04859995755089656,
-    "longitude": -74.72447323615434,
-    "colliders": [
-     {
-      "name": "End09_Mesh",
-      "parent": "End09",
-      "heightMm": 4301.150192972273,
-      "active": true
-     },
-     {
-      "name": "runway_collider",
-      "parent": "Facility",
-      "heightMm": 4301.1258381884545,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -2.2882361663505435,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 69086.36397088412,
+   "ComputedTerrainMm": 64785.04828060977
+  }
  },
  {
-  "step": 36,
+  "step": 37,
   "arrival": "level 3 runway: quickload",
   "launchpad": false,
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 3790.6999999998266,
+   "ut": 3817.0799999998026,
+   "warpRate": 1,
    "vessel": {
-    "id": "6bd271c4-17b8-4ed8-81dc-30ea65ed22ba",
+    "id": "f1ddcfba-4288-4abe-ae4a-2bb82095471c",
     "name": "Diag3-Rover",
     "situation": "PRELAUNCH",
     "packed": false,
     "body": "Kerbin",
-    "latitude": -0.04859989942008198,
-    "longitude": -74.72447315973211,
-    "altitude": 69.83426747156773,
-    "heightFromTerrain": 0.7480223178863525,
-    "surfaceSpeed": 0.00036264624672387554,
-    "heading": 90.34648845043952,
+    "latitude": -0.04859992980228388,
+    "longitude": -74.72447411616943,
+    "altitude": 69.8343546281103,
+    "heightFromTerrain": 0.7481164932250977,
+    "surfaceSpeed": 0.0002588402079486961,
+    "heading": 90.44883879528395,
+    "pitch": -0.13083009163362605,
     "brakes": true,
-    "sas": false
+    "sas": false,
+    "localTime": 0.7194021450060626,
+    "solarDay": 21599.999999999996
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Diag3-Rover",
-    "id": "6bd271c4-17b8-4ed8-81dc-30ea65ed22ba",
-    "situation": "PRELAUNCH",
-    "latitude": -0.04859989905168289,
-    "longitude": -74.7244731597772,
-    "colliders": [
-     {
-      "name": "runway_collider",
-      "parent": "Facility",
-      "heightMm": 4301.143866265193,
-      "active": true
-     },
-     {
-      "name": "End09_Mesh",
-      "parent": "End09",
-      "heightMm": 4301.229321630672,
-      "active": true
-     },
-     {
-      "name": "Kerbin Zn1232223233",
-      "parent": "PQStorage",
-      "heightMm": -2.2763002198189497,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 69086.26180142164,
+   "ComputedTerrainMm": 64785.048280260526
+  }
  }
 ]

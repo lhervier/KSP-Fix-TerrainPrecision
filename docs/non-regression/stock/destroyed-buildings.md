@@ -4,8 +4,8 @@ Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression
 
 **Status: checked on Kerbin.** The VAB, brought down in flight while this mod has the KSC out of its terrain
 sphere, collapses, shows as destroyed at the space centre, stays in ruins in the next flights, and stands
-again once repaired, as without this mod. Through it all, the launchpad and the runway stay within 0.2 mm;
-without this mod, the launchpad moves by 53 mm.
+again once repaired, as without this mod. Through it all, the launchpad and the runway stay within 0.22 mm;
+without this mod, they move by 71 and 87 mm.
 
 *Why.* KSP finds a destructible building of the KSC by its path from the `SpaceCenter` object of the KSC down
 to it (`HierarchyUtil.CompileID`), and saves its state under that path. This mod changes the parent of the
@@ -39,19 +39,19 @@ copied as `persistent.sfs` into a new folder of `saves`, it opens at the space c
    launched onto the launchpad.
 
 At each arrival, once the craft has settled,
-[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) logs the colliders under it (its
-button *Log the colliders under each craft*): the launchpad's or the runway's, with its height above the
-terrain the game computes there. A screenshot looks towards the VAB: from the launchpad, 650 m to the west,
-or from the runway, 1 km to the south-east.
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) records a line (its button
+*Record*): the ground under the craft, the launchpad or the runway, and the ground KSP computes for the same
+spot. A screenshot looks towards the VAB: from the
+launchpad, 650 m to the west, or from the runway, 1 km to the south-east.
 
-KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Colliders, and this mod
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Height, and this mod
 with its defaults at `logLevel = Debug`. Then the same without this mod.
 
 *Played by a script.* [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) plays the test through
 [`diag/automation/run-destroyed-buildings.py`](../../../diag/automation/run-destroyed-buildings.py), the two
 rockets in the `Ships/VAB` folder of the game and the rover in its `Ships/SPH` folder: it starts and sets up the career itself from the main
-menu, and closes the guide of a new career wherever it shows. Every step is one a player can take: the
-test plays just as well by hand.
+menu, closes the guide of a new career wherever it shows, and takes a screenshot of the table of Diag
+Terrain Height at the end. Every step is one a player can take: the test plays just as well by hand.
 
 ## The result
 
@@ -82,15 +82,17 @@ stands again, both ways:
 
 ![The VAB repaired, from the launchpad](../../../imgs/non-regression/stock/destroyed-buildings/destroyed-buildings-repaired.png)
 
-The height of the facility under the craft, lowest and highest over its arrivals: three on the launchpad
+The height of the facility under the craft above the ground KSP computes, lowest and highest over its
+arrivals: three on the launchpad
 (the dropper at its launch and after the revert, the rocket from the repaired VAB), two on the runway (the rover, then its quickload):
 
 | | without this mod | with this mod |
 |---|---|---|
-| launchpad | 4 909.820 to 4 962.602 mm (52.782 mm) | 4 954.392 to 4 954.529 mm (0.137 mm) |
-| runway | 4 095.323 to 4 101.326 mm (6.003 mm) | 4 063.931 to 4 064.102 mm (0.171 mm) |
+| launchpad | 4 947.449 to 5 018.284 mm (70.835 mm) | 4 954.455 to 4 954.469 mm (0.014 mm) |
+| runway | 4 096.945 to 4 183.538 mm (86.593 mm) | 4 063.862 to 4 064.077 mm (0.215 mm) |
 
 The logs with this mod show no error that the logs without it do not show.
 
-The logs, what the script printed and every reading of KSP Diag - Colliders, for both sessions, are in
+The logs, what the script printed, every line of Diag Terrain Height and a screenshot of its table, for both
+sessions, are in
 [`diag/non-regression/stock/destroyed-buildings/`](../../../diag/README.md#the-destroyed-buildings-protocol).

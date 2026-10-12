@@ -6,7 +6,7 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 74571.91390204302,
+   "ut": 74571.95390204302,
    "warpRate": 1,
    "vessel": {
     "id": "3f2e19ca-72a8-4c2d-9305-66eb914c7040",
@@ -14,41 +14,23 @@
     "situation": "LANDED",
     "packed": false,
     "body": "Mun",
-    "latitude": -0.27727226334384364,
-    "longitude": -132.9520550612767,
-    "altitude": 5976.953979417856,
-    "heightFromTerrain": 0.3125041723251343,
-    "surfaceSpeed": 1.937052121459738e-05,
-    "heading": 74.27712592824432,
+    "latitude": -0.27727229983342533,
+    "longitude": -132.9520549791595,
+    "altitude": 5976.972319758439,
+    "heightFromTerrain": 0.31250718235969543,
+    "surfaceSpeed": 2.675201844164788e-05,
+    "heading": 73.80385765744501,
+    "pitch": 89.9436962869082,
     "brakes": false,
     "sas": true,
-    "localTime": 0.2981436678203844,
+    "localTime": 0.298143951580476,
     "solarDay": 141115.38529617633
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Capsule",
-    "id": "3f2e19ca-72a8-4c2d-9305-66eb914c7040",
-    "situation": "LANDED",
-    "latitude": -0.277272263351847,
-    "longitude": -132.9520550613068,
-    "colliders": [
-     {
-      "name": "collider",
-      "parent": "LP_lev2",
-      "heightMm": 27590.370495105162,
-      "active": true
-     },
-     {
-      "name": "Mun Zn022232221",
-      "parent": "PQStorage",
-      "heightMm": -114.52170321717858,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 5976659.813256236,
+   "ComputedTerrainMm": 5949050.907813536
+  }
  },
  {
   "step": 2,
@@ -57,7 +39,7 @@
   "state": {
    "scene": "FLIGHT",
    "paused": false,
-   "ut": 74780.69026923191,
+   "ut": 74780.30170310034,
    "warpRate": 1,
    "vessel": {
     "id": "3f2e19ca-72a8-4c2d-9305-66eb914c7040",
@@ -65,40 +47,22 @@
     "situation": "LANDED",
     "packed": false,
     "body": "Mun",
-    "latitude": -0.27727220815033066,
-    "longitude": -132.95205505565457,
-    "altitude": 5976.960026223271,
-    "heightFromTerrain": 0.3125062882900238,
-    "surfaceSpeed": 2.377300246023564e-05,
-    "heading": 73.94135863480817,
+    "latitude": -0.2772723002063088,
+    "longitude": -132.95205497970719,
+    "altitude": 5976.961641468864,
+    "heightFromTerrain": 0.31250497698783875,
+    "surfaceSpeed": 3.0135573876038153e-05,
+    "heading": 73.90088637004506,
+    "pitch": 89.94383747694702,
     "brakes": false,
     "sas": true,
-    "localTime": 0.2996235430762533,
+    "localTime": 0.29962078899254185,
     "solarDay": 141115.38529617633
    }
   },
-  "underCrafts": [
-   {
-    "craft": "Capsule",
-    "id": "3f2e19ca-72a8-4c2d-9305-66eb914c7040",
-    "situation": "LANDED",
-    "latitude": -0.27727220815033066,
-    "longitude": -132.95205505565457,
-    "colliders": [
-     {
-      "name": "collider",
-      "parent": "LP_lev2",
-      "heightMm": 27596.407197095687,
-      "active": true
-     },
-     {
-      "name": "Mun Zn022232221",
-      "parent": "PQStorage",
-      "heightMm": -114.14481504471041,
-      "active": true
-     }
-    ]
-   }
-  ]
+  "line": {
+   "CollisionSurfaceMm": 5976649.136884254,
+   "ComputedTerrainMm": 5949050.907668629
+  }
  }
 ]

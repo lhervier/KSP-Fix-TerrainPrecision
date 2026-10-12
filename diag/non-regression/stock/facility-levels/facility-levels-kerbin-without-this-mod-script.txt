@@ -1,65 +1,67 @@
-18:11:25 closed: dialog 'IntroKSC', pressing 'Merci, j'ai compris'
-18:11:28 Research and Development upgraded to level 2 of 3, 454900 funds left
-18:11:30 Research and Development upgraded to level 3 of 3, 285900 funds left
-18:11:35 21 nodes researched, 2517 science left
-18:11:36 closed: RnD
-18:11:41 screenshot 01-level1-launchpad-menu.png
-18:11:42 closed: menu
-18:11:47 screenshot 02-level1-runway-menu.png
-18:11:48 closed: menu
-18:11:53 closed: dialog 'IntroVAB', pressing 'Compris !'
-18:11:55 screenshot 03-level1-vab.png
-18:12:13 04 level 1 launchpad: launched from the VAB: collider (LP_lev2) 2711.186 mm above the terrain, PRELAUNCH
-18:12:27 05 level 1 launchpad: revert to launch 1: collider (LP_lev2) 2704.667 mm above the terrain, PRELAUNCH
-18:12:42 06 level 1 launchpad: revert to launch 2: collider (LP_lev2) 2717.082 mm above the terrain, PRELAUNCH
-18:12:58 07 level 1 launchpad: quickload: collider (LP_lev2) 2695.250 mm above the terrain, PRELAUNCH
-18:13:02 recovered: {"location": "\u00c0 Aire de lancement", "factor": "100.0% "}
-18:13:03 closed: recovery report
-18:13:08 screenshot 08-level1-sph.png
-18:13:26 09 level 1 runway: launched from the SPH: runway_lev1_v2 (Facility) 4080.961 mm above the terrain, PRELAUNCH
-18:13:41 10 level 1 runway: revert to launch 1: runway_lev1_v2 (Facility) 4060.587 mm above the terrain, PRELAUNCH
-18:13:56 11 level 1 runway: revert to launch 2: runway_lev1_v2 (Facility) 4180.585 mm above the terrain, PRELAUNCH
-18:14:11 12 level 1 runway: quickload: runway_lev1_v2 (Facility) 4114.499 mm above the terrain, PRELAUNCH
-18:14:15 recovered: {"location": "\u00c0 Piste de d\u00e9collage", "factor": "100.0% "}
-18:14:16 closed: recovery report
-18:14:19 LaunchPad upgraded to level 2 of 3, 280900 funds left
-18:14:21 Runway upgraded to level 2 of 3, 273400 funds left
-18:14:25 screenshot 13-level2-launchpad-menu.png
-18:14:26 closed: menu
-18:14:31 screenshot 14-level2-runway-menu.png
-18:14:32 closed: menu
-18:14:37 screenshot 15-level2-vab.png
-18:14:55 16 level 2 launchpad: launched from the VAB: LP_barsAlpha (LP_lev3 1) 4917.934 mm above the terrain, PRELAUNCH
-18:15:09 17 level 2 launchpad: revert to launch 1: LP_barsAlpha (LP_lev3 1) 5039.569 mm above the terrain, PRELAUNCH
-18:15:24 18 level 2 launchpad: revert to launch 2: LP_barsAlpha (LP_lev3 1) 4894.831 mm above the terrain, PRELAUNCH
-18:15:39 19 level 2 launchpad: quickload: LP_barsAlpha (LP_lev3 1) 5005.492 mm above the terrain, PRELAUNCH
-18:15:43 recovered: {"location": "\u00c0 Aire de lancement", "factor": "100.0% "}
-18:15:44 closed: recovery report
-18:15:50 screenshot 20-level2-sph.png
-18:16:07 21 level 2 runway: launched from the SPH: runway1 (End09) 4193.834 mm above the terrain, PRELAUNCH
-18:16:22 22 level 2 runway: revert to launch 1: runway1 (End09) 4190.575 mm above the terrain, PRELAUNCH
-18:16:37 23 level 2 runway: revert to launch 2: runway1 (End09) 4132.639 mm above the terrain, PRELAUNCH
-18:16:52 24 level 2 runway: quickload: runway1 (End09) 4121.699 mm above the terrain, PRELAUNCH
-18:16:56 recovered: {"location": "\u00c0 Piste de d\u00e9collage", "factor": "100.0% "}
-18:16:57 closed: recovery report
-18:17:00 LaunchPad upgraded to level 3 of 3, 245200 funds left
-18:17:02 Runway upgraded to level 3 of 3, 217000 funds left
-18:17:06 screenshot 25-level3-launchpad-menu.png
-18:17:07 closed: menu
-18:17:11 screenshot 26-level3-runway-menu.png
-18:17:12 closed: menu
-18:17:18 screenshot 27-level3-vab.png
-18:17:35 28 level 3 launchpad: launched from the VAB: Launch Pad (launchpad) 7651.487 mm above the terrain, PRELAUNCH
-18:17:50 29 level 3 launchpad: revert to launch 1: Launch Pad (launchpad) 7619.376 mm above the terrain, PRELAUNCH
-18:18:05 30 level 3 launchpad: revert to launch 2: Launch Pad (launchpad) 7642.515 mm above the terrain, PRELAUNCH
-18:18:20 31 level 3 launchpad: quickload: Launch Pad (launchpad) 7664.255 mm above the terrain, PRELAUNCH
-18:18:24 recovered: {"location": "\u00c0 Aire de lancement", "factor": "100.0% "}
-18:18:25 closed: recovery report
-18:18:30 screenshot 32-level3-sph.png
-18:18:48 33 level 3 runway: launched from the SPH: End09_Mesh (End09) 4332.998 mm above the terrain, PRELAUNCH
-18:19:03 34 level 3 runway: revert to launch 1: End09_Mesh (End09) 4363.741 mm above the terrain, PRELAUNCH
-18:19:17 35 level 3 runway: revert to launch 2: runway_collider (Facility) 4315.985 mm above the terrain, PRELAUNCH
-18:19:32 36 level 3 runway: quickload: runway_collider (Facility) 4283.828 mm above the terrain, PRELAUNCH
-18:19:36 recovered: {"location": "\u00c0 Piste de d\u00e9collage", "factor": "100.0% "}
-18:19:37 closed: recovery report
-18:19:38 done: 24 arrivals in flight, in D:\ksp-dev\campagnes\2026-10-07-facility-levels\stock\run
+01:18:34 closed: dialog 'IntroKSC', pressing 'Merci, j'ai compris'
+01:18:37 Research and Development upgraded to level 2 of 3, 454900 funds left
+01:18:39 Research and Development upgraded to level 3 of 3, 285900 funds left
+01:18:45 21 nodes researched, 2517 science left
+01:18:46 closed: RnD
+01:18:55 screenshot 01-level1-launchpad-menu.png
+01:18:56 closed: menu
+01:19:01 screenshot 02-level1-runway-menu.png
+01:19:02 closed: menu
+01:19:08 closed: dialog 'IntroVAB', pressing 'Compris !'
+01:19:09 screenshot 03-level1-vab.png
+01:19:26 04 level 1 launchpad: launched from the VAB: ground under craft 67507.176 mm, KSP computes 64784.706 mm: +2722.470 mm, PRELAUNCH
+01:19:41 05 level 1 launchpad: revert to launch 1: ground under craft 67502.036 mm, KSP computes 64784.706 mm: +2717.330 mm, PRELAUNCH
+01:19:56 06 level 1 launchpad: revert to launch 2: ground under craft 67500.923 mm, KSP computes 64784.706 mm: +2716.217 mm, PRELAUNCH
+01:20:10 07 level 1 launchpad: quickload: ground under craft 67504.692 mm, KSP computes 64784.706 mm: +2719.987 mm, PRELAUNCH
+01:20:19 recovered: {"location": "\u00c0 Aire de lancement", "factor": "100.0% "}
+01:20:20 closed: recovery report
+01:20:26 screenshot 08-level1-sph.png
+01:20:43 09 level 1 runway: launched from the SPH: ground under craft 68841.233 mm, KSP computes 64785.014 mm: +4056.219 mm, PRELAUNCH
+01:20:58 10 level 1 runway: revert to launch 1: ground under craft 68980.731 mm, KSP computes 64785.014 mm: +4195.717 mm, PRELAUNCH
+01:21:12 11 level 1 runway: revert to launch 2: ground under craft 68844.250 mm, KSP computes 64785.014 mm: +4059.236 mm, PRELAUNCH
+01:21:27 12 level 1 runway: quickload: ground under craft 68829.342 mm, KSP computes 64785.014 mm: +4044.329 mm, PRELAUNCH
+01:21:36 recovered: {"location": "\u00c0 Piste de d\u00e9collage", "factor": "100.0% "}
+01:21:37 closed: recovery report
+01:21:40 LaunchPad upgraded to level 2 of 3, 280900 funds left
+01:21:42 Runway upgraded to level 2 of 3, 273400 funds left
+01:21:46 screenshot 13-level2-launchpad-menu.png
+01:21:47 closed: menu
+01:21:52 screenshot 14-level2-runway-menu.png
+01:21:53 closed: menu
+01:21:58 screenshot 15-level2-vab.png
+01:22:15 16 level 2 launchpad: launched from the VAB: ground under craft 69689.169 mm, KSP computes 64784.706 mm: +4904.464 mm, PRELAUNCH
+01:22:30 17 level 2 launchpad: revert to launch 1: ground under craft 69765.001 mm, KSP computes 64784.706 mm: +4980.296 mm, PRELAUNCH
+01:22:45 18 level 2 launchpad: revert to launch 2: ground under craft 69707.081 mm, KSP computes 64784.706 mm: +4922.375 mm, PRELAUNCH
+01:22:59 19 level 2 launchpad: quickload: ground under craft 69661.564 mm, KSP computes 64784.706 mm: +4876.859 mm, PRELAUNCH
+01:23:00 screenshot 20-table.png
+01:23:09 recovered: {"location": "\u00c0 Aire de lancement", "factor": "100.0% "}
+01:23:10 closed: recovery report
+01:23:16 screenshot 21-level2-sph.png
+01:23:34 22 level 2 runway: launched from the SPH: ground under craft 68884.800 mm, KSP computes 64785.022 mm: +4099.778 mm, PRELAUNCH
+01:23:49 23 level 2 runway: revert to launch 1: ground under craft 68928.829 mm, KSP computes 64785.022 mm: +4143.807 mm, PRELAUNCH
+01:24:04 24 level 2 runway: revert to launch 2: ground under craft 68919.963 mm, KSP computes 64785.022 mm: +4134.941 mm, PRELAUNCH
+01:24:18 25 level 2 runway: quickload: ground under craft 68890.511 mm, KSP computes 64785.022 mm: +4105.489 mm, PRELAUNCH
+01:24:27 recovered: {"location": "\u00c0 Piste de d\u00e9collage", "factor": "100.0% "}
+01:24:28 closed: recovery report
+01:24:31 LaunchPad upgraded to level 3 of 3, 245200 funds left
+01:24:34 Runway upgraded to level 3 of 3, 217000 funds left
+01:24:37 screenshot 26-level3-launchpad-menu.png
+01:24:38 closed: menu
+01:24:43 screenshot 27-level3-runway-menu.png
+01:24:44 closed: menu
+01:24:49 screenshot 28-level3-vab.png
+01:25:07 29 level 3 launchpad: launched from the VAB: ground under craft 72457.356 mm, KSP computes 64784.706 mm: +7672.651 mm, PRELAUNCH
+01:25:21 30 level 3 launchpad: revert to launch 1: ground under craft 72551.645 mm, KSP computes 64784.706 mm: +7766.939 mm, PRELAUNCH
+01:25:36 31 level 3 launchpad: revert to launch 2: ground under craft 72402.485 mm, KSP computes 64784.706 mm: +7617.780 mm, PRELAUNCH
+01:25:51 32 level 3 launchpad: quickload: ground under craft 72523.584 mm, KSP computes 64784.706 mm: +7738.878 mm, PRELAUNCH
+01:25:59 recovered: {"location": "\u00c0 Aire de lancement", "factor": "100.0% "}
+01:26:00 closed: recovery report
+01:26:06 screenshot 33-level3-sph.png
+01:26:23 34 level 3 runway: launched from the SPH: ground under craft 69177.367 mm, KSP computes 64785.048 mm: +4392.319 mm, PRELAUNCH
+01:26:38 35 level 3 runway: revert to launch 1: ground under craft 69003.352 mm, KSP computes 64785.048 mm: +4218.304 mm, PRELAUNCH
+01:26:53 36 level 3 runway: revert to launch 2: ground under craft 69027.333 mm, KSP computes 64785.048 mm: +4242.284 mm, PRELAUNCH
+01:27:07 37 level 3 runway: quickload: ground under craft 69110.726 mm, KSP computes 64785.048 mm: +4325.677 mm, PRELAUNCH
+01:27:08 screenshot 38-table.png
+01:27:17 recovered: {"location": "\u00c0 Piste de d\u00e9collage", "factor": "100.0% "}
+01:27:18 closed: recovery report
+01:27:19 done: 24 arrivals in flight, in D:\ksp-dev\campagnes\2026-10-12-facility-levels\stock\run

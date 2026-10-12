@@ -19,10 +19,10 @@ at the KSC while it is out of its sphere.
 The test of [Time warp](time-warp.md), which ends with a night and a day: a rover on the runway, three
 days of time warp at the highest rate, then *Warp To* the night at the KSC, nine tenths into its day, and
 *Warp To* the next noon. A screenshot after each *Warp To*, twelve seconds later, once the switches have
-read the time; it looks along the runway, the VAB 1 km to the south-east, with KSP Diag - Colliders
-drawing nothing (its mode *Off*).
+read the time; it looks along the runway, the VAB 1 km to the south-east, the window of KSP Diag - Terrain
+Height hidden.
 
-KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Colliders, and this mod
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Height, and this mod
 with its defaults at `logLevel = Debug`. Then the same without this mod.
 
 *Played by a script*, the one of [Time warp](time-warp.md):
@@ -41,5 +41,5 @@ At noon, they are off:
 
 Without this mod, the same screenshots show the same lights on at night and off at noon.
 
-The logs, what the script printed and every reading of KSP Diag - Colliders, for both sessions, are in
+The logs, what the script printed and every line of KSP Diag - Terrain Height, for both sessions, are in
 [`diag/non-regression/stock/time-warp/`](../../../diag/README.md#the-time-warp-protocol).

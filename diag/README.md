@@ -355,7 +355,8 @@ Integrator and KSPTextureLoader as for Real Solar System, and the Community Terr
 ## The scene changes protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
-[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders), this mod at `logLevel = Debug`,
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
+`logLevel = Debug`,
 and KSP-MCPServer, which plays the test through [`automation/run-scene-changes.py`](automation/run-scene-changes.py):
 a new career at the Custom difficulty (on Kerbin, the same as [`career-with-the-parts.sfs`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs)),
 `Diag3-Rocket.craft` on the launchpad, eleven arrivals in flight through every way of leaving
@@ -370,23 +371,29 @@ KSPTextureLoader, the RSS textures). Each one played again without this mod. Rea
   Kerbin; what the script printed in
   [`scene-changes-kerbin-fix-script.txt`](non-regression/stock/scene-changes/scene-changes-kerbin-fix-script.txt) and
   [`scene-changes-kerbin-without-this-mod-script.txt`](non-regression/stock/scene-changes/scene-changes-kerbin-without-this-mod-script.txt),
-  the colliders under the craft at each arrival in
+  every line of Diag Terrain Height in
   [`scene-changes-kerbin-fix-readings.json`](non-regression/stock/scene-changes/scene-changes-kerbin-fix-readings.json) and
-  [`scene-changes-kerbin-without-this-mod-readings.json`](non-regression/stock/scene-changes/scene-changes-kerbin-without-this-mod-readings.json).
+  [`scene-changes-kerbin-without-this-mod-readings.json`](non-regression/stock/scene-changes/scene-changes-kerbin-without-this-mod-readings.json),
+  and a screenshot of its table in
+  [`scene-changes-kerbin-fix-table.png`](non-regression/stock/scene-changes/scene-changes-kerbin-fix-table.png) and
+  [`scene-changes-kerbin-without-this-mod-table.png`](non-regression/stock/scene-changes/scene-changes-kerbin-without-this-mod-table.png).
 - [`scene-changes-earth-rss-fix.log`](non-regression/stock/scene-changes/scene-changes-earth-rss-fix.log) and
   [`scene-changes-earth-rss-without-this-mod.log`](non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod.log)
   — on Earth; the same in
   [`scene-changes-earth-rss-fix-script.txt`](non-regression/stock/scene-changes/scene-changes-earth-rss-fix-script.txt),
   [`scene-changes-earth-rss-without-this-mod-script.txt`](non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-script.txt),
   [`scene-changes-earth-rss-fix-readings.json`](non-regression/stock/scene-changes/scene-changes-earth-rss-fix-readings.json) and
-  [`scene-changes-earth-rss-without-this-mod-readings.json`](non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-readings.json).
+  [`scene-changes-earth-rss-without-this-mod-readings.json`](non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-readings.json),
+  [`scene-changes-earth-rss-fix-table.png`](non-regression/stock/scene-changes/scene-changes-earth-rss-fix-table.png) and
+  [`scene-changes-earth-rss-without-this-mod-table.png`](non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-table.png).
 - [`scene-changes-earth-rss-without-this-mod-earlier.log`](non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-earlier.log)
   — an earlier session on Earth without this mod, kept for the error of the Knowledge Base it shows.
 
 ## The destroyed buildings protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
-[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders), this mod at `logLevel = Debug`,
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
+`logLevel = Debug`,
 and KSP-MCPServer, which plays the test through
 [`automation/run-destroyed-buildings.py`](automation/run-destroyed-buildings.py): a new career at the Custom
 difficulty (the same as [`career-with-the-parts.sfs`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs), which a player can start
@@ -401,14 +408,18 @@ Played again without this mod. Read in
   what the script printed in
   [`destroyed-buildings-kerbin-fix-script.txt`](non-regression/stock/destroyed-buildings/destroyed-buildings-kerbin-fix-script.txt) and
   [`destroyed-buildings-kerbin-without-this-mod-script.txt`](non-regression/stock/destroyed-buildings/destroyed-buildings-kerbin-without-this-mod-script.txt),
-  the colliders under the craft at each arrival in
+  every line of Diag Terrain Height in
   [`destroyed-buildings-kerbin-fix-readings.json`](non-regression/stock/destroyed-buildings/destroyed-buildings-kerbin-fix-readings.json) and
-  [`destroyed-buildings-kerbin-without-this-mod-readings.json`](non-regression/stock/destroyed-buildings/destroyed-buildings-kerbin-without-this-mod-readings.json).
+  [`destroyed-buildings-kerbin-without-this-mod-readings.json`](non-regression/stock/destroyed-buildings/destroyed-buildings-kerbin-without-this-mod-readings.json),
+  and a screenshot of its table in
+  [`destroyed-buildings-kerbin-fix-table.png`](non-regression/stock/destroyed-buildings/destroyed-buildings-kerbin-fix-table.png) and
+  [`destroyed-buildings-kerbin-without-this-mod-table.png`](non-regression/stock/destroyed-buildings/destroyed-buildings-kerbin-without-this-mod-table.png).
 
 ## The facility levels protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
-[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders), this mod at `logLevel = Debug`,
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
+`logLevel = Debug`,
 and KSP-MCPServer, which plays the test through
 [`automation/run-facility-levels.py`](automation/run-facility-levels.py): a new career at the Custom
 difficulty (the same as [`career-with-the-parts.sfs`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs)), `Diag3-Rocket.craft` launched onto the launchpad and `Diag3-Rover.craft` onto the runway, four
@@ -420,15 +431,20 @@ arrivals on each at each of their three levels. Played again without this mod. R
   what the script printed in
   [`facility-levels-kerbin-fix-script.txt`](non-regression/stock/facility-levels/facility-levels-kerbin-fix-script.txt) and
   [`facility-levels-kerbin-without-this-mod-script.txt`](non-regression/stock/facility-levels/facility-levels-kerbin-without-this-mod-script.txt),
-  the colliders under the craft at each arrival in
+  every line of Diag Terrain Height in
   [`facility-levels-kerbin-fix-readings.json`](non-regression/stock/facility-levels/facility-levels-kerbin-fix-readings.json) and
-  [`facility-levels-kerbin-without-this-mod-readings.json`](non-regression/stock/facility-levels/facility-levels-kerbin-without-this-mod-readings.json).
+  [`facility-levels-kerbin-without-this-mod-readings.json`](non-regression/stock/facility-levels/facility-levels-kerbin-without-this-mod-readings.json),
+  and the screenshots of its table, every twelve arrivals, in
+  [`facility-levels-kerbin-fix-table-1.png`](non-regression/stock/facility-levels/facility-levels-kerbin-fix-table-1.png),
+  [`facility-levels-kerbin-fix-table-2.png`](non-regression/stock/facility-levels/facility-levels-kerbin-fix-table-2.png),
+  [`facility-levels-kerbin-without-this-mod-table-1.png`](non-regression/stock/facility-levels/facility-levels-kerbin-without-this-mod-table-1.png) and
+  [`facility-levels-kerbin-without-this-mod-table-2.png`](non-regression/stock/facility-levels/facility-levels-kerbin-without-this-mod-table-2.png).
 
 ## The time warp protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
-[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders), this mod at `logLevel = Debug`,
-and KSP-MCPServer, which plays the test through
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
+`logLevel = Debug`, and KSP-MCPServer, which plays the test through
 [`automation/run-time-warp.py`](automation/run-time-warp.py): a new sandbox game, `Diag3-Rover.craft`
 launched from the SPH onto the runway, three days of time warp at 100 000×, then *Warp To* the night and
 the next noon at the KSC; four readings, a screenshot at each. Played again without this mod. Read in
@@ -440,15 +456,19 @@ the next noon at the KSC; four readings, a screenshot at each. Played again with
   what the script printed in
   [`time-warp-kerbin-fix-script.txt`](non-regression/stock/time-warp/time-warp-kerbin-fix-script.txt) and
   [`time-warp-kerbin-without-this-mod-script.txt`](non-regression/stock/time-warp/time-warp-kerbin-without-this-mod-script.txt),
-  the colliders under the craft at each reading in
+  every line of Diag Terrain Height in
   [`time-warp-kerbin-fix-readings.json`](non-regression/stock/time-warp/time-warp-kerbin-fix-readings.json) and
-  [`time-warp-kerbin-without-this-mod-readings.json`](non-regression/stock/time-warp/time-warp-kerbin-without-this-mod-readings.json).
+  [`time-warp-kerbin-without-this-mod-readings.json`](non-regression/stock/time-warp/time-warp-kerbin-without-this-mod-readings.json),
+  and a screenshot of its table in
+  [`time-warp-kerbin-fix-table.png`](non-regression/stock/time-warp/time-warp-kerbin-fix-table.png) and
+  [`time-warp-kerbin-without-this-mod-table.png`](non-regression/stock/time-warp/time-warp-kerbin-without-this-mod-table.png).
 
 ## The time warp flyover protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, Kerbal Konstructs 1.12.3 with the launch
 pad of [`non-regression/stock/time-warp/warp-static-mun-kk/`](non-regression/stock/time-warp/warp-static-mun-kk/) and its CustomPreLaunchChecks,
-[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders), this mod at `logLevel = Debug`,
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
+`logLevel = Debug`,
 and KSP-MCPServer, which plays the test through
 [`automation/run-time-warp-flyover.py`](automation/run-time-warp-flyover.py): the capsule of
 [`warp-static-mun-kk.sfs`](non-regression/stock/time-warp/warp-static-mun-kk.sfs) on that launch pad, near the highest point of the Mun's
@@ -458,14 +478,15 @@ warp at 10×. Played again without this mod. Read in
 
 - [`time-warp-flyover-mun-kk-fix.log`](non-regression/stock/time-warp/time-warp-flyover-mun-kk-fix.log) and
   [`time-warp-flyover-mun-kk-without-this-mod.log`](non-regression/stock/time-warp/time-warp-flyover-mun-kk-without-this-mod.log);
-  the session without this mod is also the one the launch pad was placed in, with Kerbal Konstructs' editor,
-  and holds a first try of the script that launched from the launchpad, where KSP recovered the capsule;
   what the script printed in
   [`time-warp-flyover-mun-kk-fix-script.txt`](non-regression/stock/time-warp/time-warp-flyover-mun-kk-fix-script.txt) and
   [`time-warp-flyover-mun-kk-without-this-mod-script.txt`](non-regression/stock/time-warp/time-warp-flyover-mun-kk-without-this-mod-script.txt),
-  the colliders under the capsule at each reading in
+  every line of Diag Terrain Height in
   [`time-warp-flyover-mun-kk-fix-readings.json`](non-regression/stock/time-warp/time-warp-flyover-mun-kk-fix-readings.json) and
-  [`time-warp-flyover-mun-kk-without-this-mod-readings.json`](non-regression/stock/time-warp/time-warp-flyover-mun-kk-without-this-mod-readings.json).
+  [`time-warp-flyover-mun-kk-without-this-mod-readings.json`](non-regression/stock/time-warp/time-warp-flyover-mun-kk-without-this-mod-readings.json),
+  and a screenshot of its table in
+  [`time-warp-flyover-mun-kk-fix-table.png`](non-regression/stock/time-warp/time-warp-flyover-mun-kk-fix-table.png) and
+  [`time-warp-flyover-mun-kk-without-this-mod-table.png`](non-regression/stock/time-warp/time-warp-flyover-mun-kk-without-this-mod-table.png).
 
 ## The anchor on a static protocol
 

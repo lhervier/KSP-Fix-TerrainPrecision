@@ -78,6 +78,10 @@ def close(dialogs_only):
     raise RuntimeError("still something open over the scene after ten closings")
 
 
+# Lines of the table of KSP Diag - Terrain Height in one screenshot of it: twelve still fit on a screen of 720 pixels.
+TABLE_LINES = 12
+
+
 class Session:
     """The steps of the protocol, numbered in the order they are played, what each of them read, and the craft
     on the launchpad (craft_id: the id of that vessel at its last arrival)."""
@@ -99,27 +103,46 @@ class Session:
         log("screenshot " + os.path.basename(path))
 
     def arrived(self, how, launchpad=True):
-        """Reads the colliders under each craft, once the active vessel, just arrived in flight, has settled: the
-        craft on the launchpad, or another craft when launchpad is False."""
+        """Once the active vessel, just arrived in flight, has settled, presses Record in the window of KSP Diag -
+        Terrain Height: the ground under it and the ground KSP computes there. The active vessel is the craft on
+        the launchpad, or another craft when launchpad is False. Every TABLE_LINES readings, takes a screenshot of
+        the table."""
         self.step += 1
         call("wait", seconds=self.options.settle)
-        call("colliders_show_window", visible=False)
+        call("terrainheight_show_window", visible=False)
+        if not self.readings:
+            # The table outlives scene changes: empty it of whatever an earlier session left there.
+            call("terrainheight_clear")
         state = call("get_state")
-        crafts = call("colliders_log_under_crafts")
+        line = call("terrainheight_record")
         active = state.get("vessel", {})
         if launchpad:
             self.craft_id = active.get("id")
-        under = next((c for c in crafts if c["craft"] == active.get("name")), None)
-        reading = {"step": self.step, "arrival": how, "launchpad": launchpad, "state": state, "underCrafts": crafts}
+        reading = {"step": self.step, "arrival": how, "launchpad": launchpad, "state": state, "line": line}
         self.readings.append(reading)
         with open(os.path.join(self.out, "readings.json"), "w", newline="") as f:
             json.dump(self.readings, f, indent=1)
-        first = under["colliders"][0] if under and under["colliders"] else None
-        if first is None:
-            log("%02d %s: no collider under the craft" % (self.step, how))
-        else:
-            log("%02d %s: %s (%s) %.3f mm above the terrain, %s" % (
-                self.step, how, first["name"], first["parent"], first["heightMm"], active["situation"]))
+        log("%02d %s: ground under craft %.3f mm, KSP computes %.3f mm: %+.3f mm, %s" % (
+            self.step, how, line["CollisionSurfaceMm"], line["ComputedTerrainMm"],
+            line["CollisionSurfaceMm"] - line["ComputedTerrainMm"], active.get("situation")))
+        if len(self.readings) % TABLE_LINES == 0:
+            self.table()
+
+    def table(self):
+        """Takes a screenshot of the table of KSP Diag - Terrain Height, its window shown alone, then clears it."""
+        self.step += 1
+        path = os.path.join(self.out, "%02d-table.png" % self.step)
+        call("terrainheight_show_window", visible=True)
+        call("wait", seconds=1)
+        call("screenshot", path=path, return_image=False)
+        call("terrainheight_show_window", visible=False)
+        call("terrainheight_clear")
+        log("screenshot " + os.path.basename(path))
+
+    def finish(self):
+        """Takes the last screenshot of the table of KSP Diag - Terrain Height, when lines are left in it."""
+        if len(self.readings) % TABLE_LINES:
+            self.table()
 
 
 # How long a script stays at the space centre whenever it arrives there, before going anywhere else.
@@ -224,6 +247,7 @@ def main(cases, description):
         log("case %s: %s" % (c.name, c.doc.strip().splitlines()[0]))
         c.module.play(session)
 
+    session.finish()
     log("done: %d arrivals in flight, %d of them on the launchpad, in %s" % (
         len(session.readings), sum(1 for r in session.readings if r["launchpad"]), out))
     if options.quit:

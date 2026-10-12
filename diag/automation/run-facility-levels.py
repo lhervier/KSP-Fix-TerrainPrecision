@@ -1,7 +1,7 @@
 """Plays the facility levels protocol: launches onto the launchpad and the runway at each of their three levels.
 
 It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Colliders installed, wait
+Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Terrain Height installed, wait
 for the main menu, put the two craft files in saves/<folder>/Ships/VAB and Ships/SPH, then run:
 
     python run-facility-levels.py --folder <a new game> --out out
@@ -17,9 +17,10 @@ one a new career starts with:
    brakes put on at once, as after each revert; the same reverts and quickload; then Recover;
 4. the launchpad and the runway upgraded from their menus, as their Upgrade button does, for the next level.
 
-At every arrival in flight, once the craft has settled, it presses the button of KSP Diag - Colliders that logs
-the colliders under each craft: the launchpad's or the runway's, with its height above the terrain the game
-computes there. It takes a screenshot of every menu and building it goes through, writes every reading to
+At every arrival in flight, once the craft has settled, it presses Record in the window of KSP Diag - Terrain
+Height: the ground under the craft, the launchpad or the runway, and the ground KSP computes there, in millimetres
+above sea level. Every twelve readings, and at the end, it takes a screenshot of the table, its window alone, then
+clears it. It takes a screenshot of every menu and building it goes through, writes every reading to
 readings.json, prints the height under the craft at each arrival, and leaves KSP running (unless --quit is
 given).
 """
@@ -100,6 +101,7 @@ def main():
         for site, editor, craft in SITES:
             flights(session, site, editor, getattr(options, craft), level)
 
+    session.finish()
     log("done: %d arrivals in flight, in %s" % (len(session.readings), out))
     if options.quit:
         call("quit_game")

@@ -1,7 +1,7 @@
 """A trip to another body: a second craft launched from the SPH, sent around it, and back to the launchpad craft.
 
 The Space Plane Hangar is entered through its building at the space centre, and a second craft launched from it
-onto the runway, read by KSP Diag - Colliders like the craft on the launchpad. It is then put around another body
+onto the runway, read by KSP Diag - Terrain Height like the craft on the launchpad. It is then put around another body
 with Set Orbit of the Alt+F12 menu: the space centre is out of its reach, and KSP no longer loads the craft on the
 launchpad. The player then switches back to that craft as Switch To of the map view does: KSP saves the game as
 persistent and opens the flight again on it. After it, KSP no longer reverts the flight. The second craft is left

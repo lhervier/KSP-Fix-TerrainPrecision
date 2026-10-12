@@ -42,7 +42,7 @@ collider: a stock case, read in the code, outside what this mod fixes.
 
 **Checked on Kerbin and on Earth in Real Solar System.** This mod has to put the KSC back before every
 scene change. Through every way of leaving a flight and coming back, a trip to another body included,
-the launchpad stays within 0.2 mm, against up to 938 mm without this mod. A craft launched from the
+the launchpad stays within 0.14 mm, against up to 599 mm without this mod. A craft launched from the
 VAB stands on the launchpad, one from the SPH on the runway, and every building opens.
 
 **→ Full chapter: [Scene changes](non-regression/stock/scene-changes.md)**
@@ -52,8 +52,8 @@ VAB stands on the launchpad, one from the SPH on the runway, and every building 
 **Checked on Kerbin.** KSP finds a destructible building by its path below the KSC, which this mod moves in
 flight. The VAB, brought down by a heavy craft dropped onto it while the KSC is out of its sphere,
 collapses, shows as destroyed at the space centre, stays in ruins through the next flights, and stands again
-once repaired, as without this mod; the launchpad and the runway stay within 0.2 mm, against 53 mm
-for the launchpad without it.
+once repaired, as without this mod; the launchpad and the runway stay within 0.22 mm, against 71 and
+87 mm without it.
 
 **→ Full chapter: [Destroyed buildings](non-regression/stock/destroyed-buildings.md)**
 
@@ -61,7 +61,7 @@ for the launchpad without it.
 
 **Checked on Kerbin.** Each level of a facility is a model of its own, built below the KSC. At each of
 their three levels, a craft stands on the launchpad and on the runway of that level, as without this mod,
-and stays within 0.25 mm through its arrivals, against up to 145 mm without it.
+and stays within 0.24 mm through its arrivals, against up to 174 mm without it.
 
 **→ Full chapter: [Facility levels](non-regression/stock/facility-levels.md)**
 
@@ -76,8 +76,8 @@ within 0.15 mm of the runway, once 1.6 mm; without this mod, up to 116 mm away.
 ### Time warp
 
 **Checked on Kerbin and on the Mun.** A craft on the runway through three days at 100 000×: the runway
-stays within 0.04 mm under it. A craft passing 3 km over a static of the Mun in time warp on rails: a
-capsule standing on the static reads it within 0.002 mm, against 6 mm without this mod.
+stays within 0.12 mm under it. A craft passing 3 km over a static of the Mun in time warp on rails: a
+capsule standing on the static reads it within 0.008 mm, against 10.7 mm without this mod.
 
 **→ Full chapter: [Time warp](non-regression/stock/time-warp.md)**
 

@@ -1,7 +1,7 @@
 """Plays the destroyed buildings protocol: the VAB brought down by a heavy craft dropped onto it in flight, then repaired.
 
 It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Colliders installed, wait
+Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Terrain Height installed, wait
 for the main menu, put the craft files in saves/<folder>/Ships/VAB and Ships/SPH, then run:
 
     python run-destroyed-buildings.py --folder <a new game> --out out
@@ -21,9 +21,11 @@ building down (see new_career in scene-changes/common.py), then:
 5. the VAB repaired from its menu, as its Repair button does, its menu opened again for a screenshot, and a
    rocket launched from the VAB, entered through its building, onto the launchpad.
 
-At every arrival in flight, once the craft has settled, it presses the button of KSP Diag - Colliders that logs
-the colliders under each craft, and it takes a screenshot towards the VAB from the launchpad or the runway. It
-writes every reading to readings.json and leaves KSP running (unless --quit is given).
+At every arrival in flight, once the craft has settled, it presses Record in the window of KSP Diag - Terrain
+Height: the ground under the craft and the ground KSP computes there, in millimetres above sea level; and it takes
+a screenshot towards the VAB from the launchpad or the runway. Every twelve readings, and at the end, it takes a
+screenshot of the table of KSP Diag - Terrain Height, its window alone, then clears it. It writes every reading to
+readings.json and leaves KSP running (unless --quit is given).
 """
 import argparse
 import json
@@ -182,6 +184,7 @@ def main():
     session.arrived("launched from the repaired VAB")
     towards_vab(session, "vab-repaired-from-the-launchpad")
 
+    session.finish()
     log("done: %d arrivals in flight, in %s" % (len(session.readings), out))
     if options.quit:
         call("quit_game")

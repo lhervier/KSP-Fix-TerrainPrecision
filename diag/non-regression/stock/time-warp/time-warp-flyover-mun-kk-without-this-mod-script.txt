@@ -1,6 +1,7 @@
-22:47:04 01 loaded: collider (LP_lev2) 27590.370 mm above the terrain, LANDED
-22:47:27 on orbit: 9000 m up, inclination 0.2773, lan 19.8790
-22:47:28 warping at 10x
-22:47:47 back to normal time, closest to the capsule 3022 m
-22:48:03 02 after pass 1: collider (LP_lev2) 27596.407 mm above the terrain, LANDED
-22:48:10 done: 1 passes, 2 readings, in D:\ksp-dev\campagnes\2026-10-07-time-warp-flyover\stock\run
+01:05:13 01 loaded: ground under craft 5976659.813 mm, KSP computes 5949050.908 mm: +27608.905 mm, LANDED
+01:05:36 on orbit: 9000 m up, inclination 0.2773, lan 19.8793
+01:05:37 warping at 10x
+01:05:56 back to normal time, closest to the capsule 3022 m
+01:06:13 02 after pass 1: ground under craft 5976649.137 mm, KSP computes 5949050.908 mm: +27598.229 mm, LANDED
+01:06:14 screenshot 03-table.png
+01:06:21 done: 1 passes, 2 readings, in D:\ksp-dev\campagnes\2026-10-12-time-warp-flyover\stock\warp-static-mun-kk
