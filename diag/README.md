@@ -571,6 +571,28 @@ mod at `logLevel = Debug`, or not: each session is here twice, `-without-this-mo
   - without this mod: [`flight-principia-without-this-mod-script.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-script.txt), [`flight-principia-without-this-mod-readings.json`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-readings.json), [`flight-principia-without-this-mod-logs.csv`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-logs.csv), [`flight-principia-without-this-mod-quads.zip`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-quads.zip) and [`flight-principia-without-this-mod-analysis.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-analysis.txt);
   - with this mod: [`flight-principia-fix-script.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-script.txt), [`flight-principia-fix-readings.json`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-readings.json), [`flight-principia-fix-logs.csv`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-logs.csv), [`flight-principia-fix-quads.zip`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-quads.zip) and [`flight-principia-fix-analysis.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-analysis.txt).
 
+## With Kerbal Planetary Base Systems
+
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
+[Kerbal Planetary Base Systems](https://github.com/n116-software/KerbalPlanetaryBaseSystems) 1.6.16 with
+Community Category Kit and Community Resource Pack, both instruments and
+[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer); this mod at `logLevel = Debug`, or not: each
+session is here twice, `-without-this-mod` and `-fix`. Read in
+[Kerbal Planetary Base Systems: a base on the ground](../docs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground.md).
+
+- [`kpbs-kerbin-hull-2.sfs`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/kpbs-kerbin-hull-2.sfs) — a base of
+  28 parts of Kerbal Planetary Base Systems, legs retracted, on a slope of Kerbin.
+- [`loading-kpbs-without-this-mod.log`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-without-this-mod.log) and
+  [`loading-kpbs-fix.log`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-fix.log) — that save, loaded six
+  times by `run-loading.py`, both instruments at once; what the script printed in
+  [`loading-kpbs-without-this-mod-script.txt`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-without-this-mod-script.txt)
+  and [`loading-kpbs-fix-script.txt`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-fix-script.txt), every
+  line it recorded in
+  [`loading-kpbs-without-this-mod-lines.json`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-without-this-mod-lines.json)
+  and [`loading-kpbs-fix-lines.json`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-fix-lines.json), and the
+  screenshots of the two tables in
+  [`imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/`](../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground).
+
 ## With Kerbal Konstructs
 
 KSP 1.12.5 with the Making History expansion, Harmony, ModuleManager, KSP Community Fixes 1.41.1,

@@ -258,8 +258,8 @@ ships a plugin of its own.
 
 ### A base on the ground
 
-**Nothing to test, read in the source.** Its plugin never reads or moves the ground, a static or a
-scatter holder. Its legs, its landing gear and its drills are stock modules, and work on the ground this
-mod places as stock parts do.
+**Checked on Kerbin, and read in the source — this mod keeps a base in place.** Its plugin touches
+nothing this mod moves, and its parts reach the ground through stock modules. Over six loads on a slope, a
+base came back over 121.2 mm without this mod, jumping, and within 0.617 mm with it.
 
 **→ Full chapter: [Kerbal Planetary Base Systems: a base on the ground](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground.md)**
