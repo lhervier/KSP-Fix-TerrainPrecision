@@ -1,6 +1,6 @@
 # A static turning with its body
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: cannot happen on stock, in Real Solar System or with Outer Planets Mod.**
 

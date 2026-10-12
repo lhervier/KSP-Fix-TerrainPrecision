@@ -1,6 +1,6 @@
 # An anchor on a static
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: checked on Kerbin, on the runway of the KSC and on the runway of the Desert Airfield.** An anchor
 placed alone, and an anchor with a battery on it, on each runway: with this mod, both stay within 0.15 mm

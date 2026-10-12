@@ -1,6 +1,6 @@
 # The map view
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: nothing to test, read in the code — the map view changes nothing in what this mod works on.**
 The map draws the bodies from scaled space, which this mod does not touch. The terrain keeps being

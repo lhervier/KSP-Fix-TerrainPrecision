@@ -1,6 +1,6 @@
 # Real Solar System: a CommNet ground station
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Real Solar System](../../non-regression.md#real-solar-system).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Real Solar System](../real-solar-system.md).
 
 **Status: checked, no problem — the CommNet ground station of Kourou, added by Real Solar System, is taken
 out of its sphere when a craft comes within 27.5 km of it and put back without error, and CommNet keeps

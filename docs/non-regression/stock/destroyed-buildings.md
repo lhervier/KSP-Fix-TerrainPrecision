@@ -1,6 +1,6 @@
 # Destroyed buildings
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: checked on Kerbin.** The VAB, brought down in flight while this mod has the KSC out of its terrain
 sphere, collapses, shows as destroyed at the space centre, stays in ruins in the next flights, and stands

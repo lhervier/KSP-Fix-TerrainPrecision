@@ -1,6 +1,6 @@
 # Kopernicus: the KSC moved by Real Solar System
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kopernicus](../../non-regression.md#kopernicus).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kopernicus](../kopernicus.md).
 
 **Status: checked, no problem — the KSC is taken out of its sphere where Kopernicus puts it, and put
 back.** Kopernicus can move the KSC to another place on the home body. Real Solar System has it

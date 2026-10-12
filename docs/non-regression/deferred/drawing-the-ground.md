@@ -1,6 +1,6 @@
 # Deferred: drawing the ground
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Deferred](../../non-regression.md#deferred).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Deferred](../deferred.md).
 
 **Status: checked, no problem.** [Deferred](https://github.com/LGhassen/Deferred) replaces the way KSP
 draws everything, the terrain included, and it is the mod that broke KSP Community Fixes' own

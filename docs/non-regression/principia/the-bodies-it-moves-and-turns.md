@@ -1,6 +1,6 @@
 # Principia: the bodies it moves and turns
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Principia](../../non-regression.md#principia).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Principia](../principia.md).
 
 **Status: checked, no problem.** [Principia](https://github.com/mockingbirdnest/Principia) replaces KSP's
 orbital mechanics, and to do so it takes over the two values this fix places the terrain from: the

@@ -1,6 +1,6 @@
 # Real Solar System: the ground workaround
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Real Solar System](../../non-regression.md#real-solar-system).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Real Solar System](../real-solar-system.md).
 
 **Status: checked on the Moon and on Earth — with this mod, Real Solar System's ground workaround has
 nothing left to correct for this defect, and does not get in the way; without this mod, it does not

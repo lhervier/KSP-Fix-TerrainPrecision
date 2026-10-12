@@ -318,9 +318,10 @@ measured yet.
 
 ## Non-regression tests
 
-The checks above show what this mod fixes. These tests check the other side, one mod at a time: what
-works without this mod still works with it. Only what has been checked is listed; each test is played in
-game with this mod, and compared with the game without it where the two have to be told apart.
+The checks above show what this mod fixes. These tests check the other side, one mod at a time, each on a
+page of its own ([Non-regression tests](docs/non-regression.md)): what works without this mod still works
+with it. Only what has been checked is listed; each test is played in game with this mod, and compared
+with the game without it where the two have to be told apart.
 
 **Stock.** Existing saves go through one more draw of the ground, always the same one. Over loadings, an
 orbit and a return to the space centre, the KSC keeps every building registered, and a craft launched
@@ -329,30 +330,44 @@ back to the same place, and through days of time warp it stays put, its lights f
 An anchored base stays where it was placed on a runway, of the KSC or of a launch site of Making History.
 Every scatter holder goes back to its pool.
 
+**→ Full chapter: [Non-regression tests: stock](docs/non-regression/stock.md)**
+
 **KSP Community Fixes.** None of its patches places the terrain, and every measurement on these pages
 was taken with it installed.
+
+**→ Full chapter: [Non-regression tests: KSP Community Fixes](docs/non-regression/ksp-community-fixes.md)**
 
 **Kopernicus.** The ground is as stable under Kopernicus as without it, and the KSC it moves to Cape
 Canaveral for Real Solar System is placed where it puts it. The rocks it can give a collider are hit
 where they are drawn.
 
+**→ Full chapter: [Non-regression tests: Kopernicus](docs/non-regression/kopernicus.md)**
+
 **Real Solar System.** Its two workarounds for this defect, one for a landed craft and one for the
 runway, have nothing left to correct with this mod, and its CommNet ground stations keep relaying.
+
+**→ Full chapter: [Non-regression tests: Real Solar System](docs/non-regression/real-solar-system.md)**
 
 **Kerbal Konstructs.** A CommNet ground station it opens in flight, beside a craft, finds its body while
 its static is out of its sphere, and relays.
 
+**→ Full chapter: [Non-regression tests: Kerbal Konstructs](docs/non-regression/kerbal-konstructs.md)**
+
 **Deferred.** It draws the ground wherever this mod places it, and the craft and the ground come back as
 they do without it.
 
+**→ Full chapter: [Non-regression tests: Deferred](docs/non-regression/deferred.md)**
+
 **Principia.** It turns and moves the bodies itself, and the craft and the ground come back as they do
 without it, after a load and in flight.
+
+**→ Full chapter: [Non-regression tests: Principia](docs/non-regression/principia.md)**
 
 **Kerbal Planetary Base Systems.** One of the most popular part mods, built for bases on the ground. Its
 plugin touches nothing of the ground, and its parts are held up by stock modules; a base reloaded on a
 slope jumps without this mod, and stays within a millimetre with it.
 
-**→ Full chapter: [Non-regression tests](docs/non-regression.md)**
+**→ Full chapter: [Non-regression tests: Kerbal Planetary Base Systems](docs/non-regression/kerbal-planetary-base-systems.md)**
 
 ## Limits and solutions
 

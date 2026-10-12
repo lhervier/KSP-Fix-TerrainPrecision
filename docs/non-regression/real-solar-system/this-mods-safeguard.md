@@ -1,6 +1,6 @@
 # Real Solar System: this mod's safeguard
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Real Solar System](../../non-regression.md#real-solar-system).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Real Solar System](../real-solar-system.md).
 
 **Status: checked on the Moon, Earth, Venus, Mars and Mercury — the safeguard never refused a
 correction. The largest one was 4.0 float steps, a quarter of the limit.**

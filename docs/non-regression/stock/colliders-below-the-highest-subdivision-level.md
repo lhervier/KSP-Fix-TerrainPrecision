@@ -1,6 +1,6 @@
 # Colliders below the highest subdivision level
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: not a regression, and not corrected either — on stock, no such collider exists.** This mod
 only corrects the quads of the highest subdivision level. A quad of a lower level that had a collider

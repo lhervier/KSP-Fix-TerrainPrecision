@@ -6,7 +6,8 @@ Diags ; aucun résultat n'est consigné ici. **Les tests à jouer n'y sont pas n
 [Work in progress](docs/work-in-progress.md), un chapitre par mod (stock d'abord), les vérifications en
 cours puis celles prévues ; le coût dans [Performance](docs/performance.md). Un nouveau test s'ajoute
 là-bas (une page dans `docs/work-in-progress/<mod>/` et son résumé dans la page d'index), pas ici. Une
-fois joué, il passe dans [Non-regression tests](docs/non-regression.md) si rien n'empire, dans
+fois joué, il passe dans [Non-regression tests](docs/non-regression.md) si rien n'empire (une page dans
+`docs/non-regression/<mod>/` et son résumé dans la page du mod, `docs/non-regression/<mod>.md`), dans
 [Limits and solutions](docs/limits-and-solutions.md) sinon.
 
 ## D'abord

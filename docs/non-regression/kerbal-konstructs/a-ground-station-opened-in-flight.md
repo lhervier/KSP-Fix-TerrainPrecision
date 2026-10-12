@@ -1,6 +1,6 @@
 # Kerbal Konstructs: a ground station opened in flight
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kerbal Konstructs](../../non-regression.md#kerbal-konstructs).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kerbal Konstructs](../kerbal-konstructs.md).
 
 **Status: checked, no problem — a CommNet ground station of Kerbal Konstructs, opened in flight beside a
 craft while its static is out of its sphere, finds its body, and CommNet links the craft to it.**

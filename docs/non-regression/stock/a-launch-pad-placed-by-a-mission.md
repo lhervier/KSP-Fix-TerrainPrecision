@@ -1,6 +1,6 @@
 # A launch pad placed by a mission
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: impossible to reproduce — we found no way to launch a craft from such a launch pad on stock.**
 

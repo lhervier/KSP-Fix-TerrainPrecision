@@ -1,6 +1,6 @@
 # Kopernicus: scatter with colliders
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kopernicus](../../non-regression.md#kopernicus).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kopernicus](../kopernicus.md).
 
 **Status: checked, no problem — the terrain fix alone narrows a stock gap a little, and does not close
 it; the scatter fix of this mod, on by default, closes it.** Stock scatter has no collider, but Kopernicus can give it one: Kopernicus with the

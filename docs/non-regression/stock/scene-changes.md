@@ -1,6 +1,6 @@
 # Scene changes
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: checked on Kerbin and on Earth in Real Solar System.** With this mod, after every way of
 leaving a flight and coming back to the craft on the launchpad, the launchpad is where it was, within

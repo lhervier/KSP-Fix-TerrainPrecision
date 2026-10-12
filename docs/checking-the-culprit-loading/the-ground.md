@@ -121,7 +121,7 @@ The six series, read off those screenshots:
 With this mod, no load of the Moon or Earth series has a `Moving Vessel` line.
 
 The spots of the saves on the Moon and Earth, and what this mod corrected there, are in
-[Non-regression tests: Real Solar System](../non-regression.md#real-solar-system).
+[Non-regression tests: Real Solar System](../non-regression/real-solar-system.md).
 
 ## The ground, over six loads
 

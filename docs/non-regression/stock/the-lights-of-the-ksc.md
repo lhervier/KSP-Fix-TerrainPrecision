@@ -1,6 +1,6 @@
 # The lights of the KSC
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: checked on Kerbin.** In flight, the KSC out of its sphere, the lights of the runway and the
 windows of the buildings come on at night and go off by day, as without this mod.

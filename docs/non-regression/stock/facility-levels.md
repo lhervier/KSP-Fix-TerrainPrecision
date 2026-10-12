@@ -1,6 +1,6 @@
 # Facility levels
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: checked on Kerbin.** At each of their three levels, a craft launched onto the launchpad stands on
 the launchpad of that level, and one launched onto the runway on the runway of that level, as without this

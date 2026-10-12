@@ -1,6 +1,6 @@
 # Real Solar System: the runway fix
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Real Solar System](../../non-regression.md#real-solar-system).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Real Solar System](../real-solar-system.md).
 
 **Status: checked on Earth — with this mod, the runway of the KSC stands at the same height at every load,
 with no step on it, and the runway no longer moves when the floating origin does; so neither half of Real

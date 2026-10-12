@@ -1,6 +1,6 @@
 # KSP Community Fixes: its own terrain patches
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [KSP Community Fixes](../../non-regression.md#ksp-community-fixes).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [KSP Community Fixes](../ksp-community-fixes.md).
 
 **Status: checked, in the source and in every campaign.** Every campaign on these pages ran with KSP Community Fixes 1.41.1 installed, the base most players run, and every measurement of this mod comes from that install. None of KSP Community Fixes' patches places a terrain quad or a
 terrain vertex. The ones that touch the terrain — `PQSUpdateNoMemoryAlloc`, `PQSCoroutineLeak`,

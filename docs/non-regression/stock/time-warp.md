@@ -1,6 +1,6 @@
 # Time warp
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: checked on Kerbin and on the Mun.** On the ground, a craft on the runway through three days of time
 warp at the highest rate, then a night and a day: the KSC stays out of its sphere throughout, and the runway

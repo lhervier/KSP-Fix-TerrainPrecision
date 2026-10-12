@@ -1,6 +1,6 @@
 # Kerbal Planetary Base Systems: a base on the ground
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kerbal Planetary Base Systems](../../non-regression.md#kerbal-planetary-base-systems).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kerbal Planetary Base Systems](../kerbal-planetary-base-systems.md).
 
 **Status: checked on Kerbin, and read in the source — a base stands on the ground as a stock craft does,
 and this mod keeps it in place.**

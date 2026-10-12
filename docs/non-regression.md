@@ -9,257 +9,65 @@ here; what is still to check is in [Work in progress](work-in-progress.md), and 
 worse, with its solution, in [Limits and solutions](limits-and-solutions.md).
 
 Unless a page says otherwise, each test is played in KSP 1.12.5 with Harmony, ModuleManager, KSP
-Community Fixes 1.41.1 and this mod, plus the instrument and the mods it names. Each test has a page of
-its own.
+Community Fixes 1.41.1 and this mod, plus the instrument and the mods it names. Each mod has a page of
+its own, and each test a page under it.
 
 ## Stock
 
-This mod places the terrain quads a craft stands on in double, and takes the statics out of their
-terrain sphere in flight, near a craft ([The fix: the ground](the-fix-ground.md),
-[The fix: the statics](the-fix-statics.md)); with its scatter fix, on by default, it hangs each
-holder of terrain scatter from its quad ([The fix: the scatter](the-fix-scatter.md)). What stock places
-on the ground, or finds the statics and the holders by, has to keep working.
+Existing saves go through one more draw of the ground, always the same one. Over loadings, an orbit and a
+return to the space centre, the KSC keeps every building registered, and a craft launched from the VAB or
+the SPH stands on the launchpad or the runway. Through every scene change, the KSC comes back to the same
+place, and through days of time warp it stays put, its lights following day and night. An anchored base
+stays where it was placed on a runway, of the KSC or of a launch site of Making History. Every scatter
+holder goes back to its pool.
 
-### Existing saves
-
-**Checked, no problem — a landed craft goes through one more draw, always the same one.** A craft saved
-without this mod comes back once on the corrected ground; saved again with it, on the Moon in Real Solar
-System, the workaround that moves a landed craft back onto the ground never had to move it, in 36 loads.
-
-**→ Full chapter: [Existing saves](non-regression/stock/existing-saves.md)**
-
-### Colliders below the highest subdivision level
-
-**Not a regression, not corrected either; on stock, no such collider exists.** This mod corrects the
-quads of the highest level only: a lower-level quad with a collider would jump at every load as in
-stock. The collider offset that would allow one is 0 on every stock body, read in game, and Kopernicus
-cannot change it. A craft flying very fast over a landed one may leave it on terrain without any
-collider: a stock case, read in the code, outside what this mod fixes.
-
-**→ Full chapter: [Colliders below the highest subdivision level](non-regression/stock/colliders-below-the-highest-subdivision-level.md)**
-
-### Scene changes
-
-**Checked on Kerbin and on Earth in Real Solar System.** This mod has to put the KSC back before every
-scene change. Through every way of leaving a flight and coming back, a trip to another body included,
-the launchpad stays within 0.14 mm, against up to 599 mm without this mod. A craft launched from the
-VAB stands on the launchpad, one from the SPH on the runway, and every building opens.
-
-**→ Full chapter: [Scene changes](non-regression/stock/scene-changes.md)**
-
-### Destroyed buildings
-
-**Checked on Kerbin.** KSP finds a destructible building by its path below the KSC, which this mod moves in
-flight. The VAB, brought down by a heavy craft dropped onto it while the KSC is out of its sphere,
-collapses, shows as destroyed at the space centre, stays in ruins through the next flights, and stands again
-once repaired, as without this mod; the launchpad and the runway stay within 0.22 mm, against 71 and
-87 mm without it.
-
-**→ Full chapter: [Destroyed buildings](non-regression/stock/destroyed-buildings.md)**
-
-### Facility levels
-
-**Checked on Kerbin.** Each level of a facility is a model of its own, built below the KSC. At each of
-their three levels, a craft stands on the launchpad and on the runway of that level, as without this mod,
-and stays within 0.24 mm through its arrivals, against up to 174 mm without it.
-
-**→ Full chapter: [Facility levels](non-regression/stock/facility-levels.md)**
-
-### An anchor on a static
-
-**Checked on Kerbin, on a runway of each kind of static.** An anchor stays put only if what it stands on
-comes back too. On the runways of the KSC and the Desert Airfield, an anchor and an anchored base stay
-within 0.15 mm of the runway, once 1.6 mm; without this mod, up to 116 mm away.
-
-**→ Full chapter: [An anchor on a static](non-regression/stock/an-anchor-on-a-static.md)**
-
-### Time warp
-
-**Checked on Kerbin and on the Mun.** A craft on the runway through three days at 100 000×: the runway
-stays within 0.12 mm under it. A craft passing 3 km over a static of the Mun in time warp on rails: a
-capsule standing on the static reads it within 0.008 mm, against 10.7 mm without this mod.
-
-**→ Full chapter: [Time warp](non-regression/stock/time-warp.md)**
-
-### The lights of the KSC
-
-**Checked on Kerbin.** A component switches the lights of the KSC with day and night, after finding its
-body among its parents, which this mod lends back to it. In flight, the KSC out of its sphere, the
-runway lights and the windows come on at night and go off by day, as without this mod.
-
-**→ Full chapter: [The lights of the KSC](non-regression/stock/the-lights-of-the-ksc.md)**
-
-### A launch pad placed by a mission
-
-**Impossible to reproduce.** A mission of Making History can place a launch pad of its own, which stock
-looks for under its sphere once. Read in the code, that never happens in flight, where this mod moves
-statics; no way was found to launch from such a pad on stock.
-
-**→ Full chapter: [A launch pad placed by a mission](non-regression/stock/a-launch-pad-placed-by-a-mission.md)**
-
-### A static turning with its body
-
-**Cannot happen on stock, in Real Solar System or with Outer Planets Mod.** This mod has to turn a static
-out of its sphere when KSP turns the body. Measured body by body, no body turns lower than 100 km, far
-above any craft near a static this mod has moved.
-
-**→ Full chapter: [A static turning with its body](non-regression/stock/a-static-turning-with-its-body.md)**
-
-### The map view
-
-**Nothing to test, read in the code.** The map draws the bodies from scaled space, which this mod does
-not touch. While it is open, the terrain keeps being built around the active craft exactly as in
-flight, and the markers of the launch sites follow their statics wherever this mod places them.
-
-**→ Full chapter: [The map view](non-regression/stock/the-map-view.md)**
-
-### The scatter holders
-
-**Checked with the scatter fix on, no problem — no holder lost.** The scatter fix takes each holder out
-of its pool's container while its quad is in use. Over a flight over the Mun and across scene switches,
-every holder went back to its pool, none was left on a quad, and the pools counted as in stock.
-
-**→ Full chapter: [The scatter holders](non-regression/stock/the-scatter-holders.md)**
+**→ Full chapter: [Non-regression tests: stock](non-regression/stock.md)**
 
 ## KSP Community Fixes
 
-KSP Community Fixes is the base most players run, and it patches the terrain too.
+None of its patches places the terrain, and every measurement on these pages was taken with it installed.
 
-### Its own terrain patches
-
-**Checked, in the source and in every campaign.** None of its patches places a terrain quad or a terrain
-vertex, or names a scatter holder, and every measurement of this mod was taken with KSP Community Fixes
-1.41.1 installed.
-
-**→ Full chapter: [KSP Community Fixes: its own terrain patches](non-regression/ksp-community-fixes/its-own-terrain-patches.md)**
+**→ Full chapter: [Non-regression tests: KSP Community Fixes](non-regression/ksp-community-fixes.md)**
 
 ## Kopernicus
 
-Most planet packs go through [Kopernicus](https://github.com/Kopernicus/Kopernicus), and it touches
-several things this mod deals with. The bodies here are ones Kopernicus reconfigures: Kerbin itself, and
-Earth in Real Solar System, which is Kerbin given another radius, another terrain and another place for
-the KSC. Its flag fix needs a patch of this mod: it is in
-[Limits and solutions](limits-and-solutions.md#kopernicus).
+The ground is as stable under Kopernicus as without it, and the KSC it moves to Cape Canaveral for Real
+Solar System is placed where it puts it. The rocks it can give a collider are hit where they are drawn.
 
-### The terrain
-
-**Checked, no problem.** Kopernicus changes the terrain of existing bodies, so this mod has to still find
-the ground where it expects it. Over six loads on Kerbin, a terrain quad spreads over 116.0 mm (median)
-without this mod and 0.079 mm with it.
-
-**→ Full chapter: [Kopernicus: the terrain](non-regression/kopernicus/the-terrain.md)**
-
-### Scatter with colliders
-
-**Checked — the terrain fix alone narrows a stock gap a little; the scatter fix, on by default, closes it.**
-Kopernicus can give rocks a collider, which stock places apart from the rock drawn: over six loads, −71.3 to
-+59.9 mm without this mod, −58.6 to +54.5 mm with its scatter fix off, −0.022 to +0.022 mm with this mod.
-
-**→ Full chapter: [Kopernicus: scatter with colliders](non-regression/kopernicus/scatter-with-colliders.md)**
-
-### The KSC moved to Cape Canaveral
-
-**Checked, no problem.** Kopernicus moves the KSC for Real Solar System, so this mod has to handle it at
-its new place. It takes the KSC out of its sphere there and puts it back, and the launchpad comes back
-to the same place through every way of leaving a flight, within 0.2 mm.
-
-**→ Full chapter: [Kopernicus: the KSC moved by Real Solar System](non-regression/kopernicus/the-ksc-moved-by-real-solar-system.md)**
+**→ Full chapter: [Non-regression tests: Kopernicus](non-regression/kopernicus.md)**
 
 ## Real Solar System
 
-The defect grows with the body: a float's step is 62.5 mm at the radius of Kerbin, 125 mm on the Moon,
-500 mm on Earth. [Real Solar System](https://github.com/KSP-RO/RealSolarSystem) ships two workarounds for
-what it does to a craft, and adds statics of its own. The measurements on the Moon and on Earth, and
-their install, are in [Checking the culprit: loading the same save](checking-the-culprit-loading.md) and
-[Checking the culprit: driving on while the world moves](checking-the-culprit-driving.md); the logs of
-every session with this mod in [`diag/runs`](../diag/README.md#on-real-solar-system).
+Its two workarounds for this defect, one for a landed craft and one for the runway, have nothing left to
+correct with this mod, and its CommNet ground stations keep relaying.
 
-### The ground workaround
-
-**Checked on the Moon and on Earth — with this mod, it has nothing left to correct for this defect.** Real
-Solar System moves a landed craft back onto the ground when it is more than 10 cm off. Over 75 loads in
-a row with this mod, the craft never moved, and the workaround never had anything to correct.
-
-**→ Full chapter: [Real Solar System: the ground workaround](non-regression/real-solar-system/the-ground-workaround.md)**
-
-### The runway fix
-
-**Checked on Earth — with this mod, the runway is where it is drawn, with no step.** Real Solar System
-turns off the colliders of the runway's sections and holds the floating origin on it. Built without that
-fix, with this mod, the runway stood within 0.3 mm over thirty loads, and a move of the origin moved nothing.
-
-**→ Full chapter: [Real Solar System: the runway fix](non-regression/real-solar-system/the-runway-fix.md)**
-
-### This mod's safeguard
-
-**Checked on the Moon, Earth, Venus, Mars and Mercury — it never refused a correction.** This mod
-refuses any correction larger than sixteen float steps, a limit that grows with the body. The largest
-correction, on Earth, was four steps, 2 m, a quarter of the limit; a first version, a fixed metre,
-refused part of Earth's terrain.
-
-**→ Full chapter: [Real Solar System: this mod's safeguard](non-regression/real-solar-system/this-mods-safeguard.md)**
-
-### A CommNet ground station
-
-**Checked on Earth, no problem.** Real Solar System adds 63 CommNet ground stations, statics this mod
-takes out of their sphere. Driven toward the one of Kourou, a rover sees it taken out on the way, and
-CommNet keeps linking the rover to it.
-
-**→ Full chapter: [Real Solar System: a CommNet ground station](non-regression/real-solar-system/a-commnet-ground-station.md)**
+**→ Full chapter: [Non-regression tests: Real Solar System](non-regression/real-solar-system.md)**
 
 ## Kerbal Konstructs
 
-[Kerbal Konstructs](https://github.com/KSP-RO/Kerbal-Konstructs) plants statics of its own, which this
-mod takes out of their sphere in flight like the KSC, and can turn one into a CommNet ground station while
-the player is flying beside it. Its group editor needs a patch of this mod:
-[Limits and solutions](limits-and-solutions.md#kerbal-konstructs).
+A CommNet ground station it opens in flight, beside a craft, finds its body while its static is out of
+its sphere, and relays.
 
-### A ground station opened in flight
-
-**Checked on Kerbin, no problem.** A ground station finds its body among the parents of its static, which
-this mod lends back to it. Opened in flight beside a craft, while its static is out of its sphere, a
-ground station of Kerbal Konstructs becomes the craft's first CommNet hop.
-
-**→ Full chapter: [Kerbal Konstructs: a ground station opened in flight](non-regression/kerbal-konstructs/a-ground-station-opened-in-flight.md)**
+**→ Full chapter: [Non-regression tests: Kerbal Konstructs](non-regression/kerbal-konstructs.md)**
 
 ## Deferred
 
-[Deferred](https://github.com/LGhassen/Deferred) replaces the way KSP draws everything, the terrain
-included, and it is the mod that broke KSP Community Fixes' own `PQSOnlyStartOnce`: anything touching the
-terrain spheres gets checked against it.
+It draws the ground wherever this mod places it, and the craft and the ground come back as they do
+without it.
 
-### Drawing the ground
-
-**Checked, no problem.** Deferred draws the ground wherever it is placed and patches nothing this mod
-patches. With it installed, the craft and the ground come back as they do without it, after a load and
-after a trip out of range.
-
-**→ Full chapter: [Deferred: drawing the ground](non-regression/deferred/drawing-the-ground.md)**
+**→ Full chapter: [Non-regression tests: Deferred](non-regression/deferred.md)**
 
 ## Principia
 
-[Principia](https://github.com/mockingbirdnest/Principia) replaces KSP's orbital mechanics, and takes
-over the rotation and the position of every body: the two values this mod places the terrain from.
+It turns and moves the bodies itself, and the craft and the ground come back as they do without it, after
+a load and in flight.
 
-### The bodies it moves and turns
-
-**Checked, no problem.** Principia turns the bodies, and moves them while a craft flies, the way stock
-does. With it installed, a landed craft comes back from a load, and the ground is built under a rocket
-in flight, as without it.
-
-**→ Full chapter: [Principia: the bodies it moves and turns](non-regression/principia/the-bodies-it-moves-and-turns.md)**
+**→ Full chapter: [Non-regression tests: Principia](non-regression/principia.md)**
 
 ## Kerbal Planetary Base Systems
 
-[Kerbal Planetary Base Systems](https://github.com/n116-software/KerbalPlanetaryBaseSystems) is one of
-the most popular part mods, and it is all about the ground: its parts build bases, crafts left landed for
-a long time and loaded again and again, on the ground this mod places. Checking it is only logical; it
-ships a plugin of its own.
+One of the most popular part mods, built for bases on the ground. Its plugin touches nothing of the
+ground, and its parts are held up by stock modules; a base reloaded on a slope jumps without this mod,
+and stays within a millimetre with it.
 
-### A base on the ground
-
-**Checked on Kerbin, and read in the source — this mod keeps a base in place.** Its plugin touches
-nothing this mod moves, and its parts reach the ground through stock modules. Over six loads on a slope, a
-base came back over 121.2 mm without this mod, jumping, and within 0.617 mm with it.
-
-**→ Full chapter: [Kerbal Planetary Base Systems: a base on the ground](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground.md)**
+**→ Full chapter: [Non-regression tests: Kerbal Planetary Base Systems](non-regression/kerbal-planetary-base-systems.md)**

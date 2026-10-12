@@ -1,6 +1,6 @@
 # Kopernicus: the terrain
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kopernicus](../../non-regression.md#kopernicus).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kopernicus](../kopernicus.md).
 
 **Status: checked, no problem — the ground is as stable under Kopernicus as without it.** Kopernicus
 rebuilds the terrain of every body it touches, so the frame this fix computes in has to still be the
@@ -30,7 +30,7 @@ body, Kopernicus leaves the quads hanging in the frame this fix computes.
 
 The readings above are the position the quads are placed at — the cause — not the surface a craft rests
 on, which only [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight)
-reads. That surface was read on Earth in [Real Solar System](../../non-regression.md#real-solar-system),
+reads. That surface was read on Earth in [Real Solar System](../real-solar-system.md),
 a stock body rebuilt by Kopernicus: Real Solar System's Earth is Kerbin, reconfigured by Kopernicus 248
 to another radius and another terrain. The protocol is the one of
 [Checking the ground: loading the same save](../../checking-the-culprit-loading/the-ground.md#the-ground-over-six-loads):

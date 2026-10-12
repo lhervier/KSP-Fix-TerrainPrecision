@@ -1,6 +1,6 @@
 # The scatter holders
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: checked with the scatter fix on, no problem — no holder lost, and every pool works as in
 stock, over a flight and across scene switches.** The scatter fix, on by default, hangs each holder of

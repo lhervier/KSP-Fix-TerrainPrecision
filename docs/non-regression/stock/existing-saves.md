@@ -1,6 +1,6 @@
 # Existing saves
 
-Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../stock.md).
 
 **Status: checked, no problem — a landed craft goes through one more draw, always the same one.** The fix takes away the draw, and the draw was also an escape hatch: in stock, a base
 that comes back buried and tears itself apart can be reloaded until it survives. With the fix, it breaks
