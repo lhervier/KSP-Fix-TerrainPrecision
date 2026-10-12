@@ -15,10 +15,10 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
         public static bool FixStatics { get; private set; } = true;
 
         /// <summary>
-        /// Whether terrain scatter (rocks, grass, trees) is drawn from its terrain quads. Off by default: it
-        /// moves stock objects away from where other mods may look for them.
+        /// Whether terrain scatter (rocks, grass, trees) is drawn from its terrain quads. It moves stock objects
+        /// away from where other mods may look for them, hence a setting of its own.
         /// </summary>
-        public static bool FixScatter { get; private set; } = false;
+        public static bool FixScatter { get; private set; } = true;
 
         /// <summary>
         /// Whether the collider of the stock ground anchor reaches down to the bottom of the anchor, so that a

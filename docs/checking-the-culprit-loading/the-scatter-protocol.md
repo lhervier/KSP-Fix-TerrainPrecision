@@ -5,7 +5,7 @@ Part of [Terrain Precision Fix](../../README.md), for
 read by [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter), load after load. What each
 reading is, and what a record holds line by line, are in
 [its page](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/what-it-measures.md). The
-protocol is the same on stock, with the terrain fix alone and with the scatter fix as well.
+protocol is the same on stock, with this mod, and with its scatter fix turned off.
 
 ## The saves
 
@@ -39,6 +39,18 @@ scatter around it — scatter only exists on the most detailed terrain — and s
 
 KSP overwrites `KSP.log` each time it starts: copy it before relaunching. Reloading the save from within
 the game does not overwrite it, and the record numbers keep counting from one load to the next.
+
+## Played by a script
+
+[`run-scatter-loading.py`](../../diag/automation/run-scatter-loading.py) plays this protocol through
+[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), with nothing but Python 3: start KSP with
+KSP-MCPServer and Diag Scatter installed, copy a save into a sandbox game, wait for the main menu, then run
+`python run-scatter-loading.py --folder <your sandbox game> --save reference-kerbin --loads 12 --out out`.
+After each load, it presses *Record the rocks* every 3 s until every holder is built and the counts are the
+same twice in a row, writes the number and the closing line of the last record to `lines.json`, and never
+saves the game. The records stay in `KSP.log`;
+[`extract-scatter-records.py`](../../diag/automation/extract-scatter-records.py) copies the last record of
+each load out of it, one file per load.
 
 ## Reading the records
 

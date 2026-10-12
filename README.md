@@ -113,7 +113,7 @@ takes it away, and how that is checked.
 - **[The ground](#the-ground)**, the quads a craft stands on, and every vertex inside them.
 - **[The statics](#the-statics)**: the runway, the launchpad and the buildings of the KSC, the launch
   sites of the Making History expansion, and the bases a mod such as Kerbal Konstructs plants on a body.
-- **[The scatter](#the-scatter-off-by-default)**: the rocks, and around the KSC the grass and the trees.
+- **[The scatter](#the-scatter)**: the rocks, and around the KSC the grass and the trees.
 
 **[The ground anchor](#the-ground-anchor)** is another matter. Two stock behaviours raise an anchored base
 when it is loaded, and neither is a rounding. It comes last.
@@ -170,7 +170,8 @@ stand on are touched.
 **What it makes worse.** Where the quads this mod corrects meet coarser ones, stock already leaves a
 crack, and this mod widens it: the median of the largest gap of a load goes from 157 mm to 225 mm on
 Kerbin, and from about 1.3 m to 1.9 m on Earth. It is visual only, with no solution yet. The scatter, too,
-is drawn further off the corrected ground: see [The scatter](#the-scatter-off-by-default).
+would be drawn further off the corrected ground, but for this mod's scatter fix,
+on by default: see [The scatter](#the-scatter).
 
 **→ Full chapter: [The seam between subdivision levels](docs/limits-and-solutions/stock/the-seam-between-subdivision-levels.md)**
 
@@ -230,34 +231,44 @@ these mods could make themselves, given as a diff to apply to their source.
 
   **→ Full chapter: [Kerbal Konstructs: the group editor](docs/limits-and-solutions/kerbal-konstructs/the-group-editor.md)**
 
-## The scatter, off by default
+## The scatter
 
 **The culprit.** The rocks, and around the KSC the grass and the trees, are built from the vertices of
 their quad, but hang from a *holder* that stays under the body, at the same 600 km vector in a float. The
 quad is drawn where its position says, the holder where its matrix says, and the two need not round the
-same way. The terrain fix makes it worse: the ground stops moving, the holders do not. Stock scatter has
-no collider, so this is visual — unless a mod gives it one.
+same way. The terrain fix makes it worse: the ground stops moving, the holders do not, at every load and
+at every move of the world while you drive. Stock scatter has no collider, so this is visual — unless a mod
+gives it one.
 
 **→ Full chapter: [The culprit: the scatter](docs/the-culprit-scatter.md)**
 
-**The fix, off by default.** Two Harmony patches hang each holder from its own quad, at no offset, and
+**The fix.** Two Harmony patches hang each holder from its own quad, at no offset, and
 hang it back in its pool when the quad goes: the stock scatter is then drawn with the very matrix of the
-ground it was built on. It is off by default: it moves stock objects other mods may look for, against a
-gap nobody sees on a stock install. With a mod that gives the scatter colliders, the gap is a real one,
-and turning it on is yours to weigh.
+ground it was built on. It is on by default, with the terrain fix it completes. It moves stock objects
+other mods may look for: if one of them misbehaves around rocks, grass or trees, one line of the settings
+file turns it off, `fixScatter = false`.
 
 **→ Full chapter: [The fix: the scatter](docs/the-fix-scatter.md)**
 
-**Checked** at loading and in flight:
+**Checked** at loading, while you drive and in flight:
 
 - **Loading the same save**, twelve times on Kerbin: half of the points measured on the scatter come
-  back more than 94 mm apart against the ground, 130 mm with this mod as installed by default; with its
-  scatter fix on, none more than 0.125 mm.
+  back more than 61 mm apart against the ground, 178 mm with this mod and its scatter fix turned off; with
+  this mod as
+  installed, none more than 0.132 mm.
 
   **→ Full chapter: [Checking the scatter: loading the same save](docs/checking-the-culprit-loading/the-scatter.md)**
 
-- **In flight** over the Mun, the scatter is drawn up to 26.5 mm off its quads without the scatter fix,
-  and exactly on them with it.
+- **Driving on while the world moves**, every 500 m a rover drives on Kerbin: on stock, the grass jumps
+  with the ground, within 0.13 mm of it; with this mod and its scatter fix turned off, the ground holds and
+  the grass jumps against it, by up to
+  54 mm; with this mod as installed, nothing jumps, within 0.18 mm. Filmed
+  on a cactus, too.
+
+  **→ Full chapter: [Checking the scatter: driving on while the world moves](docs/checking-the-culprit-driving/the-scatter.md)**
+
+- **In flight** over the Mun, the scatter is drawn up to 21.9 mm off its quads on stock, and exactly on them
+with this mod.
 
   **→ Full chapter: [Checking the scatter: in flight](docs/checking-the-culprit-flight/the-scatter.md)**
 
@@ -316,14 +327,14 @@ orbit and a return to the space centre, the KSC keeps every building registered,
 from the VAB or the SPH stands on the launchpad or the runway. Through every scene change, the KSC comes
 back to the same place, and through days of time warp it stays put, its lights following day and night.
 An anchored base stays where it was placed on a runway, of the KSC or of a launch site of Making History.
-With the scatter fix on, every scatter holder goes back to its pool.
+Every scatter holder goes back to its pool.
 
 **KSP Community Fixes.** None of its patches places the terrain, and every measurement on these pages
 was taken with it installed.
 
 **Kopernicus.** The ground is as stable under Kopernicus as without it, and the KSC it moves to Cape
 Canaveral for Real Solar System is placed where it puts it. The rocks it can give a collider are hit
-where they are drawn with the scatter fix on.
+where they are drawn.
 
 **Real Solar System.** Its two workarounds for this defect, one for a landed craft and one for the
 runway, have nothing left to correct with this mod, and its CommNet ground stations keep relaying.
@@ -345,7 +356,7 @@ What this mod makes worse, or would break without a patch of its own, with the s
 at a time. **The statics fix is the riskiest of the fixes on by default**: it takes a static out of the
 place where stock, and any mod, expects to find it. Each limit is told above with the fix it comes from:
 the crack between subdivision levels with [the ground](#the-ground), the scatter drawn further off the
-ground with [the scatter](#the-scatter-off-by-default), and the patches to Kopernicus and Kerbal Konstructs
+ground with [the scatter](#the-scatter), and the patches to Kopernicus and Kerbal Konstructs
 with [the statics](#the-statics).
 
 **→ Full chapter: [Limits and solutions](docs/limits-and-solutions.md)**
@@ -378,7 +389,7 @@ change one: quit KSP, edit the file, start KSP again.
 |---|---|
 | `fixTerrain` | `true` (default) places the terrain in double precision; `false` leaves it as stock builds it |
 | `fixStatics` | `true` (default) places the statics in double precision; `false` leaves them where stock places them |
-| `fixScatter` | `false` (default) leaves the terrain scatter where stock draws it; `true` draws it from the terrain quads it was built on. Off by default because it moves stock objects other mods may look for, against a gap nobody sees on a stock install: see [Off by default: should you turn it on?](docs/the-fix-scatter.md#off-by-default-should-you-turn-it-on) |
+| `fixScatter` | `true` (default) draws the terrain scatter from the terrain quads it was built on; `false` leaves it where stock draws it, a few centimetres off the corrected ground, and jumping against it every 500 m while you drive. It moves stock objects other mods may look for: turn it off if one of them misbehaves around rocks, grass or trees. See [On by default: when to turn it off](docs/the-fix-scatter.md#on-by-default-when-to-turn-it-off) |
 | `fixGroundAnchorModel` | `true` (default) brings the collider of the stock ground anchor down to the bottom of the anchor, so that a load puts it back where it was placed; `false` leaves the stock collider, which stops 2 cm above it |
 | `fixGroundAnchorLoad` | `true` (default) loads a vessel holding a stock ground anchor where it was saved; `false` lets stock raise it to the height it computes for the terrain, where the anchor then holds it |
 | `fixGroundAnchorRivet` | `true` (default) freezes a loaded anchor from the moment it is loaded, until stock rivets it again; `false` lets stock rivet it one frame late, which below 50 frames per second lets it move by under a millimetre first, a base in the air sinking a little at every load |

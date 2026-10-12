@@ -1,0 +1,44 @@
+[
+ {
+  "load": 1,
+  "tag": "record1",
+  "seconds": 30.0,
+  "closing": "End of record 1: 352 quads with rocks, 352 holders (0 not built yet); nearest quad 'Mun Xn233333333': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 1
+ },
+ {
+  "load": 1,
+  "tag": "record2",
+  "seconds": 150.0,
+  "closing": "End of record 2: 176 quads with rocks, 176 holders (0 not built yet); nearest quad 'Mun Xn213333333': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 2
+ },
+ {
+  "load": 1,
+  "tag": "record3",
+  "seconds": 270.0,
+  "closing": "End of record 3: 152 quads with rocks, 152 holders (0 not built yet); nearest quad 'Mun Xn211311131': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 3
+ },
+ {
+  "load": 1,
+  "tag": "record4",
+  "seconds": 390.0,
+  "closing": "End of record 4: 216 quads with rocks, 216 holders (0 not built yet); nearest quad 'Mun Xn122002222': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 4
+ },
+ {
+  "load": 1,
+  "tag": "record5",
+  "seconds": 510.0,
+  "closing": "End of record 5: 152 quads with rocks, 152 holders (0 not built yet); nearest quad 'Mun Xn013331111': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 5
+ },
+ {
+  "load": 1,
+  "tag": "crash",
+  "seconds": 621.6,
+  "closing": "End of record 6: 568 quads with rocks, 568 holders (0 not built yet); nearest quad 'Mun Zn200000011': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 6
+ }
+]

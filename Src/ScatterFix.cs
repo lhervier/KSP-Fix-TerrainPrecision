@@ -19,8 +19,8 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
     ///
     /// Here each holder hangs from its own quad, at no offset, so that the objects are drawn with the very
     /// matrix the ground is drawn with. Stock scatter only, on the quads of the highest subdivision level,
-    /// which are the only ones that carry any. Off by default: it moves stock objects, the holders, away
-    /// from where other mods may look for them.
+    /// which are the only ones that carry any. It moves stock objects, the holders, away from where other
+    /// mods may look for them: it has a setting of its own to turn it off.
     /// </summary>
     internal static class ScatterFix
     {

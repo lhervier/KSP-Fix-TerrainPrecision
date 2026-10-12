@@ -2,8 +2,7 @@
 
 Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress.md#stock).
 
-**Status: planned.** The scatter fix, off by default, is installed whether the terrain fix is on or
-not ([The fix: the scatter](../../the-fix-scatter.md)), but it has only been measured with it
+**Status: planned.** The scatter fix, on by default, is installed whether the terrain fix is on or not ([The fix: the scatter](../../the-fix-scatter.md)), but it has only been measured with it
 ([Checking the scatter: loading the same save](../../checking-the-culprit-loading/the-scatter.md)).
 On its own, it should keep the scatter on the stock ground, which still comes back at a different height
 at every load.

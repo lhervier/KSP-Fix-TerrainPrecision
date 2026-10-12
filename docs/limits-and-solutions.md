@@ -5,13 +5,14 @@ of its own, and the solution to each.
 
 [Non-regression tests](non-regression.md) list what keeps working with this mod. This page lists the
 rest: what has been checked and found worse, in stock or in another mod, one mod at a time. Each limit
-says how much worse, and its solution: a patch this mod applies to another mod, a fix of its own that
-is off by default, or none yet. What is still to check is in [Work in progress](work-in-progress.md).
+says how much worse, and its solution: a patch this mod applies to another mod, a fix of its own, or none
+yet. What is still to check is in [Work in progress](work-in-progress.md).
 
 Unless a page says otherwise, each limit is measured in KSP 1.12.5 with Harmony, ModuleManager, KSP
 Community Fixes 1.41.1 and this mod, plus the instrument and the mods it names.
 
-**The statics fix is the riskier of the two fixes on by default.** To place a static in double, this mod takes it out
+**The statics fix is the riskiest of the fixes on by default.** To place a static in double, this mod takes
+it out
 of its terrain sphere ([The fix: the statics](the-fix-statics.md)). That changes the hierarchy of Unity
 objects, and any mod that looks for a static where stock puts it — among the children of a body's
 terrain sphere — or reads its `localPosition` as a position relative to the centre of the body, finds it
@@ -23,14 +24,18 @@ left to do.
 
 ## Stock
 
-### Rocks, grass and trees
+### The scatter
 
-**A stock defect this mod widens on Kerbin, visual only; a fix of its own closes it, off by default.**
-Stock draws terrain scatter a few centimetres off the ground, differently at every load: 94 mm apart on
-Kerbin in stock, 130 mm with the terrain fix. The scatter fix closes it, and is off by default, since it
-moves stock objects other mods may look for.
+**A stock defect the terrain fix widens on Kerbin, and a jump it adds while you drive, visual only; a fix
+of this mod closes both, on by default.** Stock draws terrain scatter a few centimetres off the ground,
+differently
+at every load: 61 mm apart on Kerbin on stock, 178 mm with the terrain fix alone. And while you
+drive, the scatter now jumps against the ground every 500 m, by up to 54 mm, where on stock it moves with
+the ground. The scatter fix closes both, and is on by default; since it moves stock objects other mods may
+look for,
+a line of the settings turns it off.
 
-**→ Full chapter: [Rocks, grass and trees](limits-and-solutions/stock/rocks-grass-and-trees.md)**
+**→ Full chapter: [The scatter](limits-and-solutions/stock/the-scatter.md)**
 
 ### The seam between subdivision levels
 

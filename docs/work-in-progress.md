@@ -54,7 +54,7 @@ seed of the game.
 
 ### The scatter fix without the terrain fix
 
-**Planned.** The scatter fix, off by default, can be turned on with the terrain fix off, but has only
+**Planned.** The scatter fix, on by default, stays on with the terrain fix turned off, but has only
 been measured with it.
 
 **→ Full chapter: [The scatter fix without the terrain fix](work-in-progress/stock/the-scatter-fix-without-the-terrain-fix.md)**
@@ -182,7 +182,7 @@ Kopernicus and Kerbal Konstructs are read and patched; the others are not read.
 
 ### Mods that look for a scatter holder under its sphere
 
-**Planned.** With the scatter fix on, off by default, any mod that looks for a scatter holder where stock
+**Planned.** With the scatter fix on, as by default, any mod that looks for a scatter holder where stock
 puts it would miss it. Stock, KSP Community Fixes, Kopernicus, Parallax and TUFX are read; the others are
 not.
 

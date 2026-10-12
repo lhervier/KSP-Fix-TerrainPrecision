@@ -3,7 +3,7 @@
 Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [stock](../../non-regression.md#stock).
 
 **Status: checked with the scatter fix on, no problem — no holder lost, and every pool works as in
-stock, over a flight and across scene switches.** The scatter fix, off by default, hangs each holder of
+stock, over a flight and across scene switches.** The scatter fix, on by default, hangs each holder of
 terrain scatter from its own quad, and hangs it back in its pool's container when the quad is destroyed
 ([The fix: the scatter](../../the-fix-scatter.md)). A holder missed on the way would be left on a quad that
 stock sends back to its cache of quads, to be reused elsewhere, or on another body: nothing would show on

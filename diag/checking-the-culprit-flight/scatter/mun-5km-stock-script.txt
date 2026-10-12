@@ -1,0 +1,5 @@
+15:12:01   record1   30.0 s  End of record 1: 352 quads with rocks, 352 holders (0 not built yet); nearest quad 'Mun Xn233333333': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured
+15:14:01   record2  150.0 s  End of record 2: 176 quads with rocks, 176 holders (0 not built yet); nearest quad 'Mun Xn213333331': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured
+15:16:01   record3  270.0 s  End of record 3: 160 quads with rocks, 160 holders (0 not built yet); nearest quad 'Mun Xn211311131': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured
+15:18:01   record4  390.0 s  End of record 4: 224 quads with rocks, 224 holders (0 not built yet); nearest quad 'Mun Xn122002220': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured
+15:20:01   record5  510.0 s  End of record 5: 152 quads with rocks, 152 holders (0 not built yet); nearest quad 'Mun Xn013313333': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured

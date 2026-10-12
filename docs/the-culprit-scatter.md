@@ -25,12 +25,11 @@ scatterUp = (scatterPos + q.quad.positionPlanet).normalized;
 scatterPos += scatterUp * verticalOffset;
 ```
 
-That line needs no patch, and this is measured, not only read. An object sunk or turned along a vertical
-that changed from one load to the next would come back leaning another way, its vertices higher or lower
-against each other. On every series of [KSP Diag - Scatter](checking-the-culprit-loading/the-scatter.md#on-stock-and-with-the-terrain-fix-alone),
-on Kerbin and on the Mun, on stock and with the terrain fix, the heights of the measured vertices of
-each object against each other come back the same at every load to within 0.07 mm, trees 20 m tall
-included.
+That line needs no patch. A vertical is a direction, and the vector it is drawn from is the same double at
+every load, but for the few centimetres the vertices of the quad move: 10 cm over 600 km turns it by less
+than two ten-millionths of a radian, which moves the top of a tree 20 m tall by a few micrometres. An
+object comes back leaning the same way at every load
+([measured](checking-the-culprit-loading/the-scatter.md#the-objects-over-twelve-loads)).
 
 Both are placed from the same double precision vector, the origin of the quad relative to the centre of
 the body, hundreds of kilometres long, stored in a float `localPosition` under the terrain sphere, whose
@@ -58,9 +57,11 @@ much above or below the ground.
 ## Why it is different at every load
 
 A rounding depends on the frame the vector is converted into: the world matrix of the terrain sphere,
-whose rotation and translation change from one load to the next. It is the same frame, and the same
-reason, as for the ground itself, set out in
-[The culprit: the ground](the-culprit-ground.md#why-it-is-different-at-every-load).
+whose rotation and translation change from one load to the next, and whose translation changes again every
+time the floating origin moves, every 500 m a craft drives. It is the same frame, and the same reason, as
+for the ground itself, set out in
+[The culprit: the ground](the-culprit-ground.md#why-it-is-different-at-every-load). On stock, the quad and
+its holder go through it together, and draw their roundings together.
 As there, it is a hypothesis read from the stock code, and the fix does not need it to hold: it removes
 the long vector the rounding is drawn from.
 
@@ -69,14 +70,16 @@ the long vector the rounding is drawn from.
 The terrain fix places the quads of the highest level in double precision. It moves the quad, not its
 holder. The holder is still placed and drawn from a 600 km float, so it no longer shares even its
 position with the quad: the rounding of the quad's origin, which the terrain fix removed from the
-ground, is still in the holder, on top of the rounding of its matrix. On Kerbin, the gap between the
-scatter and the ground gets wider: that is a limit of the terrain fix,
-[Rocks, grass and trees](limits-and-solutions/stock/rocks-grass-and-trees.md).
+ground, is still in the holder, on top of the rounding of its matrix. On Kerbin, the gap between the scatter and the ground gets wider, and while a craft drives, the holder draws a new rounding at every move
+of the floating origin while the ground no longer does: that is a limit of the terrain fix,
+[The scatter](limits-and-solutions/stock/the-scatter.md).
 
 Both come from a transform holding a vector hundreds of kilometres long. The fix follows from that: hang
 the holder from its quad, so that no transform in its chain holds one. How exactly is in
 [The fix: the scatter](the-fix-scatter.md).
 
 That the scatter comes back somewhere else at every load, on stock and with the terrain fix alone, is
-checked in [Checking the scatter: loading the same save](checking-the-culprit-loading/the-scatter.md),
-and along a flight in [Checking the scatter: in flight](checking-the-culprit-flight/the-scatter.md).
+checked in [Checking the scatter: loading the same save](checking-the-culprit-loading/the-scatter.md);
+what a move of the floating origin does to it, in
+[Checking the scatter: driving on while the world moves](checking-the-culprit-driving/the-scatter.md);
+and along a flight, in [Checking the scatter: in flight](checking-the-culprit-flight/the-scatter.md).

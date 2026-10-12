@@ -1,0 +1,86 @@
+[
+ {
+  "load": 1,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 26: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 26
+ },
+ {
+  "load": 2,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 28: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 28
+ },
+ {
+  "load": 3,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 30: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 30
+ },
+ {
+  "load": 4,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 32: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 32
+ },
+ {
+  "load": 5,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 34: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 34
+ },
+ {
+  "load": 6,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 36: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 36
+ },
+ {
+  "load": 7,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 38: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 38
+ },
+ {
+  "load": 8,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 40: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 40
+ },
+ {
+  "load": 9,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 42: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 42
+ },
+ {
+  "load": 10,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 44: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 44
+ },
+ {
+  "load": 11,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 46: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 46
+ },
+ {
+  "load": 12,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 48: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 48
+ }
+]

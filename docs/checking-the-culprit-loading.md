@@ -40,9 +40,8 @@ deck of the KSC comes back within 0.177 mm, and the step within 0.188 mm.
 ## The scatter
 
 Twelve loads of a save on Kerbin and of one on the Mun, read by
-[KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter) on stock, with the terrain fix alone
-and with the scatter fix as well. Against the ground, half of the vertices of the scatter come back
-94 mm apart on Kerbin on stock, 130 mm with the terrain fix alone, and 0.035 mm with both fixes.
+[KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter) on stock, with this mod as installed, and with its scatter fix turned off. Against the ground, half of the vertices of the scatter come back
+61 mm apart on Kerbin on stock, 178 mm with the scatter fix off, and 0.034 mm with this mod.
 
 **→ Full page: [Checking the scatter: loading the same save](checking-the-culprit-loading/the-scatter.md)**
 

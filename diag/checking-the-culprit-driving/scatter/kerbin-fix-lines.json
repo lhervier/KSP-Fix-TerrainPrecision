@@ -1,0 +1,146 @@
+[
+ {
+  "load": 1,
+  "tag": "before",
+  "settled": true,
+  "closing": "End of record 2: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 2,
+  "origin_distance": 498.583779469793
+ },
+ {
+  "load": 1,
+  "tag": "after",
+  "settled": true,
+  "closing": "End of record 4: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 4,
+  "origin_distance": 0.572193562025075
+ },
+ {
+  "load": 1,
+  "tag": "again",
+  "settled": true,
+  "closing": "End of record 6: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 6,
+  "origin_distance": 3.157470790265518
+ },
+ {
+  "load": 2,
+  "tag": "before",
+  "settled": true,
+  "closing": "End of record 8: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 8,
+  "origin_distance": 498.5789773473209
+ },
+ {
+  "load": 2,
+  "tag": "after",
+  "settled": true,
+  "closing": "End of record 10: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 10,
+  "origin_distance": 0.5718690681086412
+ },
+ {
+  "load": 2,
+  "tag": "again",
+  "settled": true,
+  "closing": "End of record 12: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 12,
+  "origin_distance": 3.156787346853292
+ },
+ {
+  "load": 3,
+  "tag": "before",
+  "settled": true,
+  "closing": "End of record 14: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 14,
+  "origin_distance": 498.584256864484
+ },
+ {
+  "load": 3,
+  "tag": "after",
+  "settled": true,
+  "closing": "End of record 16: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 16,
+  "origin_distance": 0.5713540121177374
+ },
+ {
+  "load": 3,
+  "tag": "again",
+  "settled": true,
+  "closing": "End of record 18: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 18,
+  "origin_distance": 3.1556383175134552
+ },
+ {
+  "load": 4,
+  "tag": "before",
+  "settled": true,
+  "closing": "End of record 20: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 20,
+  "origin_distance": 498.5793322998312
+ },
+ {
+  "load": 4,
+  "tag": "after",
+  "settled": true,
+  "closing": "End of record 22: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 22,
+  "origin_distance": 0.5714968473118262
+ },
+ {
+  "load": 4,
+  "tag": "again",
+  "settled": true,
+  "closing": "End of record 24: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 24,
+  "origin_distance": 3.15603314805839
+ },
+ {
+  "load": 5,
+  "tag": "before",
+  "settled": true,
+  "closing": "End of record 26: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 26,
+  "origin_distance": 498.58464535478356
+ },
+ {
+  "load": 5,
+  "tag": "after",
+  "settled": true,
+  "closing": "End of record 28: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 28,
+  "origin_distance": 0.5711859449205486
+ },
+ {
+  "load": 5,
+  "tag": "again",
+  "settled": true,
+  "closing": "End of record 30: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 30,
+  "origin_distance": 3.1553450829764382
+ },
+ {
+  "load": 6,
+  "tag": "before",
+  "settled": true,
+  "closing": "End of record 32: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 32,
+  "origin_distance": 498.5811115533357
+ },
+ {
+  "load": 6,
+  "tag": "after",
+  "settled": true,
+  "closing": "End of record 34: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 34,
+  "origin_distance": 0.570951516955981
+ },
+ {
+  "load": 6,
+  "tag": "again",
+  "settled": true,
+  "closing": "End of record 36: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured",
+  "record": 36,
+  "origin_distance": 3.1547646033657597
+ }
+]

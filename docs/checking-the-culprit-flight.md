@@ -16,8 +16,8 @@ highest level written about once a second. On stock, two quads built at differen
 
 ## The scatter
 
-A pod in orbit 5 km over the Mun, read every two minutes until it crashes into the relief. With the
-terrain fix alone, no holder of the scatter is drawn on its quad, by up to 26.5 mm; with the scatter fix
-as well, every holder is drawn exactly on its quad, along the whole flight.
+A pod in orbit 5 km over the Mun, read every two minutes until it crashes into the relief. On stock, no
+holder of the scatter is drawn on its quad, by up to 21.9 mm; with this mod, every holder is drawn
+exactly on its quad, along the whole flight.
 
 **→ Full page: [Checking the scatter: in flight](checking-the-culprit-flight/the-scatter.md)**

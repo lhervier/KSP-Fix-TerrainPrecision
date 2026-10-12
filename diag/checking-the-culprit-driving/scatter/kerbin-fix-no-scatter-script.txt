@@ -1,0 +1,25 @@
+14:44:24   load 1 before origin  498.6 m  End of record 2: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:44:32   load 1 after  origin    0.6 m  End of record 4: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:44:40   load 1 again  origin    3.1 m  End of record 6: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:44:40 load 1: 1.99 m from before to after, 2.56 m from after to again
+14:45:43   load 2 before origin  498.6 m  End of record 8: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:45:52   load 2 after  origin    0.6 m  End of record 10: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:46:00   load 2 again  origin    3.2 m  End of record 12: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:46:00 load 2: 2.02 m from before to after, 2.61 m from after to again
+14:47:03   load 3 before origin  498.6 m  End of record 14: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:47:11   load 3 after  origin    0.6 m  End of record 16: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:47:19   load 3 again  origin    3.1 m  End of record 18: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:47:19 load 3: 1.99 m from before to after, 2.56 m from after to again
+14:48:22   load 4 before origin  498.6 m  End of record 20: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:48:29   load 4 after  origin    0.6 m  End of record 22: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:48:38   load 4 again  origin    3.2 m  End of record 24: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:48:38 load 4: 2.01 m from before to after, 2.58 m from after to again
+14:49:40   load 5 before origin  498.6 m  End of record 26: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:49:48   load 5 after  origin    0.6 m  End of record 28: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:49:56   load 5 again  origin    3.2 m  End of record 30: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:49:56 load 5: 2.01 m from before to after, 2.58 m from after to again
+14:50:59   load 6 before origin  498.6 m  End of record 32: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:51:07   load 6 after  origin    0.6 m  End of record 34: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:51:15   load 6 again  origin    3.1 m  End of record 36: 8 quads with rocks, 13 holders (0 not built yet); nearest quad 'Kerbin Zn3010001020': 50 rocks, 400 vertices measured, 0 without ground under them, 0 colliders measured
+14:51:15 load 6: 1.99 m from before to after, 2.56 m from after to again
+14:51:15 done

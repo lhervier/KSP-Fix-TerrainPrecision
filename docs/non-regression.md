@@ -16,7 +16,7 @@ its own.
 
 This mod places the terrain quads a craft stands on in double, and takes the statics out of their
 terrain sphere in flight, near a craft ([The fix: the ground](the-fix-ground.md),
-[The fix: the statics](the-fix-statics.md)); with its scatter fix on, off by default, it hangs each
+[The fix: the statics](the-fix-statics.md)); with its scatter fix, on by default, it hangs each
 holder of terrain scatter from its quad ([The fix: the scatter](the-fix-scatter.md)). What stock places
 on the ground, or finds the statics and the holders by, has to keep working.
 

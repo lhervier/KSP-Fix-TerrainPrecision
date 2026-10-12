@@ -3,7 +3,7 @@
 Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Kopernicus](../../non-regression.md#kopernicus).
 
 **Status: checked, no problem — the terrain fix halves a stock gap, and does not close it; the scatter
-fix of this mod, off by default, closes it.** Stock scatter has no collider, but Kopernicus can give it one: Kopernicus with the
+fix of this mod, on by default, closes it.** Stock scatter has no collider, but Kopernicus can give it one: Kopernicus with the
 [Stock Scatter Collider Enabler Patch](https://github.com/Poodmund/Stock-Scatter-Collider-Enabler-Patch),
 both on CKAN, do. The offset described in [The culprit: the scatter](../../the-culprit-scatter.md) then
 stops being visual: the physics engine is handed the holder's position, while the pilot sees what is
@@ -50,8 +50,8 @@ Scatter Collider Enabler Patch 1.0.1: one save, a kerbal standing on a boulder i
 loaded six times per configuration, one record and one picture of the kerbal's feet per load. Six objects
 carry a collider on the quad read: one `boulder` and five `cactus`.
 
-Three configurations: on stock, with the terrain fix alone — this mod as installed by default — and with
-the scatter fix as well, off by default. **The series with the scatter fix was taken when it was a mod of
+Three configurations: on stock, with the terrain fix alone — this mod with its scatter fix turned off —
+and with the scatter fix as well, this mod as installed. **The series with the scatter fix was taken when it was a mod of
 its own**, Rock Precision Fix 0.1.0, installed next to Terrain Precision Fix 0.1.0: the same two patches,
 whose lines in its logs are tagged `[RockPrecisionFix]`. The records and the pictures of the three
 series are listed in [`diag`](../../../diag/README.md#the-scatter-the-colliders).
@@ -113,7 +113,7 @@ on to tell the ground from a rock when it casts a ray at them.
 
 ## Solution
 
-The scatter fix of this mod, off by default (`fixScatter = true` turns it on), and only with the terrain
+The scatter fix of this mod, on by default (`fixScatter = false` turns it off), and only with the terrain
 fix as well: the same series reads −0.026 to +0.022 mm with both. The collider and the object are the
-same object again, to a hundredth of a millimetre, at every load. Why it is off by default, and when to
-turn it on: [Off by default: should you turn it on?](../../the-fix-scatter.md#off-by-default-should-you-turn-it-on)
+same object again, to a hundredth of a millimetre, at every load. Why it is on by default, and when to
+turn it off: [On by default: when to turn it off](../../the-fix-scatter.md#on-by-default-when-to-turn-it-off)

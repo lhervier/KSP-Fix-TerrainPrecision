@@ -1,0 +1,458 @@
+[KSPDiagScatter] Record 32 on Mun: scatter on. Heights are distances from the centre of Mun, in metres
+[KSPDiagScatter]   quad 'Mun Zp211333000': height 202141.169958 m, matrix 202141.169958 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202141.175672 m, matrix 202141.175672 m, up +5.714 mm, across 0.638 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333001': height 202138.073698 m, matrix 202138.073698 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202138.065442 m, matrix 202138.080700 m, up +7.003 mm, across 0.649 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333002': height 202172.848645 m, matrix 202172.848645 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202172.860418 m, matrix 202172.860422 m, up +11.777 mm, across 0.354 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333003': height 202211.558000 m, matrix 202211.558000 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202211.564914 m, matrix 202211.564914 m, up +6.914 mm, across 0.732 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333010': height 202233.596009 m, matrix 202233.596009 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202233.592476 m, matrix 202233.592476 m, up -3.533 mm, across 3.494 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333011': height 202464.089943 m, matrix 202464.089943 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202464.099122 m, matrix 202464.099122 m, up +9.179 mm, across 0.538 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333012': height 202295.836517 m, matrix 202295.836517 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202295.831443 m, matrix 202295.846688 m, up +10.171 mm, across 0.765 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333013': height 202522.526824 m, matrix 202522.526824 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202522.518203 m, matrix 202522.518203 m, up -8.620 mm, across 4.381 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333020': height 202291.416336 m, matrix 202291.416336 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202291.419197 m, matrix 202291.434429 m, up +18.094 mm, across 5.138 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333021': height 202324.316187 m, matrix 202324.316187 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202324.310414 m, matrix 202324.325646 m, up +9.459 mm, across 1.292 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333022': height 202567.667058 m, matrix 202567.667058 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202567.671633 m, matrix 202567.671633 m, up +4.574 mm, across 1.964 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333023': height 202635.512068 m, matrix 202635.512068 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202635.529203 m, matrix 202635.529203 m, up +17.135 mm, across 1.498 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333030': height 202481.871093 m, matrix 202481.871093 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202481.875280 m, matrix 202481.875281 m, up +4.187 mm, across 1.877 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333031': height 202829.996511 m, matrix 202829.996511 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202829.995008 m, matrix 202830.010240 m, up +13.729 mm, across 2.386 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333032': height 202828.507946 m, matrix 202828.507946 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202828.502178 m, matrix 202828.502178 m, up -5.768 mm, across 4.143 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333033': height 202837.503345 m, matrix 202837.503345 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202837.508305 m, matrix 202837.523524 m, up +20.179 mm, across 4.449 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333100': height 202635.794733 m, matrix 202635.794733 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202635.793420 m, matrix 202635.793420 m, up -1.313 mm, across 0.785 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333101': height 202593.173330 m, matrix 202593.173330 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202593.171821 m, matrix 202593.171821 m, up -1.509 mm, across 2.390 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333102': height 202746.018027 m, matrix 202746.018027 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202746.018178 m, matrix 202746.018177 m, up +0.149 mm, across 1.726 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333103': height 202667.812804 m, matrix 202667.812804 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202667.818909 m, matrix 202667.818909 m, up +6.105 mm, across 0.811 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333120': height 202805.576731 m, matrix 202805.576731 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202805.575450 m, matrix 202805.590682 m, up +13.951 mm, across 3.206 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333121': height 202811.022160 m, matrix 202811.022160 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202811.023701 m, matrix 202811.038932 m, up +16.772 mm, across 2.426 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333122': height 202880.006970 m, matrix 202880.006970 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202880.011174 m, matrix 202880.011174 m, up +4.205 mm, across 0.824 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333123': height 202931.375969 m, matrix 202931.375969 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202931.372505 m, matrix 202931.372505 m, up -3.464 mm, across 0.714 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333200': height 202681.499410 m, matrix 202681.499410 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202681.494503 m, matrix 202681.494507 m, up -4.902 mm, across 3.958 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333201': height 202733.336389 m, matrix 202733.336389 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202733.343493 m, matrix 202733.343493 m, up +7.104 mm, across 0.844 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333202': height 202635.572737 m, matrix 202635.572737 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202635.578353 m, matrix 202635.578357 m, up +5.620 mm, across 1.652 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333203': height 202649.884471 m, matrix 202649.884471 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202649.894510 m, matrix 202649.909703 m, up +25.232 mm, across 7.065 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333210': height 202816.470610 m, matrix 202816.470610 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202816.471553 m, matrix 202816.486759 m, up +16.149 mm, across 1.159 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333211': height 202849.621111 m, matrix 202849.621111 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202849.624567 m, matrix 202849.624567 m, up +3.455 mm, across 1.820 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333212': height 202779.186400 m, matrix 202779.186400 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202779.183691 m, matrix 202779.198884 m, up +12.484 mm, across 2.051 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211333213': height 202846.257801 m, matrix 202846.257801 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202846.264391 m, matrix 202846.264391 m, up +6.591 mm, across 2.147 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332010': height 202851.546840 m, matrix 202851.546840 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202851.560446 m, matrix 202851.560446 m, up +13.605 mm, across 4.203 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332011': height 202765.214560 m, matrix 202765.214560 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202765.221390 m, matrix 202765.236643 m, up +22.083 mm, across 3.621 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332012': height 202944.381835 m, matrix 202944.381835 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202944.398045 m, matrix 202944.398045 m, up +16.210 mm, across 3.860 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332013': height 202833.397051 m, matrix 202833.397051 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202833.404524 m, matrix 202833.404524 m, up +7.474 mm, across 0.674 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332030': height 203037.541326 m, matrix 203037.541326 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 203037.553281 m, matrix 203037.553311 m, up +11.985 mm, across 2.797 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332031': height 202893.175855 m, matrix 202893.175855 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202893.174036 m, matrix 202893.174036 m, up -1.819 mm, across 0.800 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332032': height 203072.725116 m, matrix 203072.725116 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 203072.722359 m, matrix 203072.737572 m, up +12.456 mm, across 2.391 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332033': height 202904.838871 m, matrix 202904.838871 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202904.838576 m, matrix 202904.853817 m, up +14.946 mm, across 2.773 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332100': height 202787.689034 m, matrix 202787.689034 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202787.685091 m, matrix 202787.700345 m, up +11.311 mm, across 0.869 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332101': height 202440.199201 m, matrix 202440.199201 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202440.207253 m, matrix 202440.207253 m, up +8.052 mm, across 2.236 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332102': height 202798.107293 m, matrix 202798.107293 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202798.112066 m, matrix 202798.112066 m, up +4.773 mm, across 1.675 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332103': height 202574.413411 m, matrix 202574.413411 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202574.416988 m, matrix 202574.432241 m, up +18.830 mm, across 2.602 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332110': height 202204.644137 m, matrix 202204.644137 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202204.641904 m, matrix 202204.657161 m, up +13.024 mm, across 3.210 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332111': height 202128.637756 m, matrix 202128.637756 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202128.643391 m, matrix 202128.658654 m, up +20.898 mm, across 5.214 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332112': height 202302.027332 m, matrix 202302.027332 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202302.030726 m, matrix 202302.045970 m, up +18.638 mm, across 1.770 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332113': height 202196.475009 m, matrix 202196.475009 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202196.484353 m, matrix 202196.484353 m, up +9.344 mm, across 1.789 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332120': height 202796.747161 m, matrix 202796.747161 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202796.744810 m, matrix 202796.744833 m, up -2.328 mm, across 1.405 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332121': height 202785.712312 m, matrix 202785.712312 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202785.716390 m, matrix 202785.716400 m, up +4.088 mm, across 1.147 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332122': height 202784.171201 m, matrix 202784.171201 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202784.158581 m, matrix 202784.173796 m, up +2.596 mm, across 0.921 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332123': height 202725.681305 m, matrix 202725.681305 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202725.697496 m, matrix 202725.697496 m, up +16.192 mm, across 4.264 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332130': height 202529.302311 m, matrix 202529.302311 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202529.320561 m, matrix 202529.320569 m, up +18.258 mm, across 1.965 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332131': height 202350.972025 m, matrix 202350.972025 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202350.990200 m, matrix 202350.990200 m, up +18.175 mm, across 1.772 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332132': height 202755.060326 m, matrix 202755.060326 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202755.068060 m, matrix 202755.068068 m, up +7.742 mm, across 1.346 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332133': height 202595.095550 m, matrix 202595.095550 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202595.107910 m, matrix 202595.107910 m, up +12.360 mm, across 3.875 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332300': height 202795.997758 m, matrix 202795.997758 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202796.014899 m, matrix 202796.014899 m, up +17.141 mm, across 5.059 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332301': height 202692.275971 m, matrix 202692.275971 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202692.276023 m, matrix 202692.276033 m, up +0.063 mm, across 2.790 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332302': height 202818.330701 m, matrix 202818.330701 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202818.347387 m, matrix 202818.347410 m, up +16.710 mm, across 1.933 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332303': height 202691.596745 m, matrix 202691.596745 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202691.601562 m, matrix 202691.601571 m, up +4.827 mm, across 0.938 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332310': height 202653.540380 m, matrix 202653.540380 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202653.555950 m, matrix 202653.555950 m, up +15.570 mm, across 3.929 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332311': height 202658.813731 m, matrix 202658.813731 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202658.816369 m, matrix 202658.831575 m, up +17.844 mm, across 2.460 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332312': height 202665.408016 m, matrix 202665.408016 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202665.414199 m, matrix 202665.414206 m, up +6.191 mm, across 2.541 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211332313': height 202646.209148 m, matrix 202646.209148 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202646.210172 m, matrix 202646.210178 m, up +1.030 mm, across 1.954 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331020': height 202658.938112 m, matrix 202658.938112 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202658.941733 m, matrix 202658.941733 m, up +3.621 mm, across 1.245 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331021': height 202631.736230 m, matrix 202631.736230 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202631.732158 m, matrix 202631.732158 m, up -4.072 mm, across 0.803 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331022': height 202568.396756 m, matrix 202568.396756 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202568.394485 m, matrix 202568.394485 m, up -2.272 mm, across 0.535 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331023': height 202509.398721 m, matrix 202509.398721 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202509.403868 m, matrix 202509.403868 m, up +5.147 mm, across 1.058 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331030': height 202655.638153 m, matrix 202655.638153 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202655.638847 m, matrix 202655.654176 m, up +16.023 mm, across 2.662 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331031': height 202735.484719 m, matrix 202735.484719 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202735.489319 m, matrix 202735.489319 m, up +4.601 mm, across 1.920 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331032': height 202513.700669 m, matrix 202513.700669 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202513.690329 m, matrix 202513.705647 m, up +4.979 mm, across 1.447 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331033': height 202519.894393 m, matrix 202519.894393 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202519.891352 m, matrix 202519.891352 m, up -3.042 mm, across 0.600 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331200': height 202291.418233 m, matrix 202291.418233 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202291.416799 m, matrix 202291.416803 m, up -1.430 mm, across 0.702 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331201': height 202274.124600 m, matrix 202274.124600 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202274.131497 m, matrix 202274.131499 m, up +6.899 mm, across 1.942 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331202': height 202217.943598 m, matrix 202217.943598 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202217.940291 m, matrix 202217.940295 m, up -3.303 mm, across 0.511 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331203': height 202268.873532 m, matrix 202268.873532 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202268.886166 m, matrix 202268.886166 m, up +12.634 mm, across 3.414 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331210': height 202538.402463 m, matrix 202538.402463 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202538.404387 m, matrix 202538.404387 m, up +1.924 mm, across 0.807 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331211': height 202468.511393 m, matrix 202468.511393 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202468.518160 m, matrix 202468.518160 m, up +6.766 mm, across 1.337 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331212': height 202343.480639 m, matrix 202343.480639 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202343.488028 m, matrix 202343.488028 m, up +7.389 mm, across 1.106 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331213': height 202491.881510 m, matrix 202491.881510 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202491.902690 m, matrix 202491.902689 m, up +21.179 mm, across 2.251 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331220': height 202099.773842 m, matrix 202099.773842 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202099.775253 m, matrix 202099.775253 m, up +1.410 mm, across 0.874 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331221': height 202140.023282 m, matrix 202140.023282 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202140.017100 m, matrix 202140.017103 m, up -6.179 mm, across 0.809 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331222': height 202121.991520 m, matrix 202121.991520 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202121.998732 m, matrix 202121.998732 m, up +7.212 mm, across 1.181 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331223': height 202124.204663 m, matrix 202124.204663 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202124.194323 m, matrix 202124.209596 m, up +4.933 mm, across 1.559 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331230': height 202249.652599 m, matrix 202249.652599 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202249.660166 m, matrix 202249.675449 m, up +22.850 mm, across 3.646 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331231': height 202298.297236 m, matrix 202298.297236 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202298.304846 m, matrix 202298.320129 m, up +22.893 mm, across 4.000 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331232': height 202233.292447 m, matrix 202233.292447 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202233.299149 m, matrix 202233.299149 m, up +6.702 mm, across 0.537 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331233': height 202286.625359 m, matrix 202286.625359 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202286.640976 m, matrix 202286.640975 m, up +15.616 mm, across 2.629 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331300': height 202519.357790 m, matrix 202519.357790 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202519.355605 m, matrix 202519.355604 m, up -2.186 mm, across 1.217 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331301': height 202578.387992 m, matrix 202578.387992 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202578.377415 m, matrix 202578.377415 m, up -10.577 mm, across 1.955 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331302': height 202557.255882 m, matrix 202557.255882 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202557.257972 m, matrix 202557.257972 m, up +2.090 mm, across 1.090 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331303': height 202624.681790 m, matrix 202624.681790 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202624.698934 m, matrix 202624.698934 m, up +17.144 mm, across 2.131 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331320': height 202529.882740 m, matrix 202529.882740 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202529.883043 m, matrix 202529.883043 m, up +0.303 mm, across 0.744 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331321': height 202433.350872 m, matrix 202433.350872 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202433.342496 m, matrix 202433.357777 m, up +6.905 mm, across 1.872 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331322': height 202534.065164 m, matrix 202534.065164 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202534.057079 m, matrix 202534.072349 m, up +7.185 mm, across 2.017 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211331323': height 202446.499721 m, matrix 202446.499721 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202446.496746 m, matrix 202446.512015 m, up +12.295 mm, across 2.677 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330120': height 202754.991267 m, matrix 202754.991267 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202754.991293 m, matrix 202754.991316 m, up +0.048 mm, across 1.098 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330121': height 202621.046510 m, matrix 202621.046510 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202621.045985 m, matrix 202621.061312 m, up +14.802 mm, across 1.923 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330122': height 202749.538374 m, matrix 202749.538374 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202749.548310 m, matrix 202749.563624 m, up +25.250 mm, across 5.088 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330123': height 202607.515522 m, matrix 202607.515522 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202607.529492 m, matrix 202607.529502 m, up +13.979 mm, across 3.557 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330130': height 202518.671664 m, matrix 202518.671664 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202518.671579 m, matrix 202518.686907 m, up +15.243 mm, across 3.521 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330131': height 202610.940021 m, matrix 202610.940021 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202610.953467 m, matrix 202610.953467 m, up +13.446 mm, across 3.188 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330132': height 202536.287089 m, matrix 202536.287089 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202536.296349 m, matrix 202536.311666 m, up +24.577 mm, across 5.951 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330133': height 202588.416473 m, matrix 202588.416473 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202588.417379 m, matrix 202588.417385 m, up +0.912 mm, across 0.491 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330210': height 202838.957114 m, matrix 202838.957114 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202838.959085 m, matrix 202838.959085 m, up +1.970 mm, across 0.980 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330211': height 202735.811374 m, matrix 202735.811374 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202735.827490 m, matrix 202735.827490 m, up +16.116 mm, across 1.705 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330212': height 202770.818235 m, matrix 202770.818235 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202770.805322 m, matrix 202770.805322 m, up -12.913 mm, across 5.025 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330213': height 202697.298364 m, matrix 202697.298364 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202697.298383 m, matrix 202697.298383 m, up +0.019 mm, across 2.174 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330230': height 202738.936574 m, matrix 202738.936574 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202738.934306 m, matrix 202738.934337 m, up -2.237 mm, across 1.153 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330231': height 202683.174759 m, matrix 202683.174759 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202683.173574 m, matrix 202683.173574 m, up -1.186 mm, across 0.679 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330232': height 202766.028404 m, matrix 202766.028404 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202766.031308 m, matrix 202766.031308 m, up +2.905 mm, across 1.310 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330233': height 202697.581093 m, matrix 202697.581093 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202697.586721 m, matrix 202697.586721 m, up +5.628 mm, across 1.869 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330300': height 202725.965683 m, matrix 202725.965683 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202725.965456 m, matrix 202725.965456 m, up -0.228 mm, across 0.496 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330301': height 202748.280234 m, matrix 202748.280234 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202748.281609 m, matrix 202748.281609 m, up +1.375 mm, across 1.234 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330302': height 202727.267457 m, matrix 202727.267457 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202727.273739 m, matrix 202727.273739 m, up +6.283 mm, across 0.694 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330303': height 202791.847214 m, matrix 202791.847214 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202791.834730 m, matrix 202791.850022 m, up +2.807 mm, across 0.547 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330310': height 202751.159121 m, matrix 202751.159121 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202751.167683 m, matrix 202751.182988 m, up +23.867 mm, across 5.148 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330311': height 202544.398891 m, matrix 202544.398891 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202544.415899 m, matrix 202544.415899 m, up +17.008 mm, across 2.743 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330312': height 202414.623429 m, matrix 202414.623429 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202414.620973 m, matrix 202414.620973 m, up -2.456 mm, across 2.627 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330313': height 202239.882733 m, matrix 202239.882733 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202239.892906 m, matrix 202239.892906 m, up +10.173 mm, across 0.950 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330320': height 202747.280297 m, matrix 202747.280297 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202747.281108 m, matrix 202747.281131 m, up +0.834 mm, across 1.395 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330321': height 202532.447004 m, matrix 202532.447004 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202532.453876 m, matrix 202532.453885 m, up +6.881 mm, across 0.909 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330322': height 202745.477342 m, matrix 202745.477342 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202745.487721 m, matrix 202745.487721 m, up +10.379 mm, across 3.219 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330323': height 202424.884447 m, matrix 202424.884447 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202424.903843 m, matrix 202424.903843 m, up +19.396 mm, across 2.299 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330330': height 202243.552122 m, matrix 202243.552122 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202243.560040 m, matrix 202243.560048 m, up +7.925 mm, across 1.265 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330331': height 202137.821483 m, matrix 202137.821483 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202137.833659 m, matrix 202137.833659 m, up +12.176 mm, across 0.771 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330332': height 202196.340569 m, matrix 202196.340569 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202196.347852 m, matrix 202196.363128 m, up +22.559 mm, across 5.201 mm, 0 colliders
+[KSPDiagScatter]   quad 'Mun Zp211330333': height 202093.202627 m, matrix 202093.202627 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Rock00': built, height 202093.196712 m, matrix 202093.211987 m, up +9.361 mm, across 1.108 mm, 0 colliders
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 120: ground 202136.197644 m, vertex 202135.099899 m, -1097.745 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 104: ground 202136.258381 m, vertex 202136.959484 m, +701.103 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 35: ground 202136.172848 m, vertex 202137.375708 m, +1202.860 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 62: ground 202136.151882 m, vertex 202136.611205 m, +459.323 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 173: ground 202136.311235 m, vertex 202135.934516 m, -376.719 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 15: ground 202136.233774 m, vertex 202135.450208 m, -783.566 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 21: ground 202136.214336 m, vertex 202135.980921 m, -233.415 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 34: ground 202136.266111 m, vertex 202137.033815 m, +767.704 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 0: ground 202136.139103 m, vertex 202135.815138 m, -323.964 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #0 vertex 90: ground 202136.224571 m, vertex 202137.311060 m, +1086.489 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 120: ground 202142.437746 m, vertex 202140.883221 m, -1554.525 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 104: ground 202142.477222 m, vertex 202143.481892 m, +1004.670 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 35: ground 202142.412208 m, vertex 202144.064721 m, +1652.513 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 62: ground 202142.497587 m, vertex 202142.993547 m, +495.961 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 173: ground 202142.357037 m, vertex 202142.051415 m, -305.622 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 15: ground 202142.502328 m, vertex 202141.371796 m, -1130.532 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 21: ground 202142.361765 m, vertex 202142.116279 m, -245.486 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 34: ground 202142.375115 m, vertex 202143.587705 m, +1212.590 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 0: ground 202142.418324 m, vertex 202141.882773 m, -535.550 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #1 vertex 90: ground 202142.466704 m, vertex 202143.973504 m, +1506.800 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 120: ground 202139.296963 m, vertex 202135.457789 m, -3839.174 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 104: ground 202139.143780 m, vertex 202141.644651 m, +2500.870 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 35: ground 202139.357626 m, vertex 202143.034544 m, +3676.918 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 62: ground 202139.447571 m, vertex 202140.488524 m, +1040.953 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 173: ground 202139.253615 m, vertex 202138.233066 m, -1020.549 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 15: ground 202139.154341 m, vertex 202136.621213 m, -2533.128 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 21: ground 202139.347952 m, vertex 202138.390898 m, -957.054 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 34: ground 202139.279054 m, vertex 202141.893754 m, +2614.700 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 0: ground 202139.468848 m, vertex 202137.840598 m, -1628.250 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #2 vertex 90: ground 202139.221114 m, vertex 202142.816908 m, +3595.793 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 120: ground 202140.943510 m, vertex 202137.108532 m, -3834.978 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 104: ground 202140.852322 m, vertex 202143.368061 m, +2515.739 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 35: ground 202140.977047 m, vertex 202144.782290 m, +3805.243 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 62: ground 202140.826786 m, vertex 202142.200492 m, +1373.706 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 173: ground 202140.987453 m, vertex 202139.915912 m, -1071.540 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 15: ground 202140.837476 m, vertex 202138.281964 m, -2555.511 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 21: ground 202141.026521 m, vertex 202140.080308 m, -946.213 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 34: ground 202140.988822 m, vertex 202143.624211 m, +2635.389 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 0: ground 202140.956010 m, vertex 202139.523703 m, -1432.307 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #3 vertex 90: ground 202140.903455 m, vertex 202144.557907 m, +3654.451 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 120: ground 202152.977494 m, vertex 202152.444709 m, -532.785 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 104: ground 202153.087927 m, vertex 202154.249120 m, +1161.193 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 35: ground 202152.929363 m, vertex 202154.657329 m, +1727.966 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 62: ground 202153.103242 m, vertex 202153.910753 m, +807.511 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 173: ground 202152.954511 m, vertex 202153.255854 m, +301.342 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 15: ground 202153.100398 m, vertex 202152.782306 m, -318.092 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 21: ground 202152.879221 m, vertex 202153.302880 m, +423.659 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 34: ground 202152.940451 m, vertex 202154.324546 m, +1384.095 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 0: ground 202152.945958 m, vertex 202153.140610 m, +194.652 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #4 vertex 90: ground 202153.032377 m, vertex 202154.592124 m, +1559.747 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 120: ground 202136.551226 m, vertex 202132.850832 m, -3700.394 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 104: ground 202136.274377 m, vertex 202138.778946 m, +2504.569 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 35: ground 202136.628007 m, vertex 202140.104110 m, +3476.103 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 62: ground 202136.780659 m, vertex 202137.665682 m, +885.022 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 173: ground 202136.085381 m, vertex 202135.514121 m, -571.260 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 15: ground 202136.387373 m, vertex 202133.967801 m, -2419.573 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 21: ground 202136.438124 m, vertex 202135.660178 m, -777.946 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 34: ground 202136.259582 m, vertex 202139.016763 m, +2757.181 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 0: ground 202136.771021 m, vertex 202135.129234 m, -1641.787 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #5 vertex 90: ground 202136.459431 m, vertex 202139.898550 m, +3439.119 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 120: ground 202140.662646 m, vertex 202139.305202 m, -1357.445 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 104: ground 202140.695932 m, vertex 202141.285307 m, +589.375 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 35: ground 202140.650470 m, vertex 202141.731777 m, +1081.307 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 62: ground 202140.674607 m, vertex 202140.915142 m, +240.534 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 173: ground 202140.681803 m, vertex 202140.193892 m, -487.911 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 15: ground 202140.692852 m, vertex 202139.676682 m, -1016.171 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 21: ground 202140.651212 m, vertex 202140.245166 m, -406.046 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 34: ground 202140.670701 m, vertex 202141.366267 m, +695.566 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 0: ground 202140.646258 m, vertex 202140.068526 m, -577.732 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #6 vertex 90: ground 202140.676868 m, vertex 202141.661200 m, +984.332 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 120: ground 202133.476810 m, vertex 202131.816942 m, -1659.867 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 104: ground 202133.606468 m, vertex 202134.610750 m, +1004.282 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 35: ground 202133.441037 m, vertex 202135.234032 m, +1792.995 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 62: ground 202133.537677 m, vertex 202134.085336 m, +547.658 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 173: ground 202133.539892 m, vertex 202133.072571 m, -467.321 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 15: ground 202133.599908 m, vertex 202132.343823 m, -1256.085 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 21: ground 202133.447199 m, vertex 202133.140536 m, -306.663 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 34: ground 202133.505179 m, vertex 202134.722469 m, +1217.290 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 0: ground 202133.426438 m, vertex 202132.889895 m, -536.544 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #7 vertex 90: ground 202133.523764 m, vertex 202135.137758 m, +1613.994 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 120: ground 202140.419640 m, vertex 202139.368321 m, -1051.320 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 104: ground 202140.365813 m, vertex 202141.103970 m, +738.157 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 35: ground 202140.416552 m, vertex 202141.494084 m, +1077.532 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 62: ground 202140.460683 m, vertex 202140.777129 m, +316.447 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 173: ground 202140.359109 m, vertex 202140.149390 m, -209.719 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 15: ground 202140.384472 m, vertex 202139.694057 m, -690.415 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 21: ground 202140.390108 m, vertex 202140.192896 m, -197.212 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 34: ground 202140.387086 m, vertex 202141.175687 m, +788.601 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 0: ground 202140.432189 m, vertex 202140.036103 m, -396.086 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #8 vertex 90: ground 202140.417072 m, vertex 202141.432604 m, +1015.533 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 120: ground 202124.305613 m, vertex 202122.041999 m, -2263.614 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 104: ground 202124.392463 m, vertex 202125.838806 m, +1446.343 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 35: ground 202124.253032 m, vertex 202126.698418 m, +2445.386 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 62: ground 202124.415756 m, vertex 202125.135592 m, +719.837 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 173: ground 202124.278090 m, vertex 202123.740282 m, -537.808 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 15: ground 202124.404079 m, vertex 202122.753925 m, -1650.154 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 21: ground 202124.197804 m, vertex 202123.842623 m, -355.181 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 34: ground 202124.263363 m, vertex 202125.992034 m, +1728.671 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 0: ground 202124.272198 m, vertex 202123.509311 m, -762.887 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #9 vertex 90: ground 202124.359154 m, vertex 202126.561965 m, +2202.811 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 120: ground 202136.255926 m, vertex 202132.975830 m, -3280.096 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 104: ground 202136.275416 m, vertex 202138.368307 m, +2092.891 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 35: ground 202136.244863 m, vertex 202139.574266 m, +3329.403 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 62: ground 202136.440504 m, vertex 202137.352540 m, +912.036 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 173: ground 202136.154004 m, vertex 202135.401634 m, -752.370 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 15: ground 202136.299751 m, vertex 202133.990929 m, -2308.822 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 21: ground 202136.151450 m, vertex 202135.533677 m, -617.773 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 34: ground 202136.169150 m, vertex 202138.587102 m, +2417.951 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 0: ground 202136.314957 m, vertex 202135.047659 m, -1267.299 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #10 vertex 90: ground 202136.265526 m, vertex 202139.386587 m, +3121.062 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 120: ground 202141.504065 m, vertex 202139.506463 m, -1997.602 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 104: ground 202141.449706 m, vertex 202142.753386 m, +1303.680 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 35: ground 202141.529740 m, vertex 202143.487395 m, +1957.655 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 62: ground 202141.519063 m, vertex 202142.148226 m, +629.163 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 173: ground 202141.469768 m, vertex 202140.962301 m, -507.467 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 15: ground 202141.464694 m, vertex 202140.115029 m, -1349.665 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 21: ground 202141.531453 m, vertex 202141.047954 m, -483.500 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 34: ground 202141.491324 m, vertex 202142.886226 m, +1394.903 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 0: ground 202141.536595 m, vertex 202140.759588 m, -777.008 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #11 vertex 90: ground 202141.478878 m, vertex 202143.370838 m, +1891.960 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 120: ground 202142.330639 m, vertex 202140.285753 m, -2044.886 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 104: ground 202142.199679 m, vertex 202144.879623 m, +2679.944 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 35: ground 202142.382126 m, vertex 202145.910760 m, +3528.634 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 62: ground 202142.246898 m, vertex 202144.016695 m, +1769.797 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 173: ground 202142.292251 m, vertex 202142.350686 m, +58.435 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 15: ground 202142.201991 m, vertex 202141.149100 m, -1052.890 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 21: ground 202142.401574 m, vertex 202142.465882 m, +64.309 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 34: ground 202142.326332 m, vertex 202145.067009 m, +2740.678 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 0: ground 202142.385546 m, vertex 202142.053241 m, -332.305 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #12 vertex 90: ground 202142.271492 m, vertex 202145.749084 m, +3477.592 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 120: ground 202142.082527 m, vertex 202141.683556 m, -398.971 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 104: ground 202142.086600 m, vertex 202142.330032 m, +243.432 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 35: ground 202142.082078 m, vertex 202142.476140 m, +394.062 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 62: ground 202142.072558 m, vertex 202142.208127 m, +135.569 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 173: ground 202142.096354 m, vertex 202141.974809 m, -121.546 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 15: ground 202142.083197 m, vertex 202141.804437 m, -278.760 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 21: ground 202142.089141 m, vertex 202141.991348 m, -97.793 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 34: ground 202142.091971 m, vertex 202142.357416 m, +265.445 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 0: ground 202142.077500 m, vertex 202141.932599 m, -144.901 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #13 vertex 90: ground 202142.083249 m, vertex 202142.452773 m, +369.524 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 120: ground 202146.090491 m, vertex 202145.399213 m, -691.278 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 104: ground 202146.060709 m, vertex 202146.658763 m, +598.054 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 35: ground 202146.102757 m, vertex 202146.944842 m, +842.086 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 62: ground 202146.064745 m, vertex 202146.424356 m, +359.611 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 173: ground 202146.088485 m, vertex 202145.963886 m, -124.598 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 15: ground 202146.059490 m, vertex 202145.634674 m, -424.816 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 21: ground 202146.111284 m, vertex 202145.997899 m, -113.386 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 34: ground 202146.094445 m, vertex 202146.710992 m, +616.547 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 0: ground 202146.101176 m, vertex 202145.886054 m, -215.122 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #14 vertex 90: ground 202146.076424 m, vertex 202146.898928 m, +822.504 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 120: ground 202145.788380 m, vertex 202145.386504 m, -401.877 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 104: ground 202145.729388 m, vertex 202146.655371 m, +925.982 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 35: ground 202145.806473 m, vertex 202146.941150 m, +1134.677 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 62: ground 202145.805386 m, vertex 202146.417347 m, +611.962 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 173: ground 202145.716023 m, vertex 202145.956723 m, +240.700 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 15: ground 202145.744959 m, vertex 202145.624539 m, -120.421 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 21: ground 202145.781840 m, vertex 202145.989135 m, +207.295 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 34: ground 202145.745771 m, vertex 202146.707579 m, +961.808 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 0: ground 202145.827557 m, vertex 202145.875245 m, +47.689 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #15 vertex 90: ground 202145.766559 m, vertex 202146.895999 m, +1129.440 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 120: ground 202128.226253 m, vertex 202125.548762 m, -2677.491 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 104: ground 202128.382156 m, vertex 202129.604820 m, +1222.665 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 35: ground 202128.143771 m, vertex 202130.522719 m, +2378.948 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 62: ground 202128.545308 m, vertex 202128.852228 m, +306.919 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 173: ground 202128.051171 m, vertex 202127.364263 m, -686.908 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 15: ground 202128.438035 m, vertex 202126.309216 m, -2128.819 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 21: ground 202127.987069 m, vertex 202127.472919 m, -514.150 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 34: ground 202128.067849 m, vertex 202129.769153 m, +1701.304 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 0: ground 202128.218492 m, vertex 202127.115657 m, -1102.835 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #16 vertex 90: ground 202128.315583 m, vertex 202130.377006 m, +2061.423 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 120: ground 202139.663148 m, vertex 202136.881874 m, -2781.274 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 104: ground 202139.777479 m, vertex 202141.591299 m, +1813.821 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 35: ground 202139.564771 m, vertex 202142.651932 m, +3087.161 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 62: ground 202139.934347 m, vertex 202140.714742 m, +780.395 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 173: ground 202139.398184 m, vertex 202138.991486 m, -406.698 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 15: ground 202139.865686 m, vertex 202137.766862 m, -2098.824 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 21: ground 202139.448001 m, vertex 202139.114165 m, -333.836 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 34: ground 202139.469582 m, vertex 202141.780390 m, +2310.808 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 0: ground 202139.606570 m, vertex 202138.697957 m, -908.613 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #17 vertex 90: ground 202139.772945 m, vertex 202142.485248 m, +2712.303 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 120: ground 202140.595995 m, vertex 202140.133974 m, -462.022 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 104: ground 202140.571352 m, vertex 202140.626029 m, +54.676 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 35: ground 202140.603896 m, vertex 202140.736854 m, +132.958 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 62: ground 202140.599742 m, vertex 202140.533249 m, -66.493 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 173: ground 202140.569151 m, vertex 202140.355579 m, -213.573 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 15: ground 202140.576955 m, vertex 202140.226174 m, -350.781 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 21: ground 202140.595659 m, vertex 202140.367981 m, -227.678 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 34: ground 202140.580721 m, vertex 202140.646600 m, +65.879 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 0: ground 202140.611493 m, vertex 202140.323362 m, -288.131 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #18 vertex 90: ground 202140.586600 m, vertex 202140.719285 m, +132.685 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 120: ground 202148.610219 m, vertex 202144.755541 m, -3854.678 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 104: ground 202147.834223 m, vertex 202151.032357 m, +3198.134 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 35: ground 202148.889278 m, vertex 202152.471358 m, +3582.079 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 62: ground 202148.345640 m, vertex 202149.867028 m, +1521.388 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 173: ground 202148.148742 m, vertex 202147.569492 m, -579.250 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 15: ground 202147.911677 m, vertex 202145.922674 m, -1989.003 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 21: ground 202148.864462 m, vertex 202147.746560 m, -1117.902 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 34: ground 202148.409478 m, vertex 202151.300020 m, +2890.543 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 0: ground 202148.994589 m, vertex 202147.188749 m, -1805.841 mm above the ground
+[KSPDiagScatter]   rock 'Mun Zp211333000' 'Rock00' #19 vertex 90: ground 202148.278251 m, vertex 202152.235428 m, +3957.177 mm above the ground
+[KSPDiagScatter] End of record 32: 128 quads with rocks, 128 holders (0 not built yet); nearest quad 'Mun Zp211333000': 20 rocks, 200 vertices measured, 0 without ground under them, 0 colliders measured

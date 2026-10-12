@@ -7,8 +7,7 @@ that stock runs for every vertex of every terrain quad it builds, so it sits on 
 continuously while flying, not only when a scene loads. **It does not slow the game down: timed frame
 by frame, it came out no dearer than stock.** It even places a vertex faster than stock, but that saving
 is too small for a frame to show. The statics fix runs on another path, a check per
-frame of the statics the game knows of; **its cost with statics near a craft is not measured yet**. The
-scatter fix, off by default, only works when a scatter holder is given a quad or released: turned on,
+frame of the statics the game knows of; **its cost with statics near a craft is not measured yet**. The scatter fix, on by default, only works when a scatter holder is given a quad or released:
 **it shows no cost the frames can resolve** ([The scatter fix](#the-scatter-fix)).
 
 ## Two instruments
@@ -56,7 +55,7 @@ being timed.
 The PQS Bench runs measure the ground only: they were taken before this mod placed the statics. The
 profiler runs were taken with the statics fix installed, but 5 km over the Mun no static is near enough
 for it to take one out of its sphere: all it did there was its check of every static, once per frame,
-and that check is in their figures. The scatter fix, off by default, is in none of these three
+and that check is in their figures. The scatter fix, then off by default, is in none of these three
 configurations: it is timed apart, with the profiler only, in the same session of runs
 ([The scatter fix](#the-scatter-fix)).
 
@@ -204,8 +203,8 @@ whatever the scatter fix costs is paid in the frames the terrain is updated in, 
 PQS Bench does not answer this question: its `calibrate` mode only replays the vertex placement, which
 the scatter fix does not touch.
 
-It is timed against this mod as installed by default, the terrain fix and the statics fix, since the
-scatter fix is meant to go with them. In each of the three rounds of the session, right after the run of
+It is timed against this mod as it was then installed by default, the terrain fix and the statics fix,
+since the scatter fix is meant to go with them. In each of the three rounds of the session, right after the run of
 this mod, a run of this mod with the scatter fix, by the same procedure: three more runs, all ended on
 *Stop*, with 6 584 to 6 719 frames each. **The scatter fix was then a mod of its own**, Rock Precision Fix
 0.1.0, installed next to this mod: the same two patches. The runs of this mod alone are the ones of the

@@ -1,15 +1,14 @@
 # The fix: the scatter
 
-Part of [Terrain Precision Fix](../README.md): what the patches do for the terrain scatter, where they do it, what they leave alone, and why they are off by default.
+Part of [Terrain Precision Fix](../README.md): what the patches do for the terrain scatter, where they do it, what they leave alone, and when to turn them off.
 
 The objects of a quad's scatter hang from a holder that is placed and drawn from a 600 km float, and
 that does not share the correction the terrain fix gives the quad
 ([The culprit: the scatter](the-culprit-scatter.md)). So this mod hangs each holder from its own quad.
 
-The scatter fix is **off by default**. `fixScatter = true` in the settings turns it on; it is installed
+The scatter fix is **on by default**. `fixScatter = false` in the settings turns it off; it is installed
 when KSP starts, whether the terrain fix is on or not. It is two Harmony patches, in
-[`Src/ScatterFix.cs`](../Src/ScatterFix.cs). Why it is off is in
-[Off by default: should you turn it on?](#off-by-default-should-you-turn-it-on)
+[`Src/ScatterFix.cs`](../Src/ScatterFix.cs). Why it is on, and when to turn it off, is in [On by default: when to turn it off](#on-by-default-when-to-turn-it-off)
 
 ## Hanging each holder from its quad
 
@@ -21,7 +20,8 @@ vector any more.
   under the quad, with zero position, identity rotation and unit scale. From then on it follows the quad
   through everything stock does to it, floating origin shifts (`PQ.FastUpdateSubQuadsPosition`) and
   re-placements (`PQ.PreciseUpdateSubQuadsPosition`) included, with nothing more to do
-  ([measured along a flight](checking-the-culprit-flight/the-scatter.md)).
+  ([measured while you drive](checking-the-culprit-driving/the-scatter.md) and
+  [along a flight](checking-the-culprit-flight/the-scatter.md)).
 - **Before `PQSLandControl.LandClassScatter.DestroyQuad`**, which returns a holder to its pool when its
   quad is destroyed: the holder goes back under the pool's container, where stock keeps its free holders,
   before the quad itself goes back to the PQS cache to be reused elsewhere. A prefix, because the stock
@@ -88,87 +88,58 @@ works as in stock ([Non-regression tests: the scatter holders](non-regression/st
 
 ## Other mods that look for the holders
 
-Safe for stock is not safe for every mod. What the fix changes for other mods is one thing: where a
-holder hangs. Its pool (`cacheAssigned`, `cacheUnassigned`), its `quad`, its delegates and the way it is
-shown and hidden stay stock. But a holder in use no longer hangs from the `Scatter <name>` container
-under the sphere: it hangs from its quad, under `LocalSpacePQStorage`, outside the body's hierarchy. Code
-that finds holders through the hierarchy sees the difference both ways:
+Safe for stock is not safe for every mod. A holder in use no longer hangs from the `Scatter <name>`
+container under the sphere, but from its quad, under `LocalSpacePQStorage`, outside the body's hierarchy.
+Its pool, its quad, its delegates and the way it is shown and hidden stay stock, so only code that walks
+the hierarchy to find the holders sees the move: under the sphere it no longer finds those in use, under a
+quad it finds children stock never puts there. [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter)
+is such code, and has to search both places with the scatter fix on.
 
-- looking under the sphere, `sphere.GetComponentsInChildren<PQSMod_LandClassScatterQuad>()` no longer
-  finds the holders in use;
-- looking under a quad, it finds children that stock never puts there.
+None of the mods read so far does: stock ([The scatter holders](non-regression/stock/the-scatter-holders.md)),
+KSP Community Fixes, which never names a holder
+([its own terrain patches](non-regression/ksp-community-fixes/its-own-terrain-patches.md)), Kopernicus,
+the only one that uses the holders, through the scatter's pool
+([Kopernicus: scatter with colliders](non-regression/kopernicus/scatter-with-colliders.md)), Parallax,
+which has a scatter of its own
+([Parallax: its terrain and its scatter](work-in-progress/parallax/its-terrain-and-its-scatter.md)), and
+TUFX 1.1.1, which works on the camera's image and never looks for a terrain object. Every other mod is
+unread: [Mods that look for a scatter holder under its sphere](work-in-progress/other-mods/mods-that-look-for-a-scatter-holder-under-its-sphere.md).
 
-This is not only a hypothesis: [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter)
-finds the holders through the hierarchy, and has to search both places to see them with the scatter fix
-on.
+## On by default: when to turn it off
 
-Only one thing decides whether a piece of code sees the move: whether it goes looking for the holders.
-What has been read, mod by mod:
+The terrain fix alone leaves the scatter behind. At loading, the scatter comes back further off the corrected
+ground than on stock, on Kerbin
+([measured](checking-the-culprit-loading/the-scatter.md#the-objects-over-twelve-loads)); and while you
+drive, every 500 m, it jumps against the ground by up to a few centimetres, where on stock it moves with the
+ground ([measured](checking-the-culprit-driving/the-scatter.md)). Stock scatter has no collider, so neither
+changes anything for the game, and most of the gap stays out of sight, since the scatter is sunk into the
+ground on purpose, tens of centimetres on Kerbin and about 2 m on the Mun. But the jump can be seen, at a
+walking pace and up close, on a rock or a cactus: a defect this mod would add to stock, which its scatter
+fix takes away. So the scatter fix is on by default, with the terrain fix it completes.
 
-- **Stock** relies on neither the hierarchy nor where a holder hangs:
-  [The scatter holders](non-regression/stock/the-scatter-holders.md).
-- **KSP Community Fixes** never names a holder:
-  [its own terrain patches](non-regression/ksp-community-fixes/its-own-terrain-patches.md).
-- **Kopernicus**, the only mod read here that uses the holders, reaches them through the scatter and its
-  pool, not through the hierarchy, and its optional scatter colliders are the ones this fix brings back
-  onto their objects: [Kopernicus: scatter with colliders](non-regression/kopernicus/scatter-with-colliders.md).
-- **Parallax** has its own scatter system and never names the stock holders:
-  [Parallax: its terrain and its scatter](work-in-progress/parallax/its-terrain-and-its-scatter.md).
-- **TUFX** (1.1.1), read in its source, works on the camera's image, not on the scene: it has no Harmony
-  patch and never looks for a terrain object. Its only walk through the scene lists the objects of the
-  main menu into its debug log.
+Give the scatter colliders — the
+[Stock Scatter Collider Enabler Patch](https://github.com/Poodmund/Stock-Scatter-Collider-Enabler-Patch)
+does, on top of Kopernicus, and it is on CKAN — and the gap stops being visual: the rock a craft hits
+stands up to 104 mm from the rock its pilot sees, and a kerbal left on a boulder sinks into it at one load
+and stands clear of it at the next. Only the scatter fix closes that gap; the terrain fix halves it (see
+[Kopernicus: scatter with colliders](non-regression/kopernicus/scatter-with-colliders.md)).
 
-Every other mod is unread:
-[Mods that look for a scatter holder under its sphere](work-in-progress/other-mods/mods-that-look-for-a-scatter-holder-under-its-sphere.md).
-
-## Off by default: should you turn it on?
-
-On one side, on a stock install, a defect nobody sees: stock scatter has no collider, and is sunk into the
-ground on purpose (see
-[Why the moving scatter matters](limits-and-solutions/stock/rocks-grass-and-trees.md#why-the-moving-scatter-matters)).
-On the other, a change to where stock objects hang, which any mod installed along with it may rely on. Its
-cost weighs on neither side: none shows in the measurement (see
+What it costs is a change to where stock objects hang, which another mod may rely on: a holder in use hangs
+from its quad, no longer under the sphere ([Other mods that look for the holders](#other-mods-that-look-for-the-holders)).
+None of the mods read so far does, and nothing in
+[Why the holder has to move at all](#why-the-holder-has-to-move-at-all) leaves a fix that keeps the holders
+where stock puts them. Its cost in time does not show in the measurement (see
 [Performance: the scatter fix](performance.md#the-scatter-fix)).
 
-What tips the first side is another mod. Give the scatter colliders — the
-[Stock Scatter Collider Enabler Patch](https://github.com/Poodmund/Stock-Scatter-Collider-Enabler-Patch)
-does, on top of Kopernicus, and it is on CKAN — and the defect stops being invisible: the rock a craft
-hits stands up to 104 mm from the rock its pilot sees, and a kerbal left on a boulder sinks into it at one
-load and stands clear of it at the next. Only the scatter fix closes that gap; the terrain fix halves it
-(see [Kopernicus: scatter with colliders](non-regression/kopernicus/scatter-with-colliders.md)).
-So the answer below is not the same for everyone: it holds for a stock install, and a player whose mods
-give the scatter colliders is weighing something else.
-
-And it is not a change that can be traded away: nothing in
-[Why the holder has to move at all](#why-the-holder-has-to-move-at-all) leaves a fix that keeps the
-holders where stock puts them.
-
-So, should you turn it on? On a stock install, no, and that is why it is off by default. Nobody turning
-it on there would remember that the holders moved, and a mod tripping over it would fail with nothing to
-point at this fix — a bad trade against a defect that changes nothing in play. With a mod that gives the
-scatter colliders, the trade is yours to make: the gap it closes is then a real one, between the rock
-your craft hits and the rock you see, and no other fix closes it.
-
-Either way, the scatter fix stays what it is: the measured answer to what the terrain fix leaves behind,
-and the proof that the culprit is the right one.
+**Turning it off is one line.** If a mod misbehaves around rocks, grass or trees — scatter missing, drawn
+twice, or an error naming a scatter holder — open `GameData/TerrainPrecisionFixMod/PluginData/settings.cfg`,
+set `fixScatter = false`, and start KSP again: the holders then stay where stock puts them, and the rest of
+this mod works as before. `KSP.log` says it: *Scatter fix turned off in the settings*. The scatter is then
+back to what the terrain fix alone leaves, a few centimetres off the ground and jumping as you drive.
 
 It is meant to go with the terrain fix, and has only been measured with it: on its own, it would keep the
 scatter on the stock ground, which still comes back at a different height at every load
 ([The scatter fix without the terrain fix](work-in-progress/stock/the-scatter-fix-without-the-terrain-fix.md)).
-
-## If it went into KSP Community Fixes
-
-Then the re-parenting stops being a technical risk and becomes a matter of agreement between modders. A
-KSP Community Fixes patch is documented, and can be turned off by a line of its `Settings.cfg`: the move
-would be known, and a player hit by it could undo it without removing anything else.
-
-But it would still be a change that other mods have to follow. A mod that finds holders through the
-hierarchy would have to change its code: search under the terrain quads as well, as KSP Diag - Scatter
-does, or read the holders from their scatter's pool (`LandClassScatter.cacheAssigned`, a private
-list), which does not depend on where they hang. Whether that is worth asking of other modders is not a
-technical question, and this page does not answer it. What can be said is what is being asked for: not
-only a defect nobody sees, but also the one players already meet when their mods give the scatter
-colliders, where the rock hit is not the rock seen.
 
 ## Safeguards
 

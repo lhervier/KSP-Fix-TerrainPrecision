@@ -1,10 +1,10 @@
-# The protocol: the rocks, along a flight
+# The protocol: the scatter, along a flight
 
 Part of [Terrain Precision Fix](../../README.md), for [Checking the scatter: in flight](the-scatter.md):
 how the scatter is read by [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter) along a
 flight low over the Mun. What each reading is, and what a record holds, are in
 [its page](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/what-it-measures.md). The protocol
-is the same with the terrain fix alone and with the scatter fix as well.
+is the same on stock and with this mod.
 
 [The protocol load after load](../checking-the-culprit-loading/the-scatter-protocol.md) reads scatter
 built right after a load, around a craft that does not move. Over a flight, the world origin follows the
@@ -30,8 +30,20 @@ sandbox game and load it from that game.
 
 Each record reads on its own: the heights of every quad and of its holders, as after a load. To compare
 two installs, fly the same save in each and press at the same moments after the load: the pod then passes
-over the same ground, and each record names the same quads and the same nearest quad as its counterpart,
-whose vertices compare one by one.
+over the same ground, and each record names the same quads as its counterpart, or quads next to them when
+the two presses are a second apart.
+
+## Played by a script
+
+[`run-scatter-flight.py`](../../diag/automation/run-scatter-flight.py) plays this protocol through
+[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), with nothing but Python 3: start KSP with
+KSP-MCPServer and Diag Scatter installed, copy the save into a sandbox game, wait for the main menu, then
+run `python run-scatter-flight.py --folder <your sandbox game> --out out`. It presses *Record the rocks* at
+30 s and every two minutes after it, counted from the end of the load, five times, then once more after the
+crash. The game keeps the wrecked pod as the craft flown, frozen where it hit the relief, and pauses a
+minute later: the script takes the crash for one when the pod stops moving while the game runs, and lets
+the game run again. It writes the number and the closing line of each record to `lines.json`; the records
+stay in `KSP.log`.
 
 The pod flies 5 km above the ground, so every quad, the nearest included, stands 5 km or more from the
 world origin: its heights carry the precision of that distance, about a millimetre, where the landed saves

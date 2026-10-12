@@ -1,18 +1,19 @@
 # Checking the culprit: driving on while the world moves
 
-Part of [Terrain Precision Fix](../README.md): the measurements that check two culprits under a rover
+Part of [Terrain Precision Fix](../README.md): the measurements that check three culprits under a rover
 that keeps driving while the game moves its whole world, on stock and with this mod, on Kerbin and on
 Earth in Real Solar System, one page each: [the ground](checking-the-culprit-driving/the-ground.md), on
-the grass, and [the statics](checking-the-culprit-driving/the-statics.md), on the runway of the KSC with
-the grass beside it.
+the grass, [the statics](checking-the-culprit-driving/the-statics.md), on the runway of the KSC with
+the grass beside it, and [the scatter](checking-the-culprit-driving/the-scatter.md), the grass itself.
 
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) measures the
-ground, and [KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin),
-which only reads, says when the world moves. Each has its own page, with its method.
+ground, [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter) the scatter, and
+[KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin), which only reads, says
+when the world moves. Each has its own page, with its method.
 
 This fix is built on top of [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes),
 the base most players run, so every campaign of these pages is run in an install that has it: KSP 1.12.5
-with Harmony, ModuleManager, KSP Community Fixes 1.41.1, the two instruments and
+with Harmony, ModuleManager, KSP Community Fixes 1.41.1, the instruments and
 [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which drives the rover — and this mod, or
 not; on Earth, [Real Solar System](https://github.com/KSP-RO/RealSolarSystem) 20.1.3.0 and what it
 requires as well. *On stock* means that install without this mod.
@@ -37,3 +38,13 @@ Earth. With the terrain fix alone, the grass holds and the deck still moves, by 
 mod as installed, neither does, within 0.07 mm on Kerbin.
 
 **→ Full page: [Checking the statics: driving on while the world moves](checking-the-culprit-driving/the-statics.md)**
+
+## The scatter
+
+A rover on the grass by the KSC reads the scatter around it just before a move of the origin, just after
+it, and the same few metres farther on. On stock, the ground jumps by up to 49.5 mm and the grass with it,
+within 0.13 mm. With this mod and its scatter fix turned off, the ground holds and the grass jumps against it,
+by −54 to +19 mm depending on the load; with this mod as installed, nothing jumps, within 0.18 mm. Filmed on a
+cactus, too.
+
+**→ Full page: [Checking the scatter: driving on while the world moves](checking-the-culprit-driving/the-scatter.md)**

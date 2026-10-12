@@ -22,7 +22,7 @@ Read in its source, and reassuring so far:
 - **the stock scatter** — Parallax leaves the stock `LandControl` in place on every body but Eeloo, so
   on a body it does not strip, the stock scatter is still there, hanging from the same holders, with the
   gap this fix widens on Kerbin
-  ([Rocks, grass and trees](../../limits-and-solutions/stock/rocks-grass-and-trees.md)), and the scatter
+  ([The scatter](../../limits-and-solutions/stock/the-scatter.md)), and the scatter
   fix acts on it as without Parallax.
 
 One detail this fix leaves exactly as stock has it: Parallax samples its distribution noise from
