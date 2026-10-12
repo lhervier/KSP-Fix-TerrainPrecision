@@ -1,0 +1,4 @@
+17:44:25   mun          End of holder record 1: 1 pools, 128 holders in use, 32 free, 0 in no pool; 0 broken rules
+17:44:32   spacecenter  End of holder record 2: 5 pools, 3 holders in use, 317 free, 0 in no pool; 0 broken rules
+17:44:43   kerbin       End of holder record 3: 5 pools, 118 holders in use, 202 free, 0 in no pool; 0 broken rules
+17:44:43 done

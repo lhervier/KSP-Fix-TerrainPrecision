@@ -120,8 +120,9 @@ fix takes away. So the scatter fix is on by default, with the terrain fix it com
 Give the scatter colliders — the
 [Stock Scatter Collider Enabler Patch](https://github.com/Poodmund/Stock-Scatter-Collider-Enabler-Patch)
 does, on top of Kopernicus, and it is on CKAN — and the gap stops being visual: the rock a craft hits
-stands up to 104 mm from the rock its pilot sees, and a kerbal left on a boulder sinks into it at one load
-and stands clear of it at the next. Only the scatter fix closes that gap; the terrain fix halves it (see
+stands up to 71 mm from the rock its pilot sees, and a kerbal left on a boulder sinks into it at one load
+and stands clear of it at the next. Only the scatter fix closes that gap; the terrain fix alone narrows it
+a little (see
 [Kopernicus: scatter with colliders](non-regression/kopernicus/scatter-with-colliders.md)).
 
 What it costs is a change to where stock objects hang, which another mod may rely on: a holder in use hangs

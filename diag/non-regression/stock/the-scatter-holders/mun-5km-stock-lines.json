@@ -1,0 +1,44 @@
+[
+ {
+  "load": 1,
+  "tag": "record1",
+  "closing": "End of holder record 1: 1 pools, 352 holders in use, 32 free, 0 in no pool; 0 broken rules",
+  "record": 1,
+  "seconds": 30.0
+ },
+ {
+  "load": 1,
+  "tag": "record2",
+  "closing": "End of holder record 2: 1 pools, 176 holders in use, 208 free, 0 in no pool; 0 broken rules",
+  "record": 2,
+  "seconds": 150.0
+ },
+ {
+  "load": 1,
+  "tag": "record3",
+  "closing": "End of holder record 3: 1 pools, 160 holders in use, 224 free, 0 in no pool; 0 broken rules",
+  "record": 3,
+  "seconds": 270.0
+ },
+ {
+  "load": 1,
+  "tag": "record4",
+  "closing": "End of holder record 4: 1 pools, 224 holders in use, 160 free, 0 in no pool; 0 broken rules",
+  "record": 4,
+  "seconds": 390.0
+ },
+ {
+  "load": 1,
+  "tag": "record5",
+  "closing": "End of holder record 5: 1 pools, 152 holders in use, 232 free, 0 in no pool; 0 broken rules",
+  "record": 5,
+  "seconds": 510.0
+ },
+ {
+  "load": 1,
+  "tag": "crash",
+  "closing": "End of holder record 6: 1 pools, 568 holders in use, 40 free, 0 in no pool; 0 broken rules",
+  "record": 6,
+  "seconds": 621.7
+ }
+]

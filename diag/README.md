@@ -906,93 +906,95 @@ with ground under them:
 
 ### The scatter: the holder pools, over a flight
 
-KSP 1.12.5 on Windows, `GameData` holding Harmony, ModuleManager, KSP Community Fixes 1.41.1 and KSP
-Diag - Scatter, the first build with the holder record: nothing else on stock, Terrain Precision Fix 0.1.0
-added for `tpf`, and Rock Precision Fix 0.1.0 as well for `both`. `ref-mune-5km.sfs` loaded once, then
-*Record the holder pools* pressed 30 s into the
-flight, again about every two minutes, and once more after the pod crashed.
+The install of [the objects](#the-scatter-the-objects-over-twelve-loads), `stock` and `fix`, by
+[`run-scatter-holders.py`](automation/run-scatter-holders.py) with `flight`: `ref-mune-5km.sfs` loaded once,
+then *Record the holder pools* pressed 30 s into the flight, again every two minutes, and once more after the
+pod crashed.
 
-| flight | records |
-|---|---|
-| `tpf` | [`mun-5km-tpf-holders.log`](non-regression/stock/the-scatter-holders/mun-5km-tpf-holders.log) |
-| `both` | [`mun-5km-both-holders.log`](non-regression/stock/the-scatter-holders/mun-5km-both-holders.log) |
-
-With both fixes, they wrote to `KSP.log` that they had acted on the Mun before the first record:
-
-```
-[TerrainPrecisionFix] Mun: terrain placed in double precision (first quad corrected by 14.82 mm)
-[RockPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was -1.34 mm off)
-```
-
-Each file holds the six records and the line of `KSP.log` reporting the crash, between the fifth and the
-sixth. Every record of both flights ends on `0 broken rules`, with the same counts, record for record:
-
-| record | holders in use | free | broken rules |
+| flight | records | what the script printed | what it recorded |
 |---|---|---|---|
-| 1 | 344 | 40 | 0 |
-| 2 | 168 | 216 | 0 |
-| 3 | 144 | 240 | 0 |
-| 4 | 224 | 160 | 0 |
-| 5 | 152 | 232 | 0 |
-| 6, after the crash | 568 | 40 | 0 |
+| `stock` | [`mun-5km-stock-holders.log`](non-regression/stock/the-scatter-holders/mun-5km-stock-holders.log) | [`mun-5km-stock-script.txt`](non-regression/stock/the-scatter-holders/mun-5km-stock-script.txt) | [`mun-5km-stock-lines.json`](non-regression/stock/the-scatter-holders/mun-5km-stock-lines.json) |
+| `fix` | [`mun-5km-fix-holders.log`](non-regression/stock/the-scatter-holders/mun-5km-fix-holders.log) | [`mun-5km-fix-script.txt`](non-regression/stock/the-scatter-holders/mun-5km-fix-script.txt) | [`mun-5km-fix-lines.json`](non-regression/stock/the-scatter-holders/mun-5km-fix-lines.json) |
+
+With this mod, it wrote to `KSP.log` that it had acted on the Mun before the first record:
+
+```
+[TerrainPrecisionFix] Mun: terrain placed in double precision (first quad corrected by 3.32 mm)
+[TerrainPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was +1.65 mm off)
+```
+
+Each file holds the six records. Every record of both flights ends on `0 broken rules`:
+
+| record | in use, `stock` | free, `stock` | in use, `fix` | free, `fix` |
+|---|---|---|---|---|
+| 1 | 352 | 32 | 352 | 32 |
+| 2 | 176 | 208 | 168 | 216 |
+| 3 | 160 | 224 | 152 | 232 |
+| 4 | 224 | 160 | 216 | 168 |
+| 5 | 152 | 232 | 152 | 232 |
+| 6, after the crash | 568 | 40 | 568 | 40 |
 
 ### The scatter: the holder pools, across scene switches
 
-The same install and build as the flight above, `tpf` and `both`. One session each:
-`reference-mune.sfs` loaded from the Space Center, back to the Space Center, then `reference-kerbin.sfs`,
-with *Record the holder pools* pressed in each of the three scenes.
+The same install, `stock` and `fix`, by [`run-scatter-holders.py`](automation/run-scatter-holders.py) with
+`scenes`. One session each: `reference-mune.sfs` loaded from the Space Center, back to the Space Center, then
+`reference-kerbin.sfs`, with *Record the holder pools* pressed in each of the three scenes.
 
-| session | records |
-|---|---|
-| `tpf` | [`scenes-tpf-holders.log`](non-regression/stock/the-scatter-holders/scenes-tpf-holders.log) |
-| `both` | [`scenes-both-holders.log`](non-regression/stock/the-scatter-holders/scenes-both-holders.log) |
+| session | records | what the script printed | what it recorded |
+|---|---|---|---|
+| `stock` | [`scenes-stock-holders.log`](non-regression/stock/the-scatter-holders/scenes-stock-holders.log) | [`scenes-stock-script.txt`](non-regression/stock/the-scatter-holders/scenes-stock-script.txt) | [`scenes-stock-lines.json`](non-regression/stock/the-scatter-holders/scenes-stock-lines.json) |
+| `fix` | [`scenes-fix-holders.log`](non-regression/stock/the-scatter-holders/scenes-fix-holders.log) | [`scenes-fix-script.txt`](non-regression/stock/the-scatter-holders/scenes-fix-script.txt) | [`scenes-fix-lines.json`](non-regression/stock/the-scatter-holders/scenes-fix-lines.json) |
 
-With both fixes, they wrote to `KSP.log` that they had acted on each body before its first record:
+With this mod, it wrote to `KSP.log` that it had acted on each body before its first record:
 
 ```
-[TerrainPrecisionFix] Kerbin: terrain placed in double precision (first quad corrected by 16.50 mm)
-[RockPrecisionFix] Kerbin: scatter drawn from its terrain quads (first holder was -27.51 mm off)
-[TerrainPrecisionFix] Mun: terrain placed in double precision (first quad corrected by 1.68 mm)
-[RockPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was -0.40 mm off)
+[TerrainPrecisionFix] Kerbin: terrain placed in double precision (first quad corrected by 11.32 mm)
+[TerrainPrecisionFix] Kerbin: scatter drawn from its terrain quads (first holder was +19.08 mm off)
+[TerrainPrecisionFix] Mun: terrain placed in double precision (first quad corrected by 8.57 mm)
+[TerrainPrecisionFix] Mun: scatter drawn from its terrain quads (first holder was +7.86 mm off)
 ```
 
-Each file holds the three records, the line of `KSP.log` marking the arrival in each scene, and those of
-the fixes. Every record of both sessions ends on `0 in no pool` and `0 broken rules`, with the same
-counts:
+Every record of both sessions ends on `0 in no pool` and `0 broken rules`, with the same counts:
 
 | record | scene | pools | holders in use | free |
 |---|---|---|---|---|
 | 1 | the Mun | the Mun's `Rock00` | 128 | 32 |
-| 2 | the Space Center | Kerbin's `Tree00`, `Grass00`, `boulder`, `Pine00`, `cactus` | 4 | 316 |
+| 2 | the Space Center | Kerbin's `Tree00`, `Grass00`, `boulder`, `Pine00`, `cactus` | 3 | 317 |
 | 3 | Kerbin | the same five | 118 | 202 |
 
 ### The scatter: the colliders
 
 A different install, because stock scatter has no collider: the one of
-[the holder pools](#the-scatter-the-holder-pools-over-a-flight), plus
-[Kopernicus](https://github.com/Kopernicus/Kopernicus) 1.12.1.247 and the
+[the objects](#the-scatter-the-objects-over-twelve-loads), plus
+[Kopernicus](https://github.com/Kopernicus/Kopernicus) 1.12.1-247, ModularFlightIntegrator 1.2.10 and
+KSPTextureLoader 1.0.36, which it needs, and the
 [Stock Scatter Collider Enabler Patch](https://github.com/Poodmund/Stock-Scatter-Collider-Enabler-Patch)
-1.0.1, which gives every stock object of scatter a collision mesh of its own shape.
-
-Three series, `ref-kerbin-scatter-collider-eva.sfs` loaded six times in one session each, each load with
-a record and a picture of the kerbal's feet.
+1.0.1, which gives every stock object of scatter a collision mesh of its own shape. Three series, `stock`,
+`fix-no-scatter` and `fix`, by [`run-scatter-loading.py`](automation/run-scatter-loading.py):
+`ref-kerbin-scatter-collider-eva.sfs` loaded six times in one session each, each load with a record and a
+picture of the kerbal's feet, the camera set to the same viewpoint before each (`--camera 0.75 75.63 -6.42
+60`).
 
 | load | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
-| stock | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load6.log) |
+| `stock` | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load6.log) |
 | its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load6.png) |
-| `tpf` | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-tpf-load6.log) |
-| its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-tpf-load6.png) |
-| `both` | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-both-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-both-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-both-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-both-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-both-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-both-load6.log) |
-| its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-both-load6.png) |
+| `fix-no-scatter` | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load6.log) |
+| its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load6.png) |
+| `fix` | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load6.log) |
+| its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load6.png) |
+
+| series | what the script printed | what it recorded |
+|---|---|---|
+| `stock` | [`collider-stock-script.txt`](non-regression/kopernicus/scatter-with-colliders/collider-stock-script.txt) | [`collider-stock-lines.json`](non-regression/kopernicus/scatter-with-colliders/collider-stock-lines.json) |
+| `fix-no-scatter` | [`collider-fix-no-scatter-script.txt`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-script.txt) | [`collider-fix-no-scatter-lines.json`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-lines.json) |
+| `fix` | [`collider-fix-script.txt`](non-regression/kopernicus/scatter-with-colliders/collider-fix-script.txt) | [`collider-fix-lines.json`](non-regression/kopernicus/scatter-with-colliders/collider-fix-lines.json) |
 
 Every record of the three series ends on the same line, but for its number:
 
 ```
-End of record 1: 173 quads with rocks, 306 holders (0 not built yet); nearest quad 'Kerbin Xn0131000203': 6 rocks, 60 vertices measured, 0 without ground under them, 6 colliders measured
+End of record 2: 173 quads with rocks, 306 holders (0 not built yet); nearest quad 'Kerbin Xn0131000203': 6 rocks, 60 vertices measured, 0 without ground under them, 6 colliders measured
 ```
 
 The same nearest quad throughout, carrying the same six objects with a collider — one `boulder` and five
-`cactus` — so they compare one by one from one load to the next, and from one series to another. The
-records of the `tpf` series are numbered 6 to 11: its session had already served for loads that were not
-kept.
+`cactus` — so they compare one by one from one load to the next, and from one series to another.

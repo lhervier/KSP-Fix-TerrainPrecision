@@ -1,0 +1,8 @@
+17:57:28   record1      End of holder record 1: 1 pools, 352 holders in use, 32 free, 0 in no pool; 0 broken rules
+17:59:28   record2      End of holder record 2: 1 pools, 168 holders in use, 216 free, 0 in no pool; 0 broken rules
+18:01:28   record3      End of holder record 3: 1 pools, 152 holders in use, 232 free, 0 in no pool; 0 broken rules
+18:03:28   record4      End of holder record 4: 1 pools, 216 holders in use, 168 free, 0 in no pool; 0 broken rules
+18:05:28   record5      End of holder record 5: 1 pools, 152 holders in use, 232 free, 0 in no pool; 0 broken rules
+18:07:15   crashed 616.6 s into the flight
+18:07:20   crash        End of holder record 6: 1 pools, 568 holders in use, 40 free, 0 in no pool; 0 broken rules
+18:07:20 done

@@ -1,0 +1,44 @@
+[
+ {
+  "load": 1,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 2: 173 quads with rocks, 306 holders (0 not built yet); nearest quad 'Kerbin Xn0131000203': 6 rocks, 60 vertices measured, 0 without ground under them, 6 colliders measured",
+  "record": 2
+ },
+ {
+  "load": 2,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 4: 173 quads with rocks, 306 holders (0 not built yet); nearest quad 'Kerbin Xn0131000203': 6 rocks, 60 vertices measured, 0 without ground under them, 6 colliders measured",
+  "record": 4
+ },
+ {
+  "load": 3,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 6: 173 quads with rocks, 306 holders (0 not built yet); nearest quad 'Kerbin Xn0131000203': 6 rocks, 60 vertices measured, 0 without ground under them, 6 colliders measured",
+  "record": 6
+ },
+ {
+  "load": 4,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 8: 173 quads with rocks, 306 holders (0 not built yet); nearest quad 'Kerbin Xn0131000203': 6 rocks, 60 vertices measured, 0 without ground under them, 6 colliders measured",
+  "record": 8
+ },
+ {
+  "load": 5,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 10: 173 quads with rocks, 306 holders (0 not built yet); nearest quad 'Kerbin Xn0131000203': 6 rocks, 60 vertices measured, 0 without ground under them, 6 colliders measured",
+  "record": 10
+ },
+ {
+  "load": 6,
+  "situation": "LANDED",
+  "settled": true,
+  "closing": "End of record 12: 173 quads with rocks, 306 holders (0 not built yet); nearest quad 'Kerbin Xn0131000203': 6 rocks, 60 vertices measured, 0 without ground under them, 6 colliders measured",
+  "record": 12
+ }
+]

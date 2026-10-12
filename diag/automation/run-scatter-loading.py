@@ -11,7 +11,8 @@ For each loading it does what the protocol asks a player to do, in the same orde
 the rocks, and press it again while holders are not built yet or the counts still change. The records go to
 KSP.log; lines.json lists, load by load, the number and the closing line of the last record, the one the
 protocol keeps (extract-scatter-records.py copies those records out of KSP.log). With --scene-shots, a
-screenshot of the scene is taken after each last record, the window hidden. It never saves the game, and quits
+screenshot of the scene is taken after each last record, the window hidden, the interface too, and the flight
+camera set by --camera if it is given, so that every picture is taken from the same viewpoint. It never saves the game, and quits
 KSP at the end (unless --keep-running is given).
 """
 import argparse
@@ -80,6 +81,8 @@ def main():
     parser.add_argument("--attempts", type=int, default=20, help="records at most per loading")
     parser.add_argument("--pause", type=float, default=3, help="seconds between two records of a loading")
     parser.add_argument("--scene-shots", action="store_true", help="a screenshot of the scene after each loading")
+    parser.add_argument("--camera", type=float, nargs=4, metavar=("DISTANCE", "HEADING", "PITCH", "FOV"),
+                        help="the flight camera for the screenshots: metres, and degrees")
     parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
     parser.add_argument("--keep-running", action="store_true", help="leave KSP running at the end")
     options = parser.parse_args()
@@ -97,6 +100,11 @@ def main():
         row = dict(load=load, situation=state["vessel"]["situation"], settled=settled, closing=line,
                    record=int(match.group(1)) if match else None)
         if options.scene_shots:
+            call("set_ui", visible=False)
+            if options.camera:
+                distance, heading, pitch, fov = options.camera
+                call("set_camera", distance=distance, heading=heading, pitch=pitch, fov=fov)
+                call("wait", seconds=1)
             name = "%s-load%d.png" % (options.save, load)
             call("screenshot", path=os.path.join(os.path.abspath(options.out), name), return_image=False)
         rows.append(row)

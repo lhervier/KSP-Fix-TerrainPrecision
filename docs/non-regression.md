@@ -151,9 +151,9 @@ without this mod and 0.079 mm with it.
 
 ### Scatter with colliders
 
-**Checked — the terrain fix halves a stock gap; the scatter fix closes it.** Kopernicus can give rocks a
-collider, which stock places apart from the rock drawn: over six loads, −68.7 to +104.2 mm without this
-mod, −70.2 to +70.3 mm with the terrain fix, −0.026 to +0.022 mm with the scatter fix too.
+**Checked — the terrain fix alone narrows a stock gap a little; the scatter fix, on by default, closes it.**
+Kopernicus can give rocks a collider, which stock places apart from the rock drawn: over six loads, −71.3 to
++59.9 mm without this mod, −58.6 to +54.5 mm with its scatter fix off, −0.022 to +0.022 mm with this mod.
 
 **→ Full chapter: [Kopernicus: scatter with colliders](non-regression/kopernicus/scatter-with-colliders.md)**
 

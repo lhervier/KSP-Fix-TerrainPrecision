@@ -1,0 +1,20 @@
+[
+ {
+  "load": 1,
+  "tag": "mun",
+  "closing": "End of holder record 1: 1 pools, 128 holders in use, 32 free, 0 in no pool; 0 broken rules",
+  "record": 1
+ },
+ {
+  "load": 1,
+  "tag": "spacecenter",
+  "closing": "End of holder record 2: 5 pools, 3 holders in use, 317 free, 0 in no pool; 0 broken rules",
+  "record": 2
+ },
+ {
+  "load": 1,
+  "tag": "kerbin",
+  "closing": "End of holder record 3: 5 pools, 118 holders in use, 202 free, 0 in no pool; 0 broken rules",
+  "record": 3
+ }
+]

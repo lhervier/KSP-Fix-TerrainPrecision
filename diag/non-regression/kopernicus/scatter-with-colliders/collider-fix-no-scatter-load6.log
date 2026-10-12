@@ -1,0 +1,547 @@
+[KSPDiagScatter] Record 12 on Kerbin: scatter on. Heights are distances from the centre of Kerbin, in metres
+[KSPDiagScatter]   quad 'Kerbin Xn0112333310': height 601630.493013 m, matrix 601630.493013 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601630.599363 m, matrix 601630.599363 m, up +106.350 mm, across 29.372 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601630.599363 m, matrix 601630.599363 m, up +106.350 mm, across 29.372 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601630.599363 m, matrix 601630.599363 m, up +106.350 mm, across 29.372 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333311': height 601755.269436 m, matrix 601755.269436 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601755.382786 m, matrix 601755.382786 m, up +113.349 mm, across 46.865 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601755.382786 m, matrix 601755.382786 m, up +113.349 mm, across 46.865 mm, 6 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601755.382786 m, matrix 601755.382786 m, up +113.349 mm, across 46.865 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333312': height 601368.857826 m, matrix 601368.857826 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601368.900220 m, matrix 601368.966060 m, up +108.234 mm, across 62.345 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601368.900220 m, matrix 601368.966060 m, up +108.234 mm, across 62.345 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601368.900220 m, matrix 601368.966060 m, up +108.234 mm, across 62.345 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333313': height 601674.170584 m, matrix 601674.170584 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601674.240654 m, matrix 601674.240654 m, up +70.070 mm, across 45.117 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601674.240654 m, matrix 601674.240654 m, up +70.070 mm, across 45.117 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601674.240654 m, matrix 601674.240654 m, up +70.070 mm, across 45.117 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222212': height 601669.616694 m, matrix 601669.616694 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601669.670040 m, matrix 601669.670040 m, up +53.347 mm, across 70.142 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601669.670040 m, matrix 601669.670040 m, up +53.347 mm, across 70.142 mm, 6 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601669.670040 m, matrix 601669.670040 m, up +53.347 mm, across 70.142 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222213': height 601945.371240 m, matrix 601945.371240 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601945.479432 m, matrix 601945.483682 m, up +112.443 mm, across 59.488 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601945.479432 m, matrix 601945.483682 m, up +112.443 mm, across 59.488 mm, 6 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601945.479432 m, matrix 601945.483682 m, up +112.443 mm, across 59.488 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222220': height 601352.550074 m, matrix 601352.550074 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601352.631845 m, matrix 601352.631845 m, up +81.771 mm, across 33.062 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601352.631845 m, matrix 601352.631845 m, up +81.771 mm, across 33.062 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601352.631845 m, matrix 601352.631845 m, up +81.771 mm, across 33.062 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222221': height 601485.465133 m, matrix 601485.465133 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601485.542414 m, matrix 601485.542414 m, up +77.281 mm, across 51.274 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601485.542414 m, matrix 601485.542414 m, up +77.281 mm, across 51.274 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601485.542414 m, matrix 601485.542414 m, up +77.281 mm, across 51.274 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222231': height 601693.832366 m, matrix 601693.832366 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601693.920923 m, matrix 601693.920923 m, up +88.557 mm, across 34.869 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601693.920923 m, matrix 601693.920923 m, up +88.557 mm, across 34.869 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601693.920923 m, matrix 601693.920923 m, up +88.557 mm, across 34.869 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222232': height 601376.268112 m, matrix 601376.268112 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601376.378418 m, matrix 601376.378418 m, up +110.306 mm, across 73.028 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601376.378418 m, matrix 601376.378418 m, up +110.306 mm, across 73.028 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601376.378418 m, matrix 601376.378418 m, up +110.306 mm, across 73.028 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222233': height 601568.915364 m, matrix 601568.915364 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601569.053037 m, matrix 601568.991419 m, up +76.055 mm, across 52.451 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601569.053037 m, matrix 601568.991419 m, up +76.055 mm, across 52.451 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601569.053037 m, matrix 601568.991419 m, up +76.055 mm, across 52.451 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222320': height 601347.545318 m, matrix 601347.545318 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601347.605363 m, matrix 601347.609652 m, up +64.334 mm, across 89.879 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601347.605363 m, matrix 601347.609652 m, up +64.334 mm, across 89.879 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601347.605363 m, matrix 601347.609652 m, up +64.334 mm, across 89.879 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222322': height 601225.531962 m, matrix 601225.531962 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'Grass00': built, height 601225.586747 m, matrix 601225.582420 m, up +50.458 mm, across 19.766 mm, 0 colliders
+[KSPDiagScatter]     holder 'boulder': built, height 601225.586747 m, matrix 601225.582420 m, up +50.458 mm, across 19.766 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601225.586747 m, matrix 601225.582420 m, up +50.458 mm, across 19.766 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000002': height 600912.215611 m, matrix 600912.215611 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600912.272290 m, matrix 600912.276691 m, up +61.080 mm, across 75.842 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600912.272290 m, matrix 600912.276691 m, up +61.080 mm, across 75.842 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000003': height 600905.022010 m, matrix 600905.022010 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600905.110152 m, matrix 600905.110152 m, up +88.142 mm, across 46.293 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600905.110152 m, matrix 600905.110152 m, up +88.142 mm, across 46.293 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000010': height 601086.287088 m, matrix 601086.287088 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601086.419992 m, matrix 601086.415628 m, up +128.540 mm, across 23.220 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601086.419992 m, matrix 601086.415628 m, up +128.540 mm, across 23.220 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000011': height 601416.292047 m, matrix 601416.292047 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601416.368883 m, matrix 601416.368883 m, up +76.836 mm, across 61.566 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601416.368883 m, matrix 601416.368883 m, up +76.836 mm, across 61.566 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000012': height 601129.994562 m, matrix 601129.994562 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601130.119470 m, matrix 601130.115067 m, up +120.504 mm, across 52.732 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601130.119470 m, matrix 601130.115067 m, up +120.504 mm, across 52.732 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000013': height 601212.383972 m, matrix 601212.383972 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601212.446971 m, matrix 601212.451375 m, up +67.402 mm, across 70.554 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601212.446971 m, matrix 601212.451375 m, up +67.402 mm, across 70.554 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000020': height 600869.873476 m, matrix 600869.873476 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600869.969432 m, matrix 600869.964992 m, up +91.516 mm, across 52.003 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600869.969432 m, matrix 600869.964992 m, up +91.516 mm, across 52.003 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000021': height 600958.602256 m, matrix 600958.602256 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600958.653928 m, matrix 600958.653928 m, up +51.672 mm, across 53.656 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600958.653928 m, matrix 600958.653928 m, up +51.672 mm, across 53.656 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000022': height 600885.011735 m, matrix 600885.011735 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600885.153744 m, matrix 600885.092200 m, up +80.465 mm, across 34.034 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600885.153744 m, matrix 600885.092200 m, up +80.465 mm, across 34.034 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000023': height 600962.892712 m, matrix 600962.892712 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600962.986025 m, matrix 600962.981545 m, up +88.834 mm, across 38.863 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600962.986025 m, matrix 600962.981545 m, up +88.834 mm, across 38.863 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000030': height 601029.608647 m, matrix 601029.608647 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601029.697611 m, matrix 601029.702053 m, up +93.406 mm, across 58.104 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601029.697611 m, matrix 601029.702053 m, up +93.406 mm, across 58.104 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000031': height 601049.656899 m, matrix 601049.656899 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601049.750931 m, matrix 601049.689347 m, up +32.448 mm, across 34.078 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601049.750931 m, matrix 601049.689347 m, up +32.448 mm, across 34.078 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000032': height 600971.612164 m, matrix 600971.612164 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600971.712946 m, matrix 600971.712946 m, up +100.782 mm, across 65.421 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600971.712946 m, matrix 600971.712946 m, up +100.782 mm, across 65.421 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000033': height 601046.415981 m, matrix 601046.415981 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601046.445408 m, matrix 601046.506980 m, up +90.999 mm, across 57.352 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601046.445408 m, matrix 601046.506980 m, up +90.999 mm, across 57.352 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000100': height 601304.724203 m, matrix 601304.724203 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601304.809178 m, matrix 601304.809178 m, up +84.975 mm, across 60.964 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601304.809178 m, matrix 601304.809178 m, up +84.975 mm, across 60.964 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000101': height 601086.429224 m, matrix 601086.429224 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601086.435330 m, matrix 601086.496954 m, up +67.730 mm, across 53.262 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601086.435330 m, matrix 601086.496954 m, up +67.730 mm, across 53.262 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000102': height 601341.783971 m, matrix 601341.783971 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601341.831085 m, matrix 601341.831085 m, up +47.114 mm, across 46.183 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601341.831085 m, matrix 601341.831085 m, up +47.114 mm, across 46.183 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000103': height 601216.519767 m, matrix 601216.519767 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601216.654344 m, matrix 601216.592731 m, up +72.964 mm, across 59.811 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601216.654344 m, matrix 601216.592731 m, up +72.964 mm, across 59.811 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000110': height 601078.195997 m, matrix 601078.195997 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601078.245954 m, matrix 601078.245954 m, up +49.958 mm, across 39.418 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601078.245954 m, matrix 601078.245954 m, up +49.958 mm, across 39.418 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000111': height 601081.195912 m, matrix 601081.195912 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601081.243806 m, matrix 601081.243806 m, up +47.895 mm, across 43.694 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601081.243806 m, matrix 601081.243806 m, up +47.895 mm, across 43.694 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000112': height 601054.353893 m, matrix 601054.353893 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601054.395588 m, matrix 601054.395588 m, up +41.695 mm, across 51.301 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601054.395588 m, matrix 601054.395588 m, up +41.695 mm, across 51.301 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000113': height 601088.183051 m, matrix 601088.183051 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601088.309773 m, matrix 601088.252548 m, up +69.498 mm, across 61.528 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601088.309773 m, matrix 601088.252548 m, up +69.498 mm, across 61.528 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000120': height 601168.079203 m, matrix 601168.079203 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601168.132880 m, matrix 601168.132880 m, up +53.677 mm, across 58.511 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601168.132880 m, matrix 601168.132880 m, up +53.677 mm, across 58.511 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000121': height 601186.420000 m, matrix 601186.420000 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601186.505835 m, matrix 601186.501392 m, up +81.392 mm, across 41.517 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601186.505835 m, matrix 601186.501392 m, up +81.392 mm, across 41.517 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000122': height 601093.246262 m, matrix 601093.246262 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601093.331048 m, matrix 601093.335530 m, up +89.267 mm, across 57.411 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601093.331048 m, matrix 601093.335530 m, up +89.267 mm, across 57.411 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000123': height 601141.338865 m, matrix 601141.338865 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601141.443115 m, matrix 601141.447598 m, up +108.732 mm, across 45.741 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601141.443115 m, matrix 601141.447598 m, up +108.732 mm, across 45.741 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000130': height 601111.787670 m, matrix 601111.787670 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601111.822882 m, matrix 601111.827326 m, up +39.656 mm, across 66.839 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601111.822882 m, matrix 601111.827326 m, up +39.656 mm, across 66.839 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000131': height 601072.562921 m, matrix 601072.562921 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601072.572737 m, matrix 601072.638801 m, up +75.879 mm, across 63.815 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601072.572737 m, matrix 601072.638801 m, up +75.879 mm, across 63.815 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000132': height 601062.295940 m, matrix 601062.295940 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601062.373789 m, matrix 601062.373789 m, up +77.849 mm, across 57.761 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601062.373789 m, matrix 601062.373789 m, up +77.849 mm, across 57.761 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000133': height 600990.324763 m, matrix 600990.324763 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600990.392719 m, matrix 600990.392719 m, up +67.956 mm, across 58.148 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600990.392719 m, matrix 600990.392719 m, up +67.956 mm, across 58.148 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000200': height 600926.224476 m, matrix 600926.224476 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600926.276891 m, matrix 600926.281408 m, up +56.932 mm, across 78.370 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600926.276891 m, matrix 600926.281408 m, up +56.932 mm, across 78.370 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000201': height 600899.082900 m, matrix 600899.082900 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600899.163098 m, matrix 600899.163098 m, up +80.197 mm, across 44.667 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600899.163098 m, matrix 600899.163098 m, up +80.197 mm, across 44.667 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000202': height 600874.149984 m, matrix 600874.149984 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600874.228764 m, matrix 600874.224208 m, up +74.224 mm, across 47.148 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600874.228764 m, matrix 600874.224208 m, up +74.224 mm, across 47.148 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000203': height 600862.400644 m, matrix 600862.400644 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600862.456048 m, matrix 600862.513020 m, up +112.376 mm, across 37.809 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600862.456048 m, matrix 600862.513020 m, up +112.376 mm, across 37.809 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000210': height 600936.017700 m, matrix 600936.017700 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600936.117400 m, matrix 600936.121919 m, up +104.219 mm, across 62.542 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600936.117400 m, matrix 600936.121919 m, up +104.219 mm, across 62.542 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000211': height 600993.348263 m, matrix 600993.348263 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600993.402799 m, matrix 600993.402799 m, up +54.535 mm, across 63.235 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600993.402799 m, matrix 600993.402799 m, up +54.535 mm, across 63.235 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000212': height 600871.573665 m, matrix 600871.573665 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600871.656592 m, matrix 600871.661149 m, up +87.485 mm, across 68.925 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600871.656592 m, matrix 600871.661149 m, up +87.485 mm, across 68.925 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000213': height 601026.557304 m, matrix 601026.557304 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601026.616230 m, matrix 601026.616230 m, up +58.926 mm, across 70.928 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601026.616230 m, matrix 601026.616230 m, up +58.926 mm, across 70.928 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000220': height 600784.056286 m, matrix 600784.056286 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600784.204971 m, matrix 600784.138868 m, up +82.581 mm, across 43.206 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600784.204971 m, matrix 600784.138868 m, up +82.581 mm, across 43.206 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000221': height 600808.519682 m, matrix 600808.519682 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600808.545070 m, matrix 600808.545070 m, up +25.387 mm, across 35.040 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600808.545070 m, matrix 600808.545070 m, up +25.387 mm, across 35.040 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000230': height 600849.551844 m, matrix 600849.551844 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600849.677898 m, matrix 600849.673302 m, up +121.457 mm, across 43.731 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600849.677898 m, matrix 600849.673302 m, up +121.457 mm, across 43.731 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000231': height 600891.549369 m, matrix 600891.549369 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600891.590581 m, matrix 600891.590581 m, up +41.211 mm, across 80.702 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600891.590581 m, matrix 600891.590581 m, up +41.211 mm, across 80.702 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000232': height 600824.372449 m, matrix 600824.372449 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600824.419325 m, matrix 600824.414690 m, up +42.241 mm, across 50.840 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600824.419325 m, matrix 600824.414690 m, up +42.241 mm, across 50.840 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000300': height 601085.738812 m, matrix 601085.738812 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601085.782724 m, matrix 601085.782724 m, up +43.912 mm, across 66.642 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601085.782724 m, matrix 601085.782724 m, up +43.912 mm, across 66.642 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000301': height 601064.166830 m, matrix 601064.166830 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601064.292454 m, matrix 601064.230876 m, up +64.046 mm, across 21.134 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601064.292454 m, matrix 601064.230876 m, up +64.046 mm, across 21.134 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000302': height 601004.000084 m, matrix 601004.000084 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601004.131228 m, matrix 601004.126669 m, up +126.585 mm, across 37.600 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601004.131228 m, matrix 601004.126669 m, up +126.585 mm, across 37.600 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000303': height 600952.320450 m, matrix 600952.320450 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600952.434966 m, matrix 600952.434966 m, up +114.516 mm, across 36.383 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600952.434966 m, matrix 600952.434966 m, up +114.516 mm, across 36.383 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000310': height 601008.475802 m, matrix 601008.475802 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601008.543988 m, matrix 601008.610096 m, up +134.295 mm, across 65.422 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601008.543988 m, matrix 601008.610096 m, up +134.295 mm, across 65.422 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000311': height 600947.839302 m, matrix 600947.839302 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600947.900037 m, matrix 600947.895514 m, up +56.212 mm, across 39.784 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600947.900037 m, matrix 600947.895514 m, up +56.212 mm, across 39.784 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000312': height 600900.217125 m, matrix 600900.217125 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600900.291697 m, matrix 600900.291697 m, up +74.572 mm, across 62.470 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600900.291697 m, matrix 600900.291697 m, up +74.572 mm, across 62.470 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000313': height 600907.424519 m, matrix 600907.424519 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600907.566386 m, matrix 600907.500241 m, up +75.722 mm, across 28.334 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600907.566386 m, matrix 600907.500241 m, up +75.722 mm, across 28.334 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000320': height 600840.133922 m, matrix 600840.133922 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600840.221619 m, matrix 600840.217022 m, up +83.099 mm, across 37.851 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600840.221619 m, matrix 600840.217022 m, up +83.099 mm, across 37.851 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000321': height 600851.265277 m, matrix 600851.265277 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600851.348740 m, matrix 600851.348740 m, up +83.463 mm, across 40.737 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600851.348740 m, matrix 600851.348740 m, up +83.463 mm, across 40.737 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000330': height 600830.752886 m, matrix 600830.752886 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600830.854535 m, matrix 600830.854535 m, up +101.649 mm, across 50.508 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600830.854535 m, matrix 600830.854535 m, up +101.649 mm, across 50.508 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000331': height 600865.140500 m, matrix 600865.140500 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600865.224061 m, matrix 600865.224061 m, up +83.561 mm, across 70.985 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600865.224061 m, matrix 600865.224061 m, up +83.561 mm, across 70.985 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000333': height 600808.244021 m, matrix 600808.244021 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600808.299379 m, matrix 600808.299379 m, up +55.358 mm, across 55.138 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600808.299379 m, matrix 600808.299379 m, up +55.358 mm, across 55.138 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131001200': height 600904.292667 m, matrix 600904.292667 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600904.363566 m, matrix 600904.363566 m, up +70.899 mm, across 66.518 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600904.363566 m, matrix 600904.363566 m, up +70.899 mm, across 66.518 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131001201': height 601005.198247 m, matrix 601005.198247 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601005.308136 m, matrix 601005.303613 m, up +105.365 mm, across 46.966 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601005.308136 m, matrix 601005.303613 m, up +105.365 mm, across 46.966 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131001202': height 600926.874870 m, matrix 600926.874870 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600926.934257 m, matrix 600926.934257 m, up +59.387 mm, across 59.618 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600926.934257 m, matrix 600926.934257 m, up +59.387 mm, across 59.618 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131001203': height 600985.033505 m, matrix 600985.033505 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600985.079536 m, matrix 600985.145698 m, up +112.193 mm, across 61.564 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600985.079536 m, matrix 600985.145698 m, up +112.193 mm, across 61.564 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131001220': height 600872.465505 m, matrix 600872.465505 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600872.538761 m, matrix 600872.538761 m, up +73.256 mm, across 82.173 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600872.538761 m, matrix 600872.538761 m, up +73.256 mm, across 82.173 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131001221': height 600920.636963 m, matrix 600920.636963 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600920.735776 m, matrix 600920.735776 m, up +98.813 mm, across 51.222 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600920.735776 m, matrix 600920.735776 m, up +98.813 mm, across 51.222 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131001222': height 600792.077368 m, matrix 600792.077368 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600792.201240 m, matrix 600792.139672 m, up +62.304 mm, across 74.134 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600792.201240 m, matrix 600792.139672 m, up +62.304 mm, across 74.134 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131001223': height 600819.861060 m, matrix 600819.861060 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600819.923710 m, matrix 600819.928350 m, up +67.289 mm, across 79.110 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600819.923710 m, matrix 600819.928350 m, up +67.289 mm, across 79.110 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333320': height 601279.095723 m, matrix 601279.095723 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601279.195119 m, matrix 601279.190835 m, up +95.112 mm, across 55.341 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601279.195119 m, matrix 601279.190835 m, up +95.112 mm, across 55.341 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333321': height 601223.847521 m, matrix 601223.847521 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601223.922893 m, matrix 601223.927177 m, up +79.656 mm, across 66.491 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601223.922893 m, matrix 601223.927177 m, up +79.656 mm, across 66.491 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333322': height 601135.797423 m, matrix 601135.797423 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601135.908251 m, matrix 601135.908251 m, up +110.828 mm, across 67.387 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601135.908251 m, matrix 601135.908251 m, up +110.828 mm, across 67.387 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333323': height 601127.189828 m, matrix 601127.189828 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601127.315016 m, matrix 601127.319338 m, up +129.510 mm, across 50.182 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601127.315016 m, matrix 601127.319338 m, up +129.510 mm, across 50.182 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333330': height 601167.924540 m, matrix 601167.924540 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601167.986784 m, matrix 601167.986784 m, up +62.244 mm, across 52.201 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601167.986784 m, matrix 601167.986784 m, up +62.244 mm, across 52.201 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333331': height 601185.750700 m, matrix 601185.750700 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601185.893219 m, matrix 601185.831627 m, up +80.927 mm, across 52.712 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601185.893219 m, matrix 601185.831627 m, up +80.927 mm, across 52.712 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333332': height 601097.741248 m, matrix 601097.741248 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601097.805586 m, matrix 601097.809909 m, up +68.661 mm, across 57.229 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601097.805586 m, matrix 601097.809909 m, up +68.661 mm, across 57.229 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0112333333': height 601088.985653 m, matrix 601088.985653 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601089.062810 m, matrix 601089.062810 m, up +77.157 mm, across 76.947 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601089.062810 m, matrix 601089.062810 m, up +77.157 mm, across 76.947 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222200': height 601585.493602 m, matrix 601585.493602 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601585.564497 m, matrix 601585.568706 m, up +75.105 mm, across 56.114 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601585.564497 m, matrix 601585.568706 m, up +75.105 mm, across 56.114 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222201': height 601546.771140 m, matrix 601546.771140 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601546.815051 m, matrix 601546.876685 m, up +105.545 mm, across 34.939 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601546.815051 m, matrix 601546.876685 m, up +105.545 mm, across 34.939 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222202': height 601968.135080 m, matrix 601968.135080 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601968.209041 m, matrix 601968.209041 m, up +73.960 mm, across 39.238 mm, 6 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601968.209041 m, matrix 601968.209041 m, up +73.960 mm, across 39.238 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222203': height 601861.571506 m, matrix 601861.571506 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601861.602643 m, matrix 601861.602643 m, up +31.137 mm, across 46.204 mm, 6 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601861.602643 m, matrix 601861.602643 m, up +31.137 mm, across 46.204 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222210': height 601456.836847 m, matrix 601456.836847 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601456.881505 m, matrix 601456.885716 m, up +48.869 mm, across 69.450 mm, 5 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601456.881505 m, matrix 601456.885716 m, up +48.869 mm, across 69.450 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222211': height 601803.392629 m, matrix 601803.392629 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601803.474149 m, matrix 601803.474149 m, up +81.520 mm, across 39.390 mm, 6 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601803.474149 m, matrix 601803.474149 m, up +81.520 mm, across 39.390 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222222': height 601107.498335 m, matrix 601107.498335 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601107.602149 m, matrix 601107.597825 m, up +99.490 mm, across 62.853 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601107.602149 m, matrix 601107.597825 m, up +99.490 mm, across 62.853 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222223': height 601071.768163 m, matrix 601071.768163 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601071.858377 m, matrix 601071.858377 m, up +90.214 mm, across 35.342 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601071.858377 m, matrix 601071.858377 m, up +90.214 mm, across 35.342 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222230': height 601758.683414 m, matrix 601758.683414 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601758.775114 m, matrix 601758.775114 m, up +91.700 mm, across 52.741 mm, 6 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601758.775114 m, matrix 601758.775114 m, up +91.700 mm, across 52.741 mm, 2 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222321': height 601162.291034 m, matrix 601162.291034 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601162.349778 m, matrix 601162.354068 m, up +63.033 mm, across 74.237 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601162.349778 m, matrix 601162.354068 m, up +63.033 mm, across 74.237 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0113222323': height 601112.601653 m, matrix 601112.601653 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601112.673998 m, matrix 601112.678326 m, up +76.673 mm, across 71.764 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601112.673998 m, matrix 601112.678326 m, up +76.673 mm, across 71.764 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111010': height 601192.147703 m, matrix 601192.147703 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601192.217491 m, matrix 601192.221850 m, up +74.147 mm, across 53.182 mm, 4 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601192.217491 m, matrix 601192.221850 m, up +74.147 mm, across 53.182 mm, 3 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111011': height 601059.484244 m, matrix 601059.484244 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601059.585811 m, matrix 601059.581452 m, up +97.208 mm, across 33.893 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601059.585811 m, matrix 601059.581452 m, up +97.208 mm, across 33.893 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111012': height 601133.486398 m, matrix 601133.486398 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601133.558855 m, matrix 601133.554458 m, up +68.059 mm, across 51.482 mm, 3 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601133.558855 m, matrix 601133.554458 m, up +68.059 mm, across 51.482 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111013': height 600985.685678 m, matrix 600985.685678 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600985.755352 m, matrix 600985.750954 m, up +65.276 mm, across 54.835 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600985.755352 m, matrix 600985.750954 m, up +65.276 mm, across 54.835 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111100': height 601026.463322 m, matrix 601026.463322 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 601026.531068 m, matrix 601026.588248 m, up +124.926 mm, across 45.783 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 601026.531068 m, matrix 601026.588248 m, up +124.926 mm, across 45.783 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111101': height 600993.329068 m, matrix 600993.329068 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600993.358538 m, matrix 600993.420088 m, up +91.021 mm, across 28.906 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600993.358538 m, matrix 600993.420088 m, up +91.021 mm, across 28.906 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111102': height 600918.560614 m, matrix 600918.560614 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600918.630673 m, matrix 600918.630673 m, up +70.059 mm, across 46.981 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600918.630673 m, matrix 600918.630673 m, up +70.059 mm, across 46.981 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111103': height 600866.488192 m, matrix 600866.488192 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600866.588970 m, matrix 600866.588970 m, up +100.778 mm, across 54.598 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600866.588970 m, matrix 600866.588970 m, up +100.778 mm, across 54.598 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111110': height 600977.952045 m, matrix 600977.952045 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600978.043451 m, matrix 600978.047813 m, up +95.768 mm, across 69.756 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600978.043451 m, matrix 600978.047813 m, up +95.768 mm, across 69.756 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111111': height 600977.835657 m, matrix 600977.835657 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600977.975143 m, matrix 600977.913574 m, up +77.917 mm, across 71.937 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600977.975143 m, matrix 600977.913574 m, up +77.917 mm, across 71.937 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111112': height 600873.280844 m, matrix 600873.280844 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600873.341803 m, matrix 600873.341803 m, up +60.959 mm, across 30.756 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600873.341803 m, matrix 600873.341803 m, up +60.959 mm, across 30.756 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111113': height 600899.146442 m, matrix 600899.146442 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600899.271251 m, matrix 600899.209693 m, up +63.250 mm, across 29.772 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600899.271251 m, matrix 600899.209693 m, up +63.250 mm, across 29.772 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111120': height 600854.867528 m, matrix 600854.867528 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600854.957798 m, matrix 600854.962236 m, up +94.707 mm, across 52.352 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600854.957798 m, matrix 600854.962236 m, up +94.707 mm, across 52.352 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111121': height 600808.630716 m, matrix 600808.630716 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600808.726854 m, matrix 600808.722416 m, up +91.700 mm, across 31.356 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600808.726854 m, matrix 600808.722416 m, up +91.700 mm, across 31.356 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111123': height 600834.887207 m, matrix 600834.887207 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600834.990491 m, matrix 600834.928976 m, up +41.769 mm, across 54.056 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600834.990491 m, matrix 600834.928976 m, up +41.769 mm, across 54.056 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111130': height 600812.718556 m, matrix 600812.718556 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600812.792988 m, matrix 600812.792988 m, up +74.432 mm, across 49.853 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600812.792988 m, matrix 600812.792988 m, up +74.432 mm, across 49.853 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111131': height 600852.745599 m, matrix 600852.745599 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600852.799473 m, matrix 600852.795034 m, up +49.434 mm, across 24.319 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600852.799473 m, matrix 600852.795034 m, up +49.434 mm, across 24.319 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111132': height 600833.920500 m, matrix 600833.920500 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600834.004048 m, matrix 600834.008525 m, up +88.025 mm, across 60.425 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600834.004048 m, matrix 600834.008525 m, up +88.025 mm, across 60.425 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111133': height 600848.949714 m, matrix 600848.949714 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600849.099504 m, matrix 600849.037969 m, up +88.255 mm, across 46.121 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600849.099504 m, matrix 600849.037969 m, up +88.255 mm, across 46.121 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111310': height 600877.944711 m, matrix 600877.944711 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600877.984974 m, matrix 600878.041971 m, up +97.260 mm, across 28.031 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600877.984974 m, matrix 600878.041971 m, up +97.260 mm, across 28.031 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111311': height 600902.967613 m, matrix 600902.967613 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600903.077789 m, matrix 600903.073273 m, up +105.659 mm, across 46.110 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600903.077789 m, matrix 600903.073273 m, up +105.659 mm, across 46.110 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111313': height 600855.566490 m, matrix 600855.566490 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600855.604887 m, matrix 600855.670953 m, up +104.462 mm, across 36.752 mm, 1 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600855.604887 m, matrix 600855.670953 m, up +104.462 mm, across 36.752 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000000': height 600989.190398 m, matrix 600989.190398 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600989.206827 m, matrix 600989.211190 m, up +20.792 mm, across 65.118 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600989.206827 m, matrix 600989.211190 m, up +20.792 mm, across 65.118 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000001': height 600935.809616 m, matrix 600935.809616 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'boulder': built, height 600935.885958 m, matrix 600935.885958 m, up +76.342 mm, across 29.194 mm, 2 colliders
+[KSPDiagScatter]     holder 'cactus': built, height 600935.885958 m, matrix 600935.885958 m, up +76.342 mm, across 29.194 mm, 4 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000322': height 600737.385071 m, matrix 600737.385071 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600737.478340 m, matrix 600737.478340 m, up +93.269 mm, across 64.997 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000323': height 600701.933560 m, matrix 600701.933560 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600702.014726 m, matrix 600702.014726 m, up +81.167 mm, across 27.123 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000332': height 600783.390173 m, matrix 600783.390173 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600783.514318 m, matrix 600783.448130 m, up +57.957 mm, across 40.681 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002000': height 600670.652677 m, matrix 600670.652677 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600670.744590 m, matrix 600670.744590 m, up +91.912 mm, across 51.184 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002001': height 600712.055583 m, matrix 600712.055583 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600712.146704 m, matrix 600712.089884 m, up +34.301 mm, across 60.176 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002002': height 600621.578921 m, matrix 600621.578921 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600621.613835 m, matrix 600621.670594 m, up +91.672 mm, across 49.260 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002003': height 600611.212925 m, matrix 600611.212925 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600611.287485 m, matrix 600611.287485 m, up +74.560 mm, across 57.224 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002010': height 600756.718444 m, matrix 600756.718444 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600756.755230 m, matrix 600756.755230 m, up +36.785 mm, across 35.323 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002011': height 600687.686041 m, matrix 600687.686041 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600687.782441 m, matrix 600687.777766 m, up +91.725 mm, across 53.772 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002012': height 600662.447619 m, matrix 600662.447619 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600662.497986 m, matrix 600662.564189 m, up +116.570 mm, across 61.947 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002013': height 600650.226525 m, matrix 600650.226525 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600650.348480 m, matrix 600650.343766 m, up +117.241 mm, across 30.520 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002021': height 600590.055861 m, matrix 600590.055861 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600590.180553 m, matrix 600590.119085 m, up +63.223 mm, across 36.767 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002023': height 600609.963409 m, matrix 600609.963409 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600610.067694 m, matrix 600610.062903 m, up +99.494 mm, across 45.177 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002030': height 600637.632977 m, matrix 600637.632977 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600637.699087 m, matrix 600637.703839 m, up +70.862 mm, across 54.294 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002031': height 600636.180226 m, matrix 600636.180226 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600636.268510 m, matrix 600636.268510 m, up +88.284 mm, across 57.403 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002032': height 600621.152165 m, matrix 600621.152165 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600621.212559 m, matrix 600621.212559 m, up +60.394 mm, across 41.547 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002033': height 600629.613909 m, matrix 600629.613909 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600629.676785 m, matrix 600629.671992 m, up +58.083 mm, across 46.238 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002100': height 600661.735495 m, matrix 600661.735495 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600661.780673 m, matrix 600661.780673 m, up +45.178 mm, across 44.809 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002101': height 600671.004675 m, matrix 600671.004675 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600671.134698 m, matrix 600671.130021 m, up +125.346 mm, across 42.949 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002102': height 600604.442085 m, matrix 600604.442085 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600604.517887 m, matrix 600604.517887 m, up +75.803 mm, across 51.967 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002103': height 600659.409740 m, matrix 600659.409740 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600659.457827 m, matrix 600659.457827 m, up +48.086 mm, across 72.736 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002110': height 600719.170137 m, matrix 600719.170137 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600719.247631 m, matrix 600719.242954 m, up +72.817 mm, across 46.857 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002111': height 600790.562237 m, matrix 600790.562237 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600790.614167 m, matrix 600790.618845 m, up +56.608 mm, across 63.703 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002112': height 600682.461279 m, matrix 600682.461279 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600682.553345 m, matrix 600682.553345 m, up +92.066 mm, across 83.998 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002113': height 600718.934024 m, matrix 600718.934024 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600719.018719 m, matrix 600719.014002 m, up +79.978 mm, across 43.711 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002120': height 600620.272456 m, matrix 600620.272456 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600620.387145 m, matrix 600620.391899 m, up +119.442 mm, across 39.273 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002121': height 600643.294701 m, matrix 600643.294701 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600643.375783 m, matrix 600643.375783 m, up +81.082 mm, across 47.046 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002122': height 600657.329283 m, matrix 600657.329283 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600657.425096 m, matrix 600657.425096 m, up +95.814 mm, across 47.761 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002123': height 600679.213469 m, matrix 600679.213469 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600679.312799 m, matrix 600679.312799 m, up +99.330 mm, across 59.710 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002130': height 600686.484090 m, matrix 600686.484090 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600686.594280 m, matrix 600686.594280 m, up +110.191 mm, across 54.599 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002131': height 600686.177636 m, matrix 600686.177636 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600686.291567 m, matrix 600686.291567 m, up +113.932 mm, across 44.251 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002132': height 600686.252341 m, matrix 600686.252341 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600686.316734 m, matrix 600686.378234 m, up +125.894 mm, across 51.955 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002133': height 600659.969433 m, matrix 600659.969433 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600660.087266 m, matrix 600660.092062 m, up +122.628 mm, across 54.712 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002201': height 600607.697765 m, matrix 600607.697765 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600607.760948 m, matrix 600607.760948 m, up +63.183 mm, across 47.691 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002203': height 600568.638119 m, matrix 600568.638119 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600568.769260 m, matrix 600568.707831 m, up +69.712 mm, across 62.324 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002210': height 600616.137011 m, matrix 600616.137011 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600616.287759 m, matrix 600616.221476 m, up +84.465 mm, across 54.643 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002211': height 600620.593613 m, matrix 600620.593613 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600620.659178 m, matrix 600620.659178 m, up +65.565 mm, across 62.774 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002212': height 600599.648870 m, matrix 600599.648870 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600599.719769 m, matrix 600599.719769 m, up +70.900 mm, across 43.408 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002213': height 600620.656910 m, matrix 600620.656910 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600620.794409 m, matrix 600620.732961 m, up +76.051 mm, across 56.434 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002221': height 600523.736601 m, matrix 600523.736601 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600523.851661 m, matrix 600523.851661 m, up +115.060 mm, across 40.146 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002223': height 600496.221270 m, matrix 600496.221270 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600496.306711 m, matrix 600496.301763 m, up +80.493 mm, across 59.700 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002230': height 600552.219063 m, matrix 600552.219063 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600552.316315 m, matrix 600552.311405 m, up +92.342 mm, across 21.292 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002231': height 600579.560341 m, matrix 600579.560341 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600579.677331 m, matrix 600579.677331 m, up +116.990 mm, across 57.718 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002232': height 600510.535964 m, matrix 600510.535964 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600510.632261 m, matrix 600510.632261 m, up +96.297 mm, across 69.246 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002233': height 600517.699057 m, matrix 600517.699057 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600517.820415 m, matrix 600517.758993 m, up +59.936 mm, across 58.308 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002300': height 600645.315856 m, matrix 600645.315856 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600645.356889 m, matrix 600645.413526 m, up +97.670 mm, across 58.979 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002301': height 600634.018457 m, matrix 600634.018457 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600634.117325 m, matrix 600634.122158 m, up +103.701 mm, across 55.523 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002302': height 600596.547897 m, matrix 600596.547897 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600596.591334 m, matrix 600596.596206 m, up +48.308 mm, across 51.961 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131002303': height 600621.550045 m, matrix 600621.550045 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600621.648522 m, matrix 600621.643649 m, up +93.605 mm, across 44.203 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0130111331': height 600738.917440 m, matrix 600738.917440 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600738.984015 m, matrix 600738.984015 m, up +66.575 mm, across 43.818 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000222': height 600736.705637 m, matrix 600736.705637 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600736.738149 m, matrix 600736.742783 m, up +37.146 mm, across 68.066 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000223': height 600738.876980 m, matrix 600738.876980 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600738.963576 m, matrix 600738.963576 m, up +86.596 mm, across 25.140 mm, 5 colliders
+[KSPDiagScatter]   quad 'Kerbin Xn0131000233': height 600788.083275 m, matrix 600788.083275 m, up 0.000 mm, across 0.000 mm
+[KSPDiagScatter]     holder 'cactus': built, height 600788.095854 m, matrix 600788.162014 m, up +78.739 mm, across 75.539 mm, 5 colliders
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 vertex 120: ground 600842.408336 m, vertex 600839.870464 m, -2537.872 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 vertex 104: ground 600842.310674 m, vertex 600843.681983 m, +1371.309 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 vertex 35: ground 600842.477908 m, vertex 600844.544250 m, +2066.342 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 vertex 62: ground 600842.468798 m, vertex 600842.968919 m, +500.120 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 vertex 173: ground 600842.182258 m, vertex 600841.582211 m, -600.047 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 vertex 15: ground 600842.349437 m, vertex 600840.583948 m, -1765.488 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 vertex 21: ground 600842.386370 m, vertex 600841.682133 m, -704.237 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 vertex 34: ground 600842.248066 m, vertex 600843.840169 m, +1592.103 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 vertex 0: ground 600842.557311 m, vertex 600841.340952 m, -1216.358 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 vertex 90: ground 600842.336560 m, vertex 600844.406734 m, +2070.174 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'boulder' #0 collider: physics 600842.346782 m, drawn 600842.327781 m, up +18.989 mm, across 34.461 mm
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 vertex 53: ground 600848.026372 m, vertex 600847.491489 m, -534.883 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 vertex 33: ground 600848.060809 m, vertex 600855.018618 m, +6957.809 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 vertex 334: ground 600847.930906 m, vertex 600851.479663 m, +3548.757 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 vertex 100: ground 600848.145845 m, vertex 600852.034104 m, +3888.259 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 vertex 159: ground 600848.053763 m, vertex 600849.764328 m, +1710.565 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 vertex 418: ground 600847.949572 m, vertex 600853.455327 m, +5505.756 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 vertex 303: ground 600848.137107 m, vertex 600853.773044 m, +5635.937 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 vertex 125: ground 600848.098928 m, vertex 600850.742065 m, +2643.136 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 vertex 340: ground 600847.965308 m, vertex 600850.303282 m, +2337.974 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 vertex 348: ground 600847.932760 m, vertex 600852.557955 m, +4625.195 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #0 collider: physics 600851.203195 m, drawn 600851.255062 m, up -51.869 mm, across 5.124 mm
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 vertex 53: ground 600846.440338 m, vertex 600845.684348 m, -755.990 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 vertex 33: ground 600846.479787 m, vertex 600855.915085 m, +9435.298 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 vertex 334: ground 600846.312327 m, vertex 600851.103233 m, +4790.906 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 vertex 100: ground 600846.578338 m, vertex 600851.860261 m, +5281.923 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 vertex 159: ground 600846.476488 m, vertex 600848.773785 m, +2297.298 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 vertex 418: ground 600846.339424 m, vertex 600853.788614 m, +7449.190 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 vertex 303: ground 600846.568300 m, vertex 600854.223507 m, +7655.207 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 vertex 125: ground 600846.519992 m, vertex 600850.103515 m, +3583.524 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 vertex 340: ground 600846.362238 m, vertex 600849.504882 m, +3142.644 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 vertex 348: ground 600846.310244 m, vertex 600852.568823 m, +6258.579 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #1 collider: physics 600850.791496 m, drawn 600850.799769 m, up -8.286 mm, across 32.819 mm
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 vertex 53: ground 600844.252356 m, vertex 600843.489973 m, -762.383 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 vertex 33: ground 600844.228904 m, vertex 600849.392863 m, +5163.959 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 vertex 334: ground 600844.334047 m, vertex 600846.616833 m, +2282.786 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 vertex 100: ground 600844.166704 m, vertex 600847.053060 m, +2886.356 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 vertex 159: ground 600844.229081 m, vertex 600845.272465 m, +1043.384 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 vertex 418: ground 600844.315775 m, vertex 600848.166215 m, +3850.439 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 vertex 303: ground 600844.172902 m, vertex 600848.416639 m, +4243.738 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 vertex 125: ground 600844.205504 m, vertex 600846.039563 m, +1834.059 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 vertex 340: ground 600844.300688 m, vertex 600845.694523 m, +1393.835 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 vertex 348: ground 600844.337127 m, vertex 600847.462464 m, +3125.337 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #2 collider: physics 600846.406687 m, drawn 600846.441445 m, up -34.762 mm, across 10.468 mm
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 vertex 53: ground 600843.316222 m, vertex 600842.932643 m, -383.579 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 vertex 33: ground 600843.342064 m, vertex 600848.290904 m, +4948.840 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 vertex 334: ground 600843.252861 m, vertex 600845.771305 m, +2518.444 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 vertex 100: ground 600843.349695 m, vertex 600846.166698 m, +2817.002 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 vertex 159: ground 600843.334357 m, vertex 600844.550629 m, +1216.272 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 vertex 418: ground 600843.263178 m, vertex 600847.177716 m, +3914.539 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 vertex 303: ground 600843.348647 m, vertex 600847.404516 m, +4055.868 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 vertex 125: ground 600843.350453 m, vertex 600845.246815 m, +1896.362 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 vertex 340: ground 600843.272391 m, vertex 600844.933999 m, +1661.608 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 vertex 348: ground 600843.257944 m, vertex 600846.538903 m, +3280.959 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #3 collider: physics 600845.628811 m, drawn 600845.611790 m, up +17.023 mm, across 8.254 mm
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 vertex 53: ground 600862.674634 m, vertex 600862.251477 m, -423.157 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 vertex 33: ground 600862.669486 m, vertex 600867.809378 m, +5139.892 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 vertex 334: ground 600862.663796 m, vertex 600865.196631 m, +2532.835 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 vertex 100: ground 600862.671095 m, vertex 600865.605162 m, +2934.067 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 vertex 159: ground 600862.677620 m, vertex 600863.929690 m, +1252.070 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 vertex 418: ground 600862.670403 m, vertex 600866.655470 m, +3985.068 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 vertex 303: ground 600862.671246 m, vertex 600866.889264 m, +4218.018 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 vertex 125: ground 600862.663692 m, vertex 600864.651274 m, +1987.582 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 vertex 340: ground 600862.675136 m, vertex 600864.327968 m, +1652.832 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 vertex 348: ground 600862.655240 m, vertex 600865.992755 m, +3337.515 mm above the ground
+[KSPDiagScatter]   rock 'Kerbin Xn0131000203' 'cactus' #4 collider: physics 600865.002070 m, drawn 600865.030391 m, up -28.313 mm, across 17.614 mm
+[KSPDiagScatter] End of record 12: 173 quads with rocks, 306 holders (0 not built yet); nearest quad 'Kerbin Xn0131000203': 6 rocks, 60 vertices measured, 0 without ground under them, 6 colliders measured
