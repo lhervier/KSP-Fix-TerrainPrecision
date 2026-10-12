@@ -1,6 +1,6 @@
 # Kerbal Konstructs: the group editor
 
-Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [Kerbal Konstructs](../../limits-and-solutions.md#kerbal-konstructs).
+Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [Kerbal Konstructs](../../limits-and-solutions/kerbal-konstructs.md).
 
 **Status: checked, a problem this mod patches — moved with the gizmo of its group editor, in flight beside
 a craft, a group stays where it is let go, and is saved there. Without the patch, it would be sent

@@ -1,6 +1,6 @@
 # Breaking Ground's surface features
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress/stock.md).
 
 **Status: planned.** The surface features studied in EVA or with the robotic arms are placed like the rocks:
 `PQSMod_ROCScatterQuad.Setup` does the same `localPosition = quad.positionPlanet`, and their holder hangs

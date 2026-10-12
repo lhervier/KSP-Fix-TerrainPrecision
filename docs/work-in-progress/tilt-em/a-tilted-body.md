@@ -1,6 +1,6 @@
 # Tilt'Em: a tilted body
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Tilt'Em](../../work-in-progress.md#tiltem).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Tilt'Em](../../work-in-progress/tilt-em.md).
 
 **Status: planned — read in the source, not measured.** [Tilt'Em Continued](https://github.com/ballisticfox/TiltEm-Continued)
 gives the planets an axial tilt. To do so it rewrites the rotation of every body, one of the two values

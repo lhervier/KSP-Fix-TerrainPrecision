@@ -1,6 +1,6 @@
 # KSP Community Fixes: its own terrain patches, on 1.41.1
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [KSP Community Fixes](../../work-in-progress.md#ksp-community-fixes).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [KSP Community Fixes](../../work-in-progress/ksp-community-fixes.md).
 
 **Status: planned.** None of KSP Community Fixes' patches places a terrain quad or a terrain vertex, read
 in its repository as of release 1.40.1

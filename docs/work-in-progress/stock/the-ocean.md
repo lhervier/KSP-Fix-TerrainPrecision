@@ -1,6 +1,6 @@
 # The ocean
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress/stock.md).
 
 **Status: planned.** Read in the logs of Earth in Real Solar System, this mod corrected terrain quads
 only, never the ocean, which fits its check on `surfaceRelativeQuads`; the value of that flag on the

@@ -372,22 +372,79 @@ slope jumps without this mod, and stays within a millimetre with it.
 ## Limits and solutions
 
 What this mod makes worse, or would break without a patch of its own, with the solution to each, one mod
-at a time. **The statics fix is the riskiest of the fixes on by default**: it takes a static out of the
-place where stock, and any mod, expects to find it. Each limit is told above with the fix it comes from:
-the crack between subdivision levels with [the ground](#the-ground), the scatter drawn further off the
-ground with [the scatter](#the-scatter), and the patches to Kopernicus and Kerbal Konstructs
-with [the statics](#the-statics).
+at a time, each on a page of its own. **The statics fix is the riskiest of the fixes on by default**: it
+takes a static out of the place where stock, and any mod, expects to find it. Each limit is told above
+with the fix it comes from: the crack between subdivision levels with [the ground](#the-ground), the
+scatter drawn further off the ground with [the scatter](#the-scatter), and the patches to Kopernicus and
+Kerbal Konstructs with [the statics](#the-statics).
 
-**→ Full chapter: [Limits and solutions](docs/limits-and-solutions.md)**
+**Stock.** The terrain fix widens two stock defects, both visual. The scatter is drawn further off the
+ground, and jumps against it while you drive: the scatter fix, on by default, closes both. The crack
+between subdivision levels widens, with no solution yet.
+
+**→ Full chapter: [Limits and solutions: stock](docs/limits-and-solutions/stock.md)**
+
+**Kopernicus.** Its flag fix looks the KSC up under its sphere, and would throw in flight near it: a
+patch of this mod, on by default, keeps it from running there.
+
+**→ Full chapter: [Limits and solutions: Kopernicus](docs/limits-and-solutions/kopernicus.md)**
+
+**Kerbal Konstructs.** Its group editor, in flight, would send a group moved with its gizmo elsewhere on
+its body, and save it there: a patch of this mod, on by default, prevents it.
+
+**→ Full chapter: [Limits and solutions: Kerbal Konstructs](docs/limits-and-solutions/kerbal-konstructs.md)**
 
 ## Work in progress
 
-What is still to check, one mod at a time, with what is already known and the test planned for it. In
-progress: the last tests on Real Solar System. Planned: the rest of stock, from asteroids to the other stock statics,
-Kerbal Konstructs, a body from a planet pack, Parallax, Tilt'Em, KAS, and other mods that
-look for a static under its sphere.
+What is still to check, one mod at a time, each on a page of its own ([Work in
+progress](docs/work-in-progress.md)), with what is already known and the test planned for it.
 
-**→ Full chapter: [Work in progress](docs/work-in-progress.md)**
+**Stock.** Planned: asteroids held by a claw, Breaking Ground's surface features and deployed
+experiments, the ocean, a mission spawning a craft, the other stock statics, and the scatter fix without
+the terrain fix.
+
+**→ Full chapter: [Work in progress: stock](docs/work-in-progress/stock.md)**
+
+**KSP Community Fixes.** Planned: its terrain patches, read on release 1.40.1, to read again on 1.41.1,
+the release every campaign ran with.
+
+**→ Full chapter: [Work in progress: KSP Community Fixes](docs/work-in-progress/ksp-community-fixes.md)**
+
+**Kopernicus.** Planned: a body from a planet pack, where nothing has been measured yet; the campaign is
+prepared on Outer Planets Mod.
+
+**→ Full chapter: [Work in progress: Kopernicus](docs/work-in-progress/kopernicus.md)**
+
+**Real Solar System.** In progress: coming back to a craft left parked on the Moon, and the rest of the
+series on its ground workaround. Planned: its runway fix as released, and descents onto Venus, Mars and
+Mercury.
+
+**→ Full chapter: [Work in progress: Real Solar System](docs/work-in-progress/real-solar-system.md)**
+
+**Kerbal Konstructs.** Planned: a section of the runway seen 21.3 mm above the deck at the first loading,
+the rest of the group editor, a launch from its launch sites, and the ground it flattens.
+
+**→ Full chapter: [Work in progress: Kerbal Konstructs](docs/work-in-progress/kerbal-konstructs.md)**
+
+**Parallax.** Planned, read in the source: its terrain and its scatter should follow the ground wherever
+this mod places it.
+
+**→ Full chapter: [Work in progress: Parallax](docs/work-in-progress/parallax.md)**
+
+**Tilt'Em.** Planned, read in the source: the ground of a tilted body, when a craft comes down to where
+the world turns with it.
+
+**→ Full chapter: [Work in progress: Tilt'Em](docs/work-in-progress/tilt-em.md)**
+
+**KAS.** Planned: a part attached to the ground, which either follows the corrected ground or is pinned
+to the terrain sphere.
+
+**→ Full chapter: [Work in progress: KAS](docs/work-in-progress/kas.md)**
+
+**Other mods.** Planned: the mods, not read yet, that look for a static or a scatter holder where stock
+puts it.
+
+**→ Full chapter: [Work in progress: other mods](docs/work-in-progress/other-mods.md)**
 
 ## Install
 

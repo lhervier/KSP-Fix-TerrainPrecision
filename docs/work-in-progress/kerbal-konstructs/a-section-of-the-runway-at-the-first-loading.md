@@ -1,6 +1,6 @@
 # Kerbal Konstructs: a section of the runway at the first loading
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Kerbal Konstructs](../../work-in-progress.md#kerbal-konstructs).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Kerbal Konstructs](../../work-in-progress/kerbal-konstructs.md).
 
 **Status: planned — seen, not explained.** The statics of [Kerbal Konstructs](https://github.com/KSP-RO/Kerbal-Konstructs)
 hang from a stock `PQSCity` and carry the same defect as the KSC's

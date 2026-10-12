@@ -1,6 +1,6 @@
 # The scatter fix without the terrain fix
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress/stock.md).
 
 **Status: planned.** The scatter fix, on by default, is installed whether the terrain fix is on or not ([The fix: the scatter](../../the-fix-scatter.md)), but it has only been measured with it
 ([Checking the scatter: loading the same save](../../checking-the-culprit-loading/the-scatter.md)).

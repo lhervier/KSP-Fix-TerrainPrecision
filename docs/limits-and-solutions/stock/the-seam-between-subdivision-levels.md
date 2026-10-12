@@ -1,6 +1,6 @@
 # The seam between subdivision levels
 
-Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [stock](../../limits-and-solutions.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [stock](../../limits-and-solutions/stock.md).
 
 **Status: checked on Earth under Real Solar System and on Kerbin, a stock crack this mod widens, with no
 solution yet — this mod does not open the seam, but the crack gets wider, visual only.** Where a quad of the highest subdivision level meets a

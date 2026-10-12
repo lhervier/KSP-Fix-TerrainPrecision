@@ -1,6 +1,6 @@
 # Real Solar System: the ground workaround
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Real Solar System](../../work-in-progress.md#real-solar-system).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Real Solar System](../../work-in-progress/real-solar-system.md).
 
 **Status: in progress.** With this mod, Real Solar System's ground workaround has nothing left to
 correct for this defect, over 75 loads on the Moon and on Earth

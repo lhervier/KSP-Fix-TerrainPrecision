@@ -1,6 +1,6 @@
 # Asteroids held by a claw
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress/stock.md).
 
 **Status: planned.** An asteroid is a vessel, positioned in double like any other, so on its own it should
 follow the corrected ground; neither `ModuleAsteroid` nor `ModuleGrappleNode` reads the terrain. The

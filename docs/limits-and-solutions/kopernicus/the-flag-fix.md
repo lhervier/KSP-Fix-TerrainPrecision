@@ -1,6 +1,6 @@
 # Kopernicus: the flag fix
 
-Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [Kopernicus](../../limits-and-solutions.md#kopernicus).
+Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [Kopernicus](../../limits-and-solutions/kopernicus.md).
 
 **Status: checked, a problem this mod patches — where this mod moves the KSC, Kopernicus' flag fix would
 not find it and would throw; the patch keeps it from running there, where the statics fix keeps the

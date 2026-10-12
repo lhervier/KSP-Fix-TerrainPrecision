@@ -1,6 +1,6 @@
 # Breaking Ground's deployed experiments
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [stock](../../work-in-progress/stock.md).
 
 **Status: planned.** Deployed experiments (`ModuleGroundPart` and the modules around it) are vessels,
 positioned in double like any craft, so they should sit on the corrected ground like one. They are also

@@ -1,6 +1,6 @@
 # Kerbal Konstructs: the ground it flattens
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Kerbal Konstructs](../../work-in-progress.md#kerbal-konstructs).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Kerbal Konstructs](../../work-in-progress/kerbal-konstructs.md).
 
 **Status: planned — read in the source, not measured.** [Kerbal Konstructs](https://github.com/KSP-RO/Kerbal-Konstructs)
 flattens the ground to seat its statics. A fix that quietly undid those edits would be exactly the kind

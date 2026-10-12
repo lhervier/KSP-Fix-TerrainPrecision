@@ -1,6 +1,6 @@
 # Real Solar System: coming back to a craft left parked, on the Moon
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Real Solar System](../../work-in-progress.md#real-solar-system).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Real Solar System](../../work-in-progress/real-solar-system.md).
 
 **Status: in progress.** Everything measured on the ground under Real Solar System is a landed craft
 loaded again; a craft left parked and come back to is not, and that is where the quads under it are

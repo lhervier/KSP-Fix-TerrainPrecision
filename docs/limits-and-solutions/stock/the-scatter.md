@@ -1,6 +1,6 @@
 # The scatter
 
-Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [stock](../../limits-and-solutions.md#stock).
+Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [stock](../../limits-and-solutions/stock.md).
 
 **Status: checked on Kerbin and on the Mun, a stock gap the terrain fix widens on Kerbin at loading, and a
 jump it adds while you drive, both closed by the scatter fix of this mod, on by default — visual only on a

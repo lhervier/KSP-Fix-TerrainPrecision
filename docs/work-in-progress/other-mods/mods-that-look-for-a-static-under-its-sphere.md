@@ -1,6 +1,6 @@
 # Mods that look for a static under its sphere
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [other mods](../../work-in-progress.md#other-mods).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [other mods](../../work-in-progress/other-mods.md).
 
 **Status: planned — two mods read and patched, one read with nothing to patch, the others unknown.** To place a static in double, this mod takes
 it out of its terrain sphere ([The fix: the statics](../../the-fix-statics.md)). That changes

@@ -1,6 +1,6 @@
 # Real Solar System: the runway fix
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Real Solar System](../../work-in-progress.md#real-solar-system).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Real Solar System](../../work-in-progress/real-solar-system.md).
 
 **Status: planned.** With this mod, neither half of Real Solar System's runway fix has anything left to
 correct for this defect, checked with Real Solar System built without it

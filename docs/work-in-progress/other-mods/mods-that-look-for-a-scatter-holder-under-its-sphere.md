@@ -1,6 +1,6 @@
 # Mods that look for a scatter holder under its sphere
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [other mods](../../work-in-progress.md#other-mods).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [other mods](../../work-in-progress/other-mods.md).
 
 **Status: planned — with the scatter fix on, as by default; six mods read, the others unknown.** The
 scatter fix, on by default, hangs each holder of terrain scatter in use from its quad, outside the body's hierarchy,

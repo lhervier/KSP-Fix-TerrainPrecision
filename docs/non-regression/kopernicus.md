@@ -10,7 +10,7 @@ Most planet packs go through [Kopernicus](https://github.com/Kopernicus/Kopernic
 several things this mod deals with. The bodies here are ones Kopernicus reconfigures: Kerbin itself, and
 Earth in Real Solar System, which is Kerbin given another radius, another terrain and another place for
 the KSC. Its flag fix needs a patch of this mod: it is in
-[Limits and solutions](../limits-and-solutions.md#kopernicus).
+[Limits and solutions](../limits-and-solutions/kopernicus.md).
 
 ## The terrain
 

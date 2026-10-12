@@ -1,6 +1,6 @@
 # Kerbal Konstructs: the rest of the group editor
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Kerbal Konstructs](../../work-in-progress.md#kerbal-konstructs).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Kerbal Konstructs](../../work-in-progress/kerbal-konstructs.md).
 
 **Status: planned.** Moving a group with the gizmo of the group editor, in flight beside a craft, is
 checked, and needs a patch of this mod: [The group editor](../../limits-and-solutions/kerbal-konstructs/the-group-editor.md).

@@ -24,43 +24,22 @@ left to do.
 
 ## Stock
 
-### The scatter
+The terrain fix widens two stock defects, both visual. The scatter is drawn further off the ground, and
+jumps against it while you drive: the scatter fix, on by default, closes both. The crack between
+subdivision levels widens, with no solution yet.
 
-**A stock defect the terrain fix widens on Kerbin, and a jump it adds while you drive, visual only; a fix
-of this mod closes both, on by default.** Stock draws terrain scatter a few centimetres off the ground,
-differently
-at every load: 61 mm apart on Kerbin on stock, 178 mm with the terrain fix alone. And while you
-drive, the scatter now jumps against the ground every 500 m, by up to 54 mm, where on stock it moves with
-the ground. The scatter fix closes both, and is on by default; since it moves stock objects other mods may
-look for,
-a line of the settings turns it off.
-
-**→ Full chapter: [The scatter](limits-and-solutions/stock/the-scatter.md)**
-
-### The seam between subdivision levels
-
-**A stock crack this mod widens, visual only; no solution yet.** Where the quads this mod corrects meet
-coarser ones, stock already leaves a crack. The median of the largest gap of a load goes from about
-1.3 m to 1.9 m on Earth, and from 157 mm to 225 mm on Kerbin.
-
-**→ Full chapter: [The seam between subdivision levels](limits-and-solutions/stock/the-seam-between-subdivision-levels.md)**
+**→ Full chapter: [Limits and solutions: stock](limits-and-solutions/stock.md)**
 
 ## Kopernicus
 
-### The flag fix
+Its flag fix looks the KSC up under its sphere, and would throw in flight near it: a patch of this mod,
+on by default, keeps it from running there.
 
-**A problem this mod patches, the patch on by default.** Kopernicus' fix for the flags of the KSC looks
-the KSC up under its sphere. In flight near it, where this mod moves the KSC and keeps the flags steady
-itself, that fix would throw; the patch keeps it from running there.
-
-**→ Full chapter: [Kopernicus: the flag fix](limits-and-solutions/kopernicus/the-flag-fix.md)**
+**→ Full chapter: [Limits and solutions: Kopernicus](limits-and-solutions/kopernicus.md)**
 
 ## Kerbal Konstructs
 
-### The group editor
+Its group editor, in flight, would send a group moved with its gizmo elsewhere on its body, and save it
+there: a patch of this mod, on by default, prevents it.
 
-**A problem this mod patches, the patch on by default.** Moving a group with the gizmo of its group
-editor, in flight, Kerbal Konstructs reads the group's position from where stock hangs it. Without the
-patch, the group would be sent elsewhere on its body, and saved there.
-
-**→ Full chapter: [Kerbal Konstructs: the group editor](limits-and-solutions/kerbal-konstructs/the-group-editor.md)**
+**→ Full chapter: [Limits and solutions: Kerbal Konstructs](limits-and-solutions/kerbal-konstructs.md)**

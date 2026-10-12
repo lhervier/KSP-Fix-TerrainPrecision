@@ -9,7 +9,7 @@ its own.
 [Kerbal Konstructs](https://github.com/KSP-RO/Kerbal-Konstructs) plants statics of its own, which this
 mod takes out of their sphere in flight like the KSC, and can turn one into a CommNet ground station while
 the player is flying beside it. Its group editor needs a patch of this mod:
-[Limits and solutions](../limits-and-solutions.md#kerbal-konstructs).
+[Limits and solutions](../limits-and-solutions/kerbal-konstructs.md).
 
 ## A ground station opened in flight
 

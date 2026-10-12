@@ -1,6 +1,6 @@
 # Real Solar System: descents onto Venus, Mars and Mercury
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Real Solar System](../../work-in-progress.md#real-solar-system).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Real Solar System](../../work-in-progress/real-solar-system.md).
 
 **Status: planned.** On Venus, Mars and Mercury, this mod corrected the terrain by up to 3.6 float steps
 and refused nothing, over six loads each

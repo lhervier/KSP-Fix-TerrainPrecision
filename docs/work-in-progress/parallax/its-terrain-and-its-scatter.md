@@ -1,6 +1,6 @@
 # Parallax: its terrain and its scatter
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Parallax](../../work-in-progress.md#parallax).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Parallax](../../work-in-progress/parallax.md).
 
 **Status: planned — read in the source, not measured.** [Parallax Continued](https://github.com/Gameslinx/Parallax-Continued)
 draws the terrain with shaders of its own and replaces its scatter with its own objects, two things that

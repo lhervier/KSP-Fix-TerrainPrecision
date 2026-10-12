@@ -3,16 +3,17 @@
 Ce qu'il reste à faire, et seulement ça. Tout ce qui est déjà mesuré est dans [le README](README.md) et
 ses chapitres sous [docs/](docs), avec ses logs dans [perfs/](perfs) et dans les dépôts des trois
 Diags ; aucun résultat n'est consigné ici. **Les tests à jouer n'y sont pas non plus** : ils sont dans
-[Work in progress](docs/work-in-progress.md), un chapitre par mod (stock d'abord), les vérifications en
+[Work in progress](docs/work-in-progress.md), une page par mod (stock d'abord), les vérifications en
 cours puis celles prévues ; le coût dans [Performance](docs/performance.md). Un nouveau test s'ajoute
-là-bas (une page dans `docs/work-in-progress/<mod>/` et son résumé dans la page d'index), pas ici. Une
-fois joué, il passe dans [Non-regression tests](docs/non-regression.md) si rien n'empire (une page dans
-`docs/non-regression/<mod>/` et son résumé dans la page du mod, `docs/non-regression/<mod>.md`), dans
-[Limits and solutions](docs/limits-and-solutions.md) sinon.
+là-bas (une page dans `docs/work-in-progress/<mod>/` et son résumé dans la page du mod,
+`docs/work-in-progress/<mod>.md`), pas ici. Une fois joué, il passe, de la même façon, dans
+[Non-regression tests](docs/non-regression.md) si rien n'empire, dans
+[Limits and solutions](docs/limits-and-solutions.md) sinon. Un mod nouveau a sa page, son résumé dans
+la page d'index et son paragraphe dans le README.
 
 ## D'abord
 
-Les tests encore ouverts de [Real Solar System](docs/work-in-progress.md#real-solar-system) (Lionel,
+Les tests encore ouverts de [Real Solar System](docs/work-in-progress/real-solar-system.md) (Lionel,
 2026-09-25).
 
 ## Ensuite, sans ordre imposé

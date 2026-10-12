@@ -1,6 +1,6 @@
 # Kopernicus: a body from a planet pack
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Kopernicus](../../work-in-progress.md#kopernicus).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Kopernicus](../../work-in-progress/kopernicus.md).
 
 **Status: planned — nothing has been measured on one.** On a stock body Kopernicus rebuilds a terrain that
 already exists; for a planet pack it does more. Each added body is built by cloning the terrain sphere of

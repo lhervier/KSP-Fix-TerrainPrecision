@@ -1,6 +1,6 @@
 # Kerbal Konstructs: a launch from its launch sites
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Kerbal Konstructs](../../work-in-progress.md#kerbal-konstructs).
+Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [Kerbal Konstructs](../../work-in-progress/kerbal-konstructs.md).
 
 **Status: planned.** Kerbal Konstructs adds launch sites of its own, statics that this mod takes out of
 their sphere in flight like the KSC. A craft launched from one is placed on a spawn point that hangs
