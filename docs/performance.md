@@ -116,7 +116,7 @@ through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), a mod that a
 with KSPProfiler 1.0.0. Here, the runs were flown by
 [a script](https://github.com/lhervier/KSP-PQSBench/blob/main/perfs/automation/run-perfs.py), in
 Python and nothing else. Whether driving the game through KSP-MCPServer changes what a frame costs was
-checked on [its own page](https://github.com/lhervier/KSP-MCPServer/blob/main/docs/performance.md):
+checked on [its own page](https://github.com/lhervier/KSP-MCPServer/blob/main/docs/performance.md#driven-by-script):
 driving it by script costs at most about 0.05 ms per frame, on the coroutines the terrain is updated in
 (Update → Coroutines, [below](#what-they-read)).
 
