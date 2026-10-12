@@ -2,7 +2,7 @@
 
 Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [other mods](../../work-in-progress.md#other-mods).
 
-**Status: planned — with the scatter fix on, as by default; five mods read, the others unknown.** The
+**Status: planned — with the scatter fix on, as by default; six mods read, the others unknown.** The
 scatter fix, on by default, hangs each holder of terrain scatter in use from its quad, outside the body's hierarchy,
 instead of the `Scatter <name>` container under the terrain sphere where stock puts it
 ([The fix: the scatter](../../the-fix-scatter.md)). Any mod that finds the holders through the hierarchy
@@ -15,7 +15,8 @@ What limits the exposure: a mod tripping over it misbehaves around rocks, grass 
 the settings, `fixScatter = false`, puts every holder back where stock hangs it
 ([On by default: when to turn it off](../../the-fix-scatter.md#on-by-default-when-to-turn-it-off)).
 
-**Read.** Stock, KSP Community Fixes, Kopernicus, Parallax and TUFX: none of them finds a holder through
+**Read.** Stock, KSP Community Fixes, Kopernicus, Parallax, TUFX and Kerbal Planetary Base Systems: none
+of them finds a holder through
 the hierarchy
 ([Other mods that look for the holders](../../the-fix-scatter.md#other-mods-that-look-for-the-holders)).
 

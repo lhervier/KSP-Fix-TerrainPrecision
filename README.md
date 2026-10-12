@@ -348,6 +348,10 @@ they do without it.
 **Principia.** It turns and moves the bodies itself, and the craft and the ground come back as they do
 without it, after a load and in flight.
 
+**Kerbal Planetary Base Systems.** One of the most popular part mods, built for bases on the ground. Read
+in the source: its plugin touches nothing of the ground, and its legs, landing gear and drills are stock
+modules, so a base stands on the ground as a stock craft does.
+
 **→ Full chapter: [Non-regression tests](docs/non-regression.md)**
 
 ## Limits and solutions

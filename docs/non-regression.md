@@ -248,3 +248,18 @@ does. With it installed, a landed craft comes back from a load, and the ground i
 in flight, as without it.
 
 **→ Full chapter: [Principia: the bodies it moves and turns](non-regression/principia/the-bodies-it-moves-and-turns.md)**
+
+## Kerbal Planetary Base Systems
+
+[Kerbal Planetary Base Systems](https://github.com/n116-software/KerbalPlanetaryBaseSystems) is one of
+the most popular part mods, and it is all about the ground: its parts build bases, crafts left landed for
+a long time and loaded again and again, on the ground this mod places. Checking it is only logical; it
+ships a plugin of its own.
+
+### A base on the ground
+
+**Nothing to test, read in the source.** Its plugin never reads or moves the ground, a static or a
+scatter holder. Its legs, its landing gear and its drills are stock modules, and work on the ground this
+mod places as stock parts do.
+
+**→ Full chapter: [Kerbal Planetary Base Systems: a base on the ground](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground.md)**

@@ -2,7 +2,7 @@
 
 Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [other mods](../../work-in-progress.md#other-mods).
 
-**Status: planned — two mods read and patched, the others unknown.** To place a static in double, this mod takes
+**Status: planned — two mods read and patched, one read with nothing to patch, the others unknown.** To place a static in double, this mod takes
 it out of its terrain sphere ([The fix: the statics](../../the-fix-statics.md)). That changes
 the hierarchy of Unity objects, and any mod that looks for a static where stock puts it — among the
 children of a body's terrain sphere — or reads its `localPosition` as a position relative to the
@@ -21,6 +21,9 @@ described with the mod:
 - [Kopernicus](../../limits-and-solutions/kopernicus/the-flag-fix.md), its flag fix, when a facility is upgraded: not needed
   while the KSC is out of its sphere, which keeps its flags steady, so the patch keeps it from running
   then.
+
+**Read, nothing to patch.** [Kerbal Planetary Base Systems](../../non-regression/kerbal-planetary-base-systems/a-base-on-the-ground.md)
+never looks up a static.
 
 *To test:* the other mods. Any mod that places things relative to the KSC, or looks up a `PQSCity` or a
 `PQSCity2`, is to read; if one of them looks for a static under its sphere in flight, a player would see
