@@ -593,6 +593,17 @@ session is here twice, `-without-this-mod` and `-fix`. Read in
   screenshots of the two tables in
   [`imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/`](../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground).
 
+## With Parallax
+
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
+[Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) 1.0.4 with its three packs of stock
+textures and what it requires, [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders)
+(the edges of the terrain quads, as a mark fixed to the ground), and this mod. Read in
+[Parallax: its terrain and its scatter](../docs/work-in-progress/parallax/its-terrain-and-its-scatter.md).
+
+- [`rocks-mun.sfs`](work-in-progress/parallax/its-terrain-and-its-scatter/rocks-mun.sfs) — a capsule of one
+  part on flat ground of the Mun, among rocks, next to a vertex of the terrain quads.
+
 ## With Kerbal Konstructs
 
 KSP 1.12.5 with the Making History expansion, Harmony, ModuleManager, KSP Community Fixes 1.41.1,

@@ -4,8 +4,9 @@ Part of [Terrain Precision Fix](../../README.md), one mod of [Work in progress](
 
 ## Its terrain and its scatter
 
-**Planned — read in the source, not measured.** Parallax draws the terrain on the meshes stock builds,
-and its scatter in the frame of the terrain quad, so both should follow the ground wherever this fix
-places it.
+**In progress — Parallax turns its rocks at every load, by as much as the body has turned since the
+save, and a craft on or next to one can be thrown off.** Reproduced in fifteen minutes, with a GIF;
+explained in its source and in stock. Where to put a base needs care. What this mod changes to it comes
+next.
 
 **→ Full chapter: [Parallax: its terrain and its scatter](parallax/its-terrain-and-its-scatter.md)**
