@@ -4,8 +4,9 @@ Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progr
 
 **Status: in progress — Parallax turns its rocks every time a save is loaded, by as much as the body has
 turned since that save was made, and a craft resting on one of them, or next to one, can end up inside it
-and be thrown off. Reproduced in fifteen minutes; explained in its source and in stock. What this mod
-changes to it comes next.** [Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) draws
+and be thrown off. Reproduced in fifteen minutes; explained in its source and in stock. Parallax rebuilt
+with a change of two files keeps its rocks still, and a craft on one of them stays on it; that change is
+still being checked. What this mod changes to it comes next.** [Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) draws
 the terrain with shaders of its own and adds a scatter of its own objects, some of which a craft can hit,
 two things that sit right on the ground this fix places.
 
@@ -109,6 +110,62 @@ For a base, that means choosing its place with care: on ground clear of the rock
 farther from the nearest cluster than that cluster is wide — and the longer the game is played between a
 save and the load of it, the further every rock will have turned.
 
+## Parallax with its rocks tied to the body
+
+**Parallax rebuilt with one change keeps its rocks still.** The change builds the orientation of each
+rock in the frame of its terrain quad, then applies the quad's rotation, rather than starting from the
+axis of the scene — the same way in the shader that draws the rocks and in the code that gives them
+their colliders, so that the two stay together:
+
+```hlsl
+// Parallax: GetTRSMatrix, changed
+float3x3 quadToWorld = (float3x3)_ObjectToWorldMatrix;
+quadToWorld /= length(quadToWorld._m00_m10_m20);    // Remove the quad's (uniform) scale
+float3 localNrm = mul(transpose(quadToWorld), nrm);
+float3 up = float3(0, 1, 0);
+float4x4 mat = TransformToPlanetNormal(up, localNrm);
+mat = mul(mat, GetRotationMatrix(rotationAngles));
+mat = mul(quadRotation, mat);                       // quadToWorld, as a 4x4 matrix
+```
+
+```csharp
+// Parallax: CollisionManager.CreateGameObject, changed
+Vector3 localNormal = scatterSystemQuad.quad.gameObject.transform.InverseTransformDirection(targetNormal);
+Quaternion rotALocal = Quaternion.FromToRotation(Vector3.up, localNormal);
+Quaternion rotBLocal = Quaternion.AngleAxis(transform.rotation, Vector3.up);
+go.transform.localRotation = rotALocal * rotBLocal;
+```
+
+The whole change, two files, is on the branch
+[`fix/scatter-rotation`](https://github.com/lhervier/KSP-ExtMod-ParallaxContinued/compare/master...fix/scatter-rotation)
+of our fork of Parallax Continued. The shader that draws the scatter is a compute shader, shipped in an
+asset bundle: rebuilding it takes Unity 2019.4.18f1, the version KSP 1.12.5 runs on.
+
+![The same save of the Mun loaded thirteen times, an hour of game time more before each load, with Parallax rebuilt with the change, seen from above at 40 m](../../../imgs/work-in-progress/parallax/its-terrain-and-its-scatter/rocks-holding-still.gif)
+
+*The protocol of [Its rocks turn at every load](#its-rocks-turn-at-every-load), the same save, the same
+thirteen loads and the same view, with Parallax Continued 1.0.4 rebuilt with the change. The same frames
+as a video:
+[`rocks-holding-still.mp4`](../../../imgs/work-in-progress/parallax/its-terrain-and-its-scatter/rocks-holding-still.mp4).*
+
+Parallax rebuilt from the source of its 1.0.4 tag on GitHub turns its rocks the same way as the release
+does, and holds them still with the change.
+
+**A craft resting on a rock stays on it.**
+
+![A capsule standing on a rock of the Mun after the last of the loads below, with KSP Diag - Colliders outlining the collider of the rock](../../../imgs/work-in-progress/parallax/its-terrain-and-its-scatter/capsule-on-a-rock.jpg)
+
+*Parallax Continued 1.0.4 rebuilt with the change, the Mun,
+[`capsule-on-a-rock-mun.sfs`](../../../diag/work-in-progress/parallax/its-terrain-and-its-scatter/capsule-on-a-rock-mun.sfs):
+a capsule of one part landed on top of a rock. Loaded twelve times, an hour of game time of time warp
+before each load, then KSP started again and the save loaded twelve times more; the view after the last
+load, with [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) outlining the collider
+Parallax gives the rock.*
+
+At every one of those loads the capsule stayed on its rock, where Parallax as released throws it off
+after ten minutes of play. That save was made with the change: Parallax as released turns the rock
+under the capsule when it is loaded.
+
 ## Read in its source
 
 - **the terrain** — Parallax draws it on the meshes stock builds. Its tessellation and its displacement
@@ -129,8 +186,9 @@ save and the load of it, the further every rock will have turned.
   so an object sitting right at the cutoff can appear on one load and not on the next, and the size of
   a rock can differ very slightly, with or without this fix.
 
-*To test:* the protocol above without this mod; the other ways the body is turned in the scene again —
-a craft going above the rotating-frame altitude and back, a change of sphere of influence, a flight
-opened from the space centre; then, once the rocks hold still, a craft resting on one of them, loaded
-again and again, without this fix and with it, and the loading and approach campaigns of KSP Diag -
-Landed Vessel and KSP Diag - Terrain Height on its ground.
+*To test:* the protocol above without this mod; the change to Parallax on the scatters that stand along
+the radius of the body rather than on the slope of the ground (the trees of Kerbin), on Eve, near the
+poles, under OpenGL, and with the other ways the body is turned in the scene again — a craft going above
+the rotating-frame altitude and back, a change of sphere of influence, a flight opened from the space
+centre; then a craft resting on a rock, loaded again and again, without this fix and with it, and the
+loading and approach campaigns of KSP Diag - Landed Vessel and KSP Diag - Terrain Height on its ground.

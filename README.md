@@ -427,7 +427,8 @@ the rest of the group editor, a launch from its launch sites, and the ground it 
 **→ Full chapter: [Work in progress: Kerbal Konstructs](docs/work-in-progress/kerbal-konstructs.md)**
 
 **Parallax.** In progress: Parallax turns its rocks at every load, by as much as the body has turned
-since the save, and a craft on or next to one can be thrown off; reproduced, and explained.
+since the save, and a craft on or next to one can be thrown off; reproduced, explained, and held still
+by a change to Parallax still being checked.
 
 **→ Full chapter: [Work in progress: Parallax](docs/work-in-progress/parallax.md)**
 
