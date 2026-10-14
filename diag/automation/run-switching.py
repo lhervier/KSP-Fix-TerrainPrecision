@@ -120,6 +120,10 @@ def main():
     log("instruments:", ", ".join(instruments))
 
     rows = []
+    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # menu, the game is opened at the space centre first.
+    if call("get_state")["scene"] == "MAINMENU":
+        call("open_game", folder=options.folder)
     for round_ in range(1, options.rounds + 1):
         call("load_save", folder=options.folder, save=options.save)
         if round_ == 1:

@@ -146,6 +146,10 @@ def cross(state, options):
 
 def prepare(options):
     """Loads the save and drives to the stop short of the target; returns the line driven along, and the stop."""
+    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # menu, the game is opened at the space centre first.
+    if call("get_state")["scene"] == "MAINMENU":
+        call("open_game", folder=options.folder)
     call("load_save", folder=options.folder, save=options.save)
     call("set_cheats", infinite_electricity=True)
     call("scatter_show_window", visible=False)

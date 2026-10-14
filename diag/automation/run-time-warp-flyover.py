@@ -106,6 +106,10 @@ def main():
     os.makedirs(out, exist_ok=True)
     session = common.Session(options, out)
 
+    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # menu, the game is opened at the space centre first.
+    if call("get_state")["scene"] == "MAINMENU":
+        call("open_game", folder=options.folder)
     call("load_save", folder=options.folder, save=options.save)
     session.arrived("loaded", launchpad=False)
     capsule = call("get_state")["vessel"]

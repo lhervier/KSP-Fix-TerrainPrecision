@@ -130,6 +130,10 @@ def main():
     radius = options.radius
     os.makedirs(options.out, exist_ok=True)
 
+    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # menu, the game is opened at the space centre first.
+    if call("get_state")["scene"] == "MAINMENU":
+        call("open_game", folder=options.folder)
     call("load_save", folder=options.folder, save=options.save)
     call("wait", seconds=5)
     call("terrainheight_clear")

@@ -121,6 +121,10 @@ def main():
     # placed in. The windows of the instruments only exist in flight.
     first = "placed"
     if options.from_save:
+        # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+        # menu, the game is opened at the space centre first.
+        if call("get_state")["scene"] == "MAINMENU":
+            call("open_game", folder=options.folder)
         call("load_save", folder=options.folder, save=options.from_save)
         call("wait", seconds=3)
         first = "loaded"

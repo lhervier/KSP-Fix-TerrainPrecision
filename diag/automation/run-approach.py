@@ -116,6 +116,10 @@ def main():
     away = options.heading % 360
     back = (away + 180) % 360
 
+    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # menu, the game is opened at the space centre first.
+    if call("get_state")["scene"] == "MAINMENU":
+        call("open_game", folder=options.folder)
     call("load_save", folder=options.folder, save=options.save)
     # Six round trips of more than 6 km empty the rover's batteries faster than its panels fill them: the
     # cheat of Alt+F12 that gives it electricity without end. It changes nothing on the parked craft.
