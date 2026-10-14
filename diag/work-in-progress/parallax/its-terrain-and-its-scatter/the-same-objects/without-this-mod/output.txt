@@ -1,0 +1,14 @@
+load-00  UT    14717.6  directRotAngle -164.2333  InverseRotAngle  230.0512
+load-01  UT    14717.4  directRotAngle -164.2946  InverseRotAngle  230.1115
+load-02  UT    14717.5  directRotAngle -164.3546  InverseRotAngle  230.1721
+load-03  UT    14717.4  directRotAngle -164.4152  InverseRotAngle  230.2323
+load-04  UT    14717.4  directRotAngle -164.4754  InverseRotAngle  230.2926
+load-05  UT    14717.4  directRotAngle -164.5356  InverseRotAngle  230.3526
+load-06  UT    14717.4  directRotAngle -164.5958  InverseRotAngle  230.4129
+load-07  UT    14717.5  directRotAngle -164.6561  InverseRotAngle  230.4733
+load-08  UT    14717.4  directRotAngle -164.7166  InverseRotAngle  230.5335
+load-09  UT    14717.5  directRotAngle -164.7767  InverseRotAngle  230.5939
+load-10  UT    14717.6  directRotAngle -164.8370  InverseRotAngle  230.6547
+load-11  UT    14717.4  directRotAngle -164.8980  InverseRotAngle  230.7151
+load-12  UT    14717.4  directRotAngle -164.9585  InverseRotAngle  230.7756
+done: 13 readings, in C:\Users\lhervier\AppData\Local\Temp\claude\c--Users-lhervier-Perso-kspmod-KSP-ExtMod-ParallaxContinued\648911fb-2252-4964-acc4-3590db154158\scratchpad\same-without

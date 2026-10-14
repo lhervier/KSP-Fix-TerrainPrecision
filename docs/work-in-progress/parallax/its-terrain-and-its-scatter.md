@@ -6,7 +6,8 @@ Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progr
 turned since that save was made, and a craft resting on one of them, or next to one, can end up inside it
 and be thrown off. Reproduced in fifteen minutes; explained in its source and in stock. Parallax rebuilt
 with a change of two files keeps its rocks still, and a craft on one of them stays on it; that change is
-still being checked. What this mod changes to it comes next.** [Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) draws
+still being checked. This mod makes its scatter grow the same at every load, where stock lets an object
+here and there come and go.** [Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) draws
 the terrain with shaders of its own and adds a scatter of its own objects, some of which a craft can hit,
 two things that sit right on the ground this fix places.
 
@@ -166,6 +167,43 @@ At every one of those loads the capsule stayed on its rock, where Parallax as re
 after ten minutes of play. That save was made with the change: Parallax as released turns the rock
 under the capsule when it is loaded.
 
+## With this mod, its scatter grows the same at every load
+
+**With the ground of stock KSP, an object of the scatter here and there grows at one load and not at the
+next; with this mod, the same objects grow at every load.** Parallax decides where each object of its
+scatter grows from the mesh of the terrain quad, and stock builds that mesh a little differently at every
+load ([Why it is different at every load](../../the-culprit-ground.md#why-it-is-different-at-every-load)):
+an object that sits right on one of the thresholds Parallax applies grows at one load and not at the next.
+This mod builds the same mesh at every load, and the object makes the same choice every time.
+
+**The protocol.** KSP 1.12.5 with Parallax Continued 1.0.4 rebuilt with the change of
+[Parallax with its rocks tied to the body](#parallax-with-its-rocks-tied-to-the-body), so that nothing
+turns from one load to the next, and KSP Diag - Colliders. Copy
+[`rocks-eve-jeb.sfs`](../../../diag/work-in-progress/parallax/its-terrain-and-its-scatter/rocks-eve-jeb.sfs)
+into the folder of a sandbox game and load it: a kerbal on the ground of Eve, among rocks and plants. Look
+at him from straight above, from some 40 m, and take a screenshot; load the same save again at once, with
+no time played, and take the same screenshot; twelve times. Then the same without this mod, and with it.
+[`run-rocks-turning.py`](https://github.com/lhervier/KSP-ExtMod-ParallaxContinued/blob/claude/scatter-rotation-tests/docs/scatter-rotation/automation/run-rocks-turning.py)
+of our fork of Parallax plays it through KSP-MCPServer:
+`--save rocks-eve-jeb --radius 700000 --step 0`.
+
+![Without this mod, the grove at the left of the view, at the first load and at the twelve loads after it: a white plant under the red ones, at the bottom right, shows at loads 1, 7 and 9](../../../imgs/work-in-progress/parallax/its-terrain-and-its-scatter/plant-without-this-mod.jpg)
+
+![With this mod, the same grove at the same thirteen loads: the white plant never shows](../../../imgs/work-in-progress/parallax/its-terrain-and-its-scatter/plant-with-this-mod.jpg)
+
+*The grove at the left of the view, cropped, at the first load (0) and at the twelve loads after it. Top:
+without this mod. Bottom: with it. The line of KSP Diag - Floating Origin at each load and the `KSP.log`
+of each session:
+[`the-same-objects/`](../../../diag/work-in-progress/parallax/its-terrain-and-its-scatter/the-same-objects/).*
+
+Without this mod, the white plant under the red ones shows at 3 loads out of 12; with it, at none. The
+same series played three times more with other builds of Parallax gave 9 loads out of 36 without this
+mod, and none out of 32 with it.
+
+What still changes on Eve from one load to the next with this mod, the small pebbles drawn in the
+texture of the ground, comes from Parallax itself and not from the ground: it is shown in our fork,
+[On Eve, what changes at every load all the same](https://github.com/lhervier/KSP-ExtMod-ParallaxContinued/blob/claude/scatter-rotation-tests/docs/scatter-rotation/reproducing-the-bug.md#on-eve-what-changes-at-every-load-all-the-same).
+
 ## Read in its source
 
 - **the terrain** — Parallax draws it on the meshes stock builds. Its tessellation and its displacement
@@ -182,9 +220,10 @@ under the capsule when it is loaded.
   gap this fix widens on Kerbin
   ([The scatter](../../limits-and-solutions/stock/the-scatter.md)), and the scatter
   fix acts on it as without Parallax;
-- **its distribution noise** is sampled from directions computed in float out of planet-scale vectors,
-  so an object sitting right at the cutoff can appear on one load and not on the next, and the size of
-  a rock can differ very slightly, with or without this fix.
+- **where its scatter grows** — Parallax draws each object on a triangle of the quad's mesh, and checks
+  the slope and a noise there against thresholds: an object right at one of them follows the mesh stock
+  builds a little differently at every load, and this fix builds the same
+  ([With this mod, its scatter grows the same at every load](#with-this-mod-its-scatter-grows-the-same-at-every-load)).
 
 *To test:* the protocol above without this mod; the change to Parallax on the scatters that stand along
 the radius of the body rather than on the slope of the ground (the trees of Kerbin), on Eve, near the

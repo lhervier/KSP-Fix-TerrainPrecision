@@ -428,7 +428,7 @@ the rest of the group editor, a launch from its launch sites, and the ground it 
 
 **Parallax.** In progress: Parallax turns its rocks at every load, by as much as the body has turned
 since the save, and a craft on or next to one can be thrown off; reproduced, explained, and held still
-by a change to Parallax still being checked.
+by a change to Parallax still being checked. This mod makes its scatter grow the same at every load.
 
 **→ Full chapter: [Work in progress: Parallax](docs/work-in-progress/parallax.md)**
 
