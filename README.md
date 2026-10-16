@@ -426,11 +426,17 @@ the rest of the group editor, a launch from its launch sites, and the ground it 
 
 **→ Full chapter: [Work in progress: Kerbal Konstructs](docs/work-in-progress/kerbal-konstructs.md)**
 
-**Parallax.** In progress: Parallax turns its rocks at every load, by as much as the body has turned
-since the save, and a craft on or next to one can be thrown off; reproduced, explained, and held still
-by a change to Parallax still being checked. This mod makes its scatter grow the same at every load.
+**Parallax.** In progress: a craft resting on one of its rocks, loaded again and again. Bugs of
+Parallax stand in the way, first its rocks that turn at every load, corrected by a change on our fork;
+this mod makes its scatter grow the same at every load.
 
 **→ Full chapter: [Work in progress: Parallax](docs/work-in-progress/parallax.md)**
+
+**BurstPQS.** Planned, read in the source: BurstPQS builds the terrain in place of stock and places it in
+double precision on its own; whether the ground still comes back to the same place, with it alone and
+with both.
+
+**→ Full chapter: [Work in progress: BurstPQS](docs/work-in-progress/burst-pqs.md)**
 
 **Tilt'Em.** Planned, read in the source: the ground of a tilted body, when a craft comes down to where
 the world turns with it.

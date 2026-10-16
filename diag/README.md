@@ -596,13 +596,23 @@ session is here twice, `-without-this-mod` and `-fix`. Read in
 ## With Parallax
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
-[Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) 1.0.4 with its three packs of stock
-textures and what it requires, [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders)
-(the edges of the terrain quads, as a mark fixed to the ground), and this mod. Read in
-[Parallax: its terrain and its scatter](../docs/work-in-progress/parallax/its-terrain-and-its-scatter.md).
+[Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) 1.0.4 rebuilt with the first commit
+of the change on the branch
+[`fix/scatter-rotation`](https://github.com/Gameslinx/Parallax-Continued/compare/1.0.4...lhervier:KSP-ExtMod-ParallaxContinued:fix/scatter-rotation)
+of our fork, with its three packs of stock textures and what it requires,
+[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders),
+[KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin), and this mod, or not.
+Read in [Parallax: its terrain and its scatter](../docs/work-in-progress/parallax/its-terrain-and-its-scatter.md).
 
-- [`rocks-mun.sfs`](work-in-progress/parallax/its-terrain-and-its-scatter/rocks-mun.sfs) — a capsule of one
-  part on flat ground of the Mun, among rocks, next to a vertex of the terrain quads.
+- [`capsule-on-a-rock-mun.sfs`](work-in-progress/parallax/its-terrain-and-its-scatter/capsule-on-a-rock-mun.sfs) —
+  a Mk1 capsule on an empty FL-T100 fuel tank, landed on top of a rock of the Mun, saved with Parallax
+  rebuilt with the change.
+- [`rocks-eve-jeb.sfs`](work-in-progress/parallax/its-terrain-and-its-scatter/rocks-eve-jeb.sfs) —
+  Jebediah Kerman on EVA on the ground of Eve, among rocks and plants.
+- [`the-same-objects/`](work-in-progress/parallax/its-terrain-and-its-scatter/the-same-objects/) — that
+  save loaded again at once, twelve times, without this mod (`without-this-mod/`) and with it
+  (`with-this-mod/`): the line of KSP Diag - Floating Origin at each load (`readings.json`), the output
+  of the script and the `KSP.log` of the session.
 
 ## With Kerbal Konstructs
 
