@@ -53,8 +53,9 @@ scatter grow the same at every load.
 
 ## BurstPQS
 
-Planned, read in the source: BurstPQS builds the terrain in place of stock and places it in double
-precision on its own; whether the ground still comes back to the same place, with it alone and with both.
+In progress, measured: every campaign played again with BurstPQS. It holds the ground still, but not the
+statics nor the scatter, which this mod's scatter fix, as it is, misses; it leaves the Earth, the Moon and
+Mars of Real Solar System to stock; and the Mun shows darker quads in flight.
 
 **→ Full chapter: [Work in progress: BurstPQS](work-in-progress/burst-pqs.md)**
 
