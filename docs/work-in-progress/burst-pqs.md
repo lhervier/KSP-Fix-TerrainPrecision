@@ -36,8 +36,9 @@ it is, misses every holder built as the scene opens: nothing at a load, a catch-
 
 ## Darker quads on the Mun
 
-**In progress — seen, not measured.** From an orbit 5 km above the Mun, whole quads of the ground are drawn
-much darker than their neighbours, the relief running on unbroken from one to the next, for the first
-minutes of the flight, then less and less. Not compared yet with the same flight without BurstPQS.
+**In progress — seen, compared: BurstPQS's own.** From an orbit 5 km above the Mun, whole quads of the ground
+are drawn much darker than their neighbours, the relief running on unbroken from one to the next, for the
+first minutes of a flight opened from the space centre, then less and less. Not on KSP with KSP Community
+Fixes alone, nor with Kopernicus alone; not after loading the save again in flight.
 
 **→ Full chapter: [BurstPQS: darker quads on the Mun](burst-pqs/darker-quads-on-the-mun.md)**
