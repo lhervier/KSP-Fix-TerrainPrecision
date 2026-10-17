@@ -57,5 +57,10 @@ same amount.
 stock ones and its own (Hale, Ovok, Slate, Tekto, Priax, Polta, Wal, Tal, Thatmo, Nissee, Plock, Karen),
 nothing left to stock.
 
-*To check:* other planet packs, by the same lines of `KSP.log`. Until that version of Real Solar System is
-released, the terrain fix stays needed on the Earth, the Moon and Mars.
+## To do
+
+- **Wait for the next release of Real Solar System.** Until then, this mod's terrain fix stays needed on the
+  Earth, the Moon and Mars. Once it is out, BurstPQS builds every body of the planet packs checked here.
+- **Wait for the fix of the darker quads to reach Kopernicus**
+  ([BurstPQS issue #15](https://github.com/Phantomical/BurstPQS/issues/15)). With both, dropping this mod's
+  terrain fix, to depend on BurstPQS for the ground, can be considered.
