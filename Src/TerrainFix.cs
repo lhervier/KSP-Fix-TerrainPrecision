@@ -65,6 +65,13 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
                 return false;
             }
 
+            // For BurstPQS: it places the terrain of the bodies it builds itself, in double precision. See
+            // BurstPQSCompat.
+            if (BurstPQSCompat.PlacesTerrain(sphere))
+            {
+                return false;
+            }
+
             // Only the quads of the highest subdivision level are moved to this storage, which is not
             // attached to the body: a position given to them is kept as it is. Every other quad hangs from
             // the sphere, whose origin is the centre of the body, so Unity would store any position given to

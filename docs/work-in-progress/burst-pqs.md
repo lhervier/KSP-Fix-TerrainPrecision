@@ -5,17 +5,20 @@ Part of [Terrain Precision Fix](../../README.md), one mod of [Work in progress](
 [BurstPQS](https://github.com/Phantomical/BurstPQS) builds the terrain in place of stock, in Burst-compiled
 jobs, and places it in double precision on its own. It requires Kopernicus. Every campaign of this mod was
 played again with it, in two installs: **BurstPQS** (KSP, KSP Community Fixes, BurstPQS and what it requires)
-and **BurstPQS with this mod, its terrain fix off** (`fixTerrain = false`, the statics, scatter and anchor
-fixes on). The short answer so far: BurstPQS holds the ground still, but not the statics nor the scatter, it
+and **BurstPQS with this mod, as it installs** (its terrain fix steps back by itself on the bodies BurstPQS
+builds; the statics, scatter and anchor fixes on). The short answer so far: BurstPQS holds the ground still, but not the statics nor the scatter, it
 leaves three bodies of Real Solar System to stock, and the Mun shows darker quads in a first flight, from
-Kopernicus's BurstPQS plugin for its KSC scatter mask.
+Kopernicus's BurstPQS plugin for its KSC scatter mask. This mod now supports BurstPQS by itself: its terrain
+fix steps back on every body BurstPQS builds and keeps correcting the bodies it leaves to stock, and its
+scatter fix hangs every holder there.
 
 ## The campaigns played with BurstPQS
 
 **In progress — measured.** On the bodies BurstPQS builds, the ground no longer moves at a load, an approach,
 a vessel switch, a move of the world or in a fast flight, and it is the same ground as this mod's terrain fix
 builds. The statics still move without this mod, and now against a ground that holds; with it, they hold.
-This mod's terrain fix, left on, does nothing on top of BurstPQS.
+This mod's terrain fix steps back by itself on the bodies BurstPQS builds: nothing placed twice, and the
+ground holds as with BurstPQS alone.
 
 **→ Full chapter: [BurstPQS: the campaigns](burst-pqs/the-campaigns.md)**
 
@@ -23,16 +26,18 @@ This mod's terrain fix, left on, does nothing on top of BurstPQS.
 
 **In progress — measured.** On Real Solar System, BurstPQS gives the Earth, the Moon and Mars back to stock,
 and their ground moves as on stock. With this mod's terrain fix off, nothing corrects it; with it on, it
-holds. The terrain fix would have to be turned off body by body. The next Real Solar System, not released
-yet, lets BurstPQS build them: built from its development version, their ground holds with BurstPQS alone.
+holds. This mod's terrain fix now goes on correcting them by itself, while it steps back on the bodies
+BurstPQS builds. The next Real Solar System, not released yet, lets BurstPQS build them: built from its
+development version, their ground holds with BurstPQS alone.
 
 **→ Full chapter: [BurstPQS: the bodies it leaves to stock](burst-pqs/the-bodies-it-leaves-to-stock.md)**
 
 ## The scatter
 
-**In progress — measured.** With BurstPQS, rocks, grass and trees move against the ground from one load to
-the next by more than on stock, and jump against it at every move of the world. This mod's scatter fix, as
-it is, misses every holder built as the scene opens: nothing at a load, a catch-up in flight only.
+**In progress — fixed, measured.** With BurstPQS, rocks, grass and trees move against the ground from one
+load to the next by more than on stock, and jump against it at every move of the world. This mod's scatter
+fix first missed every holder built as the scene opens; it now hangs them all: hundredths of a millimetre at a
+load, rocks with colliders included, nothing at a move of the world or in flight.
 
 **→ Full chapter: [BurstPQS: the scatter](burst-pqs/the-scatter.md)**
 
@@ -46,12 +51,6 @@ the colour of every quad of a sphere's first build; taking the mask off the Mun 
 Minmus, on Laythe from the ground and on Mercury of Real Solar System.
 
 **→ Full chapter: [BurstPQS: darker quads on the Mun](burst-pqs/darker-quads-on-the-mun.md)**
-
-## Performance
-
-**Not played yet.** [The performance campaign](../performance.md) was played on stock terrain only. With
-BurstPQS the ground is built in Burst-compiled jobs, so what a frame pays changes for BurstPQS alone and for
-BurstPQS with this mod: the same campaign is to play again in both installs.
 
 ## Its memory
 

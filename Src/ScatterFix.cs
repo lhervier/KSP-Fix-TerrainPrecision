@@ -75,6 +75,13 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
                 return false;
             }
 
+            // For BurstPQS: on the bodies it builds, a quad is drawn with its own transform wherever it hangs,
+            // and its holder can hang from it whatever its parent. See BurstPQSCompat.
+            if (BurstPQSCompat.PlacesTerrain(sphere))
+            {
+                return true;
+            }
+
             // Only the quads of the highest subdivision level are moved to this storage, which is not attached
             // to the body, and they are the only ones stock gives scatter to. Any other quad hangs from the
             // sphere itself, with the same kind of 600 km local position as the holder, so hanging the holder

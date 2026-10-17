@@ -5,8 +5,11 @@ Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progr
 **Status: in progress — measured, not yet published as checked.** Every scripted campaign of this mod,
 played with BurstPQS 1.0.27 (with Kopernicus 251, KSPTextureLoader and KSPBurst with its compiler), each in
 two installs: **BurstPQS** (KSP, KSP Community Fixes, BurstPQS and what it requires) and **BurstPQS with this
-mod, its terrain fix off** (`fixTerrain = false`). The ground campaigns were also played on KSP with KSP
-Community Fixes alone, and with this mod's terrain fix left on top of BurstPQS. The saves are the published
+mod, as it installs**. This mod's terrain fix steps back by itself on the bodies BurstPQS builds: there, the
+campaigns were played with it turned off (`fixTerrain = false`), which comes to the same. On Real Solar
+System, where BurstPQS leaves the Earth and the Moon to stock and the terrain fix corrects them, they were
+played again as this mod installs. The ground campaigns were also played on KSP with KSP Community Fixes
+alone. The saves are the published
 ones; a save made on stock ground is set down once onto BurstPQS's ground at its first load (the cases of
 [Existing saves](../../non-regression/stock/existing-saves.md)). In each table, the spread over the
 repetitions of the protocol, in millimetres.
@@ -47,10 +50,9 @@ one at least built in flight, median / 90th percentile / largest: 0.071 / 0.228 
 against 4.520 / 16.930 / 22.454 on stock in the published series. The seams protocol found no step of
 50 mm or more between two subdivision levels in 150 reverts, the largest 0.9 mm.
 
-**This mod's terrain fix, left on, does nothing on top of BurstPQS**: its safeguard refuses every correction
-(each the distance from a quad not yet placed by BurstPQS to its origin: 609 km on Kerbin), and the ground is
-BurstPQS's. It does not conflict, but only because of the order in which the two mods patch the same method,
-which nothing guarantees: with BurstPQS, the terrain fix has to be off on the bodies BurstPQS builds.
+**This mod's terrain fix steps back by itself on the bodies BurstPQS builds**, so that the two never place
+the same quads; `KSP.log` says `<body>: terrain placed by BurstPQS` for each. The loading protocol with the
+terrain fix on, six loads, ground under the craft: Kerbin 0.005, Mun 0.008, Minmus 0.013, Gilly 0.012.
 
 ## The statics
 
@@ -66,15 +68,17 @@ longer moves, they now move **against** it:
 | Kerbal Konstructs runway on the Mun, 6 loads | 31.9 | 21.3 at the first load, then 0.03 (the case of [Kerbal Konstructs](../kerbal-konstructs.md)) |
 | A Kerbal Konstructs static under a landed capsule, before and after a fly-over | 8.6 | 0.014 |
 
-On Real Solar System, the launchpad of Cape Canaveral over 11 arrivals: 594 without this mod, 0.11 with
+On Real Solar System, the launchpad of Cape Canaveral over 11 arrivals: 594 without this mod, 0.14 with
 it; the runway without its runway fix: 576 from one load to the next and a step of +116.5 between two of its
-sections, 0.16 and −3.1 with this mod. Driving on that runway without this mod, the rover turned over just
-after a move of the world; with it, it drove on, the deck moving by 0.00 and −0.01 at each move.
+sections, 0.29 and −3.1 with this mod. Driving on that runway without this mod, the rover turned over just
+after a move of the world; with it, it drove on, the deck moving by −0.05 and +0.01 at each move. The Earth
+being one of the bodies BurstPQS leaves to stock, the ground next to the runway holds too with this mod: the
+grass 0.24 from one load to the next, +0.14 and +0.24 at a move of the world.
 
 ## No regression seen
 
 The holder pools in flight and across scene changes: no broken rule. The floating origin, destroyed buildings
-and time warp: the same as without BurstPQS. The scatter is the exception, in
+and time warp: the same as without BurstPQS. The scatter was the exception, fixed since, in
 [its own chapter](the-scatter.md).
 
 *Still to play with BurstPQS:* the anchor, a launch pad placed by a mission, a ground station of Kerbal

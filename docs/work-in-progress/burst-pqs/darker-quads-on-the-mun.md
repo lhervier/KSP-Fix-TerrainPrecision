@@ -160,15 +160,6 @@ that body alone by a patch like the one above:
 - **Kerbin**: nothing either, as the space centre first shows, towards the mountains to the west, or around
   the launch pad.
 
-## Seen at the same time: the camera held short of the north pole
-
-In the first flight, with the camera pulled back: the camera could be turned to look at the south pole of
-the Mun, but not to look at the north pole, held a few degrees short. Not compared yet without BurstPQS; it
-may be the stock camera.
-
-*To test:* in each of the three installs, the camera pulled back until the whole Mun shows, turn it towards
-the north pole, then towards the south pole, and note where it stops.
-
 ## To do
 
 - **Follow [BurstPQS issue #15](https://github.com/Phantomical/BurstPQS/issues/15)** until the fix reaches
