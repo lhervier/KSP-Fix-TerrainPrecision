@@ -4,10 +4,11 @@ Part of [Terrain Precision Fix](../../README.md), one mod of [Work in progress](
 
 [BurstPQS](https://github.com/Phantomical/BurstPQS) builds the terrain in place of stock, in Burst-compiled
 jobs, and places it in double precision on its own. It requires Kopernicus. Every campaign of this mod was
-played again with it, in two installs: **BurstPQS** (KSP, KSP Community Fixes, BurstPQS and what it
-requires) and **BurstPQS with this mod, its terrain fix off** (`fixTerrain = false`, the statics, scatter and
-anchor fixes on). The short answer so far: BurstPQS holds the ground still, but not the statics nor the
-scatter, it leaves three bodies of Real Solar System to stock, and the Mun shows darker quads in flight.
+played again with it, in two installs: **BurstPQS** (KSP, KSP Community Fixes, BurstPQS and what it requires)
+and **BurstPQS with this mod, its terrain fix off** (`fixTerrain = false`, the statics, scatter and anchor
+fixes on). The short answer so far: BurstPQS holds the ground still, but not the statics nor the scatter, it
+leaves three bodies of Real Solar System to stock, and the Mun shows darker quads in a first flight, from
+Kopernicus's BurstPQS plugin for its KSC scatter mask.
 
 ## The campaigns played with BurstPQS
 
@@ -36,9 +37,10 @@ it is, misses every holder built as the scene opens: nothing at a load, a catch-
 
 ## Darker quads on the Mun
 
-**In progress — seen, compared: BurstPQS's own.** From an orbit 5 km above the Mun, whole quads of the ground
+**In progress — cause found, not reported yet.** From an orbit 5 km above the Mun, whole quads of the ground
 are drawn much darker than their neighbours, the relief running on unbroken from one to the next, for the
-first minutes of a flight opened from the space centre, then less and less. Not on KSP with KSP Community
-Fixes alone, nor with Kopernicus alone; not after loading the save again in flight.
+first minutes of the first flight after KSP starts. Not on KSP with KSP Community Fixes alone, nor with
+Kopernicus alone. The cause is the plugin Kopernicus ships for BurstPQS with its KSC scatter mask: it wipes
+the colour of every quad of a sphere's first build; taking the mask off the Mun makes them go.
 
 **→ Full chapter: [BurstPQS: darker quads on the Mun](burst-pqs/darker-quads-on-the-mun.md)**

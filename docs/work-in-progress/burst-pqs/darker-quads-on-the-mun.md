@@ -2,14 +2,18 @@
 
 Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [BurstPQS](../../work-in-progress/burst-pqs.md).
 
-**Status: in progress — seen, compared: BurstPQS's own.** Seen first in the flight of the scatter protocols
+**Status: in progress — cause found, in Kopernicus's BurstPQS plugin for its KSC scatter mask; not
+reported yet.** Seen first in the flight of the scatter protocols
 ([in flight](../../checking-the-culprit-flight/the-scatter-protocol.md), on `ref-mune-5km`: a capsule in a
 circular orbit 5 km above the Mun), with BurstPQS, with and without this mod. Whole quads of the ground are
 drawn much darker than their neighbours, with stepped edges that follow the quads, while the craters run on
-unbroken from one quad to the next: the relief is right, the shading of whole quads is not. Played again
+unbroken from one quad to the next: the relief is right, the colour of whole quads is not. Played again
 without this mod, on three installs: the darker quads show with BurstPQS only, not on KSP with KSP Community
-Fixes alone, nor with Kopernicus alone. They show when the flight is opened from the space centre, and fade
-within the first two minutes or so; loading the same save again from that flight brings none.
+Fixes alone, nor with Kopernicus alone. They show in the first flight after KSP starts, and fade within the
+first two minutes or so; loading the same save again from that flight, or going to the space centre and
+loading it again, brings none. Taking Kopernicus's KSC scatter mask off the Mun makes them go: the plugin
+Kopernicus ships for BurstPQS with that mask wipes the colour of every quad built as the Mun's terrain is
+first set up.
 
 ## The protocol
 
@@ -70,23 +74,66 @@ while others darken, and almost all are normal at the end.
 
 ![The Mun at 4 min 30 s: almost every quad normal](../../../imgs/work-in-progress/burst-pqs/mun-5km-t4m30s-zoomed-out.png)
 
-## Where it could come from
+## Taking the KSC scatter mask off the Mun
 
-Read in BurstPQS's code, not checked in the game. The darker quads are those built as the scene opens:
-loading again in flight, which keeps the Mun's terrain already built, brings none. `UVPlanetRelativePosition`
-writes into the second UV channel of each vertex `1 − dot(direction of the vertex from the centre, normal)`,
-the steepness the terrain shader reads to blend in the texture of steep slopes: a quad whose steepness is
-wrong everywhere is drawn as a slope, darker, with its relief untouched. BurstPQS works it out again, as stock
-does, whenever the normals of a quad's edges are updated (`PQSMod_UVPlanetRelativePosition.OnQuadUpdateNormals`,
-patched), from `quad.verts + quad.positionPlanet`: right only if the quad's vertices are relative to
-`positionPlanet`, without rotation. BurstPQS builds a quad's vertices relative to a frame chosen by
-`BatchPQS.TryGetPlanetToQuad`: a translation alone for a quad in its storage of the rotating frame, otherwise
-the quad's transform relative to the sphere, or through the world, rotation included. As the scene opens,
-before the world turns with the body, quads are built by the last two. Which channel actually differs on a
-dark quad is the first thing to read.
+Kopernicus 251 adds a `KSCScatterMask` to the terrain of every body (its `Config/KSCScatterMask.cfg`, under
+`@Body,*`), to keep scatter off the space centre. The same flight, in the BurstPQS install, with one more file
+in `GameData` that takes it off the Mun alone:
 
-The other leads of the code, less likely now: the tangents BurstPQS approximates, and the renderers it
-switches on and off in batches, would not depend on how the flight was opened.
+```
+// Removes Kopernicus's KSC scatter mask from the Mun, the only change of this test.
+@Kopernicus:FINAL
+{
+    @Body[Mun]
+    {
+        @PQS
+        {
+            @Mods
+            {
+                !KSCScatterMask,* {}
+            }
+        }
+    }
+}
+```
+
+`KSP.log` shows it applied: `Applying update NoKSCMaskOnMun/NoKSCMaskOnMun/@Kopernicus:FINAL to
+Kopernicus/Config/System.cfg/Kopernicus[Kerbol System]`. At 0 and 20 seconds, the camera set the same way,
+as Kopernicus ships it and with the mask off the Mun:
+
+![ref-mune-5km with BurstPQS at 0 s and 20 s: Kopernicus as shipped, then its KSC scatter mask taken off the Mun](../../../imgs/work-in-progress/burst-pqs/mun-5km-burstpqs-scatter-mask-removed.png)
+
+## Where it comes from
+
+Read in the code of Kopernicus 251 and of BurstPQS 1.0.27; the test above is what was checked in the game.
+
+- The mask is a Kopernicus terrain mod, `PQSMod_KSCScatterMask`, with a plugin for BurstPQS,
+  `Kopernicus.BurstPQS.KSCScatterMask` (shipped in Kopernicus's `Plugins` folder). The mod only turns
+  scatter off near the space centre; it writes a colour only in its debug mode (`debugShowColorMap`), black
+  while its `quadActive` is still false. The plugin's job starts with:
+
+  ```csharp
+  if (!quadActive)
+  {
+      data.vertColor.Clear();
+      return;
+  }
+  ```
+
+  It wipes the colour of every vertex, debug mode or not.
+- `quadActive` turns true in the mod's `OnQuadBuilt`, once a first quad has been built; the plugin's job takes
+  its value when the job is made, before the quad is built. When BurstPQS first sets up a sphere
+  (`BatchPQS.UpdateQuadsInit`), it makes the jobs of all the quads of the starting tree before it finishes the
+  first one: every quad of that first build has its colour wiped. The colour mods that come after the mask in
+  the Mun's list (a grey noise, the craters) are all it gets: the dark grey quads. Quads built later are right,
+  and the dark ones go as they are built again.
+- On the Mun, the mask should not run at all: its `OnSetup` turns it off on any body but the space centre's.
+  But `PQS.SetupMods` sorts the list of mods before it calls their `OnSetup`, so the mask stays in that first
+  list, and BurstPQS takes its list from there. At the next set-up of the Mun, the mask is left out: hence the
+  first flight only.
+
+On stock terrain, with Kopernicus alone, the mod itself does nothing while `quadActive` is false (outside its
+debug mode), and stock builds one quad after the other: nothing to see.
 
 ## Seen at the same time: the camera held short of the north pole
 
@@ -97,11 +144,10 @@ may be the stock camera.
 *To test:* in each of the three installs, the camera pulled back until the whole Mun shows, turn it towards
 the north pole, then towards the south pole, and note where it stops.
 
-## To test
+## To do
 
-- **Which quads, and what differs on them.** In the BurstPQS install, the screenshots above at 0 s, a dark
-  quad and a normal one next to it: read the vertices' second UV channel and the normals of both, and their
-  level of subdivision. To show to BurstPQS's author.
-- **Leaving the flight and coming back.** In the BurstPQS install, after the first flight, go to the space
-  centre and load the save again: if the darker quads come back, they come with the terrain being built
-  again, not with the first flight of a KSP session.
+- **Kerbin.** The mask stays on Kerbin, where the space centre is, and the first build of Kerbin's terrain
+  goes through the same plugin: whether its colour is wiped too, and seen, depends on the colour mods that
+  come after the mask. To look at as the space centre first shows after KSP starts, with and without the mask.
+- **Report it to Kopernicus**, BurstPQS's author in copy: in the plugin, do nothing while `quadActive` is
+  false, or write black only in debug mode, as the mod itself does.

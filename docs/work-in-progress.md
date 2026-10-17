@@ -55,7 +55,8 @@ scatter grow the same at every load.
 
 In progress, measured: every campaign played again with BurstPQS. It holds the ground still, but not the
 statics nor the scatter, which this mod's scatter fix, as it is, misses; it leaves the Earth, the Moon and
-Mars of Real Solar System to stock; and the Mun shows darker quads in flight.
+Mars of Real Solar System to stock; and the Mun shows darker quads in a first flight, from Kopernicus's
+BurstPQS plugin for its KSC scatter mask.
 
 **→ Full chapter: [Work in progress: BurstPQS](work-in-progress/burst-pqs.md)**
 
