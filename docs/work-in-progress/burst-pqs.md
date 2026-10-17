@@ -23,7 +23,8 @@ This mod's terrain fix, left on, does nothing on top of BurstPQS.
 
 **In progress — measured.** On Real Solar System, BurstPQS gives the Earth, the Moon and Mars back to stock,
 and their ground moves as on stock. With this mod's terrain fix off, nothing corrects it; with it on, it
-holds. The terrain fix would have to be turned off body by body.
+holds. The terrain fix would have to be turned off body by body. The next Real Solar System, not released
+yet, lets BurstPQS build them: built from its development version, their ground holds with BurstPQS alone.
 
 **→ Full chapter: [BurstPQS: the bodies it leaves to stock](burst-pqs/the-bodies-it-leaves-to-stock.md)**
 
@@ -37,7 +38,7 @@ it is, misses every holder built as the scene opens: nothing at a load, a catch-
 
 ## Darker quads on the Mun
 
-**In progress — cause found, not reported yet.** From an orbit 5 km above the Mun, whole quads of the ground
+**In progress — cause found, reported to BurstPQS ([issue #15](https://github.com/Phantomical/BurstPQS/issues/15)).** From an orbit 5 km above the Mun, whole quads of the ground
 are drawn much darker than their neighbours, the relief running on unbroken from one to the next, for the
 first minutes of the first flight after KSP starts. Not on KSP with KSP Community Fixes alone, nor with
 Kopernicus alone. The cause is the plugin Kopernicus ships for BurstPQS with its KSC scatter mask: it wipes
@@ -45,3 +46,17 @@ the colour of every quad of a sphere's first build; taking the mask off the Mun 
 Minmus, on Laythe from the ground and on Mercury of Real Solar System.
 
 **→ Full chapter: [BurstPQS: darker quads on the Mun](burst-pqs/darker-quads-on-the-mun.md)**
+
+## Performance
+
+**Not played yet.** [The performance campaign](../performance.md) was played on stock terrain only. With
+BurstPQS the ground is built in Burst-compiled jobs, so what a frame pays changes for BurstPQS alone and for
+BurstPQS with this mod: the same campaign is to play again in both installs.
+
+## Its memory
+
+**To dig — read in its code, not yet seen in the game.** Three places in the code of BurstPQS where memory
+is released twice or never: a pinned handle of two noise mods, the Burst versions of the terrain mods
+dropped at each new set-up, and height maps loaded on demand that nothing unloads.
+
+**→ Full chapter: [BurstPQS: its memory](burst-pqs/its-memory.md)**

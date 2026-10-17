@@ -3,7 +3,8 @@
 Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [BurstPQS](../../work-in-progress/burst-pqs.md).
 
 **Status: in progress — cause found, in Kopernicus's BurstPQS plugin for its KSC scatter mask; seen on the
-Mun, Minmus, Laythe and Mercury; not reported yet.** Seen first in the flight of the scatter protocols
+Mun, Minmus, Laythe and Mercury; reported to BurstPQS
+([issue #15](https://github.com/Phantomical/BurstPQS/issues/15)).** Seen first in the flight of the scatter protocols
 ([in flight](../../checking-the-culprit-flight/the-scatter-protocol.md), on `ref-mune-5km`: a capsule in a
 circular orbit 5 km above the Mun), with BurstPQS, with and without this mod. Whole quads of the ground are
 drawn much darker than their neighbours, with stepped edges that follow the quads, while the craters run on
@@ -170,5 +171,6 @@ the north pole, then towards the south pole, and note where it stops.
 
 ## To do
 
-- **Report it to Kopernicus**, BurstPQS's author in copy: in the plugin, do nothing while `quadActive` is
-  false, or write black only in debug mode, as the mod itself does.
+- **Follow [BurstPQS issue #15](https://github.com/Phantomical/BurstPQS/issues/15)** until the fix reaches
+  Kopernicus: in the plugin, do nothing while `quadActive` is false, or write black only in debug mode, as
+  the mod itself does.
