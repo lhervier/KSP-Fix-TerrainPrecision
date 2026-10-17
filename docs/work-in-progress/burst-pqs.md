@@ -41,6 +41,7 @@ it is, misses every holder built as the scene opens: nothing at a load, a catch-
 are drawn much darker than their neighbours, the relief running on unbroken from one to the next, for the
 first minutes of the first flight after KSP starts. Not on KSP with KSP Community Fixes alone, nor with
 Kopernicus alone. The cause is the plugin Kopernicus ships for BurstPQS with its KSC scatter mask: it wipes
-the colour of every quad of a sphere's first build; taking the mask off the Mun makes them go.
+the colour of every quad of a sphere's first build; taking the mask off the Mun makes them go. Seen also on
+Minmus, on Laythe from the ground and on Mercury of Real Solar System.
 
 **→ Full chapter: [BurstPQS: darker quads on the Mun](burst-pqs/darker-quads-on-the-mun.md)**

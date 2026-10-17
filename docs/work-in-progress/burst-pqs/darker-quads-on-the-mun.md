@@ -2,8 +2,8 @@
 
 Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [BurstPQS](../../work-in-progress/burst-pqs.md).
 
-**Status: in progress — cause found, in Kopernicus's BurstPQS plugin for its KSC scatter mask; not
-reported yet.** Seen first in the flight of the scatter protocols
+**Status: in progress — cause found, in Kopernicus's BurstPQS plugin for its KSC scatter mask; seen on the
+Mun, Minmus, Laythe and Mercury; not reported yet.** Seen first in the flight of the scatter protocols
 ([in flight](../../checking-the-culprit-flight/the-scatter-protocol.md), on `ref-mune-5km`: a capsule in a
 circular orbit 5 km above the Mun), with BurstPQS, with and without this mod. Whole quads of the ground are
 drawn much darker than their neighbours, with stepped edges that follow the quads, while the craters run on
@@ -59,20 +59,6 @@ With BurstPQS, the flight opened from the space centre, and the same save loaded
 minute and a half in, without leaving it, the camera set the same way, both at 35 seconds:
 
 ![ref-mune-5km with BurstPQS at 35 s: opened from the space centre, then loaded again in flight](../../../imgs/work-in-progress/burst-pqs/mun-5km-burstpqs-loaded-again-in-flight.png)
-
-The first flight it was seen in, with BurstPQS and this mod: twelve seconds in, the camera as the flight
-opens, most of the Mun in view is dark, with a band of light and dark blocks along its edge.
-
-![The Mun 12 s into the flight from a 5 km orbit, BurstPQS and this mod](../../../imgs/work-in-progress/burst-pqs/mun-5km-t0m12s.png)
-
-The camera pulled back to about 80 km, at 1 min 51 s, 3 min 08 s and 4 min 30 s: some quads turn normal again
-while others darken, and almost all are normal at the end.
-
-![The Mun at 1 min 51 s, camera pulled back: whole quads darker, stepped edges](../../../imgs/work-in-progress/burst-pqs/mun-5km-t1m51s-zoomed-out.png)
-
-![The Mun at 3 min 08 s: some quads normal again, others dark](../../../imgs/work-in-progress/burst-pqs/mun-5km-t3m08s-zoomed-out.png)
-
-![The Mun at 4 min 30 s: almost every quad normal](../../../imgs/work-in-progress/burst-pqs/mun-5km-t4m30s-zoomed-out.png)
 
 ## Taking the KSC scatter mask off the Mun
 
@@ -135,6 +121,44 @@ Read in the code of Kopernicus 251 and of BurstPQS 1.0.27; the test above is wha
 On stock terrain, with Kopernicus alone, the mod itself does nothing while `quadActive` is false (outside its
 debug mode), and stock builds one quad after the other: nothing to see.
 
+## Other bodies
+
+Whether a body shows it depends on what comes after the mask in the body's list of terrain mods. A colour
+mod that writes the whole colour again hides it: a colour map, a solid colour, the land classes when they make
+colours, any blend at full weight. Noise or craters blended over the wiped colour do not, and a body with no
+colour mod after the mask keeps it wiped. Read from the order of each body's terrain mods, Kopernicus 251 (the
+mask came with Kopernicus 249):
+
+- **Stock system.** Exposed: the Mun, Minmus, Ike, Gilly, Pol, Bop and Laythe. Not exposed: Kerbin, Moho,
+  Eve, Duna, Vall, Tylo, Dres, Eeloo.
+- **Real Solar System.** Exposed: Mercury, Ganymede, Callisto, Mimas, Enceladus, Tethys, Dione, Rhea,
+  Iapetus, Triton, Pluto, Charon. Not exposed: the others. The Earth, the Moon and Mars are left to stock by
+  BurstPQS anyway, and stock builds one quad at a time.
+
+Played in the game, each from a freshly started KSP, as Kopernicus ships it and then with the mask taken off
+that body alone by a patch like the one above:
+
+- **Minmus**, a capsule put on a 10 km orbit on the day side (*Set Orbit*, Alt+F12), the camera pulled back
+  to see the curve of the body, about a minute after arriving:
+
+  ![Minmus from a 10 km orbit, a minute after arriving: Kopernicus as shipped, then its KSC scatter mask taken off Minmus](../../../imgs/work-in-progress/burst-pqs/minmus-10km-scatter-mask.png)
+
+- **Laythe.** From a 60 km orbit, just above its atmosphere, nothing tells the two apart. A capsule landed on
+  an island near the equator, the save loaded from the space centre, the camera pulled back, a few seconds
+  after the flight shows:
+
+  ![A capsule landed on Laythe, the camera pulled back, a few seconds into the flight: Kopernicus as shipped, then its KSC scatter mask taken off Laythe](../../../imgs/work-in-progress/burst-pqs/laythe-landed-scatter-mask.png)
+
+- **Mercury** (Real Solar System 20.1.3, Kopernicus 251), a 20 km orbit at local noon, about 25 s after
+  arriving:
+
+  ![Mercury from a 20 km orbit, 25 s after arriving: Kopernicus as shipped, then its KSC scatter mask taken off Mercury](../../../imgs/work-in-progress/burst-pqs/mercury-20km-scatter-mask.png)
+
+- **Pluto** (Real Solar System), a capsule landed near the equator: its ground is very dark already, and
+  nothing tells the two apart by eye. From an orbit above its atmosphere, its terrain is not built at all.
+- **Kerbin**: nothing either, as the space centre first shows, towards the mountains to the west, or around
+  the launch pad.
+
 ## Seen at the same time: the camera held short of the north pole
 
 In the first flight, with the camera pulled back: the camera could be turned to look at the south pole of
@@ -146,8 +170,5 @@ the north pole, then towards the south pole, and note where it stops.
 
 ## To do
 
-- **Kerbin.** The mask stays on Kerbin, where the space centre is, and the first build of Kerbin's terrain
-  goes through the same plugin: whether its colour is wiped too, and seen, depends on the colour mods that
-  come after the mask. To look at as the space centre first shows after KSP starts, with and without the mask.
 - **Report it to Kopernicus**, BurstPQS's author in copy: in the plugin, do nothing while `quadActive` is
   false, or write black only in debug mode, as the mod itself does.
