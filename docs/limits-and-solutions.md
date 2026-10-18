@@ -43,3 +43,12 @@ Its group editor, in flight, would send a group moved with its gizmo elsewhere o
 there: a patch of this mod, on by default, prevents it.
 
 **→ Full chapter: [Limits and solutions: Kerbal Konstructs](limits-and-solutions/kerbal-konstructs.md)**
+
+## BurstPQS
+
+It holds the ground still on the bodies it builds, but not the statics nor the scatter, which this mod still
+corrects. This mod supports it by itself: its terrain fix steps back on the bodies BurstPQS builds, and takes
+over on the Earth, the Moon and Mars, which the latest Real Solar System (20.1.3) leaves to stock; its
+scatter fix hangs every holder there.
+
+**→ Full chapter: [Limits and solutions: BurstPQS](limits-and-solutions/burst-pqs.md)**

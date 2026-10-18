@@ -1,8 +1,8 @@
 # BurstPQS: the campaigns
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [BurstPQS](../../work-in-progress/burst-pqs.md).
+Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [BurstPQS](../../limits-and-solutions/burst-pqs.md).
 
-**Status: in progress — measured, not yet published as checked.** Every scripted campaign of this mod,
+**Status: checked, nothing worse with this mod.** Every scripted campaign of this mod,
 played with BurstPQS 1.0.27 (with Kopernicus 251, KSPTextureLoader and KSPBurst with its compiler), each in
 two installs: **BurstPQS** (KSP, KSP Community Fixes, BurstPQS and what it requires) and **BurstPQS with this
 mod, as it installs**. This mod's terrain fix steps back by itself on the bodies BurstPQS builds: there, the
@@ -65,7 +65,7 @@ longer moves, they now move **against** it:
 | Driving on the runway and the grass, the runway deck at a move of the world | +28.3, +11.6, −21.0 (the grass: 0.00) | −0.03, +0.02, −0.7 |
 | Scene changes, the launchpad, 11 arrivals | 108.0 | 0.16 |
 | Facility levels, the same surface, 4 arrivals each | 152.4 and 116.3 | 0.062 and 0.066 |
-| Kerbal Konstructs runway on the Mun, 6 loads | 31.9 | 21.3 at the first load, then 0.03 (the case of [Kerbal Konstructs](../kerbal-konstructs.md)) |
+| Kerbal Konstructs runway on the Mun, 6 loads | 31.9 | 21.3 at the first load, then 0.03 (the case of [Kerbal Konstructs](../../work-in-progress/kerbal-konstructs.md)) |
 | A Kerbal Konstructs static under a landed capsule, before and after a fly-over | 8.6 | 0.014 |
 
 On Real Solar System, the launchpad of Cape Canaveral over 11 arrivals: 594 without this mod, 0.14 with

@@ -1,8 +1,8 @@
 # BurstPQS: the bodies it leaves to stock
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [BurstPQS](../../work-in-progress/burst-pqs.md).
+Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [BurstPQS](../../limits-and-solutions/burst-pqs.md).
 
-**Status: in progress — measured.** BurstPQS builds a body only if every terrain mod of that body has a
+**Status: checked, a limit this mod handles by itself, until the next Real Solar System.** BurstPQS builds a body only if every terrain mod of that body has a
 Burst version; otherwise it gives the whole body back to stock, and says so in `KSP.log`:
 `[BurstPQS] BatchPQS not supported for surface <body>. Falling back to regular PQS`. On stock KSP, every body
 is built by BurstPQS. On Real Solar System, **the Earth, the Moon and Mars are not**: two terrain mods of Real
@@ -69,6 +69,7 @@ nothing left to stock.
 
 - **Wait for the next release of Real Solar System.** Until then, this mod's terrain fix stays needed on the
   Earth, the Moon and Mars. Once it is out, BurstPQS builds every body of the planet packs checked here.
-- **Wait for the fix of the darker quads to reach Kopernicus**
-  ([BurstPQS issue #15](https://github.com/Phantomical/BurstPQS/issues/15)). With both, dropping this mod's
+- **Wait for the fix of the darker quads to reach Kopernicus** (see
+  [Darker quads: not from this mod](../burst-pqs.md#darker-quads-not-from-this-mod),
+  [BurstPQS issue #15](https://github.com/Phantomical/BurstPQS/issues/15)). With both, dropping this mod's
   terrain fix, to depend on BurstPQS for the ground, can be considered.

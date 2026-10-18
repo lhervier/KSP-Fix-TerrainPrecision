@@ -394,6 +394,13 @@ its body, and save it there: a patch of this mod, on by default, prevents it.
 
 **→ Full chapter: [Limits and solutions: Kerbal Konstructs](docs/limits-and-solutions/kerbal-konstructs.md)**
 
+**BurstPQS.** It holds the ground still on the bodies it builds, but not the statics nor the scatter, which
+this mod still corrects. This mod supports it by itself: its terrain fix steps back on the bodies BurstPQS
+builds, and takes over on the Earth, the Moon and Mars, which the latest Real Solar System (20.1.3) leaves
+to stock; its scatter fix hangs every holder there.
+
+**→ Full chapter: [Limits and solutions: BurstPQS](docs/limits-and-solutions/burst-pqs.md)**
+
 ## Work in progress
 
 What is still to check, one mod at a time, each on a page of its own ([Work in
@@ -431,13 +438,6 @@ Parallax stand in the way, first its rocks that turn at every load, corrected by
 this mod makes its scatter grow the same at every load.
 
 **→ Full chapter: [Work in progress: Parallax](docs/work-in-progress/parallax.md)**
-
-**BurstPQS.** In progress, measured: every campaign played again with BurstPQS. It holds the ground still, but
-not the statics nor the scatter, which this mod's scatter fix, as it is, misses; it leaves the Earth, the Moon
-and Mars of Real Solar System to stock; and the Mun shows darker quads in a first flight, from Kopernicus's
-BurstPQS plugin for its KSC scatter mask.
-
-**→ Full chapter: [Work in progress: BurstPQS](docs/work-in-progress/burst-pqs.md)**
 
 **Tilt'Em.** Planned, read in the source: the ground of a tilted body, when a craft comes down to where
 the world turns with it.

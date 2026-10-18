@@ -51,15 +51,6 @@ scatter grow the same at every load.
 
 **→ Full chapter: [Work in progress: Parallax](work-in-progress/parallax.md)**
 
-## BurstPQS
-
-In progress, measured: every campaign played again with BurstPQS. It holds the ground still, but not the
-statics nor the scatter, which this mod's scatter fix, as it is, misses; it leaves the Earth, the Moon and
-Mars of Real Solar System to stock; the Mun shows darker quads in a first flight, from Kopernicus's
-BurstPQS plugin for its KSC scatter mask; and its code shows memory released twice or never, to dig.
-
-**→ Full chapter: [Work in progress: BurstPQS](work-in-progress/burst-pqs.md)**
-
 ## Tilt'Em
 
 Planned, read in the source: the ground of a tilted body, when a craft comes down to where the world

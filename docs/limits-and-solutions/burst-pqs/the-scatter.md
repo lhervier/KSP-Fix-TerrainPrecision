@@ -1,8 +1,8 @@
 # BurstPQS: the scatter
 
-Part of [Terrain Precision Fix](../../../README.md), one point of [Work in progress](../../work-in-progress.md), on [BurstPQS](../../work-in-progress/burst-pqs.md).
+Part of [Terrain Precision Fix](../../../README.md), one limit of [Limits and solutions](../../limits-and-solutions.md), on [BurstPQS](../../limits-and-solutions/burst-pqs.md).
 
-**Status: in progress — fixed, measured.** BurstPQS lets stock spawn the scatter,
+**Status: checked, a problem this mod fixes, the scatter fix on by default.** BurstPQS lets stock spawn the scatter,
 and stock still places each scatter holder through the sphere, rounded at planet scale. The ground no longer
 moves; the holders do, and the rocks, grass and trees move against the ground. This mod's scatter fix first
 missed most of them with BurstPQS; it now hangs them all. Read by KSP Diag - Scatter, in millimetres.
