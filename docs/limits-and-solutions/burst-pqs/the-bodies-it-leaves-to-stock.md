@@ -69,7 +69,7 @@ nothing left to stock.
 
 - **Wait for the next release of Real Solar System.** Until then, this mod's terrain fix stays needed on the
   Earth, the Moon and Mars. Once it is out, BurstPQS builds every body of the planet packs checked here.
-- **Wait for the fix of the darker quads to reach Kopernicus** (see
+- **Wait for the next release of Kopernicus**, which fixes the darker quads (see
   [Darker quads: not from this mod](../burst-pqs.md#darker-quads-not-from-this-mod),
-  [BurstPQS issue #15](https://github.com/Phantomical/BurstPQS/issues/15)). With both, dropping this mod's
+  [BurstPQS issue #14](https://github.com/Phantomical/BurstPQS/issues/14)). With both, dropping this mod's
   terrain fix, to depend on BurstPQS for the ground, can be considered.

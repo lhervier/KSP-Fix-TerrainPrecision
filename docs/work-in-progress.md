@@ -18,7 +18,8 @@ ocean, a mission spawning a craft, the other stock statics, and the scatter fix 
 ## KSP Community Fixes
 
 Planned: its terrain patches, read on release 1.40.1, to read again on 1.41.1, the release every campaign
-ran with.
+ran with; and the ground fix one of its maintainers plans for it, which this mod's terrain fix would have to
+step back from.
 
 **→ Full chapter: [Work in progress: KSP Community Fixes](work-in-progress/ksp-community-fixes.md)**
 
@@ -28,6 +29,13 @@ Planned: a body from a planet pack, where nothing has been measured yet; the cam
 Outer Planets Mod.
 
 **→ Full chapter: [Work in progress: Kopernicus](work-in-progress/kopernicus.md)**
+
+## BurstPQS
+
+Planned: its release 1.0.28, which changes how it places the quads this mod's scatter fix hangs the
+scatter from; every campaign ran with 1.0.27.
+
+**→ Full chapter: [Work in progress: BurstPQS](work-in-progress/burst-pqs.md)**
 
 ## Real Solar System
 

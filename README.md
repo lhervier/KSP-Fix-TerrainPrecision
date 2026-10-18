@@ -419,7 +419,8 @@ the terrain fix.
 **→ Full chapter: [Work in progress: stock](docs/work-in-progress/stock.md)**
 
 **KSP Community Fixes.** Planned: its terrain patches, read on release 1.40.1, to read again on 1.41.1,
-the release every campaign ran with.
+the release every campaign ran with; and the ground fix one of its maintainers plans for it, which this
+mod's terrain fix would have to step back from.
 
 **→ Full chapter: [Work in progress: KSP Community Fixes](docs/work-in-progress/ksp-community-fixes.md)**
 
@@ -427,6 +428,11 @@ the release every campaign ran with.
 prepared on Outer Planets Mod.
 
 **→ Full chapter: [Work in progress: Kopernicus](docs/work-in-progress/kopernicus.md)**
+
+**BurstPQS.** Planned: its release 1.0.28, which changes how it places the quads this mod's scatter fix
+hangs the scatter from; every campaign ran with 1.0.27.
+
+**→ Full chapter: [Work in progress: BurstPQS](docs/work-in-progress/burst-pqs.md)**
 
 **Real Solar System.** In progress: coming back to a craft left parked on the Moon, and the rest of the
 series on its ground workaround. Planned: its runway fix as released, and descents onto Venus, Mars and

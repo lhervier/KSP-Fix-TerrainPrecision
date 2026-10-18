@@ -15,7 +15,8 @@ hangs every holder there.
 
 Unless a page says otherwise, each limit is measured in KSP 1.12.5 with Harmony, ModuleManager, KSP
 Community Fixes 1.41.1, BurstPQS 1.0.27 and what it requires (Kopernicus 251, Modular Flight Integrator,
-KSPTextureLoader, KSPBurst), and this mod, plus the instrument and the mods it names.
+KSPTextureLoader, KSPBurst), and this mod, plus the instrument and the mods it names. Release 1.0.28 is not
+checked yet: [Work in progress: BurstPQS](../work-in-progress/burst-pqs.md).
 
 ## The campaigns played with BurstPQS
 
@@ -54,7 +55,8 @@ flight.
 Seen during these campaigns, with or without this mod: in the first flight after KSP starts, whole quads of
 the ground of the Mun are drawn much darker than their neighbours for a minute or two, the relief running on
 unbroken from one to the next; also on Minmus, Laythe and Mercury of Real Solar System. Not on KSP with KSP
-Community Fixes alone, nor with Kopernicus alone. The cause is the plugin Kopernicus ships for BurstPQS with
-its KSC scatter mask, which wipes the colour of every quad of a body's first build. Reported to BurstPQS,
-with the protocol, the screenshots and the cause:
-[issue #15](https://github.com/Phantomical/BurstPQS/issues/15).
+Community Fixes alone, nor with Kopernicus alone. The cause is in Kopernicus: the plugin it ships for
+BurstPQS with its KSC scatter mask wipes the colour of every quad of a body's first build. Already reported to
+BurstPQS as [issue #14](https://github.com/Phantomical/BurstPQS/issues/14), traced there to Kopernicus by
+BurstPQS's author, and to be fixed in the next release of Kopernicus. Our report, with the protocol and the
+screenshots, was closed as its duplicate: [issue #15](https://github.com/Phantomical/BurstPQS/issues/15).
