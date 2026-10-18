@@ -101,7 +101,7 @@ KSP Community Fixes, which never names a holder
 the only one that uses the holders, through the scatter's pool
 ([Kopernicus: scatter with colliders](non-regression/kopernicus/scatter-with-colliders.md)), Parallax,
 which has a scatter of its own
-([Parallax: its terrain and its scatter](work-in-progress/parallax/its-terrain-and-its-scatter.md)), and
+([Parallax: what it does with the ground](non-regression/parallax/what-it-does-with-the-ground.md#read-in-its-source)), and
 TUFX 1.1.1, which works on the camera's image and never looks for a terrain object, and Kerbal Planetary
 Base Systems, which adds parts and never looks for one either
 ([Kerbal Planetary Base Systems: a base on the ground](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground.md)).

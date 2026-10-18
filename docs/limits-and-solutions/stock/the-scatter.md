@@ -54,5 +54,5 @@ more than 0.18 mm across a move of the world
 ([Checking the scatter: driving on while the world moves](../../checking-the-culprit-driving/the-scatter.md)),
 nor along a flight ([Checking the scatter: in flight](../../checking-the-culprit-flight/the-scatter.md)).
 
-Parallax's own scatter is not stock scatter, and is a point of Work in progress:
-[Parallax: its terrain and its scatter](../../work-in-progress/parallax/its-terrain-and-its-scatter.md).
+Parallax's own scatter is not stock scatter, and is checked on its own:
+[Non-regression tests: Parallax](../../non-regression/parallax.md).

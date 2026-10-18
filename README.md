@@ -369,6 +369,12 @@ slope jumps without this mod, and stays within a millimetre with it.
 
 **→ Full chapter: [Non-regression tests: Kerbal Planetary Base Systems](docs/non-regression/kerbal-planetary-base-systems.md)**
 
+**Parallax.** It sets rocks and trees on the ground this mod places, and they follow it. A craft resting on
+one of its rocks stays on it, and a craft on its ground comes back as it does without Parallax, after a
+load and after a trip out of range.
+
+**→ Full chapter: [Non-regression tests: Parallax](docs/non-regression/parallax.md)**
+
 ## Limits and solutions
 
 What this mod makes worse, or would break without a patch of its own, with the solution to each, one mod
@@ -432,12 +438,6 @@ Mercury.
 the rest of the group editor, a launch from its launch sites, and the ground it flattens.
 
 **→ Full chapter: [Work in progress: Kerbal Konstructs](docs/work-in-progress/kerbal-konstructs.md)**
-
-**Parallax.** In progress: a craft resting on one of its rocks, loaded again and again. Its rocks
-turned at every load, in the way of that test, until Parallax Continued 1.0.5, which carries a change of
-ours; this mod makes its scatter grow the same at every load.
-
-**→ Full chapter: [Work in progress: Parallax](docs/work-in-progress/parallax.md)**
 
 **Tilt'Em.** Planned, read in the source: the ground of a tilted body, when a craft comes down to where
 the world turns with it.

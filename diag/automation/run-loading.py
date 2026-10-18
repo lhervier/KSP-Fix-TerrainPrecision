@@ -7,7 +7,9 @@ Terrain Height or both installed, copy the save into a sandbox game, wait for th
     python run-loading.py --folder <your sandbox game> --save reload-kerbin-2parts --loads 6 --out out
 
 For each loading it does what the protocol asks a player to do, in the same order: load the save, wait for the
-digits to stop moving, record. Every instrument installed records at every loading. It never saves the game.
+digits to stop moving, record. With --warp, it warps through that much game time after each record, as a
+player who plays on before loading the save again. Every instrument installed records at every loading. It never
+saves the game.
 At the end it takes a screenshot of each table, that window alone, prints what it read, writes it to lines.json, and quits KSP
 (unless --keep-running is given). The windows of the instruments are hidden once the flight opens, so that
 the scene shows, and each is shown only for its screenshot.
@@ -91,6 +93,8 @@ def main():
     parser.add_argument("--folder", required=True, help="the sandbox game under saves/ the save was copied into")
     parser.add_argument("--save", required=True, help="the save, without .sfs")
     parser.add_argument("--loads", type=int, default=6, help="how many loadings")
+    parser.add_argument("--warp", type=float, default=0,
+                        help="seconds of game time to warp through after each record, before the next loading")
     parser.add_argument("--out", default="out", help="where lines.json and the screenshots go")
     parser.add_argument("--screen-width", type=float, default=1280, help="the width of KSP's window, in pixels")
     parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
@@ -128,6 +132,11 @@ def main():
         if "terrainheight" in row:
             parts.append("Ground under craft %14.3f mm" % row["terrainheight"]["CollisionSurfaceMm"])
         log("  load %d  %s" % (load, "  ".join(parts)))
+        if options.warp and load < options.loads:
+            # The time played between two loadings, as a player who warps before loading the save again: the
+            # save itself comes back at its own time.
+            call("warp_to", seconds=options.warp)
+            log("  warped %.0f s" % options.warp)
 
     screenshots(options.out, options.save, instruments, options.screen_width)
     with open(os.path.join(options.out, "lines.json"), "w", newline="") as f:

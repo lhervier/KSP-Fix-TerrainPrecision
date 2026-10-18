@@ -1,0 +1,8 @@
+16:19:59 instruments: landedvessel, terrainheight
+16:20:31   load 1  Settled    600065142.625 mm  Moved    47.213 mm  Ground under craft      64830.053 mm
+16:21:12   load 2  Settled    600065157.542 mm  Moved    62.130 mm  Ground under craft      64844.972 mm
+16:21:25   load 3  Settled    600065107.452 mm  Moved    12.040 mm  Ground under craft      64794.913 mm
+16:22:22   load 4  Settled    600065084.597 mm  Moved   -10.815 mm  Ground under craft      64772.059 mm
+16:23:03   load 5  Settled    600065100.468 mm  Moved     5.057 mm  Ground under craft      64787.939 mm
+16:23:50   load 6  Settled    600065130.206 mm  Moved    34.794 mm  Ground under craft      64817.634 mm
+16:23:52 done

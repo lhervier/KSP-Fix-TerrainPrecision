@@ -71,3 +71,11 @@ ground, and its parts are held up by stock modules; a base reloaded on a slope j
 and stays within a millimetre with it.
 
 **→ Full chapter: [Non-regression tests: Kerbal Planetary Base Systems](non-regression/kerbal-planetary-base-systems.md)**
+
+## Parallax
+
+It draws the terrain with shaders of its own and sets rocks and trees on the ground this mod places. Its
+objects follow the ground, a craft resting on one of its rocks stays on it, and a craft on its ground comes
+back as it does without it, after a load and after a trip out of range.
+
+**→ Full chapter: [Non-regression tests: Parallax](non-regression/parallax.md)**

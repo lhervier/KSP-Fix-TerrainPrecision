@@ -1,0 +1,31 @@
+17:53:01   trip 1, line 1,     26 m: Settled    600391406.171 mm  Moved   40.867 mm  Ground under craft   391093.395 mm
+17:53:50   trip 1, line 2,    727 m: Settled    600391406.167 mm  Moved    0.000 mm  Ground under craft   391093.395 mm
+17:55:47   trip 1, line 3,   2627 m: too far away to read
+17:57:36   trip 1, line 4,   1998 m: Settled    600391406.148 mm  Moved    0.000 mm  Ground under craft   391084.112 mm
+17:59:58   trip 1, line 5,     26 m: Settled    600391396.835 mm  Moved   -9.313 mm  Ground under craft   391084.170 mm
+18:00:03   trip 2, line 1,     26 m: Settled    600391396.835 mm  Moved   -9.313 mm  Ground under craft   391084.170 mm
+18:00:54   trip 2, line 2,    727 m: Settled    600391396.835 mm  Moved    0.000 mm  Ground under craft   391084.170 mm
+18:02:51   trip 2, line 3,   2628 m: too far away to read
+18:04:40   trip 2, line 4,   1999 m: Settled    600391396.845 mm  Moved    0.000 mm  Ground under craft   391070.875 mm
+18:06:55   trip 2, line 5,     27 m: Settled    600391383.611 mm  Moved  -13.234 mm  Ground under craft   391070.946 mm
+18:07:01   trip 3, line 1,     27 m: Settled    600391383.611 mm  Moved  -13.234 mm  Ground under craft   391070.946 mm
+18:07:49   trip 3, line 2,    727 m: Settled    600391383.611 mm  Moved    0.000 mm  Ground under craft   391070.946 mm
+18:09:46   trip 3, line 3,   2628 m: too far away to read
+18:11:35   trip 3, line 4,   1999 m: Settled    600391383.634 mm  Moved    0.000 mm  Ground under craft   391077.522 mm
+18:13:59   trip 3, line 5,     26 m: Settled    600391390.303 mm  Moved    6.669 mm  Ground under craft   391077.580 mm
+18:14:04   trip 4, line 1,     26 m: Settled    600391390.303 mm  Moved    6.669 mm  Ground under craft   391077.580 mm
+18:14:54   trip 4, line 2,    727 m: Settled    600391390.303 mm  Moved    0.000 mm  Ground under craft   391077.580 mm
+18:16:50   trip 4, line 3,   2627 m: too far away to read
+18:18:40   trip 4, line 4,   1999 m: Settled    600391390.349 mm  Moved    0.000 mm  Ground under craft   391065.578 mm
+18:20:57   trip 4, line 5,     27 m: Settled    600391378.186 mm  Moved  -12.164 mm  Ground under craft   391065.507 mm
+18:21:02   trip 5, line 1,     27 m: Settled    600391378.186 mm  Moved  -12.164 mm  Ground under craft   391065.507 mm
+18:21:53   trip 5, line 2,    727 m: Settled    600391378.186 mm  Moved    0.000 mm  Ground under craft   391065.507 mm
+18:23:48   trip 5, line 3,   2628 m: too far away to read
+18:25:37   trip 5, line 4,   1999 m: Settled    600391378.198 mm  Moved    0.000 mm  Ground under craft   391091.278 mm
+18:27:55   trip 5, line 5,     27 m: Settled    600391403.866 mm  Moved   25.668 mm  Ground under craft   391091.072 mm
+18:28:00   trip 6, line 1,     27 m: Settled    600391403.866 mm  Moved   25.668 mm  Ground under craft   391091.072 mm
+18:28:50   trip 6, line 2,    727 m: Settled    600391403.866 mm  Moved    0.000 mm  Ground under craft   391091.072 mm
+18:30:47   trip 6, line 3,   2627 m: too far away to read
+18:32:37   trip 6, line 4,   2000 m: Settled    600391403.920 mm  Moved    0.000 mm  Ground under craft   391096.678 mm
+18:34:55   trip 6, line 5,     27 m: Settled    600391409.325 mm  Moved    5.405 mm  Ground under craft   391096.588 mm
+18:34:58 done

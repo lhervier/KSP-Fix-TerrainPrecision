@@ -596,20 +596,44 @@ session is here twice, `-without-this-mod` and `-fix`. Read in
 ## With Parallax
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
-[Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) 1.0.4 rebuilt with the first commit
-of our change, since merged as
-[pull request #157](https://github.com/Gameslinx/Parallax-Continued/pull/157) and released in 1.0.5,
-with its three packs of stock textures and what it requires,
-[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders),
-[KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin), and this mod, or not.
-Read in [Parallax: its terrain and its scatter](../docs/work-in-progress/parallax/its-terrain-and-its-scatter.md).
+[Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) with its stock textures and what it
+requires, Deferred, and this mod at `logLevel = Debug`, or not: each session is here twice,
+`-without-this-mod` and `-fix`. Read in
+[Non-regression tests: Parallax](../docs/non-regression/parallax.md).
 
-- [`capsule-on-a-rock-mun.sfs`](work-in-progress/parallax/its-terrain-and-its-scatter/capsule-on-a-rock-mun.sfs) —
-  a Mk1 capsule on an empty FL-T100 fuel tank, landed on top of a rock of the Mun, saved with Parallax
-  rebuilt with the change.
-- [`rocks-eve-jeb.sfs`](work-in-progress/parallax/its-terrain-and-its-scatter/rocks-eve-jeb.sfs) —
+On Parallax Continued 1.0.5, with both instruments and
+[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer):
+
+- [`capsule-on-a-rock-mun.sfs`](non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock-mun.sfs) — a Mk1
+  capsule on an empty FL-T100 fuel tank, landed on top of a rock of the Mun. Loaded twelve times by
+  `run-loading.py` with an hour of time warp before each load, then the same in a KSP started again:
+  `rock-session1-*` and `rock-session2-*` in
+  [`a-craft-on-one-of-its-rocks/`](non-regression/parallax/a-craft-on-one-of-its-rocks/), each with its `KSP.log`
+  (`.log.gz`), what the script printed (`-script.txt`) and every line it recorded (`-lines.json`); the
+  screenshots of the tables in
+  [`imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/`](../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks).
+- The four saves of [the loading protocol](#the-loading-protocol), loaded six times each by
+  `run-loading.py`: `loading-<body>-*` in
+  [`loading-a-craft-on-its-ground/`](non-regression/parallax/loading-a-craft-on-its-ground/), what the script printed and every
+  line it recorded, one `KSP.log` per session (`loading-without-this-mod.log.gz`, `loading-fix.log.gz`);
+  the screenshots of the tables in
+  [`imgs/non-regression/parallax/loading-a-craft-on-its-ground/`](../imgs/non-regression/parallax/loading-a-craft-on-its-ground).
+- [`approach-kerbin-tundra.sfs`](non-regression/parallax/coming-back-to-a-craft-on-its-ground/approach-kerbin-tundra.sfs) — the
+  two craft of [the approach protocol](#the-approach-protocol) in the tundra of Kerbin, at 72° north.
+  Six round trips by `run-approach.py --heading 135`: `approach-*` in
+  [`coming-back-to-a-craft-on-its-ground/`](non-regression/parallax/coming-back-to-a-craft-on-its-ground/), with the
+  `KSP.log`, what the script printed and every line it recorded; the screenshots of the tables, trip by
+  trip, in
+  [`imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/`](../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground).
+
+On Parallax Continued 1.0.4 rebuilt with the first commit of our change, since merged as
+[pull request #157](https://github.com/Gameslinx/Parallax-Continued/pull/157) and released in 1.0.5, with
+[KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) and
+[KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin):
+
+- [`rocks-eve-jeb.sfs`](non-regression/parallax/its-scatter-grows-the-same-at-every-load/rocks-eve-jeb.sfs) —
   Jebediah Kerman on EVA on the ground of Eve, among rocks and plants.
-- [`the-same-objects/`](work-in-progress/parallax/its-terrain-and-its-scatter/the-same-objects/) — that
+- [`the-same-objects/`](non-regression/parallax/its-scatter-grows-the-same-at-every-load/the-same-objects/) — that
   save loaded again at once, twelve times, without this mod (`without-this-mod/`) and with it
   (`with-this-mod/`): the line of KSP Diag - Floating Origin at each load (`readings.json`), the output
   of the script and the `KSP.log` of the session.

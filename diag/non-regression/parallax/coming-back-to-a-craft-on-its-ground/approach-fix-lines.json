@@ -1,0 +1,422 @@
+[
+ {
+  "trip": 1,
+  "line": 1,
+  "distance": 26.041185198418088,
+  "landed_vessel": {
+   "OnRailsMm": 600391365.3044649,
+   "SettledMm": 600391366.2151332,
+   "MovedMm": 0.9106682538986206
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.60675416887,
+   "ComputedTerrainMm": 390235.50499102566
+  }
+ },
+ {
+  "trip": 1,
+  "line": 2,
+  "distance": 726.5633117008518,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.2231859,
+   "SettledMm": 600391366.2231859,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.60675416887,
+   "ComputedTerrainMm": 390235.50500220153
+  }
+ },
+ {
+  "trip": 1,
+  "line": 3,
+  "distance": 2627.0216039693037,
+  "landed_vessel": {
+   "OnRailsMm": null,
+   "SettledMm": null,
+   "MovedMm": null
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": null,
+   "ComputedTerrainMm": null
+  }
+ },
+ {
+  "trip": 1,
+  "line": 4,
+  "distance": 1998.1032027140877,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.2053444,
+   "SettledMm": 600391366.2053444,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.6057371646,
+   "ComputedTerrainMm": 390235.5039541144
+  }
+ },
+ {
+  "trip": 1,
+  "line": 5,
+  "distance": 26.915598590063894,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.2053444,
+   "SettledMm": 600391366.1472963,
+   "MovedMm": -0.058048129081726074
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.6224062089,
+   "ComputedTerrainMm": 390235.5046758894
+  }
+ },
+ {
+  "trip": 2,
+  "line": 1,
+  "distance": 26.91561321166162,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.2053444,
+   "SettledMm": 600391366.1472963,
+   "MovedMm": -0.058048129081726074
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.6224062089,
+   "ComputedTerrainMm": 390235.5046758894
+  }
+ },
+ {
+  "trip": 2,
+  "line": 2,
+  "distance": 727.460954094634,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1472963,
+   "SettledMm": 600391366.1472963,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.6224062089,
+   "ComputedTerrainMm": 390235.5046758894
+  }
+ },
+ {
+  "trip": 2,
+  "line": 3,
+  "distance": 2627.4478602797667,
+  "landed_vessel": {
+   "OnRailsMm": null,
+   "SettledMm": null,
+   "MovedMm": null
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": null,
+   "ComputedTerrainMm": null
+  }
+ },
+ {
+  "trip": 2,
+  "line": 4,
+  "distance": 1999.2644948068817,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1184714,
+   "SettledMm": 600391366.1184714,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.60575648956,
+   "ComputedTerrainMm": 390235.50523794256
+  }
+ },
+ {
+  "trip": 2,
+  "line": 5,
+  "distance": 26.606209019942728,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1184714,
+   "SettledMm": 600391366.1598505,
+   "MovedMm": 0.04137909412384033
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.60575648956,
+   "ComputedTerrainMm": 390235.5012621265
+  }
+ },
+ {
+  "trip": 3,
+  "line": 1,
+  "distance": 26.606311557781712,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1184714,
+   "SettledMm": 600391366.1598505,
+   "MovedMm": 0.04137909412384033
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.60575648956,
+   "ComputedTerrainMm": 390235.5012621265
+  }
+ },
+ {
+  "trip": 3,
+  "line": 2,
+  "distance": 727.1303788221438,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1598505,
+   "SettledMm": 600391366.1598505,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.60575648956,
+   "ComputedTerrainMm": 390235.5012621265
+  }
+ },
+ {
+  "trip": 3,
+  "line": 3,
+  "distance": 2627.4090756789524,
+  "landed_vessel": {
+   "OnRailsMm": null,
+   "SettledMm": null,
+   "MovedMm": null
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": null,
+   "ComputedTerrainMm": null
+  }
+ },
+ {
+  "trip": 3,
+  "line": 4,
+  "distance": 1999.8156971991755,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1235254,
+   "SettledMm": 600391366.1235254,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.59845550265,
+   "ComputedTerrainMm": 390235.5034278007
+  }
+ },
+ {
+  "trip": 3,
+  "line": 5,
+  "distance": 26.891309121174935,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1235254,
+   "SettledMm": 600391366.1649045,
+   "MovedMm": 0.04137909412384033
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.59414138366,
+   "ComputedTerrainMm": 390235.49945186824
+  }
+ },
+ {
+  "trip": 4,
+  "line": 1,
+  "distance": 26.891309968843316,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1235254,
+   "SettledMm": 600391366.1649045,
+   "MovedMm": 0.04137909412384033
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.59414138366,
+   "ComputedTerrainMm": 390235.49945186824
+  }
+ },
+ {
+  "trip": 4,
+  "line": 2,
+  "distance": 727.3546342773963,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1649045,
+   "SettledMm": 600391366.1649045,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.59414138366,
+   "ComputedTerrainMm": 390235.49945186824
+  }
+ },
+ {
+  "trip": 4,
+  "line": 3,
+  "distance": 2627.757030393767,
+  "landed_vessel": {
+   "OnRailsMm": null,
+   "SettledMm": null,
+   "MovedMm": null
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": null,
+   "ComputedTerrainMm": null
+  }
+ },
+ {
+  "trip": 4,
+  "line": 4,
+  "distance": 1997.8460910680367,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1615715,
+   "SettledMm": 600391366.1615715,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.5784534877,
+   "ComputedTerrainMm": 390235.50186876673
+  }
+ },
+ {
+  "trip": 4,
+  "line": 5,
+  "distance": 26.77236431983743,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1615715,
+   "SettledMm": 600391366.2196196,
+   "MovedMm": 0.058048129081726074
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.5970758647,
+   "ComputedTerrainMm": 390235.50114710815
+  }
+ },
+ {
+  "trip": 5,
+  "line": 1,
+  "distance": 26.77240657267689,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1615715,
+   "SettledMm": 600391366.2196196,
+   "MovedMm": 0.058048129081726074
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.5970758647,
+   "ComputedTerrainMm": 390235.50114710815
+  }
+ },
+ {
+  "trip": 5,
+  "line": 2,
+  "distance": 727.2889032699509,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.2196196,
+   "SettledMm": 600391366.2196196,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.5970758647,
+   "ComputedTerrainMm": 390235.50114710815
+  }
+ },
+ {
+  "trip": 5,
+  "line": 3,
+  "distance": 2627.3732976183696,
+  "landed_vessel": {
+   "OnRailsMm": null,
+   "SettledMm": null,
+   "MovedMm": null
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": null,
+   "ComputedTerrainMm": null
+  }
+ },
+ {
+  "trip": 5,
+  "line": 4,
+  "distance": 1997.723732133688,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.2331266,
+   "SettledMm": 600391366.2331266,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.5692037083,
+   "ComputedTerrainMm": 390235.5022771517
+  }
+ },
+ {
+  "trip": 5,
+  "line": 5,
+  "distance": 26.604859993702416,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.2331266,
+   "SettledMm": 600391366.1584094,
+   "MovedMm": -0.07471728324890137
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.5982277943,
+   "ComputedTerrainMm": 390235.4997447692
+  }
+ },
+ {
+  "trip": 6,
+  "line": 1,
+  "distance": 26.604860160903883,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.2331266,
+   "SettledMm": 600391366.1584094,
+   "MovedMm": -0.07471728324890137
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.5982277943,
+   "ComputedTerrainMm": 390235.4997447692
+  }
+ },
+ {
+  "trip": 6,
+  "line": 2,
+  "distance": 727.0875522112536,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1584094,
+   "SettledMm": 600391366.1584094,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.5982277943,
+   "ComputedTerrainMm": 390235.4997447692
+  }
+ },
+ {
+  "trip": 6,
+  "line": 3,
+  "distance": 2627.4727267750345,
+  "landed_vessel": {
+   "OnRailsMm": null,
+   "SettledMm": null,
+   "MovedMm": null
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": null,
+   "ComputedTerrainMm": null
+  }
+ },
+ {
+  "trip": 6,
+  "line": 4,
+  "distance": 2000.2489470136363,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1884836,
+   "SettledMm": 600391366.1884836,
+   "MovedMm": 0
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.62830206286,
+   "ComputedTerrainMm": 390235.49635894597
+  }
+ },
+ {
+  "trip": 6,
+  "line": 5,
+  "distance": 26.376042876611773,
+  "landed_vessel": {
+   "OnRailsMm": 600391366.1884836,
+   "SettledMm": 600391366.1471044,
+   "MovedMm": -0.04137921333312988
+  },
+  "terrain_height": {
+   "CollisionSurfaceMm": 391053.62830206286,
+   "ComputedTerrainMm": 390235.50033476204
+  }
+ }
+]

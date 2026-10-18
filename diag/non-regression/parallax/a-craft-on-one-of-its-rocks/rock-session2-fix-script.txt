@@ -1,0 +1,25 @@
+16:10:36 instruments: landedvessel, terrainheight
+16:11:27   load 1  Settled    202146067.531 mm  Moved    -2.608 mm  Ground under craft    2145724.675 mm
+16:11:32   warped 3600 s
+16:12:13   load 2  Settled    202146070.179 mm  Moved     0.040 mm  Ground under craft    2145727.132 mm
+16:12:18   warped 3600 s
+16:12:34   load 3  Settled    202146067.613 mm  Moved    -2.526 mm  Ground under craft    2145724.620 mm
+16:12:39   warped 3600 s
+16:13:27   load 4  Settled    202146070.175 mm  Moved     0.036 mm  Ground under craft    2145727.125 mm
+16:13:31   warped 3600 s
+16:13:48   load 5  Settled    202146070.258 mm  Moved     0.119 mm  Ground under craft    2145727.089 mm
+16:13:53   warped 3600 s
+16:14:22   load 6  Settled    202146070.159 mm  Moved     0.020 mm  Ground under craft    2145727.120 mm
+16:14:26   warped 3600 s
+16:15:13   load 7  Settled    202146067.550 mm  Moved    -2.589 mm  Ground under craft    2145724.689 mm
+16:15:17   warped 3600 s
+16:16:06   load 8  Settled    202146067.526 mm  Moved    -2.613 mm  Ground under craft    2145724.665 mm
+16:16:10   warped 3600 s
+16:16:41   load 9  Settled    202146067.538 mm  Moved    -2.601 mm  Ground under craft    2145724.680 mm
+16:16:45   warped 3600 s
+16:17:28   load 10  Settled    202146067.551 mm  Moved    -2.588 mm  Ground under craft    2145724.692 mm
+16:17:33   warped 3600 s
+16:17:50   load 11  Settled    202146067.613 mm  Moved    -2.526 mm  Ground under craft    2145724.622 mm
+16:17:55   warped 3600 s
+16:18:47   load 12  Settled    202146067.524 mm  Moved    -2.615 mm  Ground under craft    2145724.670 mm
+16:18:49 done
