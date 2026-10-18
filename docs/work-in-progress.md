@@ -45,9 +45,9 @@ editor, a launch from its launch sites, and the ground it flattens.
 
 ## Parallax
 
-In progress: a craft resting on one of its rocks, loaded again and again. Bugs of Parallax stand in the
-way, first its rocks that turn at every load, corrected by a change on our fork; this mod makes its
-scatter grow the same at every load.
+In progress: a craft resting on one of its rocks, loaded again and again. Its rocks turned at every
+load, in the way of that test, until Parallax Continued 1.0.5, which carries a change of ours; this mod
+makes its scatter grow the same at every load.
 
 **→ Full chapter: [Work in progress: Parallax](work-in-progress/parallax.md)**
 

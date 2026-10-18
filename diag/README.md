@@ -597,9 +597,9 @@ session is here twice, `-without-this-mod` and `-fix`. Read in
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) 1.0.4 rebuilt with the first commit
-of the change on the branch
-[`fix/scatter-rotation`](https://github.com/Gameslinx/Parallax-Continued/compare/1.0.4...lhervier:KSP-ExtMod-ParallaxContinued:fix/scatter-rotation)
-of our fork, with its three packs of stock textures and what it requires,
+of our change, since merged as
+[pull request #157](https://github.com/Gameslinx/Parallax-Continued/pull/157) and released in 1.0.5,
+with its three packs of stock textures and what it requires,
 [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders),
 [KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin), and this mod, or not.
 Read in [Parallax: its terrain and its scatter](../docs/work-in-progress/parallax/its-terrain-and-its-scatter.md).
