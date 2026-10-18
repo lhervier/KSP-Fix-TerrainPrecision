@@ -9,17 +9,24 @@ is built by BurstPQS. On Real Solar System, **the Earth, the Moon and Mars are n
 Solar System, `PQSMod_VertexHeightMapRSS` and `PQSMod_VertexDefineCoastSmooth`, have no Burst version
 (`is not supported by BatchPQS`). The Earth keeps its stock name in the log, `Kerbin`.
 
+**This happens only with Real Solar System 20.1.3, its latest release.** Its master branch, not released yet,
+lets BurstPQS build every body, and the case goes away (see [With the next Real Solar System](#with-the-next-real-solar-system)).
+Until that version is out, this mod's terrain fix stays needed on these three bodies: it takes over where
+BurstPQS gives the body back to stock, and their ground is built and placed without the stock defects.
+
 On those bodies the ground moves as on stock, and with this mod's terrain fix off nothing corrects it.
 [The loading protocol](../../checking-the-culprit-loading.md) on Real Solar System, six loads, ground under
-the craft, spread in millimetres:
+the craft, spread in millimetres; on Mars, the save of
+[This mod's safeguard](../../non-regression/real-solar-system/this-mods-safeguard.md), in Utopia Planitia:
 
-| | BurstPQS | BurstPQS + this mod, terrain fix off | BurstPQS + this mod, terrain fix on | this mod alone (published) |
+| | BurstPQS | BurstPQS + this mod, terrain fix off | BurstPQS + this mod, terrain fix on | this mod alone |
 |---|---|---|---|---|
-| Earth | 792 | 1 080 | **0.27** | 0.3 |
-| Moon | 334 | 272 | **0.13** | 0.1 |
+| Earth | 792 | 1 080 | **0.27** | 0.3 (published) |
+| Moon | 334 | 272 | **0.13** | 0.1 (published) |
+| Mars | 40.8 | 24.9 | **0.13** | 0.12 |
 
-With the terrain fix on, the log says `Earth: terrain placed in double precision`, and the ground holds as
-without BurstPQS. With it off, the same bodies show the stock defects in flight (cousins built in flight:
+With the terrain fix on, the log says `Earth: terrain placed in double precision`, and the same for the Moon
+and Mars: the ground holds as without BurstPQS. With it off, the same bodies show the stock defects in flight (cousins built in flight:
 70.6 / 274.1 / 461.5 mm, median / 90th percentile / largest) and under a rover at a move of the world. With
 this mod as it installs: [the flight protocol](../../checking-the-culprit-flight.md), 0.45 / 1.05 / 2.15
 (0.38 / 0.83 / 2.14 with this mod on KSP alone, published); on the runway of Cape Canaveral, the grass next to
@@ -32,7 +39,7 @@ with or without this mod. The statics fix holds there all the same (see [the cam
 leave the Earth and the Moon of Real Solar System uncorrected. It has to be turned off only on the bodies
 BurstPQS builds, and kept on the bodies it leaves to stock. **It now does so by itself**: `KSP.log` says
 `Earth: terrain given back to stock by BurstPQS`, then `Earth: terrain placed in double precision`, and the
-same for the Moon. The loading protocol again, the terrain fix on: Earth 0.27, Moon 0.18.
+same for the Moon and Mars. The loading protocol again, the terrain fix on: Earth 0.27, Moon 0.18, Mars 0.13.
 
 ## With the next Real Solar System
 
@@ -47,11 +54,12 @@ protocol, six loads, ground under the craft, spread in millimetres:
 |---|---|---|
 | Earth | 846.5 | **0.38** |
 | Moon | 210.9 | **0.15** |
+| Mars | 29.3 | **0.17** |
 
-With that version, BurstPQS holds the ground of these bodies as this mod's terrain fix does (0.3 and 0.1,
-published). The saves were made with Real Solar System 20.1.3, whose height maps are read slightly
-differently: the craft settles once at every load (about 3 mm on the Earth, 134 mm on the Moon), always by the
-same amount.
+With that version, BurstPQS holds the ground of these bodies as this mod's terrain fix does (0.3, 0.1 and
+0.12). The saves were made with Real Solar System 20.1.3, whose height maps are read slightly
+differently: the craft settles once at every load (about 3 mm on the Earth, 134 mm on the Moon, 52 mm on
+Mars), always by the same amount.
 
 **Outer Planets Mod** 2.2.12 (with Kopernicus 251): `BatchPQS enabled for surface` for every body, the
 stock ones and its own (Hale, Ovok, Slate, Tekto, Priax, Polta, Wal, Tal, Thatmo, Nissee, Plock, Karen),

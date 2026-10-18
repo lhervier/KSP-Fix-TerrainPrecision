@@ -7,7 +7,7 @@ jobs, and places it in double precision on its own. It requires Kopernicus. Ever
 played again with it, in two installs: **BurstPQS** (KSP, KSP Community Fixes, BurstPQS and what it requires)
 and **BurstPQS with this mod, as it installs** (its terrain fix steps back by itself on the bodies BurstPQS
 builds; the statics, scatter and anchor fixes on). The short answer so far: BurstPQS holds the ground still, but not the statics nor the scatter, it
-leaves three bodies of Real Solar System to stock, and the Mun shows darker quads in a first flight, from
+leaves three bodies of the latest Real Solar System (20.1.3) to stock, and the Mun shows darker quads in a first flight, from
 Kopernicus's BurstPQS plugin for its KSC scatter mask. This mod now supports BurstPQS by itself: its terrain
 fix steps back on every body BurstPQS builds and keeps correcting the bodies it leaves to stock, and its
 scatter fix hangs every holder there.
@@ -18,17 +18,19 @@ scatter fix hangs every holder there.
 a vessel switch, a move of the world or in a fast flight, and it is the same ground as this mod's terrain fix
 builds. The statics still move without this mod, and now against a ground that holds; with it, they hold.
 This mod's terrain fix steps back by itself on the bodies BurstPQS builds: nothing placed twice, and the
-ground holds as with BurstPQS alone.
+ground holds as with BurstPQS alone. The scatter moves against the ground without this mod, and holds with
+it (see [The scatter](#the-scatter) below). The anchor has nothing to play: BurstPQS never touches it.
 
 **→ Full chapter: [BurstPQS: the campaigns](burst-pqs/the-campaigns.md)**
 
 ## The bodies BurstPQS leaves to stock
 
-**In progress — measured.** On Real Solar System, BurstPQS gives the Earth, the Moon and Mars back to stock,
-and their ground moves as on stock. With this mod's terrain fix off, nothing corrects it; with it on, it
-holds. This mod's terrain fix now goes on correcting them by itself, while it steps back on the bodies
-BurstPQS builds. The next Real Solar System, not released yet, lets BurstPQS build them: built from its
-development version, their ground holds with BurstPQS alone.
+**In progress — measured.** With Real Solar System 20.1.3, its latest release, BurstPQS gives the Earth, the
+Moon and Mars back to stock, and their ground moves as on stock. With this mod's terrain fix off, nothing
+corrects it; with it on, it holds. This mod's terrain fix now takes over on them by itself, while it steps
+back on the bodies BurstPQS builds: until the next Real Solar System is out, it stays needed there. That
+version, on its master branch but not released yet, lets BurstPQS build them, and the case goes away: built
+from it, their ground holds with BurstPQS alone.
 
 **→ Full chapter: [BurstPQS: the bodies it leaves to stock](burst-pqs/the-bodies-it-leaves-to-stock.md)**
 

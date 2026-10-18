@@ -75,11 +75,24 @@ after a move of the world; with it, it drove on, the deck moving by −0.05 and 
 being one of the bodies BurstPQS leaves to stock, the ground next to the runway holds too with this mod: the
 grass 0.24 from one load to the next, +0.14 and +0.24 at a move of the world.
 
+## The scatter
+
+BurstPQS lets stock spawn the scatter, and stock still places each holder through the sphere, rounded at
+planet scale: the ground holds, the rocks, grass and trees move against it, from one load to the next (141 on
+Kerbin, 18 on the Mun, median over the measured vertices) and at every move of the world. This mod's scatter
+fix first missed most of the holders with BurstPQS, those built as the scene opens; it now hangs them all:
+0.065 on Kerbin and 0.013 on the Mun at a load, rocks with colliders included, nothing at a move of the world
+or in flight.
+
+**→ Full chapter: [BurstPQS: the scatter](the-scatter.md)**
+
+## The anchor
+
+Nothing to play. The three stock behaviours this mod's anchor fix corrects, the anchor's collider stopping
+above its bottom, the vessel raised at its load, the anchor riveted one frame late, are in the anchor's part
+and in the loading of a vessel: BurstPQS has no code for either, it only builds and places the terrain.
+
 ## No regression seen
 
 The holder pools in flight and across scene changes: no broken rule. The floating origin, destroyed buildings
-and time warp: the same as without BurstPQS. The scatter was the exception, fixed since, in
-[its own chapter](the-scatter.md).
-
-*Still to play with BurstPQS:* the anchor, a launch pad placed by a mission, a ground station of Kerbal
-Konstructs, Principia, Deferred, Parallax, and the cases played by hand.
+and time warp: the same as without BurstPQS.

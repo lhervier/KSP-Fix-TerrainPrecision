@@ -5,7 +5,9 @@ Python 3: no AI, no package to install. Install KSP-MCPServer and KSP Diag - Ter
 the Making History expansion, copy Capsule.craft into the Ships/VAB folder of a sandbox game, make sure KSP is
 not running, then run:
 
-    python run-launch-pad.py --ksp <KSP folder> --folder <your sandbox game> --launches 6 --out out
+    python run-launch-pad.py --folder <your sandbox game> --launches 6 --out out
+
+It starts the KSP of the environment variable KSPDIR, or the one given with --ksp <KSP folder>.
 
 The launch pad sets itself on the ground once per session of the game, so each launch is played in a
 session of its own, as the protocol asks a player to do: start KSP, open the game, set a time of day in
@@ -98,7 +100,8 @@ def wait_for_digits_to_settle():
 def main():
     global URL
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--ksp", required=True, help="the KSP folder")
+    parser.add_argument("--ksp", default=os.environ.get("KSPDIR"),
+                        help="the KSP folder (default: the environment variable KSPDIR)")
     parser.add_argument("--folder", required=True, help="the sandbox game under saves/ holding the craft")
     parser.add_argument("--craft", default="VAB/Capsule.craft", help="the craft, relative to the Ships folder")
     parser.add_argument("--site", default="Desert_Launch_Site", help="the launch site")
@@ -110,6 +113,8 @@ def main():
     parser.add_argument("--screen-width", type=float, default=1280, help="the width of KSP's window, in pixels")
     parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
     options = parser.parse_args()
+    if not options.ksp:
+        parser.error("give the KSP folder with --ksp, or in KSPDIR")
     URL = "http://127.0.0.1:%d/mcp/" % options.port
     out = os.path.abspath(options.out)
     os.makedirs(out, exist_ok=True)

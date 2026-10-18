@@ -206,7 +206,8 @@ def main():
     parser.add_argument("--creep", type=float, default=0.15,
                         help="cross, loop: the speed across the move of the origin, m/s")
     parser.add_argument("--hold", type=float, default=3.0, help="cross: seconds to stay still after the move")
-    parser.add_argument("--ksp-log", default=r"D:\ksp-dev\KSP.log", help="cross: the KSP.log being written")
+    parser.add_argument("--ksp-log", help="cross, loop: the KSP.log being written (default: the one in the "
+                                          "folder of the environment variable KSPDIR)")
     parser.add_argument("--at-least", type=float, default=30.0,
                         help="loop: the move of the scatter to stop at, in millimetres either way")
     parser.add_argument("--takes", type=int, default=10, help="loop: the most takes to play")
@@ -223,6 +224,10 @@ def main():
     if options.step == "prepare" or options.reload:
         if not options.folder:
             parser.error("prepare and --reload need --folder")
+    if options.step != "prepare" and not options.ksp_log:
+        if not os.environ.get("KSPDIR"):
+            parser.error("cross and loop need the KSP.log: give it with --ksp-log, or the KSP folder in KSPDIR")
+        options.ksp_log = os.path.join(os.environ["KSPDIR"], "KSP.log")
     if options.step == "prepare":
         prepare(options)
         record()

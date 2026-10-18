@@ -52,8 +52,8 @@ install. Anyone can read it top to bottom: it follows the four steps above in th
    that has the Making History expansion. Copy
    [the craft](../../diag/checking-the-culprit-launch-pad/Capsule.craft) into the `Ships/VAB` folder of
    a sandbox game. Make sure KSP is not running: the script starts it and quits it for each launch.
-2. Run `python run-launch-pad.py --ksp <the folder of KSP> --folder <your sandbox game> --launches 6
-   --out screenshots`.
+2. Run `python run-launch-pad.py --folder <your sandbox game> --launches 6 --out screenshots`. It starts
+   the KSP of the environment variable `KSPDIR`; add `--ksp <the folder of KSP>` for another one.
 
 For each launch, it starts KSP and waits for the main menu, opens the game, sets a time of day in
 daylight at the launch site — 317 seconds later at each launch — and launches the craft from the
