@@ -54,8 +54,8 @@ Minmus, on Laythe from the ground and on Mercury of Real Solar System.
 
 ## Its memory
 
-**To dig — read in its code, not yet seen in the game.** Three places in the code of BurstPQS where memory
-is released twice or never: a pinned handle of two noise mods, the Burst versions of the terrain mods
-dropped at each new set-up, and height maps loaded on demand that nothing unloads.
+**To dig — read in its code, not yet seen in the game.** A pinned handle of two noise mods released twice
+at every quad, and the Burst versions of the terrain mods dropped without being freed at each scene change.
+Maps loaded on demand might also stay loaded after a body is left, but no case was found yet where it happens.
 
 **→ Full chapter: [BurstPQS: its memory](burst-pqs/its-memory.md)**
