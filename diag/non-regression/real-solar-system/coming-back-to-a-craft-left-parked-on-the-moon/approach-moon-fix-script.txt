@@ -1,0 +1,40 @@
+19:43:47 session 1: loading approach-moon-rss
+19:44:06   tilt after load: 0.5 deg
+19:44:08   trip 1, line 1,     25 m: Settled   1744212952.606 mm  Moved   53.918 mm  Ground under craft  7112640.316 mm
+19:45:39   trip 1, line 2,    780 m: Settled   1744212952.606 mm  Moved    0.000 mm  Ground under craft  7112640.308 mm
+19:49:10   trip 1, line 3,   2729 m: too far away to read
+19:52:55   trip 1, line 4,   1937 m: Settled   1744212952.606 mm  Moved    0.000 mm  Ground under craft  7112640.313 mm
+19:56:58   trip 1, line 5,     26 m: Settled   1744212952.725 mm  Moved    0.119 mm  Ground under craft  7112640.296 mm
+19:57:02   trip 1: tilt 0.5 deg
+19:57:07   trip 2, line 1,     26 m: Settled   1744212952.725 mm  Moved    0.119 mm  Ground under craft  7112640.296 mm
+19:58:43   trip 2, line 2,    775 m: Settled   1744212952.725 mm  Moved    0.000 mm  Ground under craft  7112640.296 mm
+20:02:14   trip 2, line 3,   2722 m: too far away to read
+20:05:57   trip 2, line 4,   1934 m: Settled   1744212952.725 mm  Moved    0.000 mm  Ground under craft  7112640.295 mm
+20:09:40   trip 2, line 5,     26 m: Settled   1744212953.133 mm  Moved    0.407 mm  Ground under craft  7112640.291 mm
+20:09:43   trip 2: tilt 0.5 deg
+20:09:48   trip 3, line 1,     26 m: Settled   1744212953.133 mm  Moved    0.407 mm  Ground under craft  7112640.291 mm
+20:11:30   trip 3, line 2,    776 m: Settled   1744212953.133 mm  Moved    0.000 mm  Ground under craft  7112640.291 mm
+20:15:01   trip 3, line 3,   2722 m: too far away to read
+20:18:45   trip 3, line 4,   1933 m: Settled   1744212953.133 mm  Moved    0.000 mm  Ground under craft  7112640.307 mm
+20:22:27   trip 3, line 5,     26 m: Settled   1744212952.507 mm  Moved   -0.627 mm  Ground under craft  7112640.308 mm
+20:22:30   trip 3: tilt 0.5 deg
+20:22:35   trip 4, line 1,     26 m: Settled   1744212952.507 mm  Moved   -0.627 mm  Ground under craft  7112640.308 mm
+20:24:18   trip 4, line 2,    775 m: Settled   1744212952.507 mm  Moved    0.000 mm  Ground under craft  7112640.308 mm
+20:27:49   trip 4, line 3,   2721 m: too far away to read
+20:31:32   trip 4, line 4,   1940 m: Settled   1744212952.507 mm  Moved    0.000 mm  Ground under craft  7112640.297 mm
+20:36:24   trip 4, line 5,     26 m: Settled   1744212952.826 mm  Moved    0.319 mm  Ground under craft  7112640.274 mm
+20:36:27   trip 4: tilt 0.5 deg
+20:36:41   trip 5, line 1,     26 m: Settled   1744212952.826 mm  Moved    0.319 mm  Ground under craft  7112640.274 mm
+20:38:14   trip 5, line 2,    776 m: Settled   1744212952.826 mm  Moved    0.000 mm  Ground under craft  7112640.274 mm
+20:41:45   trip 5, line 3,   2723 m: too far away to read
+20:45:28   trip 5, line 4,   1934 m: Settled   1744212952.826 mm  Moved    0.000 mm  Ground under craft  7112640.297 mm
+20:49:13   trip 5, line 5,     26 m: Settled   1744212952.782 mm  Moved   -0.044 mm  Ground under craft  7112640.314 mm
+20:49:16   trip 5: tilt 0.5 deg
+20:49:21   trip 6, line 1,     26 m: Settled   1744212952.782 mm  Moved   -0.044 mm  Ground under craft  7112640.314 mm
+20:51:01   trip 6, line 2,    776 m: Settled   1744212952.782 mm  Moved    0.000 mm  Ground under craft  7112640.314 mm
+20:54:32   trip 6, line 3,   2722 m: too far away to read
+20:58:16   trip 6, line 4,   1934 m: Settled   1744212952.780 mm  Moved    0.000 mm  Ground under craft  7112640.287 mm
+21:01:59   trip 6, line 5,     26 m: Settled   1744212952.588 mm  Moved   -0.192 mm  Ground under craft  7112640.315 mm
+21:02:02   trip 6: tilt 0.5 deg
+21:02:04 session 1: done; 6 upright round trips so far
+21:02:04 done: 6 upright round trips over 1 loads

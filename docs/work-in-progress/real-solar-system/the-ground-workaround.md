@@ -11,8 +11,10 @@ correct for this defect, over 75 loads on the Moon and on Earth
   instead;
 - the same series without this mod, to compare (on the Moon, with the workaround off, the craft
   tipped over at the very first load);
-- on the Moon, the two other moments the workaround runs: coming back to a craft left parked, and
-  switching to one.
+- on the Moon, the other moment the workaround runs: switching to a craft left parked. Coming back to
+  one is played: over six round trips, the workaround ran each time the capsule was handed back to physics
+  and never moved it, with this mod or without
+  ([Coming back to a craft left parked, on the Moon](../../non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon.md)).
 
 If this mod and the workaround got in each other's way, a craft would be moved by the workaround
 (`Moving Vessel` in `KSP.log`), or jump, at loads where it does not without it.

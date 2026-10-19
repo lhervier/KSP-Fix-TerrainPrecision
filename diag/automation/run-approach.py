@@ -24,7 +24,7 @@ import urllib.request
 
 URL = None
 
-# Top speed of the rover between the stops, in metres per second.
+# Top speed of the rover between the stops, in metres per second, unless --speed gives another.
 SPEED = 15
 
 
@@ -106,6 +106,12 @@ def main():
     parser.add_argument("--trips", type=int, default=6, help="how many round trips")
     parser.add_argument("--heading", type=float, default=180.0,
                         help="where the rover drives off to, in degrees from north (default south)")
+    parser.add_argument("--speed", type=float, default=SPEED,
+                        help="top speed of the rover between the stops, in metres per second")
+    parser.add_argument("--slow-from", type=float, default=80,
+                        help="distance from the parked craft, in metres, where the rover slows down on its way back")
+    parser.add_argument("--home-speed", type=float, default=5,
+                        help="top speed of the rover over that last stretch, in metres per second")
     parser.add_argument("--out", default="out", help="where lines.json and the screenshots go")
     parser.add_argument("--screen-width", type=float, default=1280, help="the width of KSP's window, in pixels")
     parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
@@ -140,22 +146,22 @@ def main():
         wait_for_digits_to_settle()
         record(trip, 1, rows)
         # Line 2: past 350 m, the craft packed again.
-        call("drive", heading=away, speed=SPEED, distance=700)
+        call("drive", heading=away, speed=options.speed, distance=700)
         call("wait", seconds=2)
         record(trip, 2, rows)
         # Line 3: past 2500 m, the craft unloaded.
-        call("drive", heading=away, speed=SPEED, distance=1900)
+        call("drive", heading=away, speed=options.speed, distance=1900)
         call("wait", seconds=2)
         record(trip, 3, rows)
         # Turn round beyond 3 km.
-        call("drive", heading=away, speed=SPEED, distance=500)
+        call("drive", heading=away, speed=options.speed, distance=500)
         # Line 4: back under 2250 m, the craft loaded again, still packed.
-        call("drive", heading=back, speed=SPEED, distance=distance_to_target() - 2000)
+        call("drive", heading=back, speed=options.speed, distance=distance_to_target() - 2000)
         call("wait", seconds=3)
         record(trip, 4, rows)
         # Line 5: back on the starting spot, the craft handed over to physics a few seconds ago.
-        call("drive", heading=back, speed=SPEED, distance=distance_to_target() - 80)
-        call("drive_to", latitude=home[0], longitude=home[1], speed=5, tolerance=1)
+        call("drive", heading=back, speed=options.speed, distance=distance_to_target() - options.slow_from)
+        call("drive_to", latitude=home[0], longitude=home[1], speed=options.home_speed, tolerance=1)
         call("wait", seconds=4)
         wait_for_digits_to_settle()
         record(trip, 5, rows)

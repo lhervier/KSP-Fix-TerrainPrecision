@@ -39,8 +39,8 @@ scatter from; every campaign ran with 1.0.27.
 
 ## Real Solar System
 
-In progress: coming back to a craft left parked on the Moon, and the rest of the series on its ground
-workaround. Planned: its runway fix as released, and descents onto Venus, Mars and Mercury.
+In progress: the rest of the series on its ground workaround. Planned: its runway fix as released, and
+descents onto Venus, Mars and Mercury.
 
 **→ Full chapter: [Work in progress: Real Solar System](work-in-progress/real-solar-system.md)**
 

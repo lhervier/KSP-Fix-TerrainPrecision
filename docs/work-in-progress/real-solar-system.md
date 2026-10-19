@@ -2,13 +2,6 @@
 
 Part of [Terrain Precision Fix](../../README.md), one mod of [Work in progress](../work-in-progress.md): what is still to check, on Real Solar System.
 
-## Coming back to a craft left parked, on the Moon
-
-**In progress.** Every measurement under Real Solar System loads a landed craft again; coming back to a
-craft left parked, where its quads are built again after the origin has moved, is still to play.
-
-**→ Full chapter: [Real Solar System: coming back to a craft left parked, on the Moon](real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon.md)**
-
 ## The ground workaround
 
 **In progress.** Real Solar System's ground workaround has nothing left to correct with this mod on the

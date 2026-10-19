@@ -45,3 +45,11 @@ takes out of their sphere. Driven toward the one of Kourou, a rover sees it take
 CommNet keeps linking the rover to it.
 
 **→ Full chapter: [Real Solar System: a CommNet ground station](real-solar-system/a-commnet-ground-station.md)**
+
+## Coming back to a craft left parked, on the Moon
+
+**Checked on the Moon, no problem.** A craft left parked is unloaded while a rover drives away, and its
+quads are built again when the rover comes back, after the origin has moved. Over six round trips, the
+ground under the parked capsule came back within 0.042 mm with this mod, against 31.9 mm without it.
+
+**→ Full chapter: [Real Solar System: coming back to a craft left parked, on the Moon](real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon.md)**

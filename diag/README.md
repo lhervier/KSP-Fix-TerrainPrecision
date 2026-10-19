@@ -801,6 +801,30 @@ With this mod:
   [`automation/run-station-approach.py`](automation/run-station-approach.py). Read in
   [A CommNet ground station from a planet pack](../docs/non-regression/real-solar-system/a-commnet-ground-station.md).
 
+[The approach protocol](#the-approach-protocol) on the Moon, with both instruments and
+[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) added, read in
+[Coming back to a craft left parked, on the Moon](../docs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon.md):
+
+- [`approach-moon-rss.sfs`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-rss.sfs) —
+  the two craft of the approach protocol in the Sea of Tranquillity, the rover set for the low gravity of
+  the Moon. Six round trips by
+  `run-approach.py --save approach-moon-rss --speed 10 --slow-from 150 --home-speed 2`, without this
+  mod, then with it, each in one flight.
+- [`approach-moon-without-this-mod.log`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-without-this-mod.log) —
+  the `KSP.log` of the session without this mod. Before the six round trips, it also holds the making of
+  the save (its rover's wheels set, the save written), the rover driven about 1.3 km to try its speeds and
+  its braking, and the save loaded again before the script loads it. What the script printed in
+  [`approach-moon-without-this-mod-script.txt`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-without-this-mod-script.txt),
+  and every line it recorded in
+  [`approach-moon-without-this-mod-lines.json`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-without-this-mod-lines.json).
+- [`approach-moon-fix.log`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-fix.log) —
+  the same with this mod; what the script printed in
+  [`approach-moon-fix-script.txt`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-fix-script.txt),
+  and every line it recorded in
+  [`approach-moon-fix-lines.json`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-fix-lines.json).
+- The screenshots of the tables, trip by trip, in
+  [`imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/`](../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon).
+
 ## The scatter
 
 The readings of [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter), kept as they were

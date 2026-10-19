@@ -345,7 +345,8 @@ where they are drawn.
 **→ Full chapter: [Non-regression tests: Kopernicus](docs/non-regression/kopernicus.md)**
 
 **Real Solar System.** Its two workarounds for this defect, one for a landed craft and one for the
-runway, have nothing left to correct with this mod, and its CommNet ground stations keep relaying.
+runway, have nothing left to correct with this mod, and its CommNet ground stations keep relaying. A craft
+left parked on the Moon comes back to the same ground.
 
 **→ Full chapter: [Non-regression tests: Real Solar System](docs/non-regression/real-solar-system.md)**
 
@@ -435,9 +436,8 @@ hangs the scatter from; every campaign ran with 1.0.27.
 
 **→ Full chapter: [Work in progress: BurstPQS](docs/work-in-progress/burst-pqs.md)**
 
-**Real Solar System.** In progress: coming back to a craft left parked on the Moon, and the rest of the
-series on its ground workaround. Planned: its runway fix as released, and descents onto Venus, Mars and
-Mercury.
+**Real Solar System.** In progress: the rest of the series on its ground workaround. Planned: its runway
+fix as released, and descents onto Venus, Mars and Mercury.
 
 **→ Full chapter: [Work in progress: Real Solar System](docs/work-in-progress/real-solar-system.md)**
 
