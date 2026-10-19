@@ -3,7 +3,7 @@
 Part of [Terrain Precision Fix](../../../README.md), one test of [Non-regression tests](../../non-regression.md), on [Real Solar System](../real-solar-system.md).
 
 **Status: checked on the Moon, Earth, Venus, Mars and Mercury — the safeguard never refused a
-correction. The largest one was 4.0 float steps, a quarter of the limit.**
+correction. The largest one was 4.4 float steps, a quarter of the limit.**
 
 *The rule.* This mod refuses any correction larger than sixteen float steps, taken at the distance from
 the centre of the body: the quad, or the static, is then left where stock puts it
@@ -22,7 +22,7 @@ moved. The quads placed and the largest correction on each body, over every log 
 
 | body | float step | limit | quads placed | largest correction |
 |---|---|---|---|---|
-| Earth | 500 mm | 8 m | 39 971 | 1 998 mm, 4.0 steps |
+| Earth | 500 mm | 8 m | 40 183 | 2 182 mm, 4.4 steps |
 | Venus | 500 mm | 8 m | 2 112 | 1 792 mm, 3.6 steps |
 | the Moon | 125 mm | 2 m | 17 600 | 456 mm, 3.6 steps |
 | Mars | 250 mm | 4 m | 5 140 | 308 mm, 1.2 steps |

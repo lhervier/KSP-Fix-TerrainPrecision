@@ -112,3 +112,11 @@ of its pool's container while its quad is in use. Over a flight over the Mun and
 every holder went back to its pool, none was left on a quad, and the pools counted as in stock.
 
 **→ Full chapter: [The scatter holders](stock/the-scatter-holders.md)**
+
+## This mod's safeguard
+
+**Checked on Kerbin, the Mun, Minmus and Gilly — it never refused a correction.** This mod refuses any
+correction larger than sixteen float steps, a limit that grows with the body. The largest correction was
+3.9 steps, on Gilly, 3.5 on Kerbin: a quarter of the limit.
+
+**→ Full chapter: [Stock: this mod's safeguard](stock/this-mods-safeguard.md)**

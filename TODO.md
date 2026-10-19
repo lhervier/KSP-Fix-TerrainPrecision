@@ -27,12 +27,7 @@ Les tests encore ouverts de [Real Solar System](docs/work-in-progress/real-solar
    dossier `GameData` ; la release, c'est ce dossier zippé. PQS Bench et Stock Quad Cache ne sont cités
    qu'en appui du chiffre de performance et peuvent attendre, mais leur *Get it* ne doit pas non plus
    promettre un téléchargement qui n'existe pas. Vérifier tous les liens `releases/latest` de la famille.
-2. **Confirmer la marge du garde-fou.** Il compte seize pas de float à la distance du quad (1 m sur
-   Kerbin, 8 m sur la Terre de RSS). Plus grande correction vue : 4,0 pas sur la Terre (3,6 sur
-   Vénus, 3,5 sur la Lune, environ un sur Mars et Mercure), aucun refus sur ces cinq corps. Reste à
-   relever la plus grande correction (`origin moved by … mm`) en `logLevel = Debug` sur Kerbin, la
-   Mun, Minmus et Gilly, et vérifier qu'elle reste loin de seize pas.
-3. **L'écart diffère-t-il d'un point du sol à l'autre ?** C'est ce qui casse une structure posée sur
+2. **L'écart diffère-t-il d'un point du sol à l'autre ?** C'est ce qui casse une structure posée sur
    plusieurs pieds (un pied enterré, un autre en l'air) : sans lui, le sol monte ou descend d'un bloc et
    la structure suit. Je le crois, puisque chaque quad arrondit sa propre position, mais rien ne le
    mesure. Diag TerrainHeight sur quelques points éloignés de plusieurs quads, six chargements, sans le correctif ;

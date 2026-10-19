@@ -328,7 +328,8 @@ orbit and a return to the space centre, the KSC keeps every building registered,
 from the VAB or the SPH stands on the launchpad or the runway. Through every scene change, the KSC comes
 back to the same place, and through days of time warp it stays put, its lights following day and night.
 An anchored base stays where it was placed on a runway, of the KSC or of a launch site of Making History.
-Every scatter holder goes back to its pool.
+Every scatter holder goes back to its pool. The safeguard never refused a correction, on Kerbin, the Mun,
+Minmus or Gilly.
 
 **→ Full chapter: [Non-regression tests: stock](docs/non-regression/stock.md)**
 

@@ -33,7 +33,7 @@ fix, with this mod, the runway stood within 0.3 mm over thirty loads, and a move
 
 **Checked on the Moon, Earth, Venus, Mars and Mercury — it never refused a correction.** This mod
 refuses any correction larger than sixteen float steps, a limit that grows with the body. The largest
-correction, on Earth, was four steps, 2 m, a quarter of the limit; a first version, a fixed metre,
+correction, on Earth, was 4.4 steps, 2.2 m, a quarter of the limit; a first version, a fixed metre,
 refused part of Earth's terrain.
 
 **→ Full chapter: [Real Solar System: this mod's safeguard](real-solar-system/this-mods-safeguard.md)**
