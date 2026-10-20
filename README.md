@@ -1,6 +1,6 @@
 # Terrain Precision Fix
 
-**⚠️ Work in progress.** This is an active investigation, not a finished mod. The figures, the code and the conclusions on this page can still change, and several questions are still open — they are listed in [Work in progress](#work-in-progress).
+**⚠️ Work in progress.** This is an active investigation, not a finished mod. The figures, the code and the conclusions on these pages can still change, and several questions are still open — each page has its own *Work in progress*.
 
 A fix for stock KSP 1.12, kept as small as possible: a handful of Harmony patches, in a few short source
 files. It is a mod of its own, built and measured on top of
@@ -17,7 +17,7 @@ Here is what it fixes, on the ground and on the runways, launchpads and building
 assistant. Everything here was reviewed and validated by a human — me — who very much enjoyed
 learning along the way how KSP builds the ground you land on. I am saying so up front, because
 contributions made with an AI deserve a closer look than others, and because some people would
-rather stop reading here. That look is what this page is built for: every figure on it comes from an
+rather stop reading here. That look is what these pages are built for: every figure on them comes from an
 in-game measurement, the instrument behind the headline figures is public and runs on a stock
 install, the stock code quoted here is a handful of lines anyone can check, and the fix is a few short
 files you can read in one sitting.
@@ -52,7 +52,7 @@ it, so it drops those two centimetres. You never notice, and nothing breaks.
 engine will not leave two solid things overlapping. It pushes them apart, hard, in the only direction
 available: up. Your craft gets launched.
 
-![A craft jumping on its own the moment a save is reloaded](imgs/Booing-scaled.gif)
+![A craft jumping on its own the moment a save is reloaded](imgs/common/Booing-scaled.gif)
 
 *KSP 1.12 without this mod, with [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes)
 as the only mod installed. A pod on an empty fuel tank, parked in the grass at the KSC, saved, then reloaded
@@ -68,12 +68,12 @@ road — on Earth, it was seen to jump when the ground rose under it.
 
 Every one of these moments can be repeated at will — reload the same save, drive away from a craft left
 parked and come back to it, switch to a craft far away, drive past a few shifts of the world — and each
-is measured on this page, on the ground, and on a runway as well when a save is loaded and while you
+is measured on these pages, on the ground, and on a runway as well when a save is loaded and while you
 drive.
 
 ### Disclaimer: it is not the only cause
 
-The ground moving is one cause among several, and this page does not claim it is the only one. Plenty
+The ground moving is one cause among several, and these pages do not claim it is the only one. Plenty
 of other things move a craft when a scene opens. Two well-known examples, among others:
 
 - **suspensions.** Landing legs and wheels come back fully extended, because that is the only state
@@ -88,414 +88,39 @@ This mod removes that one cause, and only that one: a lander that hops because i
 unfolding will go on hopping once it is installed. What it takes away is the part that should never
 have been there at all — a surface that is not where the game's own formulas say it is, and is not in
 the same place twice. It takes it away down to a hundredth of a millimetre on the ground, and two tenths
-on the runway of the KSC, measured below.
-
-## The culprit: a float at planet scale, in a frame that moves
-
-Three of the four things this mod fixes share one culprit. Stock places the ground, the statics standing
-on it and the scatter growing on it through Unity `Transform`s, whose positions are floats, holding
-vectors as long as the radius of the body: 600 km on Kerbin. At that length a float moves in steps of
-62.5 mm, so each value is rounded to the nearest step, up or down.
-
-A rounding on its own would land the same way every time. What draws a new one is the frame these
-vectors go through — how the body is turned in Unity's world, and where its terrain sphere sits in it —
-and that frame does not stay put. [KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin)
-shows the values of KSP's floating origin, on a stock install. Its measurements show that a save does not
-give that frame back, and that it changes during a flight with nothing loaded.
-
-**→ On the pages of Diag FloatingOrigin: [loading the same save](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/docs/what-the-measurements-show-loading.md),
-[leaving the rotating frame](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/docs/what-the-measurements-show-rotating-frame.md),
-[a rover driven 2 km and back](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/docs/what-the-measurements-show-driving.md)**
-
-Each of the three is told below on its own: where the rounding strikes it in the stock code, how this mod
-takes it away, and how that is checked.
-
-- **[The ground](#the-ground)**, the quads a craft stands on, and every vertex inside them.
-- **[The statics](#the-statics)**: the runway, the launchpad and the buildings of the KSC, the launch
-  sites of the Making History expansion, and the bases a mod such as Kerbal Konstructs plants on a body.
-- **[The scatter](#the-scatter)**: the rocks, and around the KSC the grass and the trees.
-
-**[The ground anchor](#the-ground-anchor)** is another matter. Two stock behaviours raise an anchored base
-when it is loaded, and neither is a rounding. It comes last.
-
-**How each fix is checked.** Each situation where a craft meets the ground is measured twice, without this
-mod and with it: one instrument reads the landed craft, another the ground itself, and in flight a third
-reads the quads the ground is made of; a fourth reads the scatter. In each summary below, the first figure
-is without this mod, the second with it. The pages of measurements are arranged by situation, each with
-its protocol, its saves and the readings both ways, and each summary links to the part that concerns it.
-
-## The ground
-
-**The culprit.** Stock places a terrain quad, and every vertex inside it, through a Unity `Transform`: a
-vector 600 km long stored in a float. Each value is rounded on its own, through the frame of the moment.
-
-**→ Full chapter: [The culprit: the ground](docs/the-culprit-ground.md)**
-
-**The fix.** Two Harmony patches redo in double the two placements that go through a float at planet
-scale: the origin of each quad, and each vertex inside it. The two 600 km vectors cancel before anything
-reaches a float, which is then only asked to hold a distance within the quad. Only the quads a craft can
-stand on are touched.
-
-**→ Full chapter: [The fix: the ground](docs/the-fix-ground.md)**
-
-**Checked** in every situation where a craft meets the ground:
-
-- **Loading the same save**, six times, on the four stock worlds and the Moon and Earth of
-  [Real Solar System](https://github.com/KSP-RO/RealSolarSystem): the ground comes back over 43.6 mm on
-  Kerbin and 292.3 mm on Earth, within 0.3 mm with this mod.
-
-  **→ Full chapter: [Checking the ground: loading the same save](docs/checking-the-culprit-loading/the-ground.md)**
-
-- **Coming back to a craft left parked**, driving away until it unloads, then back, six times in one
-  flight: its ground comes back over 49.3 mm, and over 0.010 mm with this mod.
-
-  **→ Full chapter: [Checking the culprit: coming back to a craft left parked](docs/checking-the-culprit-approach.md)**
-
-- **Switching to a craft far away**, six loadings: its ground spreads over 112.1 mm, and 0.002 mm with
-  this mod; the switch itself moves nothing.
-
-  **→ Full chapter: [Checking the culprit: switching to a craft far away](docs/checking-the-culprit-switching.md)**
-
-- **Driving on while the world moves**, every 500 m a rover drives: the ground under it jumps by about
-  25 mm on Kerbin and up to 243 mm on Earth; with this mod, no jump is left.
-
-  **→ Full chapter: [Checking the ground: driving on while the world moves](docs/checking-the-culprit-driving/the-ground.md)**
-
-- **In flight**, a rocket from the launchpad to the sea, its quads written about once a second: two quads
-  of the highest level built at different moments step by up to 22.5 mm where they meet on Kerbin and
-  289 mm on Earth, and by 0.67 mm and 2.1 mm at most with this mod.
-
-  **→ Full chapter: [Checking the ground: in flight](docs/checking-the-culprit-flight/the-ground.md)**
-
-**What it makes worse.** Where the quads this mod corrects meet coarser ones, stock already leaves a
-crack, and this mod widens it: the median of the largest gap of a load goes from 157 mm to 225 mm on
-Kerbin, and from about 1.3 m to 1.9 m on Earth. It is visual only, with no solution yet. The scatter, too,
-would be drawn further off the corrected ground, but for this mod's scatter fix,
-on by default: see [The scatter](#the-scatter).
-
-**→ Full chapter: [The seam between subdivision levels](docs/limits-and-solutions/stock/the-seam-between-subdivision-levels.md)**
-
-## The statics
-
-**The culprit.** The runway, the launchpad and the buildings of the KSC, the launch sites of the Making
-History expansion, and the bases a mod such as Kerbal Konstructs plants anywhere on a body. `PQSCity` and
-`PQSCity2` place them the same way as the ground, a 600 km vector in a float `Transform` hanging from the
-body, through the same frame. Unlike the quads a craft stands on, stock gives them no place outside the
-body where a precise position would be kept.
-
-**→ Full chapter: [The culprit: the statics](docs/the-culprit-statics.md)**
-
-**The fix.** A static cannot hold a precise position under its sphere, so it is taken out of it in
-flight, while a craft is near it, and placed in double in the same frame. It follows its body, and it
-goes back exactly where stock left it before every scene change, and whenever stock code that expects it
-there runs. A launch pad of Making History is also taken out for the moment it measures the ground to
-set itself on it.
-
-**→ Full chapter: [The fix: the statics](docs/the-fix-statics.md)**
-
-**Checked** on the runways and on a launch pad:
-
-- **Loading the same save**, six times, on the runway of the KSC: its deck comes back over 116.5 mm, and
-  within 0.177 mm with this mod. The step between the deck and the grass beside it changes by up to
-  38.3 mm: the runway draws a rounding of its own, apart from the ground. On the Mun, a runway placed by
-  Kerbal Konstructs does the same, over 17.7 mm, and holds within 0.015 mm with this mod from the second
-  loading on.
-
-  **→ Full chapter: [Checking the statics: loading the same save, the deck of a runway](docs/checking-the-culprit-loading/the-statics.md#the-deck-of-a-runway)**
-
-- **Driving on while the world moves**, by the runway of the KSC: every 500 m, its deck moves with the
-  grass, by up to 54.8 mm on Kerbin and 231.8 mm on Earth. With the terrain fix alone, the grass holds and
-  the deck still moves, by up to 41.6 mm; with this mod as installed, neither does, within 0.07 mm.
-
-  **→ Full chapter: [Checking the statics: driving on while the world moves, by the runway](docs/checking-the-culprit-driving/the-statics.md#by-the-runway-of-the-ksc)**
-
-- **Launching from a launch pad of Making History**, the Desert Launch Site, in six sessions of the game:
-  the deck the craft stands on spreads over 592.8 mm, and 0.001 mm with this mod; its feet stand on the
-  ground either way.
-
-  **→ Full chapter: [Checking the culprit: launching from a launch pad of Making History](docs/checking-the-culprit-launch-pad.md)**
-
-**Two mods to patch.** Kopernicus and Kerbal Konstructs each look for a static under its sphere once in
-flight, where the statics fix no longer leaves it. Each patch, on by default, stands for a small change
-these mods could make themselves, given as a diff to apply to their source.
-
-- **Kopernicus, its flag fix.** Without the patch, nothing goes wrong in the game. It only spares an
-  error in the log whose stack trace names Kopernicus, where this mod is the cause — a bug its
-  maintainers would be asked about for nothing.
-
-  **→ Full chapter: [Kopernicus: the flag fix](docs/limits-and-solutions/kopernicus/the-flag-fix.md)**
-
-- **Kerbal Konstructs, its group editor.** This patch is indispensable, and the most serious problem
-  this mod has met so far: without it, a group moved with the gizmo of the editor, in flight, would be
-  sent elsewhere on its body, and saved there.
-
-  **→ Full chapter: [Kerbal Konstructs: the group editor](docs/limits-and-solutions/kerbal-konstructs/the-group-editor.md)**
-
-## The scatter
-
-**The culprit.** The rocks, and around the KSC the grass and the trees, are built from the vertices of
-their quad, but hang from a *holder* that stays under the body, at the same 600 km vector in a float. The
-quad is drawn where its position says, the holder where its matrix says, and the two need not round the
-same way. The terrain fix makes it worse: the ground stops moving, the holders do not, at every load and
-at every move of the world while you drive. Stock scatter has no collider, so this is visual — unless a mod
-gives it one.
-
-**→ Full chapter: [The culprit: the scatter](docs/the-culprit-scatter.md)**
-
-**The fix.** Two Harmony patches hang each holder from its own quad, at no offset, and
-hang it back in its pool when the quad goes: the stock scatter is then drawn with the very matrix of the
-ground it was built on. It is on by default, with the terrain fix it completes. It moves stock objects
-other mods may look for: if one of them misbehaves around rocks, grass or trees, one line of the settings
-file turns it off, `fixScatter = false`.
-
-**→ Full chapter: [The fix: the scatter](docs/the-fix-scatter.md)**
-
-**Checked** at loading, while you drive and in flight:
-
-- **Loading the same save**, twelve times on Kerbin: half of the points measured on the scatter come
-  back more than 61 mm apart against the ground, 178 mm with this mod and its scatter fix turned off; with
-  this mod as
-  installed, none more than 0.132 mm.
-
-  **→ Full chapter: [Checking the scatter: loading the same save](docs/checking-the-culprit-loading/the-scatter.md)**
-
-- **Driving on while the world moves**, every 500 m a rover drives on Kerbin: on stock, the grass jumps
-  with the ground, within 0.13 mm of it; with this mod and its scatter fix turned off, the ground holds and
-  the grass jumps against it, by up to
-  54 mm; with this mod as installed, nothing jumps, within 0.18 mm. Filmed
-  on a cactus, too.
-
-  **→ Full chapter: [Checking the scatter: driving on while the world moves](docs/checking-the-culprit-driving/the-scatter.md)**
-
-- **In flight** over the Mun, the scatter is drawn up to 21.9 mm off its quads on stock, and exactly on them
-with this mod.
-
-  **→ Full chapter: [Checking the scatter: in flight](docs/checking-the-culprit-flight/the-scatter.md)**
-
-## The ground anchor
-
-**The culprit.** Two stock behaviours raise an anchored vessel when it is loaded, and the anchor,
-riveted to the ground, keeps it there: the anchor's collider stops 2 cm above its bottom, and KSP raises a
-landed vessel to the height it computes for the terrain, above the ground it actually rests on. Neither is
-a rounding.
-
-**→ Full chapter: [The culprit: the ground anchor](docs/the-culprit-ground-anchor.md)**
-
-**The fix.** The anchor's collider is brought down to the bottom of the anchor, and a vessel holding an
-anchor is loaded where it was saved instead of being raised: each by its own setting, both on by default,
-for the stock anchor only.
-
-**And a third.** KSP rivets an anchor again one frame after it is loaded, and below 50 frames per second
-the physics moves it in between, by under a millimetre at each load. A third setting freezes it from the
-moment it is loaded, so that a base behaves the same at any frame rate.
-
-**→ Full chapter: [The fix: the ground anchor](docs/the-fix-ground-anchor.md)**
-
-**Checked** by anchoring a base, an anchor placed on Kerbin, alone then with a battery on it, saved and
-loaded twice: on stock, the anchor comes back 4.1 cm higher than placed, and the base 26.3 cm above the
-ground at its second load; with this mod, both within 0.08 mm.
-
-**→ Full chapter: [Checking the culprit: anchoring a base](docs/checking-the-culprit-anchoring.md)**
-
-**Checked below 50 frames per second**, at 30: a base held in the air sinks at every load, 7.1 mm over
-eleven loads on stock and 8.5 mm with this mod and its third setting off; with this mod as installed, not
-at all.
-
-**→ Full chapter: [Checking the culprit: anchoring a base, below 50 frames per second](docs/checking-the-culprit-anchoring.md#below-50-frames-per-second)**
-
-## Performance
-
-**The fix does not slow the game down.** Timed frame by frame with
-[KSPProfiler](https://github.com/KSPModdingLibs/KSPProfiler), on the same flight, every run of the fix
-came out a little cheaper than every run of stock on the coroutines the terrain is updated in — by more
-than the fix's own saving can explain, so not a gain to claim, but no cost. Measured vertex by vertex with
-[PQS Bench](https://github.com/lhervier/KSP-PQSBench), the fix even places a vertex faster than stock, but
-that saving is about 0.04 % of the time played, too small for a frame to show. Turned on, the scatter fix
-shows no cost these runs can resolve. What the statics fix costs with statics near a craft is not
-measured yet.
-
-**→ Full chapter: [Performance](docs/performance.md)**
-
-## Non-regression tests
-
-The checks above show what this mod fixes. These tests check the other side, one mod at a time, each on a
-page of its own ([Non-regression tests](docs/non-regression.md)): what works without this mod still works
-with it. Only what has been checked is listed; each test is played in game with this mod, and compared
-with the game without it where the two have to be told apart.
-
-**Stock.** Existing saves go through one more draw of the ground, always the same one. Over loadings, an
-orbit and a return to the space centre, the KSC keeps every building registered, and a craft launched
-from the VAB or the SPH stands on the launchpad or the runway. Through every scene change, the KSC comes
-back to the same place, and through days of time warp it stays put, its lights following day and night.
-An anchored base stays where it was placed on a runway, of the KSC or of a launch site of Making History.
-Every scatter holder goes back to its pool. The safeguard never refused a correction, on Kerbin, the Mun,
-Minmus or Gilly.
-
-**→ Full chapter: [Non-regression tests: stock](docs/non-regression/stock.md)**
-
-**KSP Community Fixes.** None of its patches places the terrain, and every measurement on these pages
-was taken with it installed.
-
-**→ Full chapter: [Non-regression tests: KSP Community Fixes](docs/non-regression/ksp-community-fixes.md)**
-
-**Kopernicus.** The ground is as stable under Kopernicus as without it, and the KSC it moves to Cape
-Canaveral for Real Solar System is placed where it puts it. The rocks it can give a collider are hit
-where they are drawn.
-
-**→ Full chapter: [Non-regression tests: Kopernicus](docs/non-regression/kopernicus.md)**
-
-**Real Solar System.** Its two workarounds for this defect, one for a landed craft and one for the
-runway, have nothing left to correct with this mod, and its CommNet ground stations keep relaying. A craft
-left parked on the Moon comes back to the same ground, whether the player drives back to it or switches
-to it.
-
-**→ Full chapter: [Non-regression tests: Real Solar System](docs/non-regression/real-solar-system.md)**
-
-**Kerbal Konstructs.** A CommNet ground station it opens in flight, beside a craft, finds its body while
-its static is out of its sphere, and relays.
-
-**→ Full chapter: [Non-regression tests: Kerbal Konstructs](docs/non-regression/kerbal-konstructs.md)**
-
-**Deferred.** It draws the ground wherever this mod places it, and the craft and the ground come back as
-they do without it.
-
-**→ Full chapter: [Non-regression tests: Deferred](docs/non-regression/deferred.md)**
-
-**Principia.** It turns and moves the bodies itself, and the craft and the ground come back as they do
-without it, after a load and in flight.
-
-**→ Full chapter: [Non-regression tests: Principia](docs/non-regression/principia.md)**
-
-**Kerbal Planetary Base Systems.** One of the most popular part mods, built for bases on the ground. Its
-plugin touches nothing of the ground, and its parts are held up by stock modules; a base reloaded on a
-slope jumps without this mod, and stays within a millimetre with it.
-
-**→ Full chapter: [Non-regression tests: Kerbal Planetary Base Systems](docs/non-regression/kerbal-planetary-base-systems.md)**
-
-**Parallax.** It sets rocks and trees on the ground this mod places, and they follow it. A craft resting on
-one of its rocks stays on it, and a craft on its ground comes back as it does without Parallax, after a
-load and after a trip out of range.
-
-**→ Full chapter: [Non-regression tests: Parallax](docs/non-regression/parallax.md)**
-
-## Limits and solutions
-
-What this mod makes worse, or would break without a patch of its own, with the solution to each, one mod
-at a time, each on a page of its own. **The statics fix is the riskiest of the fixes on by default**: it
-takes a static out of the place where stock, and any mod, expects to find it. Each limit is told above
-with the fix it comes from: the crack between subdivision levels with [the ground](#the-ground), the
-scatter drawn further off the ground with [the scatter](#the-scatter), and the patches to Kopernicus and
-Kerbal Konstructs with [the statics](#the-statics).
-
-**Stock.** The terrain fix widens two stock defects, both visual. The scatter is drawn further off the
-ground, and jumps against it while you drive: the scatter fix, on by default, closes both. The crack
-between subdivision levels widens, with no solution yet.
-
-**→ Full chapter: [Limits and solutions: stock](docs/limits-and-solutions/stock.md)**
-
-**Kopernicus.** Its flag fix looks the KSC up under its sphere, and would throw in flight near it: a
-patch of this mod, on by default, keeps it from running there.
-
-**→ Full chapter: [Limits and solutions: Kopernicus](docs/limits-and-solutions/kopernicus.md)**
-
-**Kerbal Konstructs.** Its group editor, in flight, would send a group moved with its gizmo elsewhere on
-its body, and save it there: a patch of this mod, on by default, prevents it.
-
-**→ Full chapter: [Limits and solutions: Kerbal Konstructs](docs/limits-and-solutions/kerbal-konstructs.md)**
-
-**BurstPQS.** It holds the ground still on the bodies it builds, but not the statics nor the scatter, which
-this mod still corrects. This mod supports it by itself: its terrain fix steps back on the bodies BurstPQS
-builds, and takes over on the Earth, the Moon and Mars, which the latest Real Solar System (20.1.3) leaves
-to stock; its scatter fix hangs every holder there.
-
-**→ Full chapter: [Limits and solutions: BurstPQS](docs/limits-and-solutions/burst-pqs.md)**
-
-## Work in progress
-
-What is still to check, one mod at a time, each on a page of its own ([Work in
-progress](docs/work-in-progress.md)), with what is already known and the test planned for it.
-
-**Stock.** Planned: asteroids held by a claw, Breaking Ground's surface features and deployed
-experiments, the ocean, a mission spawning a craft, the other stock statics, and the scatter fix without
-the terrain fix.
-
-**→ Full chapter: [Work in progress: stock](docs/work-in-progress/stock.md)**
-
-**KSP Community Fixes.** Planned: the ground fix one of its maintainers plans for it, which this mod's
-terrain fix would have to step back from.
-
-**→ Full chapter: [Work in progress: KSP Community Fixes](docs/work-in-progress/ksp-community-fixes.md)**
-
-**Kopernicus.** Planned: a body from a planet pack, where nothing has been measured yet; the campaign is
-prepared on Outer Planets Mod.
-
-**→ Full chapter: [Work in progress: Kopernicus](docs/work-in-progress/kopernicus.md)**
-
-**BurstPQS.** Planned: its release 1.0.28, which changes how it places the quads this mod's scatter fix
-hangs the scatter from; every campaign ran with 1.0.27.
-
-**→ Full chapter: [Work in progress: BurstPQS](docs/work-in-progress/burst-pqs.md)**
-
-**Kerbal Konstructs.** Planned: a section of the runway seen 21.3 mm above the deck at the first loading,
-the rest of the group editor, a launch from its launch sites, and the ground it flattens.
-
-**→ Full chapter: [Work in progress: Kerbal Konstructs](docs/work-in-progress/kerbal-konstructs.md)**
-
-**Tilt'Em.** Planned, read in the source: the ground of a tilted body, when a craft comes down to where
-the world turns with it.
-
-**→ Full chapter: [Work in progress: Tilt'Em](docs/work-in-progress/tilt-em.md)**
-
-**KAS.** Planned: a part attached to the ground, which either follows the corrected ground or is pinned
-to the terrain sphere.
-
-**→ Full chapter: [Work in progress: KAS](docs/work-in-progress/kas.md)**
-
-**Other mods.** Planned: the mods, not read yet, that look for a static or a scatter holder where stock
-puts it.
-
-**→ Full chapter: [Work in progress: other mods](docs/work-in-progress/other-mods.md)**
+on the runway of the KSC, as measured on the page of each fix.
+
+## What it fixes
+
+The ground, the statics and the scatter share one culprit: stock places them through floats holding
+vectors as long as the radius of the body, rounded through a frame that does not stay put
+([The culprit: a float at planet scale](docs/common/the-culprit.md)). Each has a page of its own: where the
+rounding strikes it, how this mod takes it away, how that is checked, what keeps working, what it makes
+worse, and what is still to check. The first figure is without this mod, the second with it.
+
+| | What moves | Without → with this mod | Setting | |
+|---|---|---|---|---|
+| **The ground** | the terrain quads a craft stands on | at a load, 43.6 → 0.3 mm on Kerbin, 292.3 → 0.3 mm on Earth | `fixTerrain` | [→ page](docs/ground/README.md) |
+| **The statics** | the runway, launchpad and buildings of the KSC, the launch sites of Making History, Kerbal Konstructs' bases | the deck of the KSC runway at a load, 116.5 → 0.177 mm | `fixStatics` | [→ page](docs/statics/README.md) |
+| **The scatter** | the rocks, grass and trees | against the ground at a load, 61 mm (178 with the ground fixed alone) → 0.132 mm | `fixScatter` | [→ page](docs/scatter/README.md) |
+| **The ROCs** | Breaking Ground's surface features | work in progress: read in the code, no fix yet | — | [→ page](docs/rocs/README.md) |
+| **The ground anchor** | an anchored base, raised at each load — not a rounding | the base at its second load, 26.3 cm → 0.08 mm | `fixGroundAnchor…` | [→ page](docs/ground-anchor/README.md) |
+
+Every fix is on by default. Two patches, on by default too, keep Kopernicus and Kerbal Konstructs working
+with the statics fix: see [the statics](docs/statics/README.md#limits-and-solutions).
+
+**It does not slow the game down**: timed frame by frame, it came out no dearer than stock
+([Performance](docs/common/performance.md)).
 
 ## Install
 
-Requires KSP 1.12 and [HarmonyKSP](https://github.com/KSPModdingLibs/HarmonyKSP) (the usual
-`GameData/000_Harmony`, also installed by KSP Community Fixes).
+Requires KSP 1.12 and [HarmonyKSP](https://github.com/KSPModdingLibs/HarmonyKSP). Copy
+`GameData/TerrainPrecisionFixMod` into the `GameData` of KSP. Nothing is written to your saves.
 
-Copy `GameData/TerrainPrecisionFixMod` into the `GameData` of KSP. Nothing is written to your saves:
-removing the folder gives you the stock terrain, statics, scatter and ground anchors back. An anchored
-base is then raised again at its next load, as stock raises it:
-[Removing this mod](docs/the-fix-ground-anchor.md#removing-this-mod).
+- **[Install](docs/common/install.md)**, and what removing the mod does to an anchored base;
+- **[Settings](docs/common/settings.md)**: one per fix and per patch, and `logLevel`;
+- **[Build](docs/common/build.md)**;
+- **[License](docs/common/license.md)**: MIT.
 
-## Settings
-
-`GameData/TerrainPrecisionFixMod/PluginData/settings.cfg` holds nine values, read when KSP starts. To
-change one: quit KSP, edit the file, start KSP again.
-
-| setting | what it does |
-|---|---|
-| `fixTerrain` | `true` (default) places the terrain in double precision; `false` leaves it as stock builds it |
-| `fixStatics` | `true` (default) places the statics in double precision; `false` leaves them where stock places them |
-| `fixScatter` | `true` (default) draws the terrain scatter from the terrain quads it was built on; `false` leaves it where stock draws it, a few centimetres off the corrected ground, and jumping against it every 500 m while you drive. It moves stock objects other mods may look for: turn it off if one of them misbehaves around rocks, grass or trees. See [On by default: when to turn it off](docs/the-fix-scatter.md#on-by-default-when-to-turn-it-off) |
-| `fixGroundAnchorModel` | `true` (default) brings the collider of the stock ground anchor down to the bottom of the anchor, so that a load puts it back where it was placed; `false` leaves the stock collider, which stops 2 cm above it |
-| `fixGroundAnchorLoad` | `true` (default) loads a vessel holding a stock ground anchor where it was saved; `false` lets stock raise it to the height it computes for the terrain, where the anchor then holds it |
-| `fixGroundAnchorRivet` | `true` (default) freezes a loaded anchor from the moment it is loaded, until stock rivets it again; `false` lets stock rivet it one frame late, which below 50 frames per second lets it move by under a millimetre first, a base in the air sinking a little at every load |
-| `patchKopernicus` | `true` (default) patches Kopernicus, when installed, to cope with the statics fix. With `false` and the statics fix on, Kopernicus' flag fix throws when a facility is upgraded in flight near the KSC, which only a Making History mission does: an error in the log whose stack trace names Kopernicus, and nothing else, since the statics fix keeps the flags steady there. Meant only to see what the patch is for |
-| `patchKerbalKonstructs` | `true` (default) patches Kerbal Konstructs, when installed, to cope with the statics fix. With `false` and the statics fix on, moving a group with its group editor in flight sends it elsewhere on its body, and saves it there: meant only to see what the patch is for |
-| `logLevel` | what goes to `KSP.log`, below |
-
-| `logLevel` | what goes to `KSP.log` |
-|---|---|
-| `Info` (default) | a few lines at startup, then one line per body the first time its terrain, then its statics, then its scatter, are corrected |
-| `Debug` | adds one line per quad placed, with how far it was moved, one line per static taken out of its sphere or put back under it, one line per scatter holder hung from its quad, one line per vessel holding a ground anchor loaded, with how far stock would have raised it, and one line per anchor frozen as it is loaded |
-| `Trace` | adds, per quad, how far its vertices were moved within it, and one line per scatter holder handed back to its pool — slower, meant for measuring |
-
-`Error` and `Warning` are accepted too.
-
-## Build
-
-Set `KSPDIR` to your KSP install folder, which must contain `GameData/000_Harmony`, and run `build.bat`.
-It needs the .NET SDK, and produces `GameData/TerrainPrecisionFixMod/TerrainPrecisionFixMod.dll`.
-
-## License
-
-MIT
+What holds for every fix at once — the culprit, the performance, the tests that cover them all — is in
+[what the fixes share](docs/common/README.md).

@@ -1,0 +1,133 @@
+# Checking the culprit: coming back to a craft left parked
+
+Part of [Terrain Precision Fix](../../../README.md), [the ground](../README.md#checked): the measurements that check [the culprit](../the-culprit.md) on a craft left parked and come back to, in the middle of a flight, on stock and with this mod.
+
+Two instruments take the readings:
+[KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel) measures the craft, and
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) measures the ground. Each has its own page, with
+its method.
+
+This fix is built on top of [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes),
+the base most players run, so every campaign on this page is run in an install that has it: KSP 1.12.5 with Harmony, ModuleManager,
+KSP Community Fixes 1.41.1, both instruments, and [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer),
+which drives the rover — and this mod, or not. *On stock*, below, means that install without this mod.
+
+The way a craft meets the ground that you cannot avoid by never quitting: a craft is left
+parked while a rover drives away from it, past 2500 m, where the game unloads it — then comes back
+within 200 m, where physics takes the parked craft over again. No save is loaded at any point and the
+scene is never changed: one single flight, six round trips in a row, on Kerbin. It is
+[the approach protocol](approach-protocol.md), on its save,
+`approach-kerbin.sfs`, played by its script, [`run-approach.py`](../../../diag/ground/automation/run-approach.py),
+once without this mod and once with it, both instruments recording at the same moments. The sessions
+are logged in [`approach-stock.log`](../../../diag/ground/checking/approach/approach-stock.log) and
+[`approach-fix.log`](../../../diag/ground/checking/approach/approach-fix.log), with what the script
+printed and every line it recorded beside them ([`diag`](../../../diag/ground/README.md#the-approach-protocol)).
+
+**→ Full chapter: [The protocol: coming back to a craft left parked](approach-protocol.md)**
+
+## The craft, over six round trips
+
+**On stock.** One screenshot per round trip, the table cleared between them, so that its first line is
+the last line of the one before; the bottom line of each is the reading in progress, not a record:
+
+![Without this mod, the first round trip, read by Diag LandedVessel](../../../imgs/ground/checking/approach/landed-vessel/1-stock.png)
+
+The first line of this first screenshot is not a round trip: it is the scene opening, the craft handed
+back by the save and coming to rest 513.774 mm higher than the save held it. That is what
+[Checking the ground: loading the same save](loading.md) is about, and it is left
+aside here. The five other screenshots are in
+[`imgs/ground/checking/approach/landed-vessel`](../../../imgs/ground/checking/approach/landed-vessel),
+`2-stock.png` to `6-stock.png`. *Moved* — how far the craft ends up from the height it was handed back
+at — reads:
+
+| round trip | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| *Moved* | −28.752 mm | +6.619 mm | −24.666 mm | +34.263 mm | +6.758 mm | −37.177 mm |
+
+Over the whole series — where the craft started, and where each of the six round trips left it — it
+comes to rest across a spread of 46.8 mm. The height it is handed back at, read before each round trip
+and after it, never moves by more than a thousandth of a millimetre. The round trip pictured under
+[the protocol](approach-protocol.md), taken by hand in another flight of the
+same save, read −17.572 mm.
+
+**With this mod**, in that same install, on that same save, with this mod as the only difference. One
+screenshot per round trip again:
+
+![With this mod, the first round trip, read by Diag LandedVessel](../../../imgs/ground/checking/approach/landed-vessel/1-fix.png)
+
+The five others are in [`imgs/ground/checking/approach/landed-vessel`](../../../imgs/ground/checking/approach/landed-vessel),
+`2-fix.png` to `6-fix.png`.
+
+| round trip | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| *Moved*, without this mod | −28.752 mm | +6.619 mm | −24.666 mm | +34.263 mm | +6.758 mm | −37.177 mm |
+| *Moved*, with this mod | −0.073 mm | +0.032 mm | −0.036 mm | −0.027 mm | +0.015 mm | +0.050 mm |
+
+Over the whole series, the craft comes to rest across a spread of 46.8 mm without this mod and
+0.103 mm with it.
+
+## The ground, over six round trips
+
+**On stock.** One screenshot per round trip, the table cleared between them, so that its first line is
+the last line of the one before; the bottom line of each is the reading in progress, not a record:
+
+![Without this mod, the first round trip, read by Diag TerrainHeight](../../../imgs/ground/checking/approach/terrain-height/1-stock.png)
+
+The five others are in [`imgs/ground/checking/approach/terrain-height`](../../../imgs/ground/checking/approach/terrain-height),
+`2-stock.png` to `6-stock.png`. The height KSP computes reads 64,785.030 mm on every line of the six
+round trips, so every change below is a change of the ground under the craft. *Difference*:
+
+| round trip | line 2, before | line 4, back in range | line 5, settled | across the round trip |
+|---|---|---|---|---|
+| 1 | +99.198 mm | +70.476 mm | +70.476 mm | **−28.722 mm** |
+| 2 | +70.476 mm | +76.974 mm | +76.971 mm | **+6.495 mm** |
+| 3 | +76.971 mm | +52.432 mm | +52.425 mm | **−24.546 mm** |
+| 4 | +52.425 mm | +80.627 mm | +80.651 mm | **+28.226 mm** |
+| 5 | +80.651 mm | +87.034 mm | +87.032 mm | **+6.381 mm** |
+| 6 | +87.032 mm | +49.865 mm | +49.865 mm | **−37.167 mm** |
+
+Line 1 of every round trip carries the same numbers as line 2, to the micrometre — except at the
+opening of the scene, the first line of all, where the craft handed back by the save is still
+settling, three thousandths of a millimetre away.
+
+Over the whole series, *Difference* spreads over 49.3 mm. From the moment the craft is back in range,
+still packed, to the moment physics takes it over, it moves by 0.023 mm at most.
+
+**With this mod**, in that same install, the same session:
+
+![With this mod, the first round trip, read by Diag TerrainHeight](../../../imgs/ground/checking/approach/terrain-height/1-fix.png)
+
+The five others are in [`imgs/ground/checking/approach/terrain-height`](../../../imgs/ground/checking/approach/terrain-height),
+`2-fix.png` to `6-fix.png`.
+
+| round trip | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| *Difference* moved by, without this mod | −28.722 mm | +6.495 mm | −24.546 mm | +28.226 mm | +6.381 mm | −37.167 mm |
+| *Difference* moved by, with this mod | −0.002 mm | +0.008 mm | −0.001 mm | −0.001 mm | 0.000 mm | −0.008 mm |
+
+Over the whole series, the ground comes back within a spread of 49.3 mm without this mod, and
+0.010 mm with it.
+
+## What the measurements say
+
+**The craft is handed back at the same place, and does not come to rest there.** Same craft, same spot,
+same flight: 6.6 to 37.2 mm every time, upwards as often as downwards, and never the same twice, while
+the height it is handed back at never moves by more than a thousandth of a millimetre. What changes
+is what it settles onto. Over the series, 46.8 mm: less than a float step, of the same order as six
+loads of a save on Kerbin.
+
+**It is the ground that moves, and it has moved before the craft comes back.** The ground itself comes
+back somewhere else on every round trip, by as much as the craft, to within a few tenths of a
+millimetre on five of the six — 6.0 mm apart on the fourth — and it has already moved by the time the
+craft is back in range, while it is still packed: from then to the moment physics takes the craft
+over, it moves by 0.023 mm at most.
+
+**With this mod, the ground stays where it is while the craft is away.** The craft comes to rest across
+0.103 mm and the ground across 0.010 mm: hundredths of a millimetre, of the same order as after a load,
+against a float step of 62.5 mm there.
+
+In other words: reload the same save as many times as you like, or leave a craft parked and come back
+to it in the middle of a flight — either way it comes back to the same place, on ground that is in the
+same place. The coin toss of
+[Why the moving ground matters](../../../README.md#why-the-moving-ground-matters) is gone — there is nothing
+left to push the craft out of.

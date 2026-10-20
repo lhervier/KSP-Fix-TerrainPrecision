@@ -1,15 +1,17 @@
 # TODO
 
 Ce qu'il reste à faire, et seulement ça. Tout ce qui est déjà mesuré est dans [le README](README.md) et
-ses chapitres sous [docs/](docs), avec ses logs dans [perfs/](perfs) et dans les dépôts des trois
-Diags ; aucun résultat n'est consigné ici. **Les tests à jouer n'y sont pas non plus** : ils sont dans
-[Work in progress](docs/work-in-progress.md), une page par mod (stock d'abord), les vérifications en
-cours puis celles prévues ; le coût dans [Performance](docs/performance.md). Un nouveau test s'ajoute
-là-bas (une page dans `docs/work-in-progress/<mod>/` et son résumé dans la page du mod,
-`docs/work-in-progress/<mod>.md`), pas ici. Une fois joué, il passe, de la même façon, dans
-[Non-regression tests](docs/non-regression.md) si rien n'empire, dans
-[Limits and solutions](docs/limits-and-solutions.md) sinon. Un mod nouveau a sa page, son résumé dans
-la page d'index et son paragraphe dans le README.
+ses chapitres sous [docs/](docs), un dossier par objet corrigé (`ground`, `statics`, `scatter`, `rocs`,
+`ground-anchor`) plus `common`, avec ses logs dans [diag/](diag) (les perfs dans
+[diag/common/perfs/](diag/common/perfs)) et dans les dépôts des Diags ; aucun résultat n'est consigné ici.
+**Les tests à jouer n'y sont pas non plus** : ils sont dans le *Work in progress* de la page d'entrée de
+chaque objet (`docs/<objet>/README.md`), un sous-chapitre par mod (stock d'abord) ; le coût dans
+[Performance](docs/common/performance.md). Un nouveau test s'ajoute là-bas (une page dans
+`docs/<objet>/work-in-progress/<mod>/` et son résumé dans `docs/<objet>/README.md`), pas ici. Une fois
+joué, il passe, de la même façon, dans *Non-regression tests* (`docs/<objet>/non-regression/<mod>/`) si
+rien n'empire, dans *Limits and solutions* (`docs/<objet>/limits/<mod>/`) sinon. Ses données vont dans
+`diag/<objet>/` et ses images dans `imgs/<objet>/`, au même chemin que sa page. Ce qui vaut pour tous les
+objets à la fois va dans `common`.
 
 ## Sans ordre imposé
 
@@ -33,7 +35,7 @@ la page d'index et son paragraphe dans le README.
   avec le correctif en `logLevel = Debug`, le décalage du protocole d'approche doit apparaître comme une
   salve de lignes `origin moved by … mm`.
 - **Les sauvegardes existantes, ce qu'il reste à faire** (le cas lui-même est le chapitre
-  [Existing saves](docs/non-regression/stock/existing-saves.md)). Décider où va la mise en garde sur
+  [Existing saves](docs/common/existing-saves.md)). Décider où va la mise en garde sur
   les modules amarrés posés sur des jambes d'atterrissage, la configuration qui souffre le plus au
   premier chargement (le *Disclaimer* est partagé mot pour mot avec les README des Diags) ; vérifier
   dans le mécanisme de réglages de KSPCF qu'un patch se désactive, avant d'écrire qu'un joueur peut le
@@ -46,11 +48,11 @@ la page d'index et son paragraphe dans le README.
   roulage, cas RSS, cas de *Limits and solutions*, tests de non-régression) reçoit un script KSP-MCPServer, **à côté** de sa
   procédure à la main, qui reste ; on rejoue sans le correctif et avec, puis on remplace les séries, les
   logs et les chiffres publiés par ceux des scripts. Fait en grande partie : les scripts vivent dans
-  ce dépôt (`diag/automation/`, les Diags ensemble dans la même session). Reste à passer la liste des
+  ce dépôt (`diag/<objet>/automation/`, les Diags ensemble dans la même session). Reste à passer la liste des
   protocoles publiés pour trouver ceux qui n'ont pas encore de script, ou dont les chiffres publiés ne
   viennent pas encore d'un script.
 - **Vérifier que les scripts de pilotage du jeu recourent le moins possible à l'introspection**
   (`get_member`, `set_member`, `call_method` de KSP-MCPServer) (Lionel, 2026-10-06). Cas connus :
-  `diag/automation/run-rotation-threshold.py` active deux `CheatOptions` (`IgnoreMaxTemperature`,
+  `diag/statics/automation/run-rotation-threshold.py` active deux `CheatOptions` (`IgnoreMaxTemperature`,
   `NoCrashDamage`) par `set_member`, que `set_cheats` ne couvre pas (électricité et carburant infinis
-  seulement) ; `diag/automation/run-station-approach.py` lit le coût du lien CommNet par `get_member`.
+  seulement) ; `diag/statics/automation/run-station-approach.py` lit le coût du lien CommNet par `get_member`.
