@@ -786,17 +786,24 @@ With this mod:
   what the script printed in [`runway-earth-rss-without-runway-fix-fix-script.txt`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-without-runway-fix-fix-script.txt), every line of Diag Terrain Height in
   [`runway-earth-rss-without-runway-fix-fix-readings.json`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-without-runway-fix-fix-readings.json), and the screenshots of its table in
   [`runway-earth-rss-without-runway-fix-fix-tables/`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-without-runway-fix-fix-tables/).
-- [`runway-earth-rss-as-released.log`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released.log) and
-  [`runway-earth-rss-as-released-fix.log`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-fix.log) —
-  the same instruments, Real Solar System as released, without this mod, then with it: one launch of the
-  same protocol, the rover read 8 m before the edge;
+- [`runway-earth-rss-as-released.log`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released.log) —
+  the same instruments, Real Solar System as released, without this mod: one launch of the same protocol,
+  six loads (`--launches 1 --reloads 6`); its last two readings, a taxi played with the witness still
+  parked, which keeps the floating origin from moving, are not used;
   what the script printed in [`runway-earth-rss-as-released-script.txt`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-script.txt), every line of Diag Terrain Height in
-  [`runway-earth-rss-as-released-readings.json`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-readings.json), and
-  [`runway-earth-rss-as-released-fix-script.txt`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-fix-script.txt),
-  [`runway-earth-rss-as-released-fix-readings.json`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-fix-readings.json);
-  the screenshots of the table in
-  [`runway-earth-rss-as-released-table.png`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-table.png) and
-  [`runway-earth-rss-as-released-fix-table.png`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-fix-table.png).
+  [`runway-earth-rss-as-released-readings.json`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-readings.json), and the screenshots of its table in
+  [`runway-earth-rss-as-released-tables/`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-tables/).
+- [`runway-earth-rss-as-released-taxi.log`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-taxi.log) —
+  the same install: the taxi alone, before any witness is parked (`--launches 0 --taxi 1500`);
+  what the script printed in [`runway-earth-rss-as-released-taxi-script.txt`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-taxi-script.txt), every line of Diag Terrain Height in
+  [`runway-earth-rss-as-released-taxi-readings.json`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-taxi-readings.json), and the screenshot of its table in
+  [`runway-earth-rss-as-released-taxi-tables/`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-taxi-tables/).
+- [`runway-earth-rss-as-released-fix.log`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-fix.log) —
+  the same install, with this mod: the taxi first, then the six loads
+  (`--launches 1 --reloads 6 --taxi 1500`);
+  what the script printed in [`runway-earth-rss-as-released-fix-script.txt`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-fix-script.txt), every line of Diag Terrain Height in
+  [`runway-earth-rss-as-released-fix-readings.json`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-fix-readings.json), and the screenshots of its table in
+  [`runway-earth-rss-as-released-fix-tables/`](non-regression/real-solar-system/the-runway-fix/runway-earth-rss-as-released-fix-tables/).
 - [`driving-runway-earth-rss-stock.log`](checking-the-culprit-driving/driving-runway-earth-rss-stock.log) — without
   this mod,
   [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), Diag FloatingOrigin and

@@ -31,6 +31,12 @@ moved. The quads placed and the largest correction on each body, over every log 
 The statics of Earth stay further from it: the KSC was corrected by 1 541 mm at most, 3.1 steps, over
 72 placements, and the tracking station of Cape Canaveral by 1 317 mm, 2.6 steps, over 12.
 
+Venus, Mars and Mercury are read at loads only; no descent onto them is flown. In flight, where the terrain
+is built continuously, this mod is checked on Earth, whose float step is the largest of these bodies
+([Checking the ground: in flight](../../checking-the-culprit-flight/the-ground.md#on-earth)): what it
+corrects is the rounding of a position at the distance of the body's centre, whatever the subdivision
+level of the quad.
+
 ## A limit that does not grow: the first version
 
 The first version of the safeguard was a fixed metre, set against roundings of a few centimetres on

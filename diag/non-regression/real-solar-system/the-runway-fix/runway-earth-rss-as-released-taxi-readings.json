@@ -1,0 +1,26 @@
+[
+ {
+  "launch": 0,
+  "load": 0,
+  "what": "taxied",
+  "route": "1500 m east, distance",
+  "line": {
+   "CollisionSurfaceMm": 77342.84147340804,
+   "ComputedTerrainMm": 74039.22216687351
+  },
+  "pitch": 0.0030629207644618395,
+  "heading": 90.00302852727141
+ },
+ {
+  "launch": 0,
+  "load": 0,
+  "what": "off",
+  "route": "80 m south, distance",
+  "line": {
+   "CollisionSurfaceMm": 73992.06669256091,
+   "ComputedTerrainMm": 74039.22210168093
+  },
+  "pitch": 0.03618785100057226,
+  "heading": 179.98064559794088
+ }
+]

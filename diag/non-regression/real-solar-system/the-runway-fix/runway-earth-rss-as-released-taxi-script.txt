@@ -1,0 +1,8 @@
+11:55:36 closed: dialog 'IntroKSC', pressing 'Merci, j'ai compris'
+11:59:10 launch 0 load  0 taxied  ground under craft 77342.841 mm, KSP computes 74039.222 mm: +3303.619 mm, 1500 m east, distance
+11:59:12 screenshot 001-launch0-load00-taxied.png, heading 90.0, pitch +0.00 deg
+11:59:59 launch 0 load  0 off     ground under craft 73992.067 mm, KSP computes 74039.222 mm: -47.155 mm, 80 m south, distance
+12:00:01 screenshot 002-launch0-load00-off.png, heading 180.0, pitch +0.03 deg
+12:00:02 screenshot 003-launch0-load00-table.png
+12:00:07 closed: recovery report
+12:00:13 done: 2 readings, in D:\KSP-Dev\campagnes\2026-10-20-runway-fix-rss-released-taxi-seul\stock\run

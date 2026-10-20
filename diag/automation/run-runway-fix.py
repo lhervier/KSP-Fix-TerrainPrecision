@@ -10,6 +10,10 @@ saves/<folder>/Ships/SPH, then run:
 
 It starts that game itself from the main menu, in sandbox, then:
 
+0. with --taxi, launches the rover alone, taxis it --taxi metres east along the runway at --taxi-speed, stops
+   and reads it there, looks at it from beside, then drives it south off the runway onto the grass, reads it and
+   looks at it again, and recovers it: played first, before any other craft is landed, which, kept loaded,
+   would keep the floating origin from moving;
 1. launches a first rover from the SPH, and parks it on the grass north of the runway, level with the edge
    between the end of the runway (End09) and its fourth section (Section4): the witness of the ground;
 2. for each of --launches launches, launches the rover that measures from the SPH onto the runway, drives it to
@@ -23,6 +27,8 @@ It starts that game itself from the main menu, in sandbox, then:
    south down the bank of End09, east on the grass past the edge, north up the bank of Section4, which rises
    from the grass with no step, and on to the same stop on the fourth section;
 3. recovers the rover that measures, and launches it again.
+
+With --launches 0, the taxi is all it plays.
 
 A reading is a press on Record in the window of KSP Diag - Terrain Height: the ground under the craft, the
 surface the physics touches straight down, and the ground KSP computes for the same spot, in millimetres above
@@ -75,6 +81,10 @@ ROUND_BY_THE_GRASS = [
 # The runway's heading, from its 09 end: the rover drives along it from one stop to the next. A drive to a point
 # this close would steer to make up a few centimetres sideways, and leave the rover askew.
 RUNWAY_HEADING = 90.0
+
+# How far south the rover leaves the runway at the end of the taxi, in metres: past the bank, onto the grass, as
+# for the witness on the other side.
+OFF_THE_RUNWAY = 80.0
 
 OPTIONS = None
 
@@ -189,6 +199,29 @@ def cross(run, launch, load):
     return "by the grass"
 
 
+def taxi(run, options):
+    """Launches the rover onto the runway, the only craft of the game, taxis it along the runway and reads it there,
+    then drives it off the runway onto the grass and reads it again, with a look from beside at each stop and a
+    screenshot of the table at the end. Starts and ends at the space centre."""
+    # Played before the witness is parked: a landed craft kept loaded would keep the floating origin from moving.
+    launch = 0
+    call("launch_vessel", craft=options.craft, site="Runway")
+    common.brake()
+    call("colliders_show_window", visible=False)
+    call("terrainheight_show_window", visible=False)
+    call("terrainheight_clear")
+    stopped = drive(RUNWAY_HEADING, options.taxi, speed=options.taxi_speed)
+    run.record("taxied", launch, 0, "%.0f m east, %s" % (options.taxi, stopped))
+    run.shoot("taxied", launch, 0)
+    stopped = drive(180.0, OFF_THE_RUNWAY)
+    run.record("off", launch, 0, "%.0f m south, %s" % (OFF_THE_RUNWAY, stopped))
+    run.shoot("off", launch, 0)
+    run.shoot_table(launch, 0)
+    call("recover_vessel")
+    close(dialogs_only=False)
+    common.at_space_centre()
+
+
 def main():
     global OPTIONS
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -205,6 +238,9 @@ def main():
                         help="speed at which the rover crosses the edge, in metres per second (default 2)")
     parser.add_argument("--round-by-the-grass", action="store_true",
                         help="go round by the grass at every load, without trying to cross: to try the way round")
+    parser.add_argument("--taxi", type=float, default=0.0,
+                        help="metres to taxi east along the runway after the last load of each launch (default 0)")
+    parser.add_argument("--taxi-speed", type=float, default=8.0, help="speed of the taxi, in metres per second")
     parser.add_argument("--settle", type=float, default=5.0, help="seconds to let the rover settle at each stop")
     parser.add_argument("--speed", type=float, default=2.0, help="top speed of the other drives, in metres per second")
     parser.add_argument("--radius", type=float, default=6371000.0, help="the radius of the body, in metres (Earth's)")
@@ -229,7 +265,10 @@ def main():
     common.at_space_centre()
     if options.ut is not None:
         call("set_time", ut=options.ut)
-    park_witness(run, options)
+    if options.taxi:
+        taxi(run, options)
+    if options.launches:
+        park_witness(run, options)
 
     for launch in range(1, options.launches + 1):
         call("launch_vessel", craft=options.craft, site="Runway")

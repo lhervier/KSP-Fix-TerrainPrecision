@@ -11,12 +11,7 @@ là-bas (une page dans `docs/work-in-progress/<mod>/` et son résumé dans la pa
 [Limits and solutions](docs/limits-and-solutions.md) sinon. Un mod nouveau a sa page, son résumé dans
 la page d'index et son paragraphe dans le README.
 
-## D'abord
-
-Les tests encore ouverts de [Real Solar System](docs/work-in-progress/real-solar-system.md) (Lionel,
-2026-09-25).
-
-## Ensuite, sans ordre imposé
+## Sans ordre imposé
 
 1. **Une release GitHub sur chaque dépôt vers lequel l'issue envoie le lecteur.** Aucun n'en a : ce
    dépôt, Diag LandedVessel, Diag TerrainHeight, Diag FloatingOrigin et Diag TerrainQuads (le cas

@@ -37,12 +37,6 @@ scatter from; every campaign ran with 1.0.27.
 
 **→ Full chapter: [Work in progress: BurstPQS](work-in-progress/burst-pqs.md)**
 
-## Real Solar System
-
-Planned: its runway fix as released, and descents onto Venus, Mars and Mercury.
-
-**→ Full chapter: [Work in progress: Real Solar System](work-in-progress/real-solar-system.md)**
-
 ## Kerbal Konstructs
 
 Planned: a section of the runway seen 21.3 mm above the deck at the first loading, the rest of the group

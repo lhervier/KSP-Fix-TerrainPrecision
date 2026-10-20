@@ -1,14 +1,242 @@
 [
  {
   "launch": 1,
-  "load": 0,
+  "load": 1,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 74091.41728561372,
+   "ComputedTerrainMm": 73904.78750132024
+  },
+  "pitch": -0.011865583747292107,
+  "heading": 90.0303555437379
+ },
+ {
+  "launch": 1,
+  "load": 1,
   "what": "before",
   "route": null,
   "line": {
-   "CollisionSurfaceMm": 78499.57055598497,
+   "CollisionSurfaceMm": 77994.93141844869,
    "ComputedTerrainMm": 74039.22320250422
   },
-  "pitch": -0.07418096448903815,
-  "heading": 102.55604757525835
+  "pitch": -0.010594718795159346,
+  "heading": 90.03780314199176
+ },
+ {
+  "launch": 1,
+  "load": 1,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77991.77558068186,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.011113740015409879,
+  "heading": 90.01787654342257
+ },
+ {
+  "launch": 1,
+  "load": 2,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73918.03155373782,
+   "ComputedTerrainMm": 73904.78885546327
+  },
+  "pitch": -0.010862279064524916,
+  "heading": 90.00997368894558
+ },
+ {
+  "launch": 1,
+  "load": 2,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77754.67758160084,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.009921442424811841,
+  "heading": 89.99647643746334
+ },
+ {
+  "launch": 1,
+  "load": 2,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77751.51065737009,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010425955323577879,
+  "heading": 89.97085475090626
+ },
+ {
+  "launch": 1,
+  "load": 3,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 74122.93082196265,
+   "ComputedTerrainMm": 73904.79081869125
+  },
+  "pitch": -0.009762440952007585,
+  "heading": 90.04295357254877
+ },
+ {
+  "launch": 1,
+  "load": 3,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77966.27646498382,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010321625008219761,
+  "heading": 90.06301655615071
+ },
+ {
+  "launch": 1,
+  "load": 3,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77963.13550136983,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.009895035212519993,
+  "heading": 90.03265201602045
+ },
+ {
+  "launch": 1,
+  "load": 4,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 74079.96889576316,
+   "ComputedTerrainMm": 73904.78894021362
+  },
+  "pitch": -0.010653333452191754,
+  "heading": 90.03785189215348
+ },
+ {
+  "launch": 1,
+  "load": 4,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77812.11124453694,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010772607337899079,
+  "heading": 90.05253450183223
+ },
+ {
+  "launch": 1,
+  "load": 4,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77808.94991662353,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.010312685746824833,
+  "heading": 90.0226374624581
+ },
+ {
+  "launch": 1,
+  "load": 5,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 73823.21993540972,
+   "ComputedTerrainMm": 73904.78005632758
+  },
+  "pitch": -0.010603326126882385,
+  "heading": 90.01055648109643
+ },
+ {
+  "launch": 1,
+  "load": 5,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 78136.09941862524,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.010161630540913673,
+  "heading": 89.9977915893276
+ },
+ {
+  "launch": 1,
+  "load": 5,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 78132.96109903604,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.01051402805152393,
+  "heading": 89.96605680137935
+ },
+ {
+  "launch": 1,
+  "load": 6,
+  "what": "grass",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 74075.21520834416,
+   "ComputedTerrainMm": 73904.77447304875
+  },
+  "pitch": -0.010224381507850705,
+  "heading": 90.01820317097761
+ },
+ {
+  "launch": 1,
+  "load": 6,
+  "what": "before",
+  "route": null,
+  "line": {
+   "CollisionSurfaceMm": 77851.3674326241,
+   "ComputedTerrainMm": 74039.22320250422
+  },
+  "pitch": -0.01006989789096166,
+  "heading": 90.01341596604567
+ },
+ {
+  "launch": 1,
+  "load": 6,
+  "what": "past",
+  "route": "across",
+  "line": {
+   "CollisionSurfaceMm": 77848.23038894683,
+   "ComputedTerrainMm": 74039.22316618264
+  },
+  "pitch": -0.00969916145853775,
+  "heading": 89.98645696983365
+ },
+ {
+  "launch": 1,
+  "load": 6,
+  "what": "taxied",
+  "route": "1500 m east, distance",
+  "line": {
+   "CollisionSurfaceMm": 77773.53943884373,
+   "ComputedTerrainMm": 74039.22229539603
+  },
+  "pitch": 0.003656295994445293,
+  "heading": 89.9793177104109
+ },
+ {
+  "launch": 1,
+  "load": 6,
+  "what": "off",
+  "route": "80 m south, distance",
+  "line": {
+   "CollisionSurfaceMm": 74293.0040070787,
+   "ComputedTerrainMm": 74039.2222320661
+  },
+  "pitch": 0.048046913435675874,
+  "heading": 180.01308357703078
  }
 ]

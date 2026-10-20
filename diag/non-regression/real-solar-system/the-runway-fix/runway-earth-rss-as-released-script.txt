@@ -1,7 +1,41 @@
-23:23:57 closed: dialog 'IntroKSC', pressing 'Merci, j'ai compris'
-23:26:17 witness parked at 28.613488, -80.615334
-23:28:07 launch 1 load  0 before  ground under craft 78499.571 mm, KSP computes 74039.223 mm: +4460.347 mm
-23:28:10 screenshot 001-launch1-load00-before.png, heading 104.8, pitch -0.08 deg
-23:28:11 screenshot 002-launch1-load00-table.png
-23:28:15 closed: recovery report
-23:28:21 done: 1 readings, in D:\ksp-dev\campagnes\2026-10-11-runway-fix-rss\tel-que-publie\stock\run
+11:24:47 closed: dialog 'IntroKSC', pressing 'Merci, j'ai compris'
+11:27:28 witness parked at 28.613487, -80.615310
+11:29:37 launch 1 load  1 grass   ground under craft 74091.417 mm, KSP computes 73904.788 mm: +186.630 mm
+11:29:42 launch 1 load  1 before  ground under craft 77994.931 mm, KSP computes 74039.223 mm: +3955.708 mm
+11:29:44 screenshot 001-launch1-load01-before.png, heading 90.0, pitch -0.01 deg
+11:30:02 launch 1 load  1 past    ground under craft 77991.776 mm, KSP computes 74039.223 mm: +3952.552 mm, across
+11:30:19 screenshot 002-launch1-load01-astride.png, heading 90.0, pitch -0.01 deg
+11:30:28 launch 1 load  2 grass   ground under craft 73918.032 mm, KSP computes 73904.789 mm: +13.243 mm
+11:30:33 launch 1 load  2 before  ground under craft 77754.678 mm, KSP computes 74039.223 mm: +3715.454 mm
+11:30:35 screenshot 003-launch1-load02-before.png, heading 90.0, pitch -0.01 deg
+11:30:53 launch 1 load  2 past    ground under craft 77751.511 mm, KSP computes 74039.223 mm: +3712.287 mm, across
+11:31:10 screenshot 004-launch1-load02-astride.png, heading 90.0, pitch -0.01 deg
+11:31:19 launch 1 load  3 grass   ground under craft 74122.931 mm, KSP computes 73904.791 mm: +218.140 mm
+11:31:24 launch 1 load  3 before  ground under craft 77966.276 mm, KSP computes 74039.223 mm: +3927.053 mm
+11:31:26 screenshot 005-launch1-load03-before.png, heading 90.1, pitch -0.01 deg
+11:31:44 launch 1 load  3 past    ground under craft 77963.136 mm, KSP computes 74039.223 mm: +3923.912 mm, across
+11:32:01 screenshot 006-launch1-load03-astride.png, heading 90.0, pitch -0.01 deg
+11:32:12 launch 1 load  4 grass   ground under craft 74079.969 mm, KSP computes 73904.789 mm: +175.180 mm
+11:32:17 launch 1 load  4 before  ground under craft 77812.111 mm, KSP computes 74039.223 mm: +3772.888 mm
+11:32:19 screenshot 007-launch1-load04-before.png, heading 90.1, pitch -0.01 deg
+11:32:37 launch 1 load  4 past    ground under craft 77808.950 mm, KSP computes 74039.223 mm: +3769.727 mm, across
+11:32:54 screenshot 008-launch1-load04-astride.png, heading 90.0, pitch -0.01 deg
+11:32:55 screenshot 009-launch1-load04-table.png
+11:33:05 launch 1 load  5 grass   ground under craft 73823.220 mm, KSP computes 73904.780 mm: -81.560 mm
+11:33:10 launch 1 load  5 before  ground under craft 78136.099 mm, KSP computes 74039.223 mm: +4096.876 mm
+11:33:12 screenshot 010-launch1-load05-before.png, heading 90.0, pitch -0.01 deg
+11:33:30 launch 1 load  5 past    ground under craft 78132.961 mm, KSP computes 74039.223 mm: +4093.738 mm, across
+11:33:47 screenshot 011-launch1-load05-astride.png, heading 90.0, pitch -0.01 deg
+11:33:56 launch 1 load  6 grass   ground under craft 74075.215 mm, KSP computes 73904.774 mm: +170.441 mm
+11:34:01 launch 1 load  6 before  ground under craft 77851.367 mm, KSP computes 74039.223 mm: +3812.144 mm
+11:34:03 screenshot 012-launch1-load06-before.png, heading 90.0, pitch -0.01 deg
+11:34:21 launch 1 load  6 past    ground under craft 77848.230 mm, KSP computes 74039.223 mm: +3809.007 mm, across
+11:34:37 screenshot 013-launch1-load06-astride.png, heading 90.0, pitch -0.01 deg
+11:34:39 screenshot 014-launch1-load06-table.png
+11:38:00 launch 1 load  6 taxied  ground under craft 77773.539 mm, KSP computes 74039.222 mm: +3734.317 mm, 1500 m east, distance
+11:38:02 screenshot 015-launch1-load06-taxied.png, heading 90.0, pitch +0.00 deg
+11:38:50 launch 1 load  6 off     ground under craft 74293.004 mm, KSP computes 74039.222 mm: +253.782 mm, 80 m south, distance
+11:38:52 screenshot 016-launch1-load06-off.png, heading 180.0, pitch +0.05 deg
+11:38:53 screenshot 017-launch1-load06-table.png
+11:38:57 closed: recovery report
+11:39:03 done: 20 readings, in D:\KSP-Dev\campagnes\2026-10-20-runway-fix-rss-released-taxi\stock\run
