@@ -11,8 +11,9 @@ a mass on the other end of a joint.
 
 ## Breaking Ground's surface features
 
-**Planned.** They are placed like the rocks, and carry a collider: this mod could widen a physical gap
-there, as it widens a visual one for the rocks.
+**Planned.** They are placed like the rocks, and carry a collider: a feature could come back aside at
+each load, nudging what rests on it, and the scatter fix does not cover them. The cure would be the
+scatter fix's; read in stock's code, nothing looks for them under the sphere.
 
 **→ Full chapter: [Breaking Ground's surface features](stock/breaking-grounds-surface-features.md)**
 
