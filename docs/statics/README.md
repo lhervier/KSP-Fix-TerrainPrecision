@@ -234,6 +234,14 @@ placed on a static this mod moves in flight.
 
 **→ Full chapter: [Kerbal Konstructs: a launch from its launch sites](work-in-progress/kerbal-konstructs/a-launch-from-its-launch-sites.md)**
 
+### Promised Worlds
+
+**Its monuments and its frozen lake: planned — read in its configs, not played.** Promised Worlds places
+them through Kopernicus as `PQSCity2`, like the launch sites of Making History, so this mod takes them out
+of their sphere in flight.
+
+**→ Full chapter: [Promised Worlds: its monuments and its frozen lake](work-in-progress/promised-worlds/its-monuments-and-its-frozen-lake.md)**
+
 ### Other mods
 
 **Mods that look for a static under its sphere: planned.** Any mod that looks for a static where stock puts

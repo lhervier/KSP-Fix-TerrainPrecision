@@ -259,3 +259,11 @@ ground with stock decals, which edit the height before this fix places it, so th
 kept.
 
 **→ Full chapter: [Kerbal Konstructs: the ground it flattens](work-in-progress/kerbal-konstructs/the-ground-it-flattens.md)**
+
+### Promised Worlds
+
+**Its bodies: planned — read in the source, not played.** Promised Worlds shapes its bodies with terrain
+mods of its own and puts its star systems far from the Sun; read in the code, neither should reach the
+ground this mod places.
+
+**→ Full chapter: [Promised Worlds: its bodies](work-in-progress/promised-worlds/its-bodies.md)**
