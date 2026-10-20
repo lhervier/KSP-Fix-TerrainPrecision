@@ -13,8 +13,18 @@ and come back to is not loaded from a save: the game unloads it when the rover d
 quads under it again when the rover comes back, after the floating origin has moved. If this mod broke
 something there, the parked craft would sit higher or lower than its ground when the player comes back to
 it. On stock, that is [Checking the culprit: coming back to a craft left parked](../../checking-the-culprit-approach.md),
-on Kerbin. The Moon of Real Solar System is a body of Kopernicus, almost nine times the size of the Mun, where a
-float step at the ground is 125 mm.
+on Kerbin.
+
+**Why the Moon rather than Earth.** Once the parked craft is unloaded, the rover crosses a move of the
+floating origin every 500 m, at full speed. On Earth, without this mod, the ground under a rover jumps by
+159 to 243 mm at such a move
+([Checking the ground: driving on while the world moves](../../checking-the-culprit-driving/the-ground.md#on-earth)):
+a step the rover would take several times per round trip, in the session that has to bring it back to its
+starting spot each time. The bodies of Real Solar System as large as Kerbin, whose float step is Kerbin's
+62.5 mm, are too light to drive on: from 0.15 m/s² on Tethys to 0.36 m/s² on Titania, against 0.49 m/s²
+on Minmus. The Moon has the gravity of the Mun, 1.62 m/s², and a float step of 125 mm at the ground,
+twice Kerbin's and a quarter of Earth's; it is still a body of Kopernicus, almost nine times the size of
+the Mun.
 
 ## The test
 
