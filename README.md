@@ -421,9 +421,8 @@ the terrain fix.
 
 **→ Full chapter: [Work in progress: stock](docs/work-in-progress/stock.md)**
 
-**KSP Community Fixes.** Planned: its terrain patches, read on release 1.40.1, to read again on 1.41.1,
-the release every campaign ran with; and the ground fix one of its maintainers plans for it, which this
-mod's terrain fix would have to step back from.
+**KSP Community Fixes.** Planned: the ground fix one of its maintainers plans for it, which this mod's
+terrain fix would have to step back from.
 
 **→ Full chapter: [Work in progress: KSP Community Fixes](docs/work-in-progress/ksp-community-fixes.md)**
 

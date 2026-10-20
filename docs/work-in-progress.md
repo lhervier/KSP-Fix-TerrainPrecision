@@ -17,8 +17,7 @@ ocean, a mission spawning a craft, the other stock statics, and the scatter fix 
 
 ## KSP Community Fixes
 
-Planned: its terrain patches, read on release 1.40.1, to read again on 1.41.1, the release every campaign
-ran with; and the ground fix one of its maintainers plans for it, which this mod's terrain fix would have to
+Planned: the ground fix one of its maintainers plans for it, which this mod's terrain fix would have to
 step back from.
 
 **→ Full chapter: [Work in progress: KSP Community Fixes](work-in-progress/ksp-community-fixes.md)**
