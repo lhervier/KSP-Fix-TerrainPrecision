@@ -78,7 +78,8 @@ craft comes down to where the world turns with it.
 
 **→ Full chapter: [Tilt'Em: a tilted body](work-in-progress/tilt-em/a-tilted-body.md)**
 
-**KAS: planned.** Kerbal Attachment System attaches parts to the ground with joints of its own: a part
-attached to the ground either follows the corrected ground or is pinned to the terrain sphere.
+**KAS: planned, read in the source.** Kerbal Attachment System holds parts to the ground and docks crafts
+with joints of its own; read in its code, its harpoon is pinned to the world, not to the terrain, and none
+of its links should reach what this mod corrects.
 
 **→ Full chapter: [KAS: a part attached to the ground](work-in-progress/kas/a-part-attached-to-the-ground.md)**
