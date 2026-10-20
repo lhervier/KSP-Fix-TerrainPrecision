@@ -231,6 +231,12 @@ ocean sphere is flagged has not been read, and a craft floating near a coast has
 
 **→ Full chapter: [The ocean](work-in-progress/stock/the-ocean.md)**
 
+**Crafts spawned by a contract: planned — read in the code, not measured.** A craft to repair and a wreck
+holding a kerbal to rescue are placed at the height the ground should have, not on the ground built, and
+not in `PRELAUNCH`; some have been seen to jump when reached. Read in the code, that jump is stock's own.
+
+**→ Full chapter: [Crafts spawned by a contract](work-in-progress/stock/crafts-spawned-by-a-contract.md)**
+
 ### KSP Community Fixes
 
 **Its own ground fix: planned — announced, not released.** One of its maintainers plans a ground fix for
