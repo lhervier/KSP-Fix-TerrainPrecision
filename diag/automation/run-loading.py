@@ -62,6 +62,11 @@ def log(*parts):
     print(time.strftime("%H:%M:%S"), *parts, flush=True)
 
 
+def mm(value):
+    """A value of an instrument, in millimetres to three decimals, or "none" when it recorded none."""
+    return "none" if value is None else "%.3f" % value
+
+
 def wait_for_digits_to_settle(instrument):
     """What the protocol asks: wait for the live value to stop moving (within 0.0005 mm over 2 s)."""
     last = None
@@ -126,11 +131,12 @@ def main():
             row[instrument] = call(instrument + "_record")
         rows.append(row)
         parts = []
+        # An instrument that lost its craft (thrown, broken apart) records no value: said, not formatted.
         if "landedvessel" in row:
-            parts.append("Settled %16.3f mm  Moved %9.3f mm" % (row["landedvessel"]["SettledMm"],
-                                                                 row["landedvessel"]["MovedMm"]))
+            parts.append("Settled %16s mm  Moved %9s mm" % (mm(row["landedvessel"]["SettledMm"]),
+                                                             mm(row["landedvessel"]["MovedMm"])))
         if "terrainheight" in row:
-            parts.append("Ground under craft %14.3f mm" % row["terrainheight"]["CollisionSurfaceMm"])
+            parts.append("Ground under craft %14s mm" % mm(row["terrainheight"]["CollisionSurfaceMm"]))
         log("  load %d  %s" % (load, "  ".join(parts)))
         if options.warp and load < options.loads:
             # The time played between two loadings, as a player who warps before loading the save again: the

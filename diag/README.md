@@ -704,6 +704,12 @@ otherwise:
 - [`reload-moon-rss-resave-stock-diag2.log`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-resave-stock-diag2.log) —
   Diag TerrainHeight: six loads of `reload-moon-rss-resave.sfs`, where the craft jumped once and tipped
   over once.
+- [`reload-earth-rss-landed-stock.log`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-stock.log) —
+  not by hand: both instruments and KSP-MCPServer, six loads of `reload-earth-rss-landed.sfs` played by
+  [`automation/run-loading.py`](automation/run-loading.py); what the script printed in
+  [`reload-earth-rss-landed-stock-script.txt`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-stock-script.txt),
+  every line of both instruments in
+  [`reload-earth-rss-landed-stock-readings.json`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-stock-readings.json).
 
 With this mod:
 
@@ -725,6 +731,22 @@ With this mod:
 - [`reload-earth-rss-fix-chain.log`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-fix-chain.log) — no instrument, one
   session: 27 loads of `reload-earth-rss-landed.sfs`, the craft *landed*, then, after going back to the
   space centre, 24 of `reload-earth-rss-resave.sfs`, the craft in *prelaunch*.
+- [`reload-earth-rss-landed-fix.log`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-fix.log) —
+  both instruments and KSP-MCPServer, six loads of `reload-earth-rss-landed.sfs` played by
+  [`automation/run-loading.py`](automation/run-loading.py); what the script printed in
+  [`reload-earth-rss-landed-fix-script.txt`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-fix-script.txt),
+  every line of both instruments in
+  [`reload-earth-rss-landed-fix-readings.json`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-fix-readings.json).
+- [`reload-rss-without-workaround-fix.log`](non-regression/real-solar-system/the-ground-workaround/reload-rss-without-workaround-fix.log) —
+  the same, Real Solar System built from the sources of its release 20.1.3.0 with the change
+  [`rss-20.1.3-without-its-ground-workaround.diff`](non-regression/real-solar-system/the-ground-workaround/rss-20.1.3-without-its-ground-workaround.diff),
+  which keeps its `VesselGroundPositionEnhancer` from doing anything: one session, six loads of
+  `reload-earth-rss-landed.sfs`, then six of `reload-moon-rss-resave.sfs`; what the script printed in
+  [`reload-earth-rss-landed-without-workaround-fix-script.txt`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-without-workaround-fix-script.txt)
+  and [`reload-moon-rss-resave-without-workaround-fix-script.txt`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-resave-without-workaround-fix-script.txt),
+  every line of both instruments in
+  [`reload-earth-rss-landed-without-workaround-fix-readings.json`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-without-workaround-fix-readings.json)
+  and [`reload-moon-rss-resave-without-workaround-fix-readings.json`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-resave-without-workaround-fix-readings.json).
 - [`kopernicus-flag-glitch-without-this-mod.log`](limits-and-solutions/kopernicus/the-flag-fix/kopernicus-flag-glitch-without-this-mod.log),
   [`kopernicus-flag-glitch-statics-fix.log`](limits-and-solutions/kopernicus/the-flag-fix/kopernicus-flag-glitch-statics-fix.log) and
   [`kopernicus-flag-glitch-statics-fix-off.log`](limits-and-solutions/kopernicus/the-flag-fix/kopernicus-flag-glitch-statics-fix-off.log) —

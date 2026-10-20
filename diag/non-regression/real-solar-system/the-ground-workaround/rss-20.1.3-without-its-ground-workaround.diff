@@ -1,0 +1,38 @@
+diff --git a/Source/Properties/AssemblyInfo.cs b/Source/Properties/AssemblyInfo.cs
+index 4bfccb0..57dd8a2 100644
+--- a/Source/Properties/AssemblyInfo.cs
++++ b/Source/Properties/AssemblyInfo.cs
+@@ -1,4 +1,4 @@
+-﻿#define CIBUILD_disabled
++﻿#define CIBUILD
+ using System.Reflection;
+ using System.Runtime.InteropServices;
+ 
+@@ -37,8 +37,8 @@ using System.Runtime.InteropServices;
+ // [assembly: AssemblyVersion("1.0.*")]
+ 
+ #if CIBUILD
+-[assembly: AssemblyVersion("@MAJOR@.@MINOR@.@PATCH@.@BUILD@")]
+-[assembly: AssemblyFileVersion("@MAJOR@.@MINOR@.@PATCH@.@BUILD@")]
++[assembly: AssemblyVersion("20.1.3.0")]
++[assembly: AssemblyFileVersion("20.1.3.0")]
+ #else
+ [assembly: AssemblyVersion("18.5.0.0")]
+ [assembly: AssemblyFileVersion("18.5.0.0")]
+diff --git a/Source/VesselGroundPositionEnhancer.cs b/Source/VesselGroundPositionEnhancer.cs
+index 33e22ca..c9d83d1 100644
+--- a/Source/VesselGroundPositionEnhancer.cs
++++ b/Source/VesselGroundPositionEnhancer.cs
+@@ -25,6 +25,12 @@ namespace RealSolarSystem
+ 
+         public void Start()
+         {
++            // Test build: VesselGroundPositionEnhancer neutralized, as if WorldStabilizer were installed.
++            // onVesselGoOffRails is never subscribed, so a landed craft going off rails is left to stock
++            // (no forced CheckGroundCollision), and a craft in prelaunch keeps stock's CollisionEnhancer frames.
++            Debug.Log("[RSS-VGPE] VesselGroundPositionEnhancer neutralized (test build 20.1.3-without-its-ground-workaround)");
++            return;
++
+             if (IsWorldStabilizerInstalled) return;
+ 
+             GameEvents.onVesselGoOffRails.Add(OnVesselGoOffRails);

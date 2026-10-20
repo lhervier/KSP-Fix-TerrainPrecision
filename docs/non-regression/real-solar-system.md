@@ -17,7 +17,8 @@ every session with this mod in [`diag/runs`](../../diag/README.md#on-real-solar-
 
 **Checked on the Moon and on Earth — with this mod, it has nothing left to correct for this defect.** Real
 Solar System moves a landed craft back onto the ground when it is more than 10 cm off. Over 75 loads in
-a row with this mod, the craft never moved, and the workaround never had anything to correct.
+a row with this mod, the craft never moved, and the workaround never had anything to correct; with Real
+Solar System built without it, this mod keeps the craft in place on its own.
 
 **→ Full chapter: [Real Solar System: the ground workaround](real-solar-system/the-ground-workaround.md)**
 

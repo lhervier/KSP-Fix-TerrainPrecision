@@ -4,9 +4,9 @@ Part of [Terrain Precision Fix](../../README.md), one mod of [Work in progress](
 
 ## The ground workaround
 
-**In progress.** Real Solar System's ground workaround has nothing left to correct with this mod on the
-Moon and on Earth; the rest of the series, a craft *landed* on Earth and the other moments it runs, is
-still to play.
+**In progress.** Real Solar System's ground workaround has nothing left to correct with this mod when a
+save is loaded, on the Moon and on Earth, and this mod keeps a craft in place without it; switching to a
+craft left parked on the Moon, another moment the workaround runs, is still to play.
 
 **→ Full chapter: [Real Solar System: the ground workaround](real-solar-system/the-ground-workaround.md)**
 

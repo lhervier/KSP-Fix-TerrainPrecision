@@ -436,7 +436,8 @@ hangs the scatter from; every campaign ran with 1.0.27.
 
 **→ Full chapter: [Work in progress: BurstPQS](docs/work-in-progress/burst-pqs.md)**
 
-**Real Solar System.** In progress: the rest of the series on its ground workaround. Planned: its runway
+**Real Solar System.** In progress: its ground workaround, at a switch to a craft left parked on the
+Moon. Planned: its runway
 fix as released, and descents onto Venus, Mars and Mercury.
 
 **→ Full chapter: [Work in progress: Real Solar System](docs/work-in-progress/real-solar-system.md)**
