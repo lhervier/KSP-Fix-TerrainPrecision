@@ -13,22 +13,12 @@ la page d'index et son paragraphe dans le README.
 
 ## Sans ordre imposé
 
-1. **Une release GitHub sur chaque dépôt vers lequel l'issue envoie le lecteur.** Aucun n'en a : ce
-   dépôt, Diag LandedVessel, Diag TerrainHeight, Diag FloatingOrigin et Diag TerrainQuads (le cas
-   [The seam between subdivision levels](docs/limits-and-solutions/stock/the-seam-between-subdivision-levels.md)
-   en dépend : l'instrument, sa page *What it shows* et *Get it*). L'issue commence par faire installer Diag LandedVessel, et les trois README des
-   Diags renvoient vers `releases/latest` dans *Get it*, qui donne une 404 aujourd'hui — sur la page
-   même où arrive un mainteneur depuis la première consigne du repro. `build.bat` produit déjà le
-   dossier `GameData` ; la release, c'est ce dossier zippé. PQS Bench et Stock Quad Cache ne sont cités
-   qu'en appui du chiffre de performance et peuvent attendre, mais leur *Get it* ne doit pas non plus
-   promettre un téléchargement qui n'existe pas. Vérifier tous les liens `releases/latest` de la famille.
-2. **L'écart diffère-t-il d'un point du sol à l'autre ?** C'est ce qui casse une structure posée sur
-   plusieurs pieds (un pied enterré, un autre en l'air) : sans lui, le sol monte ou descend d'un bloc et
-   la structure suit. Je le crois, puisque chaque quad arrondit sa propre position, mais rien ne le
-   mesure. Diag TerrainHeight sur quelques points éloignés de plusieurs quads, six chargements, sans le correctif ;
-   faisable sur Kerbin dans `ksp-dev\`, sur les deux PC. Si la mesure le confirme, une phrase à ajouter
-   au texte de #440, là où il dit que les grosses bases explosent : un pied enterré, un autre en l'air.
-
+- **L'écart diffère-t-il d'un point du sol à l'autre ?** C'est ce qui casse une structure posée sur
+  plusieurs pieds (un pied enterré, un autre en l'air) : sans lui, le sol monte ou descend d'un bloc et
+  la structure suit. Je le crois, puisque chaque quad arrondit sa propre position, mais rien ne le
+  mesure. Diag TerrainHeight sur quelques points éloignés de plusieurs quads, six chargements, sans le correctif ;
+  faisable sur Kerbin dans `ksp-dev\`, sur les deux PC. Si la mesure le confirme, une phrase à ajouter
+  au texte de #440, là où il dit que les grosses bases explosent : un pied enterré, un autre en l'air.
 - **Séparer le décalage d'origine du déchargement.** Dans le protocole d'approche, le vaisseau est
   déchargé et l'origine se décale à la même frame : aucune mesure ne dit encore lequel des deux fait
   bouger le sol ; le code stock désigne le décalage. ⚠️ Changer de vaisseau (`]`) **ne** décale **pas**
@@ -55,20 +45,12 @@ la page d'index et son paragraphe dans le README.
   2026-10-03). Chaque protocole publié (chargement par corps, approche, changement de vaisseau, piste,
   roulage, cas RSS, cas de *Limits and solutions*, tests de non-régression) reçoit un script KSP-MCPServer, **à côté** de sa
   procédure à la main, qui reste ; on rejoue sans le correctif et avec, puis on remplace les séries, les
-  logs et les chiffres publiés par ceux des scripts. Modèles : `diag/automation/run-runway.py` et
-  `run-approach.py` (campagne Deferred). À trancher au départ : où vit un script (le protocole appartient
-  à l'instrument, donc plutôt dans le dépôt du Diag : y déplacer les deux d'ici) ; un Diag par session
-  comme aujourd'hui, ou les deux ensemble ; les outils du serveur qui manqueront (Set Position, Set
-  Orbit, Infinite Fuel : seulement ceux qu'un script utilise).
+  logs et les chiffres publiés par ceux des scripts. Fait en grande partie : les scripts vivent dans
+  ce dépôt (`diag/automation/`, les Diags ensemble dans la même session). Reste à passer la liste des
+  protocoles publiés pour trouver ceux qui n'ont pas encore de script, ou dont les chiffres publiés ne
+  viennent pas encore d'un script.
 - **Vérifier que les scripts de pilotage du jeu recourent le moins possible à l'introspection**
   (`get_member`, `set_member`, `call_method` de KSP-MCPServer) (Lionel, 2026-10-06). Cas connus :
   `diag/automation/run-rotation-threshold.py` active deux `CheatOptions` (`IgnoreMaxTemperature`,
   `NoCrashDamage`) par `set_member`, que `set_cheats` ne couvre pas (électricité et carburant infinis
-  seulement) ; les scripts de capture recalent la fenêtre des Diags par `set_member` de `windowRect`
-  (point suivant).
-- **Diags : *Clear* remet la fenêtre à sa hauteur initiale** (Lionel, 2026-10-04). Diag TerrainHeight,
-  Diag LandedVessel et Diag FloatingOrigin : leur fenêtre (`GUILayout.Window`) garde la hauteur qu'elle
-  avait avant *Clear table*, et un vide reste sous le tableau, jusque dans les captures. Remettre la
-  hauteur de `windowRect` à zéro au *Clear* (et sans doute au *Delete* d'une ligne), pour qu'elle se
-  recale sur son contenu. Contourné en attendant par les scripts de capture (`set_member` de
-  `windowRect`).
+  seulement) ; `diag/automation/run-station-approach.py` lit le coût du lien CommNet par `get_member`.
