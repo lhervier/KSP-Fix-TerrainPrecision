@@ -1,0 +1,8 @@
+22:16:40 instruments: landedvessel
+22:16:52   load 1  Settled    202138096.670 mm  Moved    -9.433 mm
+22:17:00   load 2  Settled    202138096.671 mm  Moved    -9.432 mm
+22:17:09   load 3  Settled    202138096.674 mm  Moved    -9.428 mm
+22:17:18   load 4  Settled    202138096.678 mm  Moved    -9.425 mm
+22:17:26   load 5  Settled    202138096.676 mm  Moved    -9.427 mm
+22:17:35   load 6  Settled    202138096.673 mm  Moved    -9.430 mm
+22:17:36 done

@@ -5,10 +5,10 @@ using UnityEngine;
 namespace com.github.lhervier.ksp.terrainprecisionfix
 {
     /// <summary>
-    /// Places the terrain and the statics, and, when asked to, the terrain scatter, the same way at every
-    /// load, where their own double precision coordinates say they are, and keeps the stock ground anchor
-    /// at the height it was placed at: installs each fix the settings leave on, and drives the statics fix
-    /// through scene changes and from frame to frame.
+    /// Places the terrain and the statics, and, when asked to, the terrain scatter and the surface features,
+    /// the same way at every load, where their own double precision coordinates say they are, and keeps the
+    /// stock ground anchor at the height it was placed at: installs each fix the settings leave on, and
+    /// drives the statics fix through scene changes and from frame to frame.
     /// </summary>
     [KSPAddon(KSPAddon.Startup.Instantly, true)]
     public class TerrainPrecisionFixMod : MonoBehaviour
@@ -84,6 +84,25 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
                 {
                     // Whatever patch did get applied does nothing: the scatter is exactly where stock puts it.
                     Log.Error($"Could not install the scatter fix, the scatter is left where stock places it: {e}");
+                }
+            }
+
+            if (!Settings.FixRocs)
+            {
+                Log.Info("Surface features fix turned off in the settings");
+            }
+            else
+            {
+                try
+                {
+                    RocFix.Install(harmony);
+                    Log.Info("Surface features fix installed");
+                }
+                catch (Exception e)
+                {
+                    // Whatever patch did get applied does nothing: the surface features are exactly where stock
+                    // puts them.
+                    Log.Error($"Could not install the surface features fix, the surface features are left where stock places them: {e}");
                 }
             }
 

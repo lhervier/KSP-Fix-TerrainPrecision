@@ -6,7 +6,7 @@ all.
 
 ## The culprit
 
-Stock places the ground, the statics and the scatter through Unity `Transform`s whose positions are floats,
+Stock places the ground, the statics, the scatter and the surface features through Unity `Transform`s whose positions are floats,
 holding vectors as long as the radius of the body: at 600 km a float moves in steps of 62.5 mm, and the frame
 these vectors go through does not stay put, so each placement draws a new rounding.
 

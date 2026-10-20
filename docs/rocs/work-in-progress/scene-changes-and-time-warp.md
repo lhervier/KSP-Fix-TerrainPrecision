@@ -14,7 +14,8 @@ kerbal standing on one would show it moving.
 [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel): the sequence of
 [Scene changes](../../statics/non-regression/stock/scene-changes.md#the-test), then time warp on the ground
 and a pass in time warp on rails as in [Time warp](../../statics/non-regression/stock/time-warp.md), on
-stock and with this mod.
+with this mod and `fixRocs = false`, then with this mod as installed.
 
-*What should happen.* Unknown until the surface features have a fix of their own
-([The ROCs](../README.md)): on stock, the feature, and Jeb on it, may come back aside after each.
+*What should happen.* With the fix of the surface features off, the feature, and Jeb on it, may come back
+aside after each; with this mod as installed, neither moves, as at a load
+([Checking the ROCs: loading the same save](../checking/loading.md)).

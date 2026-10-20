@@ -2,8 +2,8 @@
 
 Part of [Terrain Precision Fix](../../README.md), [what the fixes share](README.md).
 
-Three of the things this mod fixes share one culprit. Stock places the ground, the statics standing on it
-and the scatter growing on it through Unity `Transform`s, whose positions are floats, holding vectors as
+Four of the things this mod fixes share one culprit. Stock places the ground, the statics standing on it,
+the scatter growing on it and Breaking Ground's surface features through Unity `Transform`s, whose positions are floats, holding vectors as
 long as the radius of the body: 600 km on Kerbin. At that length a float moves in steps of 62.5 mm, so each
 value is rounded to the nearest step, up or down.
 
@@ -17,7 +17,7 @@ give that frame back, and that it changes during a flight with nothing loaded.
 [leaving the rotating frame](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/docs/what-the-measurements-show-rotating-frame.md),
 [a rover driven 2 km and back](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/docs/what-the-measurements-show-driving.md)**
 
-Each of the three has a page of its own: where the rounding strikes it in the stock code, how this mod takes
+Each of the four has a page of its own: where the rounding strikes it in the stock code, how this mod takes
 it away, and how that is checked.
 
 - **[The ground](../ground/README.md)**, the quads a craft stands on, and every vertex inside them.
@@ -25,9 +25,10 @@ it away, and how that is checked.
   launch sites of the Making History expansion, and the bases a mod such as Kerbal Konstructs plants on a
   body.
 - **[The scatter](../scatter/README.md)**: the rocks, and around the KSC the grass and the trees.
+- **[The ROCs](../rocs/README.md)**: Breaking Ground's surface features, placed like the scatter, but
+  with a collider.
 
-**[The ROCs](../rocs/README.md)**, Breaking Ground's surface features, are placed like the scatter, and are
-still work in progress. **[The ground anchor](../ground-anchor/README.md)** is another matter: two stock
+**[The ground anchor](../ground-anchor/README.md)** is another matter: two stock
 behaviours raise an anchored base when it is loaded, and neither is a rounding.
 
 **How each fix is checked.** Each situation where a craft meets the ground is measured twice, without this

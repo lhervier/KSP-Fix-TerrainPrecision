@@ -5,8 +5,7 @@ that stock grows on the terrain. Where the rounding strikes them in the stock co
 away, how that is checked, what keeps working, what it makes worse, and what is still to check.
 
 The rounding itself, shared with the ground and the statics, is told once in
-[The culprit: a float at planet scale](../common/the-culprit.md). Breaking Ground's surface features, placed
-the same way, have [a page of their own](../rocs/README.md).
+[The culprit: a float at planet scale](../common/the-culprit.md).
 
 ## The culprit
 

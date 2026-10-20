@@ -21,6 +21,12 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
         public static bool FixScatter { get; private set; } = true;
 
         /// <summary>
+        /// Whether Breaking Ground's surface features (ROCs) are drawn from their terrain quads. It moves stock
+        /// objects away from where other mods may look for them, hence a setting of its own.
+        /// </summary>
+        public static bool FixRocs { get; private set; } = true;
+
+        /// <summary>
         /// Whether the collider of the stock ground anchor reaches down to the bottom of the anchor, so that a
         /// load puts it back at the height it was placed at.
         /// </summary>
@@ -85,6 +91,7 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
             FixTerrain = ReadSwitch(node, "fixTerrain", FixTerrain, path);
             FixStatics = ReadSwitch(node, "fixStatics", FixStatics, path);
             FixScatter = ReadSwitch(node, "fixScatter", FixScatter, path);
+            FixRocs = ReadSwitch(node, "fixRocs", FixRocs, path);
             FixGroundAnchorModel = ReadSwitch(node, "fixGroundAnchorModel", FixGroundAnchorModel, path);
             FixGroundAnchorLoad = ReadSwitch(node, "fixGroundAnchorLoad", FixGroundAnchorLoad, path);
             FixGroundAnchorRivet = ReadSwitch(node, "fixGroundAnchorRivet", FixGroundAnchorRivet, path);

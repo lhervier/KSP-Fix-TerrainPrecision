@@ -1,72 +1,55 @@
 # The ROCs
 
 Part of [Terrain Precision Fix](../../README.md): Breaking Ground's surface features (ROCs), the objects
-studied in EVA or with the robotic arms. Everything about them is still work in progress: read in stock's
-code, with no fix of their own yet.
+studied in EVA or with the robotic arms. Where the rounding strikes them in the stock code, how this mod
+takes it away, how that is checked, and what is still to check.
 
-The rounding they may share with the ground, the statics and the scatter is told once in
+The rounding itself, shared with the ground, the statics and the scatter, is told once in
 [The culprit: a float at planet scale](../common/the-culprit.md).
 
-## Status
+## The culprit
 
-**Planned — read in stock's code; no fix of their own yet.** The surface features studied in EVA
-or with the robotic arms are placed like the rocks, from a holder that hangs under the terrain sphere,
-and unlike stock rocks they carry a collider. If they share the rocks' fault, a player would see:
+The surface features are placed like the scatter: built from the vertices of their quad, but hung from a
+*holder* that stays under the body, at a 600 km vector in a float. Unlike stock rocks, they carry a
+collider: a kerbal or a part resting on one moves with it. The terrain fix makes it show: the ground stops
+moving, the holders do not.
 
-- a surface feature that comes back a few centimetres higher or lower, or slightly aside, at each load;
-- a kerbal, a rover wheel or a part resting on one nudged as the flight starts, since what moves is the
-  collider it rests on;
-- with this mod, the feature off the corrected ground by a gap that changes at each load, as the scatter
-  is without the [scatter fix](../scatter/the-fix.md), which does not cover surface features.
+**→ Full chapter: [The culprit: the ROCs](the-culprit.md)**
 
-## How stock places them
+## The fix
 
-- **One holder per quad, under the sphere.** `LandClassROC` creates a `ROC <name>` container as a child
-  of the terrain sphere, and hangs each holder (`PQSMod_ROCScatterQuad`) from it.
-  `PQSMod_ROCScatterQuad.Setup` then does `localPosition = quad.positionPlanet`, as
-  `PQSMod_LandClassScatterQuad.Setup` does for the rocks
-  ([Why the holder has to move at all](../scatter/the-fix.md#why-the-holder-has-to-move-at-all)).
-- **Each feature on a vertex of its quad.** `LandClassROC.CreateScatterMesh` takes the position of a
-  feature from `quad.verts`, raises it by half the height of its model, sinks it by its depth, and sets
-  it as the feature's `localPosition` under the holder. Seen in game: with the colliders shown, the
-  features of a quad sit exactly on vertices of its mesh.
-- **The same draw at every load.** The vertex, the rotation and the depth come from
-  `Random.InitState(quad.quadSeed)`: within its quad, a feature is placed the same way at every load.
-  Whatever moves comes from the holder, not from the draw.
-- **The collider follows the holder.** It belongs to the feature's model, a child of the holder, so the
-  physics takes its pose from the same chain of transforms as what is drawn, as for
-  [scatter with colliders](../scatter/non-regression/kopernicus/scatter-with-colliders.md). An offset of the
-  holder is a physical one.
-- **The identifier does not depend on the holder.** It is computed from the position within the quad,
-  so moving the holder would not change which features count as picked up.
+Two Harmony patches hang each holder from its own quad, at no offset, and hang it back in its pool when
+the quad goes, as the scatter fix does for the rocks. It is on by default. It moves stock objects other mods
+may look for: if one of them misbehaves around surface features, one line of the settings file turns it
+off, `fixRocs = false` ([Settings](../common/settings.md)).
 
-## A fix of their own
+**→ Full chapter: [The fix: the ROCs](the-fix.md)**
 
-The cure would be the scatter fix's: hang each holder in use from its quad instead of the container under
-the sphere, behind a setting of its own. Nothing is written yet.
+## Checked
 
-Who would see the holders move, read in stock's code: nobody. Every lookup starts from a collider and
-walks **up** to the feature or to its holder, never down from the sphere:
+Measured with this mod and its fix of the surface features turned off, then with this mod as installed,
+in an install with [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes): KSP 1.12.5
+with the Breaking Ground expansion, Harmony, ModuleManager, KSP Community Fixes 1.41.1,
+[KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel), and
+[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocol.
 
-- `Part`, on a contact, and `KerbalEVA`, to offer the pickup: `GetComponentInParent<ROC>` on the
-  collider touched;
-- `ModuleRobotArmScanner`, the scanning arm: only colliders tagged `ROC` enter its range, and it looks
-  for the `ROC` on them, their parents or their children;
-- `ROCManager.GetTerrainTag`: up to the `PQSMod_ROCScatterQuad`, then its `quad` field.
+- **Loading the same save**, six times, Jebediah Kerman standing on a Mun stone: with the fix of the
+  surface features off, the kerbal settles over a range of 10.04 mm, the ground under the stone held
+  still; with this mod as installed, 0.008 mm.
 
-The link from a holder to its features would not change, so these all keep working. The `ROC <name>`
-container is read back only by `LandClassROC`, which creates it. Of the other mods whose source was read,
-only Kopernicus (it adds the `PQSROCControl` to the bodies of a planet pack, and patches the validation of
-`ROCManager`) and KSP Community Fixes (a validation fix) deal with surface features, and neither walks the
-terrain's hierarchy. Every other mod is unread, as for the
-[scatter holders](../scatter/work-in-progress/other-mods/mods-that-look-for-a-scatter-holder-under-its-sphere.md).
+  **→ Full chapter: [Checking the ROCs: loading the same save](checking/loading.md)**
+
+The saves, the scripts and the readings of every session are in
+[the runs of the ROCs](../../diag/rocs/README.md).
 
 ## Work in progress
 
-**Loading the same save: planned.** Stand a kerbal on a surface feature with a collider (a small one, on
-the Mun), save, then [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel) on the
-kerbal over six loads, on stock and with this mod. A kerbal that moves at load while the ground under it
-does not shows the feature moving. Then the same with a fix of their own, once written.
+**Driving on while the world moves: planned.** Every 500 m a craft travels, the floating origin moves,
+and with it the ground and the holders of the surface features. With the terrain fix alone, the ground
+holds and the features would jump against it, as the scatter does; with this mod as installed, they should
+not.
+
+**→ Full chapter: [Driving on while the world moves, by a ROC](work-in-progress/driving.md)**
 
 **Scene changes and time warp, with Jeb on a ROC: planned.** Both are checked on the statics of the KSC;
 they are still to play with a kerbal standing on a surface feature.

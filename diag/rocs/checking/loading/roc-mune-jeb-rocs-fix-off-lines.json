@@ -1,0 +1,56 @@
+[
+ {
+  "load": 1,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 202138106.10299402,
+   "SettledMm": 202138103.79505238,
+   "MovedMm": -2.307941645383835
+  }
+ },
+ {
+  "load": 2,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 202138106.10299337,
+   "SettledMm": 202138094.94602495,
+   "MovedMm": -11.156968414783478
+  }
+ },
+ {
+  "load": 3,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 202138106.1029933,
+   "SettledMm": 202138104.02412727,
+   "MovedMm": -2.07886603474617
+  }
+ },
+ {
+  "load": 4,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 202138106.10299337,
+   "SettledMm": 202138094.94637534,
+   "MovedMm": -11.156618028879166
+  }
+ },
+ {
+  "load": 5,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 202138106.1029933,
+   "SettledMm": 202138094.94642112,
+   "MovedMm": -11.156572192907333
+  }
+ },
+ {
+  "load": 6,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 202138106.10299337,
+   "SettledMm": 202138104.98825246,
+   "MovedMm": -1.1147409081459045
+  }
+ }
+]

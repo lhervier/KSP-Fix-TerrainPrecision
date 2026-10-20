@@ -62,31 +62,7 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
         /// <summary>Whether the fix acts on the scatter of this quad.</summary>
         private static bool AppliesTo(PQ quad)
         {
-            if (!_active || quad == null)
-            {
-                return false;
-            }
-            PQS sphere = quad.sphereRoot;
-
-            // On a sphere whose quads are not surface relative, stock places the holder at the centre of the
-            // body, not at a 600 km vector: nothing to fix there.
-            if (sphere == null || !sphere.surfaceRelativeQuads || sphere.LocalSpacePQStorage == null)
-            {
-                return false;
-            }
-
-            // For BurstPQS: on the bodies it builds, a quad is drawn with its own transform wherever it hangs,
-            // and its holder can hang from it whatever its parent. See BurstPQSCompat.
-            if (BurstPQSCompat.PlacesTerrain(sphere))
-            {
-                return true;
-            }
-
-            // Only the quads of the highest subdivision level are moved to this storage, which is not attached
-            // to the body, and they are the only ones stock gives scatter to. Any other quad hangs from the
-            // sphere itself, with the same kind of 600 km local position as the holder, so hanging the holder
-            // from it would gain nothing.
-            return quad.transform.parent == sphere.LocalSpacePQStorage.transform;
+            return _active && Utils.CanHangFrom(quad);
         }
 
         // ==========================================================================
@@ -110,7 +86,7 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
 
                 // Everything that is only needed for the log is computed first, while the holder is still
                 // where stock put it.
-                double offsetMm = announce || Log.IsDebugEnabled ? DrawnOffsetMm(holder.transform, quad) : 0.0;
+                double offsetMm = announce || Log.IsDebugEnabled ? Utils.DrawnOffsetMm(holder.transform, quad) : 0.0;
 
                 // The objects of the holder are built from quad.verts, which are expressed in the quad's own
                 // frame. With the holder at the identity under the quad, that frame is exactly the one they
@@ -140,26 +116,6 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
                 Log.Error($"Could not hang a scatter holder from quad '{quad.name}',"
                     + $" it is left as stock places it: {e}");
             }
-        }
-
-        /// <summary>
-        /// How far above the quad Unity draws the holder, in millimetres, along the vertical of the quad.
-        /// Negative when the holder is drawn below it.
-        /// </summary>
-        private static double DrawnOffsetMm(Transform holder, PQ quad)
-        {
-            // Both are drawn with their local to world matrix. Its translation is a world position, so near
-            // the floating origin, and the difference of two of them is short: a double holds it exactly.
-            Vector3d holderOrigin = (Vector3)holder.localToWorldMatrix.GetColumn(3);
-            Vector3d quadOrigin = (Vector3)quad.transform.localToWorldMatrix.GetColumn(3);
-
-            // The vertical at the quad: the direction of its origin from the centre of the body, a unit
-            // vector in the sphere's frame, turned into world axes. No long vector involved, and a float
-            // direction is far more precise than needed on a gap of a few centimetres.
-            Vector3d up = ((Vector3d)quad.sphereRoot.transform.TransformDirection(
-                (Vector3)quad.positionPlanetRelative)).normalized;
-
-            return Vector3d.Dot(holderOrigin - quadOrigin, up) * 1000.0;
         }
 
         [HarmonyPatch(typeof(PQSMod_LandClassScatterQuad), nameof(PQSMod_LandClassScatterQuad.Setup))]

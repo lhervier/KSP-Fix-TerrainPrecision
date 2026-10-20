@@ -92,7 +92,7 @@ on the runway of the KSC, as measured on the page of each fix.
 
 ## What it fixes
 
-The ground, the statics and the scatter share one culprit: stock places them through floats holding
+The ground, the statics, the scatter and the ROCs share one culprit: stock places them through floats holding
 vectors as long as the radius of the body, rounded through a frame that does not stay put
 ([The culprit: a float at planet scale](docs/common/the-culprit.md)). Each has a page of its own: where the
 rounding strikes it, how this mod takes it away, how that is checked, what keeps working, what it makes
@@ -103,7 +103,7 @@ worse, and what is still to check. The first figure is without this mod, the sec
 | **The ground** | the terrain quads a craft stands on | at a load, 43.6 → 0.3 mm on Kerbin, 292.3 → 0.3 mm on Earth | `fixTerrain` | [→ page](docs/ground/README.md) |
 | **The statics** | the runway, launchpad and buildings of the KSC, the launch sites of Making History, Kerbal Konstructs' bases | the deck of the KSC runway at a load, 116.5 → 0.177 mm | `fixStatics` | [→ page](docs/statics/README.md) |
 | **The scatter** | the rocks, grass and trees | against the ground at a load, 61 mm (178 with the ground fixed alone) → 0.132 mm | `fixScatter` | [→ page](docs/scatter/README.md) |
-| **The ROCs** | Breaking Ground's surface features | work in progress: read in the code, no fix yet | — | [→ page](docs/rocs/README.md) |
+| **The ROCs** | Breaking Ground's surface features | a kerbal standing on one, at a load with the ground fixed, 10.04 → 0.008 mm | `fixRocs` | [→ page](docs/rocs/README.md) |
 | **The ground anchor** | an anchored base, raised at each load — not a rounding | the base at its second load, 26.3 cm → 0.08 mm | `fixGroundAnchor…` | [→ page](docs/ground-anchor/README.md) |
 
 Every fix is on by default. Two patches, on by default too, keep Kopernicus and Kerbal Konstructs working

@@ -6,6 +6,7 @@ session, without this mod and with it, one folder per fix, as in `docs`:
 - [the ground](../ground/README.md), read in [the ground](../../docs/ground/README.md);
 - [the statics](../statics/README.md), read in [the statics](../../docs/statics/README.md);
 - [the scatter](../scatter/README.md), read in [the scatter](../../docs/scatter/README.md);
+- [the ROCs](../rocs/README.md), read in [the ROCs](../../docs/rocs/README.md);
 - [the ground anchor](../ground-anchor/README.md), read in [the ground anchor](../../docs/ground-anchor/README.md);
 - and here, what the fixes share: Principia, this mod's safeguard on Real Solar System, and the
   [performance runs](perfs/README.md), read in [what the fixes share](../../docs/common/README.md).
