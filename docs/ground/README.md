@@ -216,8 +216,9 @@ also keeps the floating origin from moving within 150 km of it.
 
 **→ Full chapter: [Asteroids and comets held by a claw](work-in-progress/stock/asteroids-and-comets-held-by-a-claw.md)**
 
-**Breaking Ground's deployed experiments: planned.** They are vessels and should sit on the corrected
-ground like a craft, but skip the physics hold, like the ground anchor.
+**Breaking Ground's deployed experiments: planned.** Each one is put back on the ground, then let go
+for a few seconds, every time time warp stops. Seen jumping in a play save; read in the code, that
+comes from stock, not from this mod.
 
 **→ Full chapter: [Breaking Ground's deployed experiments](work-in-progress/stock/breaking-grounds-deployed-experiments.md)**
 
