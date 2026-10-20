@@ -847,6 +847,35 @@ With this mod:
 - The screenshots of the tables, trip by trip, in
   [`imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/`](../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon).
 
+[The switching protocol](../docs/checking-the-culprit-switching/the-protocol.md) on the Moon, the switch
+made as the map view's *Switch To* does, with both instruments and
+[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) added, read in
+[Switching to a craft left parked, on the Moon](../docs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon.md):
+
+- [`switch-moon-rss.sfs`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-rss.sfs) —
+  the two craft of `approach-moon-rss.sfs`, the rover driven about 3 km due south, flown, the capsule its
+  target. Six switches by
+  `run-switching.py --save switch-moon-rss --rounds 6 --scene-shots`, in each of the three sessions below.
+- [`switch-moon-without-this-mod.log`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-without-this-mod.log) —
+  without this mod; what the script printed in
+  [`switch-moon-without-this-mod-script.txt`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-without-this-mod-script.txt),
+  and every line it recorded in
+  [`switch-moon-without-this-mod-lines.json`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-without-this-mod-lines.json).
+- [`switch-moon-fix.log`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix.log) —
+  the same with this mod; what the script printed in
+  [`switch-moon-fix-script.txt`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix-script.txt),
+  and every line it recorded in
+  [`switch-moon-fix-lines.json`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix-lines.json).
+- [`switch-moon-fix-workaround-built-out.log`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix-workaround-built-out.log) —
+  the same with this mod, Real Solar System built with the change
+  [`rss-20.1.3-without-its-ground-workaround.diff`](non-regression/real-solar-system/the-ground-workaround/rss-20.1.3-without-its-ground-workaround.diff);
+  what the script printed in
+  [`switch-moon-fix-workaround-built-out-script.txt`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix-workaround-built-out-script.txt),
+  and every line it recorded in
+  [`switch-moon-fix-workaround-built-out-lines.json`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix-workaround-built-out-lines.json).
+- The screenshots of the tables, and of the scene after each switch, in
+  [`imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/`](../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon).
+
 ## The scatter
 
 The readings of [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter), kept as they were

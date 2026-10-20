@@ -2,14 +2,6 @@
 
 Part of [Terrain Precision Fix](../../README.md), one mod of [Work in progress](../work-in-progress.md): what is still to check, on Real Solar System.
 
-## The ground workaround
-
-**In progress.** Real Solar System's ground workaround has nothing left to correct with this mod when a
-save is loaded, on the Moon and on Earth, and this mod keeps a craft in place without it; switching to a
-craft left parked on the Moon, another moment the workaround runs, is still to play.
-
-**→ Full chapter: [Real Solar System: the ground workaround](real-solar-system/the-ground-workaround.md)**
-
 ## The runway fix
 
 **Planned.** Checked with Real Solar System built without its runway fix; with the runway fix as

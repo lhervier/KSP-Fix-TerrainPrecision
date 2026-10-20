@@ -7,8 +7,11 @@ Terrain Height or both installed, copy switch-kerbin.sfs into a sandbox game, wa
     python run-switching.py --folder <your sandbox game> --rounds 6 --out out
 
 For each round it does what the protocol asks a player to do, in the same order: load the save, which opens on
-the rover with the capsule as its target, record; switch to the capsule as the ] key does, wait four seconds and
-for the digits to stop moving, record. Every instrument installed records at every step. It never saves the game.
+the rover with the capsule as its target, record; switch to the capsule as the ] key does (or, when the capsule is
+too far away to be loaded, as Switch To of the map view does), wait four seconds and for the digits to stop
+moving, record. Every instrument installed records at every step; on a capsule too far away to be loaded, the
+first record holds no value. With --scene-shots, a screenshot of the scene is taken after each second record, the
+interface hidden. It never saves the game.
 At the end it takes a screenshot of each table, that window alone, prints what it read, writes it to lines.json, and quits KSP
 (unless --keep-running is given). The windows of the instruments are hidden once the flight opens, so that
 the scene shows, and each is shown only for its screenshot.
@@ -61,6 +64,11 @@ def log(*parts):
     print(time.strftime("%H:%M:%S"), *parts, flush=True)
 
 
+def mm(value):
+    """A value of an instrument, in millimetres to three decimals, or "none" when it recorded none."""
+    return "none" if value is None else "%.3f" % value
+
+
 def wait_for_digits_to_settle(instrument):
     """What the protocol asks: wait for the live value to stop moving (within 0.0005 mm over 2 s)."""
     last = None
@@ -80,11 +88,12 @@ def record(rows, instruments, round_, step):
         row[instrument] = call(instrument + "_record")
     rows.append(row)
     parts = []
+    # A capsule too far away to be loaded gives the instruments nothing to read: said, not formatted.
     if "landedvessel" in row:
-        parts.append("Settled %16.3f mm  Moved %9.3f mm" % (row["landedvessel"]["SettledMm"],
-                                                             row["landedvessel"]["MovedMm"]))
+        parts.append("Settled %16s mm  Moved %9s mm" % (mm(row["landedvessel"]["SettledMm"]),
+                                                         mm(row["landedvessel"]["MovedMm"])))
     if "terrainheight" in row:
-        parts.append("Ground under craft %14.3f mm" % row["terrainheight"]["CollisionSurfaceMm"])
+        parts.append("Ground under craft %14s mm" % mm(row["terrainheight"]["CollisionSurfaceMm"]))
     log("  round %d, %-6s  %s" % (round_, step, "  ".join(parts)))
 
 
@@ -111,6 +120,8 @@ def main():
     parser.add_argument("--screen-width", type=float, default=1280, help="the width of KSP's window, in pixels")
     parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
     parser.add_argument("--keep-running", action="store_true", help="leave KSP running at the end")
+    parser.add_argument("--scene-shots", action="store_true",
+                        help="a screenshot of the scene after each switch, the interface hidden")
     options = parser.parse_args()
     URL = "http://127.0.0.1:%d/mcp/" % options.port
     os.makedirs(options.out, exist_ok=True)
@@ -139,12 +150,18 @@ def main():
         call("wait", seconds=3)
         record(rows, instruments, round_, "target")
 
-        # Step 2: switch to the capsule, give it four seconds, wait for the digits, record.
+        # Step 2: switch to the capsule, give it four seconds, wait for the digits, record. A capsule too far away
+        # to be loaded is switched to as Switch To of the map view does: KSP opens the flight again on it.
         call("switch_vessel", vessel=target[0]["id"])
         call("wait", seconds=4)
         for instrument in instruments:
             wait_for_digits_to_settle(instrument)
         record(rows, instruments, round_, "flown")
+        if options.scene_shots:
+            call("set_ui", visible=False)
+            call("screenshot", path=os.path.join(os.path.abspath(options.out), "%s-round%d.png" % (options.save, round_)),
+                 return_image=False)
+            call("set_ui", visible=True)
 
     screenshots(options.out, "switching", instruments, options.screen_width)
     with open(os.path.join(options.out, "lines.json"), "w", newline="") as f:

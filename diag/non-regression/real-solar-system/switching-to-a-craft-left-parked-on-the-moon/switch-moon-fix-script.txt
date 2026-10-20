@@ -1,0 +1,14 @@
+10:56:00 instruments: landedvessel, terrainheight
+10:56:09   round 1, target  Settled             none mm  Moved      none mm  Ground under craft           none mm
+10:56:24   round 1, flown   Settled   1744212952.678 mm  Moved    18.812 mm  Ground under craft    7112640.242 mm
+10:56:30   round 2, target  Settled             none mm  Moved      none mm  Ground under craft           none mm
+10:57:14   round 2, flown   Settled   1744212952.646 mm  Moved    18.781 mm  Ground under craft    7112640.376 mm
+10:57:20   round 3, target  Settled             none mm  Moved      none mm  Ground under craft           none mm
+10:58:21   round 3, flown   Settled   1744212952.576 mm  Moved    18.711 mm  Ground under craft    7112640.245 mm
+10:58:27   round 4, target  Settled             none mm  Moved      none mm  Ground under craft           none mm
+10:58:42   round 4, flown   Settled   1744212952.719 mm  Moved    18.853 mm  Ground under craft    7112640.329 mm
+10:58:48   round 5, target  Settled             none mm  Moved      none mm  Ground under craft           none mm
+10:59:28   round 5, flown   Settled   1744212952.459 mm  Moved    18.593 mm  Ground under craft    7112640.263 mm
+10:59:34   round 6, target  Settled             none mm  Moved      none mm  Ground under craft           none mm
+11:00:33   round 6, flown   Settled   1744212952.839 mm  Moved    18.974 mm  Ground under craft    7112640.310 mm
+11:00:36 done

@@ -54,3 +54,12 @@ quads are built again when the rover comes back, after the origin has moved. Ove
 ground under the parked capsule came back within 0.042 mm with this mod, against 31.9 mm without it.
 
 **→ Full chapter: [Real Solar System: coming back to a craft left parked, on the Moon](real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon.md)**
+
+## Switching to a craft left parked, on the Moon
+
+**Checked on the Moon, no problem.** Switched to from 3 km away, a craft left parked is loaded again and
+handed back to physics, where Real Solar System's ground workaround runs. Over six switches, the capsule
+came to rest within 0.380 mm with this mod, 0.494 mm with the workaround built out, against 132.0 mm
+without this mod; the workaround never moved it.
+
+**→ Full chapter: [Real Solar System: switching to a craft left parked, on the Moon](real-solar-system/switching-to-a-craft-left-parked-on-the-moon.md)**

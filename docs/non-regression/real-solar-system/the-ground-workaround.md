@@ -155,7 +155,11 @@ The craft does not go off rails there, so the workaround does not run.
 millimetre, well inside the 10 cm below which the pass leaves a craft where it is. Over 75 loads in a
 row, 24 on the Moon and 51 on Earth, the craft never moved, and the pass, which still runs at every
 load, found nothing to correct, without getting in the way; nor over the six loads by script on Earth,
-the craft *landed*, where the craft came to rest across 0.359 mm.
+the craft *landed*, where the craft came to rest across 0.359 mm. The same holds at the other moments it
+runs: coming back to a craft left parked
+([Coming back to a craft left parked, on the Moon](coming-back-to-a-craft-left-parked-on-the-moon.md)),
+and switching to one far away
+([Switching to a craft left parked, on the Moon](switching-to-a-craft-left-parked-on-the-moon.md)).
 
 **Without the workaround, this mod keeps the craft in place on its own.** On the Moon, the workaround
 off, over six loads read by Diag LandedVessel:
