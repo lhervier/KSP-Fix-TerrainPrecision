@@ -210,10 +210,11 @@ Once played, a point moves to [Non-regression tests](#non-regression-tests) if n
 
 ### Stock
 
-**Asteroids held by a claw: planned.** At the first load with this mod, the ground under an asteroid
-resting on it moves once, with a mass on the other end of a joint.
+**Asteroids and comets held by a claw: planned.** At the first load with this mod, the ground under an
+asteroid or a comet resting on it moves once, with a mass on the other end of a joint. A landed comet
+also keeps the floating origin from moving within 150 km of it.
 
-**→ Full chapter: [Asteroids held by a claw](work-in-progress/stock/asteroids-held-by-a-claw.md)**
+**→ Full chapter: [Asteroids and comets held by a claw](work-in-progress/stock/asteroids-and-comets-held-by-a-claw.md)**
 
 **Breaking Ground's deployed experiments: planned.** They are vessels and should sit on the corrected
 ground like a craft, but skip the physics hold, like the ground anchor.
