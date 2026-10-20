@@ -210,12 +210,6 @@ Once played, a point moves to [Non-regression tests](#non-regression-tests) if n
 
 ### Stock
 
-**Scene changes, with a capsule on the ground: planned.** Every way of leaving a flight and coming back is
-checked on the launchpad, a static ([the statics](../statics/README.md#non-regression-tests)); it is still to
-play with a capsule landed on bare ground.
-
-**→ Full chapter: [Scene changes, with a capsule on the ground](work-in-progress/stock/scene-changes.md)**
-
 **Asteroids held by a claw: planned.** At the first load with this mod, the ground under an asteroid
 resting on it moves once, with a mass on the other end of a joint.
 
