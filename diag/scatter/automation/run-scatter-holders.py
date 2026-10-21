@@ -1,8 +1,8 @@
 """Plays the protocol of "The scatter holders" with KSP Diag - Scatter installed: the holder pools over a flight,
 or across scene switches.
 
-It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Scatter installed, terrain
+It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
+Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer and KSP Diag - Scatter installed, terrain
 scatter on and LOG_INSTANT_FLUSH = True in settings.cfg, copy the saves into a sandbox game, wait for the main
 menu, then run one of:
 
@@ -29,7 +29,7 @@ CLOSING = re.compile(r"End of holder record (\d+):")
 
 
 def call(tool, **args):
-    """Calls one tool of KSP-MCPServer and returns its answer, decoded from JSON when it is JSON."""
+    """Calls one tool of KSP-Util-MCPServer and returns its answer, decoded from JSON when it is JSON."""
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
                        "params": {"name": tool, "arguments": args}}).encode()
     request = urllib.request.Request(URL, body, {"Content-Type": "application/json"})
@@ -76,7 +76,7 @@ def wait_for_terrain(attempts=20, pause=3):
 
 
 def flight(options, rows):
-    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # KSP-Util-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
     # menu, the game is opened at the space centre first.
     if call("get_state")["scene"] == "MAINMENU":
         call("open_game", folder=options.folder)
@@ -144,7 +144,7 @@ def main():
     parser.add_argument("--crash-timeout", type=float, default=1200,
                         help="flight: seconds to wait for the crash after the last record")
     parser.add_argument("--out", default="out", help="where lines.json goes")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     parser.add_argument("--keep-running", action="store_true", help="leave KSP running at the end")
     options = parser.parse_args()
     URL = "http://127.0.0.1:%d/mcp/" % options.port

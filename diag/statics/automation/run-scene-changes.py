@@ -1,7 +1,7 @@
 """Plays the scene changes protocol: a craft on the launchpad through every way of leaving the flight and coming back.
 
-It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Terrain Height installed, wait
+It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
+Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer and KSP Diag - Terrain Height installed, wait
 for the main menu, then run:
 
     python run-scene-changes.py --folder <your career game> --craft VAB/<craft>.craft --out out

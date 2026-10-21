@@ -5,7 +5,7 @@ Part of [Terrain Precision Fix](../../README.md), [the ROCs](../../docs/rocs/REA
 ## Loading the same save
 
 KSP 1.12.5 on Windows, with the Breaking Ground expansion, `GameData` holding Harmony, ModuleManager, KSP
-Community Fixes 1.41.1, KSP Diag - Landed Vessel, KSP-MCPServer and this mod, with `fixRocs = false` for
+Community Fixes 1.41.1, KSP Diag - Landed Vessel, KSP-Util-MCPServer and this mod, with `fixRocs = false` for
 `rocs-fix-off`. The save loaded six times per configuration, in a single session of KSP each, by
 [`run-loading.py`](../ground/automation/run-loading.py), which recorded once the live line had stopped
 moving. Read in

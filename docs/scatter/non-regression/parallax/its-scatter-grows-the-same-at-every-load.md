@@ -24,7 +24,7 @@ into the folder of a sandbox game and load it: a kerbal on the ground of Eve, am
 at him from straight above, from some 40 m, and take a screenshot; load the same save again at once, with
 no time played, and take the same screenshot; twelve times. Then the same without this mod, and with it.
 [`run-rocks-turning.py`](https://github.com/lhervier/KSP-ExtMod-ParallaxContinued/blob/claude/scatter-rotation-tests/docs/scatter-rotation/automation/run-rocks-turning.py)
-of our fork of Parallax plays it through KSP-MCPServer:
+of our fork of Parallax plays it through KSP-Util-MCPServer:
 `--save rocks-eve-jeb --radius 700000 --step 0`.
 
 ## Twelve loads

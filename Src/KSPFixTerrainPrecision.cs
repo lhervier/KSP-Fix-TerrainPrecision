@@ -2,7 +2,7 @@ using System;
 using HarmonyLib;
 using UnityEngine;
 
-namespace com.github.lhervier.ksp.terrainprecisionfix
+namespace com.github.lhervier.ksp.fix.terrainprecision
 {
     /// <summary>
     /// Places the terrain and the statics, and, when asked to, the terrain scatter and the surface features,
@@ -11,9 +11,9 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
     /// drives the statics fix through scene changes and from frame to frame.
     /// </summary>
     [KSPAddon(KSPAddon.Startup.Instantly, true)]
-    public class TerrainPrecisionFixMod : MonoBehaviour
+    public class KSPFixTerrainPrecision : MonoBehaviour
     {
-        private const string HarmonyId = "com.github.lhervier.ksp.terrainprecisionfix";
+        private const string HarmonyId = "com.github.lhervier.ksp.fix.terrainprecision";
 
         private void Start()
         {
@@ -22,7 +22,7 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
             DontDestroyOnLoad(gameObject);
 
             Settings.Load();
-            Log.Info($"Version {typeof(TerrainPrecisionFixMod).Assembly.GetName().Version}, log level {Log.Level}");
+            Log.Info($"Version {typeof(KSPFixTerrainPrecision).Assembly.GetName().Version}, log level {Log.Level}");
             Harmony harmony = new Harmony(HarmonyId);
 
             if (!Settings.FixTerrain)

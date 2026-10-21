@@ -59,11 +59,13 @@ back.
 2. Open the part action window of the rover's cabin and read the distance of the first CommNet hop.
 3. Drive the rover due east, a little more than 500 m, to 27.3 km of the station; by hand, or with
    [`diag/statics/automation/run-station-approach.py`](../../../../diag/statics/automation/run-station-approach.py), which
-   drives it there at 2 m/s through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) and prints
+   drives it there at 2 m/s through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) and prints
    the length of the first hop before and after.
 4. Stopped, open the part action window again and read the distance; open it once more a little later.
 
 *What should happen.*
+
+*The log lines quoted on this page come from runs of an earlier version of this mod, when its log prefix was `[TerrainPrecisionFix]`; it is now `[KSPFixTerrainPrecision]`.*
 
 - When the save is loaded, `KSP.log` says nothing of the station: at 27.83 km, it stays under its sphere.
 - Somewhere around 27.5 km, `KSP.log` shows it taken out:
@@ -108,7 +110,7 @@ leg, about 30 m before the end, so while the station was out.
 
 ### Driven in 500 m legs from 28.9 km
 
-By the `drive_to` tool of KSP-MCPServer, the rover stopped at the end of each leg. The station was taken
+By the `drive_to` tool of KSP-Util-MCPServer, the rover stopped at the end of each leg. The station was taken
 out on the last leg, corrected by 619.24 mm.
 
 | Step | Station | First hop |

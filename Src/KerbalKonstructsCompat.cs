@@ -6,7 +6,7 @@ using System.Reflection.Emit;
 using HarmonyLib;
 using UnityEngine;
 
-namespace com.github.lhervier.ksp.terrainprecisionfix
+namespace com.github.lhervier.ksp.fix.terrainprecision
 {
     /// <summary>
     /// Makes Kerbal Konstructs' group editor work on a group whose static is out of its terrain sphere.

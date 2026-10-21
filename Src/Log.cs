@@ -1,4 +1,4 @@
-namespace com.github.lhervier.ksp.terrainprecisionfix
+namespace com.github.lhervier.ksp.fix.terrainprecision
 {
     /// <summary>How much the mod writes to KSP.log, from the quietest to the most talkative.</summary>
     internal enum LogLevel
@@ -16,7 +16,7 @@ namespace com.github.lhervier.ksp.terrainprecisionfix
     /// </summary>
     internal static class Log
     {
-        private const string Prefix = "[TerrainPrecisionFix] ";
+        private const string Prefix = "[KSPFixTerrainPrecision] ";
 
         private static LogLevel _level = LogLevel.Info;
 

@@ -2,7 +2,7 @@ using System;
 using System.Reflection;
 using HarmonyLib;
 
-namespace com.github.lhervier.ksp.terrainprecisionfix
+namespace com.github.lhervier.ksp.fix.terrainprecision
 {
     /// <summary>
     /// Keeps Kopernicus' flag fix from running while the KSC is out of its terrain sphere.

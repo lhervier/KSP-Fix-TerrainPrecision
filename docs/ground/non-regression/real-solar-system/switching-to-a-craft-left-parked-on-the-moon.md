@@ -27,7 +27,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, Real Solar S
 requires (Kopernicus 248, Modular Flight Integrator, KSPTextureLoader, the RSS textures), both instruments,
 [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel) and
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocol. Three sessions:
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol. Three sessions:
 
 - without this mod, Real Solar System as released;
 - with this mod at its defaults (at `logLevel = Debug`), Real Solar System as released;

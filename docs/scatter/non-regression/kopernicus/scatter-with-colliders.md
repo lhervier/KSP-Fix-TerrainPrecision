@@ -42,7 +42,7 @@ game.
 
 [`run-scatter-loading.py`](../../../../diag/scatter/automation/run-scatter-loading.py), the script of
 [the protocol load after load](../../checking/loading-protocol.md#played-by-a-script),
-plays it through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer):
+plays it through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer):
 `python run-scatter-loading.py --folder <your sandbox game> --save ref-kerbin-scatter-collider-eva --loads 6
 --scene-shots --camera 0.75 75.63 -6.42 60 --out out`. The last option puts the flight camera 0.75 m from the
 kerbal, looking at its feet, before each picture, so that the six pictures are taken from the same
@@ -57,7 +57,7 @@ walk a kerbal up a rock with the jetpack, and save there.
 physics engine holds the collider of an object of scatter against where the object is drawn, following
 [the protocol](#the-protocol), in KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 Kopernicus 1.12.1-247, ModularFlightIntegrator 1.2.10, KSPTextureLoader 1.0.36, the Stock Scatter Collider
-Enabler Patch 1.0.1 and KSP-MCPServer: one save, a kerbal standing on a boulder in a desert of Kerbin,
+Enabler Patch 1.0.1 and KSP-Util-MCPServer: one save, a kerbal standing on a boulder in a desert of Kerbin,
 loaded six times per configuration, one record and one picture of the kerbal's feet per load. Six objects
 carry a collider on the quad read, `Kerbin Xn0131000203`: one `boulder` and five `cactus`.
 

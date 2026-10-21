@@ -102,11 +102,11 @@ reads under the target when one is set, as Diag LandedVessel does: keep the save
 
 [`diag/statics/automation/run-runway.py`](../../../diag/statics/automation/run-runway.py) plays the protocol above, step
 for step, and takes the screenshots. It drives KSP through
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), a mod that answers requests sent to it over
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent to it over
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
 install. Anyone can read it top to bottom: it follows the three steps above in the same order.
 
-1. Install KSP-MCPServer next to both instruments — and this mod, for the series with it: the script
+1. Install KSP-Util-MCPServer next to both instruments — and this mod, for the series with it: the script
    records in both windows at the same moment. Copy
    [the save](../../../diag/statics/checking/loading/runway-kerbin.sfs) into a sandbox game, start KSP
    and wait for the main menu.

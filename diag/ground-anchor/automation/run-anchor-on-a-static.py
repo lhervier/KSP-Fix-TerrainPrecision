@@ -1,13 +1,13 @@
 """Plays the loads of "The protocol: an anchor on a static" once the anchors are placed, with both instruments.
 
-It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer, KSP Diag - Landed Vessel and KSP Diag
+It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
+Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer, KSP Diag - Landed Vessel and KSP Diag
 - Terrain Height installed, place the two anchors by hand as the protocol says, quicksave, then run:
 
     python run-anchor-on-a-static.py --folder <your sandbox game> --alone <id> --base <id> --loads 5 --out out
 
 --alone and --base name the anchor placed alone and the anchor with a battery on it: their ids, as the
-list_vessels tool of KSP-MCPServer gives them, or their names when no other vessel bears them. First it
+list_vessels tool of KSP-Util-MCPServer gives them, or their names when no other vessel bears them. First it
 reads both anchors as placed, then, for each load, does what the protocol asks a player to do, in the same
 order: quicksave, quickload, wait for the digits to stop moving, set each anchor as target, record in both
 instruments, take a screenshot of each window alone. It prints what it read, writes it to lines.json, saves
@@ -27,7 +27,7 @@ URL = None
 
 
 def call(tool, **args):
-    """Calls one tool of KSP-MCPServer and returns its answer, decoded from JSON when it is JSON."""
+    """Calls one tool of KSP-Util-MCPServer and returns its answer, decoded from JSON when it is JSON."""
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
                        "params": {"name": tool, "arguments": args}}).encode()
     request = urllib.request.Request(URL, body, {"Content-Type": "application/json"})
@@ -109,7 +109,7 @@ def main():
     parser.add_argument("--base", required=True, help="the anchor with a battery on it: its id, or its name")
     parser.add_argument("--loads", type=int, default=5, help="how many quicksaves and quickloads")
     parser.add_argument("--out", default="out", help="where lines.json and the screenshots go")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     parser.add_argument("--keep-running", action="store_true", help="leave KSP running at the end")
     parser.add_argument("--from-save", help="a save of the game the anchors are already placed in, to load first")
     parser.add_argument("--only", choices=["alone", "base"], help="read this anchor only")
@@ -121,7 +121,7 @@ def main():
     # placed in. The windows of the instruments only exist in flight.
     first = "placed"
     if options.from_save:
-        # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+        # KSP-Util-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
         # menu, the game is opened at the space centre first.
         if call("get_state")["scene"] == "MAINMENU":
             call("open_game", folder=options.folder)

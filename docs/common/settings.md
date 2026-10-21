@@ -2,7 +2,7 @@
 
 Part of [Terrain Precision Fix](../../README.md), [what the fixes share](README.md).
 
-`GameData/TerrainPrecisionFixMod/PluginData/settings.cfg` holds nine values, read when KSP starts. To
+`GameData/KSPFixTerrainPrecision/PluginData/settings.cfg` holds nine values, read when KSP starts. To
 change one: quit KSP, edit the file, start KSP again.
 
 | setting | what it does |

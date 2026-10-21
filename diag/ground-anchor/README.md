@@ -20,7 +20,7 @@ this mod as installed. Read in
   series of both cases before the measured one, the anchor with a battery read without it set as target;
 - [`ground-anchor-kerbin-fix.log`](checking/anchoring/ground-anchor-kerbin-fix.log).
 
-Below 50 frames per second: the same install, *Frame Limit* at 30 and KSP-MCPServer, the base of
+Below 50 frames per second: the same install, *Frame Limit* at 30 and KSP-Util-MCPServer, the base of
 [`anchor-base-desert-airfield.sfs`](checking/anchoring/anchor-base-desert-airfield.sfs) loaded, then ten quicksaves and quickloads
 played by [`automation/run-anchor-on-a-static.py`](automation/run-anchor-on-a-static.py) with `--from-save`
 and `--only base`. Three sessions: without this mod, with this mod and `fixGroundAnchorRivet = false`, and
@@ -40,7 +40,7 @@ with this mod as installed. Read in
 ## The anchor on a static protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, both instruments, this mod at
-`logLevel = Debug`, and KSP-MCPServer: in a new sandbox game, [`Diag3-Rover-Two-Anchors.craft`](non-regression/stock/an-anchor-on-a-static/Diag3-Rover-Two-Anchors.craft)
+`logLevel = Debug`, and KSP-Util-MCPServer: in a new sandbox game, [`Diag3-Rover-Two-Anchors.craft`](non-regression/stock/an-anchor-on-a-static/Diag3-Rover-Two-Anchors.craft)
 launched from the SPH onto the runway of the KSC, then in another game onto the runway of the Desert
 Airfield, Bill Kerman aboard with his inventory emptied; Bill places an anchor alone and an anchor with a
 battery on it, by hand; then [`automation/run-anchor-on-a-static.py`](automation/run-anchor-on-a-static.py)

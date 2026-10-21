@@ -33,7 +33,7 @@ Each situation is measured three times: on stock, with this mod and its scatter 
 this mod as installed, in an install with
 [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes): KSP 1.12.5 with Harmony,
 ModuleManager, KSP Community Fixes 1.41.1, [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter),
-which reads the scatter against the ground, and [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer),
+which reads the scatter against the ground, and [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer),
 which plays the protocols.
 
 - **Loading the same save**, twelve times on Kerbin and on the Mun: half of the points measured on the

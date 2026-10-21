@@ -1,6 +1,6 @@
 """Sets up and plays one move of the floating origin under a rover, for filming the scatter as it happens.
 
-It drives KSP through KSP-MCPServer, and needs nothing but Python 3. Start KSP with KSP-MCPServer, KSP Diag -
+It drives KSP through KSP-Util-MCPServer, and needs nothing but Python 3. Start KSP with KSP-Util-MCPServer, KSP Diag -
 Scatter, KSP Diag - Floating Origin and the mod to film installed, terrain scatter on, copy cactus-kerbin.sfs
 into a sandbox game, then run it twice, starting the recording in between:
 
@@ -47,7 +47,7 @@ STATE = os.path.join(tempfile.gettempdir(), "film-scatter-driving.json")
 
 
 def call(tool, **args):
-    """Calls one tool of KSP-MCPServer and returns its answer, decoded from JSON when it is JSON."""
+    """Calls one tool of KSP-Util-MCPServer and returns its answer, decoded from JSON when it is JSON."""
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
                        "params": {"name": tool, "arguments": args}}).encode()
     request = urllib.request.Request(URL, body, {"Content-Type": "application/json"})
@@ -146,7 +146,7 @@ def cross(state, options):
 
 def prepare(options):
     """Loads the save and drives to the stop short of the target; returns the line driven along, and the stop."""
-    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # KSP-Util-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
     # menu, the game is opened at the space centre first.
     if call("get_state")["scene"] == "MAINMENU":
         call("open_game", folder=options.folder)
@@ -217,7 +217,7 @@ def main():
                         help="loop: start and stop ScreenToGif's recorder around each move (F7, F8)")
     parser.add_argument("--wait-for-brakes", action="store_true",
                         help="loop: before each take, wait for the brakes to be let off in the game (B)")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     options = parser.parse_args()
     URL = "http://127.0.0.1:%d/mcp/" % options.port
 

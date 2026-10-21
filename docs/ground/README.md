@@ -28,7 +28,7 @@ touched. It is on by default; `fixTerrain = false` turns it off ([Settings](../c
 Each situation where a craft meets the ground is measured twice, without this mod and with it, in an
 install with [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes), the base most
 players run: KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, the instruments and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocols — and this mod, or
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocols — and this mod, or
 not. [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel) reads the craft,
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) the ground under it, and
 in flight [KSP Diag - Terrain Quads](https://github.com/lhervier/KSP-Diag-TerrainQuads) the quads it is

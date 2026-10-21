@@ -1,8 +1,8 @@
 """Plays the protocol of "Real Solar System: the runway fix": the runway at Cape Canaveral is not at the same
 height twice, whatever the height of the ground beside it, and that makes a step on it.
 
-It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer, KSP Diag - Colliders and KSP Diag -
+It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
+Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer, KSP Diag - Colliders and KSP Diag -
 Terrain Height installed on Real Solar System, wait for the main menu, put the rover's craft file in
 saves/<folder>/Ships/SPH, then run:
 
@@ -39,7 +39,7 @@ Colliders draws the colliders where the physics has them, in every screenshot of
 there. Nothing is written to the log.
 
 It writes every reading to readings.json, prints them, ends at the space centre, and leaves KSP running (unless
---quit is given). The pitch it prints is read from KSP-MCPServer, only to follow the run: the navball of the
+--quit is given). The pitch it prints is read from KSP-Util-MCPServer, only to follow the run: the navball of the
 screenshot is what shows it.
 """
 import argparse
@@ -249,7 +249,7 @@ def main():
     parser.add_argument("--camera-heading", type=float, default=0.0, help="degrees; 0 looks at the rover from beside")
     parser.add_argument("--camera-pitch", type=float, default=5.0, help="degrees")
     parser.add_argument("--out", default="out", help="where readings.json and the screenshots go")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     parser.add_argument("--quit", action="store_true", help="quit KSP at the end")
     parser.add_argument("--keep-running", action="store_true",
                         help="leave KSP running at the end, which it does unless --quit is given")

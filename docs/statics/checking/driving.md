@@ -9,7 +9,7 @@ Every 500 m the craft you fly travels, KSP moves the floating origin back onto i
 terrain sphere, which carries the runway of the KSC too. A rover alone by it reads a spot on the grass, G,
 and a spot on the deck, P, two or three times each before a move of the origin and twice after it, nine
 lines a move. A script drives the rover through
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) and parks it on the same spots to within a
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) and parks it on the same spots to within a
 centimetre. It is the
 [protocol of the runway and the grass while the world moves](driving-protocol.md), on its saves,
 in the same install, played by its script,

@@ -1,7 +1,7 @@
 """Plays the protocol of the seam between subdivision levels: Revert to Launch until it shows, then two screenshots.
 
-It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Terrain Quads installed, wait
+It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
+Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer and KSP Diag - Terrain Quads installed, wait
 for the main menu, then run:
 
     python run-revert.py --folder <your sandbox game> --craft VAB/<craft>.craft --out out
@@ -31,7 +31,7 @@ URL = None
 
 
 def call(tool, **args):
-    """Calls one tool of KSP-MCPServer and returns its answer, decoded from JSON when it is JSON."""
+    """Calls one tool of KSP-Util-MCPServer and returns its answer, decoded from JSON when it is JSON."""
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
                        "params": {"name": tool, "arguments": args}}).encode()
     request = urllib.request.Request(URL, body, {"Content-Type": "application/json"})
@@ -149,7 +149,7 @@ def main():
     parser.add_argument("--height", type=float, default=20.0,
                         help="how high above the foot of the yellow line the camera stands, in metres")
     parser.add_argument("--out", default="out", help="where readings.json and the screenshots go")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     parser.add_argument("--ut", type=float,
                         help="the universal time to launch at, in seconds, for daylight over the seam")
     parser.add_argument("--fov", type=int,

@@ -14,9 +14,11 @@ logged, copied out of `KSP.log`, in the folder of the page that reads them. They
 What a record holds, line by line, is in
 [the instrument's page](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/what-it-measures.md#the-log).
 
+*The log lines quoted on this page come from runs of an earlier version of this mod, when its log prefix was `[TerrainPrecisionFix]`; it is now `[KSPFixTerrainPrecision]`.*
+
 **The objects** — after a load, while the world moves, and over a flight — were read with Terrain
 Precision Fix 0.3.0 at `logLevel = Debug`, each series played by its script through
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), in three configurations named in the files:
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), in three configurations named in the files:
 `stock`, without this mod; `fix`, with this mod as installed, its scatter fix on; and `fix-no-scatter`,
 with `fixScatter = false`, the terrain fix alone. The records were copied out of `KSP.log` by
 [`extract-scatter-records.py`](automation/extract-scatter-records.py), and each series keeps beside them
@@ -53,14 +55,14 @@ The saves:
   desert of Kerbin, 497 m north of a cactus, facing it: the save of the film;
 - [`ref-mune-5km.sfs`](checking/flight/ref-mune-5km.sfs) — a single Mk1 command pod in a circular equatorial
   orbit 5 km over the Mun, the same save as
-  [PQSBench's](https://github.com/lhervier/KSP-PQSBench/blob/main/perfs/README.md);
+  [PQSBench's](https://github.com/lhervier/KSP-Util-PQSBench/blob/main/perfs/README.md);
 - [`ref-kerbin-scatter-collider-eva.sfs`](non-regression/kopernicus/scatter-with-colliders/ref-kerbin-scatter-collider-eva.sfs) — a Mk1 command pod
   landed in a desert of Kerbin, with Jebediah out on EVA, standing on a boulder next to it.
 
 ### The scatter: the objects, over twelve loads
 
 KSP 1.12.5 on Windows, `GameData` holding Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag -
-Scatter and KSP-MCPServer, and this mod for `fix` and `fix-no-scatter`. Terrain scatter on, the log flushed at
+Scatter and KSP-Util-MCPServer, and this mod for `fix` and `fix-no-scatter`. Terrain scatter on, the log flushed at
 once. Each save loaded twelve times per configuration, in a single session of KSP, by
 [`run-scatter-loading.py`](automation/run-scatter-loading.py), which pressed *Record the rocks* every 3 s
 after each load until every holder was built and the counts were the same twice in a row; one file per
@@ -276,7 +278,7 @@ requires, Deferred, and this mod at `logLevel = Debug`, or not: each session is 
 [the non-regression tests on Parallax](../../docs/scatter/README.md#parallax).
 
 On Parallax Continued 1.0.5, with both instruments and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer):
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer):
 
 - [`capsule-on-a-rock-mun.sfs`](non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock-mun.sfs) — a Mk1
   capsule on an empty FL-T100 fuel tank, landed on top of a rock of the Mun. Loaded twelve times by

@@ -85,7 +85,7 @@ position given to it as a 600 km float again. Those are left exactly as stock bu
 
 The game only builds that level close to the ground: below 6 250 m over the Mun and 9 375 m over
 Kerbin, read in flight from each sphere's own `subdivisionThresholds` and written to the log by
-[PQS Bench](https://github.com/lhervier/KSP-PQSBench), once per sphere, in every
+[PQS Bench](https://github.com/lhervier/KSP-Util-PQSBench), once per sphere, in every
 run of [Performance](../common/performance.md). Higher up, the patched code decides once per quad that it does not
 apply, and each vertex is left with a reference comparison before stock runs untouched.
 

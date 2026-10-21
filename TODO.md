@@ -45,14 +45,14 @@ objets à la fois va dans `common`.
   l'annonce.
 - **Rejouer toutes les campagnes en automatique, et reconstituer mesures et logs** (Lionel,
   2026-10-03). Chaque protocole publié (chargement par corps, approche, changement de vaisseau, piste,
-  roulage, cas RSS, cas de *Limits and solutions*, tests de non-régression) reçoit un script KSP-MCPServer, **à côté** de sa
+  roulage, cas RSS, cas de *Limits and solutions*, tests de non-régression) reçoit un script KSP-Util-MCPServer, **à côté** de sa
   procédure à la main, qui reste ; on rejoue sans le correctif et avec, puis on remplace les séries, les
   logs et les chiffres publiés par ceux des scripts. Fait en grande partie : les scripts vivent dans
   ce dépôt (`diag/<objet>/automation/`, les Diags ensemble dans la même session). Reste à passer la liste des
   protocoles publiés pour trouver ceux qui n'ont pas encore de script, ou dont les chiffres publiés ne
   viennent pas encore d'un script.
 - **Vérifier que les scripts de pilotage du jeu recourent le moins possible à l'introspection**
-  (`get_member`, `set_member`, `call_method` de KSP-MCPServer) (Lionel, 2026-10-06). Cas connus :
+  (`get_member`, `set_member`, `call_method` de KSP-Util-MCPServer) (Lionel, 2026-10-06). Cas connus :
   `diag/statics/automation/run-rotation-threshold.py` active deux `CheatOptions` (`IgnoreMaxTemperature`,
   `NoCrashDamage`) par `set_member`, que `set_cheats` ne couvre pas (électricité et carburant infinis
   seulement) ; `diag/statics/automation/run-station-approach.py` lit le coût du lien CommNet par `get_member`.

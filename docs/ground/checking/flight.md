@@ -11,7 +11,7 @@ says when the world moves. Each has its own page, with its method.
 This fix is built on top of [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes),
 the base most players run, so every campaign on this page is run in an install that has it: KSP 1.12.5
 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, the two instruments and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which flies the craft — and this mod, or not;
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which flies the craft — and this mod, or not;
 on Earth, [Real Solar System](https://github.com/KSP-RO/RealSolarSystem) 20.1.3.0 and what it requires
 as well. *On stock*, below, means that install without this mod.
 

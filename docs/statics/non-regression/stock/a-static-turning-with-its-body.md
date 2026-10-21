@@ -23,7 +23,7 @@ equatorial orbit with `Alt+F12 → Cheats → Set Orbit`, first above the body's
 atmosphere, then twice as high until the frame is inertial, never past the body's sphere of influence,
 then halving the interval down to 500 m. The script
 [`run-rotation-threshold.py`](../../../../diag/statics/automation/run-rotation-threshold.py) plays these steps through
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer); what it printed is in
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer); what it printed is in
 [`rotation-thresholds.txt`](../../../../diag/statics/non-regression/stock/a-static-turning-with-its-body/rotation-thresholds.txt). Stock, then Real Solar System
 20.1.3.0, then Outer Planets Mod 2.2.12:
 

@@ -71,6 +71,8 @@ static it takes out of its sphere and puts back.
 
 *What should happen.*
 
+*The log lines quoted on this page come from runs of an earlier version of this mod, when its log prefix was `[TerrainPrecisionFix]`; it is now `[KSPFixTerrainPrecision]`.*
+
 - At the click on *Open*, `KSP.log` shows Kerbal Konstructs adding the station, then, in the same
   moment, this mod lending the group back to its sphere and taking it out again:
 

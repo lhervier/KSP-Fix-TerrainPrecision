@@ -12,7 +12,7 @@ screen.
 Both series are played on stock and with this mod as installed, its scatter fix on, in an install with
 [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes), the base most players run:
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, the instrument, and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocol. *On stock* means that
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol. *On stock* means that
 install without this mod.
 
 ## What stock does with the holders
@@ -44,7 +44,7 @@ the pool all the way, and some of the Mun's relief rises above the orbit, so the
 while. Press *Record the holder pools* 30 s into the flight, then again about every two minutes, and once
 more after the crash. The moments do not need to be exact: each record is a check of its own. Copy
 `KSP.log` before relaunching KSP. The script
-[`run-scatter-holders.py`](../../../../diag/scatter/automation/run-scatter-holders.py) plays it through KSP-MCPServer:
+[`run-scatter-holders.py`](../../../../diag/scatter/automation/run-scatter-holders.py) plays it through KSP-Util-MCPServer:
 `python run-scatter-holders.py flight --folder <your sandbox game> --out out`. The game keeps the wrecked pod
 as the craft flown, frozen where it hit the relief, and pauses a minute later: the script takes the crash
 for one when the pod stops moving while the game runs.

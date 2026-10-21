@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace com.github.lhervier.ksp.terrainprecisionfix
+namespace com.github.lhervier.ksp.fix.terrainprecision
 {
     /// <summary>
     /// The frame of a body's terrain sphere, worked out in double precision, and the limits of what a float

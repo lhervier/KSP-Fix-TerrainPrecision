@@ -95,11 +95,11 @@ the same can be done by hand for a few quads.
 ## Played by a script
 
 [`diag/ground/automation/run-flight.py`](../../../diag/ground/automation/run-flight.py) plays the steps above. It drives
-KSP through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), a mod that answers requests sent
+KSP through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent
 to it over HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no
 package to install. Anyone can read it top to bottom: it follows the steps above in the same order.
 
-1. Install KSP-MCPServer next to KSP Diag - Terrain Quads — and this mod, for the flight with it — copy
+1. Install KSP-Util-MCPServer next to KSP Diag - Terrain Quads — and this mod, for the flight with it — copy
    [`Quad-Rocket.craft`](../../../diag/ground/checking/flight/Quad-Rocket.craft) into the `Ships/VAB`
    folder of a sandbox game, start KSP and wait for the main menu.
 2. Run `python run-flight.py --folder <your sandbox game> --craft VAB/Quad-Rocket.craft --out flight --quit`.

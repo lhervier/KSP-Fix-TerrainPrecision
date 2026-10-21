@@ -23,7 +23,7 @@ the protocols are in the `automation/` folder of each fix.
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [Principia](https://github.com/mockingbirdnest/Principia) Lévy on the stock system, the instruments of each
-protocol, and [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocols; this
+protocol, and [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocols; this
 mod at `logLevel = Debug`, or not: each session is here twice, `-without-this-mod` and `-fix`. Read in
 [Principia: the bodies it moves and turns](../../docs/common/non-regression/principia/the-bodies-it-moves-and-turns.md).
 

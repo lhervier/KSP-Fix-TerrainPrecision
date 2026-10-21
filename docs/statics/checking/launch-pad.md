@@ -9,7 +9,7 @@ page, with its method.
 This fix is built on top of [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes),
 the base most players run, so the campaign on this page is run in an install that has it: KSP 1.12.5
 with the Making History expansion, Harmony, ModuleManager, KSP Community Fixes 1.41.1, the instrument,
-and [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocol — and this mod,
+and [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol — and this mod,
 or not. *On stock*, below, means that install without this mod.
 
 The Desert Launch Site is a deck on four legs, placed by `PQSCity2` like a static of the KSC. The game

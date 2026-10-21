@@ -43,8 +43,8 @@ alone.
 ## Played by a script
 
 [`run-scatter-driving.py`](../../../diag/scatter/automation/run-scatter-driving.py) plays this protocol through
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), with nothing but Python 3: start KSP with
-KSP-MCPServer and Diag Scatter installed, copy the save into a sandbox game, wait for the main menu, then
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), with nothing but Python 3: start KSP with
+KSP-Util-MCPServer and Diag Scatter installed, copy the save into a sandbox game, wait for the main menu, then
 run `python run-scatter-driving.py --folder <your sandbox game> --loads 6 --out out`. It stops 498 m from
 the origin, records each time once the counts have settled, writes the number and the closing line of each
 record to `lines.json`, and never saves the game. The records stay in `KSP.log`;
@@ -60,7 +60,7 @@ The grass is too small to see a jump of a few centimetres. The film on
 is installed with its scatter fix turned off, `fixScatter = false` in its settings. Diag FloatingOrigin is
 installed as well, its window at the bottom of the screen, so that *Origin distance* shows in the film.
 
-[`film-scatter-driving.py`](../../../diag/scatter/automation/film-scatter-driving.py) plays it through KSP-MCPServer:
+[`film-scatter-driving.py`](../../../diag/scatter/automation/film-scatter-driving.py) plays it through KSP-Util-MCPServer:
 
 - `prepare --folder <your sandbox game>` loads the save, drives to a metre short of the cactus, on the
   straight line from where the rover starts, 495.8 m from the origin, shows the window of Diag

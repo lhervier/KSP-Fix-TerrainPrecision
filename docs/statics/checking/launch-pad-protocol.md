@@ -43,11 +43,11 @@ One launch says nothing on its own: it is the series that is worth reading, not 
 
 [`diag/statics/automation/run-launch-pad.py`](../../../diag/statics/automation/run-launch-pad.py) plays the protocol above,
 step for step, and takes the screenshots. It drives KSP through
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), a mod that answers requests sent to it over
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent to it over
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
 install. Anyone can read it top to bottom: it follows the four steps above in the same order.
 
-1. Install KSP-MCPServer next to Diag TerrainHeight — and this mod, for the series with it — in a KSP
+1. Install KSP-Util-MCPServer next to Diag TerrainHeight — and this mod, for the series with it — in a KSP
    that has the Making History expansion. Copy
    [the craft](../../../diag/statics/checking/launch-pad/Capsule.craft) into the `Ships/VAB` folder of
    a sandbox game. Make sure KSP is not running: the script starts it and quits it for each launch.

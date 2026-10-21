@@ -11,7 +11,7 @@ settled (*Settled*), and the difference (*Moved*). Its page carries its method.
 This fix is built on top of [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes),
 the base most players run, so this campaign is run in an install that has it: KSP 1.12.5 with the
 Breaking Ground expansion, Harmony, ModuleManager, KSP Community Fixes 1.41.1, the instrument, and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocol. Two configurations,
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol. Two configurations,
 both with the terrain fix on: *ROC fix off*, with this mod and `fixRocs = false`; *with this mod*, as
 installed, its fix of the surface features on ([The fix: the ROCs](../the-fix.md)). On stock the ground
 itself moves at every load ([Checking the ground: loading the same save](../../ground/checking/loading.md)),

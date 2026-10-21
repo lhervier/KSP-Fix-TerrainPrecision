@@ -45,7 +45,7 @@ are placed, and Deferred only sees that through the positions it draws.
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, Deferred 1.3.5, Shabby 0.4.2, this mod
 with its defaults (at `logLevel = Debug`), both instruments, and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocols: each campaign
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocols: each campaign
 below is a script of [`diag/ground/automation/`](../../../../diag/ground/automation) that does, in the same order, what the
 protocol asks a player to do, and records in both instruments at every stop. The terrain is drawn as
 usual, on the screenshots taken along the way.

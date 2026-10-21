@@ -37,7 +37,7 @@ near it, and it is put back before every scene change.
 Each situation is measured twice, without this mod and with it, in an install with
 [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes): KSP 1.12.5 with Harmony,
 ModuleManager, KSP Community Fixes 1.41.1, the instruments and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocols — and this mod, or
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocols — and this mod, or
 not. In each summary, the first figure is without this mod, the second with it.
 
 - **Loading the same save**, six times, two identical craft, one on a runway and one on the ground beside

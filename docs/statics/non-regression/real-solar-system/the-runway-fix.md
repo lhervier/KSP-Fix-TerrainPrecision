@@ -83,7 +83,7 @@ That is played without this mod, then with it at its defaults with `logLevel = D
 Solar System as released, without this mod and with it: one launch, six loads, and a taxi along the
 runway (`--launches 1 --reloads 6 --taxi 1500`).
 
-*Played by a script.* [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) plays the test through
+*Played by a script.* [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) plays the test through
 [`diag/statics/automation/run-runway-fix.py`](../../../../diag/statics/automation/run-runway-fix.py), the rover in the
 `Ships/SPH` folder of the game: it starts the game itself from the main menu, and takes a screenshot of
 the table of Diag Terrain Height every four loads. Every step is one a player can take: the test plays

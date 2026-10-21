@@ -4,7 +4,7 @@ using Expansions.Missions.Scenery.Scripts;
 using HarmonyLib;
 using UnityEngine;
 
-namespace com.github.lhervier.ksp.terrainprecisionfix
+namespace com.github.lhervier.ksp.fix.terrainprecision
 {
     /// <summary>
     /// Places the statics — the buildings of the KSC, the launch sites of Making History, and whatever a

@@ -29,7 +29,7 @@ loading the same save, and a flight over the quads of the highest level.
 ## Measured
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, Principia Lévy on the stock system,
-the instruments of each protocol, and [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which
+the instruments of each protocol, and [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which
 plays the protocols; this mod with its defaults (at `logLevel = Debug`), or not. Each protocol is played
 once without this mod and once with it.
 

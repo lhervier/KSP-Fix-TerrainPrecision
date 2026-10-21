@@ -120,7 +120,7 @@ placed on stock and saved after a few loads, where stock left it, about 11 cm ab
 as target and *Record* in KSP Diag - Landed Vessel; then, ten times, quicksave, quickload, *Record*. Three
 sessions, from the same save: on stock; with this mod and `fixGroundAnchorRivet = false`; and with this
 mod as installed, the setting on. [`diag/ground-anchor/automation/run-anchor-on-a-static.py`](../../../diag/ground-anchor/automation/run-anchor-on-a-static.py)
-plays it through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), with `--from-save` and
+plays it through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), with `--from-save` and
 `--only base`. The sessions are logged in
 [`anchor-rivet-30fps-without-this-mod.log`](../../../diag/ground-anchor/checking/anchoring/anchor-rivet-30fps-without-this-mod.log),
 [`anchor-rivet-30fps-rivet-fix-off.log`](../../../diag/ground-anchor/checking/anchoring/anchor-rivet-30fps-rivet-fix-off.log) and

@@ -1,4 +1,4 @@
-"""What the cases of the scene changes protocol share: the calls to KSP-MCPServer, the readings, and the start.
+"""What the cases of the scene changes protocol share: the calls to KSP-Util-MCPServer, the readings, and the start.
 
 Every case is a script of this folder. It starts with the craft in flight on the launchpad, the active vessel,
 leaves the flight one way, and ends with that craft in flight on the launchpad again, read by KSP Diag -
@@ -42,7 +42,7 @@ BUILDING_DAMAGE = 1
 
 
 def call(tool, **args):
-    """Calls one tool of KSP-MCPServer and returns its answer, decoded from JSON when it is JSON."""
+    """Calls one tool of KSP-Util-MCPServer and returns its answer, decoded from JSON when it is JSON."""
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
                        "params": {"name": tool, "arguments": args}}).encode()
     request = urllib.request.Request(URL, body, {"Content-Type": "application/json"})
@@ -216,7 +216,7 @@ def main(cases, description):
                         help="how long to let the craft settle on the launchpad at each arrival, in seconds")
     parser.add_argument("--ut", type=float, help="the universal time to play at, in seconds, for daylight at the KSC")
     parser.add_argument("--out", default="out", help="where readings.json and the screenshots go")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     parser.add_argument("--quit", action="store_true", help="quit KSP at the end")
     parser.add_argument("--keep-running", action="store_true",
                         help="leave KSP running at the end, which it does unless --quit is given")

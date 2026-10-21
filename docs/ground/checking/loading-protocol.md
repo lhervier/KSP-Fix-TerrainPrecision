@@ -71,7 +71,7 @@ otherwise was taken somewhere else: a craft that jumped or tipped over came to r
 
 [`diag/ground/automation/run-loading.py`](../../../diag/ground/automation/run-loading.py) plays the protocol above, on
 [a save already made](../../../diag/ground/README.md#the-loading-protocol), and takes the screenshots. It drives
-KSP through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), a mod that answers requests
+KSP through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests
 sent to it over HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no
 package to install. Anyone can read it top to bottom: it follows the steps above in the same order.
 
@@ -83,7 +83,7 @@ Earth, on `reload-moon-rss-resave.sfs` and `reload-earth-rss-resave.sfs`, a caps
 tank; these load only on the install described in
 [the checks of the ground](../README.md#checked).
 
-1. Install KSP-MCPServer next to both instruments — and this mod, for the series with it — copy the
+1. Install KSP-Util-MCPServer next to both instruments — and this mod, for the series with it — copy the
    save into a sandbox game, start KSP and wait for the main menu.
 2. Run `python run-loading.py --folder <your sandbox game> --save reload-kerbin-2parts --loads 6 --out screenshots`.
 

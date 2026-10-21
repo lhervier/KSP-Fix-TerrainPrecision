@@ -18,7 +18,7 @@ these vectors go through does not stay put, so each placement draws a new roundi
 [KSPProfiler](https://github.com/KSPModdingLibs/KSPProfiler), on the same flight, every run of the fix came
 out a little cheaper than every run of stock on the coroutines the terrain is updated in — by more than the
 fix's own saving can explain, so not a gain to claim, but no cost. Measured vertex by vertex with
-[PQS Bench](https://github.com/lhervier/KSP-PQSBench), the fix even places a vertex faster than stock, but
+[PQS Bench](https://github.com/lhervier/KSP-Util-PQSBench), the fix even places a vertex faster than stock, but
 that saving is about 0.04 % of the time played, too small for a frame to show. Turned on, the scatter fix
 shows no cost these runs can resolve. What the statics fix costs with statics near a craft is not measured
 yet.
@@ -27,7 +27,7 @@ yet.
 
 ## Install, settings, build, license
 
-- **[Install](install.md)**: KSP 1.12 and HarmonyKSP; copy `GameData/TerrainPrecisionFixMod`. Nothing is
+- **[Install](install.md)**: KSP 1.12 and HarmonyKSP; copy `GameData/KSPFixTerrainPrecision`. Nothing is
   written to your saves.
 - **[Settings](settings.md)**: the nine values of `settings.cfg`, one per fix and per patch, and `logLevel`.
 - **[Build](build.md)**: `KSPDIR`, `build.bat` and the .NET SDK.

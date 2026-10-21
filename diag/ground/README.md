@@ -5,7 +5,7 @@ Part of [Terrain Precision Fix](../../README.md), [the ground](../../docs/ground
 ## The loading protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, both instruments and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), without this mod and with it:
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), without this mod and with it:
 [the loading protocol](../../docs/ground/checking/loading-protocol.md), each save loaded six
 times by its script, [`run-loading.py`](automation/run-loading.py). On Real Solar System, the same,
 plus Real Solar System 20.1.3.0 and what it requires (Kopernicus 248, Modular Flight Integrator,
@@ -105,7 +105,7 @@ flat grass west of the KSC and a rover 26 m from it. Read in
 ## The driving protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Height, KSP Diag
-- Floating Origin and KSP-MCPServer, without this mod and with it, at `logLevel = Debug`: one run of
+- Floating Origin and KSP-Util-MCPServer, without this mod and with it, at `logLevel = Debug`: one run of
 three shifts of [the driving protocol](../../docs/ground/checking/driving-protocol.md), played by
 its script, [`run-driving.py`](automation/run-driving.py); on Earth, Real Solar System 20.1.3.0 and what
 it requires as well. Each log with this mod holds one line per quad it placed, with how far it was
@@ -143,7 +143,7 @@ The logs:
 ## The protocol of the quads of the highest level, in flight
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Quads, KSP Diag
-- Floating Origin and KSP-MCPServer, without this mod and with it at `logLevel = Debug`: on each body,
+- Floating Origin and KSP-Util-MCPServer, without this mod and with it at `logLevel = Debug`: on each body,
 one flight of [the protocol of the quads of the highest level, in flight](../../docs/ground/checking/flight-protocol.md),
 [`Quad-Rocket`](checking/flight/Quad-Rocket.craft) launched from the launchpad, played by its script,
 [`run-flight.py`](automation/run-flight.py), and read by [`analyse-flight.py`](automation/analyse-flight.py).
@@ -181,7 +181,7 @@ Read in [Checking the ground: in flight](../../docs/ground/checking/flight.md).
 ## The seam between subdivision levels
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
-[KSP Diag - Terrain Quads](https://github.com/lhervier/KSP-Diag-TerrainQuads) and KSP-MCPServer, without
+[KSP Diag - Terrain Quads](https://github.com/lhervier/KSP-Diag-TerrainQuads) and KSP-Util-MCPServer, without
 this mod and with it at `logLevel = Debug`: the craft `Diag3-Rocket` on the launchpad, reverted to
 launch by the script of [the protocol of the seam](../../docs/ground/limits/stock/the-seam-between-subdivision-levels/the-protocol.md),
 [`run-revert.py`](automation/run-revert.py), until the finer quad is above at the largest gap, on land:
@@ -211,7 +211,7 @@ launch by the script of [the protocol of the seam](../../docs/ground/limits/stoc
 
 The install of [On the stock system](../statics/README.md#on-the-stock-system) plus [Deferred](https://github.com/LGhassen/Deferred)
 1.3.5 and [Shabby](https://github.com/KSPModdingLibs/Shabby) 0.4.2, both instruments at once, this mod at
-`logLevel = Debug`, and [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the
+`logLevel = Debug`, and [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the
 protocols through the scripts of [`automation/`](automation). Read in
 [Deferred](../../docs/ground/non-regression/deferred/drawing-the-ground.md).
 
@@ -233,7 +233,7 @@ protocols through the scripts of [`automation/`](automation). Read in
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [Kerbal Planetary Base Systems](https://github.com/n116-software/KerbalPlanetaryBaseSystems) 1.6.16 with
 Community Category Kit and Community Resource Pack, both instruments and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer); this mod at `logLevel = Debug`, or not: each
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer); this mod at `logLevel = Debug`, or not: each
 session is here twice, `-without-this-mod` and `-fix`. Read in
 [Kerbal Planetary Base Systems: a base on the ground](../../docs/ground/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground.md).
 
@@ -259,7 +259,7 @@ requires, Deferred, and this mod at `logLevel = Debug`, or not: each session is 
 [the non-regression tests on Parallax](../../docs/ground/README.md#parallax).
 
 On Parallax Continued 1.0.5, with both instruments and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer):
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer):
 
 - The four saves of [the loading protocol](#the-loading-protocol), loaded six times each by
   `run-loading.py`: `loading-<body>-*` in
@@ -311,7 +311,7 @@ otherwise:
   Diag TerrainHeight: six loads of `reload-moon-rss-resave.sfs`, where the craft jumped once and tipped
   over once.
 - [`reload-earth-rss-landed-stock.log`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-stock.log) —
-  not by hand: both instruments and KSP-MCPServer, six loads of `reload-earth-rss-landed.sfs` played by
+  not by hand: both instruments and KSP-Util-MCPServer, six loads of `reload-earth-rss-landed.sfs` played by
   [`automation/run-loading.py`](automation/run-loading.py); what the script printed in
   [`reload-earth-rss-landed-stock-script.txt`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-stock-script.txt),
   every line of both instruments in
@@ -338,7 +338,7 @@ With this mod:
   session: 27 loads of `reload-earth-rss-landed.sfs`, the craft *landed*, then, after going back to the
   space centre, 24 of `reload-earth-rss-resave.sfs`, the craft in *prelaunch*.
 - [`reload-earth-rss-landed-fix.log`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-fix.log) —
-  both instruments and KSP-MCPServer, six loads of `reload-earth-rss-landed.sfs` played by
+  both instruments and KSP-Util-MCPServer, six loads of `reload-earth-rss-landed.sfs` played by
   [`automation/run-loading.py`](automation/run-loading.py); what the script printed in
   [`reload-earth-rss-landed-fix-script.txt`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-fix-script.txt),
   every line of both instruments in
@@ -361,7 +361,7 @@ With this mod:
   to load. Used in [The seam between subdivision levels](../../docs/ground/limits/stock/the-seam-between-subdivision-levels.md).
 
 [The approach protocol](#the-approach-protocol) on the Moon, with both instruments and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) added, read in
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) added, read in
 [Coming back to a craft left parked, on the Moon](../../docs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon.md):
 
 - [`approach-moon-rss.sfs`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-rss.sfs) —
@@ -386,7 +386,7 @@ With this mod:
 
 [The switching protocol](../../docs/ground/checking/switching-protocol.md) on the Moon, the switch
 made as the map view's *Switch To* does, with both instruments and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) added, read in
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) added, read in
 [Switching to a craft left parked, on the Moon](../../docs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon.md):
 
 - [`switch-moon-rss.sfs`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-rss.sfs) —

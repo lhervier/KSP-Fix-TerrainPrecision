@@ -42,8 +42,8 @@ the game does not overwrite it, and the record numbers keep counting from one lo
 ## Played by a script
 
 [`run-scatter-loading.py`](../../../diag/scatter/automation/run-scatter-loading.py) plays this protocol through
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), with nothing but Python 3: start KSP with
-KSP-MCPServer and Diag Scatter installed, copy a save into a sandbox game, wait for the main menu, then run
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), with nothing but Python 3: start KSP with
+KSP-Util-MCPServer and Diag Scatter installed, copy a save into a sandbox game, wait for the main menu, then run
 `python run-scatter-loading.py --folder <your sandbox game> --save reference-kerbin --loads 12 --out out`.
 After each load, it presses *Record the rocks* every 3 s until every holder is built and the counts are the
 same twice in a row, writes the number and the closing line of the last record to `lines.json`, and never

@@ -14,7 +14,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 it requires, Deferred, both instruments,
 [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel) and
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocol; this mod with its
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol; this mod with its
 defaults (at `logLevel = Debug`), or not.
 
 **The save**, [`capsule-on-a-rock-mun.sfs`](../../../../diag/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock-mun.sfs):

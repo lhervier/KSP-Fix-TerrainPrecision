@@ -41,7 +41,7 @@ for the same spot.
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Height, and this mod
 with its defaults at `logLevel = Debug`. Then the same without this mod.
 
-*Played by a script.* [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) plays the test through
+*Played by a script.* [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) plays the test through
 [`diag/statics/automation/run-facility-levels.py`](../../../../diag/statics/automation/run-facility-levels.py), the rocket in the
 `Ships/VAB` folder of the game and the rover in its `Ships/SPH` folder: it starts and sets up the career
 itself from the main menu, closes the guide of a new career wherever it shows, and takes a screenshot of

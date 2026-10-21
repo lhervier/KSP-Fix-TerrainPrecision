@@ -84,7 +84,7 @@ where it was: [KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-
 ### Measured without this mod
 
 The two cases of [the protocol](the-seam-between-subdivision-levels/the-protocol.md), played by its
-script, `run-revert.py`, through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), with
+script, `run-revert.py`, through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), with
 KSP Diag - Terrain Quads; the craft is `Diag3-Rocket`, a small rocket that comes with
 [KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin/tree/main/craft).
 Each table gives the last line of the log of KSP Diag - Terrain Quads after each load, the first load
@@ -288,7 +288,7 @@ How much wider the seam gets is measured in [The seam with this mod](#the-seam-w
 
 The same measurement as without this mod, with this mod installed: the two cases of
 [the protocol](the-seam-between-subdivision-levels/the-protocol.md), played by its script,
-`run-revert.py`, through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), in the installs of
+`run-revert.py`, through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), in the installs of
 [Measured without this mod](#measured-without-this-mod), this mod added; the craft is `Diag3-Rocket`. The
 script reverts to launch until the first load where the finer quad is above the coarser one at the
 largest gap, on land, with a step of at least 0.5 m on Earth and 50 mm on Kerbin, and takes two

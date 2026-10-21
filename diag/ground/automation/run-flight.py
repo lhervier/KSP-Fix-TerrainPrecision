@@ -1,7 +1,7 @@
 """Plays the suborbital flight of KSP Diag - Terrain Quads: a rocket launched from the launchpad, one Log a second.
 
-It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Terrain Quads installed, wait
+It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
+Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer and KSP Diag - Terrain Quads installed, wait
 for the main menu, then run:
 
     python run-flight.py --folder <your sandbox game> --craft VAB/Quad-Rocket.craft --out out
@@ -31,7 +31,7 @@ URL = None
 
 
 def call(tool, **args):
-    """Calls one tool of KSP-MCPServer and returns its answer, decoded from JSON when it is JSON."""
+    """Calls one tool of KSP-Util-MCPServer and returns its answer, decoded from JSON when it is JSON."""
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
                        "params": {"name": tool, "arguments": args}}).encode()
     request = urllib.request.Request(URL, body, {"Content-Type": "application/json"})
@@ -100,7 +100,7 @@ def main():
     parser.add_argument("--max-seconds", type=float, default=300.0,
                         help="how long the flight may last at most, in seconds of real time")
     parser.add_argument("--out", default="out", help="where readings.json and the two CSV files go")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     parser.add_argument("--screenshots", action="store_true", help="also take the screenshots of the protocol")
     parser.add_argument("--screen-height", type=int, default=720, help="the height of the game's screen, in pixels")
     parser.add_argument("--quit", action="store_true", help="quit KSP at the end")

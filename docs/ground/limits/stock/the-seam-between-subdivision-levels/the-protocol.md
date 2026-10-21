@@ -76,12 +76,12 @@ or barely anything.
 ## Played by a script
 
 [`diag/ground/automation/run-revert.py`](../../../../../diag/ground/automation/run-revert.py) plays the steps above and
-takes the two screenshots. It drives KSP through [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer),
+takes the two screenshots. It drives KSP through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer),
 a mod that answers requests sent to it over HTTP, from the computer KSP runs on only; and it needs
 nothing but Python 3 — no AI, no package to install. Anyone can read it top to bottom: it follows the
 steps above in the same order.
 
-1. Install KSP-MCPServer next to KSP Diag - Terrain Quads — and this mod, for the series with it — put
+1. Install KSP-Util-MCPServer next to KSP Diag - Terrain Quads — and this mod, for the series with it — put
    a craft in the `Ships/VAB` folder of a sandbox game, start KSP and wait for the main menu.
 2. Run `python run-revert.py --folder <your sandbox game> --craft VAB/<craft>.craft --min-step 50 --ut 3600 --out screenshots --quit`.
    On Real Solar System, `--min-step 500 --ut 64800 --candidates 8 --max-reverts 80`: the screenshots

@@ -67,7 +67,7 @@ The series marked *by script* follow
 [the loading protocol](../../checking/loading-protocol.md) instead: six loads, each
 read by KSP Diag - Landed Vessel and KSP Diag - Terrain Height, played by its script,
 [`run-loading.py`](../../../../diag/ground/automation/run-loading.py), through
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer). Nobody watches the craft there: what they
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer). Nobody watches the craft there: what they
 tell is what the two instruments read and the lines of `KSP.log`.
 
 | install | save | loads | what the craft does |

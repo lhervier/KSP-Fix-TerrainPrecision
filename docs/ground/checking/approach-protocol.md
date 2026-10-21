@@ -118,11 +118,11 @@ few hundredths of a millimetre.
 
 [`diag/ground/automation/run-approach.py`](../../../diag/ground/automation/run-approach.py) plays the protocol above,
 round trip after round trip, and takes the screenshots. It drives KSP through
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), a mod that answers requests sent to it over
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent to it over
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
 install. Anyone can read it top to bottom: it follows the steps above in the same order.
 
-1. Install KSP-MCPServer next to both instruments — and this mod, for the series with it: the script
+1. Install KSP-Util-MCPServer next to both instruments — and this mod, for the series with it: the script
    records in both windows at the same moment, and waits on the reading of KSP Diag - Terrain Height to
    know the parked craft has settled. Copy
    [the save](../../../diag/ground/checking/approach/approach-kerbin.sfs) into a sandbox game, start

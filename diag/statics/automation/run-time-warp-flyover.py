@@ -1,8 +1,8 @@
 """Plays the time warp flyover protocol: a craft flies low over a static of the Mun in time warp on rails, where KSP
 moves the floating origin at every frame, then the craft landed on that static is read again.
 
-It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer, KSP Diag - Terrain Height and Kerbal Konstructs
+It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
+Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer, KSP Diag - Terrain Height and Kerbal Konstructs
 with the launch pad of warp-static-mun-kk/ installed, put warp-static-mun-kk.sfs and the rover's craft file in
 the game, wait for the main menu, then run:
 
@@ -96,7 +96,7 @@ def main():
     parser.add_argument("--settle", type=float, default=10.0,
                         help="how long to let the capsule settle at each reading, in seconds")
     parser.add_argument("--out", default="out", help="where readings.json goes")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     parser.add_argument("--quit", action="store_true", help="quit KSP at the end")
     parser.add_argument("--keep-running", action="store_true",
                         help="leave KSP running at the end, which it does unless --quit is given")
@@ -106,7 +106,7 @@ def main():
     os.makedirs(out, exist_ok=True)
     session = common.Session(options, out)
 
-    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # KSP-Util-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
     # menu, the game is opened at the space centre first.
     if call("get_state")["scene"] == "MAINMENU":
         call("open_game", folder=options.folder)

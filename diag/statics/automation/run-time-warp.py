@@ -1,8 +1,8 @@
 """Plays the time warp protocol: a craft on the runway, days of time warp at the highest rate, then a night and a
 day at the KSC, to see its lights come on and go off.
 
-It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Terrain Height installed, wait
+It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
+Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer and KSP Diag - Terrain Height installed, wait
 for the main menu, put the craft file in saves/<folder>/Ships/SPH, then run:
 
     python run-time-warp.py --folder <a new game> --ut 3600 --out out
@@ -92,7 +92,7 @@ def main():
     parser.add_argument("--camera-aim", type=float, default=12.0,
                         help="degrees the camera aims to the right of the craft, between it and the VAB")
     parser.add_argument("--out", default="out", help="where readings.json and the screenshots go")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     parser.add_argument("--quit", action="store_true", help="quit KSP at the end")
     parser.add_argument("--keep-running", action="store_true",
                         help="leave KSP running at the end, which it does unless --quit is given")

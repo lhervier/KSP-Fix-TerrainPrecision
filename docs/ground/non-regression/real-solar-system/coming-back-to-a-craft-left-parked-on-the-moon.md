@@ -32,7 +32,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, Real Solar S
 and what it requires (Kopernicus 248, Modular Flight Integrator, KSPTextureLoader, the RSS textures), both
 instruments, [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel) and
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocol; this mod with its
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol; this mod with its
 defaults (at `logLevel = Debug`), or not.
 
 **The save**, [`approach-moon-rss.sfs`](../../../../diag/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-rss.sfs),

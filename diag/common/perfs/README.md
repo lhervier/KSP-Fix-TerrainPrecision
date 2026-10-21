@@ -7,14 +7,14 @@ in [Performance](../../../docs/common/performance.md).
 
 Two instruments, for two questions: what placing one terrain vertex costs, and what a whole frame pays.
 Every run was flown on the same save and on the same machine as the stock reference runs kept with PQS
-Bench, which describe [the save and the machine](https://github.com/lhervier/KSP-PQSBench/blob/main/perfs/README.md) —
+Bench, which describe [the save and the machine](https://github.com/lhervier/KSP-Util-PQSBench/blob/main/perfs/README.md) —
 figures from another machine are not comparable to these. The PQS Bench runs belong to the same session
 of runs as those, KSP in a 1280×720 window; the profiler runs, to a later one, KSP full screen at
 1280×720.
 
 ## What a vertex costs
 
-Measured with [PQS Bench](https://github.com/lhervier/KSP-PQSBench), **whose page carries the
+Measured with [PQS Bench](https://github.com/lhervier/KSP-Util-PQSBench), **whose page carries the
 procedure** — the craft, the orbit, how long to fly, and what makes a run worth keeping.
 
 KSP 1.12.5. `GameData` holding Harmony, ModuleManager, KSP Community Fixes 1.41.1, the measuring mod and
@@ -35,18 +35,18 @@ BENCH calibration;quads=22;roundsPerQuad=8;verticesPerFormula=39600;stockNsPerVe
 ```
 
 The two other configurations are kept with the mod that produced them:
-[stock](https://github.com/lhervier/KSP-PQSBench/blob/main/perfs/README.md), in PQS Bench, and
+[stock](https://github.com/lhervier/KSP-Util-PQSBench/blob/main/perfs/README.md), in PQS Bench, and
 [stock's arithmetic with the `Transform`s read once per
-quad](https://github.com/lhervier/KSP-TerrainPrecisionFix-StockQuadCache/blob/main/perfs/README.md), in
+quad](https://github.com/lhervier/KSP-Fix-StockQuadCache/blob/main/perfs/README.md), in
 Stock Quad Cache.
 
 ## What a frame pays
 
 Measured with [KSPProfiler](https://github.com/KSPModdingLibs/KSPProfiler) 1.0.0, through
 [a fork of it](https://github.com/lhervier/KSP-ExtMod-KSPProfiler) that
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) can drive, **by the procedure written in
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) can drive, **by the procedure written in
 [Performance](../../../docs/common/performance.md#how-the-frames-were-timed)**, which also reads the figures. The runs
-were flown by [this script](https://github.com/lhervier/KSP-PQSBench/blob/main/perfs/automation/run-perfs.py).
+were flown by [this script](https://github.com/lhervier/KSP-Util-PQSBench/blob/main/perfs/automation/run-perfs.py).
 The three configurations are kept here together, because they are only ever read against each other.
 
 Nine runs, three per configuration, each in a fresh KSP, in this order: stock, Stock Quad Cache, this
@@ -65,6 +65,8 @@ it; it also recorded, at both, that KSP's window was in front of the others, in 
 | this mod | 1 | 30.020 s | 100.10 s | 6 730 | [csv](runs/profiler/mun-05km-fix-1.csv) | [log](runs/profiler/mun-05km-fix-1.log) |
 | this mod | 2 | 30.000 s | 100.08 s | 6 654 | [csv](runs/profiler/mun-05km-fix-2.csv) | [log](runs/profiler/mun-05km-fix-2.log) |
 | this mod | 3 | 30.016 s | 100.12 s | 6 749 | [csv](runs/profiler/mun-05km-fix-3.csv) | [log](runs/profiler/mun-05km-fix-3.log) |
+
+*The log lines quoted on this page come from runs of earlier versions of these mods, when their log prefixes were `[TerrainPrecisionFix]` and `[StockQuadCache]`; they are now `[KSPFixTerrainPrecision]` and `[KSPFixStockQuadCache]`.*
 
 Every run's frame count is under the profiler's 10 000 ceiling, so each capture ended on *Stop*, and
 matches 70 seconds at its mean frame rate. Each `KSP.log` says which mods were loaded, in its

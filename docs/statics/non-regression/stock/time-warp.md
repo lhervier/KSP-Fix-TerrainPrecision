@@ -47,13 +47,15 @@ At the launch and at the end of each warp, once the craft has settled,
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Height, and this mod
 with its defaults at `logLevel = Debug`. Then the same without this mod.
 
-*Played by a script.* [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) plays the test through
+*Played by a script.* [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) plays the test through
 [`diag/statics/automation/run-time-warp.py`](../../../../diag/statics/automation/run-time-warp.py), the rover in the
 `Ships/SPH` folder of the game: it starts the game itself from the main menu, and takes a screenshot of the
 table of Diag Terrain Height at the end. *Warp To* is the one of the
 map view, or of an alarm. Every step is one a player can take: the test plays just as well by hand.
 
 ### The result
+
+*The log lines quoted on this page come from runs of an earlier version of this mod, when its log prefix was `[TerrainPrecisionFix]`; it is now `[KSPFixTerrainPrecision]`.*
 
 In the log with this mod, the KSC is taken out of its sphere once, as the rover arrives on the runway, and
 goes back under it only when the game leaves the flight for the space centre, after the test. Nothing in

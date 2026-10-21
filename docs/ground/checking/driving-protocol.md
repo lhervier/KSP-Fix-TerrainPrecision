@@ -133,11 +133,11 @@ in the one flight the save opened.
 
 [`diag/ground/automation/run-driving.py`](../../../diag/ground/automation/run-driving.py) plays the protocol above, step
 for step, and takes the screenshots. It drives KSP through
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), a mod that answers requests sent to it over
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent to it over
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
 install. Anyone can read it top to bottom: it follows the three records above in the same order.
 
-1. Install KSP-MCPServer next to Diag TerrainHeight and Diag FloatingOrigin — and this mod, for the
+1. Install KSP-Util-MCPServer next to Diag TerrainHeight and Diag FloatingOrigin — and this mod, for the
    series with it — copy [the save](../../../diag/ground/checking/driving/driving-kerbin.sfs) into a
    sandbox game, start KSP and wait for the main menu.
 2. Run `python run-driving.py --folder <your sandbox game> --moves 3 --out screenshots`. On Earth, add

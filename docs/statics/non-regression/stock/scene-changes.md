@@ -52,7 +52,7 @@ with its defaults at `logLevel = Debug`; on Earth, Real Solar System 20.1.3.0 an
 (Kopernicus 248, Modular Flight Integrator, KSPTextureLoader, the RSS textures). Then the same without this
 mod.
 
-*Played by a script.* [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) plays the test through
+*Played by a script.* [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) plays the test through
 [`diag/statics/automation/run-scene-changes.py`](../../../../diag/statics/automation/run-scene-changes.py), with
 [`Diag3-Rocket.craft`](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/craft/Diag3-Rocket.craft)
 in the `Ships/VAB` folder of the game and
@@ -84,6 +84,8 @@ launch from the SPH per session gives one reading, not a spread.
 Without this mod, KSP places the KSC again at every arrival, rounded each time in a different way
 ([The culprits: the statics](../../the-culprit.md)). With it, the KSC comes back to the same place,
 whichever way the flight was left.
+
+*The log lines quoted on this page come from runs of an earlier version of this mod, when its log prefix was `[TerrainPrecisionFix]`; it is now `[KSPFixTerrainPrecision]`.*
 
 Only the statics within reach of the craft are taken out: on Kerbin, the KSC alone, the Island Airfield,
 33 km away, staying under its sphere; on Earth, the KSC and the tracking station of Cape Canaveral.

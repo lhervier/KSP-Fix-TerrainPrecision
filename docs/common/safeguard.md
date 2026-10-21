@@ -62,12 +62,14 @@ No log of these runs holds the line the safeguard writes when it refuses a corre
 look for in a log, given once per body, at the first refusal:
 
 ```
-[TerrainPrecisionFix] <body>: a correction of … m is more than 16 float steps (… m at that distance), too large to be a rounding error, the quads concerned are left as stock builds them
+[KSPFixTerrainPrecision] <body>: a correction of … m is more than 16 float steps (… m at that distance), too large to be a rounding error, the quads concerned are left as stock builds them
 ```
 
 For a static, the line ends with *the statics concerned are left where stock places them*.
 
 ## A limit that does not grow: the first version
+
+*The line quoted in this chapter was logged by an earlier version of this mod, when its log prefix was `[TerrainPrecisionFix]`; it is now `[KSPFixTerrainPrecision]`.*
 
 The first version of the safeguard was a fixed metre, set against roundings of a few centimetres on
 Kerbin. On Earth, a correction of two float steps already exceeds it. In the sessions marked *first

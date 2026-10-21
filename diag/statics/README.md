@@ -64,7 +64,7 @@ alone on the grass by the north edge of the runway of the KSC. Read in
 ## The launch pad protocol
 
 KSP 1.12.5 with the Making History expansion, Harmony, ModuleManager, KSP Community Fixes 1.41.1,
-[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) and KSP-MCPServer,
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) and KSP-Util-MCPServer,
 without this mod and with it: six launches of
 [`Capsule.craft`](checking/launch-pad/Capsule.craft), a Mk1 command pod on an FL-T100 tank,
 from the Desert Launch Site, one session of the game each, by the script of
@@ -85,7 +85,7 @@ from the Desert Launch Site, one session of the game each, by the script of
 
 Without this mod: KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin) and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer); on the stock system, then with Real Solar
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer); on the stock system, then with Real Solar
 System 20.1.3.0 and what it requires, then with Outer Planets Mod 2.2.12, Kopernicus 248, Modular Flight
 Integrator and KSPTextureLoader as for Real Solar System, and the Community Terrain Texture Pack 1.0.5.
 
@@ -100,7 +100,7 @@ Integrator and KSPTextureLoader as for Real Solar System, and the Community Terr
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
 `logLevel = Debug`,
-and KSP-MCPServer, which plays the test through [`automation/run-scene-changes.py`](automation/run-scene-changes.py):
+and KSP-Util-MCPServer, which plays the test through [`automation/run-scene-changes.py`](automation/run-scene-changes.py):
 a new career at the Custom difficulty (on Kerbin, the same as [`career-with-the-parts.sfs`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs)),
 `Diag3-Rocket.craft` on the launchpad, eleven arrivals in flight through every way of leaving
 it, and `Diag3-Rover.craft` launched from the SPH onto the runway; one script per way in
@@ -137,7 +137,7 @@ KSPTextureLoader, the RSS textures). Each one played again without this mod. Rea
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
 `logLevel = Debug`,
-and KSP-MCPServer, which plays the test through
+and KSP-Util-MCPServer, which plays the test through
 [`automation/run-destroyed-buildings.py`](automation/run-destroyed-buildings.py): a new career at the Custom
 difficulty (the same as [`career-with-the-parts.sfs`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs), which a player can start
 from), [`VAB-Dropper.craft`](non-regression/stock/destroyed-buildings/VAB-Dropper.craft) dropped twice onto the VAB from the
@@ -163,7 +163,7 @@ Played again without this mod. Read in
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
 `logLevel = Debug`,
-and KSP-MCPServer, which plays the test through
+and KSP-Util-MCPServer, which plays the test through
 [`automation/run-facility-levels.py`](automation/run-facility-levels.py): a new career at the Custom
 difficulty (the same as [`career-with-the-parts.sfs`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs)), `Diag3-Rocket.craft` launched onto the launchpad and `Diag3-Rover.craft` onto the runway, four
 arrivals on each at each of their three levels. Played again without this mod. Read in
@@ -187,7 +187,7 @@ arrivals on each at each of their three levels. Played again without this mod. R
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
-`logLevel = Debug`, and KSP-MCPServer, which plays the test through
+`logLevel = Debug`, and KSP-Util-MCPServer, which plays the test through
 [`automation/run-time-warp.py`](automation/run-time-warp.py): a new sandbox game, `Diag3-Rover.craft`
 launched from the SPH onto the runway, three days of time warp at 100 000×, then *Warp To* the night and
 the next noon at the KSC; four readings, a screenshot at each. Played again without this mod. Read in
@@ -212,7 +212,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, Kerbal Konst
 pad of [`non-regression/stock/time-warp/warp-static-mun-kk/`](non-regression/stock/time-warp/warp-static-mun-kk/) and its CustomPreLaunchChecks,
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
 `logLevel = Debug`,
-and KSP-MCPServer, which plays the test through
+and KSP-Util-MCPServer, which plays the test through
 [`automation/run-time-warp-flyover.py`](automation/run-time-warp-flyover.py): the capsule of
 [`warp-static-mun-kk.sfs`](non-regression/stock/time-warp/warp-static-mun-kk.sfs) on that launch pad, near the highest point of the Mun's
 equator, read before and after `Diag3-Rover.craft`, put on a low orbit of the Mun, passes over it in time
@@ -296,7 +296,7 @@ a fixed metre, and hold the line where it refused part of Earth's terrain.
   without this mod,
   [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders),
   [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) and
-  [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) added, and Real Solar System built from the
+  [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) added, and Real Solar System built from the
   sources of its release 20.1.3.0 with the change
   [`rss-20.1.3-without-its-runway-fix.diff`](non-regression/real-solar-system/the-runway-fix/rss-20.1.3-without-its-runway-fix.diff),
   which keeps its runway fix from doing anything: the protocol of
@@ -331,7 +331,7 @@ a fixed metre, and hold the line where it refused part of Earth's terrain.
 - [`driving-runway-earth-rss-stock.log`](checking/driving/driving-runway-earth-rss-stock.log) — without
   this mod,
   [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), Diag FloatingOrigin and
-  KSP-MCPServer added, Real Solar System built without its runway fix as above: the protocol of the
+  KSP-Util-MCPServer added, Real Solar System built without its runway fix as above: the protocol of the
   runway and the grass while the world moves, from `driving-runway-earth-rss.sfs`, two moves of the
   origin; what the script printed in
   [`driving-runway-earth-rss-stock-script.txt`](checking/driving/driving-runway-earth-rss-stock-script.txt),
@@ -340,7 +340,7 @@ a fixed metre, and hold the line where it refused part of Earth's terrain.
   Read in [Checking the statics: driving on while the world moves](../../docs/statics/checking/driving.md#by-the-runway-of-the-ksc-at-cape-canaveral).
 - [`driving-runway-earth-rss-diag2-fix.log`](checking/driving/driving-runway-earth-rss-diag2-fix.log) — the same with this mod,
   [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), Diag FloatingOrigin and
-  [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) added, Real Solar System built without its
+  [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) added, Real Solar System built without its
   runway fix as above: the protocol of the runway and the grass while the world moves, played by its
   script from `driving-runway-earth-rss.sfs`, two moves of the origin; what the script printed in
   [`driving-runway-earth-rss-diag2-fix-script.txt`](checking/driving/driving-runway-earth-rss-diag2-fix-script.txt),
@@ -348,7 +348,7 @@ a fixed metre, and hold the line where it refused part of Earth's terrain.
   [`driving-runway-earth-rss-diag2-fix-lines.json`](checking/driving/driving-runway-earth-rss-diag2-fix-lines.json).
   Read in [Checking the statics: driving on while the world moves](../../docs/statics/checking/driving.md#by-the-runway-of-the-ksc-at-cape-canaveral).
 - [`station-kourou-rss-fix.log`](non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss-fix.log) —
-  [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) added: one session, a rover driven by its `drive_to` tool
+  [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) added: one session, a rover driven by its `drive_to` tool
   in 500 m legs toward the CommNet ground station of Kourou, from 28.86 km to 27.30 km, then
   [`station-kourou-rss.sfs`](non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs) loaded and driven from 27.83 km to 27.30 km by
   [`automation/run-station-approach.py`](automation/run-station-approach.py). Read in

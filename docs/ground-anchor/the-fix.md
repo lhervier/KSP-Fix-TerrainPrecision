@@ -27,7 +27,7 @@ of the stock part, remodelled by another mod, is left as it is, and the log says
 lowered, the log says, once at startup:
 
 ```
-[TerrainPrecisionFix] Ground anchor model fix: the anchor's collider lowered by 20.8 mm to its origin
+[KSPFixTerrainPrecision] Ground anchor model fix: the anchor's collider lowered by 20.8 mm to its origin
 ```
 
 ## The load
@@ -40,7 +40,7 @@ ground it was saved on, and its anchor rivets it there.
 At `logLevel = Debug`, the log says it for each anchored vessel loaded, with what stock would have done:
 
 ```
-[TerrainPrecisionFix] [DEBUG] Ground anchor load fix: 'Stamp-O-Tron Ground Anchor' loaded at its saved altitude 152.3134 m, which stock would have raised by 273.9 mm
+[KSPFixTerrainPrecision] [DEBUG] Ground anchor load fix: 'Stamp-O-Tron Ground Anchor' loaded at its saved altitude 152.3134 m, which stock would have raised by 273.9 mm
 ```
 
 KSP also loads the part an engineer places as a new vessel, so the line shows up at placement too. The
@@ -57,7 +57,7 @@ can move it in between, at any frame rate. KSP's coroutine then rivets it as on 
 At `logLevel = Debug`, the log says it for each anchor:
 
 ```
-[TerrainPrecisionFix] [DEBUG] Ground anchor rivet fix: 'Point d'ancrage Coll-O-Tron' frozen as it is unpacked, until it is riveted again
+[KSPFixTerrainPrecision] [DEBUG] Ground anchor rivet fix: 'Point d'ancrage Coll-O-Tron' frozen as it is unpacked, until it is riveted again
 ```
 
 What it saves is small, under a millimetre per load, and only on a game running below 50 frames per

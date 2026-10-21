@@ -1,7 +1,7 @@
 """Plays "The protocol: the runway and the grass, while the world moves".
 
-It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer, KSP Diag - Terrain Height and
+It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
+Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer, KSP Diag - Terrain Height and
 Diag FloatingOrigin installed, wait for the main menu, then run:
 
     python run-driving-runway.py --folder <your sandbox game> --moves 2 --out screenshots
@@ -40,7 +40,7 @@ URL = None
 
 
 def call(tool, **args):
-    """Calls one tool of KSP-MCPServer and returns its answer, decoded from JSON when it is JSON."""
+    """Calls one tool of KSP-Util-MCPServer and returns its answer, decoded from JSON when it is JSON."""
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
                        "params": {"name": tool, "arguments": args}}).encode()
     request = urllib.request.Request(URL, body, {"Content-Type": "application/json"})
@@ -121,7 +121,7 @@ def main():
     parser.add_argument("--save", default="driving-runway-kerbin", help="the save, without .sfs")
     parser.add_argument("--moves", type=int, default=2, help="how many moves of the floating origin")
     parser.add_argument("--out", default="screenshots", help="where the screenshots go")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     parser.add_argument("--radius", type=float, default=600000.0,
                         help="the radius of the body in metres (default Kerbin's; 6371000 for Earth in Real Solar System)")
     parser.add_argument("--keep-running", action="store_true", help="leave KSP running at the end")
@@ -130,7 +130,7 @@ def main():
     radius = options.radius
     os.makedirs(options.out, exist_ok=True)
 
-    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # KSP-Util-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
     # menu, the game is opened at the space centre first.
     if call("get_state")["scene"] == "MAINMENU":
         call("open_game", folder=options.folder)

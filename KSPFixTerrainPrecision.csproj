@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
-    <AssemblyName>TerrainPrecisionFixMod</AssemblyName>
-    <RootNamespace>com.github.lhervier.ksp.terrainprecisionfix</RootNamespace>
+    <AssemblyName>KSPFixTerrainPrecision</AssemblyName>
+    <RootNamespace>com.github.lhervier.ksp.fix.terrainprecision</RootNamespace>
     <Version>0.3.0</Version>
     <Description>Places the KSP terrain in double precision, so that it is at the same place at every load</Description>
     <!-- Straight into the folder that gets copied to the GameData of KSP. -->
-    <OutputPath>GameData\TerrainPrecisionFixMod</OutputPath>
+    <OutputPath>GameData\KSPFixTerrainPrecision</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <DebugType>none</DebugType>
   </PropertyGroup>

@@ -115,7 +115,7 @@ with the statics fix: see [the statics](docs/statics/README.md#limits-and-soluti
 ## Install
 
 Requires KSP 1.12 and [HarmonyKSP](https://github.com/KSPModdingLibs/HarmonyKSP). Copy
-`GameData/TerrainPrecisionFixMod` into the `GameData` of KSP. Nothing is written to your saves.
+`GameData/KSPFixTerrainPrecision` into the `GameData` of KSP. Nothing is written to your saves.
 
 - **[Install](docs/common/install.md)**, and what removing the mod does to an anchored base;
 - **[Settings](docs/common/settings.md)**: one per fix and per patch, and `logLevel`;

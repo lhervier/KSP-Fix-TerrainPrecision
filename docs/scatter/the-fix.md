@@ -136,7 +136,7 @@ where stock puts them. Its cost in time does not show in the measurement (see
 [Performance: the scatter fix](../common/performance.md#the-scatter-fix)).
 
 **Turning it off is one line.** If a mod misbehaves around rocks, grass or trees — scatter missing, drawn
-twice, or an error naming a scatter holder — open `GameData/TerrainPrecisionFixMod/PluginData/settings.cfg`,
+twice, or an error naming a scatter holder — open `GameData/KSPFixTerrainPrecision/PluginData/settings.cfg`,
 set `fixScatter = false`, and start KSP again: the holders then stay where stock puts them, and the rest of
 this mod works as before. `KSP.log` says it: *Scatter fix turned off in the settings*. The scatter is then
 back to what the terrain fix alone leaves, a few centimetres off the ground and jumping as you drive.

@@ -45,7 +45,7 @@ above the runway, in the tables below, is *Settled*, less the radius of Kerbin, 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, the two instruments, and this mod with
 its defaults at `logLevel = Debug`. Then the same without this mod.
 
-*Played by a script.* The anchors are placed by hand; [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer)
+*Played by a script.* The anchors are placed by hand; [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer)
 plays the rest. It launches the rover, Bill aboard with his inventory emptied, through its tool
 `launch_vessel`; once the anchors are placed, [`diag/ground-anchor/automation/run-anchor-on-a-static.py`](../../../../diag/ground-anchor/automation/run-anchor-on-a-static.py)
 takes the readings, quicksaves and quickloads. Every step is one a player can take: the test plays just as

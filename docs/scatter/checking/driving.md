@@ -12,7 +12,7 @@ the ground. After a load, it is read in
 This fix is built on top of [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes),
 the base most players run, so every campaign on this page is run in an install that has it: KSP 1.12.5
 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, the instrument, and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which drives the rover. Three configurations:
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which drives the rover. Three configurations:
 *on stock*, that install without this mod; *scatter fix off*, with this mod and `fixScatter = false`, its
 terrain fix alone; *with this mod*, as installed, its scatter fix on ([The fix: the
 scatter](../the-fix.md)).

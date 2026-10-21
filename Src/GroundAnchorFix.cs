@@ -1,7 +1,7 @@
 using HarmonyLib;
 using UnityEngine;
 
-namespace com.github.lhervier.ksp.terrainprecisionfix
+namespace com.github.lhervier.ksp.fix.terrainprecision
 {
     /// <summary>
     /// Keeps the stock ground anchor at the height it was placed at, load after load.

@@ -1,7 +1,7 @@
 """Plays "The protocol: the scatter, while the world moves" with KSP Diag - Scatter installed.
 
-It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
-Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Scatter installed, terrain
+It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
+Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer and KSP Diag - Scatter installed, terrain
 scatter on and LOG_INSTANT_FLUSH = True in settings.cfg, copy the save into a sandbox game, wait for the main
 menu, then run:
 
@@ -31,7 +31,7 @@ CLOSING = re.compile(r"End of record (\d+): (\d+) quads with rocks, (\d+) holder
 
 
 def call(tool, **args):
-    """Calls one tool of KSP-MCPServer and returns its answer, decoded from JSON when it is JSON."""
+    """Calls one tool of KSP-Util-MCPServer and returns its answer, decoded from JSON when it is JSON."""
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
                        "params": {"name": tool, "arguments": args}}).encode()
     request = urllib.request.Request(URL, body, {"Content-Type": "application/json"})
@@ -111,14 +111,14 @@ def main():
     parser.add_argument("--attempts", type=int, default=20, help="records at most per stop")
     parser.add_argument("--pause", type=float, default=3, help="seconds between two records of a stop")
     parser.add_argument("--scene-shots", action="store_true", help="a screenshot of the scene after each stop")
-    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-MCPServer")
+    parser.add_argument("--port", type=int, default=8770, help="the port of KSP-Util-MCPServer")
     parser.add_argument("--keep-running", action="store_true", help="leave KSP running at the end")
     options = parser.parse_args()
     URL = "http://127.0.0.1:%d/mcp/" % options.port
     os.makedirs(options.out, exist_ok=True)
 
     rows = []
-    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # KSP-Util-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
     # menu, the game is opened at the space centre first.
     if call("get_state")["scene"] == "MAINMENU":
         call("open_game", folder=options.folder)

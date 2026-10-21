@@ -31,7 +31,7 @@ Measured with this mod and its fix of the surface features turned off, then with
 in an install with [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes): KSP 1.12.5
 with the Breaking Ground expansion, Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel), and
-[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), which plays the protocol.
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol.
 
 - **Loading the same save**, six times, Jebediah Kerman standing on a Mun stone: with the fix of the
   surface features off, the kerbal settles over a range of 10.04 mm, the ground under the stone held
