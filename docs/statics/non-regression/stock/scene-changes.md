@@ -124,9 +124,9 @@ the game, and none of them about the statics:
   in the map view (`BlockMapViewPartClick`), which every log shows, with this mod and without it: 18
   against 9 on Kerbin, 18 each on Earth.
 
-The script stays a few seconds at the space centre at every arrival there, as a player looking at it
-would: leaving it within its first frames loses the anchor of its camera for the rest of the session, a
-bug of the game without this mod, which a script going straight on would trigger.
+Leaving the space centre within its first frames loses the anchor of its camera for the rest of the
+session, a bug of the game without this mod, which a script going straight on would trigger:
+KSP-Util-MCPServer hands the script back at the space centre only once its camera has taken its place.
 
 The logs, what the script printed, every line of Diag Terrain Height and a screenshot of its table are in
 [`diag/statics/non-regression/stock/scene-changes/`](../../../../diag/statics/README.md#the-scene-changes-protocol).

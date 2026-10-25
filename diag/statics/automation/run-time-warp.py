@@ -105,7 +105,6 @@ def main():
 
     call("new_game", folder=options.folder, mode="SANDBOX")
     close(dialogs_only=True)
-    common.at_space_centre()
     if options.ut is not None:
         call("set_time", ut=options.ut)
 
@@ -131,7 +130,6 @@ def main():
     session.finish()
     # Quitting KSP from flight logs an exception of its own user interface as it is torn down.
     call("go_to_scene", scene="SPACECENTER")
-    common.at_space_centre()
     log("done: %d readings, in %s" % (len(session.readings), out))
     if options.quit:
         call("quit_game")

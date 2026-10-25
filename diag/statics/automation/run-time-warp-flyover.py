@@ -115,7 +115,6 @@ def main():
     capsule = call("get_state")["vessel"]
     passes = []
     call("go_to_scene", scene="SPACECENTER")
-    common.at_space_centre()
     # Not from the launchpad: KSP clears it before a launch, recovering whatever stands on a launch pad, the
     # capsule on the launch pad of Kerbal Konstructs included.
     call("launch_vessel", craft=options.craft, site="Runway")
@@ -134,7 +133,6 @@ def main():
     session.finish()
     # Quitting KSP from flight logs an exception of its own user interface as it is torn down.
     call("go_to_scene", scene="SPACECENTER")
-    common.at_space_centre()
     log("done: %d passes, %d readings, in %s" % (len(passes), len(session.readings), out))
     if options.quit:
         call("quit_game")

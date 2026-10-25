@@ -175,7 +175,6 @@ def park_witness(run, options):
     vessel = call("get_state")["vessel"]
     log("witness parked at %.6f, %.6f" % (vessel["latitude"], vessel["longitude"]))
     call("go_to_scene", scene="SPACECENTER")
-    common.at_space_centre()
 
 
 def cross(run, launch, load):
@@ -219,7 +218,6 @@ def taxi(run, options):
     run.shoot_table(launch, 0)
     call("recover_vessel")
     close(dialogs_only=False)
-    common.at_space_centre()
 
 
 def main():
@@ -262,7 +260,6 @@ def main():
 
     call("new_game", folder=options.folder, mode="SANDBOX")
     close(dialogs_only=True)
-    common.at_space_centre()
     if options.ut is not None:
         call("set_time", ut=options.ut)
     if options.taxi:
@@ -299,7 +296,6 @@ def main():
 
         call("recover_vessel")
         close(dialogs_only=False)
-        common.at_space_centre()
 
     log("done: %d readings, in %s" % (len(run.readings), out))
     if options.quit:

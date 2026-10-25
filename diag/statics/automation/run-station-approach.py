@@ -39,7 +39,7 @@ def call(tool, **args):
 
 def first_hop():
     """The length of the active vessel's first CommNet hop, in metres."""
-    return call("get_member", type="CommNet.CommNetVessel", member="ControlPath.0.cost")["value"]
+    return call("get_state")["vessel"]["commNet"]["controlPath"][0]["distance"]
 
 
 def main():

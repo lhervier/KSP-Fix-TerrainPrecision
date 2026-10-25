@@ -14,7 +14,6 @@ def play(session):
     call("go_to_scene", scene="MAINMENU")
     session.shoot("main-menu")
     call("open_game", folder=session.options.folder)
-    common.at_space_centre()
     call("load_save", folder=session.options.folder, save="persistent")
     session.arrived("loaded from the space centre, after the main menu")
 

@@ -66,8 +66,7 @@ def is_rotating(body, altitude, craft):
 
 def main():
     craft = call("get_state")["vessel"]["name"]
-    call("set_member", type="CheatOptions", member="IgnoreMaxTemperature", value=True)
-    call("set_member", type="CheatOptions", member="NoCrashDamage", value=True)
+    call("set_cheats", ignore_max_temperature=True, no_crash_damage=True)
     for body in sys.argv[1:]:
         start = START.get(body, DEFAULT_START)
         cap = CAP.get(body, DEFAULT_CAP)
