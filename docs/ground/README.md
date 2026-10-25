@@ -247,6 +247,11 @@ Outer Planets Mod.
 
 **→ Full chapter: [Kopernicus: a body from a planet pack](work-in-progress/kopernicus/a-body-from-a-planet-pack.md)**
 
+**Its next release: planned — waits for that release.** It moves the floating origin when a landed craft
+is reloaded in flight, which stock and its current release leave alone; read in its source, not measured.
+
+**→ Full chapter: [Kopernicus: its next release](work-in-progress/kopernicus/its-next-release.md)**
+
 ### BurstPQS
 
 **Its release 1.0.28: planned.** It changes how BurstPQS places the quads this mod's scatter fix hangs the
