@@ -163,7 +163,7 @@ its objects from the terrain quads, so they follow it.
 
 **→ Full chapter: [Parallax: what it does with the ground](non-regression/parallax/what-it-does-with-the-ground.md)**
 
-**Loading a craft on its ground: checked on Kerbin, the Mun and Minmus.** A capsule loaded six times comes
+**Loading a craft on its ground: checked on Kerbin and Minmus.** A capsule loaded six times comes
 back as it does without Parallax: on Kerbin, within 73 mm without this mod and within 0.010 mm with it.
 
 **→ Full chapter: [Parallax: loading a craft on its ground](non-regression/parallax/loading-a-craft-on-its-ground.md)**
@@ -274,3 +274,11 @@ mods of its own and puts its star systems far from the Sun; read in the code, ne
 ground this mod places.
 
 **→ Full chapter: [Promised Worlds: its bodies](work-in-progress/promised-worlds/its-bodies.md)**
+
+### Parallax
+
+**Loading a craft on the Mun: planned — the save has to be made again with Parallax.** The save of the
+Mun was made without Parallax, and the spread it reads with Parallax comes from a Parallax collider at
+that spot: with Parallax's colliders off, the capsule comes back as without Parallax.
+
+**→ Full chapter: [Parallax: loading a craft on the Mun](work-in-progress/parallax/loading-a-craft-on-the-mun.md)**
