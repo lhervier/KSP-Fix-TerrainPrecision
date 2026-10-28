@@ -222,6 +222,14 @@ comes from stock, not from this mod.
 
 **→ Full chapter: [Breaking Ground's deployed experiments](work-in-progress/stock/breaking-grounds-deployed-experiments.md)**
 
+**Parts lying alone on the ground: planned — read in the code and seen in play, the fix is not written.**
+Stock makes a part alone on the ground heavier for 3 seconds every time it goes off rails, 4 t on Kerbin
+and 20 t below 0.8 g, which looks like a patch over the moving ground this mod fixes. A rover wheel, a
+landing leg or a landing gear tunes its suspension to that mass and is thrown up when the mass comes back.
+With this mod, the extra mass seems to protect from nothing: a new setting could turn it off.
+
+**→ Full chapter: [Parts lying alone on the ground](work-in-progress/stock/parts-lying-alone-on-the-ground.md)**
+
 **The ocean: planned.** Read in the logs, this mod corrected terrain quads only, never the ocean; how the
 ocean sphere is flagged has not been read, and a craft floating near a coast has not been watched.
 
