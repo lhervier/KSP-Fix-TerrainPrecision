@@ -5,14 +5,34 @@ the launch sites of the Making History expansion, and the bases a mod such as Ke
 anywhere on a body. Where the rounding strikes them in the stock code, how this mod takes it away, how that
 is checked, what keeps working, what it makes worse, and what is still to check.
 
-The rounding itself, shared with the ground and the scatter, is told once in
-[The culprit: a float at planet scale](../common/the-culprit.md).
+> **The runway, the launchpad and the buildings KSP places on the ground are never placed at the same
+> height twice either, each at a height of its own, apart from the ground beside it.** Each time a save is
+> loaded, and every 500 m a craft drives by them, they come back a little higher or a little lower.
+
+> [!WARNING]
+> **This fix is not a harmless one, and it can break other mods.** In flight, near a craft, it takes the
+> statics out of the place where stock hangs them, and a mod that looks for a static there misses it, or
+> finds it somewhere else. Without a fix of its own, Kerbal Konstructs is broken: a group moved with its
+> group editor in flight is sent elsewhere on its body, and saved there. This mod carries that fix, on by
+> default: see [Kerbal Konstructs: the group editor](limits/kerbal-konstructs/the-group-editor.md).
+
+## Why it matters
+
+It throws crafts into the air, as the ground does, where every launch starts. A craft left on the launchpad
+or on the runway is put back on a deck that is no longer where it was: lower, the craft drops a little;
+higher, it starts inside the deck, and the physics engine pushes it out, upwards. A rover driving by the
+runway finds it at a new height every 500 m, and the step between the runway and the grass beside it is
+not the same from one load to the next. The coin toss is told in
+[Why the moving ground matters](../../README.md#why-the-moving-ground-matters).
 
 ## The culprit
 
 `PQSCity` and `PQSCity2` place the statics the same way as the ground, a 600 km vector in a float
 `Transform` hanging from the body, through the same frame. Unlike the quads a craft stands on, stock gives
 them no place outside the body where a precise position would be kept.
+
+The rounding itself, shared with the ground and the scatter, is told once in
+[The culprit: a float at planet scale](../common/the-culprit.md).
 
 **→ Full chapter: [The culprit: the statics](the-culprit.md)**
 

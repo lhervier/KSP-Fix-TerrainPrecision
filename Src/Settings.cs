@@ -45,6 +45,12 @@ namespace com.github.lhervier.ksp.fix.terrainprecision
         public static bool FixGroundAnchorRivet { get; private set; } = true;
 
         /// <summary>
+        /// Whether a part lying alone on the ground settles with its own mass, instead of the extra mass stock
+        /// gives it for a few seconds every time it goes off rails.
+        /// </summary>
+        public static bool FixLonePartMass { get; private set; } = true;
+
+        /// <summary>
         /// Whether Kopernicus, when installed, is patched to cope with statics out of their sphere. Only
         /// meaningful with the statics fix on, which then breaks Kopernicus' flag fix when this is off.
         /// </summary>
@@ -59,7 +65,7 @@ namespace com.github.lhervier.ksp.fix.terrainprecision
         /// <summary>
         /// Reads the settings file and applies its log level. A missing file, a missing value or an unknown
         /// value leaves the default: the terrain, the statics and the ground anchor fixed, the scatter left as
-        /// stock, both mods patched, logging at Info.
+        /// stock, the parts lying alone given their own mass, both mods patched, logging at Info.
         /// </summary>
         public static void Load()
         {
@@ -95,6 +101,7 @@ namespace com.github.lhervier.ksp.fix.terrainprecision
             FixGroundAnchorModel = ReadSwitch(node, "fixGroundAnchorModel", FixGroundAnchorModel, path);
             FixGroundAnchorLoad = ReadSwitch(node, "fixGroundAnchorLoad", FixGroundAnchorLoad, path);
             FixGroundAnchorRivet = ReadSwitch(node, "fixGroundAnchorRivet", FixGroundAnchorRivet, path);
+            FixLonePartMass = ReadSwitch(node, "fixLonePartMass", FixLonePartMass, path);
             PatchKopernicus = ReadSwitch(node, "patchKopernicus", PatchKopernicus, path);
             PatchKerbalKonstructs = ReadSwitch(node, "patchKerbalKonstructs", PatchKerbalKonstructs, path);
         }

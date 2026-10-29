@@ -1,0 +1,602 @@
+[
+ {
+  "load": 1,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "db330225-463a-4cc2-b31b-027096180e80",
+  "situation": "LANDED",
+  "OnRailsMm": 600069043.2552973,
+  "SettledMm": 600069043.3320252,
+  "MovedMm": 0.07672786712646484,
+  "HighestMm": 107.13499844074249
+ },
+ {
+  "load": 1,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "3cf7990e-90da-42be-86bd-ea1dfa314c2e",
+  "situation": "LANDED",
+  "OnRailsMm": 600069036.4266924,
+  "SettledMm": 600069036.4787436,
+  "MovedMm": 0.05205118656158447,
+  "HighestMm": 107.13496136665344
+ },
+ {
+  "load": 1,
+  "part": "Pile rechargeable Z-400",
+  "id": "30ffae8b-fd96-4e40-a52a-38ca434cd7e3",
+  "situation": "LANDED",
+  "OnRailsMm": 600069066.0181535,
+  "SettledMm": 600069058.4550377,
+  "MovedMm": -7.563115835189819,
+  "HighestMm": 0
+ },
+ {
+  "load": 1,
+  "part": "Pile rechargeable Z-400",
+  "id": "589c389c-962a-470d-adba-79a50f405e54",
+  "situation": "LANDED",
+  "OnRailsMm": 600069286.6957422,
+  "SettledMm": 600069068.0650207,
+  "MovedMm": -218.63072156906128,
+  "HighestMm": 0
+ },
+ {
+  "load": 1,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "7b94c3b4-63a7-44e3-9bc4-793d87d270f9",
+  "situation": "LANDED",
+  "OnRailsMm": 600069444.4825586,
+  "SettledMm": 600069432.6280165,
+  "MovedMm": -11.854542136192322,
+  "HighestMm": 13401.233740448952
+ },
+ {
+  "load": 1,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "8994903e-b632-47e8-9007-2a63034c00f7",
+  "situation": "LANDED",
+  "OnRailsMm": 600069432.971667,
+  "SettledMm": 600069432.9422463,
+  "MovedMm": -0.02942073345184326,
+  "HighestMm": 188.49285101890564
+ },
+ {
+  "load": 2,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "db330225-463a-4cc2-b31b-027096180e80",
+  "situation": "LANDED",
+  "OnRailsMm": 600069043.25515,
+  "SettledMm": 600069043.2894212,
+  "MovedMm": 0.034271240234375,
+  "HighestMm": 107.25694191455841
+ },
+ {
+  "load": 2,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "3cf7990e-90da-42be-86bd-ea1dfa314c2e",
+  "situation": "LANDED",
+  "OnRailsMm": 600069036.4267632,
+  "SettledMm": 600069036.4018545,
+  "MovedMm": -0.02490866184234619,
+  "HighestMm": 107.2873923778534
+ },
+ {
+  "load": 2,
+  "part": "Pile rechargeable Z-400",
+  "id": "30ffae8b-fd96-4e40-a52a-38ca434cd7e3",
+  "situation": "LANDED",
+  "OnRailsMm": 600069066.0182724,
+  "SettledMm": 600069058.4435085,
+  "MovedMm": -7.574763894081116,
+  "HighestMm": 0
+ },
+ {
+  "load": 2,
+  "part": "Pile rechargeable Z-400",
+  "id": "589c389c-962a-470d-adba-79a50f405e54",
+  "situation": "LANDED",
+  "OnRailsMm": 600069286.6957581,
+  "SettledMm": 600069067.9970971,
+  "MovedMm": -218.6986609697342,
+  "HighestMm": 0
+ },
+ {
+  "load": 2,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "7b94c3b4-63a7-44e3-9bc4-793d87d270f9",
+  "situation": "LANDED",
+  "OnRailsMm": 600069444.4827037,
+  "SettledMm": 600069447.3208005,
+  "MovedMm": 2.838096857070923,
+  "HighestMm": 195.57321298122406
+ },
+ {
+  "load": 2,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "8994903e-b632-47e8-9007-2a63034c00f7",
+  "situation": "LANDED",
+  "OnRailsMm": 600069432.9716727,
+  "SettledMm": 600069424.8356194,
+  "MovedMm": -8.136053204536438,
+  "HighestMm": 13403.694082260132
+ },
+ {
+  "load": 3,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "db330225-463a-4cc2-b31b-027096180e80",
+  "situation": "LANDED",
+  "OnRailsMm": 600069043.2553092,
+  "SettledMm": 600069043.1596314,
+  "MovedMm": -0.09567785263061523,
+  "HighestMm": 107.165274143219
+ },
+ {
+  "load": 3,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "3cf7990e-90da-42be-86bd-ea1dfa314c2e",
+  "situation": "LANDED",
+  "OnRailsMm": 600069036.426743,
+  "SettledMm": 600069036.3003682,
+  "MovedMm": -0.12637484073638916,
+  "HighestMm": 107.16533052921295
+ },
+ {
+  "load": 3,
+  "part": "Pile rechargeable Z-400",
+  "id": "30ffae8b-fd96-4e40-a52a-38ca434cd7e3",
+  "situation": "LANDED",
+  "OnRailsMm": 600069066.018229,
+  "SettledMm": 600069058.3828926,
+  "MovedMm": -7.635336399078369,
+  "HighestMm": 0
+ },
+ {
+  "load": 3,
+  "part": "Pile rechargeable Z-400",
+  "id": "589c389c-962a-470d-adba-79a50f405e54",
+  "situation": "LANDED",
+  "OnRailsMm": 600069286.6958127,
+  "SettledMm": 600069067.9254652,
+  "MovedMm": -218.77034747600555,
+  "HighestMm": 0
+ },
+ {
+  "load": 3,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "7b94c3b4-63a7-44e3-9bc4-793d87d270f9",
+  "situation": "LANDED",
+  "OnRailsMm": 600069444.4825445,
+  "SettledMm": 600069435.3917601,
+  "MovedMm": -9.090784430503845,
+  "HighestMm": 13555.465023756027
+ },
+ {
+  "load": 3,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "8994903e-b632-47e8-9007-2a63034c00f7",
+  "situation": "LANDED",
+  "OnRailsMm": 600069432.9716737,
+  "SettledMm": 600069419.0580807,
+  "MovedMm": -13.913593053817749,
+  "HighestMm": 13421.15530860424
+ },
+ {
+  "load": 4,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "db330225-463a-4cc2-b31b-027096180e80",
+  "situation": "LANDED",
+  "OnRailsMm": 600069043.2551324,
+  "SettledMm": 600069043.2048588,
+  "MovedMm": -0.05027365684509277,
+  "HighestMm": 107.34836721420288
+ },
+ {
+  "load": 4,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "3cf7990e-90da-42be-86bd-ea1dfa314c2e",
+  "situation": "LANDED",
+  "OnRailsMm": 600069036.4267359,
+  "SettledMm": 600069036.3888637,
+  "MovedMm": -0.03787219524383545,
+  "HighestMm": 107.25687670707703
+ },
+ {
+  "load": 4,
+  "part": "Pile rechargeable Z-400",
+  "id": "30ffae8b-fd96-4e40-a52a-38ca434cd7e3",
+  "situation": "LANDED",
+  "OnRailsMm": 600069066.0181999,
+  "SettledMm": 600069058.4416572,
+  "MovedMm": -7.5765427350997925,
+  "HighestMm": 0
+ },
+ {
+  "load": 4,
+  "part": "Pile rechargeable Z-400",
+  "id": "589c389c-962a-470d-adba-79a50f405e54",
+  "situation": "LANDED",
+  "OnRailsMm": 600069286.695717,
+  "SettledMm": 600069068.0263605,
+  "MovedMm": -218.66935646533966,
+  "HighestMm": 0
+ },
+ {
+  "load": 4,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "7b94c3b4-63a7-44e3-9bc4-793d87d270f9",
+  "situation": "LANDED",
+  "OnRailsMm": 600069444.4826096,
+  "SettledMm": 600069433.2616321,
+  "MovedMm": -11.220977544784546,
+  "HighestMm": 13219.002788305283
+ },
+ {
+  "load": 4,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "8994903e-b632-47e8-9007-2a63034c00f7",
+  "situation": "LANDED",
+  "OnRailsMm": 600069432.9716754,
+  "SettledMm": 600069424.2742931,
+  "MovedMm": -8.69738233089447,
+  "HighestMm": 13438.697557330132
+ },
+ {
+  "load": 5,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "db330225-463a-4cc2-b31b-027096180e80",
+  "situation": "LANDED",
+  "OnRailsMm": 600069043.2553644,
+  "SettledMm": 600069043.2433316,
+  "MovedMm": -0.012032866477966309,
+  "HighestMm": 107.3484878540039
+ },
+ {
+  "load": 5,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "3cf7990e-90da-42be-86bd-ea1dfa314c2e",
+  "situation": "LANDED",
+  "OnRailsMm": 600069036.426776,
+  "SettledMm": 600069036.4385056,
+  "MovedMm": 0.011729598045349121,
+  "HighestMm": 107.28738212585449
+ },
+ {
+  "load": 5,
+  "part": "Pile rechargeable Z-400",
+  "id": "30ffae8b-fd96-4e40-a52a-38ca434cd7e3",
+  "situation": "LANDED",
+  "OnRailsMm": 600069066.0181516,
+  "SettledMm": 600069058.4866608,
+  "MovedMm": -7.531490802764893,
+  "HighestMm": 0
+ },
+ {
+  "load": 5,
+  "part": "Pile rechargeable Z-400",
+  "id": "589c389c-962a-470d-adba-79a50f405e54",
+  "situation": "LANDED",
+  "OnRailsMm": 600069286.6957324,
+  "SettledMm": 600069068.0276033,
+  "MovedMm": -218.66812908649445,
+  "HighestMm": 0
+ },
+ {
+  "load": 5,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "7b94c3b4-63a7-44e3-9bc4-793d87d270f9",
+  "situation": "LANDED",
+  "OnRailsMm": 600069444.4825982,
+  "SettledMm": 600069438.1837057,
+  "MovedMm": -6.298892498016357,
+  "HighestMm": 13463.132003188133
+ },
+ {
+  "load": 5,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "8994903e-b632-47e8-9007-2a63034c00f7",
+  "situation": "LANDED",
+  "OnRailsMm": 600069432.9716723,
+  "SettledMm": 600069420.7328299,
+  "MovedMm": -12.238842368125916,
+  "HighestMm": 13507.367348194122
+ },
+ {
+  "load": 6,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "db330225-463a-4cc2-b31b-027096180e80",
+  "situation": "LANDED",
+  "OnRailsMm": 600069043.255146,
+  "SettledMm": 600069043.3256711,
+  "MovedMm": 0.07052505016326904,
+  "HighestMm": 107.43994927406311
+ },
+ {
+  "load": 6,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "3cf7990e-90da-42be-86bd-ea1dfa314c2e",
+  "situation": "LANDED",
+  "OnRailsMm": 600069036.4267063,
+  "SettledMm": 600069036.4843113,
+  "MovedMm": 0.05760502815246582,
+  "HighestMm": 107.31792604923248
+ },
+ {
+  "load": 6,
+  "part": "Pile rechargeable Z-400",
+  "id": "30ffae8b-fd96-4e40-a52a-38ca434cd7e3",
+  "situation": "LANDED",
+  "OnRailsMm": 600069066.0182248,
+  "SettledMm": 600069058.5023495,
+  "MovedMm": -7.515875339508057,
+  "HighestMm": 0
+ },
+ {
+  "load": 6,
+  "part": "Pile rechargeable Z-400",
+  "id": "589c389c-962a-470d-adba-79a50f405e54",
+  "situation": "LANDED",
+  "OnRailsMm": 600069286.6957042,
+  "SettledMm": 600069068.099063,
+  "MovedMm": -218.59664118289948,
+  "HighestMm": 0
+ },
+ {
+  "load": 6,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "7b94c3b4-63a7-44e3-9bc4-793d87d270f9",
+  "situation": "FLYING",
+  "OnRailsMm": 600069444.482705,
+  "SettledMm": 600069457.5834016,
+  "MovedMm": 13.100696563720703,
+  "HighestMm": 13362.537922978401
+ },
+ {
+  "load": 6,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "8994903e-b632-47e8-9007-2a63034c00f7",
+  "situation": "LANDED",
+  "OnRailsMm": 600069432.971678,
+  "SettledMm": 600069417.3434802,
+  "MovedMm": -15.6281977891922,
+  "HighestMm": 13567.666867375374
+ },
+ {
+  "load": 7,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "db330225-463a-4cc2-b31b-027096180e80",
+  "situation": "LANDED",
+  "OnRailsMm": 600069043.2553909,
+  "SettledMm": 600069043.377217,
+  "MovedMm": 0.121826171875,
+  "HighestMm": 107.31794226169586
+ },
+ {
+  "load": 7,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "3cf7990e-90da-42be-86bd-ea1dfa314c2e",
+  "situation": "LANDED",
+  "OnRailsMm": 600069036.4267005,
+  "SettledMm": 600069036.5023247,
+  "MovedMm": 0.07562422752380371,
+  "HighestMm": 107.31789553165436
+ },
+ {
+  "load": 7,
+  "part": "Pile rechargeable Z-400",
+  "id": "30ffae8b-fd96-4e40-a52a-38ca434cd7e3",
+  "situation": "LANDED",
+  "OnRailsMm": 600069066.0182201,
+  "SettledMm": 600069058.5889059,
+  "MovedMm": -7.429314136505127,
+  "HighestMm": 0
+ },
+ {
+  "load": 7,
+  "part": "Pile rechargeable Z-400",
+  "id": "589c389c-962a-470d-adba-79a50f405e54",
+  "situation": "LANDED",
+  "OnRailsMm": 600069286.6958009,
+  "SettledMm": 600069068.1179847,
+  "MovedMm": -218.57781624794006,
+  "HighestMm": 0
+ },
+ {
+  "load": 7,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "7b94c3b4-63a7-44e3-9bc4-793d87d270f9",
+  "situation": "LANDED",
+  "OnRailsMm": 600069444.482564,
+  "SettledMm": 600069436.8865049,
+  "MovedMm": -7.596059083938599,
+  "HighestMm": 13587.00042283535
+ },
+ {
+  "load": 7,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "8994903e-b632-47e8-9007-2a63034c00f7",
+  "situation": "LANDED",
+  "OnRailsMm": 600069432.9716678,
+  "SettledMm": 600069416.1682469,
+  "MovedMm": -16.803420901298523,
+  "HighestMm": 13302.422802329063
+ },
+ {
+  "load": 8,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "db330225-463a-4cc2-b31b-027096180e80",
+  "situation": "LANDED",
+  "OnRailsMm": 600069043.2551996,
+  "SettledMm": 600069043.2339982,
+  "MovedMm": -0.021201372146606445,
+  "HighestMm": 107.25675415992737
+ },
+ {
+  "load": 8,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "3cf7990e-90da-42be-86bd-ea1dfa314c2e",
+  "situation": "LANDED",
+  "OnRailsMm": 600069036.4267296,
+  "SettledMm": 600069036.3632836,
+  "MovedMm": -0.06344592571258545,
+  "HighestMm": 107.19578862190247
+ },
+ {
+  "load": 8,
+  "part": "Pile rechargeable Z-400",
+  "id": "30ffae8b-fd96-4e40-a52a-38ca434cd7e3",
+  "situation": "LANDED",
+  "OnRailsMm": 600069066.0181792,
+  "SettledMm": 600069058.4184206,
+  "MovedMm": -7.599758625030518,
+  "HighestMm": 0
+ },
+ {
+  "load": 8,
+  "part": "Pile rechargeable Z-400",
+  "id": "589c389c-962a-470d-adba-79a50f405e54",
+  "situation": "LANDED",
+  "OnRailsMm": 600069286.6957929,
+  "SettledMm": 600069067.982889,
+  "MovedMm": -218.71290385723114,
+  "HighestMm": 0
+ },
+ {
+  "load": 8,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "7b94c3b4-63a7-44e3-9bc4-793d87d270f9",
+  "situation": "LANDED",
+  "OnRailsMm": 600069444.4826099,
+  "SettledMm": 600069447.3079296,
+  "MovedMm": 2.825319766998291,
+  "HighestMm": 13443.941153883934
+ },
+ {
+  "load": 8,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "8994903e-b632-47e8-9007-2a63034c00f7",
+  "situation": "LANDED",
+  "OnRailsMm": 600069432.9716703,
+  "SettledMm": 600069430.7741046,
+  "MovedMm": -2.1975656747817993,
+  "HighestMm": 13538.389572739601
+ },
+ {
+  "load": 9,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "db330225-463a-4cc2-b31b-027096180e80",
+  "situation": "LANDED",
+  "OnRailsMm": 600069043.2552383,
+  "SettledMm": 600069043.4975592,
+  "MovedMm": 0.24232089519500732,
+  "HighestMm": 107.43992626667023
+ },
+ {
+  "load": 9,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "3cf7990e-90da-42be-86bd-ea1dfa314c2e",
+  "situation": "LANDED",
+  "OnRailsMm": 600069036.4266964,
+  "SettledMm": 600069036.5647451,
+  "MovedMm": 0.13804864883422852,
+  "HighestMm": 107.34838998317719
+ },
+ {
+  "load": 9,
+  "part": "Pile rechargeable Z-400",
+  "id": "30ffae8b-fd96-4e40-a52a-38ca434cd7e3",
+  "situation": "LANDED",
+  "OnRailsMm": 600069066.0182409,
+  "SettledMm": 600069058.6635653,
+  "MovedMm": -7.354675650596619,
+  "HighestMm": 0
+ },
+ {
+  "load": 9,
+  "part": "Pile rechargeable Z-400",
+  "id": "589c389c-962a-470d-adba-79a50f405e54",
+  "situation": "LANDED",
+  "OnRailsMm": 600069286.6957526,
+  "SettledMm": 600069068.1507857,
+  "MovedMm": -218.54496693611145,
+  "HighestMm": 0
+ },
+ {
+  "load": 9,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "7b94c3b4-63a7-44e3-9bc4-793d87d270f9",
+  "situation": "LANDED",
+  "OnRailsMm": 600069444.482663,
+  "SettledMm": 600069438.3935709,
+  "MovedMm": -6.089092135429382,
+  "HighestMm": 13502.544750213623
+ },
+ {
+  "load": 9,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "8994903e-b632-47e8-9007-2a63034c00f7",
+  "situation": "LANDED",
+  "OnRailsMm": 600069432.9716727,
+  "SettledMm": 600069420.1841938,
+  "MovedMm": -12.787478804588318,
+  "HighestMm": 13477.818546772003
+ },
+ {
+  "load": 10,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "db330225-463a-4cc2-b31b-027096180e80",
+  "situation": "LANDED",
+  "OnRailsMm": 600069043.2551873,
+  "SettledMm": 600069043.3494045,
+  "MovedMm": 0.09421718120574951,
+  "HighestMm": 107.28734111785889
+ },
+ {
+  "load": 10,
+  "part": "Panneaux photovolta\u00efques OX-STAT",
+  "id": "3cf7990e-90da-42be-86bd-ea1dfa314c2e",
+  "situation": "LANDED",
+  "OnRailsMm": 600069036.4267533,
+  "SettledMm": 600069036.4619966,
+  "MovedMm": 0.03524327278137207,
+  "HighestMm": 107.28738403320312
+ },
+ {
+  "load": 10,
+  "part": "Pile rechargeable Z-400",
+  "id": "30ffae8b-fd96-4e40-a52a-38ca434cd7e3",
+  "situation": "LANDED",
+  "OnRailsMm": 600069066.0182499,
+  "SettledMm": 600069058.5086936,
+  "MovedMm": -7.509556293487549,
+  "HighestMm": 0
+ },
+ {
+  "load": 10,
+  "part": "Pile rechargeable Z-400",
+  "id": "589c389c-962a-470d-adba-79a50f405e54",
+  "situation": "LANDED",
+  "OnRailsMm": 600069286.6958158,
+  "SettledMm": 600069068.0321305,
+  "MovedMm": -218.66368532180786,
+  "HighestMm": 0
+ },
+ {
+  "load": 10,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "7b94c3b4-63a7-44e3-9bc4-793d87d270f9",
+  "situation": "LANDED",
+  "OnRailsMm": 600069444.4825697,
+  "SettledMm": 600069436.6284796,
+  "MovedMm": -7.854090094566345,
+  "HighestMm": 13317.79569864273
+ },
+ {
+  "load": 10,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "8994903e-b632-47e8-9007-2a63034c00f7",
+  "situation": "LANDED",
+  "OnRailsMm": 600069432.9716693,
+  "SettledMm": 600069424.752339,
+  "MovedMm": -8.219330310821533,
+  "HighestMm": 13547.70702445507
+ }
+]

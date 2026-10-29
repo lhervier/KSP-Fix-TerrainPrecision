@@ -1,0 +1,9 @@
+12:39:25 drop 1: other new crafts: Ast. BVD-667
+12:39:26 drop 1  Roue pour véhicule tout-terrain TR-2L    Moved   -272.9 mm  Highest    1903.4 mm
+12:39:49 drop 2: other new crafts: Ast. QMI-478
+12:39:50 drop 2  Roue pour véhicule tout-terrain TR-2L    Moved   -480.2 mm  Highest    1865.1 mm
+12:40:14 drop 3  Roue pour véhicule tout-terrain TR-2L    Moved   3187.6 mm  Highest    5321.1 mm
+12:40:36 drop 4: other new crafts: Ast. IQP-666
+12:40:37 drop 4  Roue pour véhicule tout-terrain TR-2L    Moved   -364.9 mm  Highest    2522.5 mm
+12:41:01 drop 5  Roue pour véhicule tout-terrain TR-2L    Moved   -404.4 mm  Highest    1631.1 mm
+12:41:02 done

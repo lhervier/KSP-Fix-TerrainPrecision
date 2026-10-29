@@ -4,13 +4,27 @@ Part of [Terrain Precision Fix](../../README.md): the terrain quads a craft stan
 inside them. Where the rounding strikes them in the stock code, how this mod takes it away, how that is
 checked, what keeps working, what it makes worse, and what is still to check.
 
-The rounding itself, shared with the statics and the scatter, is told once in
-[The culprit: a float at planet scale](../common/the-culprit.md).
+> **The ground KSP builds under a craft is never built at the same height twice.** Load a save, come back
+> to a craft left parked, switch to a craft far away, drive a few hundred metres: each time the ground is
+> built again, the surface the craft stands on comes back a little higher or a little lower — a few
+> centimetres on Kerbin, less on smaller worlds, and up to seventy on Earth in Real Solar System.
+
+## Why it matters
+
+It throws crafts into the air. Each time the ground is built again, it is a coin toss: if it comes back
+lower, the craft drops a centimetre or two, and nothing happens; if it comes back higher, the craft starts
+inside it, and the physics engine pushes it out, hard, upwards. That is the lander that hops the moment a
+load ends, the base that tears itself apart at its first load, the rover that jumps over nothing. Every
+moment the ground is built again is told in
+[Why the moving ground matters](../../README.md#why-the-moving-ground-matters).
 
 ## The culprit
 
 Stock places a terrain quad, and every vertex inside it, through a Unity `Transform`: a vector 600 km long
 stored in a float. Each value is rounded on its own, through the frame of the moment.
+
+The rounding itself, shared with the statics and the scatter, is told once in
+[The culprit: a float at planet scale](../common/the-culprit.md).
 
 **→ Full chapter: [The culprit: the ground](the-culprit.md)**
 
@@ -221,14 +235,6 @@ for a few seconds, every time time warp stops. Seen jumping in a play save; read
 comes from stock, not from this mod.
 
 **→ Full chapter: [Breaking Ground's deployed experiments](work-in-progress/stock/breaking-grounds-deployed-experiments.md)**
-
-**Parts lying alone on the ground: planned — read in the code and seen in play, the fix is not written.**
-Stock makes a part alone on the ground heavier for 3 seconds every time it goes off rails, 4 t on Kerbin
-and 20 t below 0.8 g, which looks like a patch over the moving ground this mod fixes. A rover wheel, a
-landing leg or a landing gear tunes its suspension to that mass and is thrown up when the mass comes back.
-With this mod, the extra mass seems to protect from nothing: a new setting could turn it off.
-
-**→ Full chapter: [Parts lying alone on the ground](work-in-progress/stock/parts-lying-alone-on-the-ground.md)**
 
 **The ocean: planned.** Read in the logs, this mod corrected terrain quads only, never the ocean; how the
 ocean sphere is flagged has not been read, and a craft floating near a coast has not been watched.

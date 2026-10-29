@@ -6,8 +6,9 @@ namespace com.github.lhervier.ksp.fix.terrainprecision
 {
     /// <summary>
     /// Places the terrain and the statics, and, when asked to, the terrain scatter and the surface features,
-    /// the same way at every load, where their own double precision coordinates say they are, and keeps the
-    /// stock ground anchor at the height it was placed at: installs each fix the settings leave on, and
+    /// the same way at every load, where their own double precision coordinates say they are, keeps the
+    /// stock ground anchor at the height it was placed at, and lets a part lying alone on the ground settle
+    /// with its own mass: installs each fix the settings leave on, and
     /// drives the statics fix through scene changes and from frame to frame.
     /// </summary>
     [KSPAddon(KSPAddon.Startup.Instantly, true)]
@@ -151,6 +152,24 @@ namespace com.github.lhervier.ksp.fix.terrainprecision
                 {
                     // The patch is not in place: anchors are riveted again as stock rivets them.
                     Log.Error($"Could not install the ground anchor rivet fix, anchors are riveted as stock rivets them: {e}");
+                }
+            }
+
+            if (!Settings.FixLonePartMass)
+            {
+                Log.Info("Lone part mass fix turned off in the settings");
+            }
+            else
+            {
+                try
+                {
+                    LonePartMassFix.Install(harmony);
+                    Log.Info("Lone part mass fix installed");
+                }
+                catch (Exception e)
+                {
+                    // The patch is not in place: parts lying alone are made heavier as stock makes them.
+                    Log.Error($"Could not install the lone part mass fix, parts lying alone are made heavier as stock makes them: {e}");
                 }
             }
 

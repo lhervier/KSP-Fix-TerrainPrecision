@@ -29,7 +29,10 @@ it away, and how that is checked.
   with a collider.
 
 **[The ground anchor](../ground-anchor/README.md)** is another matter: two stock
-behaviours raise an anchored base when it is loaded, and neither is a rounding.
+behaviours raise an anchored base when it is loaded, and neither is a rounding. So are
+**[parts lying alone](../lone-parts/README.md)**: stock makes a part alone on the ground much heavier for a
+few seconds after a load, which softened its pops on the moving ground, and throws the parts with a
+suspension.
 
 **How each fix is checked.** Each situation where a craft meets the ground is measured twice, without this
 mod and with it: one instrument reads the landed craft, another the ground itself, and in flight a third

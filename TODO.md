@@ -15,12 +15,6 @@ objets à la fois va dans `common`.
 
 ## Sans ordre imposé
 
-- **Couper l'alourdissement des pièces seules posées.** Un nouveau réglage `fix*`, actif par défaut : un postfix de
-  `ModuleCargoPart.OnPartUnpack` remet `prefabMass` à `preSettlingPrefabMass` dès que `MakePartSettle` l'a montée à
-  4 t ou 20 t. Pour toutes les pièces ou seulement celles à suspension : ce que diront les tests de
-  [Parts lying alone on the ground](docs/ground/work-in-progress/stock/parts-lying-alone-on-the-ground.md). Prototype :
-  l'interrupteur de la sonde `WheelJumpProbe` (notes de Claude, `correctifs-proposes\roue-qui-saute.md`).
-
 - **L'écart diffère-t-il d'un point du sol à l'autre ?** C'est ce qui casse une structure posée sur
   plusieurs pieds (un pied enterré, un autre en l'air) : sans lui, le sol monte ou descend d'un bloc et
   la structure suit. Je le crois, puisque chaque quad arrondit sa propre position, mais rien ne le

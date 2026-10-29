@@ -1,0 +1,6 @@
+12:27:46 drop 1  Roue pour véhicule tout-terrain TR-2L    Moved   -504.4 mm  Highest       0.0 mm
+12:28:09 drop 2  Roue pour véhicule tout-terrain TR-2L    Moved   -489.9 mm  Highest   13437.2 mm
+12:28:31 drop 3  Roue pour véhicule tout-terrain TR-2L    Moved   -502.4 mm  Highest       0.0 mm
+12:28:53 drop 4  Roue pour véhicule tout-terrain TR-2L    Moved   -494.7 mm  Highest   13435.8 mm
+12:29:16 drop 5  Roue pour véhicule tout-terrain TR-2L    Moved   -483.7 mm  Highest   13017.8 mm
+12:29:17 done

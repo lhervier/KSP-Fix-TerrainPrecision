@@ -1,0 +1,62 @@
+[
+ {
+  "drop": 1,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "874e0672-62fc-43d4-bb62-616d7ffed428",
+  "others": [
+   "Ast. CBT-777"
+  ],
+  "OnRailsMm": 201839539.4905079,
+  "SettledMm": 201839308.51823264,
+  "MovedMm": -230.9722752571106,
+  "HighestMm": 742.4599590599537
+ },
+ {
+  "drop": 2,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "778e6f8f-a994-4ef3-8040-74993a53680f",
+  "others": [
+   "Ast. WEP-517"
+  ],
+  "OnRailsMm": 201839492.72526556,
+  "SettledMm": 201839297.1074038,
+  "MovedMm": -195.6178617477417,
+  "HighestMm": 1200.3328903019428
+ },
+ {
+  "drop": 3,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "f76e39c5-9ae3-48d2-9814-ff5c47d368cb",
+  "others": [
+   "Ast. RZH-004"
+  ],
+  "OnRailsMm": 201839516.81891975,
+  "SettledMm": 201838283.07701394,
+  "MovedMm": -1233.7419058084488,
+  "HighestMm": 1756.4466925263405
+ },
+ {
+  "drop": 4,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "c655f89e-159a-4807-8802-15b82447dc4c",
+  "others": [
+   "Ast. ZLN-681"
+  ],
+  "OnRailsMm": 201839514.3425883,
+  "SettledMm": 201839379.9459362,
+  "MovedMm": -134.3966521024704,
+  "HighestMm": 1177.3369144499302
+ },
+ {
+  "drop": 5,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "9dfe6d22-d82a-458e-be4b-6bef606961f8",
+  "others": [
+   "Ast. MRW-338"
+  ],
+  "OnRailsMm": 201839497.48895133,
+  "SettledMm": 201839056.7506989,
+  "MovedMm": -440.73825243115425,
+  "HighestMm": 1873.9200946986675
+ }
+]

@@ -1,0 +1,71 @@
+12:58:45 load 1
+12:58:45   Panneaux photovoltaïques OX-STAT         Moved     13.1 mm  Highest     120.1 mm
+12:58:46   Panneaux photovoltaïques OX-STAT         Moved     13.1 mm  Highest     120.1 mm
+12:58:46   Pile rechargeable Z-400                  Moved      5.5 mm  Highest       5.6 mm
+12:58:47   Pile rechargeable Z-400                  Moved   -205.6 mm  Highest       5.8 mm
+12:58:47   Roue pour véhicule tout-terrain TR-2L    Moved      2.4 mm  Highest   14444.5 mm
+12:58:48   Roue pour véhicule tout-terrain TR-2L    Moved      2.5 mm  Highest   14408.8 mm
+12:59:09 load 2
+12:59:10   Panneaux photovoltaïques OX-STAT         Moved     -2.3 mm  Highest     105.0 mm
+12:59:10   Panneaux photovoltaïques OX-STAT         Moved     -2.4 mm  Highest     105.0 mm
+12:59:11   Pile rechargeable Z-400                  Moved     -9.8 mm  Highest       0.0 mm
+12:59:11   Pile rechargeable Z-400                  Moved   -220.9 mm  Highest       0.0 mm
+12:59:12   Roue pour véhicule tout-terrain TR-2L    Moved     12.0 mm  Highest   13453.3 mm
+12:59:12   Roue pour véhicule tout-terrain TR-2L    Moved    -15.0 mm  Highest   13588.7 mm
+12:59:33 load 3
+12:59:34   Panneaux photovoltaïques OX-STAT         Moved     -5.6 mm  Highest     101.7 mm
+12:59:34   Panneaux photovoltaïques OX-STAT         Moved     -5.6 mm  Highest     101.7 mm
+12:59:35   Pile rechargeable Z-400                  Moved    -13.1 mm  Highest       0.0 mm
+12:59:35   Pile rechargeable Z-400                  Moved   -224.2 mm  Highest       0.0 mm
+12:59:36   Roue pour véhicule tout-terrain TR-2L    Moved    -11.9 mm  Highest   13510.6 mm
+12:59:36   Roue pour véhicule tout-terrain TR-2L    Moved    -18.8 mm  Highest   13575.8 mm
+12:59:57 load 4
+12:59:58   Panneaux photovoltaïques OX-STAT         Moved     -5.9 mm  Highest     101.5 mm
+12:59:58   Panneaux photovoltaïques OX-STAT         Moved     -5.8 mm  Highest     101.5 mm
+12:59:59   Pile rechargeable Z-400                  Moved    -13.4 mm  Highest       0.0 mm
+13:00:00   Pile rechargeable Z-400                  Moved   -224.5 mm  Highest       0.0 mm
+13:00:00   Roue pour véhicule tout-terrain TR-2L    Moved    -17.3 mm  Highest   13501.6 mm
+13:00:01   Roue pour véhicule tout-terrain TR-2L    Moved    -15.0 mm  Highest   13439.3 mm
+13:00:22 load 5
+13:00:22   Panneaux photovoltaïques OX-STAT         Moved      3.0 mm  Highest     110.4 mm
+13:00:23   Panneaux photovoltaïques OX-STAT         Moved      3.1 mm  Highest     110.4 mm
+13:00:23   Pile rechargeable Z-400                  Moved     -4.4 mm  Highest       0.0 mm
+13:00:24   Pile rechargeable Z-400                  Moved   -215.6 mm  Highest       1.0 mm
+13:00:24   Roue pour véhicule tout-terrain TR-2L    Moved     -8.1 mm  Highest   13455.1 mm
+13:00:25   Roue pour véhicule tout-terrain TR-2L    Moved     -9.7 mm  Highest   13267.5 mm
+13:00:46 load 6
+13:00:46   Panneaux photovoltaïques OX-STAT         Moved     21.3 mm  Highest     128.5 mm
+13:00:47   Panneaux photovoltaïques OX-STAT         Moved     21.3 mm  Highest     128.5 mm
+13:00:48   Pile rechargeable Z-400                  Moved     13.7 mm  Highest      13.8 mm
+13:00:48   Pile rechargeable Z-400                  Moved   -197.3 mm  Highest      10.6 mm
+13:00:49   Roue pour véhicule tout-terrain TR-2L    Moved     12.6 mm  Highest   14434.1 mm
+13:00:49   Roue pour véhicule tout-terrain TR-2L    Moved      5.9 mm  Highest   14416.0 mm
+13:01:10 load 7
+13:01:11   Panneaux photovoltaïques OX-STAT         Moved    -68.7 mm  Highest       0.0 mm
+13:01:11   Panneaux photovoltaïques OX-STAT         Moved    -68.7 mm  Highest       0.0 mm
+13:01:12   Pile rechargeable Z-400                  Moved    -76.3 mm  Highest       0.0 mm
+13:01:12   Pile rechargeable Z-400                  Moved   -287.3 mm  Highest       0.0 mm
+13:01:13   Roue pour véhicule tout-terrain TR-2L    Moved    -73.6 mm  Highest   15741.3 mm
+13:01:13   Roue pour véhicule tout-terrain TR-2L    Moved    -61.8 mm  Highest     137.2 mm
+13:01:34 load 8
+13:01:35   Panneaux photovoltaïques OX-STAT         Moved     28.2 mm  Highest     135.4 mm
+13:01:36   Panneaux photovoltaïques OX-STAT         Moved     28.2 mm  Highest     135.5 mm
+13:01:36   Pile rechargeable Z-400                  Moved     20.6 mm  Highest      20.7 mm
+13:01:37   Pile rechargeable Z-400                  Moved   -190.5 mm  Highest      14.6 mm
+13:01:37   Roue pour véhicule tout-terrain TR-2L    Moved     20.0 mm  Highest   14554.8 mm
+13:01:38   Roue pour véhicule tout-terrain TR-2L    Moved     13.8 mm  Highest   14254.8 mm
+13:01:59 load 9
+13:01:59   Panneaux photovoltaïques OX-STAT         Moved     22.8 mm  Highest     130.1 mm
+13:02:00   Panneaux photovoltaïques OX-STAT         Moved     22.8 mm  Highest     130.1 mm
+13:02:00   Pile rechargeable Z-400                  Moved     15.3 mm  Highest      15.3 mm
+13:02:01   Pile rechargeable Z-400                  Moved   -195.8 mm  Highest      11.6 mm
+13:02:01   Roue pour véhicule tout-terrain TR-2L    Moved     22.9 mm  Highest   14475.6 mm
+13:02:02   Roue pour véhicule tout-terrain TR-2L    Moved     14.5 mm  Highest   14527.7 mm
+13:02:23 load 10
+13:02:23   Panneaux photovoltaïques OX-STAT         Moved     17.6 mm  Highest     125.0 mm
+13:02:24   Panneaux photovoltaïques OX-STAT         Moved     17.6 mm  Highest     124.9 mm
+13:02:25   Pile rechargeable Z-400                  Moved     10.1 mm  Highest      10.1 mm
+13:02:25   Pile rechargeable Z-400                  Moved   -201.1 mm  Highest       8.7 mm
+13:02:26   Roue pour véhicule tout-terrain TR-2L    Moved     13.6 mm  Highest   14437.0 mm
+13:02:26   Roue pour véhicule tout-terrain TR-2L    Moved      5.5 mm  Highest   14409.4 mm
+13:02:27 done

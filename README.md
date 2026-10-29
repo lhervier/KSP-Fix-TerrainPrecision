@@ -105,6 +105,7 @@ worse, and what is still to check. The first figure is without this mod, the sec
 | **The scatter** | the rocks, grass and trees | against the ground at a load, 61 mm (178 with the ground fixed alone) → 0.132 mm | `fixScatter` | [→ page](docs/scatter/README.md) |
 | **The ROCs** | Breaking Ground's surface features | a kerbal standing on one, at a load with the ground fixed, 10.04 → 0.008 mm | `fixRocs` | [→ page](docs/rocs/README.md) |
 | **The ground anchor** | an anchored base, raised at each load — not a rounding | the base at its second load, 26.3 cm → 0.08 mm | `fixGroundAnchor…` | [→ page](docs/ground-anchor/README.md) |
+| **Parts lying alone** | a wheel or a leg alone on the ground, thrown up after a load by the extra mass stock gives it — not a rounding | a wheel alone on the Mun at a load, thrown 1.3 to 13.7 m up → 13 to 15 mm | `fixLonePartMass` | [→ page](docs/lone-parts/README.md) |
 
 Every fix is on by default. Two patches, on by default too, keep Kopernicus and Kerbal Konstructs working
 with the statics fix: see [the statics](docs/statics/README.md#limits-and-solutions).

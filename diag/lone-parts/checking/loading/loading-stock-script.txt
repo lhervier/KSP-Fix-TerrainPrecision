@@ -1,0 +1,71 @@
+12:00:19 load 1
+12:00:20   Roue pour véhicule tout-terrain TR-2L    Moved   2219.8 mm  Highest    4586.6 mm
+12:00:21   Roue pour véhicule tout-terrain TR-2L    Moved    684.2 mm  Highest    3663.9 mm
+12:00:21   Pile rechargeable Z-400                  Moved      4.8 mm  Highest       5.7 mm
+12:00:22   Pile rechargeable Z-400                  Moved      1.8 mm  Highest       4.5 mm
+12:00:22   Panneaux photovoltaïques 3x2 SP-W        Moved      1.1 mm  Highest       1.9 mm
+12:00:23   Étai octogonal cubique                   Moved     -0.2 mm  Highest       0.7 mm
+12:00:45 load 2
+12:00:45   Roue pour véhicule tout-terrain TR-2L    Moved     97.7 mm  Highest    1343.4 mm
+12:00:46   Roue pour véhicule tout-terrain TR-2L    Moved    307.1 mm  Highest    1885.3 mm
+12:00:46   Pile rechargeable Z-400                  Moved     47.5 mm  Highest     107.4 mm
+12:00:47   Pile rechargeable Z-400                  Moved     44.5 mm  Highest     103.4 mm
+12:00:48   Panneaux photovoltaïques 3x2 SP-W        Moved     49.6 mm  Highest     446.6 mm
+12:00:48   Étai octogonal cubique                   Moved     45.8 mm  Highest      61.4 mm
+12:01:10 load 3
+12:01:11   Roue pour véhicule tout-terrain TR-2L    Moved    223.7 mm  Highest    2212.4 mm
+12:01:11   Roue pour véhicule tout-terrain TR-2L    Moved    973.8 mm  Highest    2737.6 mm
+12:01:12   Pile rechargeable Z-400                  Moved     41.9 mm  Highest     101.8 mm
+12:01:13   Pile rechargeable Z-400                  Moved     39.4 mm  Highest      56.4 mm
+12:01:13   Panneaux photovoltaïques 3x2 SP-W        Moved     41.3 mm  Highest     367.6 mm
+12:01:14   Étai octogonal cubique                   Moved     37.8 mm  Highest      49.0 mm
+12:01:36 load 4
+12:01:36   Roue pour véhicule tout-terrain TR-2L    Moved    513.1 mm  Highest    2734.9 mm
+12:01:37   Roue pour véhicule tout-terrain TR-2L    Moved     32.5 mm  Highest    3145.0 mm
+12:01:38   Pile rechargeable Z-400                  Moved     22.3 mm  Highest      27.9 mm
+12:01:38   Pile rechargeable Z-400                  Moved     20.1 mm  Highest      27.1 mm
+12:01:39   Panneaux photovoltaïques 3x2 SP-W        Moved     19.1 mm  Highest     109.8 mm
+12:01:39   Étai octogonal cubique                   Moved     17.0 mm  Highest      19.8 mm
+12:02:01 load 5
+12:02:02   Roue pour véhicule tout-terrain TR-2L    Moved    246.6 mm  Highest    2396.5 mm
+12:02:02   Roue pour véhicule tout-terrain TR-2L    Moved    601.3 mm  Highest    1604.1 mm
+12:02:03   Pile rechargeable Z-400                  Moved     23.4 mm  Highest      30.1 mm
+12:02:04   Pile rechargeable Z-400                  Moved     22.0 mm  Highest      29.7 mm
+12:02:04   Panneaux photovoltaïques 3x2 SP-W        Moved     22.2 mm  Highest     140.2 mm
+12:02:05   Étai octogonal cubique                   Moved     19.9 mm  Highest      23.4 mm
+12:02:27 load 6
+12:02:27   Roue pour véhicule tout-terrain TR-2L    Moved    -46.7 mm  Highest    3245.8 mm
+12:02:28   Roue pour véhicule tout-terrain TR-2L    Moved   -351.6 mm  Highest    1743.9 mm
+12:02:28   Pile rechargeable Z-400                  Moved     20.6 mm  Highest      24.4 mm
+12:02:29   Pile rechargeable Z-400                  Moved     18.6 mm  Highest      25.2 mm
+12:02:29   Panneaux photovoltaïques 3x2 SP-W        Moved     18.1 mm  Highest     100.1 mm
+12:02:30   Étai octogonal cubique                   Moved     15.8 mm  Highest      18.2 mm
+12:02:53 load 7
+12:02:53   Roue pour véhicule tout-terrain TR-2L    Moved    193.9 mm  Highest    1736.6 mm
+12:02:54   Roue pour véhicule tout-terrain TR-2L    Moved    448.9 mm  Highest    1656.4 mm
+12:02:54   Pile rechargeable Z-400                  Moved     17.5 mm  Highest      20.2 mm
+12:02:55   Pile rechargeable Z-400                  Moved     14.3 mm  Highest      19.4 mm
+12:02:55   Panneaux photovoltaïques 3x2 SP-W        Moved     14.6 mm  Highest      70.5 mm
+12:02:56   Étai octogonal cubique                   Moved     13.8 mm  Highest      15.6 mm
+12:03:18 load 8
+12:03:19   Roue pour véhicule tout-terrain TR-2L    Moved    539.2 mm  Highest    3832.7 mm
+12:03:19   Roue pour véhicule tout-terrain TR-2L    Moved   1228.8 mm  Highest    4889.5 mm
+12:03:20   Pile rechargeable Z-400                  Moved     28.1 mm  Highest      38.7 mm
+12:03:20   Pile rechargeable Z-400                  Moved     26.0 mm  Highest      35.5 mm
+12:03:21   Panneaux photovoltaïques 3x2 SP-W        Moved     26.7 mm  Highest     188.6 mm
+12:03:21   Étai octogonal cubique                   Moved     25.1 mm  Highest      30.5 mm
+12:03:43 load 9
+12:03:44   Roue pour véhicule tout-terrain TR-2L    Moved    186.7 mm  Highest    2378.9 mm
+12:03:45   Roue pour véhicule tout-terrain TR-2L    Moved  12934.7 mm  Highest   13720.3 mm
+12:03:45   Pile rechargeable Z-400                  Moved      5.5 mm  Highest       5.9 mm
+12:03:46   Pile rechargeable Z-400                  Moved      2.7 mm  Highest       4.8 mm
+12:03:46   Panneaux photovoltaïques 3x2 SP-W        Moved      2.8 mm  Highest       7.8 mm
+12:03:47   Étai octogonal cubique                   Moved      1.6 mm  Highest       2.0 mm
+12:04:09 load 10
+12:04:09   Roue pour véhicule tout-terrain TR-2L    Moved   -398.4 mm  Highest    2265.6 mm
+12:04:10   Roue pour véhicule tout-terrain TR-2L    Moved    543.5 mm  Highest    1650.5 mm
+12:04:11   Pile rechargeable Z-400                  Moved     -0.1 mm  Highest       4.5 mm
+12:04:11   Pile rechargeable Z-400                  Moved     -1.4 mm  Highest       3.4 mm
+12:04:12   Panneaux photovoltaïques 3x2 SP-W        Moved     -0.1 mm  Highest       0.0 mm
+12:04:12   Étai octogonal cubique                   Moved     -2.3 mm  Highest       0.0 mm
+12:04:13 done

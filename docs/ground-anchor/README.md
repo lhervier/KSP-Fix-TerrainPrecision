@@ -4,6 +4,17 @@ Part of [Terrain Precision Fix](../../README.md): the stock ground anchor, and t
 ground, the statics and the scatter, its culprit is not a rounding: two stock behaviours raise an anchored
 base when it is loaded. How this mod takes them away, how that is checked, and what keeps working.
 
+> **A ground anchor can never be left on the ground.** At its next load, its collider, which stops 2 cm
+> above its bottom, puts it back a little in the air. And KSP puts a landed vessel back at the height it
+> computes for the terrain, not on the collider of the ground it rests on: an anchored base can come back
+> tens of centimetres in the air, and its anchor, riveted, keeps it there.
+
+## Why it matters
+
+Ground anchors are great for riveting a base to the ground, and for making it follow that ground: held by
+its anchors, a base follows the shape of the ground under it. A base raised at load and riveted there is
+just what an anchor is for avoiding: a base off the ground, and for good.
+
 ## The culprit
 
 Two stock behaviours raise an anchored vessel when it is loaded, and the anchor, riveted to the ground,

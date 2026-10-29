@@ -4,8 +4,24 @@ Part of [Terrain Precision Fix](../../README.md): the rocks, and around the KSC 
 that stock grows on the terrain. Where the rounding strikes them in the stock code, how this mod takes it
 away, how that is checked, what keeps working, what it makes worse, and what is still to check.
 
-The rounding itself, shared with the ground and the statics, is told once in
-[The culprit: a float at planet scale](../common/the-culprit.md).
+> **Fix the ground, and the rocks, the grass and the trees no longer go up and down with it.** On stock,
+> they are never placed quite on the ground, but they move with it: the ground and the scatter are drawn
+> through the same rounding. Fix the ground alone, and the scatter keeps moving, at every load and every
+> 500 m a craft drives, against a ground that no longer does.
+
+> [!WARNING]
+> **This fix is not a harmless one, and it can break other mods.** It moves the holders of the scatter
+> away from where stock hangs them, and a mod that looks for them there would miss them. None of the mods
+> read so far does; if one misbehaves around rocks, grass or trees, `fixScatter = false` turns this fix off
+> ([Settings](../common/settings.md)).
+
+## Why it matters
+
+Mostly, it shows. Stock scatter has no collider, so nothing rests on it; but while a rover drives, every
+500 m, the rocks and the grass around it jump against the ground. Not by much, a few centimetres at most,
+but it can be seen, on a rock or a cactus close to the rover. Give the scatter colliders, as some mods do,
+and a part or a kerbal resting on a rock can be moved too, and thrown — a small matter next to the ground
+itself.
 
 ## The culprit
 
@@ -14,6 +30,9 @@ the same 600 km vector in a float. The quad is drawn where its position says, th
 says, and the two need not round the same way. The terrain fix makes it worse: the ground stops moving, the
 holders do not, at every load and at every move of the world while you drive. Stock scatter has no
 collider, so this is visual — unless a mod gives it one.
+
+The rounding itself, shared with the ground and the statics, is told once in
+[The culprit: a float at planet scale](../common/the-culprit.md).
 
 **→ Full chapter: [The culprit: the scatter](the-culprit.md)**
 

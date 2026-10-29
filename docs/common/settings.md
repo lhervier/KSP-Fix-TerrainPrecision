@@ -2,7 +2,7 @@
 
 Part of [Terrain Precision Fix](../../README.md), [what the fixes share](README.md).
 
-`GameData/KSPFixTerrainPrecision/PluginData/settings.cfg` holds nine values, read when KSP starts. To
+`GameData/KSPFixTerrainPrecision/PluginData/settings.cfg` holds ten values, read when KSP starts. To
 change one: quit KSP, edit the file, start KSP again.
 
 | setting | what it does |
@@ -14,6 +14,7 @@ change one: quit KSP, edit the file, start KSP again.
 | `fixGroundAnchorModel` | `true` (default) brings the collider of the stock ground anchor down to the bottom of the anchor, so that a load puts it back where it was placed; `false` leaves the stock collider, which stops 2 cm above it |
 | `fixGroundAnchorLoad` | `true` (default) loads a vessel holding a stock ground anchor where it was saved; `false` lets stock raise it to the height it computes for the terrain, where the anchor then holds it |
 | `fixGroundAnchorRivet` | `true` (default) freezes a loaded anchor from the moment it is loaded, until stock rivets it again; `false` lets stock rivet it one frame late, which below 50 frames per second lets it move by under a millimetre first, a base in the air sinking a little at every load |
+| `fixLonePartMass` | `true` (default) gives a part lying alone on the ground its own mass back as soon as stock makes it heavier, 4 t on Kerbin and 20 t on the Mun, for 3 seconds every time it goes off rails; `false` leaves the extra mass, which throws a wheel, a landing leg or a landing gear up when its own mass comes back. It works with the terrain fix on or off. See [The fix: parts lying alone](../lone-parts/the-fix.md) |
 | `patchKopernicus` | `true` (default) patches Kopernicus, when installed, to cope with the statics fix. With `false` and the statics fix on, Kopernicus' flag fix throws when a facility is upgraded in flight near the KSC, which only a Making History mission does: an error in the log whose stack trace names Kopernicus, and nothing else, since the statics fix keeps the flags steady there. Meant only to see what the patch is for |
 | `patchKerbalKonstructs` | `true` (default) patches Kerbal Konstructs, when installed, to cope with the statics fix. With `false` and the statics fix on, moving a group with its group editor in flight sends it elsewhere on its body, and saves it there: meant only to see what the patch is for |
 | `logLevel` | what goes to `KSP.log`, below |

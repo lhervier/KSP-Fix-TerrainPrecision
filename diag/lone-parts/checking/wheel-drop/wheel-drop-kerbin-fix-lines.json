@@ -1,0 +1,47 @@
+[
+ {
+  "drop": 1,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "b554f063-23dc-4805-a36e-35a43da3a767",
+  "OnRailsMm": 600065631.6365695,
+  "SettledMm": 600065122.943901,
+  "MovedMm": -508.69266855716705,
+  "HighestMm": 0
+ },
+ {
+  "drop": 2,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "a5add1a9-19f0-4bcd-87d4-09a33c4d1719",
+  "OnRailsMm": 600065631.633042,
+  "SettledMm": 600065122.9149952,
+  "MovedMm": -508.71804678440094,
+  "HighestMm": 0
+ },
+ {
+  "drop": 3,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "3ce298cf-4cdb-4a0d-ba72-3fd0816e5d1a",
+  "OnRailsMm": 600065631.6458412,
+  "SettledMm": 600065122.8891463,
+  "MovedMm": -508.75669491291046,
+  "HighestMm": 0
+ },
+ {
+  "drop": 4,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "a2e2360a-210f-46b1-be1a-d4286b7f172e",
+  "OnRailsMm": 600065631.6473936,
+  "SettledMm": 600065122.8163947,
+  "MovedMm": -508.8309988975525,
+  "HighestMm": 0
+ },
+ {
+  "drop": 5,
+  "part": "Roue pour v\u00e9hicule tout-terrain TR-2L",
+  "id": "80787a17-c3cf-4635-80f5-c17fa43dad0c",
+  "OnRailsMm": 600065631.6593359,
+  "SettledMm": 600065127.2629405,
+  "MovedMm": -504.3963953256607,
+  "HighestMm": 0
+ }
+]
