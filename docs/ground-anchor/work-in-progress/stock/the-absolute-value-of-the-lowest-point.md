@@ -76,7 +76,7 @@ Before taking it away, what it is for has to be found. It is not written anywher
   higher than it rested starts above the ground even when the ground comes back a few centimetres higher;
   on stock's ground, that is what keeps it from being pushed out. If that is what the absolute value is for,
   it is no longer needed with this mod's ground, as for
-  [the extra mass of the parts lying alone](../../../lone-parts/the-culprit.md#the-extra-mass).
+  [the extra mass of the parts lying alone](../../../lone-parts/the-culprit.md#stocks-answer-the-extra-mass).
 - **Against that reading:** the lowest point is measured on the craft alone, not against the ground, and the
   pass already finds the ground with a ray cast at load. What the absolute value adds depends on the part's
   model, not on how far the ground moved, and it only reaches the parts whose origin lies below their

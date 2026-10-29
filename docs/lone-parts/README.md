@@ -117,8 +117,9 @@ mass. A flat part is never sunk: a structural panel slid off a slope of 30° and
 
 ### KAS
 
-**A pylon linked to a craft: planned — read in the source, not played.** A pylon of KAS set on the ground is
-a part lying alone, linked to another craft: with this mod, whatever pulls on the link at a load pulls on
-the pylon's own mass, 20 kg, instead of tons.
+**A pylon linked to a craft: planned — read in the source, not played; expected no worse than stock.** A
+pylon of KAS at the end of a hose that does not couple is a part lying alone. With this mod, a hose pulled
+taut at a load should move the 20 kg pylon by a few centimetres, where stock's 20 t pylon does not move;
+the hose breaks at 1 kN, far over that pull, either way.
 
 **→ Full chapter: [KAS: a pylon linked to a craft](work-in-progress/kas/a-pylon-linked-to-a-craft.md)**
