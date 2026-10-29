@@ -109,10 +109,11 @@ What is still to check: why it is a question, and the test planned to answer it.
 
 ### Stock
 
-**A large part on a steep slope: planned.** Stock sinks a craft put back onto a slope, whatever the ground,
-and a large part alone there could still need the extra mass.
+**A tall part on a steep slope: on hold — no candidate part found yet.** Stock sinks a craft put back onto
+a slope, whatever the ground, and a part alone over 3 m tall standing there could still need the extra
+mass. A flat part is never sunk: a structural panel slid off a slope of 30° and came to rest on 21.9°.
 
-**→ Full chapter: [A large part on a steep slope](work-in-progress/a-large-part-on-a-steep-slope.md)**
+**→ Full chapter: [A tall part on a steep slope](work-in-progress/a-large-part-on-a-steep-slope.md)**
 
 ### KAS
 

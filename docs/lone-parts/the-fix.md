@@ -36,8 +36,8 @@ goes off rails; a kerbal walking into the part later meets its own mass, on stoc
 **Why not keep it on a slope?** When `CheckGroundCollision` puts a craft back onto a slope, it compares the
 drop to its lowest point with the ground straight under its root, and sees a gap that is not there; past
 the 10 cm it ignores, it sinks the craft into the slope. Read in the code, not measured. That does not
-depend on the ground this mod fixes, and a large part on a steep slope could still need the extra mass:
-[A large part on a steep slope](work-in-progress/a-large-part-on-a-steep-slope.md) is to check that it
+depend on the ground this mod fixes, and a tall part on a steep slope could still need the extra mass:
+[A tall part on a steep slope](work-in-progress/a-large-part-on-a-steep-slope.md) is to check that it
 does not.
 
 ## Independent of the fix of the ground
