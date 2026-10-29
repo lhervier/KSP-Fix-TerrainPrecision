@@ -28,12 +28,34 @@ below it: twice the depth of the origin, here about 107 mm, past the 10 cm the p
 origin lies less than 5 cm below its colliders is left alone; the anchor, at the root of its craft, is
 moved whatever the distance.
 
+## What is already known
+
+- **The lift is set by the part, not by the ground.** With this mod, the line reads `up 0.107m` 39 times
+  out of 40 and `up 0.108m` once, over the two sessions: the runway comes back where it was, and the lift is
+  the same at every load. On stock, the same line reads from `up 0.101m` to `up 0.135m`, 18 times out of 20
+  ([`runway-stock.log`](../../../../diag/lone-parts/checking/runway/runway-stock.log)): the runway moving at
+  every load adds to the lift or takes from it, and at the load where it came back lower, the move fell under
+  the 10 cm the pass ignores and the panels were left where they were.
+- **It depends on how the part lies.** A part has its origin below its colliders in one position only: a
+  panel lying the other way round, or standing, keeps its origin above its lowest point, and the pass leaves
+  it alone. None of the six parts lying alone on the Mun, in
+  [Checking parts lying alone: loading the same save](../../../lone-parts/checking/loading.md), has the line in
+  [`loading-fix.log`](../../../../diag/lone-parts/checking/loading/loading-fix.log).
+- **Not measured yet**, and to be read with an instrument: that the panel is lifted in one step, at its first
+  physics step, rather than pushed out by the physics; and how deep its origin lies below its collider, which
+  the reading above puts at half of 107 mm.
+
 ## A fix to the pass itself
 
 Taking the lowest point with its sign would put every such part back where it rested: the anchor, a panel on
 its back, any part of a mod built the same way. One patch to the stock pass would then stand for the anchor's
 new collider, and cover the parts no one has listed. The anchor would keep resting as stock places it, its
 base 2 cm into the ground, and would no longer move at a load.
+
+The model fix could not simply be dropped for it, though. An anchor placed with the model fix rests with its
+origin on the ground; loaded with the stock collider and a pass that takes the sign, it would be put back with
+its origin 2 cm below the ground, and riveted there: every anchored base of an existing save would sink by
+2 cm once. Whichever way is chosen, what it does to anchors already placed is part of the change.
 
 ## Why the absolute value is there
 
