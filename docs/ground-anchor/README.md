@@ -70,3 +70,16 @@ if what it stands on comes back too. On the runways of the KSC and the Desert Ai
 anchored base stay within 0.15 mm of the runway, once 1.6 mm; without this mod, up to 116 mm away.
 
 **→ Full chapter: [An anchor on a static](non-regression/stock/an-anchor-on-a-static.md)**
+
+## Work in progress
+
+What is still to check: why it is a question, what is already known, and the test planned to answer it.
+
+### Stock
+
+**The absolute value of the lowest point: planned — seen on another part, read in the code.** The stock
+pass that puts a landed craft back on the ground takes the absolute value of its lowest point, which is why
+the anchor needed a new collider. It also lifts OX-STAT panels lying alone on the runway by 107 mm at every
+load. Taking that value with its sign would fix both at once, once it is known why stock takes it.
+
+**→ Full chapter: [The absolute value of the lowest point](work-in-progress/stock/the-absolute-value-of-the-lowest-point.md)**
