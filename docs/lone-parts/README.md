@@ -2,25 +2,46 @@
 
 Part of [Terrain Precision Fix](../../README.md): a part lying alone on the ground, a craft of a single part,
 such as a battery, a strut or a wheel dropped in EVA construction. Unlike the ground, the statics and the
-scatter, its culprit is not a rounding: stock makes such a part much heavier for a few seconds, which
-softened its pops on the moving ground, and throws the parts with a suspension. What it does, how this mod
+scatter, its culprit is not a rounding: stock makes such a part much heavier for 3 seconds, which softens
+the pops of the parts without a suspension on the moving ground, and throws the parts with one. What it does, how this mod
 takes it away, how that is checked, and what is still to check.
 
-> **A part lying alone on the ground can explode, sink through it or be thrown into the air when its
-> physics starts**: at a load, or when you come back within 200 m of it. A part with a suspension — a
-> wheel, a landing leg, a landing gear — is very likely to be thrown.
+> **Set a wheel down on the ground in EVA construction, or reload your save: sometimes it flies off. The
+> culprit is a huge weight stock adds, for 3 seconds, to every part lying alone.** That weight makes
+> the pops of the parts without a suspension smaller on a ground that moves, but it throws the ones with
+> a suspension higher. With the ground fixed, the parts without a suspension no longer need it, while the
+> wheels keep flying off: so this mod takes that weight away.
+
+![A wheel set down on the Mun in EVA construction, thrown into the air three seconds later](../../imgs/lone-parts/thesis.gif)
+
+*KSP 1.12 without this mod, with [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes)
+and [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) as the only mods installed. On the
+Mun, the save [`wheel-drop-mun.sfs`](../../diag/lone-parts/checking/wheel-drop/wheel-drop-mun.sfs): in EVA
+construction, Récas Kerman takes a wheel off the crane and sets it down on the ground a few metres away,
+nothing touched afterwards. The countdown, added to the film, runs from the moment the wheel is let go to
+the moment it moves.*
 
 ## Why it matters
 
 EVA construction puts parts on the ground all the time: a wheel taken off a rover, a strut or a battery
 set down for later. Seeing them bounce into the air and come down on the base is not pleasant.
 
+![The same wheel set down on the Mun with this mod: it tips onto its side and stays there](../../imgs/lone-parts/with-mod.gif)
+
+*The film above, played again with this mod installed: KSP 1.12 with this mod,
+[KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes) and
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), the same save, the same wheel set
+down at the same spot. The countdown, added to the film, runs as long after the wheel is let go as in the
+film above.*
+
 ## The culprit
 
-Every time a part lying alone goes off rails, stock makes it much heavier for 3 seconds: 4 t on Kerbin,
-20 t on the Mun. On the moving ground, that makes its pops smaller. But a wheel, a landing leg or a landing
-gear tunes its suspension to that mass, and its spring throws it high in the air when its own mass comes
-back, with or without the fix of the ground.
+On stock's moving ground, a part lying alone sometimes starts inside the ground at a load, and pops out of
+it. Stock, written as if the ground came back at the same height, answered the way we read it: every time
+such a part goes off rails, it makes it much heavier for 3 seconds, 4 t on Kerbin, 20 t on the Mun. It
+works: the pops are two to three times smaller. But a wheel, a landing leg or a landing gear presses its
+spring under those tons, and is thrown high in the air when its own mass comes back, with or without the
+fix of the ground.
 
 **→ Full chapter: [The culprit: parts lying alone](the-culprit.md)**
 
@@ -64,6 +85,23 @@ which plays the protocols.
 
 The saves, the scripts and the `KSP.log` of every session are in
 [the runs of parts lying alone](../../diag/lone-parts/README.md).
+
+## Limits and solutions
+
+What this mod makes worse, with the solution to each.
+
+### Existing saves
+
+**A part lying alone in a save made without this mod can pop up once, higher than in stock: not fixed —
+read in the code, not measured.** The part was saved on the ground of one stock draw, and comes back on
+this mod's ground, which can be a few centimetres higher. Under 10 cm, `Vessel.CheckGroundCollision` leaves
+it where it was saved: it starts inside the ground, as at a stock load
+([The culprit: parts lying alone](the-culprit.md#a-part-alone-on-the-moving-ground)), but this mod has taken
+away the extra mass that made that pop smaller, and the physics pushes the part out under its own mass. It
+happens at one load at most: once the save is made again with this mod, the part rests on this mod's ground,
+which comes back at the same height at every load. The solution is to load the save and save it again; a
+part already pushed out stays where it came to rest. The same one-time draw, for every craft, is in
+[Existing saves](../common/existing-saves.md).
 
 ## Work in progress
 

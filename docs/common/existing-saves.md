@@ -12,7 +12,10 @@ the same way every time. What a player with a long-running save should expect:
 - **the corrected ground is among the stock draws, not a worse one** — the readings are in
   [KSP Diag - Terrain Height, with this mod](../ground/checking/loading.md#the-ground-over-six-loads);
 - **the failure becomes repairable**: raising a craft by a few centimetres in the `.sfs` is a permanent
-  repair once the ground is stable, where in stock the next loading draws the ground under it again.
+  repair once the ground is stable, where in stock the next loading draws the ground under it again;
+- **a part lying alone can pop up higher than in stock at that one loading**: it is pushed out of the
+  ground under its own mass, without the extra mass stock gives it
+  ([Parts lying alone: limits and solutions](../lone-parts/README.md#existing-saves)).
 
 Seen on the Moon under Real Solar System: a craft saved without this mod, loaded once and saved again
 with it (`reload-moon-rss-resave.sfs`), then loaded 42 times with it. What tells is Real Solar System's
