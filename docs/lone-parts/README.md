@@ -90,6 +90,17 @@ The saves, the scripts and the `KSP.log` of every session are in
 
 What this mod makes worse, with the solution to each.
 
+### Stock
+
+**A landing leg set down alone in EVA construction is thrown into the air: solved by
+[Suspension Bounce Fix](https://github.com/lhervier/KSP-Fix-SuspensionBounce) — played on Kerbin and on Minmus.**
+On Kerbin, stock's extra mass makes the leg tip over onto its side, its spring off the ground, and it stays there;
+with this mod, the leg keeps its own mass, its spring stays on the ground, and a stock flaw of the suspensions
+throws it at once. On Minmus, the leg is thrown even without this mod: it is still rolling when its own mass comes
+back, and its foot touches the ground again.
+
+**→ Full chapter: [A landing leg set down alone](limits/stock/a-landing-leg-set-down-alone.md)**
+
 ### Existing saves
 
 **A part lying alone in a save made without this mod can pop up once, higher than in stock: not fixed —

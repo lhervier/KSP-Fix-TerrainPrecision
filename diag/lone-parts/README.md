@@ -43,3 +43,10 @@ In [`checking/wheel-drop/`](checking/wheel-drop/), for each body (`kerbin`, `mun
 [Checking parts lying alone: on the runway](../../docs/lone-parts/checking/runway.md). In
 [`checking/runway/`](checking/runway/), for each configuration (`stock`, `no-lone-part-mass`, `fix`):
 `runway-<configuration>.log`, `-script.txt` and `-lines.json`.
+
+## A landing leg set down alone
+
+[`landing-leg-kerbin.sfs`](limits/landing-leg/landing-leg-kerbin.sfs) and
+[`landing-leg-minmus.sfs`](limits/landing-leg/landing-leg-minmus.sfs), a leg set down by hand in EVA construction,
+without this mod, with it, and with it and Suspension Bounce Fix. Read in
+[A landing leg set down alone](../../docs/lone-parts/limits/stock/a-landing-leg-set-down-alone.md).
