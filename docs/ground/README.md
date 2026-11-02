@@ -247,6 +247,12 @@ not in `PRELAUNCH`; some have been seen to jump when reached. Read in the code, 
 
 **→ Full chapter: [Crafts spawned by a contract](work-in-progress/stock/crafts-spawned-by-a-contract.md)**
 
+**A craft landed on a summit: planned — seen in game, read in the code.** On a summit or a ridge, the ground
+built passes below the relief, and stock raises a landed craft to the relief at every load: a craft of several
+parts then falls back onto the ground. Stock's own, the same with this mod.
+
+**→ Full chapter: [A craft landed on a summit](work-in-progress/stock/a-craft-landed-on-a-summit.md)**
+
 ### KSP Community Fixes
 
 **Its own ground fix: planned — announced, not released.** One of its maintainers plans a ground fix for
