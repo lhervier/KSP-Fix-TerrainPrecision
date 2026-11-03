@@ -96,8 +96,8 @@ the instrument and the mods it names. Two tests cover every fix at once, and are
 ### Stock
 
 **The map view: nothing to test, read in the code.** The map draws the bodies from scaled space, which this
-mod does not touch. While it is open, the terrain keeps being built around the active craft exactly as in
-flight.
+mod does not touch. While it is open, the terrain around the active craft is hidden and frozen: no quad is
+built, moved or dropped.
 
 **→ Full chapter: [The map view](non-regression/stock/the-map-view.md)**
 
