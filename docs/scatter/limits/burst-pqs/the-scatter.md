@@ -5,24 +5,25 @@ Part of [Terrain Precision Fix](../../../../README.md), [the scatter](../../READ
 **Status: checked, a problem this mod fixes, the scatter fix on by default.** BurstPQS lets stock spawn the scatter,
 and stock still places each scatter holder through the sphere, rounded at planet scale. The ground no longer
 moves; the holders do, and the rocks, grass and trees move against the ground. This mod's scatter fix first
-missed most of them with BurstPQS; it now hangs them all. Read by KSP Diag - Scatter, in millimetres.
+missed most of them with BurstPQS; it now hangs them all. Played with BurstPQS 1.0.30 (with Kopernicus 252),
+read by KSP Diag - Scatter, in millimetres.
 
 [The scatter, at every load](../../checking/loading-protocol.md), twelve loads: how
 much the height of each measured vertex above the ground changes from one load to the next, median over the
 vertices:
 
-| | stock (published) | this mod, scatter fix off (published) | this mod (published) | BurstPQS | BurstPQS + this mod, before its BurstPQS support | BurstPQS + this mod |
+| | stock (published) | this mod, scatter fix off (published) | this mod (published) | BurstPQS | BurstPQS + this mod, before its BurstPQS support (BurstPQS 1.0.27) | BurstPQS + this mod |
 |---|---|---|---|---|---|---|
-| Kerbin | 61 | 178 | 0.034 | 141 | 137 | **0.065** |
-| Mun | 31 | 23 | 0.008 | 18 | 20 | **0.013** |
-| Kerbin, rocks with colliders (Kopernicus, Stock Scatter Collider Enabler Patch) | 61 | 150 | 0.018 | 111 | 122 | **0.023** |
+| Kerbin | 61 | 178 | 0.034 | 190 | 137 | **0.071** |
+| Mun | 31 | 23 | 0.008 | 25 | 20 | **0.009** |
+| Kerbin, rocks with colliders (Kopernicus, Stock Scatter Collider Enabler Patch) | 61 | 150 | 0.018 | 134 | 122 | **0.020** |
 
 [The scatter, while the world moves](../../checking/driving-protocol.md), six loads,
 one move each: the ground holds, and with BurstPQS alone every holder jumps against it, the measured vertices
-by −17.0 to +27.9. With this mod before its BurstPQS support, by −23.3 to +21.9; with it now, by −0.18 to
-+0.23, every holder at 0.00 from its quad. [In flight](../../checking/flight-protocol.md),
-from a 5 km orbit of the Mun: with BurstPQS alone, the holders are up to 26 mm off their quads all flight
-long; with this mod before its BurstPQS support, 204 holders out of 1 152 were off at 30 s, none from 150 s
+by −31.5 to +23.7. With this mod before its BurstPQS support, by −23.3 to +21.9; with it now, by −0.49 to
++0.69, every holder at 0.00 from its quad. [In flight](../../checking/flight-protocol.md),
+from a 5 km orbit of the Mun: with BurstPQS alone, every holder is off its quad at every reading, by up to
+46 mm; with this mod before its BurstPQS support, 204 holders out of 1 152 were off at 30 s, none from 150 s
 on; with it now, none at any reading, from 30 s on.
 
 **Why this mod's scatter fix first missed them**: it hung a holder from its quad only when the quad sat in

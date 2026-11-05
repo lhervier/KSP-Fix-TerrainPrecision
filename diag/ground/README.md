@@ -207,6 +207,21 @@ launch by the script of [the protocol of the seam](../../docs/ground/limits/stoc
   [`revert-kerbin-fix-diag4-script.txt`](limits/stock/the-seam-between-subdivision-levels/revert-kerbin-fix-diag4-script.txt), and every
   reading in [`revert-kerbin-fix-diag4-readings.json`](limits/stock/the-seam-between-subdivision-levels/revert-kerbin-fix-diag4-readings.json).
 
+## With Kopernicus
+
+KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
+[Kopernicus](https://github.com/Kopernicus/Kopernicus) and what it requires (Modular Flight Integrator 1.2.10,
+KSPTextureLoader 1.0.36), both instruments, [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer),
+and this mod at `logLevel = Debug`, or not: each session is here twice, `-without-this-mod` and `-fix`. Read in
+[the non-regression tests on Kopernicus](../../docs/ground/README.md#kopernicus).
+
+- The four saves of [the loading protocol](#the-loading-protocol), loaded six times each by
+  `run-loading.py` under Kopernicus release 252, in
+  [`a-landed-craft-reloaded-in-flight/`](non-regression/kopernicus/a-landed-craft-reloaded-in-flight/):
+  `loading-<body>-*`, what the script printed and every line it recorded, one `KSP.log` per session
+  (`loading-without-this-mod.log.gz`, `loading-fix.log.gz`); the screenshots of the tables in
+  [`imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/`](../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight).
+
 ## With Deferred
 
 The install of [On the stock system](../statics/README.md#on-the-stock-system) plus [Deferred](https://github.com/LGhassen/Deferred)

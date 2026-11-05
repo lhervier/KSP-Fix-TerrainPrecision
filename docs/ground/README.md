@@ -125,6 +125,13 @@ over 116.0 mm (median) without this mod and 0.079 mm with it.
 
 **→ Full chapter: [Kopernicus: the terrain](non-regression/kopernicus/the-terrain.md)**
 
+**A landed craft reloaded in flight: checked, no problem.** Kopernicus places the floating origin from the
+craft's orbit when a landed craft is reloaded in flight, which stock does not. Over six loads, on four
+bodies, the ground under the capsule spreads over up to 141 mm without this mod and 0.019 mm with it;
+watched by eye, nothing moves with this mod as the flight loads.
+
+**→ Full chapter: [Kopernicus: a landed craft reloaded in flight](non-regression/kopernicus/a-landed-craft-reloaded-in-flight.md)**
+
 ### Real Solar System
 
 The defect grows with the body: a float's step is 62.5 mm at the radius of Kerbin, 125 mm on the Moon,
@@ -266,18 +273,6 @@ it, which this mod's terrain fix would have to step back from.
 Outer Planets Mod.
 
 **→ Full chapter: [Kopernicus: a body from a planet pack](work-in-progress/kopernicus/a-body-from-a-planet-pack.md)**
-
-**Its next release: planned — waits for that release.** It moves the floating origin when a landed craft
-is reloaded in flight, which stock and its current release leave alone; read in its source, not measured.
-
-**→ Full chapter: [Kopernicus: its next release](work-in-progress/kopernicus/its-next-release.md)**
-
-### BurstPQS
-
-**Its release 1.0.28: planned.** It changes how BurstPQS places the quads this mod's scatter fix hangs the
-scatter from; every campaign ran with 1.0.27.
-
-**→ Full chapter: [BurstPQS: its release 1.0.28](work-in-progress/burst-pqs/its-release-1-0-28.md)**
 
 ### Kerbal Konstructs
 

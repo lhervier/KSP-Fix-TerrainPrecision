@@ -1,0 +1,86 @@
+[
+ {
+  "load": 1,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 17573901.493063446,
+   "SettledMm": 17573901.47822362,
+   "MovedMm": -0.01483982428908348,
+   "HighestMm": 0.007510192692279816
+  },
+  "terrainheight": {
+   "CollisionSurfaceMm": 4573588.97028668,
+   "ComputedTerrainMm": 4573581.789920583
+  }
+ },
+ {
+  "load": 2,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 17573901.493063446,
+   "SettledMm": 17573901.47281807,
+   "MovedMm": -0.020245376974344254,
+   "HighestMm": 0.0014311149716377258
+  },
+  "terrainheight": {
+   "CollisionSurfaceMm": 4573588.968558794,
+   "ComputedTerrainMm": 4573581.790011441
+  }
+ },
+ {
+  "load": 3,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 17573901.49306343,
+   "SettledMm": 17573901.483488843,
+   "MovedMm": -0.009574588388204575,
+   "HighestMm": 0.08440053835511208
+  },
+  "terrainheight": {
+   "CollisionSurfaceMm": 4573588.968113203,
+   "ComputedTerrainMm": 4573581.790180167
+  }
+ },
+ {
+  "load": 4,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 17573901.493063446,
+   "SettledMm": 17573901.47523913,
+   "MovedMm": -0.017824314534664154,
+   "HighestMm": 0.003401879221200943
+  },
+  "terrainheight": {
+   "CollisionSurfaceMm": 4573588.968336561,
+   "ComputedTerrainMm": 4573581.790052805
+  }
+ },
+ {
+  "load": 5,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 17573901.493063435,
+   "SettledMm": 17573901.50112822,
+   "MovedMm": 0.008064784109592438,
+   "HighestMm": 0.05155846104025841
+  },
+  "terrainheight": {
+   "CollisionSurfaceMm": 4573588.9699043,
+   "ComputedTerrainMm": 4573581.790094558
+  }
+ },
+ {
+  "load": 6,
+  "situation": "LANDED",
+  "landedvessel": {
+   "OnRailsMm": 17573901.493063442,
+   "SettledMm": 17573901.48228411,
+   "MovedMm": -0.010779332369565964,
+   "HighestMm": 0.04289104416966438
+  },
+  "terrainheight": {
+   "CollisionSurfaceMm": 4573588.969122521,
+   "ComputedTerrainMm": 4573581.790190387
+  }
+ }
+]
