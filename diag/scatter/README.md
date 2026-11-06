@@ -289,8 +289,7 @@ On Parallax Continued 1.0.5, with both instruments and
   screenshots of the tables in
   [`imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/`](../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks).
 
-On Parallax Continued 1.0.4 rebuilt with the first commit of our change, since merged as
-[pull request #157](https://github.com/Gameslinx/Parallax-Continued/pull/157) and released in 1.0.5, with
+On Parallax Continued 1.0.4 rebuilt to orient its objects as 1.0.5 does, with
 [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) and
 [KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin):
 

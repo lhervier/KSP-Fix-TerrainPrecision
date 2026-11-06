@@ -25,8 +25,8 @@ purpose: KSP puts a craft of a single part back down on whatever is under it at 
 ![The capsule on its rock of the Mun, with KSP Diag - Colliders outlining the collider of the rock](../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock.jpg)
 
 *The capsule on its rock, with [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders)
-outlining the collider Parallax gives the rock; taken with Parallax Continued 1.0.4 rebuilt with our change,
-which orients the rock as 1.0.5 does.*
+outlining the collider Parallax gives the rock; taken with Parallax Continued 1.0.4 rebuilt to orient the
+rock as 1.0.5 does.*
 
 **The protocol**: [the loading protocol](../../../ground/checking/loading-protocol.md), played by its
 script, [`run-loading.py`](../../../../diag/ground/automation/run-loading.py), with time played between the loads:
@@ -34,9 +34,9 @@ the save loaded twelve times, with an hour of game time of time warp before each
 (`--loads 12 --warp 3600`), both instruments recording at each load. Then KSP started again, and the same
 twelve loads. Each session is played without this mod, then with it.
 
-The hour of time warp is what turned every rock up to Parallax 1.0.4: KSP turns the body in the scene by
-the time played, and the rock came back turned under the capsule
-([Its rocks no longer turn at every load](../../../ground/non-regression/parallax/what-it-does-with-the-ground.md#its-rocks-no-longer-turn-at-every-load)).
+The hour of time warp makes KSP turn the body in the scene by the time played before each load
+([Why it is different at every load](../../../ground/the-culprit.md#why-it-is-different-at-every-load)): the rock
+and the ground under it are placed again from another orientation of the body.
 
 ## In figures
 

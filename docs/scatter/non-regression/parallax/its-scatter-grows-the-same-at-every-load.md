@@ -13,19 +13,14 @@ This mod builds the same mesh at every load, and the object makes the same choic
 ## The protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
-[Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) 1.0.4 rebuilt with the first commit of
-our change, since released in 1.0.5
-([Its rocks no longer turn at every load](../../../ground/non-regression/parallax/what-it-does-with-the-ground.md#its-rocks-no-longer-turn-at-every-load)),
-so that nothing turns from one load to the next, with its stock textures and what it requires, and
+[Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) 1.0.4 rebuilt to orient its objects as
+1.0.5 does, so that nothing turns from one load to the next, with its stock textures and what it requires, and
 [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders); this mod, or not.
 
 Copy [`rocks-eve-jeb.sfs`](../../../../diag/scatter/non-regression/parallax/its-scatter-grows-the-same-at-every-load/rocks-eve-jeb.sfs)
 into the folder of a sandbox game and load it: a kerbal on the ground of Eve, among rocks and plants. Look
 at him from straight above, from some 40 m, and take a screenshot; load the same save again at once, with
 no time played, and take the same screenshot; twelve times. Then the same without this mod, and with it.
-[`run-rocks-turning.py`](https://github.com/lhervier/KSP-ExtMod-ParallaxContinued/blob/claude/scatter-rotation-tests/docs/scatter-rotation/automation/run-rocks-turning.py)
-of our fork of Parallax plays it through KSP-Util-MCPServer:
-`--save rocks-eve-jeb --radius 700000 --step 0`.
 
 ## Twelve loads
 
