@@ -134,8 +134,12 @@ namespace com.github.lhervier.ksp.fix.terrainprecision
                     return;
                 }
                 // The constraints the rivet sets, set one frame early; the rivet sets them again.
-                rb.velocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
+                // A kinematic body has no velocity to clear, and Unity 6 (KSP Retooled) warns when one is set.
+                if (!rb.isKinematic)
+                {
+                    rb.velocity = Vector3.zero;
+                    rb.angularVelocity = Vector3.zero;
+                }
                 rb.constraints = RigidbodyConstraints.FreezeAll;
                 Log.Debug($"Ground anchor rivet fix: '{__instance.vessel?.GetDisplayName()}' frozen as it is unpacked,"
                     + " until it is riveted again");
