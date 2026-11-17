@@ -67,7 +67,7 @@ Mars), always by the same amount.
 stock ones and its own (Hale, Ovok, Slate, Tekto, Priax, Polta, Wal, Tal, Thatmo, Nissee, Plock, Karen),
 nothing left to stock.
 
-## To do
+## Work in progress
 
 - **Wait for the next release of Real Solar System.** Until then, this mod's terrain fix stays needed on the
   Earth, the Moon and Mars. Once it is out, BurstPQS builds every body of the planet packs checked here. Its
