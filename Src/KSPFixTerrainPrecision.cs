@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 
@@ -23,7 +24,9 @@ namespace com.github.lhervier.ksp.fix.terrainprecision
             DontDestroyOnLoad(gameObject);
 
             Settings.Load();
-            Log.Info($"Version {typeof(KSPFixTerrainPrecision).Assembly.GetName().Version}, log level {Log.Level}");
+            string version = typeof(KSPFixTerrainPrecision).Assembly
+                .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+            Log.Info($"Version {version}, log level {Log.Level}");
             Harmony harmony = new Harmony(HarmonyId);
 
             if (!Settings.FixTerrain)
