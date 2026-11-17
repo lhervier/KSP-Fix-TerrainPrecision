@@ -3,7 +3,7 @@
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>KSPFixTerrainPrecision</AssemblyName>
     <RootNamespace>com.github.lhervier.ksp.fix.terrainprecision</RootNamespace>
-    <Version>0.3.0</Version>
+    <Version>0.4.1-dev</Version>
     <Description>Places the KSP terrain in double precision, so that it is at the same place at every load</Description>
     <!-- Straight into the folder that gets copied to the GameData of KSP. -->
     <OutputPath>GameData\KSPFixTerrainPrecision</OutputPath>
