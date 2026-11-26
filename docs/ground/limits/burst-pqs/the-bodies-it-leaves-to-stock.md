@@ -17,7 +17,7 @@ BurstPQS gives the body back to stock, and their ground is built and placed with
 On those bodies the ground moves as on stock, and with this mod's terrain fix off nothing corrects it.
 [The loading protocol](../../README.md#checked) on Real Solar System 20.1.3, six loads, ground under
 the craft, spread in millimetres, with BurstPQS 1.0.30 and Kopernicus 252, two series of six loads; on Mars,
-the save of [This mod's safeguard](../../../common/safeguard.md), in Utopia Planitia, and the terrain fix off,
+the save of [This mod's safeguard](../../../planet-frame/safeguard.md), in Utopia Planitia, and the terrain fix off,
 played with BurstPQS 1.0.27 and Kopernicus 248:
 
 | | BurstPQS | BurstPQS + this mod, terrain fix off (1.0.27) | BurstPQS + this mod | this mod alone |

@@ -12,9 +12,9 @@ instrument and KSP-Util-MCPServer — and this mod, or not. The game is played i
 ## The protocol
 
 Copy the save into the folder of a sandbox game and load it:
-[`wheel-drop-kerbin.sfs`](../../../diag/lone-parts/checking/wheel-drop/wheel-drop-kerbin.sfs), Bill Kerman
+[`wheel-drop-kerbin.sfs`](../diag/checking/wheel-drop/wheel-drop-kerbin.sfs), Bill Kerman
 on EVA on the grass north-west of the runway, between two rovers, Jebediah Kerman beside him to help lift
-the wheel; or [`wheel-drop-mun.sfs`](../../../diag/lone-parts/checking/wheel-drop/wheel-drop-mun.sfs), Récas
+the wheel; or [`wheel-drop-mun.sfs`](../diag/checking/wheel-drop/wheel-drop-mun.sfs), Récas
 Kerman on EVA next to a crane on the Mun. Then, by hand, five times:
 
 1. load the save;
@@ -22,11 +22,11 @@ Kerman on EVA next to a crane on the Mun. Then, by hand, five times:
    Mun), and click the ground a few metres away: the wheel drops there;
 3. wait 15 seconds, set the wheel as target, and *Record*.
 
-The campaign is played by [`run-wheel-drop.py`](../../../diag/lone-parts/automation/run-wheel-drop.py), which
+The campaign is played by [`run-wheel-drop.py`](../diag/automation/run-wheel-drop.py), which
 does what the protocol asks, the same wheel and the same spot at every drop, and takes a screenshot of the
 scene 4.5 seconds after each drop and one of the table at the end. In each install, the log of the session,
 what the script printed and every line it recorded are in
-[`diag/lone-parts/checking/wheel-drop/`](../../../diag/lone-parts/checking/wheel-drop/).
+[`docs/lone-parts/diag/checking/wheel-drop/`](../diag/checking/wheel-drop/).
 
 ## On Kerbin
 
@@ -41,49 +41,49 @@ what the script printed and every line it recorded are in
 | 5 | +0.0 | +13,017.8 | +0.0 |
 
 <p class="thumbs">
-<a href="../../../imgs/lone-parts/checking/wheel-drop/kerbin-stock-table.jpg"><img src="../../../imgs/lone-parts/checking/wheel-drop/kerbin-stock-table.jpg" alt="Five drops on Kerbin on stock, read by Diag LandedVessel: one line per drop" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/wheel-drop/kerbin-no-lone-part-mass-table.jpg"><img src="../../../imgs/lone-parts/checking/wheel-drop/kerbin-no-lone-part-mass-table.jpg" alt="Five drops on Kerbin with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per drop" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/wheel-drop/kerbin-fix-table.jpg"><img src="../../../imgs/lone-parts/checking/wheel-drop/kerbin-fix-table.jpg" alt="Five drops on Kerbin with this mod as installed, read by Diag LandedVessel: one line per drop" width="96"></a>
+<a href="../imgs/checking/wheel-drop/kerbin-stock-table.jpg"><img src="../imgs/checking/wheel-drop/kerbin-stock-table.jpg" alt="Five drops on Kerbin on stock, read by Diag LandedVessel: one line per drop" width="96"></a>
+<a href="../imgs/checking/wheel-drop/kerbin-no-lone-part-mass-table.jpg"><img src="../imgs/checking/wheel-drop/kerbin-no-lone-part-mass-table.jpg" alt="Five drops on Kerbin with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per drop" width="96"></a>
+<a href="../imgs/checking/wheel-drop/kerbin-fix-table.jpg"><img src="../imgs/checking/wheel-drop/kerbin-fix-table.jpg" alt="Five drops on Kerbin with this mod as installed, read by Diag LandedVessel: one line per drop" width="96"></a>
 </p>
 
 <details>
 <summary>The 3 tables and the 15 scenes</summary>
 
-![Five drops on Kerbin on stock, read by Diag LandedVessel: one line per drop](../../../imgs/lone-parts/checking/wheel-drop/kerbin-stock-table.jpg)
+![Five drops on Kerbin on stock, read by Diag LandedVessel: one line per drop](../imgs/checking/wheel-drop/kerbin-stock-table.jpg)
 
-![Five drops on Kerbin with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per drop](../../../imgs/lone-parts/checking/wheel-drop/kerbin-no-lone-part-mass-table.jpg)
+![Five drops on Kerbin with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per drop](../imgs/checking/wheel-drop/kerbin-no-lone-part-mass-table.jpg)
 
-![Five drops on Kerbin with this mod as installed, read by Diag LandedVessel: one line per drop](../../../imgs/lone-parts/checking/wheel-drop/kerbin-fix-table.jpg)
+![Five drops on Kerbin with this mod as installed, read by Diag LandedVessel: one line per drop](../imgs/checking/wheel-drop/kerbin-fix-table.jpg)
 
-![Drop 1 on Kerbin on stock, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-stock-drop01.jpg)
+![Drop 1 on Kerbin on stock, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-stock-drop01.jpg)
 
-![Drop 2 on Kerbin on stock, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-stock-drop02.jpg)
+![Drop 2 on Kerbin on stock, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-stock-drop02.jpg)
 
-![Drop 3 on Kerbin on stock, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-stock-drop03.jpg)
+![Drop 3 on Kerbin on stock, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-stock-drop03.jpg)
 
-![Drop 4 on Kerbin on stock, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-stock-drop04.jpg)
+![Drop 4 on Kerbin on stock, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-stock-drop04.jpg)
 
-![Drop 5 on Kerbin on stock, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-stock-drop05.jpg)
+![Drop 5 on Kerbin on stock, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-stock-drop05.jpg)
 
-![Drop 1 on Kerbin with this mod and fixLonePartMass = false, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-no-lone-part-mass-drop01.jpg)
+![Drop 1 on Kerbin with this mod and fixLonePartMass = false, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-no-lone-part-mass-drop01.jpg)
 
-![Drop 2 on Kerbin with this mod and fixLonePartMass = false, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-no-lone-part-mass-drop02.jpg)
+![Drop 2 on Kerbin with this mod and fixLonePartMass = false, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-no-lone-part-mass-drop02.jpg)
 
-![Drop 3 on Kerbin with this mod and fixLonePartMass = false, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-no-lone-part-mass-drop03.jpg)
+![Drop 3 on Kerbin with this mod and fixLonePartMass = false, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-no-lone-part-mass-drop03.jpg)
 
-![Drop 4 on Kerbin with this mod and fixLonePartMass = false, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-no-lone-part-mass-drop04.jpg)
+![Drop 4 on Kerbin with this mod and fixLonePartMass = false, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-no-lone-part-mass-drop04.jpg)
 
-![Drop 5 on Kerbin with this mod and fixLonePartMass = false, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-no-lone-part-mass-drop05.jpg)
+![Drop 5 on Kerbin with this mod and fixLonePartMass = false, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-no-lone-part-mass-drop05.jpg)
 
-![Drop 1 on Kerbin with this mod as installed, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-fix-drop01.jpg)
+![Drop 1 on Kerbin with this mod as installed, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-fix-drop01.jpg)
 
-![Drop 2 on Kerbin with this mod as installed, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-fix-drop02.jpg)
+![Drop 2 on Kerbin with this mod as installed, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-fix-drop02.jpg)
 
-![Drop 3 on Kerbin with this mod as installed, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-fix-drop03.jpg)
+![Drop 3 on Kerbin with this mod as installed, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-fix-drop03.jpg)
 
-![Drop 4 on Kerbin with this mod as installed, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-fix-drop04.jpg)
+![Drop 4 on Kerbin with this mod as installed, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-fix-drop04.jpg)
 
-![Drop 5 on Kerbin with this mod as installed, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/kerbin-fix-drop05.jpg)
+![Drop 5 on Kerbin with this mod as installed, 4.5 seconds after the click](../imgs/checking/wheel-drop/kerbin-fix-drop05.jpg)
 
 </details>
 
@@ -102,49 +102,49 @@ this mod as installed, it never goes above where it was dropped.
 | 5 | +1,873.9 | +1,631.1 | +0.0 |
 
 <p class="thumbs">
-<a href="../../../imgs/lone-parts/checking/wheel-drop/mun-stock-table.jpg"><img src="../../../imgs/lone-parts/checking/wheel-drop/mun-stock-table.jpg" alt="Five drops on the Mun on stock, read by Diag LandedVessel: one line per drop" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/wheel-drop/mun-no-lone-part-mass-table.jpg"><img src="../../../imgs/lone-parts/checking/wheel-drop/mun-no-lone-part-mass-table.jpg" alt="Five drops on the Mun with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per drop" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/wheel-drop/mun-fix-table.jpg"><img src="../../../imgs/lone-parts/checking/wheel-drop/mun-fix-table.jpg" alt="Five drops on the Mun with this mod as installed, read by Diag LandedVessel: one line per drop" width="96"></a>
+<a href="../imgs/checking/wheel-drop/mun-stock-table.jpg"><img src="../imgs/checking/wheel-drop/mun-stock-table.jpg" alt="Five drops on the Mun on stock, read by Diag LandedVessel: one line per drop" width="96"></a>
+<a href="../imgs/checking/wheel-drop/mun-no-lone-part-mass-table.jpg"><img src="../imgs/checking/wheel-drop/mun-no-lone-part-mass-table.jpg" alt="Five drops on the Mun with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per drop" width="96"></a>
+<a href="../imgs/checking/wheel-drop/mun-fix-table.jpg"><img src="../imgs/checking/wheel-drop/mun-fix-table.jpg" alt="Five drops on the Mun with this mod as installed, read by Diag LandedVessel: one line per drop" width="96"></a>
 </p>
 
 <details>
 <summary>The 3 tables and the 15 scenes</summary>
 
-![Five drops on the Mun on stock, read by Diag LandedVessel: one line per drop](../../../imgs/lone-parts/checking/wheel-drop/mun-stock-table.jpg)
+![Five drops on the Mun on stock, read by Diag LandedVessel: one line per drop](../imgs/checking/wheel-drop/mun-stock-table.jpg)
 
-![Five drops on the Mun with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per drop](../../../imgs/lone-parts/checking/wheel-drop/mun-no-lone-part-mass-table.jpg)
+![Five drops on the Mun with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per drop](../imgs/checking/wheel-drop/mun-no-lone-part-mass-table.jpg)
 
-![Five drops on the Mun with this mod as installed, read by Diag LandedVessel: one line per drop](../../../imgs/lone-parts/checking/wheel-drop/mun-fix-table.jpg)
+![Five drops on the Mun with this mod as installed, read by Diag LandedVessel: one line per drop](../imgs/checking/wheel-drop/mun-fix-table.jpg)
 
-![Drop 1 on the Mun on stock, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-stock-drop01.jpg)
+![Drop 1 on the Mun on stock, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-stock-drop01.jpg)
 
-![Drop 2 on the Mun on stock, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-stock-drop02.jpg)
+![Drop 2 on the Mun on stock, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-stock-drop02.jpg)
 
-![Drop 3 on the Mun on stock, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-stock-drop03.jpg)
+![Drop 3 on the Mun on stock, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-stock-drop03.jpg)
 
-![Drop 4 on the Mun on stock, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-stock-drop04.jpg)
+![Drop 4 on the Mun on stock, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-stock-drop04.jpg)
 
-![Drop 5 on the Mun on stock, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-stock-drop05.jpg)
+![Drop 5 on the Mun on stock, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-stock-drop05.jpg)
 
-![Drop 1 on the Mun with this mod and fixLonePartMass = false, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-no-lone-part-mass-drop01.jpg)
+![Drop 1 on the Mun with this mod and fixLonePartMass = false, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-no-lone-part-mass-drop01.jpg)
 
-![Drop 2 on the Mun with this mod and fixLonePartMass = false, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-no-lone-part-mass-drop02.jpg)
+![Drop 2 on the Mun with this mod and fixLonePartMass = false, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-no-lone-part-mass-drop02.jpg)
 
-![Drop 3 on the Mun with this mod and fixLonePartMass = false, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-no-lone-part-mass-drop03.jpg)
+![Drop 3 on the Mun with this mod and fixLonePartMass = false, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-no-lone-part-mass-drop03.jpg)
 
-![Drop 4 on the Mun with this mod and fixLonePartMass = false, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-no-lone-part-mass-drop04.jpg)
+![Drop 4 on the Mun with this mod and fixLonePartMass = false, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-no-lone-part-mass-drop04.jpg)
 
-![Drop 5 on the Mun with this mod and fixLonePartMass = false, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-no-lone-part-mass-drop05.jpg)
+![Drop 5 on the Mun with this mod and fixLonePartMass = false, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-no-lone-part-mass-drop05.jpg)
 
-![Drop 1 on the Mun with this mod as installed, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-fix-drop01.jpg)
+![Drop 1 on the Mun with this mod as installed, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-fix-drop01.jpg)
 
-![Drop 2 on the Mun with this mod as installed, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-fix-drop02.jpg)
+![Drop 2 on the Mun with this mod as installed, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-fix-drop02.jpg)
 
-![Drop 3 on the Mun with this mod as installed, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-fix-drop03.jpg)
+![Drop 3 on the Mun with this mod as installed, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-fix-drop03.jpg)
 
-![Drop 4 on the Mun with this mod as installed, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-fix-drop04.jpg)
+![Drop 4 on the Mun with this mod as installed, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-fix-drop04.jpg)
 
-![Drop 5 on the Mun with this mod as installed, 4.5 seconds after the click](../../../imgs/lone-parts/checking/wheel-drop/mun-fix-drop05.jpg)
+![Drop 5 on the Mun with this mod as installed, 4.5 seconds after the click](../imgs/checking/wheel-drop/mun-fix-drop05.jpg)
 
 </details>
 

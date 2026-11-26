@@ -53,7 +53,7 @@ fix of [the ground](../ground/README.md). The settings are in [Settings](../comm
   **→ Full chapter: [Checking the culprit: anchoring a base, below 50 frames per second](checking/anchoring.md#below-50-frames-per-second)**
 
 The saves, the scripts and the `KSP.log` of every session, both ways, are in
-[the runs of the ground anchor](../../diag/ground-anchor/README.md).
+[the runs of the ground anchor](diag/README.md).
 
 ## Non-regression tests
 

@@ -14,7 +14,7 @@ back, and the window follows the parked craft throughout.
 
 ## The save
 
-[`approach-kerbin.sfs`](../../../diag/ground/checking/approach/approach-kerbin.sfs), a sandbox game
+[`approach-kerbin.sfs`](../diag/checking/approach/approach-kerbin.sfs), a sandbox game
 of KSP 1.12.5. Copy it into the folder of a sandbox game and load it from that game. It holds two
 craft, 26 m apart on the flat grass west of the KSC:
 
@@ -46,28 +46,28 @@ Then, per round trip, five records.
 
 **1. Next to it.** Press *Record* without moving.
 
-![The rover beside the parked craft, at the opening of the scene](../../../imgs/ground/checking/approach-protocol/00-load-the-save.png)
+![The rover beside the parked craft, at the opening of the scene](../imgs/checking/approach-protocol/00-load-the-save.png)
 
 **2. A few hundred metres away.** Drive off, past 350 m, and press *Record*.
 
-![The rover stopped 717 m from the craft](../../../imgs/ground/checking/approach-protocol/10-further-600m.png)
+![The rover stopped 717 m from the craft](../imgs/checking/approach-protocol/10-further-600m.png)
 
 **3. Out of range.** Keep going past 2500 m, until the line reads `too far away to read`, and press
 *Record* on the empty line.
 
-![The rover 2.6 km away, the window reading "too far away to read"](../../../imgs/ground/checking/approach-protocol/20-further-2.5km.png)
+![The rover 2.6 km away, the window reading "too far away to read"](../imgs/checking/approach-protocol/20-further-2.5km.png)
 
 **4. Turn round.** Stop beyond 3 km, turn, and drive back. Nothing to record here.
 
-![The rover stopped 3.0 km away](../../../imgs/ground/checking/approach-protocol/30-stop-at-3km.png)
+![The rover stopped 3.0 km away](../imgs/checking/approach-protocol/30-stop-at-3km.png)
 
 **5. Back in range.** Once the numbers come back, press *Record*.
 
-![The rover back at 2.2 km, the numbers showing again](../../../imgs/ground/checking/approach-protocol/40-back-to-2250m.png)
+![The rover back at 2.2 km, the numbers showing again](../imgs/checking/approach-protocol/40-back-to-2250m.png)
 
 **6. Back beside it.** Come within 200 m, give it three to five seconds to settle, and press *Record*.
 
-![The rover back at 144 m from the craft](../../../imgs/ground/checking/approach-protocol/50-less-than-200m.png)
+![The rover back at 144 m from the craft](../imgs/checking/approach-protocol/50-less-than-200m.png)
 
 ## What the five lines are worth
 
@@ -116,7 +116,7 @@ few hundredths of a millimetre.
 
 ## Played by a script
 
-[`diag/ground/automation/run-approach.py`](../../../diag/ground/automation/run-approach.py) plays the protocol above,
+[`docs/ground/diag/automation/run-approach.py`](../diag/automation/run-approach.py) plays the protocol above,
 round trip after round trip, and takes the screenshots. It drives KSP through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent to it over
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
@@ -125,7 +125,7 @@ install. Anyone can read it top to bottom: it follows the steps above in the sam
 1. Install KSP-Util-MCPServer next to both instruments — and this mod, for the series with it: the script
    records in both windows at the same moment, and waits on the reading of KSP Diag - Terrain Height to
    know the parked craft has settled. Copy
-   [the save](../../../diag/ground/checking/approach/approach-kerbin.sfs) into a sandbox game, start
+   [the save](../diag/checking/approach/approach-kerbin.sfs) into a sandbox game, start
    KSP and wait for the main menu.
 2. Run `python run-approach.py --folder <your sandbox game> --trips 6 --out screenshots`.
 

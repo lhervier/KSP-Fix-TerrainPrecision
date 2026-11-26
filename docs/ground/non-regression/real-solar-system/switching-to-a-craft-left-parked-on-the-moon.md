@@ -33,9 +33,9 @@ requires (Kopernicus 248, Modular Flight Integrator, KSPTextureLoader, the RSS t
 - with this mod at its defaults (at `logLevel = Debug`), Real Solar System as released;
 - with this mod, Real Solar System built without its ground workaround, as in
   [Turning it off](the-ground-workaround.md#what-it-does)
-  ([`rss-20.1.3-without-its-ground-workaround.diff`](../../../../diag/ground/non-regression/real-solar-system/the-ground-workaround/rss-20.1.3-without-its-ground-workaround.diff)).
+  ([`rss-20.1.3-without-its-ground-workaround.diff`](../../diag/non-regression/real-solar-system/the-ground-workaround/rss-20.1.3-without-its-ground-workaround.diff)).
 
-**The save**, [`switch-moon-rss.sfs`](../../../../diag/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-rss.sfs),
+**The save**, [`switch-moon-rss.sfs`](../../diag/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-rss.sfs),
 made without this mod from the save of
 [Coming back to a craft left parked, on the Moon](coming-back-to-a-craft-left-parked-on-the-moon.md#the-test):
 the same Mk1 command pod on an FL-T100 tank, landed at latitude 0.6741°, longitude 23.4730°, and the same
@@ -50,7 +50,7 @@ with the switch made from the map view, the capsule being out of reach of the sw
 save and press *Record* (the line stays empty, the capsule is not loaded); open the map view, select the
 capsule, *Switch To*; once the flight is open on it, give it four seconds, and press *Record*. Six rounds,
 the same save loaded each time. Played by the protocol's script,
-[`run-switching.py`](../../../../diag/ground/automation/run-switching.py), which makes the same switch, and takes a
+[`run-switching.py`](../../diag/automation/run-switching.py), which makes the same switch, and takes a
 screenshot of the scene after each one:
 
 ```
@@ -82,46 +82,46 @@ the rover once, as a save was loaded (`Moving Vessel up 0.116m`). Built out, it 
 `[RSS-VGPE] VesselGroundPositionEnhancer neutralized` instead, and nothing else.
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-without-this-mod.jpg" alt="Without this mod, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix.jpg" alt="With this mod, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix.jpg" alt="With this mod, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix-workaround-built-out.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix-workaround-built-out.jpg" alt="With this mod, the workaround built out, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix-workaround-built-out.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix-workaround-built-out.jpg" alt="With this mod, the workaround built out, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-without-this-mod.jpg" alt="Without this mod, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix.jpg" alt="With this mod, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix.jpg" alt="With this mod, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix-workaround-built-out.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix-workaround-built-out.jpg" alt="With this mod, the workaround built out, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix-workaround-built-out.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix-workaround-built-out.jpg" alt="With this mod, the workaround built out, the ground under it" width="96"></a>
 </p>
 
 <details>
 <summary>The tables, session by session</summary>
 
-![Without this mod, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-without-this-mod.jpg)
-![Without this mod, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-without-this-mod.jpg)
-![With this mod, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix.jpg)
-![With this mod, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix.jpg)
-![With this mod, the workaround built out, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix-workaround-built-out.jpg)
-![With this mod, the workaround built out, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix-workaround-built-out.jpg)
+![Without this mod, the parked capsule](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-without-this-mod.jpg)
+![Without this mod, the ground under it](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-without-this-mod.jpg)
+![With this mod, the parked capsule](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix.jpg)
+![With this mod, the ground under it](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix.jpg)
+![With this mod, the workaround built out, the parked capsule](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/landed-vessel-fix-workaround-built-out.jpg)
+![With this mod, the workaround built out, the ground under it](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/terrain-height-fix-workaround-built-out.jpg)
 
 </details>
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round1-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round1-without-this-mod.jpg" alt="Without this mod, round 1" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round2-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round2-without-this-mod.jpg" alt="Without this mod, round 2" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round3-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round3-without-this-mod.jpg" alt="Without this mod, round 3" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round4-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round4-without-this-mod.jpg" alt="Without this mod, round 4" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round5-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round5-without-this-mod.jpg" alt="Without this mod, round 5" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round6-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round6-without-this-mod.jpg" alt="Without this mod, round 6" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round1-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round1-without-this-mod.jpg" alt="Without this mod, round 1" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round2-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round2-without-this-mod.jpg" alt="Without this mod, round 2" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round3-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round3-without-this-mod.jpg" alt="Without this mod, round 3" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round4-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round4-without-this-mod.jpg" alt="Without this mod, round 4" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round5-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round5-without-this-mod.jpg" alt="Without this mod, round 5" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round6-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round6-without-this-mod.jpg" alt="Without this mod, round 6" width="96"></a>
 </p>
 
 <details>
 <summary>The capsule after each switch, without this mod</summary>
 
-![Without this mod, round 1](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round1-without-this-mod.jpg)
-![Without this mod, round 2](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round2-without-this-mod.jpg)
-![Without this mod, round 3](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round3-without-this-mod.jpg)
-![Without this mod, round 4](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round4-without-this-mod.jpg)
-![Without this mod, round 5](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round5-without-this-mod.jpg)
-![Without this mod, round 6](../../../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round6-without-this-mod.jpg)
+![Without this mod, round 1](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round1-without-this-mod.jpg)
+![Without this mod, round 2](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round2-without-this-mod.jpg)
+![Without this mod, round 3](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round3-without-this-mod.jpg)
+![Without this mod, round 4](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round4-without-this-mod.jpg)
+![Without this mod, round 5](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round5-without-this-mod.jpg)
+![Without this mod, round 6](../../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/round6-without-this-mod.jpg)
 
 </details>
 
 The logs, what the script printed and every line it recorded are in
-[`diag`](../../../../diag/ground/README.md#on-real-solar-system).
+[`diag`](../../diag/README.md#on-real-solar-system).

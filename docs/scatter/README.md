@@ -32,7 +32,7 @@ holders do not, at every load and at every move of the world while you drive. St
 collider, so this is visual — unless a mod gives it one.
 
 The rounding itself, shared with the ground and the statics, is told once in
-[The culprit: a float at planet scale](../common/the-culprit.md).
+[A float at planet scale](../how-ksp-builds-the-ground/README.md#a-float-at-planet-scale).
 
 **→ Full chapter: [The culprit: the scatter](the-culprit.md)**
 
@@ -79,16 +79,16 @@ hangs from, and nothing about the objects in it, and it removes the holders' off
 where the objects are drawn.
 
 The saves, the scripts and the readings of every session are in
-[the runs of the scatter](../../diag/scatter/README.md).
+[the runs of the scatter](diag/README.md).
 
 ## Non-regression tests
 
 What works without this mod still works with it, one mod at a time: played in game with this mod, and
 compared with the game without it where the two have to be told apart. Unless a page says otherwise, each
 test is played in KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1 and this mod, plus
-the instrument and the mods it names. Two tests cover every fix at once, and are told in
-[what the fixes share](../common/README.md): [existing saves](../common/existing-saves.md) and
-[this mod's safeguard](../common/safeguard.md).
+the instrument and the mods it names. Two tests cover every fix at once:
+[existing saves](../common/existing-saves.md), told in [what the fixes share](../common/README.md), and
+[this mod's safeguard](../planet-frame/safeguard.md), told with [Planet Frame](../planet-frame/README.md).
 
 ### Stock
 

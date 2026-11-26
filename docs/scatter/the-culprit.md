@@ -60,7 +60,7 @@ A rounding depends on the frame the vector is converted into: the world matrix o
 whose rotation and translation change from one load to the next, and whose translation changes again every
 time the floating origin moves, every 500 m a craft drives. It is the same frame, and the same reason, as
 for the ground itself, set out in
-[The culprit: the ground](../ground/the-culprit.md#why-it-is-different-at-every-load). On stock, the quad and
+[A frame that moves: the floating origin](../how-ksp-builds-the-ground/README.md#a-frame-that-moves-the-floating-origin). On stock, the quad and
 its holder go through it together, and draw their roundings together.
 As there, it is a hypothesis read from the stock code, and the fix does not need it to hold: it removes
 the long vector the rounding is drawn from.

@@ -16,7 +16,7 @@ lower, the craft drops a centimetre or two, and nothing happens; if it comes bac
 inside it, and the physics engine pushes it out, hard, upwards. That is the lander that hops the moment a
 load ends, the base that tears itself apart at its first load, the rover that jumps over nothing. Every
 moment the ground is built again is told in
-[Why the moving ground matters](../../README.md#why-the-moving-ground-matters).
+[Why the moving ground matters](../how-ksp-builds-the-ground/README.md#why-the-moving-ground-matters).
 
 ## The culprit
 
@@ -24,7 +24,7 @@ Stock places a terrain quad, and every vertex inside it, through a Unity `Transf
 stored in a float. Each value is rounded on its own, through the frame of the moment.
 
 The rounding itself, shared with the statics and the scatter, is told once in
-[The culprit: a float at planet scale](../common/the-culprit.md).
+[A float at planet scale](../how-ksp-builds-the-ground/README.md#a-float-at-planet-scale).
 
 **→ Full chapter: [The culprit: the ground](the-culprit.md)**
 
@@ -82,16 +82,16 @@ happens, and nothing else about the values placed; were the cause elsewhere, reo
 would have left the spread untouched.
 
 The saves, the scripts and the `KSP.log` of every session, both ways, are in
-[the runs of the ground](../../diag/ground/README.md).
+[the runs of the ground](diag/README.md).
 
 ## Non-regression tests
 
 What works without this mod still works with it, one mod at a time: played in game with this mod, and
 compared with the game without it where the two have to be told apart. Unless a page says otherwise, each
 test is played in KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1 and this mod, plus
-the instrument and the mods it names. Two tests cover every fix at once, and are told in
-[what the fixes share](../common/README.md): [existing saves](../common/existing-saves.md) and
-[this mod's safeguard](../common/safeguard.md).
+the instrument and the mods it names. Two tests cover every fix at once:
+[existing saves](../common/existing-saves.md), told in [what the fixes share](../common/README.md), and
+[this mod's safeguard](../planet-frame/safeguard.md), told with [Planet Frame](../planet-frame/README.md).
 
 ### Stock
 

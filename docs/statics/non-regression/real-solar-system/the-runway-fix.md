@@ -59,10 +59,10 @@ To see the runway without the runway fix, Real Solar System is built from the so
 20.1.3.0 with `RSSRunwayFix` kept from doing anything: it returns at the top of its `Start`, so it
 leaves the sections as stock does, never touches the floating origin, and never holds it. The version
 of the assembly is set to that of the release
-([`rss-20.1.3-without-its-runway-fix.diff`](../../../../diag/statics/non-regression/real-solar-system/the-runway-fix/rss-20.1.3-without-its-runway-fix.diff)).
+([`rss-20.1.3-without-its-runway-fix.diff`](../../diag/non-regression/real-solar-system/the-runway-fix/rss-20.1.3-without-its-runway-fix.diff)).
 
 The craft is the rover of the driving protocol,
-[`Diag2-Rover.craft`](../../../../diag/ground/checking/driving/Diag2-Rover.craft), twice. In a new
+[`Diag2-Rover.craft`](../../../ground/diag/checking/driving/Diag2-Rover.craft), twice. In a new
 sandbox game, at noon at Cape Canaveral:
 
 1. a first rover, launched from the SPH onto the runway, is driven to the edge between `End09` and
@@ -84,7 +84,7 @@ Solar System as released, without this mod and with it: one launch, six loads, a
 runway (`--launches 1 --reloads 6 --taxi 1500`).
 
 *Played by a script.* [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) plays the test through
-[`diag/statics/automation/run-runway-fix.py`](../../../../diag/statics/automation/run-runway-fix.py), the rover in the
+[`docs/statics/diag/automation/run-runway-fix.py`](../../diag/automation/run-runway-fix.py), the rover in the
 `Ships/SPH` folder of the game: it starts the game itself from the main menu, and takes a screenshot of
 the table of Diag Terrain Height every four loads. Every step is one a player can take: the test plays
 just as well by hand.
@@ -105,21 +105,21 @@ loads, as Diag Terrain Height reads them:
 Past the edge, the runway stands **116.5 mm higher** than before it at 26 loads of the 30. At the four
 others, it stands 0.5 to 3.2 mm lower: no step.
 
-![The table of Diag Terrain Height after four loads](../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/20-without-runway-fix-table.png)
+![The table of Diag Terrain Height after four loads](../../imgs/non-regression/real-solar-system/the-runway-fix/20-without-runway-fix-table.png)
 
 *Without the runway fix, without this mod: the table of Diag Terrain Height after the first four loads of
 the first launch, three lines a load: the grass, before the edge, past it.*
 
-![The rover astride the edge, nose up](../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/21-without-runway-fix-step.png)
+![The rover astride the edge, nose up](../../imgs/non-regression/real-solar-system/the-runway-fix/21-without-runway-fix-step.png)
 
 *The same session: a load with the step, the rover backed onto the edge, its back wheels on `End09`
 (magenta), its front wheels on `Section4` (cyan).*
 
-![The rover astride the edge, Section4 below End09](../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/22-without-runway-fix-step-down.png)
+![The rover astride the edge, Section4 below End09](../../imgs/non-regression/real-solar-system/the-runway-fix/22-without-runway-fix-step-down.png)
 
 *The same session: a load where the collider of `Section4` (cyan) lies below that of `End09` (magenta).*
 
-![The rover astride the edge, in the air above the deck](../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/23-without-runway-fix-step-in-the-air.png)
+![The rover astride the edge, in the air above the deck](../../imgs/non-regression/real-solar-system/the-runway-fix/23-without-runway-fix-step-in-the-air.png)
 
 *The same session, another launch: a load with the step, the runway at its highest of the thirty loads.*
 
@@ -136,12 +136,12 @@ The runway stands at the same height at every load, and so does the grass:
 Past the edge, the runway stands 3.1 or 3.2 mm lower than before it at every load: the slope of the deck
 over 18 m, with no step.
 
-![The table of Diag Terrain Height after four loads, with this mod](../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/30-with-this-mod-table.png)
+![The table of Diag Terrain Height after four loads, with this mod](../../imgs/non-regression/real-solar-system/the-runway-fix/30-with-this-mod-table.png)
 
 *Without the runway fix, with this mod: the table of Diag Terrain Height after the first four loads of the
 first launch.*
 
-![The rover astride the edge, level](../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/31-with-this-mod-astride.png)
+![The rover astride the edge, level](../../imgs/non-regression/real-solar-system/the-runway-fix/31-with-this-mod-astride.png)
 
 *The same session: the rover backed onto the edge, at the first load.*
 
@@ -165,28 +165,28 @@ rounded one by one: without this mod, the step stays in sight at the edge, and t
 higher deck without meeting it. With this mod, the two decks meet flush. Seen from beside, the rover
 astride the edge, at the first load, the edge under it three times as large:
 
-![Real Solar System as released, without this mod: the edge under the rover](../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/12-as-released-edge-stock.jpg)
+![Real Solar System as released, without this mod: the edge under the rover](../../imgs/non-regression/real-solar-system/the-runway-fix/12-as-released-edge-stock.jpg)
 
 *Real Solar System as released, without this mod: the rover astride the edge between `End09` and
 `Section4`, at the first load; the sections' colliders off, in pale blue.*
 
-![Real Solar System as released, with this mod: the edge under the rover](../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/12-as-released-edge-with-this-mod.jpg)
+![Real Solar System as released, with this mod: the edge under the rover](../../imgs/non-regression/real-solar-system/the-runway-fix/12-as-released-edge-with-this-mod.jpg)
 
 *Real Solar System as released, with this mod: the same.*
 
 <p class="thumbs">
-<a href="../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-stock.jpg"><img src="../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-stock.jpg" alt="Without this mod, the edge at each of the six loads" width="96"></a>
-<a href="../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-with-this-mod.jpg"><img src="../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-with-this-mod.jpg" alt="With this mod, the edge at each of the six loads" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-stock.jpg"><img src="../../imgs/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-stock.jpg" alt="Without this mod, the edge at each of the six loads" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-with-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-with-this-mod.jpg" alt="With this mod, the edge at each of the six loads" width="96"></a>
 </p>
 
 <details>
 <summary>The edge at each of the six loads</summary>
 
-![Without this mod, the edge at each of the six loads](../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-stock.jpg)
+![Without this mod, the edge at each of the six loads](../../imgs/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-stock.jpg)
 
 *Without this mod, loads 1 to 6, from top to bottom.*
 
-![With this mod, the edge at each of the six loads](../../../../imgs/statics/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-with-this-mod.jpg)
+![With this mod, the edge at each of the six loads](../../imgs/non-regression/real-solar-system/the-runway-fix/13-as-released-edge-six-loads-with-this-mod.jpg)
 
 *With this mod, loads 1 to 6, from top to bottom.*
 
@@ -227,4 +227,4 @@ For this defect, the hold has nothing left to correct either.
 
 The logs, what the script printed, every line of Diag Terrain Height and the screenshots of its table, for
 every session, are in
-[`diag/statics/non-regression/real-solar-system/the-runway-fix/`](../../../../diag/statics/README.md#on-real-solar-system).
+[`docs/statics/diag/non-regression/real-solar-system/the-runway-fix/`](../../diag/README.md#on-real-solar-system).

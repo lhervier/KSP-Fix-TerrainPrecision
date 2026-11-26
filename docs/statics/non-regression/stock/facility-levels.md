@@ -17,7 +17,7 @@ the craft arrives on it where it did, level by level.
 A new career at the Custom difficulty: the largest starting funds and science (500 000 and 5 000), funds
 penalties at 10 %, for the upgrades below, and *Bypass Entry Purchase After Research* on. The Research and
 Development upgraded twice, to its last level, and the nodes the craft below need researched. That career is
-[`career-with-the-parts.sfs`](../../../../diag/statics/non-regression/stock/destroyed-buildings/career-with-the-parts.sfs): copied as `persistent.sfs` into
+[`career-with-the-parts.sfs`](../../diag/non-regression/stock/destroyed-buildings/career-with-the-parts.sfs): copied as `persistent.sfs` into
 a new folder of `saves`, it opens at the space centre. Its building impact damage multiplier is at 1, the
 largest, for [Destroyed buildings](destroyed-buildings.md); it changes nothing here. Then, at each level of
 the launchpad and the runway, starting from the first, the one a new career starts with:
@@ -42,7 +42,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - T
 with its defaults at `logLevel = Debug`. Then the same without this mod.
 
 *Played by a script.* [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) plays the test through
-[`diag/statics/automation/run-facility-levels.py`](../../../../diag/statics/automation/run-facility-levels.py), the rocket in the
+[`docs/statics/diag/automation/run-facility-levels.py`](../../diag/automation/run-facility-levels.py), the rocket in the
 `Ships/VAB` folder of the game and the rover in its `Ships/SPH` folder: it starts and sets up the career
 itself from the main menu, closes the guide of a new career wherever it shows, and takes a screenshot of
 the table of Diag Terrain Height every twelve arrivals. Every step is one a player can take: the test plays
@@ -53,7 +53,7 @@ just as well by hand.
 The menus show each facility at each level, with this mod as without it (launchpad on the left, runway on
 the right):
 
-![The menus of the launchpad and the runway, at each level](../../../../imgs/statics/non-regression/stock/facility-levels/facility-levels-menus.png)
+![The menus of the launchpad and the runway, at each level](../../imgs/non-regression/stock/facility-levels/facility-levels-menus.png)
 
 At each level, the craft stands on the model of that level, at a height of its own: with this mod, at the
 same height at every arrival, higher at each level; without it, around the same heights, within the spread
@@ -75,4 +75,4 @@ without it do not show.
 
 The logs, what the script printed, every line of Diag Terrain Height and the screenshots of its table, for
 both sessions, are in
-[`diag/statics/non-regression/stock/facility-levels/`](../../../../diag/statics/README.md#the-facility-levels-protocol).
+[`docs/statics/diag/non-regression/stock/facility-levels/`](../../diag/README.md#the-facility-levels-protocol).

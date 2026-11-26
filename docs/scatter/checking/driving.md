@@ -21,10 +21,10 @@ Every 500 m the craft you fly travels, KSP moves the floating origin back onto i
 sphere, which carries the ground and the holders of the scatter alike. A rover alone on the grass south of
 the runway of the KSC records the scatter just before a move of the origin, just after it, and the same few
 metres farther on with no move: [The protocol: the scatter, while the world moves](driving-protocol.md),
-played by its script, [`run-scatter-driving.py`](../../../diag/scatter/automation/run-scatter-driving.py). One move per
+played by its script, [`run-scatter-driving.py`](../diag/automation/run-scatter-driving.py). One move per
 load, six loads per configuration. Every record holds the same 8 quads and 13 holders, all of them built,
 and names the same nearest quad, `Kerbin Zn3010001020`, with 50 `Grass00` and 400 measured vertices. The
-records are listed in [`diag`](../../../diag/scatter/README.md#the-scatter-the-objects-across-a-move-of-the-world).
+records are listed in [`diag`](../diag/README.md#the-scatter-the-objects-across-a-move-of-the-world).
 
 **→ Full chapter: [The protocol: the scatter, while the world moves](driving-protocol.md)**
 
@@ -82,7 +82,7 @@ three times; inlaid in the corner, *Origin distance* from the window of
 [KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin), which drops from 500.0 m
 to 0.1 m at the move.
 
-![The foot of a cactus, before and after a move of the world, in turn: the cactus sinks into the sand and shifts sideways, while the sand and the rover behind it stay put](../../../imgs/scatter/checking/driving/cactus-fix-no-scatter.gif)
+![The foot of a cactus, before and after a move of the world, in turn: the cactus sinks into the sand and shifts sideways, while the sand and the rover behind it stay put](../imgs/checking/driving/cactus-fix-no-scatter.gif)
 
 *Watch the foot of the cactus, where it meets the sand, and its shadow: at each switch, the cactus sinks
 into the sand by almost 5 cm and shifts sideways, while the sand around it and the rover behind it do not
@@ -93,8 +93,8 @@ move. Nothing else changed between the two frames, a sixth of a second apart: th
 right after this move: the 148 holders around the rover jumped by −47.2 to −48.1 mm, and the 50 vertices
 measured on the 5 cactus of the nearest quad by −44.9 to −46.7 mm against the ground, which moved by
 0.3 mm at most
-([`cactus-fix-no-scatter-before.log`](../../../diag/scatter/checking/driving/cactus-fix-no-scatter-before.log),
-[`cactus-fix-no-scatter-after.log`](../../../diag/scatter/checking/driving/cactus-fix-no-scatter-after.log)). Each load
+([`cactus-fix-no-scatter-before.log`](../diag/checking/driving/cactus-fix-no-scatter-before.log),
+[`cactus-fix-no-scatter-after.log`](../diag/checking/driving/cactus-fix-no-scatter-after.log)). Each load
 draws its own jump, small or large; this take was kept for being one of the largest. How it was filmed is
 in [the protocol](driving-protocol.md#filming-it).
 

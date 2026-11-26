@@ -35,7 +35,7 @@ instruments, [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-Lan
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol; this mod with its
 defaults (at `logLevel = Debug`), or not.
 
-**The save**, [`approach-moon-rss.sfs`](../../../../diag/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-rss.sfs),
+**The save**, [`approach-moon-rss.sfs`](../../diag/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-rss.sfs),
 made without this mod: the two craft of
 [the approach protocol](../../checking/approach-protocol.md) in the Sea of Tranquillity, at
 the landing site of Apollo 11, in the lunar morning. The craft the readings are about, a Mk1 command pod on
@@ -44,7 +44,7 @@ an FL-T100 tank, is landed at latitude 0.6741°, longitude 23.4730°, and is the
 south of the pod, its slope stays under 1.5° and it rises by 32 m. The save also holds a capsule left on
 Mars by an earlier test, which plays no part here.
 
-![The rover at its starting spot on the Moon, the parked capsule 25 m beyond it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/the-save.jpg)
+![The rover at its starting spot on the Moon, the parked capsule 25 m beyond it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/the-save.jpg)
 
 *The rover at its starting spot, seen from the south, the parked capsule beyond it.*
 
@@ -53,7 +53,7 @@ their friction at the highest, their traction control at 5 and their motor limit
 last two, it tips over when it speeds up to 8 m/s. Set so, it holds 10 m/s, and brakes over long distances.
 
 **The protocol**: the approach protocol, played by its script,
-[`run-approach.py`](../../../../diag/ground/automation/run-approach.py), with the rover's speeds of the Moon:
+[`run-approach.py`](../../diag/automation/run-approach.py), with the rover's speeds of the Moon:
 
 ```
 python run-approach.py --folder <your game> --save approach-moon-rss --speed 10 --slow-from 150 --home-speed 2 --trips 6
@@ -90,70 +90,70 @@ without this mod, +53.918 mm with it, where a save made without this mod goes th
 craft back onto the ground, never moved the capsule, in either session.
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 1, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 1, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 2, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 2, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 3, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 3, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 4, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 4, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 5, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 5, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 6, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 6, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 1, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 1, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 2, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 2, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 3, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 3, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 4, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 4, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 5, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 5, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 6, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 6, the ground under it" width="96"></a>
 </p>
 
 <details>
 <summary>The tables without this mod, trip by trip</summary>
 
-![Without this mod, trip 1, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 1, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-without-this-mod.jpg)
-![Without this mod, trip 2, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 2, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-without-this-mod.jpg)
-![Without this mod, trip 3, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 3, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-without-this-mod.jpg)
-![Without this mod, trip 4, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 4, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-without-this-mod.jpg)
-![Without this mod, trip 5, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 5, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-without-this-mod.jpg)
-![Without this mod, trip 6, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 6, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 1, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 1, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 2, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 2, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 3, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 3, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 4, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 4, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 5, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 5, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 6, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 6, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-without-this-mod.jpg)
 
 </details>
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-fix.jpg" alt="With this mod, trip 1, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-fix.jpg" alt="With this mod, trip 1, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-fix.jpg" alt="With this mod, trip 2, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-fix.jpg" alt="With this mod, trip 2, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-fix.jpg" alt="With this mod, trip 3, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-fix.jpg" alt="With this mod, trip 3, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-fix.jpg" alt="With this mod, trip 4, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-fix.jpg" alt="With this mod, trip 4, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-fix.jpg" alt="With this mod, trip 5, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-fix.jpg" alt="With this mod, trip 5, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-fix.jpg" alt="With this mod, trip 6, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-fix.jpg" alt="With this mod, trip 6, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-fix.jpg" alt="With this mod, trip 1, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-fix.jpg" alt="With this mod, trip 1, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-fix.jpg" alt="With this mod, trip 2, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-fix.jpg" alt="With this mod, trip 2, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-fix.jpg" alt="With this mod, trip 3, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-fix.jpg" alt="With this mod, trip 3, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-fix.jpg" alt="With this mod, trip 4, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-fix.jpg" alt="With this mod, trip 4, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-fix.jpg" alt="With this mod, trip 5, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-fix.jpg" alt="With this mod, trip 5, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-fix.jpg" alt="With this mod, trip 6, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-fix.jpg"><img src="../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-fix.jpg" alt="With this mod, trip 6, the ground under it" width="96"></a>
 </p>
 
 <details>
 <summary>The tables with this mod, trip by trip</summary>
 
-![With this mod, trip 1, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-fix.jpg)
-![With this mod, trip 1, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-fix.jpg)
-![With this mod, trip 2, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-fix.jpg)
-![With this mod, trip 2, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-fix.jpg)
-![With this mod, trip 3, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-fix.jpg)
-![With this mod, trip 3, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-fix.jpg)
-![With this mod, trip 4, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-fix.jpg)
-![With this mod, trip 4, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-fix.jpg)
-![With this mod, trip 5, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-fix.jpg)
-![With this mod, trip 5, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-fix.jpg)
-![With this mod, trip 6, the parked capsule](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-fix.jpg)
-![With this mod, trip 6, the ground under it](../../../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-fix.jpg)
+![With this mod, trip 1, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-landed-vessel-fix.jpg)
+![With this mod, trip 1, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip1-terrain-height-fix.jpg)
+![With this mod, trip 2, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-landed-vessel-fix.jpg)
+![With this mod, trip 2, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip2-terrain-height-fix.jpg)
+![With this mod, trip 3, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-landed-vessel-fix.jpg)
+![With this mod, trip 3, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip3-terrain-height-fix.jpg)
+![With this mod, trip 4, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-landed-vessel-fix.jpg)
+![With this mod, trip 4, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip4-terrain-height-fix.jpg)
+![With this mod, trip 5, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-landed-vessel-fix.jpg)
+![With this mod, trip 5, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip5-terrain-height-fix.jpg)
+![With this mod, trip 6, the parked capsule](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-landed-vessel-fix.jpg)
+![With this mod, trip 6, the ground under it](../../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/trip6-terrain-height-fix.jpg)
 
 </details>
 
 The logs, what the script printed and every line it recorded are in
-[`diag`](../../../../diag/ground/README.md#on-real-solar-system).
+[`diag`](../../diag/README.md#on-real-solar-system).

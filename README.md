@@ -2,16 +2,17 @@
 
 **⚠️ Work in progress.** This is an active investigation, not a finished mod. The figures, the code and the conclusions on these pages can still change, and several questions are still open — each page has its own *Work in progress*.
 
-A fix for stock KSP 1.12, kept as small as possible: a handful of Harmony patches, in a few short source
-files. It is a mod of its own, built and measured on top of
+A mod for stock KSP 1.12: several fixes for the ground and for what stands on it, the runways, launchpads and
+buildings, the rocks and the surface features, plus an anchored base and a part lying alone. Each is kept as small
+as possible, a handful of Harmony patches, and has its own folder below: what goes wrong in game, why, how it was
+checked, and what the mod does about it. It is a mod of its own, built and measured on top of
 [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes), the base most players run.
-Here is what it fixes, on the ground and on the runways, launchpads and buildings that stand on it:
 
-> **The ground KSP builds under you is never built at the same height twice, and neither are the
-> runways and buildings it places on it.** Load a save, come back to a craft left parked, drive a few
-> hundred metres: each time the ground is built again, the surface your craft is standing on comes back
-> a little higher or a little lower — a few centimetres apart on Kerbin, less on smaller worlds, and up
-> to seventy on Earth in Real Solar System.
+The ground moving is one cause among several of a craft that moves when a scene opens, and this mod removes only
+that one: a lander that hops because its legs are still unfolding will go on hopping. Two other causes have their own
+fixes: [Suspension Bounce Fix](https://github.com/lhervier/KSP-Fix-SuspensionBounce) for landing legs and wheels,
+and [Landed Shape Fix](https://github.com/lhervier/KSP-Fix-LandedShape) for a craft that physics had bent to fit the
+ground, and that a load brings back unbent.
 
 **How this was made.** The investigation and the code were written with Claude, Anthropic's AI
 assistant. Everything here was reviewed and validated by a human — me — who very much enjoyed
@@ -22,106 +23,102 @@ in-game measurement, the instrument behind the headline figures is public and ru
 install, the stock code quoted here is a handful of lines anyone can check, and the fix is a few short
 files you can read in one sitting.
 
-## Why the moving ground matters
+## How KSP builds the ground
 
-KSP does not keep the ground it built: it builds it again, over and over, while you play. And every
-time it does, the surface lands at a slightly different height — a little higher or a little lower,
-at random, a few centimetres on Kerbin and up to seventy on Earth in Real Solar System. The runway, the
-launchpad and the buildings of the KSC, and the bases a mod such as Kerbal Konstructs plants on a body,
-are placed the same way, each at a height of its own, apart from the ground beside it. Loading a save
-is only the moment everybody notices. It happens just as well:
+The ground KSP builds under you is never built at the same height twice, nor are the runways and buildings on it:
+at every load, every 500 m driven, every return to a parked craft. When it comes back higher, the craft is launched.
 
-- **when a save is loaded**, or the scene changes: the whole ground is built anew, and every runway and
-  building is placed again;
-- **when you come back to a craft left parked.** Its position was recorded while it rested on the
-  ground as it stood then. As you fly back towards it, KSP builds that ground again, at a different
-  height, and puts the craft back at its recorded position — on a ground that is no longer the one it
-  was resting on;
-- **when you switch to a craft far away**, which is put down the same way, on a ground it was not
-  standing on when it was left;
-- **while you drive.** Every 500 m the craft you fly travels, KSP moves its whole world back onto it,
-  builds the ground under you again, and moves the runway beside you with it — in the middle of the
-  drive, with nothing loaded and no scene changed.
+**→ Full chapter: [How KSP builds the ground](docs/how-ksp-builds-the-ground/README.md)**
 
-Each time, it is a coin toss between two outcomes.
+## Planet Frame
 
-**The ground comes back lower than it was.** Your craft is now hovering a couple of centimetres above
-it, so it drops those two centimetres. You never notice, and nothing breaks.
+Not a fix: the frame a body's terrain sphere hangs in, worked out in double precision, which the ground and the
+statics fixes share. It also refuses any correction too large to be a rounding, and leaves the object where stock
+puts it.
 
-**The ground comes back higher than it was.** Your craft is now *inside* the ground — and the physics
-engine will not leave two solid things overlapping. It pushes them apart, hard, in the only direction
-available: up. Your craft gets launched.
+**→ Full chapter: [Planet Frame](docs/planet-frame/README.md)**
 
-![A craft jumping on its own the moment a save is reloaded](imgs/common/Booing-scaled.gif)
+## The ground
 
-*KSP 1.12 without this mod, with [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes)
-as the only mod installed. A pod on an empty fuel tank, parked in the grass at the KSC, saved, then reloaded
-from the pause menu, several times if needed — nothing touched in between.*
+The terrain a craft stands on comes back higher or lower each time it is rebuilt. The mod places its quads in double
+precision: at a load, it moves 0.3 mm instead of 43.6 on Kerbin, 292.3 on Earth in Real Solar System. Setting:
+`fixTerrain`.
 
-That second case is the symptom everybody already knows. The lander that twitches, hops or flips the
-moment the scene finishes loading. The base that sat perfectly flush yesterday and is buried up to
-the hatches today. The big base that tears itself apart the very first time you load it, and never
-again afterwards. A craft with many parts spread over a wide area gives the coin toss more chances
-to land the wrong way up. The other moments do the same damage, only less visibly: from 200 m away you
-see little of a parked craft jumping, and a rover that hops while driving looks like a bump in the
-road — on Earth, it was seen to jump when the ground rose under it.
+**→ Full chapter: [The ground](docs/ground/README.md)**
 
-Every one of these moments can be repeated at will — reload the same save, drive away from a craft left
-parked and come back to it, switch to a craft far away, drive past a few shifts of the world — and each
-is measured on these pages, on the ground, and on a runway as well when a save is loaded and while you
-drive.
+## The statics
 
-### Disclaimer: it is not the only cause
+The KSC's runway, launchpad and buildings, and the launch sites of Making History and Kerbal Konstructs, come back at
+a height of their own. The mod places them in double precision: the KSC runway moves 0.177 mm at a load instead of
+116.5. Setting: `fixStatics`.
 
-The ground moving is one cause among several, and these pages do not claim it is the only one. Plenty
-of other things move a craft when a scene opens. Two well-known examples, among others:
+**→ Full chapter: [The statics](docs/statics/README.md)**
 
-- **suspensions.** Landing legs and wheels come back fully extended, because that is the only state
-  KSP can restore them to. They then compress under the weight of the craft, and the craft moves
-  while they do.
-- **a craft bent to fit the ground.** While you play, physics twists the joints between parts so the
-  craft settles onto the shape of the ground beneath it. That twisting is not saved. On loading, the
-  craft comes back in its original, unbent shape — and if the ground is not flat, part of it really
-  *is* underground, with no measurement error involved.
+## The scatter
 
-This mod removes that one cause, and only that one: a lander that hops because its legs are still
-unfolding will go on hopping once it is installed. What it takes away is the part that should never
-have been there at all — a surface that is not where the game's own formulas say it is, and is not in
-the same place twice. It takes it away down to a hundredth of a millimetre on the ground, and two tenths
-on the runway of the KSC, as measured on the page of each fix.
+Fix the ground, and the rocks, grass and trees, which stock moves with it, keep moving against it. The mod draws
+them from the quads they grow on: against the ground at a load, 0.132 mm instead of 61 on stock. Setting:
+`fixScatter`.
 
-## What it fixes
+**→ Full chapter: [The scatter](docs/scatter/README.md)**
 
-The ground, the statics, the scatter and the ROCs share one culprit: stock places them through floats holding
-vectors as long as the radius of the body, rounded through a frame that does not stay put
-([The culprit: a float at planet scale](docs/common/the-culprit.md)). Each has a page of its own: where the
-rounding strikes it, how this mod takes it away, how that is checked, what keeps working, what it makes
-worse, and what is still to check. The first figure is without this mod, the second with it.
+## The ROCs
 
-| | What moves | Without → with this mod | Setting | |
-|---|---|---|---|---|
-| **The ground** | the terrain quads a craft stands on | at a load, 43.6 → 0.3 mm on Kerbin, 292.3 → 0.3 mm on Earth | `fixTerrain` | [→ page](docs/ground/README.md) |
-| **The statics** | the runway, launchpad and buildings of the KSC, the launch sites of Making History, Kerbal Konstructs' bases | the deck of the KSC runway at a load, 116.5 → 0.177 mm | `fixStatics` | [→ page](docs/statics/README.md) |
-| **The scatter** | the rocks, grass and trees | against the ground at a load, 61 mm (178 with the ground fixed alone) → 0.132 mm | `fixScatter` | [→ page](docs/scatter/README.md) |
-| **The ROCs** | Breaking Ground's surface features | a kerbal standing on one, at a load with the ground fixed, 10.04 → 0.008 mm | `fixRocs` | [→ page](docs/rocs/README.md) |
-| **The ground anchor** | an anchored base, raised at each load — not a rounding | the base at its second load, 26.3 cm → 0.08 mm | `fixGroundAnchor…` | [→ page](docs/ground-anchor/README.md) |
-| **Parts lying alone** | a wheel or a leg alone on the ground, thrown up after a load by the extra mass stock gives it — not a rounding | a wheel alone on the Mun at a load, thrown 1.3 to 13.7 m up → 13 to 15 mm | `fixLonePartMass` | [→ page](docs/lone-parts/README.md) |
+Breaking Ground's surface features are placed like the scatter, with a collider a kerbal can stand on. The mod
+draws them from their quads too: a kerbal on one moves 0.008 mm at a load instead of 10.04 with the ground fixed
+alone. Setting: `fixRocs`.
 
-Every fix is on by default. Two patches, on by default too, keep Kopernicus and Kerbal Konstructs working
-with the statics fix: see [the statics](docs/statics/README.md#limits-and-solutions).
+**→ Full chapter: [The ROCs](docs/rocs/README.md)**
 
-**It does not slow the game down**: timed frame by frame, it came out no dearer than stock
-([Performance](docs/common/performance.md)).
+## The ground anchor
 
-## Install
+Not a rounding: two stock behaviours raise an anchored base, and its riveted anchor keeps it in the
+air. The mod lowers the anchor's collider and loads the base where it was saved: 0.08 mm at its second load instead
+of 26.3 cm. Settings: `fixGroundAnchor…`.
 
-Requires KSP 1.12 and [HarmonyKSP](https://github.com/KSPModdingLibs/HarmonyKSP). Copy
-`GameData/KSPFixTerrainPrecision` into the `GameData` of KSP. Nothing is written to your saves.
+**→ Full chapter: [The ground anchor](docs/ground-anchor/README.md)**
 
-- **[Install](docs/common/install.md)**, and what removing the mod does to an anchored base;
-- **[Settings](docs/common/settings.md)**: one per fix and per patch, and `logLevel`;
-- **[Build](docs/common/build.md)**;
-- **[License](docs/common/license.md)**: MIT.
+## Parts lying alone
 
-What holds for every fix at once — the culprit, the performance, the tests that cover them all — is in
-[what the fixes share](docs/common/README.md).
+Not a rounding: for 3 seconds, stock makes a part lying alone far heavier, which throws a wheel up. The mod removes
+that weight: a wheel alone on the Mun rises 13 to 15 mm at a load, not 1.3 to 13.7 m. Setting: `fixLonePartMass`.
+
+**→ Full chapter: [Parts lying alone](docs/lone-parts/README.md)**
+
+## Checked
+
+Each fix's checked cases have their pages in its folder: the save each starts from, how to play it by hand, the
+script that plays it, and what it shows without and with this mod. Each situation where a craft meets the ground is
+measured twice, without this mod and with it: one instrument reads the landed craft, another the ground itself, and
+in flight a third reads the quads the ground is made of; a fourth reads the scatter. In each summary, the first figure
+is without this mod, the second with it.
+
+Every campaign is run in KSP 1.12.5 with Harmony, ModuleManager and KSP Community Fixes 1.41.1; *on stock* means that
+install without this mod. The scripts drive KSP through
+[KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), and need nothing but Python 3.
+
+## What every fix shares
+
+**It does not slow the game down**: timed frame by frame, it came out no dearer than stock. Saves made without this
+mod load with it, Principia works with it, and Tilt'Em and KAS are still to check.
+
+**→ Full chapter: [What the fixes share](docs/common/README.md)**
+
+## Installing
+
+Requires KSP 1.12 and [HarmonyKSP](https://github.com/KSPModdingLibs/HarmonyKSP) (the usual
+`GameData/000_Harmony`, also installed by KSP Community Fixes).
+
+Copy `GameData/KSPFixTerrainPrecision` into the `GameData` folder of KSP. Every fix is on by default, and each can be
+turned off in [the settings](docs/common/settings.md). Nothing is written to your saves: removing the folder gives
+you the stock terrain, statics, scatter and ground anchors back. An anchored base is then raised again at its next
+load, as stock raises it: [Removing this mod](docs/ground-anchor/the-fix.md#removing-this-mod).
+
+## Building
+
+Set `KSPDIR` to your KSP install folder, which must contain `GameData/000_Harmony`, and run `build.bat`. It needs the
+.NET SDK, and compiles `GameData/KSPFixTerrainPrecision/KSPFixTerrainPrecision.dll`.
+
+## License
+
+MIT, see [LICENSE](LICENSE).

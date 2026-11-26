@@ -17,11 +17,11 @@ parked while a rover drives away from it, past 2500 m, where the game unloads it
 within 200 m, where physics takes the parked craft over again. No save is loaded at any point and the
 scene is never changed: one single flight, six round trips in a row, on Kerbin. It is
 [the approach protocol](approach-protocol.md), on its save,
-`approach-kerbin.sfs`, played by its script, [`run-approach.py`](../../../diag/ground/automation/run-approach.py),
+`approach-kerbin.sfs`, played by its script, [`run-approach.py`](../diag/automation/run-approach.py),
 once without this mod and once with it, both instruments recording at the same moments. The sessions
-are logged in [`approach-stock.log`](../../../diag/ground/checking/approach/approach-stock.log) and
-[`approach-fix.log`](../../../diag/ground/checking/approach/approach-fix.log), with what the script
-printed and every line it recorded beside them ([`diag`](../../../diag/ground/README.md#the-approach-protocol)).
+are logged in [`approach-stock.log`](../diag/checking/approach/approach-stock.log) and
+[`approach-fix.log`](../diag/checking/approach/approach-fix.log), with what the script
+printed and every line it recorded beside them ([`diag`](../diag/README.md#the-approach-protocol)).
 
 **→ Full chapter: [The protocol: coming back to a craft left parked](approach-protocol.md)**
 
@@ -30,13 +30,13 @@ printed and every line it recorded beside them ([`diag`](../../../diag/ground/RE
 **On stock.** One screenshot per round trip, the table cleared between them, so that its first line is
 the last line of the one before; the bottom line of each is the reading in progress, not a record:
 
-![Without this mod, the first round trip, read by Diag LandedVessel](../../../imgs/ground/checking/approach/landed-vessel/1-stock.png)
+![Without this mod, the first round trip, read by Diag LandedVessel](../imgs/checking/approach/landed-vessel/1-stock.png)
 
 The first line of this first screenshot is not a round trip: it is the scene opening, the craft handed
 back by the save and coming to rest 513.774 mm higher than the save held it. That is what
 [Checking the ground: loading the same save](loading.md) is about, and it is left
 aside here. The five other screenshots are in
-[`imgs/ground/checking/approach/landed-vessel`](../../../imgs/ground/checking/approach/landed-vessel),
+[`docs/ground/imgs/checking/approach/landed-vessel`](../imgs/checking/approach/landed-vessel),
 `2-stock.png` to `6-stock.png`. *Moved* — how far the craft ends up from the height it was handed back
 at — reads:
 
@@ -53,9 +53,9 @@ same save, read −17.572 mm.
 **With this mod**, in that same install, on that same save, with this mod as the only difference. One
 screenshot per round trip again:
 
-![With this mod, the first round trip, read by Diag LandedVessel](../../../imgs/ground/checking/approach/landed-vessel/1-fix.png)
+![With this mod, the first round trip, read by Diag LandedVessel](../imgs/checking/approach/landed-vessel/1-fix.png)
 
-The five others are in [`imgs/ground/checking/approach/landed-vessel`](../../../imgs/ground/checking/approach/landed-vessel),
+The five others are in [`docs/ground/imgs/checking/approach/landed-vessel`](../imgs/checking/approach/landed-vessel),
 `2-fix.png` to `6-fix.png`.
 
 | round trip | 1 | 2 | 3 | 4 | 5 | 6 |
@@ -71,9 +71,9 @@ Over the whole series, the craft comes to rest across a spread of 46.8 mm withou
 **On stock.** One screenshot per round trip, the table cleared between them, so that its first line is
 the last line of the one before; the bottom line of each is the reading in progress, not a record:
 
-![Without this mod, the first round trip, read by Diag TerrainHeight](../../../imgs/ground/checking/approach/terrain-height/1-stock.png)
+![Without this mod, the first round trip, read by Diag TerrainHeight](../imgs/checking/approach/terrain-height/1-stock.png)
 
-The five others are in [`imgs/ground/checking/approach/terrain-height`](../../../imgs/ground/checking/approach/terrain-height),
+The five others are in [`docs/ground/imgs/checking/approach/terrain-height`](../imgs/checking/approach/terrain-height),
 `2-stock.png` to `6-stock.png`. The height KSP computes reads 64,785.030 mm on every line of the six
 round trips, so every change below is a change of the ground under the craft. *Difference*:
 
@@ -95,9 +95,9 @@ still packed, to the moment physics takes it over, it moves by 0.023 mm at most.
 
 **With this mod**, in that same install, the same session:
 
-![With this mod, the first round trip, read by Diag TerrainHeight](../../../imgs/ground/checking/approach/terrain-height/1-fix.png)
+![With this mod, the first round trip, read by Diag TerrainHeight](../imgs/checking/approach/terrain-height/1-fix.png)
 
-The five others are in [`imgs/ground/checking/approach/terrain-height`](../../../imgs/ground/checking/approach/terrain-height),
+The five others are in [`docs/ground/imgs/checking/approach/terrain-height`](../imgs/checking/approach/terrain-height),
 `2-fix.png` to `6-fix.png`.
 
 | round trip | 1 | 2 | 3 | 4 | 5 | 6 |
@@ -129,5 +129,5 @@ against a float step of 62.5 mm there.
 In other words: reload the same save as many times as you like, or leave a craft parked and come back
 to it in the middle of a flight — either way it comes back to the same place, on ground that is in the
 same place. The coin toss of
-[Why the moving ground matters](../../../README.md#why-the-moving-ground-matters) is gone — there is nothing
+[Why the moving ground matters](../../how-ksp-builds-the-ground/README.md#why-the-moving-ground-matters) is gone — there is nothing
 left to push the craft out of.

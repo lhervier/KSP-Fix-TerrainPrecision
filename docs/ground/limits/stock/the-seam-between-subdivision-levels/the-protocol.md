@@ -75,7 +75,7 @@ or barely anything.
 
 ## Played by a script
 
-[`diag/ground/automation/run-revert.py`](../../../../../diag/ground/automation/run-revert.py) plays the steps above and
+[`docs/ground/diag/automation/run-revert.py`](../../../diag/automation/run-revert.py) plays the steps above and
 takes the two screenshots. It drives KSP through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer),
 a mod that answers requests sent to it over HTTP, from the computer KSP runs on only; and it needs
 nothing but Python 3 — no AI, no package to install. Anyone can read it top to bottom: it follows the

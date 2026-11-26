@@ -46,12 +46,12 @@ are placed, and Deferred only sees that through the positions it draws.
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, Deferred 1.3.5, Shabby 0.4.2, this mod
 with its defaults (at `logLevel = Debug`), both instruments, and
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocols: each campaign
-below is a script of [`diag/ground/automation/`](../../../../diag/ground/automation) that does, in the same order, what the
+below is a script of [`docs/ground/diag/automation/`](../../diag/automation) that does, in the same order, what the
 protocol asks a player to do, and records in both instruments at every stop. The terrain is drawn as
 usual, on the screenshots taken along the way.
 
 **Loading the same save.** [The runway protocol](../../../statics/checking/loading-protocol.md),
-played by [`run-runway.py`](../../../../diag/statics/automation/run-runway.py): `runway-kerbin.sfs` loaded six times,
+played by [`run-runway.py`](../../../statics/diag/automation/run-runway.py): `runway-kerbin.sfs` loaded six times,
 the craft on the grass read first, then the one on the runway, switched to as the `[` key does. The same
 script was played once more on the same install with Deferred and Shabby taken out. Spread over the six
 loads:
@@ -69,7 +69,7 @@ load out of six sets the craft on the grass down 0.23 mm higher than the five ot
 under it does not move: the craft's own settling, with or without Deferred.
 
 **Coming back to a craft left parked.** [The approach protocol](../../checking/approach-protocol.md),
-played by [`run-approach.py`](../../../../diag/ground/automation/run-approach.py): `approach-kerbin.sfs`, six round
+played by [`run-approach.py`](../../diag/automation/run-approach.py): `approach-kerbin.sfs`, six round
 trips of the rover to 3.1 km south of the parked craft and back, in a single flight. The rover drives with
 the cheat *Infinite Electricity* on, so that close to forty kilometres of driving do not depend on its
 batteries.
@@ -83,4 +83,4 @@ Over the six, the craft comes to rest across a spread of 0.039 mm, and the groun
 0.011 mm, against 0.094 mm and 0.011 mm with this mod and no Deferred, and 21.8 mm for both in stock
 ([Checking the culprit: coming back to a craft left parked](../../checking/approach.md)).
 
-The logs and the lines read are in [`diag/ground/non-regression/deferred/drawing-the-ground/`](../../../../diag/ground/README.md#with-deferred).
+The logs and the lines read are in [`docs/ground/diag/non-regression/deferred/drawing-the-ground/`](../../diag/README.md#with-deferred).

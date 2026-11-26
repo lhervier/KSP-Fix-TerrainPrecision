@@ -15,7 +15,7 @@ The anchor is not the only part it moves. In
 panels lying alone on the runway go 107 mm up and fall back at every load, with this mod as installed and
 with `fixLonePartMass = false` alike. `KSP.log` names the pass each time, 20 lines in each of the two
 sessions, one per panel and per load
-([`runway-fix.log`](../../../../diag/lone-parts/checking/runway/runway-fix.log)):
+([`runway-fix.log`](../../../lone-parts/diag/checking/runway/runway-fix.log)):
 
 ```
 [Panneaux photovoltaïques OX-STAT]: ground contact! - error. Moving Vessel  up 0.107m
@@ -33,14 +33,14 @@ moved whatever the distance.
 - **The lift is set by the part, not by the ground.** With this mod, the line reads `up 0.107m` 39 times
   out of 40 and `up 0.108m` once, over the two sessions: the runway comes back where it was, and the lift is
   the same at every load. On stock, the same line reads from `up 0.101m` to `up 0.135m`, 18 times out of 20
-  ([`runway-stock.log`](../../../../diag/lone-parts/checking/runway/runway-stock.log)): the runway moving at
+  ([`runway-stock.log`](../../../lone-parts/diag/checking/runway/runway-stock.log)): the runway moving at
   every load adds to the lift or takes from it, and at the load where it came back lower, the move fell under
   the 10 cm the pass ignores and the panels were left where they were.
 - **It depends on how the part lies.** A part has its origin below its colliders in one position only: a
   panel lying the other way round, or standing, keeps its origin above its lowest point, and the pass leaves
   it alone. None of the six parts lying alone on the Mun, in
   [Checking parts lying alone: loading the same save](../../../lone-parts/checking/loading.md), has the line in
-  [`loading-fix.log`](../../../../diag/lone-parts/checking/loading/loading-fix.log).
+  [`loading-fix.log`](../../../lone-parts/diag/checking/loading/loading-fix.log).
 - **Not measured yet**, and to be read with an instrument: that the panel is lifted in one step, at its first
   physics step, rather than pushed out by the physics; and how deep its origin lies below its collider, which
   the reading above puts at half of 107 mm.

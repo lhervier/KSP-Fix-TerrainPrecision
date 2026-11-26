@@ -27,18 +27,18 @@ it requires, Deferred, both instruments,
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol; this mod with its
 defaults (at `logLevel = Debug`), or not.
 
-**The save**, [`approach-kerbin-tundra.sfs`](../../../../diag/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/approach-kerbin-tundra.sfs),
+**The save**, [`approach-kerbin-tundra.sfs`](../../diag/non-regression/parallax/coming-back-to-a-craft-on-its-ground/approach-kerbin-tundra.sfs),
 made without this mod: the two craft of the approach protocol, in the tundra of Kerbin at 72° north, around
 midday. The craft the readings are about, a Mk1 command pod on an FL-T100 tank, is landed at latitude
 72.0008°, longitude 29.9958°, and is the target of the rover, landed 26 m to its south-east, facing
 south-east, the way it drives off.
 
-![The rover at its starting spot in the tundra of Kerbin, the parked capsule to its left, 26 m away](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/the-save.jpg)
+![The rover at its starting spot in the tundra of Kerbin, the parked capsule to its left, 26 m away](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/the-save.jpg)
 
 *The save, seen from behind the rover, the way it drives off.*
 
 **The protocol**: [the approach protocol](../../checking/approach-protocol.md), played by its
-script, [`run-approach.py`](../../../../diag/ground/automation/run-approach.py), the rover driving off south-east
+script, [`run-approach.py`](../../diag/automation/run-approach.py), the rover driving off south-east
 (`--heading 135`): six round trips, five records per trip in both instruments, without this mod, then with
 it.
 
@@ -63,70 +63,70 @@ At the first record of all, as the scene opens, the capsule settles once on the 
 *Moved* +40.867 mm without this mod, +0.911 mm with it.
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 1, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 1, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 2, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 2, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 3, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 3, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 4, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 4, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 5, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 5, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 6, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 6, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 1, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 1, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 2, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 2, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 3, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 3, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 4, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 4, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 5, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 5, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-without-this-mod.jpg" alt="Without this mod, trip 6, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-without-this-mod.jpg" alt="Without this mod, trip 6, the ground under it" width="96"></a>
 </p>
 
 <details>
 <summary>The tables without this mod, trip by trip</summary>
 
-![Without this mod, trip 1, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 1, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-without-this-mod.jpg)
-![Without this mod, trip 2, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 2, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-without-this-mod.jpg)
-![Without this mod, trip 3, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 3, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-without-this-mod.jpg)
-![Without this mod, trip 4, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 4, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-without-this-mod.jpg)
-![Without this mod, trip 5, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 5, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-without-this-mod.jpg)
-![Without this mod, trip 6, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-without-this-mod.jpg)
-![Without this mod, trip 6, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 1, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 1, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 2, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 2, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 3, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 3, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 4, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 4, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 5, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 5, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-without-this-mod.jpg)
+![Without this mod, trip 6, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-without-this-mod.jpg)
+![Without this mod, trip 6, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-without-this-mod.jpg)
 
 </details>
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-fix.jpg" alt="With this mod, trip 1, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-fix.jpg" alt="With this mod, trip 1, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-fix.jpg" alt="With this mod, trip 2, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-fix.jpg" alt="With this mod, trip 2, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-fix.jpg" alt="With this mod, trip 3, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-fix.jpg" alt="With this mod, trip 3, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-fix.jpg" alt="With this mod, trip 4, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-fix.jpg" alt="With this mod, trip 4, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-fix.jpg" alt="With this mod, trip 5, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-fix.jpg" alt="With this mod, trip 5, the ground under it" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-fix.jpg" alt="With this mod, trip 6, the parked capsule" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-fix.jpg" alt="With this mod, trip 6, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-fix.jpg" alt="With this mod, trip 1, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-fix.jpg" alt="With this mod, trip 1, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-fix.jpg" alt="With this mod, trip 2, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-fix.jpg" alt="With this mod, trip 2, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-fix.jpg" alt="With this mod, trip 3, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-fix.jpg" alt="With this mod, trip 3, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-fix.jpg" alt="With this mod, trip 4, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-fix.jpg" alt="With this mod, trip 4, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-fix.jpg" alt="With this mod, trip 5, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-fix.jpg" alt="With this mod, trip 5, the ground under it" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-fix.jpg" alt="With this mod, trip 6, the parked capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-fix.jpg" alt="With this mod, trip 6, the ground under it" width="96"></a>
 </p>
 
 <details>
 <summary>The tables with this mod, trip by trip</summary>
 
-![With this mod, trip 1, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-fix.jpg)
-![With this mod, trip 1, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-fix.jpg)
-![With this mod, trip 2, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-fix.jpg)
-![With this mod, trip 2, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-fix.jpg)
-![With this mod, trip 3, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-fix.jpg)
-![With this mod, trip 3, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-fix.jpg)
-![With this mod, trip 4, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-fix.jpg)
-![With this mod, trip 4, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-fix.jpg)
-![With this mod, trip 5, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-fix.jpg)
-![With this mod, trip 5, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-fix.jpg)
-![With this mod, trip 6, the parked capsule](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-fix.jpg)
-![With this mod, trip 6, the ground under it](../../../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-fix.jpg)
+![With this mod, trip 1, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-landed-vessel-fix.jpg)
+![With this mod, trip 1, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip1-terrain-height-fix.jpg)
+![With this mod, trip 2, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-landed-vessel-fix.jpg)
+![With this mod, trip 2, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip2-terrain-height-fix.jpg)
+![With this mod, trip 3, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-landed-vessel-fix.jpg)
+![With this mod, trip 3, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip3-terrain-height-fix.jpg)
+![With this mod, trip 4, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-landed-vessel-fix.jpg)
+![With this mod, trip 4, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip4-terrain-height-fix.jpg)
+![With this mod, trip 5, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-landed-vessel-fix.jpg)
+![With this mod, trip 5, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip5-terrain-height-fix.jpg)
+![With this mod, trip 6, the parked capsule](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-landed-vessel-fix.jpg)
+![With this mod, trip 6, the ground under it](../../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/trip6-terrain-height-fix.jpg)
 
 </details>
 
 The logs, what the script printed and every line it recorded are in
-[`diag`](../../../../diag/ground/README.md#with-parallax).
+[`diag`](../../diag/README.md#with-parallax).

@@ -12,7 +12,7 @@ The protocol is the same without this mod and with it.
 
 The protocol loads a save holding one craft landed on bare ground, on a spot where it does not slide,
 and nothing else. The saves it was played on are in
-[`diag`](../../../diag/ground/README.md#the-loading-protocol): a capsule on a small flat fuel tank on each of
+[`diag`](../diag/README.md#the-loading-protocol): a capsule on a small flat fuel tank on each of
 the four worlds of stock KSP, `reload-kerbin-2parts.sfs` and the same for `mune`, `minmus` and
 `gilly`. Copy one into the folder of a sandbox game and load it from that game.
 
@@ -22,21 +22,21 @@ the four worlds of stock KSP, `reload-kerbin-2parts.sfs` and the same for `mune`
 
 **1. Load the save, watch the live line until it stops moving, then press *Record* at the end of it.**
 
-![The save just loaded, the craft settled, about to record](../../../imgs/ground/checking/loading-protocol/40-record.png)
+![The save just loaded, the craft settled, about to record](../imgs/checking/loading-protocol/40-record.png)
 
 The first line appears. **On rails** is the height the save gave back, **Settled** the height the
 craft actually came to rest at, and **Moved** the difference.
 
-![The first loading recorded](../../../imgs/ground/checking/loading-protocol/45-recorded.png)
+![The first loading recorded](../imgs/checking/loading-protocol/45-recorded.png)
 
 **2. Load the same save again, let it settle, and record again.** Not a new save: the same one, again.
 A second line appears, under the first.
 
-![A second loading recorded](../../../imgs/ground/checking/loading-protocol/50-record-again.png)
+![A second loading recorded](../imgs/checking/loading-protocol/50-record-again.png)
 
 **3. Repeat step 2** until you have six lines.
 
-![Six loadings recorded](../../../imgs/ground/checking/loading-protocol/60-record-again-and-again.png)
+![Six loadings recorded](../imgs/checking/loading-protocol/60-record-again-and-again.png)
 
 ⚠️ **Never save during the series.** Saving each time would write a new position every time, and you
 would be measuring your own round trip on top of the ground.
@@ -62,15 +62,15 @@ press *Record* in its window too, at each loading. The craft only marks the spot
 and what it is made of does not change the reading. The same rules hold, for a reason of their own: a
 craft that slides, or whose throttle is open, moves that spot, and the readings creep with it.
 
-![Six loadings recorded in the window of Diag TerrainHeight](../../../imgs/ground/checking/loading-protocol/80-terrain-height.png)
+![Six loadings recorded in the window of Diag TerrainHeight](../imgs/checking/loading-protocol/80-terrain-height.png)
 
 Its **Ground KSP computes** column says that the same spot was read every time. A line where it reads
 otherwise was taken somewhere else: a craft that jumped or tipped over came to rest on another spot.
 
 ## Played by a script
 
-[`diag/ground/automation/run-loading.py`](../../../diag/ground/automation/run-loading.py) plays the protocol above, on
-[a save already made](../../../diag/ground/README.md#the-loading-protocol), and takes the screenshots. It drives
+[`docs/ground/diag/automation/run-loading.py`](../diag/automation/run-loading.py) plays the protocol above, on
+[a save already made](../diag/README.md#the-loading-protocol), and takes the screenshots. It drives
 KSP through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests
 sent to it over HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no
 package to install. Anyone can read it top to bottom: it follows the steps above in the same order.

@@ -35,7 +35,7 @@ the first, and splits the saving between them.
 Each configuration keeps its own PQS Bench logs and its own reading of them, in its own repository: the
 stock reference with [the bench](https://github.com/lhervier/KSP-Util-PQSBench/blob/main/perfs/README.md),
 the middle term with [Stock Quad Cache](https://github.com/lhervier/KSP-Fix-StockQuadCache/blob/main/perfs/README.md),
-and this mod's runs in [`diag/common/perfs/`](../../diag/common/perfs/README.md), along with the profiler runs of all three.
+and this mod's runs in [`docs/common/diag/perfs/`](diag/perfs/README.md), along with the profiler runs of all three.
 
 ## The campaign
 
@@ -145,7 +145,7 @@ stop of every capture that KSP's window was in front: it was, every time.
 The CSV names two rows `Update` and several `Coroutines`. Below, **Update** is the whole phase,
 **Update → Coroutines** the coroutines run inside it — among them `PQS.UpdateSphere`, where the terrain
 is updated and its quads built, along with whatever other coroutines ran that frame — and **Cameras
-render** the drawing. In milliseconds per frame (the CSVs and logs are [with the runs](../../diag/common/perfs/README.md#what-a-frame-pays)):
+render** the drawing. In milliseconds per frame (the CSVs and logs are [with the runs](diag/perfs/README.md#what-a-frame-pays)):
 
 | | stock 1 | stock 2 | stock 3 | `Transform`s once per quad 1 | `Transform`s once per quad 2 | `Transform`s once per quad 3 | this fix 1 | this fix 2 | this fix 3 |
 |---|---|---|---|---|---|---|---|---|---|
@@ -209,7 +209,7 @@ this mod, a run of this mod with the scatter fix, by the same procedure: three m
 *Stop*, with 6 584 to 6 719 frames each. **The scatter fix was then a mod of its own**, Rock Precision Fix
 0.1.0, installed next to this mod: the same two patches. The runs of this mod alone are the ones of the
 table above. In milliseconds per frame (every row of every run is
-[with the runs](../../diag/common/perfs/README.md#the-scatter-fix-the-figures)):
+[with the runs](diag/perfs/README.md#the-scatter-fix-the-figures)):
 
 | | this fix 1 | with the scatter fix 1 | this fix 2 | with the scatter fix 2 | this fix 3 | with the scatter fix 3 |
 |---|---|---|---|---|---|---|

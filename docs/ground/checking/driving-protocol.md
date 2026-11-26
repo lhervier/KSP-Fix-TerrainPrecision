@@ -31,9 +31,9 @@ each line of Diag FloatingOrigin says whether the world moved since the line bef
 
 ## The save
 
-[`driving-kerbin.sfs`](../../../diag/ground/checking/driving/driving-kerbin.sfs), a sandbox game of
+[`driving-kerbin.sfs`](../diag/checking/driving/driving-kerbin.sfs), a sandbox game of
 KSP 1.12.5. Copy it into the folder of a sandbox game and load it from that game. It holds a single
-craft, [`Diag2-Rover`](../../../diag/ground/checking/driving/Diag2-Rover.craft), a crewed rover on
+craft, [`Diag2-Rover`](../diag/checking/driving/Diag2-Rover.craft), a crewed rover on
 four wheels, with batteries and solar panels to recharge them, landed on the flat grass south of the
 runway of the KSC, at latitude −0.0581°, longitude −74.7241°, facing due south. No target is set.
 
@@ -42,13 +42,13 @@ move the world at all, however far the rover drives; it only catches up when tha
 2500 m away ([Diag FloatingOrigin, a rover near a parked craft](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/docs/the-measurements-parked-craft.md)).
 With a second craft parked nearby, nothing on this page would happen.
 
-You can make your own: copy [`Diag2-Rover.craft`](../../../diag/ground/checking/driving/Diag2-Rover.craft)
+You can make your own: copy [`Diag2-Rover.craft`](../diag/checking/driving/Diag2-Rover.craft)
 into the `Ships/SPH` folder of a sandbox game, launch it from the Spaceplane Hangar onto the runway, and
 drive due south until it is off the runway and on the grass. Stop, put the brakes on, and save once.
 
 ### The same on Earth, in Real Solar System
 
-[`driving-earth-rss.sfs`](../../../diag/ground/checking/driving/driving-earth-rss.sfs) holds the same
+[`driving-earth-rss.sfs`](../diag/checking/driving/driving-earth-rss.sfs) holds the same
 rover on Earth, on the grass south of the runway of the KSC at Cape Canaveral, at latitude 28.6119°,
 longitude −80.6176°. It only loads in an install with
 [Real Solar System](https://github.com/KSP-RO/RealSolarSystem) and what it requires. It was made the same
@@ -62,7 +62,7 @@ the whole series is driven on the grass.
 Load the save and **do not change scene again** — no save, no load, no trip back to the space centre.
 Diag FloatingOrigin reads an **Origin distance** near zero: the origin of the world is on the rover.
 
-![The save just loaded: Origin distance near zero](../../../imgs/ground/checking/driving-protocol/00-load.png)
+![The save just loaded: Origin distance near zero](../imgs/checking/driving-protocol/00-load.png)
 
 Drive due south across the flat grass, away from the runway and the buildings. Then, for each
 move of the world, three records.
@@ -70,21 +70,21 @@ move of the world, three records.
 **1. Just before.** Stop when **Origin distance** reads about 490 m — between 498 and 500 m on Earth.
 Wait for the digits of Diag TerrainHeight to stop moving, then record.
 
-![Stopped at 490.6 m from the origin, in Diag FloatingOrigin's window](../../../imgs/ground/checking/driving-protocol/10-before-fo.png)
+![Stopped at 490.6 m from the origin, in Diag FloatingOrigin's window](../imgs/checking/driving-protocol/10-before-fo.png)
 
-![The same stop, in Diag TerrainHeight's window, the digits settled](../../../imgs/ground/checking/driving-protocol/11-before-th.png)
+![The same stop, in Diag TerrainHeight's window, the digits settled](../imgs/checking/driving-protocol/11-before-th.png)
 
 **2. Just after.** Creep forward until **Origin distance** drops back near zero: the world has moved.
 Stop a few metres on — within 2 m on Earth — wait, and record. Diag FloatingOrigin's line reads 1 in **Shifts**.
 
-![Just after the move: Origin distance back near zero, Shifts 1](../../../imgs/ground/checking/driving-protocol/20-after-fo.png)
+![Just after the move: Origin distance back near zero, Shifts 1](../imgs/checking/driving-protocol/20-after-fo.png)
 
 **3. The same distance again.** Creep forward about as far as from 1 to 2 — another 2 m on Earth — stop,
 wait, and record. Diag FloatingOrigin's line reads 0 in **Shifts**.
 
-![The same distance again: Shifts 0](../../../imgs/ground/checking/driving-protocol/30-again-fo.png)
+![The same distance again: Shifts 0](../imgs/checking/driving-protocol/30-again-fo.png)
 
-![The three lines of one move, in Diag TerrainHeight's window](../../../imgs/ground/checking/driving-protocol/40-three-lines-th.png)
+![The three lines of one move, in Diag TerrainHeight's window](../imgs/checking/driving-protocol/40-three-lines-th.png)
 
 Then drive on to the next move, 500 m farther, and do it again, three moves in all.
 
@@ -131,14 +131,14 @@ in the one flight the save opened.
 
 ## Played by a script
 
-[`diag/ground/automation/run-driving.py`](../../../diag/ground/automation/run-driving.py) plays the protocol above, step
+[`docs/ground/diag/automation/run-driving.py`](../diag/automation/run-driving.py) plays the protocol above, step
 for step, and takes the screenshots. It drives KSP through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent to it over
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
 install. Anyone can read it top to bottom: it follows the three records above in the same order.
 
 1. Install KSP-Util-MCPServer next to Diag TerrainHeight and Diag FloatingOrigin — and this mod, for the
-   series with it — copy [the save](../../../diag/ground/checking/driving/driving-kerbin.sfs) into a
+   series with it — copy [the save](../diag/checking/driving/driving-kerbin.sfs) into a
    sandbox game, start KSP and wait for the main menu.
 2. Run `python run-driving.py --folder <your sandbox game> --moves 3 --out screenshots`. On Earth, add
    `--save driving-earth-rss --before 499 --radius 6371000`: the rover stops 499 m from the origin

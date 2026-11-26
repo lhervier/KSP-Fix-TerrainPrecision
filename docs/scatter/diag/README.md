@@ -1,16 +1,16 @@
 # The runs: the scatter
 
-Part of [Terrain Precision Fix](../../README.md), [the scatter](../../docs/scatter/README.md): the saves, the scripts and the `KSP.log` of every session, without this mod and with it. The scripts are in [`automation/`](automation).
+Part of [Terrain Precision Fix](../../../README.md), [the scatter](../README.md): the saves, the scripts and the `KSP.log` of every session, without this mod and with it. The scripts are in [`automation/`](automation).
 
 ## The scatter
 
 The readings of [KSP Diag - Scatter](https://github.com/lhervier/KSP-Diag-Scatter), kept as they were
 logged, copied out of `KSP.log`, in the folder of the page that reads them. They are read in
-[Checking the scatter: loading the same save](../../docs/scatter/checking/loading.md),
-[Checking the scatter: driving on while the world moves](../../docs/scatter/checking/driving.md),
-[Checking the scatter: in flight](../../docs/scatter/checking/flight.md),
-[The scatter holders](../../docs/scatter/non-regression/stock/the-scatter-holders.md) and
-[Kopernicus: scatter with colliders](../../docs/scatter/non-regression/kopernicus/scatter-with-colliders.md).
+[Checking the scatter: loading the same save](../checking/loading.md),
+[Checking the scatter: driving on while the world moves](../checking/driving.md),
+[Checking the scatter: in flight](../checking/flight.md),
+[The scatter holders](../non-regression/stock/the-scatter-holders.md) and
+[Kopernicus: scatter with colliders](../non-regression/kopernicus/scatter-with-colliders.md).
 What a record holds, line by line, is in
 [the instrument's page](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/what-it-measures.md#the-log).
 
@@ -36,21 +36,21 @@ Precision Fix 0.1.0 alone (`tpf` in the names of the files), and with the scatte
 when it was a mod of its own, Rock Precision Fix 0.1.0, installed next to it: the same two patches, whose
 lines in these logs are tagged `[RockPrecisionFix]`.
 
-The protocols are [the scatter, load after load](../../docs/scatter/checking/loading-protocol.md),
-[the scatter, while the world moves](../../docs/scatter/checking/driving-protocol.md)
-and [the scatter, along a flight](../../docs/scatter/checking/flight-protocol.md), and the
+The protocols are [the scatter, load after load](../checking/loading-protocol.md),
+[the scatter, while the world moves](../checking/driving-protocol.md)
+and [the scatter, along a flight](../checking/flight-protocol.md), and the
 chapters *The protocol* of [The scatter
-holders](../../docs/scatter/non-regression/stock/the-scatter-holders.md#the-protocol)
+holders](../non-regression/stock/the-scatter-holders.md#the-protocol)
 and [Kopernicus: scatter with
-colliders](../../docs/scatter/non-regression/kopernicus/scatter-with-colliders.md#the-protocol).
+colliders](../non-regression/kopernicus/scatter-with-colliders.md#the-protocol).
 
 The saves:
 
 - [`reference-kerbin.sfs`](checking/loading/reference-kerbin.sfs) and [`reference-mune.sfs`](checking/loading/reference-mune.sfs)
   — a single Mk1 command pod landed on Kerbin, about 8 km north-west of the KSC, where the scatter is
   grass and trees, and on the Mun, where it is rocks;
-- [`driving-kerbin.sfs`](../ground/checking/driving/driving-kerbin.sfs) — the rover of
-  [the driving protocol](../ground/README.md#the-driving-protocol), on the grass south of the runway of the KSC;
+- [`driving-kerbin.sfs`](../../ground/diag/checking/driving/driving-kerbin.sfs) — the rover of
+  [the driving protocol](../../ground/diag/README.md#the-driving-protocol), on the grass south of the runway of the KSC;
 - [`cactus-kerbin.sfs`](checking/driving/cactus-kerbin.sfs) — the same rover in a
   desert of Kerbin, 497 m north of a cactus, facing it: the save of the film;
 - [`ref-mune-5km.sfs`](checking/flight/ref-mune-5km.sfs) — a single Mk1 command pod in a circular equatorial
@@ -248,11 +248,11 @@ picture of the kerbal's feet, the camera set to the same viewpoint before each (
 | load | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
 | `stock` | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-stock-load6.log) |
-| its pictures | [`1`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-stock-load1.png) | [`2`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-stock-load2.png) | [`3`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-stock-load3.png) | [`4`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-stock-load4.png) | [`5`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-stock-load5.png) | [`6`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-stock-load6.png) |
+| its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-stock-load6.png) |
 | `fix-no-scatter` | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load6.log) |
-| its pictures | [`1`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load1.png) | [`2`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load2.png) | [`3`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load3.png) | [`4`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load4.png) | [`5`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load5.png) | [`6`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load6.png) |
+| its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-no-scatter-load6.png) |
 | `fix` | [`1`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load1.log) | [`2`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load2.log) | [`3`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load3.log) | [`4`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load4.log) | [`5`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load5.log) | [`6`](non-regression/kopernicus/scatter-with-colliders/collider-fix-load6.log) |
-| its pictures | [`1`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-load1.png) | [`2`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-load2.png) | [`3`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-load3.png) | [`4`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-load4.png) | [`5`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-load5.png) | [`6`](../../imgs/scatter/non-regression/kopernicus/scatter-with-colliders/collider-fix-load6.png) |
+| its pictures | [`1`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load1.png) | [`2`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load2.png) | [`3`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load3.png) | [`4`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load4.png) | [`5`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load5.png) | [`6`](../imgs/non-regression/kopernicus/scatter-with-colliders/collider-fix-load6.png) |
 
 | series | what the script printed | what it recorded |
 |---|---|---|
@@ -275,7 +275,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) with its stock textures and what it
 requires, Deferred, and this mod at `logLevel = Debug`, or not: each session is here twice,
 `-without-this-mod` and `-fix`. Read in
-[the non-regression tests on Parallax](../../docs/scatter/README.md#parallax).
+[the non-regression tests on Parallax](../README.md#parallax).
 
 On Parallax Continued 1.0.5, with both instruments and
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer):
@@ -287,7 +287,7 @@ On Parallax Continued 1.0.5, with both instruments and
   [`a-craft-on-one-of-its-rocks/`](non-regression/parallax/a-craft-on-one-of-its-rocks/), each with its `KSP.log`
   (`.log.gz`), what the script printed (`-script.txt`) and every line it recorded (`-lines.json`); the
   screenshots of the tables in
-  [`imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/`](../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks).
+  [`docs/scatter/imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/`](../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks).
 
 On Parallax Continued 1.0.4 rebuilt to orient its objects as 1.0.5 does, with
 [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) and

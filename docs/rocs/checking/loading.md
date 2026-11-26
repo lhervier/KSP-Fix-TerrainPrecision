@@ -23,11 +23,11 @@ the feature's own move.
 The protocol of the ground, with a kerbal on a surface feature instead of a capsule on bare ground: the
 same save loaded six times, nothing touched in between, a *Record* once the live line stops moving,
 never a save during the series. It is played by the same script,
-[`run-loading.py`](../../../diag/ground/automation/run-loading.py).
+[`run-loading.py`](../../ground/diag/automation/run-loading.py).
 
 **→ Full chapter: [The protocol: loading the same save](../../ground/checking/loading-protocol.md)**
 
-The save, [`roc-mune-jeb.sfs`](../../../diag/rocs/checking/loading/roc-mune-jeb.sfs): Jebediah Kerman
+The save, [`roc-mune-jeb.sfs`](../diag/checking/loading/roc-mune-jeb.sfs): Jebediah Kerman
 standing on a small Mun stone, on the Mun (latitude −12.4400°, longitude 91.7898°), the pod Jebediah stepped
 out of standing 6 m away. The stone carries one convex collider. Copy the save into the folder of a sandbox
 game and load it from that game.
@@ -52,16 +52,16 @@ of both.
 | **range** | **10.04 mm** | | **0.008 mm** | |
 
 <p class="thumbs">
-<a href="../../../imgs/rocs/checking/loading/landed-vessel/00-mune-rocs-fix-off.png"><img src="../../../imgs/rocs/checking/loading/landed-vessel/00-mune-rocs-fix-off.png" alt="With this mod and its fix of the surface features turned off, Jebediah Kerman on a Mun stone, six loads of the same save" width="96"></a>
-<a href="../../../imgs/rocs/checking/loading/landed-vessel/10-mune-fix.png"><img src="../../../imgs/rocs/checking/loading/landed-vessel/10-mune-fix.png" alt="With this mod, Jebediah Kerman on a Mun stone, six loads of the same save" width="96"></a>
+<a href="../imgs/checking/loading/landed-vessel/00-mune-rocs-fix-off.png"><img src="../imgs/checking/loading/landed-vessel/00-mune-rocs-fix-off.png" alt="With this mod and its fix of the surface features turned off, Jebediah Kerman on a Mun stone, six loads of the same save" width="96"></a>
+<a href="../imgs/checking/loading/landed-vessel/10-mune-fix.png"><img src="../imgs/checking/loading/landed-vessel/10-mune-fix.png" alt="With this mod, Jebediah Kerman on a Mun stone, six loads of the same save" width="96"></a>
 </p>
 
 <details>
 <summary>The 2 screenshots</summary>
 
-![With this mod and its fix of the surface features turned off, Jebediah Kerman on a Mun stone, six loads of the same save](../../../imgs/rocs/checking/loading/landed-vessel/00-mune-rocs-fix-off.png)
+![With this mod and its fix of the surface features turned off, Jebediah Kerman on a Mun stone, six loads of the same save](../imgs/checking/loading/landed-vessel/00-mune-rocs-fix-off.png)
 
-![With this mod, Jebediah Kerman on a Mun stone, six loads of the same save](../../../imgs/rocs/checking/loading/landed-vessel/10-mune-fix.png)
+![With this mod, Jebediah Kerman on a Mun stone, six loads of the same save](../imgs/checking/loading/landed-vessel/10-mune-fix.png)
 
 </details>
 
@@ -80,4 +80,4 @@ kerbal settles within 0.008 mm, load after load.
 surface features, with the stone where its holder was drawn then, and the kerbal comes to rest on the stone where it now stands.
 
 The saves, the logs and what the script printed are in
-[the runs of the ROCs](../../../diag/rocs/README.md#loading-the-same-save).
+[the runs of the ROCs](../diag/README.md#loading-the-same-save).

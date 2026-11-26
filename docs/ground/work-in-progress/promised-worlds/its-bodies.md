@@ -24,7 +24,7 @@ child. The rounding falls on the Sun, not on the body this mod places the terrai
 
 **Rescaled bodies.** With [Sigma Dimensions](https://github.com/Sigma88/Sigma-Dimensions), the pack's
 `Rescale` makes every body 2.5 or 10 times larger, and forces 10 times with Real Solar System. The
-[safeguard](../../../common/safeguard.md) grows with the radius of a body, as it does on the Earth of Real
+[safeguard](../../../planet-frame/safeguard.md) grows with the radius of a body, as it does on the Earth of Real
 Solar System.
 
 *What the player would see if this mod broke something:* a craft landed on one of these bodies that jumps

@@ -37,22 +37,22 @@ record holds, are in [its page](https://github.com/lhervier/KSP-Diag-Scatter/blo
 series: terrain scatter on, and the log written at once, steps 1 and 2 of
 [the protocol load after load](../../checking/loading-protocol.md#the-protocol).
 
-**Over a flight.** Load [`ref-mune-5km.sfs`](../../../../diag/scatter/checking/flight/ref-mune-5km.sfs), copied into the folder of a sandbox
+**Over a flight.** Load [`ref-mune-5km.sfs`](../../diag/checking/flight/ref-mune-5km.sfs), copied into the folder of a sandbox
 game: a Mk1 command pod in a circular equatorial orbit 5 km over the Mun. Flying that low, the terrain
 keeps building the quads ahead of the pod and destroying those behind it, sending their holders through
 the pool all the way, and some of the Mun's relief rises above the orbit, so the pod crashes after a
 while. Press *Record the holder pools* 30 s into the flight, then again about every two minutes, and once
 more after the crash. The moments do not need to be exact: each record is a check of its own. Copy
 `KSP.log` before relaunching KSP. The script
-[`run-scatter-holders.py`](../../../../diag/scatter/automation/run-scatter-holders.py) plays it through KSP-Util-MCPServer:
+[`run-scatter-holders.py`](../../diag/automation/run-scatter-holders.py) plays it through KSP-Util-MCPServer:
 `python run-scatter-holders.py flight --folder <your sandbox game> --out out`. The game keeps the wrecked pod
 as the craft flown, frozen where it hit the relief, and pauses a minute later: the script takes the crash
 for one when the pod stops moving while the game runs.
 
 **Across scene switches.** Leaving a body switches its terrain off, and stock then destroys that body's
-holders. Load [`reference-mune.sfs`](../../../../diag/scatter/checking/loading/reference-mune.sfs) from the Space Center, copied
+holders. Load [`reference-mune.sfs`](../../diag/checking/loading/reference-mune.sfs) from the Space Center, copied
 into the folder of a sandbox game, and press *Record the holder pools* once the terrain has settled; go
-back to the Space Center, and press it there; load [`reference-kerbin.sfs`](../../../../diag/scatter/checking/loading/reference-kerbin.sfs),
+back to the Space Center, and press it there; load [`reference-kerbin.sfs`](../../diag/checking/loading/reference-kerbin.sfs),
 and press it once the terrain has settled. Copy `KSP.log` before relaunching KSP. Expected: the Mun's pool
 in the first record only, Kerbin's from the second on, and `0 broken rules` in all three. The same script
 plays it: `python run-scatter-holders.py scenes --folder <your sandbox game> --out out`.
@@ -67,17 +67,17 @@ that does not hang from its pool's container or still has a quad, a count that d
 holder in no pool.
 
 It is taken during a flight, where the terrain keeps building quads ahead of the craft and destroying
-those behind it: the save [`ref-mune-5km.sfs`](../../../../diag/scatter/checking/flight/ref-mune-5km.sfs),
+those behind it: the save [`ref-mune-5km.sfs`](../../diag/checking/flight/ref-mune-5km.sfs),
 a Mk1 command pod in a circular equatorial orbit 5 km over the Mun, loaded once, one record 30 s into the
 flight, then every two minutes, and one after the pod crashed into the relief, about 617 s into the flight.
 Once on stock, once with this mod ([The protocol](#the-protocol)). The records are in
-[`mun-5km-stock-holders.log`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/mun-5km-stock-holders.log) and
-[`mun-5km-fix-holders.log`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/mun-5km-fix-holders.log), six each,
+[`mun-5km-stock-holders.log`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-stock-holders.log) and
+[`mun-5km-fix-holders.log`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-fix-holders.log), six each,
 with what the script printed beside them
-([`mun-5km-stock-script.txt`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/mun-5km-stock-script.txt),
-[`mun-5km-fix-script.txt`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/mun-5km-fix-script.txt)) and what it
-recorded ([`mun-5km-stock-lines.json`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/mun-5km-stock-lines.json),
-[`mun-5km-fix-lines.json`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/mun-5km-fix-lines.json)).
+([`mun-5km-stock-script.txt`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-stock-script.txt),
+[`mun-5km-fix-script.txt`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-fix-script.txt)) and what it
+recorded ([`mun-5km-stock-lines.json`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-stock-lines.json),
+[`mun-5km-fix-lines.json`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-fix-lines.json)).
 
 | record | in use, on stock | free, on stock | broken rules, on stock | in use, with this mod | free, with this mod | broken rules, with this mod |
 |---|---|---|---|---|---|---|
@@ -106,12 +106,12 @@ none travels on a quad to the next body.
 The same install, on stock and with this mod, one session each, following [the protocol](#the-protocol):
 `reference-mune.sfs` loaded from the Space Center, back to the Space Center, then `reference-kerbin.sfs`,
 with a record in each of the three scenes. The records are in
-[`scenes-stock-holders.log`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/scenes-stock-holders.log) and
-[`scenes-fix-holders.log`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/scenes-fix-holders.log), with what the
-script printed ([`scenes-stock-script.txt`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/scenes-stock-script.txt),
-[`scenes-fix-script.txt`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/scenes-fix-script.txt)) and what it
-recorded ([`scenes-stock-lines.json`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/scenes-stock-lines.json),
-[`scenes-fix-lines.json`](../../../../diag/scatter/non-regression/stock/the-scatter-holders/scenes-fix-lines.json)). Every record
+[`scenes-stock-holders.log`](../../diag/non-regression/stock/the-scatter-holders/scenes-stock-holders.log) and
+[`scenes-fix-holders.log`](../../diag/non-regression/stock/the-scatter-holders/scenes-fix-holders.log), with what the
+script printed ([`scenes-stock-script.txt`](../../diag/non-regression/stock/the-scatter-holders/scenes-stock-script.txt),
+[`scenes-fix-script.txt`](../../diag/non-regression/stock/the-scatter-holders/scenes-fix-script.txt)) and what it
+recorded ([`scenes-stock-lines.json`](../../diag/non-regression/stock/the-scatter-holders/scenes-stock-lines.json),
+[`scenes-fix-lines.json`](../../diag/non-regression/stock/the-scatter-holders/scenes-fix-lines.json)). Every record
 ends on `0 in no pool` and `0 broken rules`:
 
 | record | scene | pools | holders in use | free |

@@ -18,17 +18,17 @@ itself if one of its feet is under the ground, then stretches its legs down to t
 ([Measuring a launch pad against the ground](../the-fix.md#measuring-a-launch-pad-against-the-ground)).
 So a capsule is launched from it in six sessions, one launch each, and the deck under it is read each
 time. It is [the launch pad protocol](launch-pad-protocol.md), played by its
-script, [`run-launch-pad.py`](../../../diag/statics/automation/run-launch-pad.py), once without this mod and once with
+script, [`run-launch-pad.py`](../diag/automation/run-launch-pad.py), once without this mod and once with
 it. The sessions without this mod are logged in
-[`launch-pad-stock-1.log`](../../../diag/statics/checking/launch-pad/launch-pad-stock-1.log) to
-[`launch-pad-stock-6.log`](../../../diag/statics/checking/launch-pad/launch-pad-stock-6.log), with what the
-script printed in [`launch-pad-stock-script.txt`](../../../diag/statics/checking/launch-pad/launch-pad-stock-script.txt)
-and every line it recorded in [`launch-pad-stock-lines.json`](../../../diag/statics/checking/launch-pad/launch-pad-stock-lines.json).
+[`launch-pad-stock-1.log`](../diag/checking/launch-pad/launch-pad-stock-1.log) to
+[`launch-pad-stock-6.log`](../diag/checking/launch-pad/launch-pad-stock-6.log), with what the
+script printed in [`launch-pad-stock-script.txt`](../diag/checking/launch-pad/launch-pad-stock-script.txt)
+and every line it recorded in [`launch-pad-stock-lines.json`](../diag/checking/launch-pad/launch-pad-stock-lines.json).
 The sessions with this mod are logged in
-[`launch-pad-fix-1.log`](../../../diag/statics/checking/launch-pad/launch-pad-fix-1.log) to
-[`launch-pad-fix-6.log`](../../../diag/statics/checking/launch-pad/launch-pad-fix-6.log); what the script printed is in
-[`launch-pad-fix-script.txt`](../../../diag/statics/checking/launch-pad/launch-pad-fix-script.txt), and every line it recorded in
-[`launch-pad-fix-lines.json`](../../../diag/statics/checking/launch-pad/launch-pad-fix-lines.json).
+[`launch-pad-fix-1.log`](../diag/checking/launch-pad/launch-pad-fix-1.log) to
+[`launch-pad-fix-6.log`](../diag/checking/launch-pad/launch-pad-fix-6.log); what the script printed is in
+[`launch-pad-fix-script.txt`](../diag/checking/launch-pad/launch-pad-fix-script.txt), and every line it recorded in
+[`launch-pad-fix-lines.json`](../diag/checking/launch-pad/launch-pad-fix-lines.json).
 
 **→ Full chapter: [The protocol: a launch pad of Making History](launch-pad-protocol.md)**
 
@@ -36,7 +36,7 @@ The sessions with this mod are logged in
 
 **On stock**, the first launch:
 
-![Without this mod, the capsule on the deck of the Desert Launch Site, read by Diag TerrainHeight](../../../imgs/statics/checking/launch-pad/table-1-stock.png)
+![Without this mod, the capsule on the deck of the Desert Launch Site, read by Diag TerrainHeight](../imgs/checking/launch-pad/table-1-stock.png)
 
 The height KSP computes reads 820,000.000 mm at all twelve launches, the ground the game flattens around
 the launch site. *Difference*, the deck the capsule stands on above that ground:
@@ -53,7 +53,7 @@ one line of this mod in each: the launch pad taken out of its terrain sphere whi
 
 **With this mod**, in that same install, with this mod as the only difference, the first launch:
 
-![With this mod, the capsule on the deck of the Desert Launch Site, read by Diag TerrainHeight](../../../imgs/statics/checking/launch-pad/table-1-fix.png)
+![With this mod, the capsule on the deck of the Desert Launch Site, read by Diag TerrainHeight](../imgs/checking/launch-pad/table-1-fix.png)
 
 The deck spreads over 592.8 mm without this mod, and 0.001 mm with it.
 
@@ -65,11 +65,11 @@ The foot of the launch pad nearest the camera, from the south-west of the capsul
 
 | | |
 |---|---|
-| ![Launch 1](../../../imgs/statics/checking/launch-pad/foot-1-stock.png) | ![Launch 2](../../../imgs/statics/checking/launch-pad/foot-2-stock.png) |
+| ![Launch 1](../imgs/checking/launch-pad/foot-1-stock.png) | ![Launch 2](../imgs/checking/launch-pad/foot-2-stock.png) |
 | launch 1 | launch 2 |
-| ![Launch 3](../../../imgs/statics/checking/launch-pad/foot-3-stock.png) | ![Launch 4](../../../imgs/statics/checking/launch-pad/foot-4-stock.png) |
+| ![Launch 3](../imgs/checking/launch-pad/foot-3-stock.png) | ![Launch 4](../imgs/checking/launch-pad/foot-4-stock.png) |
 | launch 3 | launch 4 |
-| ![Launch 5](../../../imgs/statics/checking/launch-pad/foot-5-stock.png) | ![Launch 6](../../../imgs/statics/checking/launch-pad/foot-6-stock.png) |
+| ![Launch 5](../imgs/checking/launch-pad/foot-5-stock.png) | ![Launch 6](../imgs/checking/launch-pad/foot-6-stock.png) |
 | launch 5 | launch 6 |
 
 On the screenshots, the frame stands above the sand in the five sessions where the launch pad lifted
@@ -79,11 +79,11 @@ itself, on the sand in session 5.
 
 | | |
 |---|---|
-| ![Launch 1](../../../imgs/statics/checking/launch-pad/foot-1-fix.png) | ![Launch 2](../../../imgs/statics/checking/launch-pad/foot-2-fix.png) |
+| ![Launch 1](../imgs/checking/launch-pad/foot-1-fix.png) | ![Launch 2](../imgs/checking/launch-pad/foot-2-fix.png) |
 | launch 1 | launch 2 |
-| ![Launch 3](../../../imgs/statics/checking/launch-pad/foot-3-fix.png) | ![Launch 4](../../../imgs/statics/checking/launch-pad/foot-4-fix.png) |
+| ![Launch 3](../imgs/checking/launch-pad/foot-3-fix.png) | ![Launch 4](../imgs/checking/launch-pad/foot-4-fix.png) |
 | launch 3 | launch 4 |
-| ![Launch 5](../../../imgs/statics/checking/launch-pad/foot-5-fix.png) | ![Launch 6](../../../imgs/statics/checking/launch-pad/foot-6-fix.png) |
+| ![Launch 5](../imgs/checking/launch-pad/foot-5-fix.png) | ![Launch 6](../imgs/checking/launch-pad/foot-6-fix.png) |
 | launch 5 | launch 6 |
 
 ## What the measurements say

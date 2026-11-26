@@ -98,7 +98,7 @@ apply, and each vertex is left with a reference comparison before stock runs unt
   System — while a wrong frame misses by kilometres. The largest correction measured so far is 4.4
   steps, 2 182 mm on Earth in Real Solar System (3.6 steps on Venus and on the Moon, about one on
   Mars and Mercury; 3.5 to 3.9 on Kerbin, the Mun, Minmus and Gilly), a quarter of the limit:
-  [This mod's safeguard](../common/safeguard.md) on Real Solar System,
-  [on stock](../common/safeguard.md);
+  [This mod's safeguard](../planet-frame/safeguard.md) on Real Solar System,
+  [on stock](../planet-frame/safeguard.md);
 - the ground fix is installed on its own, apart from [the statics fix](../statics/the-fix.md), and can be
   turned off in the settings. If any of its patches fails to install, none of them does anything.

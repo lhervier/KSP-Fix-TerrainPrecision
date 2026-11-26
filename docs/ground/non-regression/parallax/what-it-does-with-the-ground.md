@@ -13,7 +13,7 @@ the ground this mod places.
 **Parallax's own, left as it is: it is only drawn.** The terrain shader of Parallax places the texture of
 the ground from the position of each point in the Unity scene, which changes at every load, as KSP turns the
 body in the scene again by the time played since the save was made
-([Why it is different at every load](../../the-culprit.md#why-it-is-different-at-every-load)): the texture comes back slid along the ground, on every body, even when the same
+([A frame that moves: the floating origin](../../../how-ksp-builds-the-ground/README.md#a-frame-that-moves-the-floating-origin)): the texture comes back slid along the ground, on every body, even when the same
 save is loaded again at once, with this mod as without it. The ground the physics uses does not move with
 it, and this mod does not touch it.
 

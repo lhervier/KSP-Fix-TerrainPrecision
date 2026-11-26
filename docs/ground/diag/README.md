@@ -1,19 +1,19 @@
 # The runs: the ground
 
-Part of [Terrain Precision Fix](../../README.md), [the ground](../../docs/ground/README.md): the saves, the scripts and the `KSP.log` of every session, without this mod and with it. The scripts are in [`automation/`](automation).
+Part of [Terrain Precision Fix](../../../README.md), [the ground](../README.md): the saves, the scripts and the `KSP.log` of every session, without this mod and with it. The scripts are in [`automation/`](automation).
 
 ## The loading protocol
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, both instruments and
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), without this mod and with it:
-[the loading protocol](../../docs/ground/checking/loading-protocol.md), each save loaded six
+[the loading protocol](../checking/loading-protocol.md), each save loaded six
 times by its script, [`run-loading.py`](automation/run-loading.py). On Real Solar System, the same,
 plus Real Solar System 20.1.3.0 and what it requires (Kopernicus 248, Modular Flight Integrator,
 KSPTextureLoader, the RSS textures). Read in
-[Checking the ground: loading the same save](../../docs/ground/checking/loading.md).
+[Checking the ground: loading the same save](../checking/loading.md).
 
 The saves, a capsule on a small flat fuel tank, made by
-[Making the save](../../docs/ground/checking/making-the-save.md):
+[Making the save](../checking/making-the-save.md):
 
 - [`reload-kerbin-2parts.sfs`](checking/loading/reload-kerbin-2parts.sfs) — on the
   levelled grass of the KSC, just south-west of the west end of the runway;
@@ -66,11 +66,11 @@ Copy a save into the folder of a sandbox game and load it from that game.
 ## The switching protocol
 
 The install of [The loading protocol](#the-loading-protocol), on Kerbin: the six rounds of
-[the switching protocol](../../docs/ground/checking/switching-protocol.md), played by its script,
+[the switching protocol](../checking/switching-protocol.md), played by its script,
 [`run-switching.py`](automation/run-switching.py), on
 [`switch-kerbin.sfs`](checking/switching/switch-kerbin.sfs), a capsule landed on the grass
 west of the KSC and a rover 1.97 km to the south of it. Read in
-[Switching to a craft far away](../../docs/ground/checking/switching.md).
+[Switching to a craft far away](../checking/switching.md).
 
 - [`switching-stock.log`](checking/switching/switching-stock.log) — the `KSP.log` of the
   session without this mod; what the script printed in
@@ -84,11 +84,11 @@ west of the KSC and a rover 1.97 km to the south of it. Read in
 ## The approach protocol
 
 The install of [The loading protocol](#the-loading-protocol), on Kerbin: the six round trips of
-[the approach protocol](../../docs/ground/checking/approach-protocol.md), in a single flight,
+[the approach protocol](../checking/approach-protocol.md), in a single flight,
 played by its script, [`run-approach.py`](automation/run-approach.py), on
 [`approach-kerbin.sfs`](checking/approach/approach-kerbin.sfs), a capsule landed on the
 flat grass west of the KSC and a rover 26 m from it. Read in
-[Coming back to a craft left parked](../../docs/ground/checking/approach.md).
+[Coming back to a craft left parked](../checking/approach.md).
 
 - [`approach-stock.log`](checking/approach/approach-stock.log) — the `KSP.log` of the
   session without this mod; what the script printed in
@@ -106,11 +106,11 @@ flat grass west of the KSC and a rover 26 m from it. Read in
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Height, KSP Diag
 - Floating Origin and KSP-Util-MCPServer, without this mod and with it, at `logLevel = Debug`: one run of
-three shifts of [the driving protocol](../../docs/ground/checking/driving-protocol.md), played by
+three shifts of [the driving protocol](../checking/driving-protocol.md), played by
 its script, [`run-driving.py`](automation/run-driving.py); on Earth, Real Solar System 20.1.3.0 and what
 it requires as well. Each log with this mod holds one line per quad it placed, with how far it was
 moved. Read in
-[Checking the ground: driving on while the world moves](../../docs/ground/checking/driving.md).
+[Checking the ground: driving on while the world moves](../checking/driving.md).
 
 The saves, [`Diag2-Rover`](checking/driving/Diag2-Rover.craft) alone on the grass south of
 the runway of the KSC, facing due south:
@@ -144,10 +144,10 @@ The logs:
 
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - Terrain Quads, KSP Diag
 - Floating Origin and KSP-Util-MCPServer, without this mod and with it at `logLevel = Debug`: on each body,
-one flight of [the protocol of the quads of the highest level, in flight](../../docs/ground/checking/flight-protocol.md),
+one flight of [the protocol of the quads of the highest level, in flight](../checking/flight-protocol.md),
 [`Quad-Rocket`](checking/flight/Quad-Rocket.craft) launched from the launchpad, played by its script,
 [`run-flight.py`](automation/run-flight.py), and read by [`analyse-flight.py`](automation/analyse-flight.py).
-Read in [Checking the ground: in flight](../../docs/ground/checking/flight.md).
+Read in [Checking the ground: in flight](../checking/flight.md).
 
 - [`flight-kerbin-stock.log`](checking/flight/flight-kerbin-stock.log) — on Kerbin, from the launchpad of the Space Center, 72 *Logs*, without this mod; what the script printed in
   [`flight-kerbin-stock-script.txt`](checking/flight/flight-kerbin-stock-script.txt), what each *Log* answered in
@@ -183,11 +183,11 @@ Read in [Checking the ground: in flight](../../docs/ground/checking/flight.md).
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [KSP Diag - Terrain Quads](https://github.com/lhervier/KSP-Diag-TerrainQuads) and KSP-Util-MCPServer, without
 this mod and with it at `logLevel = Debug`: the craft `Diag3-Rocket` on the launchpad, reverted to
-launch by the script of [the protocol of the seam](../../docs/ground/limits/stock/the-seam-between-subdivision-levels/the-protocol.md),
+launch by the script of [the protocol of the seam](../limits/stock/the-seam-between-subdivision-levels/the-protocol.md),
 [`run-revert.py`](automation/run-revert.py), until the finer quad is above at the largest gap, on land:
 `--min-step 500 --ut 64800` on Earth, `--min-step 50 --ut 3600` on Kerbin. Read in
-[Measured without this mod](../../docs/ground/limits/stock/the-seam-between-subdivision-levels.md#measured-without-this-mod) and
-[The seam with this mod](../../docs/ground/limits/stock/the-seam-between-subdivision-levels.md#the-seam-with-this-mod).
+[Measured without this mod](../limits/stock/the-seam-between-subdivision-levels.md#measured-without-this-mod) and
+[The seam with this mod](../limits/stock/the-seam-between-subdivision-levels.md#the-seam-with-this-mod).
 
 - [`revert-earth-rss-stock.log`](limits/stock/the-seam-between-subdivision-levels/revert-earth-rss-stock.log) — on Earth, Real Solar System
   20.1.3.0 as released and what it requires added, at Cape Canaveral, without this mod, with
@@ -213,27 +213,27 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [Kopernicus](https://github.com/Kopernicus/Kopernicus) and what it requires (Modular Flight Integrator 1.2.10,
 KSPTextureLoader 1.0.36), both instruments, [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer),
 and this mod at `logLevel = Debug`, or not: each session is here twice, `-without-this-mod` and `-fix`. Read in
-[the non-regression tests on Kopernicus](../../docs/ground/README.md#kopernicus).
+[the non-regression tests on Kopernicus](../README.md#kopernicus).
 
 - The four saves of [the loading protocol](#the-loading-protocol), loaded six times each by
   `run-loading.py` under Kopernicus release 252, in
   [`a-landed-craft-reloaded-in-flight/`](non-regression/kopernicus/a-landed-craft-reloaded-in-flight/):
   `loading-<body>-*`, what the script printed and every line it recorded, one `KSP.log` per session
   (`loading-without-this-mod.log.gz`, `loading-fix.log.gz`); the screenshots of the tables in
-  [`imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/`](../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight).
+  [`docs/ground/imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/`](../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight).
 
 ## With Deferred
 
-The install of [On the stock system](../statics/README.md#on-the-stock-system) plus [Deferred](https://github.com/LGhassen/Deferred)
+The install of [On the stock system](../../statics/diag/README.md#on-the-stock-system) plus [Deferred](https://github.com/LGhassen/Deferred)
 1.3.5 and [Shabby](https://github.com/KSPModdingLibs/Shabby) 0.4.2, both instruments at once, this mod at
 `logLevel = Debug`, and [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the
 protocols through the scripts of [`automation/`](automation). Read in
-[Deferred](../../docs/ground/non-regression/deferred/drawing-the-ground.md).
+[Deferred](../non-regression/deferred/drawing-the-ground.md).
 
-- [`automation/run-runway.py`](../statics/automation/run-runway.py) — plays
-  [the runway protocol](../../docs/statics/checking/loading-protocol.md).
+- [`automation/run-runway.py`](../../statics/diag/automation/run-runway.py) — plays
+  [the runway protocol](../../statics/checking/loading-protocol.md).
 - [`automation/run-approach.py`](automation/run-approach.py) — plays
-  [the approach protocol](../../docs/ground/checking/approach-protocol.md).
+  [the approach protocol](../checking/approach-protocol.md).
 - [`runway-deferred-fix.log`](non-regression/deferred/drawing-the-ground/runway-deferred-fix.log) — the six loadings of `runway-kerbin.sfs`;
   the lines read are in [`runway-deferred-fix-lines.json`](non-regression/deferred/drawing-the-ground/runway-deferred-fix-lines.json).
 - [`runway-without-deferred-fix.log`](non-regression/deferred/drawing-the-ground/runway-without-deferred-fix.log) — the same script on the
@@ -250,7 +250,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 Community Category Kit and Community Resource Pack, both instruments and
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer); this mod at `logLevel = Debug`, or not: each
 session is here twice, `-without-this-mod` and `-fix`. Read in
-[Kerbal Planetary Base Systems: a base on the ground](../../docs/ground/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground.md).
+[Kerbal Planetary Base Systems: a base on the ground](../non-regression/kerbal-planetary-base-systems/a-base-on-the-ground.md).
 
 - [`kpbs-kerbin-hull-2.sfs`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/kpbs-kerbin-hull-2.sfs) — a base of
   28 parts of Kerbal Planetary Base Systems, legs retracted, on a slope of Kerbin.
@@ -263,7 +263,7 @@ session is here twice, `-without-this-mod` and `-fix`. Read in
   [`loading-kpbs-without-this-mod-lines.json`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-without-this-mod-lines.json)
   and [`loading-kpbs-fix-lines.json`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-fix-lines.json), and the
   screenshots of the two tables in
-  [`imgs/ground/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/`](../../imgs/ground/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground).
+  [`docs/ground/imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/`](../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground).
 
 ## With Parallax
 
@@ -271,7 +271,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [Parallax Continued](https://github.com/Gameslinx/Parallax-Continued) with its stock textures and what it
 requires, Deferred, and this mod at `logLevel = Debug`, or not: each session is here twice,
 `-without-this-mod` and `-fix`. Read in
-[the non-regression tests on Parallax](../../docs/ground/README.md#parallax).
+[the non-regression tests on Parallax](../README.md#parallax).
 
 On Parallax Continued 1.0.5, with both instruments and
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer):
@@ -281,14 +281,14 @@ On Parallax Continued 1.0.5, with both instruments and
   [`loading-a-craft-on-its-ground/`](non-regression/parallax/loading-a-craft-on-its-ground/), what the script printed and every
   line it recorded, one `KSP.log` per session (`loading-without-this-mod.log.gz`, `loading-fix.log.gz`);
   the screenshots of the tables in
-  [`imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/`](../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground).
+  [`docs/ground/imgs/non-regression/parallax/loading-a-craft-on-its-ground/`](../imgs/non-regression/parallax/loading-a-craft-on-its-ground).
 - [`approach-kerbin-tundra.sfs`](non-regression/parallax/coming-back-to-a-craft-on-its-ground/approach-kerbin-tundra.sfs) — the
   two craft of [the approach protocol](#the-approach-protocol) in the tundra of Kerbin, at 72° north.
   Six round trips by `run-approach.py --heading 135`: `approach-*` in
   [`coming-back-to-a-craft-on-its-ground/`](non-regression/parallax/coming-back-to-a-craft-on-its-ground/), with the
   `KSP.log`, what the script printed and every line it recorded; the screenshots of the tables, trip by
   trip, in
-  [`imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground/`](../../imgs/ground/non-regression/parallax/coming-back-to-a-craft-on-its-ground).
+  [`docs/ground/imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground/`](../imgs/non-regression/parallax/coming-back-to-a-craft-on-its-ground).
 
 ## On Real Solar System
 
@@ -298,7 +298,7 @@ unless said otherwise. This mod ran at `logLevel = Debug`, so each log also hold
 placed, with how far it was moved. The sessions marked *first safeguard* ran with its first version,
 a fixed metre, and hold the line where it refused part of Earth's terrain.
 
-Two saves are only used by [The ground workaround](../../docs/ground/non-regression/real-solar-system/the-ground-workaround.md),
+Two saves are only used by [The ground workaround](../non-regression/real-solar-system/the-ground-workaround.md),
 next to the two of [The loading protocol](#the-loading-protocol):
 
 - [`reload-moon-rss.sfs`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss.sfs) —
@@ -373,11 +373,11 @@ With this mod:
   added to the install: one session, a small rocket launched from the VAB onto the launchpad at Cape
   Canaveral, then flown towards orbit, the flight started over three times. The launch was saved
   afterwards as [`rss-launch-to-earth-orbit.sfs`](limits/stock/the-seam-between-subdivision-levels/rss-launch-to-earth-orbit.sfs), which needs MechJeb2
-  to load. Used in [The seam between subdivision levels](../../docs/ground/limits/stock/the-seam-between-subdivision-levels.md).
+  to load. Used in [The seam between subdivision levels](../limits/stock/the-seam-between-subdivision-levels.md).
 
 [The approach protocol](#the-approach-protocol) on the Moon, with both instruments and
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) added, read in
-[Coming back to a craft left parked, on the Moon](../../docs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon.md):
+[Coming back to a craft left parked, on the Moon](../non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon.md):
 
 - [`approach-moon-rss.sfs`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-rss.sfs) —
   the two craft of the approach protocol in the Sea of Tranquillity, the rover set for the low gravity of
@@ -397,12 +397,12 @@ With this mod:
   and every line it recorded in
   [`approach-moon-fix-lines.json`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-fix-lines.json).
 - The screenshots of the tables, trip by trip, in
-  [`imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/`](../../imgs/ground/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon).
+  [`docs/ground/imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/`](../imgs/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon).
 
-[The switching protocol](../../docs/ground/checking/switching-protocol.md) on the Moon, the switch
+[The switching protocol](../checking/switching-protocol.md) on the Moon, the switch
 made as the map view's *Switch To* does, with both instruments and
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) added, read in
-[Switching to a craft left parked, on the Moon](../../docs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon.md):
+[Switching to a craft left parked, on the Moon](../non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon.md):
 
 - [`switch-moon-rss.sfs`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-rss.sfs) —
   the two craft of `approach-moon-rss.sfs`, the rover driven about 3 km due south, flown, the capsule its
@@ -426,4 +426,4 @@ made as the map view's *Switch To* does, with both instruments and
   and every line it recorded in
   [`switch-moon-fix-workaround-built-out-lines.json`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix-workaround-built-out-lines.json).
 - The screenshots of the tables, and of the scene after each switch, in
-  [`imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/`](../../imgs/ground/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon).
+  [`docs/ground/imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/`](../imgs/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon).

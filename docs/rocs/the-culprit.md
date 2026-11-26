@@ -3,7 +3,7 @@
 Part of [Terrain Precision Fix](../../README.md), [the ROCs](README.md#the-culprit): where the rounding strikes Breaking Ground's surface features in the stock code, and why it moves them from load to load.
 
 The rounding itself, shared with the ground, the statics and the scatter, is told once in
-[The culprit: a float at planet scale](../common/the-culprit.md). The surface features are placed the way
+[A float at planet scale](../how-ksp-builds-the-ground/README.md#a-float-at-planet-scale). The surface features are placed the way
 the scatter is ([The culprit: the scatter](../scatter/the-culprit.md)), with one difference: they carry a
 collider.
 

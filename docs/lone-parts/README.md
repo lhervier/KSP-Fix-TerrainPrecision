@@ -12,11 +12,11 @@ takes it away, how that is checked, and what is still to check.
 > a suspension higher. With the ground fixed, the parts without a suspension no longer need it, while the
 > wheels keep flying off: so this mod takes that weight away.
 
-![A wheel set down on the Mun in EVA construction, thrown into the air three seconds later](../../imgs/lone-parts/thesis.gif)
+![A wheel set down on the Mun in EVA construction, thrown into the air three seconds later](imgs/thesis.gif)
 
 *KSP 1.12 without this mod, with [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes)
 and [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) as the only mods installed. On the
-Mun, the save [`wheel-drop-mun.sfs`](../../diag/lone-parts/checking/wheel-drop/wheel-drop-mun.sfs): in EVA
+Mun, the save [`wheel-drop-mun.sfs`](diag/checking/wheel-drop/wheel-drop-mun.sfs): in EVA
 construction, Récas Kerman takes a wheel off the crane and sets it down on the ground a few metres away,
 nothing touched afterwards. The countdown, added to the film, runs from the moment the wheel is let go to
 the moment it moves.*
@@ -26,7 +26,7 @@ the moment it moves.*
 EVA construction puts parts on the ground all the time: a wheel taken off a rover, a strut or a battery
 set down for later. Seeing them bounce into the air and come down on the base is not pleasant.
 
-![The same wheel set down on the Mun with this mod: it tips onto its side and stays there](../../imgs/lone-parts/with-mod.gif)
+![The same wheel set down on the Mun with this mod: it tips onto its side and stays there](imgs/with-mod.gif)
 
 *The film above, played again with this mod installed: KSP 1.12 with this mod,
 [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes) and
@@ -84,7 +84,7 @@ which plays the protocols.
   **→ Full chapter: [Checking parts lying alone: on the runway](checking/runway.md)**
 
 The saves, the scripts and the `KSP.log` of every session are in
-[the runs of parts lying alone](../../diag/lone-parts/README.md).
+[the runs of parts lying alone](diag/README.md).
 
 ## Limits and solutions
 

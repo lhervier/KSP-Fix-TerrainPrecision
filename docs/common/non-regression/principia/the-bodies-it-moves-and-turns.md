@@ -40,7 +40,7 @@ for every session below; `KSP.log` alone does not show that Principia runs.
 
 **Loading the same save.** [The loading protocol](../../../ground/checking/loading-protocol.md),
 played by its script,
-[`run-loading.py`](../../../../diag/ground/automation/run-loading.py),
+[`run-loading.py`](../../../ground/diag/automation/run-loading.py),
 on its four saves: a capsule on a small tank, on flat ground on Kerbin, the Mun, Minmus and
 Gilly, each loaded six times. Spread over the six loads:
 
@@ -58,8 +58,8 @@ loads of this series happened to fall within 0.28 mm.
 
 **In flight.** [The protocol of the quads of the highest level, in flight](../../../ground/checking/flight-protocol.md)
 read by KSP Diag - Terrain Quads, with KSP Diag - Floating Origin, played by its script,
-[`run-flight.py`](../../../../diag/ground/automation/run-flight.py),
-and read by [`analyse-flight.py`](../../../../diag/ground/automation/analyse-flight.py): `Quad-Rocket` launched from the launchpad of the Space Center, one
+[`run-flight.py`](../../../ground/diag/automation/run-flight.py),
+and read by [`analyse-flight.py`](../../../ground/diag/automation/analyse-flight.py): `Quad-Rocket` launched from the launchpad of the Space Center, one
 *Log* about every second until it falls into the sea. Both flights start from the same game, which holds
 no state of Principia yet. Under Principia the rocket goes a little higher and faster than without it:
 84 *Logs* without this mod and 83 with it, up to 1,142 m and 1,126 m, into the sea at 738 m/s and 732 m/s,
@@ -79,4 +79,4 @@ this mod ([Checking the ground: in flight](../../../ground/checking/flight.md#on
 mod, the same median and 90th percentile, and 0.15 mm more at the very largest. Under
 100 m/s, nothing moved either way. The log shows no warning and no error from this mod.
 
-The logs and the readings are in [`diag/common/non-regression/principia/the-bodies-it-moves-and-turns/`](../../../../diag/common/README.md#with-principia).
+The logs and the readings are in [`docs/common/diag/non-regression/principia/the-bodies-it-moves-and-turns/`](../../diag/README.md#with-principia).

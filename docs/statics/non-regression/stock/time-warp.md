@@ -48,7 +48,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - T
 with its defaults at `logLevel = Debug`. Then the same without this mod.
 
 *Played by a script.* [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) plays the test through
-[`diag/statics/automation/run-time-warp.py`](../../../../diag/statics/automation/run-time-warp.py), the rover in the
+[`docs/statics/diag/automation/run-time-warp.py`](../../diag/automation/run-time-warp.py), the rover in the
 `Ships/SPH` folder of the game: it starts the game itself from the main menu, and takes a screenshot of the
 table of Diag Terrain Height at the end. *Warp To* is the one of the
 map view, or of an alarm. Every step is one a player can take: the test plays just as well by hand.
@@ -81,7 +81,7 @@ The logs with this mod and without it show no error.
 
 The logs, what the script printed, every line of Diag Terrain Height and a screenshot of its table, for
 both sessions, are in
-[`diag/statics/non-regression/stock/time-warp/`](../../../../diag/statics/README.md#the-time-warp-protocol).
+[`docs/statics/diag/non-regression/stock/time-warp/`](../../diag/README.md#the-time-warp-protocol).
 
 ## In flight, low over a static
 
@@ -90,8 +90,8 @@ both sessions, are in
 The static is a launch pad placed with [Kerbal Konstructs](https://github.com/KSP-RO/Kerbal-Konstructs)
 1.12.3 (*KSC LaunchPad lv 1*, of its *Squad KSC* statics): stock has no static on the Mun a craft can stand
 on. It stands near the highest point of the Mun's equator, at latitude −0.2773°, longitude −132.9521°, with a
-capsule landed on it. The save is [`warp-static-mun-kk.sfs`](../../../../diag/statics/non-regression/stock/time-warp/warp-static-mun-kk.sfs), and
-the launch pad is in [`diag/statics/non-regression/stock/time-warp/warp-static-mun-kk/`](../../../../diag/statics/non-regression/stock/time-warp/warp-static-mun-kk/), to copy into the
+capsule landed on it. The save is [`warp-static-mun-kk.sfs`](../../diag/non-regression/stock/time-warp/warp-static-mun-kk.sfs), and
+the launch pad is in [`docs/statics/diag/non-regression/stock/time-warp/warp-static-mun-kk/`](../../diag/non-regression/stock/time-warp/warp-static-mun-kk/), to copy into the
 `GameData` of KSP with Kerbal Konstructs installed. Then:
 
 1. the save loaded;
@@ -117,7 +117,7 @@ CustomPreLaunchChecks, KSP Diag - Terrain Height, and this mod with its defaults
 the same without this mod.
 
 *Played by a script*,
-[`diag/statics/automation/run-time-warp-flyover.py`](../../../../diag/statics/automation/run-time-warp-flyover.py), the save and
+[`docs/statics/diag/automation/run-time-warp-flyover.py`](../../diag/automation/run-time-warp-flyover.py), the save and
 the rover in the game, and a screenshot of the table of Diag Terrain Height at the end. The same holds:
 every step is one a player can take.
 
@@ -150,4 +150,4 @@ show the same four errors, as the save is first loaded, before this mod takes an
 
 The logs, what the script printed, every line of Diag Terrain Height and a screenshot of its table, for both
 sessions, are in
-[`diag/statics/non-regression/stock/time-warp/`](../../../../diag/statics/README.md#the-time-warp-flyover-protocol).
+[`docs/statics/diag/non-regression/stock/time-warp/`](../../diag/README.md#the-time-warp-flyover-protocol).

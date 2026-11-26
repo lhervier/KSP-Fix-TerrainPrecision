@@ -22,7 +22,7 @@ A new career at the Custom difficulty, set up for the two craft below to be buil
 funds and science (500 000 and 5 000), funds penalties at 10 %, *Bypass Entry Purchase After Research* on;
 the Research and Development upgraded twice, to its last level, and the nodes the craft need researched;
 every other facility at its first level. On Kerbin, that career is
-[`career-with-the-parts.sfs`](../../../../diag/statics/non-regression/stock/destroyed-buildings/career-with-the-parts.sfs): copied as `persistent.sfs` into
+[`career-with-the-parts.sfs`](../../diag/non-regression/stock/destroyed-buildings/career-with-the-parts.sfs): copied as `persistent.sfs` into
 a new folder of `saves`, it opens at the space centre. A craft on the launchpad, then, in turn, leaving the
 flight and coming back to the craft each time:
 
@@ -53,14 +53,14 @@ with its defaults at `logLevel = Debug`; on Earth, Real Solar System 20.1.3.0 an
 mod.
 
 *Played by a script.* [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) plays the test through
-[`diag/statics/automation/run-scene-changes.py`](../../../../diag/statics/automation/run-scene-changes.py), with
+[`docs/statics/diag/automation/run-scene-changes.py`](../../diag/automation/run-scene-changes.py), with
 [`Diag3-Rocket.craft`](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/craft/Diag3-Rocket.craft)
 in the `Ships/VAB` folder of the game and
 [`Diag3-Rover.craft`](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/craft/Diag3-Rover.craft)
 in its `Ships/SPH` folder: it starts and sets up the career itself from the main menu, and closes the
 guide of a new career by its button wherever it shows; it takes a screenshot of the table of Diag Terrain
 Height at the end. Each way of leaving the flight is a script of its
-own, in [`diag/statics/automation/scene-changes/`](../../../../diag/statics/automation/scene-changes/), that can also be played
+own, in [`docs/statics/diag/automation/scene-changes/`](../../diag/automation/scene-changes/), that can also be played
 alone. Every step is one a player can take: the test
 plays just as well by hand, pressing *Record* of Diag Terrain Height at each arrival.
 
@@ -116,7 +116,7 @@ the game, and none of them about the statics:
 
 - on Kerbin and on Earth, a `NullReferenceException` of the Knowledge Base when the map view changes its
   focus (`KnowledgeBase.OnMapFocusChange`), which an earlier session on Earth without this mod shows too
-  ([`scene-changes-earth-rss-without-this-mod-earlier.log`](../../../../diag/statics/non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-earlier.log)),
+  ([`scene-changes-earth-rss-without-this-mod-earlier.log`](../../diag/non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-earlier.log)),
   and so does the session of [Destroyed buildings](destroyed-buildings.md) without this mod;
 - on Earth, as KSP quits at the end of the session, a `NullReferenceException` of the tooltip of a crew
   hatch (`CrewHatchController.HideTooltip`);
@@ -129,4 +129,4 @@ session, a bug of the game without this mod, which a script going straight on wo
 KSP-Util-MCPServer hands the script back at the space centre only once its camera has taken its place.
 
 The logs, what the script printed, every line of Diag Terrain Height and a screenshot of its table are in
-[`diag/statics/non-regression/stock/scene-changes/`](../../../../diag/statics/README.md#the-scene-changes-protocol).
+[`docs/statics/diag/non-regression/stock/scene-changes/`](../../diag/README.md#the-scene-changes-protocol).

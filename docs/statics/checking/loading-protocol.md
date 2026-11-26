@@ -18,7 +18,7 @@ at every loading.
 
 ## The save
 
-[`runway-kerbin.sfs`](../../../diag/statics/checking/loading/runway-kerbin.sfs), a sandbox game of KSP
+[`runway-kerbin.sfs`](../diag/checking/loading/runway-kerbin.sfs), a sandbox game of KSP
 1.12.5. Copy it into the folder of a sandbox game and load it from that game. It holds two identical
 craft, each a Mk1 command pod on an empty FL-T100 tank:
 
@@ -38,14 +38,14 @@ slide.
 
 ### The same on the Mun, with a runway placed by a mod
 
-[`runway-mun-kk.sfs`](../../../diag/statics/checking/loading/runway-mun-kk.sfs) holds the same two
+[`runway-mun-kk.sfs`](../diag/checking/loading/runway-mun-kk.sfs) holds the same two
 craft on the Mun, beside a runway placed there by
 [Kerbal Konstructs](https://github.com/KSP-RO/Kerbal-Konstructs) 1.12.3, the mod players use to add
 bases of their own. The runway is the one of the KSC, which the mod offers as a model.
 
 The save alone does not hold the runway: Kerbal Konstructs keeps it in two files of its own. Install
 Kerbal Konstructs and what it requires, copy the `GameData` folder of
-[`diag/statics/checking/loading/runway-mun-kk/`](../../../diag/statics/checking/loading/runway-mun-kk/GameData/KerbalKonstructs/NewInstances/)
+[`docs/statics/diag/checking/loading/runway-mun-kk/`](../diag/checking/loading/runway-mun-kk/GameData/KerbalKonstructs/NewInstances/)
 into the folder of KSP so that it merges with the `GameData` there, then copy and load the save as
 above. It holds:
 
@@ -64,15 +64,15 @@ stay the same if nothing moved.
 **1. Load the save.** You are flying the craft on the grass. Wait for **Settled** to stop moving, then
 press *Record*.
 
-![The save just loaded: flying the craft on the grass, the runway 152 m away](../../../imgs/statics/checking/loading-protocol/00-grass-record.png)
+![The save just loaded: flying the craft on the grass, the runway 152 m away](../imgs/checking/loading-protocol/00-grass-record.png)
 
 **2. Switch to the craft on the runway** with `[`, one of the game's two default *switch vessel* keys.
 
-![Switching vessel from the craft on the grass](../../../imgs/statics/checking/loading-protocol/10-next-vessel.png)
+![Switching vessel from the craft on the grass](../imgs/checking/loading-protocol/10-next-vessel.png)
 
 Give it three to five seconds, then press *Record*.
 
-![After the switch: flying the craft on the runway, one line already recorded](../../../imgs/statics/checking/loading-protocol/20-runway-record.png)
+![After the switch: flying the craft on the runway, one line already recorded](../imgs/checking/loading-protocol/20-runway-record.png)
 
 **3. Load the same save again**, and repeat steps 1 and 2 — six times in all, two lines each time,
 always in the same order.
@@ -100,7 +100,7 @@ reads under the target when one is set, as Diag LandedVessel does: keep the save
 
 ## Played by a script
 
-[`diag/statics/automation/run-runway.py`](../../../diag/statics/automation/run-runway.py) plays the protocol above, step
+[`docs/statics/diag/automation/run-runway.py`](../diag/automation/run-runway.py) plays the protocol above, step
 for step, and takes the screenshots. It drives KSP through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent to it over
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
@@ -108,7 +108,7 @@ install. Anyone can read it top to bottom: it follows the three steps above in t
 
 1. Install KSP-Util-MCPServer next to both instruments — and this mod, for the series with it: the script
    records in both windows at the same moment. Copy
-   [the save](../../../diag/statics/checking/loading/runway-kerbin.sfs) into a sandbox game, start KSP
+   [the save](../diag/checking/loading/runway-kerbin.sfs) into a sandbox game, start KSP
    and wait for the main menu.
 2. Run `python run-runway.py --folder <your sandbox game> --loads 6 --out screenshots`. On the Mun, add
    `--save runway-mun-kk`, with Kerbal Konstructs installed and the two files of its runway copied into

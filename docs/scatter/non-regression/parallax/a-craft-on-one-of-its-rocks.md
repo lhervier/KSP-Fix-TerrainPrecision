@@ -17,25 +17,25 @@ it requires, Deferred, both instruments,
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol; this mod with its
 defaults (at `logLevel = Debug`), or not.
 
-**The save**, [`capsule-on-a-rock-mun.sfs`](../../../../diag/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock-mun.sfs):
+**The save**, [`capsule-on-a-rock-mun.sfs`](../../diag/non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock-mun.sfs):
 a Mk1 capsule on an empty FL-T100 fuel tank, landed on top of a rock of the Mun. A craft of two parts on
 purpose: KSP puts a craft of a single part back down on whatever is under it at every load
 (`Vessel.CheckGroundCollision`), which would hide where the rock came back.
 
-![The capsule on its rock of the Mun, with KSP Diag - Colliders outlining the collider of the rock](../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock.jpg)
+![The capsule on its rock of the Mun, with KSP Diag - Colliders outlining the collider of the rock](../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock.jpg)
 
 *The capsule on its rock, with [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders)
 outlining the collider Parallax gives the rock; taken with Parallax Continued 1.0.4 rebuilt to orient the
 rock as 1.0.5 does.*
 
 **The protocol**: [the loading protocol](../../../ground/checking/loading-protocol.md), played by its
-script, [`run-loading.py`](../../../../diag/ground/automation/run-loading.py), with time played between the loads:
+script, [`run-loading.py`](../../../ground/diag/automation/run-loading.py), with time played between the loads:
 the save loaded twelve times, with an hour of game time of time warp before each load
 (`--loads 12 --warp 3600`), both instruments recording at each load. Then KSP started again, and the same
 twelve loads. Each session is played without this mod, then with it.
 
 The hour of time warp makes KSP turn the body in the scene by the time played before each load
-([Why it is different at every load](../../../ground/the-culprit.md#why-it-is-different-at-every-load)): the rock
+([A frame that moves: the floating origin](../../../how-ksp-builds-the-ground/README.md#a-frame-that-moves-the-floating-origin)): the rock
 and the ground under it are placed again from another orientation of the body.
 
 ## In figures
@@ -60,22 +60,22 @@ and the top of the rock comes back at one of two heights, 2.5 mm apart: at loads
 ten. The capsule follows it, *Moved* from −2.6 to +0.1 mm.
 
 <p class="thumbs">
-<a href="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on its rock, twelve loads an hour apart" width="96"></a>
-<a href="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-without-this-mod.jpg" alt="Without this mod, the top of the rock under the capsule, twelve loads an hour apart" width="96"></a>
-<a href="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-fix.jpg"><img src="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-fix.jpg" alt="With this mod, the capsule on its rock, twelve loads an hour apart" width="96"></a>
-<a href="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-fix.jpg"><img src="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-fix.jpg" alt="With this mod, the top of the rock under the capsule, twelve loads an hour apart" width="96"></a>
+<a href="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on its rock, twelve loads an hour apart" width="96"></a>
+<a href="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-without-this-mod.jpg" alt="Without this mod, the top of the rock under the capsule, twelve loads an hour apart" width="96"></a>
+<a href="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-fix.jpg" alt="With this mod, the capsule on its rock, twelve loads an hour apart" width="96"></a>
+<a href="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-fix.jpg" alt="With this mod, the top of the rock under the capsule, twelve loads an hour apart" width="96"></a>
 </p>
 
 <details>
 <summary>The tables of the first session</summary>
 
-![Without this mod, the capsule on its rock, twelve loads an hour apart](../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-without-this-mod.jpg)
+![Without this mod, the capsule on its rock, twelve loads an hour apart](../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-without-this-mod.jpg)
 
-![Without this mod, the top of the rock under the capsule, twelve loads an hour apart](../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-without-this-mod.jpg)
+![Without this mod, the top of the rock under the capsule, twelve loads an hour apart](../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-without-this-mod.jpg)
 
-![With this mod, the capsule on its rock, twelve loads an hour apart](../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-fix.jpg)
+![With this mod, the capsule on its rock, twelve loads an hour apart](../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-landed-vessel-fix.jpg)
 
-![With this mod, the top of the rock under the capsule, twelve loads an hour apart](../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-fix.jpg)
+![With this mod, the top of the rock under the capsule, twelve loads an hour apart](../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session1-terrain-height-fix.jpg)
 
 </details>
 
@@ -86,24 +86,24 @@ without this mod as with it. With this mod, the rock comes back at the same two 
 session.
 
 <p class="thumbs">
-<a href="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-without-this-mod.jpg" alt="Without this mod, after a restart, the capsule on its rock" width="96"></a>
-<a href="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-without-this-mod.jpg" alt="Without this mod, after a restart, the top of the rock under the capsule" width="96"></a>
-<a href="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-fix.jpg"><img src="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-fix.jpg" alt="With this mod, after a restart, the capsule on its rock" width="96"></a>
-<a href="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-fix.jpg"><img src="../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-fix.jpg" alt="With this mod, after a restart, the top of the rock under the capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-without-this-mod.jpg" alt="Without this mod, after a restart, the capsule on its rock" width="96"></a>
+<a href="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-without-this-mod.jpg" alt="Without this mod, after a restart, the top of the rock under the capsule" width="96"></a>
+<a href="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-fix.jpg" alt="With this mod, after a restart, the capsule on its rock" width="96"></a>
+<a href="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-fix.jpg" alt="With this mod, after a restart, the top of the rock under the capsule" width="96"></a>
 </p>
 
 <details>
 <summary>The tables of the second session</summary>
 
-![Without this mod, after a restart, the capsule on its rock](../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-without-this-mod.jpg)
+![Without this mod, after a restart, the capsule on its rock](../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-without-this-mod.jpg)
 
-![Without this mod, after a restart, the top of the rock under the capsule](../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-without-this-mod.jpg)
+![Without this mod, after a restart, the top of the rock under the capsule](../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-without-this-mod.jpg)
 
-![With this mod, after a restart, the capsule on its rock](../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-fix.jpg)
+![With this mod, after a restart, the capsule on its rock](../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-landed-vessel-fix.jpg)
 
-![With this mod, after a restart, the top of the rock under the capsule](../../../../imgs/scatter/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-fix.jpg)
+![With this mod, after a restart, the top of the rock under the capsule](../../imgs/non-regression/parallax/a-craft-on-one-of-its-rocks/session2-terrain-height-fix.jpg)
 
 </details>
 
 The logs, what the script printed and every line it recorded are in
-[`diag`](../../../../diag/scatter/README.md#with-parallax).
+[`diag`](../../diag/README.md#with-parallax).

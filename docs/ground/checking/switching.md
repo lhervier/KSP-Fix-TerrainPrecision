@@ -16,11 +16,11 @@ Two craft landed 1.97 km apart on Kerbin. The save is loaded while flying the ro
 loaded too, but packed, held where the save put it. Then the game's *switch vessel* key flies the
 capsule, and physics takes it over. Six rounds, each starting by loading the same save. It is
 [the switching protocol](switching-protocol.md), with a save made without this
-mod, played by its script, [`run-switching.py`](../../../diag/ground/automation/run-switching.py), once without this
+mod, played by its script, [`run-switching.py`](../diag/automation/run-switching.py), once without this
 mod and once with it, both instruments recording at the same moments. The sessions are logged in
-[`switching-stock.log`](../../../diag/ground/checking/switching/switching-stock.log) and
-[`switching-fix.log`](../../../diag/ground/checking/switching/switching-fix.log), with what the script
-printed and every line it recorded beside them ([`diag`](../../../diag/ground/README.md#the-switching-protocol)).
+[`switching-stock.log`](../diag/checking/switching/switching-stock.log) and
+[`switching-fix.log`](../diag/checking/switching/switching-fix.log), with what the script
+printed and every line it recorded beside them ([`diag`](../diag/README.md#the-switching-protocol)).
 
 **→ Full chapter: [The protocol: switching to a craft far away](switching-protocol.md)**
 
@@ -29,7 +29,7 @@ printed and every line it recorded beside them ([`diag`](../../../diag/ground/RE
 **On stock.** The first line of each round is taken as the save opens, flying the rover, the second a
 few seconds after switching to the capsule; the bottom line is the reading in progress, not a record:
 
-![Without this mod, six rounds of loading the save and switching to the capsule, read by Diag LandedVessel](../../../imgs/ground/checking/switching/landed-vessel/six-rounds-stock.png)
+![Without this mod, six rounds of loading the save and switching to the capsule, read by Diag LandedVessel](../imgs/checking/switching/landed-vessel/six-rounds-stock.png)
 
 As the save opens, *On rails* reads the same height on all six rounds, 600,065,127.486 mm, and *Moved*
 reads `0.000`: the capsule is still held where the save put it, with nothing to move it yet. *Moved*,
@@ -44,7 +44,7 @@ once the switch has handed the capsule to physics:
 rails* still reads the same height, within a thousandth of a millimetre. The first line of each round
 is taken as the save opens, the second after the switch:
 
-![With this mod, six rounds of loading the save and switching to the capsule, read by Diag LandedVessel](../../../imgs/ground/checking/switching/landed-vessel/six-rounds-fix.png)
+![With this mod, six rounds of loading the save and switching to the capsule, read by Diag LandedVessel](../imgs/checking/switching/landed-vessel/six-rounds-fix.png)
 
 The capsule comes to rest across a spread of 112.0 mm without this mod, and 0.028 mm with it.
 
@@ -53,7 +53,7 @@ The capsule comes to rest across a spread of 112.0 mm without this mod, and 0.02
 **On stock.** The first line of each round is taken as the save opens, flying the rover, the second a
 few seconds after switching to the capsule; the bottom line is the reading in progress, not a record:
 
-![Without this mod, six rounds of loading the save and switching to the capsule, read by Diag TerrainHeight](../../../imgs/ground/checking/switching/terrain-height/six-rounds-stock.png)
+![Without this mod, six rounds of loading the save and switching to the capsule, read by Diag TerrainHeight](../imgs/checking/switching/terrain-height/six-rounds-stock.png)
 
 The height KSP computes reads 64,784.828 mm on all twelve lines. *Difference*, as the save opens:
 
@@ -67,7 +67,7 @@ thousandths of a millimetre.
 
 **With this mod**, in that same install, the same session:
 
-![With this mod, six rounds of loading the save and switching to the capsule, read by Diag TerrainHeight](../../../imgs/ground/checking/switching/terrain-height/six-rounds-fix.png)
+![With this mod, six rounds of loading the save and switching to the capsule, read by Diag TerrainHeight](../imgs/checking/switching/terrain-height/six-rounds-fix.png)
 
 All twelve lines, before and after the switch, read between −1.694 and −1.696 mm.
 

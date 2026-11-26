@@ -42,17 +42,17 @@ move, where the script, parking on the same spots, finds no change at all.
 
 ## The save
 
-[`driving-runway-kerbin.sfs`](../../../diag/statics/checking/driving/driving-runway-kerbin.sfs) holds
-[`Diag2-Rover`](../../../diag/ground/checking/driving/Diag2-Rover.craft) alone, on the grass by the
+[`driving-runway-kerbin.sfs`](../diag/checking/driving/driving-runway-kerbin.sfs) holds
+[`Diag2-Rover`](../../ground/diag/checking/driving/Diag2-Rover.craft) alone, on the grass by the
 north edge of the runway of the KSC, near its western end, at latitude −0.0416°, longitude −74.7263°,
 facing east. No target is set.
 
-[`driving-runway-earth-rss.sfs`](../../../diag/statics/checking/driving/driving-runway-earth-rss.sfs) is
+[`driving-runway-earth-rss.sfs`](../diag/checking/driving/driving-runway-earth-rss.sfs) is
 the same on Earth, in Real Solar System: the rover alone on the grass by the north edge of the runway of
 the KSC at Cape Canaveral, near its western end, about 65 m north of its axis, at latitude 28.6134°,
 longitude −80.6175°, facing east. Real Solar System has to be built without its runway fix, which keeps
 the floating origin from moving at 500 m once a craft has rolled onto the deck:
-[`rss-20.1.3-without-its-runway-fix.diff`](../../../diag/statics/non-regression/real-solar-system/the-runway-fix/rss-20.1.3-without-its-runway-fix.diff),
+[`rss-20.1.3-without-its-runway-fix.diff`](../diag/non-regression/real-solar-system/the-runway-fix/rss-20.1.3-without-its-runway-fix.diff),
 the one change to the sources of its release 20.1.3.0
 ([Real Solar System: the runway fix](../non-regression/real-solar-system/the-runway-fix.md)).
 
@@ -72,26 +72,26 @@ Then, for each move of the world:
 
 **1. Drive east along the edge**, on the grass, until **Origin distance** in Diag FloatingOrigin reads about 480 m.
 
-![Stopped on the grass by the runway, Origin distance at 485 m](../../../imgs/statics/checking/driving-protocol/010-stop-at-480m.png)
+![Stopped on the grass by the runway, Origin distance at 485 m](../imgs/checking/driving-protocol/010-stop-at-480m.png)
 
 **2. The two spots, before the move.** Turn to face the runway: G is where you stand. Record at G, then
 drive onto the deck — P — and record there. Then back to G, record; P, record; and G once more, record.
 Diag FloatingOrigin reads 0 on each of these lines, but the first line of a series, which reads the move the game
 makes as the scene opens.
 
-![Facing the runway from the grass, at G](../../../imgs/statics/checking/driving-protocol/020-head-south-and-record.png)
+![Facing the runway from the grass, at G](../imgs/checking/driving-protocol/020-head-south-and-record.png)
 
-![On the deck, at P](../../../imgs/statics/checking/driving-protocol/040-get-on-runway-and-record.png)
+![On the deck, at P](../imgs/checking/driving-protocol/040-get-on-runway-and-record.png)
 
 **3. Past the move.** Drive on, east, until **Origin distance** drops back near zero: the world has
 moved. Stop; no record here.
 
-![Driving east past 500 m](../../../imgs/statics/checking/driving-protocol/120-head-east-past-500m.png)
+![Driving east past 500 m](../imgs/checking/driving-protocol/120-head-east-past-500m.png)
 
 **4. The two spots, after the move.** Drive back to G, record; P, record; G, record; P, record. Diag FloatingOrigin
 reads 1 on the first of these lines and 0 on the others.
 
-![Back at G after the move](../../../imgs/statics/checking/driving-protocol/130-head-north-and-record.png)
+![Back at G after the move](../imgs/checking/driving-protocol/130-head-north-and-record.png)
 
 Then drive on to the next move and do it again. **Two moves, and no more**: past the second, about
 1.5 km east of the save, the grass beside the runway is no longer flat, and the readings at a spot
@@ -121,14 +121,14 @@ ground each moved on their own.
 
 ## Played by a script
 
-[`diag/statics/automation/run-driving-runway.py`](../../../diag/statics/automation/run-driving-runway.py) plays the protocol
+[`docs/statics/diag/automation/run-driving-runway.py`](../diag/automation/run-driving-runway.py) plays the protocol
 above, step for step, and takes the screenshots. It drives KSP through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent to it over
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
 install. Anyone can read it top to bottom: it follows the four steps above in the same order.
 
 1. Install KSP-Util-MCPServer next to Diag TerrainHeight and Diag FloatingOrigin — and this mod, for the
-   series with it — copy [the save](../../../diag/statics/checking/driving/driving-runway-kerbin.sfs)
+   series with it — copy [the save](../diag/checking/driving/driving-runway-kerbin.sfs)
    into a sandbox game, start KSP and wait for the main menu.
 2. Run `python run-driving-runway.py --folder <your sandbox game> --moves 2 --out screenshots`. On
    Earth, add `--save driving-runway-earth-rss --radius 6371000`: the radius of the body turns the

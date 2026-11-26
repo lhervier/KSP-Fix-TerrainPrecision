@@ -18,7 +18,7 @@ base.transform.localPosition = planetRelativePosition;
 The `Transform` of a static hangs straight from the body's terrain sphere, whose origin is the centre of
 the body. So this is again a 600 km double stored in a float `localPosition`, with the same 62.5 mm
 step on Kerbin, converted through the same frame as the ground, which moves as described in
-[Why it is different at every load](../ground/the-culprit.md#why-it-is-different-at-every-load).
+[A frame that moves: the floating origin](../how-ksp-builds-the-ground/README.md#a-frame-that-moves-the-floating-origin).
 `PQSCity2`, which places the launch sites of the Making History expansion, does the same.
 
 One thing sets a static apart: it has nowhere else to go. Stock moves the quads a craft can stand on

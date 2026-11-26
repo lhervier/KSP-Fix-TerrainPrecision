@@ -1,9 +1,9 @@
 # What this fix costs: the runs
 
-Part of [Terrain Precision Fix](../../../README.md), [the runs of what the fixes share](../README.md).
+Part of [Terrain Precision Fix](../../../../README.md), [the runs of what the fixes share](../README.md).
 
 The logs this mod's performance figures are read from. The figures themselves, and what they say, are
-in [Performance](../../../docs/common/performance.md).
+in [Performance](../../performance.md).
 
 Two instruments, for two questions: what placing one terrain vertex costs, and what a whole frame pays.
 Every run was flown on the same save and on the same machine as the stock reference runs kept with PQS
@@ -45,7 +45,7 @@ Stock Quad Cache.
 Measured with [KSPProfiler](https://github.com/KSPModdingLibs/KSPProfiler) 1.0.0, through
 [a fork of it](https://github.com/lhervier/KSP-ExtMod-KSPProfiler) that
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) can drive, **by the procedure written in
-[Performance](../../../docs/common/performance.md#how-the-frames-were-timed)**, which also reads the figures. The runs
+[Performance](../../performance.md#how-the-frames-were-timed)**, which also reads the figures. The runs
 were flown by [this script](https://github.com/lhervier/KSP-Util-PQSBench/blob/main/perfs/automation/run-perfs.py).
 The three configurations are kept here together, because they are only ever read against each other.
 
@@ -77,7 +77,7 @@ precision`.
 
 ## The scatter fix
 
-What [the scatter fix](../../../docs/scatter/the-fix.md) costs, read in [Performance: the scatter fix](../../../docs/common/performance.md#the-scatter-fix), timed by
+What [the scatter fix](../../../scatter/the-fix.md) costs, read in [Performance: the scatter fix](../../performance.md#the-scatter-fix), timed by
 the procedure of [What a frame pays](#what-a-frame-pays), in the same session of runs: in each of its
 three rounds, right after the run of this mod, a run of this mod with the scatter fix. The scatter fix
 was then a mod of its own, Rock Precision Fix 0.1.0, installed next to this mod: the same two patches.

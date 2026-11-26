@@ -23,9 +23,9 @@ terrain fix alone; *with this mod*, as installed, its scatter fix on ([The fix: 
 scatter](../the-fix.md)).
 
 Each save is loaded twelve times per configuration, in a single session of KSP, by the script of the
-protocol, [`run-scatter-loading.py`](../../../diag/scatter/automation/run-scatter-loading.py), which records once all
+protocol, [`run-scatter-loading.py`](../diag/automation/run-scatter-loading.py), which records once all
 the holders are built and the counts have settled. The records, one file per load, are listed in
-[`diag`](../../../diag/scatter/README.md#the-scatter-the-objects-over-twelve-loads), with what the script printed:
+[`diag`](../diag/README.md#the-scatter-the-objects-over-twelve-loads), with what the script printed:
 
 - a Mk1 command pod landed on Kerbin, about 8 km north-west of the KSC, where the scatter is grass and
   trees: every record holds the same 64 quads and 118 holders, all of them built, and names the same

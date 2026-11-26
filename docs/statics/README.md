@@ -23,7 +23,7 @@ or on the runway is put back on a deck that is no longer where it was: lower, th
 higher, it starts inside the deck, and the physics engine pushes it out, upwards. A rover driving by the
 runway finds it at a new height every 500 m, and the step between the runway and the grass beside it is
 not the same from one load to the next. The coin toss is told in
-[Why the moving ground matters](../../README.md#why-the-moving-ground-matters).
+[Why the moving ground matters](../how-ksp-builds-the-ground/README.md#why-the-moving-ground-matters).
 
 ## The culprit
 
@@ -32,7 +32,7 @@ not the same from one load to the next. The coin toss is told in
 them no place outside the body where a precise position would be kept.
 
 The rounding itself, shared with the ground and the scatter, is told once in
-[The culprit: a float at planet scale](../common/the-culprit.md).
+[A float at planet scale](../how-ksp-builds-the-ground/README.md#a-float-at-planet-scale).
 
 **→ Full chapter: [The culprit: the statics](the-culprit.md)**
 
@@ -81,16 +81,16 @@ not. In each summary, the first figure is without this mod, the second with it.
   **→ Full chapter: [Checking the culprit: launching from a launch pad of Making History](checking/launch-pad.md)**
 
 The statics are not measured in flight. The saves, the scripts and the `KSP.log` of every session, both
-ways, are in [the runs of the statics](../../diag/statics/README.md).
+ways, are in [the runs of the statics](diag/README.md).
 
 ## Non-regression tests
 
 What works without this mod still works with it, one mod at a time: played in game with this mod, and
 compared with the game without it where the two have to be told apart. Unless a page says otherwise, each
 test is played in KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1 and this mod, plus
-the instrument and the mods it names. Two tests cover every fix at once, and are told in
-[what the fixes share](../common/README.md): [existing saves](../common/existing-saves.md) and
-[this mod's safeguard](../common/safeguard.md).
+the instrument and the mods it names. Two tests cover every fix at once:
+[existing saves](../common/existing-saves.md), told in [what the fixes share](../common/README.md), and
+[this mod's safeguard](../planet-frame/safeguard.md), told with [Planet Frame](../planet-frame/README.md).
 
 ### Stock
 

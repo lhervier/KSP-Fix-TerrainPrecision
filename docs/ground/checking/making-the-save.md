@@ -2,7 +2,7 @@
 
 Part of [Terrain Precision Fix](../../../README.md), [the ground](../README.md#checked), for [the loading protocol](loading-protocol.md): how to
 make a save of your own to play it on. The saves it was played on are in
-[`diag`](../../../diag/ground/README.md#the-loading-protocol); you only need this page to make another.
+[`diag`](../diag/README.md#the-loading-protocol); you only need this page to make another.
 
 **Two parts at least.** KSP treats a craft made of a single part apart: at every loading, it sets it back
 onto the ground itself, and the reading then mixes that move with the ground's. A capsule on a small
@@ -11,7 +11,7 @@ lone capsule; the steps are the same.
 
 **1. Launch the craft** — no anchor, no wheels, no landing legs.
 
-![The craft on the runway, here a lone capsule](../../../imgs/ground/checking/making-the-save/00-Launching.png)
+![The craft on the runway, here a lone capsule](../imgs/checking/making-the-save/00-Launching.png)
 
 (The window of KSP Diag - Landed Vessel is draggable — drop it wherever it does not get in the way.)
 
@@ -19,7 +19,7 @@ lone capsule; the steps are the same.
 position*, then middle-click a patch of grass just off the end of the runway. No need to go far — the
 KSC apron is conveniently flat — but you do have to be off the tarmac itself.
 
-![Setting the position from the debug menu](../../../imgs/ground/checking/making-the-save/10-cheat-position.png)
+![Setting the position from the debug menu](../imgs/checking/making-the-save/10-cheat-position.png)
 
 ⚠️ **Not on the launchpad and not on the runway.** It works there too — the numbers move just the
 same. The trouble is that they no longer say what moved. The launchpad and the runway are structures,
@@ -44,7 +44,7 @@ Screen, which leave the throttle alone.
 
 **3. Let it settle, and save once.**
 
-![Creating the save](../../../imgs/ground/checking/making-the-save/20-create-save.png)
+![Creating the save](../imgs/checking/making-the-save/20-create-save.png)
 
 If you pressed *Record* before saving — out of curiosity, while placing the craft — delete that line
 now. It was taken before the save existed, so its **On rails** value is the launch position and does

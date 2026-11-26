@@ -14,7 +14,7 @@ under the craft each time: the ray, fired from above the craft, stops on the dec
 
 ## The craft
 
-[`Capsule.craft`](../../../diag/statics/checking/launch-pad/Capsule.craft), a Mk1 command pod on an
+[`Capsule.craft`](../diag/checking/launch-pad/Capsule.craft), a Mk1 command pod on an
 FL-T100 tank, built in the Vehicle Assembly Building of KSP 1.12.5. Copy it into the `Ships/VAB` folder
 of a sandbox game. The Making History expansion must be installed: the Desert Launch Site is one of its
 launch sites.
@@ -27,11 +27,11 @@ space centre: the feet of the launch pad are looked at in daylight.
 **2. In the Vehicle Assembly Building, load the craft, choose the Desert Launch Site as the launch
 site, and launch.** Wait for the digits to stop moving, then press *Record*.
 
-![The craft on the deck of the Desert Launch Site, one line recorded](../../../imgs/statics/checking/launch-pad/table-1-stock.png)
+![The craft on the deck of the Desert Launch Site, one line recorded](../imgs/checking/launch-pad/table-1-stock.png)
 
 **3. Look at a foot of the launch pad**, where it meets the ground.
 
-![A foot of the Desert Launch Site, from the south-west of the craft](../../../imgs/statics/checking/launch-pad-protocol/10-foot.png)
+![A foot of the Desert Launch Site, from the south-west of the craft](../imgs/checking/launch-pad-protocol/10-foot.png)
 
 **4. Quit KSP**, then repeat steps 1 to 3 — six times in all, one line each time. Within one session,
 the launch pad keeps the legs it set at its first launch, and a second launch from it reads the same
@@ -41,7 +41,7 @@ One launch says nothing on its own: it is the series that is worth reading, not 
 
 ## Played by a script
 
-[`diag/statics/automation/run-launch-pad.py`](../../../diag/statics/automation/run-launch-pad.py) plays the protocol above,
+[`docs/statics/diag/automation/run-launch-pad.py`](../diag/automation/run-launch-pad.py) plays the protocol above,
 step for step, and takes the screenshots. It drives KSP through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent to it over
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
@@ -49,7 +49,7 @@ install. Anyone can read it top to bottom: it follows the four steps above in th
 
 1. Install KSP-Util-MCPServer next to Diag TerrainHeight — and this mod, for the series with it — in a KSP
    that has the Making History expansion. Copy
-   [the craft](../../../diag/statics/checking/launch-pad/Capsule.craft) into the `Ships/VAB` folder of
+   [the craft](../diag/checking/launch-pad/Capsule.craft) into the `Ships/VAB` folder of
    a sandbox game. Make sure KSP is not running: the script starts it and quits it for each launch.
 2. Run `python run-launch-pad.py --folder <your sandbox game> --launches 6 --out screenshots`. It starts
    the KSP of the environment variable `KSPDIR`; add `--ksp <the folder of KSP>` for another one.

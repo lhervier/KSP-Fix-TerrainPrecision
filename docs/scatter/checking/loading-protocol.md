@@ -11,10 +11,10 @@ protocol is the same on stock, with this mod, and with its scatter fix turned of
 Two saves of a sandbox game of KSP 1.12.5. Copy one into the folder of a sandbox game and load it from
 that game.
 
-- [`reference-kerbin.sfs`](../../../diag/scatter/checking/loading/reference-kerbin.sfs): a
+- [`reference-kerbin.sfs`](../diag/checking/loading/reference-kerbin.sfs): a
   single Mk1 command pod landed on Kerbin, about 8 km north-west of the KSC (latitude 0.2696°, longitude
   −75.2783°), where the scatter is grass and trees.
-- [`reference-mune.sfs`](../../../diag/scatter/checking/loading/reference-mune.sfs): a single
+- [`reference-mune.sfs`](../diag/checking/loading/reference-mune.sfs): a single
   Mk1 command pod landed on the Mun (latitude −12.4124°, longitude 91.7314°), where the scatter is rocks.
 
 To make your own: launch any craft, move it with `Alt+F12 → Cheats → Set Position` onto ground with
@@ -41,14 +41,14 @@ the game does not overwrite it, and the record numbers keep counting from one lo
 
 ## Played by a script
 
-[`run-scatter-loading.py`](../../../diag/scatter/automation/run-scatter-loading.py) plays this protocol through
+[`run-scatter-loading.py`](../diag/automation/run-scatter-loading.py) plays this protocol through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), with nothing but Python 3: start KSP with
 KSP-Util-MCPServer and Diag Scatter installed, copy a save into a sandbox game, wait for the main menu, then run
 `python run-scatter-loading.py --folder <your sandbox game> --save reference-kerbin --loads 12 --out out`.
 After each load, it presses *Record the rocks* every 3 s until every holder is built and the counts are the
 same twice in a row, writes the number and the closing line of the last record to `lines.json`, and never
 saves the game. The records stay in `KSP.log`;
-[`extract-scatter-records.py`](../../../diag/scatter/automation/extract-scatter-records.py) copies the last record of
+[`extract-scatter-records.py`](../diag/automation/extract-scatter-records.py) copies the last record of
 each load out of it, one file per load.
 
 ## Reading the records

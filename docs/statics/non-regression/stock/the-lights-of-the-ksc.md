@@ -26,20 +26,20 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, KSP Diag - T
 with its defaults at `logLevel = Debug`. Then the same without this mod.
 
 *Played by a script*, the one of [Time warp](time-warp.md):
-[`diag/statics/automation/run-time-warp.py`](../../../../diag/statics/automation/run-time-warp.py).
+[`docs/statics/diag/automation/run-time-warp.py`](../../diag/automation/run-time-warp.py).
 
 ## The result
 
 At night, with this mod, the KSC out of its sphere since the rover arrived on the runway: the lights along
 the runway are on, and so are the windows of the VAB and of the buildings beside it.
 
-![The KSC at night, from the runway: its lights on](../../../../imgs/statics/non-regression/stock/the-lights-of-the-ksc/time-warp-night.png)
+![The KSC at night, from the runway: its lights on](../../imgs/non-regression/stock/the-lights-of-the-ksc/time-warp-night.png)
 
 At noon, they are off:
 
-![The KSC at noon, from the runway: its lights off](../../../../imgs/statics/non-regression/stock/the-lights-of-the-ksc/time-warp-noon.png)
+![The KSC at noon, from the runway: its lights off](../../imgs/non-regression/stock/the-lights-of-the-ksc/time-warp-noon.png)
 
 Without this mod, the same screenshots show the same lights on at night and off at noon.
 
 The logs, what the script printed and every line of KSP Diag - Terrain Height, for both sessions, are in
-[`diag/statics/non-regression/stock/time-warp/`](../../../../diag/statics/README.md#the-time-warp-protocol).
+[`docs/statics/diag/non-regression/stock/time-warp/`](../../diag/README.md#the-time-warp-protocol).

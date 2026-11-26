@@ -38,7 +38,7 @@ here: no player sees it or touches it, and CommNet, the one thing it does for a 
 
 ## The save
 
-[`station-kourou-rss.sfs`](../../../../diag/statics/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs): a rover on Earth, landed at latitude
+[`station-kourou-rss.sfs`](../../diag/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs): a rover on Earth, landed at latitude
 5.23899°, longitude −53.01984°, facing east, 27.83 km due west of the ground station of Kourou (latitude
 5.23938°, longitude −52.768487°), so a little beyond the 27.5 km at which this mod takes the station out.
 
@@ -58,7 +58,7 @@ back.
 1. Copy `station-kourou-rss.sfs` into the folder of a game under `saves`, and load it.
 2. Open the part action window of the rover's cabin and read the distance of the first CommNet hop.
 3. Drive the rover due east, a little more than 500 m, to 27.3 km of the station; by hand, or with
-   [`diag/statics/automation/run-station-approach.py`](../../../../diag/statics/automation/run-station-approach.py), which
+   [`docs/statics/diag/automation/run-station-approach.py`](../../diag/automation/run-station-approach.py), which
    drives it there at 2 m/s through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) and prints
    the length of the first hop before and after.
 4. Stopped, open the part action window again and read the distance; open it once more a little later.
@@ -87,18 +87,18 @@ back.
 
 | At the start, 27.8 km | At the end, 27.3 km |
 |---|---|
-| ![The rover at 27.8 km of the station, its cabin's part action window open](../../../../imgs/statics/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-before.png) | ![The rover at 27.3 km of the station, its cabin's part action window open](../../../../imgs/statics/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-after.png) |
+| ![The rover at 27.8 km of the station, its cabin's part action window open](../../imgs/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-before.png) | ![The rover at 27.3 km of the station, its cabin's part action window open](../../imgs/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-after.png) |
 
 ## The readings
 
 Two sessions with this mod. The distance is the one the part action window of the rover's cabin shows for
 the first hop, rounded to 100 m. The station is under its sphere before the rover crosses 27.5 km, and out
-of it after. Log: [`station-kourou-rss-fix.log`](../../../../diag/statics/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss-fix.log).
+of it after. Log: [`station-kourou-rss-fix.log`](../../diag/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss-fix.log).
 
 ### The published save and script
 
-[`station-kourou-rss.sfs`](../../../../diag/statics/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs) loaded, then
-[`run-station-approach.py`](../../../../diag/statics/automation/run-station-approach.py) run: about 530 m driven east.
+[`station-kourou-rss.sfs`](../../diag/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs) loaded, then
+[`run-station-approach.py`](../../diag/automation/run-station-approach.py) run: about 530 m driven east.
 The station was taken out on the way, corrected by 111.51 mm. The floating origin shifted once on that
 leg, about 30 m before the end, so while the station was out.
 

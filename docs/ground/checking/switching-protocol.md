@@ -14,7 +14,7 @@ throughout.
 
 ## The save
 
-[`switch-kerbin.sfs`](../../../diag/ground/checking/switching/switch-kerbin.sfs), a sandbox game of
+[`switch-kerbin.sfs`](../diag/checking/switching/switch-kerbin.sfs), a sandbox game of
 KSP 1.12.5, made without this mod. Copy it into the folder of a sandbox game and load it from that
 game. It holds two craft, landed on the flat grass west of the KSC, 1.97 km apart on a north–south
 line:
@@ -37,12 +37,12 @@ where it does not slide, no suspension. The two craft must be more than 500 m ap
 **1. Load the save.** You are flying the rover, and the window reads its target, the capsule. Press
 *Record*.
 
-![The save just loaded: flying the rover, the capsule targeted 2.0 km away](../../../imgs/ground/checking/switching-protocol/00-load.png)
+![The save just loaded: flying the rover, the capsule targeted 2.0 km away](../imgs/checking/switching-protocol/00-load.png)
 
 **2. Switch to the capsule** with `]` — the game's default *switch to next vessel* key. You are now
 flying it. Give it three to five seconds, then press *Record*.
 
-![After the switch: flying the capsule, one line already recorded](../../../imgs/ground/checking/switching-protocol/10-switch.png)
+![After the switch: flying the capsule, one line already recorded](../imgs/checking/switching-protocol/10-switch.png)
 
 **3. Load the same save again**, and repeat steps 1 and 2 — six times in all, two lines each time.
 
@@ -63,14 +63,14 @@ switch. A capsule that slides moves the spot its ray is fired at.
 
 ## Played by a script
 
-[`diag/ground/automation/run-switching.py`](../../../diag/ground/automation/run-switching.py) plays the protocol above,
+[`docs/ground/diag/automation/run-switching.py`](../diag/automation/run-switching.py) plays the protocol above,
 step for step, and takes the screenshots. It drives KSP through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent to it over
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
 install. Anyone can read it top to bottom: it follows the three steps above in the same order.
 
 1. Install KSP-Util-MCPServer next to both instruments — and this mod, for the series with it — copy
-   [the save](../../../diag/ground/checking/switching/switch-kerbin.sfs) into a sandbox game, start
+   [the save](../diag/checking/switching/switch-kerbin.sfs) into a sandbox game, start
    KSP and wait for the main menu.
 2. Run `python run-switching.py --folder <your sandbox game> --rounds 6 --out screenshots`.
 

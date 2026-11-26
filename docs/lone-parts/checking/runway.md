@@ -9,9 +9,9 @@ script are those of [Loading the same save](loading.md).
 
 ## The protocol
 
-Copy [`lone-parts-runway.sfs`](../../../diag/lone-parts/checking/runway/lone-parts-runway.sfs) into the
+Copy [`lone-parts-runway.sfs`](../diag/checking/runway/lone-parts-runway.sfs) into the
 folder of a sandbox game and load it: Bill Kerman on EVA on the runway of the KSC, next to the rover of
-[`Diag2-Rover.craft`](../../../diag/lone-parts/checking/runway/Diag2-Rover.craft), and around them six parts
+[`Diag2-Rover.craft`](../diag/checking/runway/Diag2-Rover.craft), and around them six parts
 lying alone, each a craft of a single part, taken off the rover in EVA construction and dropped there: two
 OX-STAT photovoltaic panels, two Z-400 batteries and two TR-2L rover wheels. Then, by hand, ten times:
 
@@ -19,13 +19,13 @@ OX-STAT photovoltaic panels, two Z-400 batteries and two TR-2L rover wheels. The
 2. set each part as target in turn, in the order of the table below, and *Record*;
 3. clear the table before the next load.
 
-![Bill Kerman on the runway, the rover, and the parts lying around it](../../../imgs/lone-parts/checking/runway/fix-scene.jpg)
+![Bill Kerman on the runway, the rover, and the parts lying around it](../imgs/checking/runway/fix-scene.jpg)
 
 *The save loaded with this mod as installed, 5.5 seconds in.*
 
-The campaign is played by [`run-lone-parts.py`](../../../diag/lone-parts/automation/run-lone-parts.py). In
+The campaign is played by [`run-lone-parts.py`](../diag/automation/run-lone-parts.py). In
 each install, the log of the session, what the script printed and every line it recorded are in
-[`diag/lone-parts/checking/runway/`](../../../diag/lone-parts/checking/runway/). With this mod as installed,
+[`docs/lone-parts/diag/checking/runway/`](../diag/checking/runway/). With this mod as installed,
 the log has the line of the fix 60 times, once for each part at each load; none in the two other installs.
 
 ## On stock
@@ -49,40 +49,40 @@ The runway comes back at another height at every load, and the panels and the ba
 most loads, the batteries by up to 21 mm. The wheels are thrown 13 to 16 m up at every load but one.
 
 <p class="thumbs">
-<a href="../../../imgs/lone-parts/checking/runway/stock-load01.jpg"><img src="../../../imgs/lone-parts/checking/runway/stock-load01.jpg" alt="Load 1 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/stock-load02.jpg"><img src="../../../imgs/lone-parts/checking/runway/stock-load02.jpg" alt="Load 2 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/stock-load03.jpg"><img src="../../../imgs/lone-parts/checking/runway/stock-load03.jpg" alt="Load 3 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/stock-load04.jpg"><img src="../../../imgs/lone-parts/checking/runway/stock-load04.jpg" alt="Load 4 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/stock-load05.jpg"><img src="../../../imgs/lone-parts/checking/runway/stock-load05.jpg" alt="Load 5 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/stock-load06.jpg"><img src="../../../imgs/lone-parts/checking/runway/stock-load06.jpg" alt="Load 6 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/stock-load07.jpg"><img src="../../../imgs/lone-parts/checking/runway/stock-load07.jpg" alt="Load 7 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/stock-load08.jpg"><img src="../../../imgs/lone-parts/checking/runway/stock-load08.jpg" alt="Load 8 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/stock-load09.jpg"><img src="../../../imgs/lone-parts/checking/runway/stock-load09.jpg" alt="Load 9 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/stock-load10.jpg"><img src="../../../imgs/lone-parts/checking/runway/stock-load10.jpg" alt="Load 10 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/stock-load01.jpg"><img src="../imgs/checking/runway/stock-load01.jpg" alt="Load 1 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/stock-load02.jpg"><img src="../imgs/checking/runway/stock-load02.jpg" alt="Load 2 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/stock-load03.jpg"><img src="../imgs/checking/runway/stock-load03.jpg" alt="Load 3 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/stock-load04.jpg"><img src="../imgs/checking/runway/stock-load04.jpg" alt="Load 4 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/stock-load05.jpg"><img src="../imgs/checking/runway/stock-load05.jpg" alt="Load 5 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/stock-load06.jpg"><img src="../imgs/checking/runway/stock-load06.jpg" alt="Load 6 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/stock-load07.jpg"><img src="../imgs/checking/runway/stock-load07.jpg" alt="Load 7 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/stock-load08.jpg"><img src="../imgs/checking/runway/stock-load08.jpg" alt="Load 8 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/stock-load09.jpg"><img src="../imgs/checking/runway/stock-load09.jpg" alt="Load 9 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/stock-load10.jpg"><img src="../imgs/checking/runway/stock-load10.jpg" alt="Load 10 on stock, read by Diag LandedVessel: one line per part" width="96"></a>
 </p>
 
 <details>
 <summary>The 10 screenshots</summary>
 
-![Load 1 on stock, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/stock-load01.jpg)
+![Load 1 on stock, read by Diag LandedVessel: one line per part](../imgs/checking/runway/stock-load01.jpg)
 
-![Load 2 on stock, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/stock-load02.jpg)
+![Load 2 on stock, read by Diag LandedVessel: one line per part](../imgs/checking/runway/stock-load02.jpg)
 
-![Load 3 on stock, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/stock-load03.jpg)
+![Load 3 on stock, read by Diag LandedVessel: one line per part](../imgs/checking/runway/stock-load03.jpg)
 
-![Load 4 on stock, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/stock-load04.jpg)
+![Load 4 on stock, read by Diag LandedVessel: one line per part](../imgs/checking/runway/stock-load04.jpg)
 
-![Load 5 on stock, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/stock-load05.jpg)
+![Load 5 on stock, read by Diag LandedVessel: one line per part](../imgs/checking/runway/stock-load05.jpg)
 
-![Load 6 on stock, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/stock-load06.jpg)
+![Load 6 on stock, read by Diag LandedVessel: one line per part](../imgs/checking/runway/stock-load06.jpg)
 
-![Load 7 on stock, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/stock-load07.jpg)
+![Load 7 on stock, read by Diag LandedVessel: one line per part](../imgs/checking/runway/stock-load07.jpg)
 
-![Load 8 on stock, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/stock-load08.jpg)
+![Load 8 on stock, read by Diag LandedVessel: one line per part](../imgs/checking/runway/stock-load08.jpg)
 
-![Load 9 on stock, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/stock-load09.jpg)
+![Load 9 on stock, read by Diag LandedVessel: one line per part](../imgs/checking/runway/stock-load09.jpg)
 
-![Load 10 on stock, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/stock-load10.jpg)
+![Load 10 on stock, read by Diag LandedVessel: one line per part](../imgs/checking/runway/stock-load10.jpg)
 
 </details>
 
@@ -105,40 +105,40 @@ The batteries never go above where they start; the panels go 107 mm up and fall 
 same to the tenth of a millimetre. The wheels are still thrown 13 to 14 m up, at every load but one each.
 
 <p class="thumbs">
-<a href="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load01.jpg"><img src="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load01.jpg" alt="Load 1 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load02.jpg"><img src="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load02.jpg" alt="Load 2 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load03.jpg"><img src="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load03.jpg" alt="Load 3 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load04.jpg"><img src="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load04.jpg" alt="Load 4 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load05.jpg"><img src="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load05.jpg" alt="Load 5 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load06.jpg"><img src="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load06.jpg" alt="Load 6 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load07.jpg"><img src="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load07.jpg" alt="Load 7 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load08.jpg"><img src="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load08.jpg" alt="Load 8 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load09.jpg"><img src="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load09.jpg" alt="Load 9 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load10.jpg"><img src="../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load10.jpg" alt="Load 10 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/no-lone-part-mass-load01.jpg"><img src="../imgs/checking/runway/no-lone-part-mass-load01.jpg" alt="Load 1 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/no-lone-part-mass-load02.jpg"><img src="../imgs/checking/runway/no-lone-part-mass-load02.jpg" alt="Load 2 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/no-lone-part-mass-load03.jpg"><img src="../imgs/checking/runway/no-lone-part-mass-load03.jpg" alt="Load 3 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/no-lone-part-mass-load04.jpg"><img src="../imgs/checking/runway/no-lone-part-mass-load04.jpg" alt="Load 4 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/no-lone-part-mass-load05.jpg"><img src="../imgs/checking/runway/no-lone-part-mass-load05.jpg" alt="Load 5 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/no-lone-part-mass-load06.jpg"><img src="../imgs/checking/runway/no-lone-part-mass-load06.jpg" alt="Load 6 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/no-lone-part-mass-load07.jpg"><img src="../imgs/checking/runway/no-lone-part-mass-load07.jpg" alt="Load 7 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/no-lone-part-mass-load08.jpg"><img src="../imgs/checking/runway/no-lone-part-mass-load08.jpg" alt="Load 8 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/no-lone-part-mass-load09.jpg"><img src="../imgs/checking/runway/no-lone-part-mass-load09.jpg" alt="Load 9 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/no-lone-part-mass-load10.jpg"><img src="../imgs/checking/runway/no-lone-part-mass-load10.jpg" alt="Load 10 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part" width="96"></a>
 </p>
 
 <details>
 <summary>The 10 screenshots</summary>
 
-![Load 1 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load01.jpg)
+![Load 1 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../imgs/checking/runway/no-lone-part-mass-load01.jpg)
 
-![Load 2 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load02.jpg)
+![Load 2 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../imgs/checking/runway/no-lone-part-mass-load02.jpg)
 
-![Load 3 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load03.jpg)
+![Load 3 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../imgs/checking/runway/no-lone-part-mass-load03.jpg)
 
-![Load 4 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load04.jpg)
+![Load 4 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../imgs/checking/runway/no-lone-part-mass-load04.jpg)
 
-![Load 5 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load05.jpg)
+![Load 5 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../imgs/checking/runway/no-lone-part-mass-load05.jpg)
 
-![Load 6 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load06.jpg)
+![Load 6 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../imgs/checking/runway/no-lone-part-mass-load06.jpg)
 
-![Load 7 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load07.jpg)
+![Load 7 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../imgs/checking/runway/no-lone-part-mass-load07.jpg)
 
-![Load 8 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load08.jpg)
+![Load 8 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../imgs/checking/runway/no-lone-part-mass-load08.jpg)
 
-![Load 9 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load09.jpg)
+![Load 9 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../imgs/checking/runway/no-lone-part-mass-load09.jpg)
 
-![Load 10 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/no-lone-part-mass-load10.jpg)
+![Load 10 with this mod and fixLonePartMass = false, read by Diag LandedVessel: one line per part](../imgs/checking/runway/no-lone-part-mass-load10.jpg)
 
 </details>
 
@@ -161,44 +161,44 @@ The batteries and the panels read as with `fixLonePartMass = false`, panels incl
 23 mm up, and none is thrown.
 
 <p class="thumbs">
-<a href="../../../imgs/lone-parts/checking/runway/fix-load01.jpg"><img src="../../../imgs/lone-parts/checking/runway/fix-load01.jpg" alt="Load 1 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/fix-load02.jpg"><img src="../../../imgs/lone-parts/checking/runway/fix-load02.jpg" alt="Load 2 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/fix-load03.jpg"><img src="../../../imgs/lone-parts/checking/runway/fix-load03.jpg" alt="Load 3 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/fix-load04.jpg"><img src="../../../imgs/lone-parts/checking/runway/fix-load04.jpg" alt="Load 4 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/fix-load05.jpg"><img src="../../../imgs/lone-parts/checking/runway/fix-load05.jpg" alt="Load 5 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/fix-load06.jpg"><img src="../../../imgs/lone-parts/checking/runway/fix-load06.jpg" alt="Load 6 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/fix-load07.jpg"><img src="../../../imgs/lone-parts/checking/runway/fix-load07.jpg" alt="Load 7 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/fix-load08.jpg"><img src="../../../imgs/lone-parts/checking/runway/fix-load08.jpg" alt="Load 8 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/fix-load09.jpg"><img src="../../../imgs/lone-parts/checking/runway/fix-load09.jpg" alt="Load 9 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
-<a href="../../../imgs/lone-parts/checking/runway/fix-load10.jpg"><img src="../../../imgs/lone-parts/checking/runway/fix-load10.jpg" alt="Load 10 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/fix-load01.jpg"><img src="../imgs/checking/runway/fix-load01.jpg" alt="Load 1 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/fix-load02.jpg"><img src="../imgs/checking/runway/fix-load02.jpg" alt="Load 2 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/fix-load03.jpg"><img src="../imgs/checking/runway/fix-load03.jpg" alt="Load 3 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/fix-load04.jpg"><img src="../imgs/checking/runway/fix-load04.jpg" alt="Load 4 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/fix-load05.jpg"><img src="../imgs/checking/runway/fix-load05.jpg" alt="Load 5 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/fix-load06.jpg"><img src="../imgs/checking/runway/fix-load06.jpg" alt="Load 6 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/fix-load07.jpg"><img src="../imgs/checking/runway/fix-load07.jpg" alt="Load 7 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/fix-load08.jpg"><img src="../imgs/checking/runway/fix-load08.jpg" alt="Load 8 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/fix-load09.jpg"><img src="../imgs/checking/runway/fix-load09.jpg" alt="Load 9 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
+<a href="../imgs/checking/runway/fix-load10.jpg"><img src="../imgs/checking/runway/fix-load10.jpg" alt="Load 10 with this mod as installed, read by Diag LandedVessel: one line per part" width="96"></a>
 </p>
 
 <details>
 <summary>The 10 screenshots</summary>
 
-![Load 1 with this mod as installed, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/fix-load01.jpg)
+![Load 1 with this mod as installed, read by Diag LandedVessel: one line per part](../imgs/checking/runway/fix-load01.jpg)
 
-![Load 2 with this mod as installed, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/fix-load02.jpg)
+![Load 2 with this mod as installed, read by Diag LandedVessel: one line per part](../imgs/checking/runway/fix-load02.jpg)
 
-![Load 3 with this mod as installed, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/fix-load03.jpg)
+![Load 3 with this mod as installed, read by Diag LandedVessel: one line per part](../imgs/checking/runway/fix-load03.jpg)
 
-![Load 4 with this mod as installed, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/fix-load04.jpg)
+![Load 4 with this mod as installed, read by Diag LandedVessel: one line per part](../imgs/checking/runway/fix-load04.jpg)
 
-![Load 5 with this mod as installed, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/fix-load05.jpg)
+![Load 5 with this mod as installed, read by Diag LandedVessel: one line per part](../imgs/checking/runway/fix-load05.jpg)
 
-![Load 6 with this mod as installed, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/fix-load06.jpg)
+![Load 6 with this mod as installed, read by Diag LandedVessel: one line per part](../imgs/checking/runway/fix-load06.jpg)
 
-![Load 7 with this mod as installed, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/fix-load07.jpg)
+![Load 7 with this mod as installed, read by Diag LandedVessel: one line per part](../imgs/checking/runway/fix-load07.jpg)
 
-![Load 8 with this mod as installed, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/fix-load08.jpg)
+![Load 8 with this mod as installed, read by Diag LandedVessel: one line per part](../imgs/checking/runway/fix-load08.jpg)
 
-![Load 9 with this mod as installed, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/fix-load09.jpg)
+![Load 9 with this mod as installed, read by Diag LandedVessel: one line per part](../imgs/checking/runway/fix-load09.jpg)
 
-![Load 10 with this mod as installed, read by Diag LandedVessel: one line per part](../../../imgs/lone-parts/checking/runway/fix-load10.jpg)
+![Load 10 with this mod as installed, read by Diag LandedVessel: one line per part](../imgs/checking/runway/fix-load10.jpg)
 
 </details>
 
-![The same scene 5.5 seconds into a load, on stock and with this mod](../../../imgs/lone-parts/checking/runway/stock-fix-scenes.jpg)
+![The same scene 5.5 seconds into a load, on stock and with this mod](../imgs/checking/runway/stock-fix-scenes.jpg)
 
 *5.5 seconds into the second load: on stock, left; with this mod as installed, right.*
 

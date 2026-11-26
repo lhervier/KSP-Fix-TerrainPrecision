@@ -29,7 +29,7 @@ collider: a kerbal or a part resting on one moves with it. The terrain fix makes
 moving, the holders do not.
 
 The rounding itself, shared with the ground, the statics and the scatter, is told once in
-[The culprit: a float at planet scale](../common/the-culprit.md).
+[A float at planet scale](../how-ksp-builds-the-ground/README.md#a-float-at-planet-scale).
 
 **→ Full chapter: [The culprit: the ROCs](the-culprit.md)**
 
@@ -57,7 +57,7 @@ with the Breaking Ground expansion, Harmony, ModuleManager, KSP Community Fixes 
   **→ Full chapter: [Checking the ROCs: loading the same save](checking/loading.md)**
 
 The saves, the scripts and the readings of every session are in
-[the runs of the ROCs](../../diag/rocs/README.md).
+[the runs of the ROCs](diag/README.md).
 
 ## Work in progress
 

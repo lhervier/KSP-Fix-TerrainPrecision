@@ -18,11 +18,11 @@ it requires, Deferred, both instruments,
 defaults (at `logLevel = Debug`), or not.
 
 **The protocol**: [the loading protocol](../../checking/loading-protocol.md), played by its
-script, [`run-loading.py`](../../../../diag/ground/automation/run-loading.py), on three of its saves, made without
+script, [`run-loading.py`](../../diag/automation/run-loading.py), on three of its saves, made without
 Parallax: a Mk1 capsule on a flat FL-T100 tank, landed on
-[Kerbin](../../../../diag/ground/checking/loading/reload-kerbin-2parts.sfs),
-[Minmus](../../../../diag/ground/checking/loading/reload-minmus-2parts.sfs) and
-[Gilly](../../../../diag/ground/checking/loading/reload-gilly-2parts.sfs). Each save loaded six times
+[Kerbin](../../diag/checking/loading/reload-kerbin-2parts.sfs),
+[Minmus](../../diag/checking/loading/reload-minmus-2parts.sfs) and
+[Gilly](../../diag/checking/loading/reload-gilly-2parts.sfs). Each save loaded six times
 without this mod, then six times with it, both instruments recording at each load.
 
 ## Kerbin and Minmus
@@ -41,42 +41,42 @@ Spread over the six loads, read off the screenshots below:
 | *Ground under craft* (KSP Diag - Terrain Height) | 72.913 mm | 0.005 mm | 13.879 mm | 0.017 mm |
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Kerbin, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Kerbin, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-fix.jpg" alt="With this mod, the capsule on Kerbin, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Kerbin, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Kerbin, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Kerbin, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-fix.jpg" alt="With this mod, the capsule on Kerbin, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Kerbin, six loads" width="96"></a>
 </p>
 
 <details>
 <summary>The tables of Kerbin</summary>
 
-![Without this mod, the capsule on Kerbin, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-without-this-mod.jpg)
+![Without this mod, the capsule on Kerbin, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-without-this-mod.jpg)
 
-![Without this mod, the ground under the capsule on Kerbin, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-without-this-mod.jpg)
+![Without this mod, the ground under the capsule on Kerbin, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-without-this-mod.jpg)
 
-![With this mod, the capsule on Kerbin, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-fix.jpg)
+![With this mod, the capsule on Kerbin, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-landed-vessel-fix.jpg)
 
-![With this mod, the ground under the capsule on Kerbin, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-fix.jpg)
+![With this mod, the ground under the capsule on Kerbin, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/kerbin-terrain-height-fix.jpg)
 
 </details>
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Minmus, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Minmus, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-fix.jpg" alt="With this mod, the capsule on Minmus, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Minmus, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Minmus, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Minmus, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-fix.jpg" alt="With this mod, the capsule on Minmus, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Minmus, six loads" width="96"></a>
 </p>
 
 <details>
 <summary>The tables of Minmus</summary>
 
-![Without this mod, the capsule on Minmus, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-without-this-mod.jpg)
+![Without this mod, the capsule on Minmus, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-without-this-mod.jpg)
 
-![Without this mod, the ground under the capsule on Minmus, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-without-this-mod.jpg)
+![Without this mod, the ground under the capsule on Minmus, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-without-this-mod.jpg)
 
-![With this mod, the capsule on Minmus, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-fix.jpg)
+![With this mod, the capsule on Minmus, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-landed-vessel-fix.jpg)
 
-![With this mod, the ground under the capsule on Minmus, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-fix.jpg)
+![With this mod, the ground under the capsule on Minmus, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/minmus-terrain-height-fix.jpg)
 
 </details>
 
@@ -87,30 +87,30 @@ right there, around the tank. The capsule goes off rails inside them at every lo
 Gilly, nothing holds it back: *Moved* from +105.9 to +112.4 m without this mod, and from +108.1 to
 +112.2 m with it. The test reads nothing there, without this mod as with it.
 
-![The capsule on Gilly, the game paused right after a load, with KSP Diag - Colliders outlining the colliders of two groups of rocks around the tank](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-rocks.jpg)
+![The capsule on Gilly, the game paused right after a load, with KSP Diag - Colliders outlining the colliders of two groups of rocks around the tank](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-rocks.jpg)
 
 *The save of Gilly loaded without this mod, the game paused right after the load, with
 [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) installed.*
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Gilly, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Gilly, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-fix.jpg" alt="With this mod, the capsule on Gilly, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Gilly, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Gilly, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Gilly, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-fix.jpg" alt="With this mod, the capsule on Gilly, six loads" width="96"></a>
+<a href="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-fix.jpg"><img src="../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Gilly, six loads" width="96"></a>
 </p>
 
 <details>
 <summary>The tables of Gilly</summary>
 
-![Without this mod, the capsule on Gilly, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-without-this-mod.jpg)
+![Without this mod, the capsule on Gilly, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-without-this-mod.jpg)
 
-![Without this mod, the ground under the capsule on Gilly, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-without-this-mod.jpg)
+![Without this mod, the ground under the capsule on Gilly, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-without-this-mod.jpg)
 
-![With this mod, the capsule on Gilly, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-fix.jpg)
+![With this mod, the capsule on Gilly, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-landed-vessel-fix.jpg)
 
-![With this mod, the ground under the capsule on Gilly, six loads](../../../../imgs/ground/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-fix.jpg)
+![With this mod, the ground under the capsule on Gilly, six loads](../../imgs/non-regression/parallax/loading-a-craft-on-its-ground/gilly-terrain-height-fix.jpg)
 
 </details>
 
 The logs, what the script printed and every line it recorded are in
-[`diag`](../../../../diag/ground/README.md#with-parallax).
+[`diag`](../../diag/README.md#with-parallax).

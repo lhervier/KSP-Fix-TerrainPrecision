@@ -32,7 +32,7 @@ below:
   component returning at the top of its `Start`, before it subscribes to anything, as it does when
   `WorldStabilizer` is loaded; it logs `[RSS-VGPE] VesselGroundPositionEnhancer neutralized` instead. The
   version of the assembly is set to that of the release
-  ([`rss-20.1.3-without-its-ground-workaround.diff`](../../../../diag/ground/non-regression/real-solar-system/the-ground-workaround/rss-20.1.3-without-its-ground-workaround.diff)).
+  ([`rss-20.1.3-without-its-ground-workaround.diff`](../../diag/non-regression/real-solar-system/the-ground-workaround/rss-20.1.3-without-its-ground-workaround.diff)).
 
 **When it runs.** It runs whenever a landed craft goes off rails, which a craft does wherever the game
 sets it down: when a save is loaded, when a craft comes back within 200 m of a craft left parked, when
@@ -66,7 +66,7 @@ instead. A `Moving Vessel` line is added whenever either pass moved the craft.
 The series marked *by script* follow
 [the loading protocol](../../checking/loading-protocol.md) instead: six loads, each
 read by KSP Diag - Landed Vessel and KSP Diag - Terrain Height, played by its script,
-[`run-loading.py`](../../../../diag/ground/automation/run-loading.py), through
+[`run-loading.py`](../../diag/automation/run-loading.py), through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer). Nobody watches the craft there: what they
 tell is what the two instruments read and the lines of `KSP.log`.
 
@@ -91,12 +91,12 @@ tell is what the two instruments read and the lines of `KSP.log`.
 Without this mod, read by Diag LandedVessel. With the workaround turned off, the first load of
 `reload-moon-rss.sfs` was enough:
 
-![The first load of reload-moon-rss.sfs, on the Moon, without this mod, Real Solar System's workaround turned off](../../../../imgs/ground/non-regression/real-solar-system/the-ground-workaround/10-moon-workaround-off-stock.png)
+![The first load of reload-moon-rss.sfs, on the Moon, without this mod, Real Solar System's workaround turned off](../../imgs/non-regression/real-solar-system/the-ground-workaround/10-moon-workaround-off-stock.png)
 
 With the workaround on, the same save loaded again and again in another session, fourteen loads, all
 recorded:
 
-![Fourteen loads of reload-moon-rss.sfs, on the Moon, without this mod, Real Solar System as released](../../../../imgs/ground/non-regression/real-solar-system/the-ground-workaround/20-moon-14-loads-stock.png)
+![Fourteen loads of reload-moon-rss.sfs, on the Moon, without this mod, Real Solar System as released](../../imgs/non-regression/real-solar-system/the-ground-workaround/20-moon-14-loads-stock.png)
 
 | load | *Moved* | what the craft did |
 |---|---|---|
@@ -119,11 +119,11 @@ Where the craft tipped over, *Moved* reads the height of a craft lying on its si
 settled: over the twelve loads where it stayed upright, the craft came to rest across 341.2 mm. Here is
 the third load, after its *Record*:
 
-![The third of the fourteen loads, on the Moon, without this mod, the craft tipped over](../../../../imgs/ground/non-regression/real-solar-system/the-ground-workaround/25-moon-tipped-over-stock.png)
+![The third of the fourteen loads, on the Moon, without this mod, the craft tipped over](../../imgs/non-regression/real-solar-system/the-ground-workaround/25-moon-tipped-over-stock.png)
 
 On Earth, with the craft *landed*, where the workaround runs at every load, by script:
 
-![Six loads of reload-earth-rss-landed.sfs, on Earth, without this mod, Real Solar System as released](../../../../imgs/ground/non-regression/real-solar-system/the-ground-workaround/40-earth-landed-stock.png)
+![Six loads of reload-earth-rss-landed.sfs, on Earth, without this mod, Real Solar System as released](../../imgs/non-regression/real-solar-system/the-ground-workaround/40-earth-landed-stock.png)
 
 *Without this mod, Real Solar System as released, Diag LandedVessel: six loads of
 `reload-earth-rss-landed.sfs`, played by `run-loading.py`. `KSP.log` holds a `Moving Vessel` line for
@@ -164,7 +164,7 @@ and switching to one far away
 **Without the workaround, this mod keeps the craft in place on its own.** On the Moon, the workaround
 off, over six loads read by Diag LandedVessel:
 
-![Six loads on the Moon, with this mod and without Real Solar System's workaround](../../../../imgs/ground/non-regression/real-solar-system/the-ground-workaround/30-moon-fix.png)
+![Six loads on the Moon, with this mod and without Real Solar System's workaround](../../imgs/non-regression/real-solar-system/the-ground-workaround/30-moon-fix.png)
 
 *With this mod, Real Solar System's workaround off, Diag LandedVessel: six loads of `reload-moon-rss-resave.sfs`,
 a spread of 0.364 mm, against 0.395 mm with it on.*
@@ -173,7 +173,7 @@ The workaround built out, by script, six loads on the Moon and six on Earth with
 where the workaround would otherwise run at every load: the craft came to rest across 0.653 mm and
 0.312 mm, and no `Moving Vessel` line was logged. On Earth:
 
-![Six loads of reload-earth-rss-landed.sfs, on Earth, with this mod and Real Solar System built without its workaround](../../../../imgs/ground/non-regression/real-solar-system/the-ground-workaround/45-earth-landed-workaround-off-fix.png)
+![Six loads of reload-earth-rss-landed.sfs, on Earth, with this mod and Real Solar System built without its workaround](../../imgs/non-regression/real-solar-system/the-ground-workaround/45-earth-landed-workaround-off-fix.png)
 
 *With this mod, Real Solar System built without its workaround, Diag LandedVessel: six loads of
 `reload-earth-rss-landed.sfs`, played by `run-loading.py`.*
@@ -182,17 +182,17 @@ The workaround may well have other uses, outside the scope of this fix.
 
 ## The saves
 
-- [`reload-moon-rss.sfs`](../../../../diag/ground/non-regression/real-solar-system/the-ground-workaround/reload-moon-rss.sfs),
+- [`reload-moon-rss.sfs`](../../diag/non-regression/real-solar-system/the-ground-workaround/reload-moon-rss.sfs),
   made without this mod, and
-  [`reload-moon-rss-resave.sfs`](../../../../diag/ground/checking/loading/reload-moon-rss-resave.sfs),
+  [`reload-moon-rss-resave.sfs`](../../diag/checking/loading/reload-moon-rss-resave.sfs),
   the same craft saved again at a later load — the Moon, latitude 28.61°, longitude −80.62°, on flat
   ground;
-- [`reload-earth-rss-resave.sfs`](../../../../diag/ground/checking/loading/reload-earth-rss-resave.sfs)
-  and [`reload-earth-rss-landed.sfs`](../../../../diag/ground/non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed.sfs) —
+- [`reload-earth-rss-resave.sfs`](../../diag/checking/loading/reload-earth-rss-resave.sfs)
+  and [`reload-earth-rss-landed.sfs`](../../diag/non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed.sfs) —
   Earth, latitude 28.611°, longitude −80.619°, on the grass about 1.4 km west of the KSC, 74 m above
   sea level.
   `reload-earth-rss-landed.sfs` is `reload-earth-rss-resave.sfs` with one line changed in the file:
   the situation of the craft, from `PRELAUNCH` to `LANDED`, the situation in which the workaround runs.
 
 Copy a save into the folder of a sandbox game and load it from that game. The logs of every series of
-this page are listed in [`diag`](../../../../diag/ground/README.md#on-real-solar-system).
+this page are listed in [`diag`](../../diag/README.md#on-real-solar-system).

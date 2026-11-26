@@ -19,7 +19,7 @@ can be followed from one *Log* to the next, and compared with its neighbours.
 - **[KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin)**, beside it, to
   watch the world move during the flight: its **Shifts** column counts the moves. The *Log* counts them
   too, in its file, so it is a help, not a need.
-- **The craft**, [`Quad-Rocket`](../../../diag/ground/checking/flight/Quad-Rocket.craft): a command pod
+- **The craft**, [`Quad-Rocket`](../diag/checking/flight/Quad-Rocket.craft): a command pod
   on two fuel tanks and a single engine, with two fins and a parachute that is never opened, held on the
   launchpad by a launch clamp, and built leaning about 49° from the vertical, towards the east, so that
   it flies a low curve over the sea rather than straight up. Copy it into the `Ships/VAB` folder of a
@@ -33,14 +33,14 @@ Kerbin, it lasts about 70 seconds, up to about 950 m and 650 m/s, into the sea e
 1. On the launchpad, open the cheats (`Alt+F12`, *Cheats*) and turn on *Infinite Propellant* and
    *Infinite Electricity*. Turn SAS on (`T`) and the throttle to full (`Z`).
 
-   ![The craft on the launchpad, SAS on, before the first stage](../../../imgs/ground/checking/flight-protocol/00-launchpad.png)
+   ![The craft on the launchpad, SAS on, before the first stage](../imgs/checking/flight-protocol/00-launchpad.png)
 
    *KSP 1.12.5 with KSP Community Fixes, KSP Diag - Terrain Quads and KSP Diag - Floating Origin:
    `Quad-Rocket` on the launchpad, SAS on, the throttle at full, the stages still to come on the left.*
 
 2. Press the space bar once: the engine lights, and the launch clamp still holds the craft. Press *Log*.
 
-   ![The engine lit, the craft still held, and the first Log](../../../imgs/ground/checking/flight-protocol/10-first-log.png)
+   ![The engine lit, the craft still held, and the first Log](../imgs/checking/flight-protocol/10-first-log.png)
 
    *The same, the first stage activated, right after the first Log: its line, under the button, and the
    Shifts column of KSP Diag - Floating Origin.*
@@ -51,12 +51,12 @@ Kerbin, it lasts about 70 seconds, up to about 950 m and 650 m/s, into the sea e
    starts moving every frame: Diag FloatingOrigin's **Shifts** column runs up, and so does the count of
    moves in the line of each *Log*.
 
-   ![The first Log after the world moved more than once](../../../imgs/ground/checking/flight-protocol/20-shifts.png)
+   ![The first Log after the world moved more than once](../imgs/checking/flight-protocol/20-shifts.png)
 
    *The same flight, the first Log after which the world had moved more than once since the previous
    one.*
 
-   ![The last Log of the flight](../../../imgs/ground/checking/flight-protocol/30-last-log.png)
+   ![The last Log of the flight](../imgs/checking/flight-protocol/30-last-log.png)
 
    *The same flight, the last Log, as the craft hits the sea.*
 
@@ -66,7 +66,7 @@ again, which starts a new pair at its first *Log*.
 ## Reading the two files
 
 The figures of [Checking the ground: in flight](flight.md) were computed by
-[`diag/ground/automation/analyse-flight.py`](../../../diag/ground/automation/analyse-flight.py), which needs nothing but
+[`docs/ground/diag/automation/analyse-flight.py`](../diag/automation/analyse-flight.py), which needs nothing but
 Python 3:
 
 ```
@@ -94,13 +94,13 @@ the same can be done by hand for a few quads.
 
 ## Played by a script
 
-[`diag/ground/automation/run-flight.py`](../../../diag/ground/automation/run-flight.py) plays the steps above. It drives
+[`docs/ground/diag/automation/run-flight.py`](../diag/automation/run-flight.py) plays the steps above. It drives
 KSP through [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), a mod that answers requests sent
 to it over HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no
 package to install. Anyone can read it top to bottom: it follows the steps above in the same order.
 
 1. Install KSP-Util-MCPServer next to KSP Diag - Terrain Quads — and this mod, for the flight with it — copy
-   [`Quad-Rocket.craft`](../../../diag/ground/checking/flight/Quad-Rocket.craft) into the `Ships/VAB`
+   [`Quad-Rocket.craft`](../diag/checking/flight/Quad-Rocket.craft) into the `Ships/VAB`
    folder of a sandbox game, start KSP and wait for the main menu.
 2. Run `python run-flight.py --folder <your sandbox game> --craft VAB/Quad-Rocket.craft --out flight --quit`.
 

@@ -47,23 +47,11 @@ but also slightly bent.
 
 ## Why it is different at every load
 
-A rounding only depends on the value being rounded, and `vertRel` and `positionPlanet` are exactly the
-same doubles on every load of a save. What changes is the frame they are converted into: the world
-matrix of the terrain sphere, itself held in float.
-
-- Its **rotation** is the orientation of the body in the world frame, `CelestialBody.directRotAngle`.
-  Stock splits the rotation of a body between that angle and `Planetarium.InverseRotAngle`
-  (`CelestialBody.CBUpdate`), and saves neither. When a save is loaded, the jump of the clock back to
-  the date of the save goes into `directRotAngle`, which comes back off by the rotation of the body over
-  the time played since that save, or since the previous load
-  ([measured with KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/docs/the-measurements-loading.md)).
-- Its **translation** is the position of the body relative to the floating origin, which moves every
-  time the active craft travels 500 m — except while another landed craft is loaded nearby: the origin
-  then waits, and catches up all at once when that craft is unloaded
-  ([measured with KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin/blob/main/docs/the-measurements-parked-craft.md)).
-
-At 600 km, turning the frame by a thousandth of a degree moves a point by more than 10 m, some 170
-float steps: the slightest change draws a whole new set of roundings.
+`vertRel` and `positionPlanet` are exactly the same doubles on every load of a save. What changes is the
+frame they are converted into, the world matrix of the terrain sphere: its rotation comes back different
+from every load, and its translation moves with the floating origin. How and when is told once, for the
+ground and everything it carries, in
+[A frame that moves: the floating origin](../how-ksp-builds-the-ground/README.md#a-frame-that-moves-the-floating-origin).
 
 That the frame changes at every load is measured. That this change is what draws a new rounding is
 read from the stock code and consistent with every measurement taken since; it has not been tested on

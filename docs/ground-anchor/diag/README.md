@@ -1,6 +1,6 @@
 # The runs: the ground anchor
 
-Part of [Terrain Precision Fix](../../README.md), [the ground anchor](../../docs/ground-anchor/README.md): the saves, the scripts and the `KSP.log` of every session, without this mod and with it. The scripts are in [`automation/`](automation).
+Part of [Terrain Precision Fix](../../../README.md), [the ground anchor](../README.md): the saves, the scripts and the `KSP.log` of every session, without this mod and with it. The scripts are in [`automation/`](automation).
 
 ## The ground anchor protocol
 
@@ -12,7 +12,7 @@ ground anchor on the desert of Kerbin beside the rover of [`Diag3-Rover.craft`](
 alone, then with one of the rover's batteries attached on top of it; quicksave and quickload twice,
 played by hand. Three sessions: without this mod, with this mod and `fixGroundAnchorLoad = false`, and with
 this mod as installed. Read in
-[Checking the culprit: anchoring a base](../../docs/ground-anchor/checking/anchoring.md).
+[Checking the culprit: anchoring a base](../checking/anchoring.md).
 
 - [`ground-anchor-kerbin-without-this-mod.log`](checking/anchoring/ground-anchor-kerbin-without-this-mod.log), which
   holds a first placement, given up, before the two measured;
@@ -25,7 +25,7 @@ Below 50 frames per second: the same install, *Frame Limit* at 30 and KSP-Util-M
 played by [`automation/run-anchor-on-a-static.py`](automation/run-anchor-on-a-static.py) with `--from-save`
 and `--only base`. Three sessions: without this mod, with this mod and `fixGroundAnchorRivet = false`, and
 with this mod as installed. Read in
-[Checking the culprit: anchoring a base, below 50 frames per second](../../docs/ground-anchor/checking/anchoring.md#below-50-frames-per-second).
+[Checking the culprit: anchoring a base, below 50 frames per second](../checking/anchoring.md#below-50-frames-per-second).
 
 - without this mod: [`anchor-rivet-30fps-without-this-mod.log`](checking/anchoring/anchor-rivet-30fps-without-this-mod.log), with what the script
   printed in [`anchor-rivet-30fps-without-this-mod-script.txt`](checking/anchoring/anchor-rivet-30fps-without-this-mod-script.txt) and the readings
@@ -45,7 +45,7 @@ launched from the SPH onto the runway of the KSC, then in another game onto the 
 Airfield, Bill Kerman aboard with his inventory emptied; Bill places an anchor alone and an anchor with a
 battery on it, by hand; then [`automation/run-anchor-on-a-static.py`](automation/run-anchor-on-a-static.py)
 reads both anchors as placed, and after each of five quicksaves and quickloads. Played again without this
-mod. Read in [An anchor on a static](../../docs/ground-anchor/non-regression/stock/an-anchor-on-a-static.md).
+mod. Read in [An anchor on a static](../non-regression/stock/an-anchor-on-a-static.md).
 
 - [`anchor-on-a-static-with-this-mod.log`](non-regression/stock/an-anchor-on-a-static/anchor-on-a-static-with-this-mod.log), one session for
   both runways, the Desert Airfield first, followed by three more quicksaves and quickloads there that are

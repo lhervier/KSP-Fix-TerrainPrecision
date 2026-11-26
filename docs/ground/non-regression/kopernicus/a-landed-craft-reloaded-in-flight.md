@@ -30,12 +30,12 @@ Integrator 1.2.10, KSPTextureLoader 1.0.36), both instruments,
 defaults (at `logLevel = Debug`), or not.
 
 **The protocol**: [the loading protocol](../../checking/loading-protocol.md), played by its
-script, [`run-loading.py`](../../../../diag/ground/automation/run-loading.py), on its four saves: a Mk1
+script, [`run-loading.py`](../../diag/automation/run-loading.py), on its four saves: a Mk1
 capsule on a flat FL-T100 tank, landed on
-[Kerbin](../../../../diag/ground/checking/loading/reload-kerbin-2parts.sfs),
-[the Mun](../../../../diag/ground/checking/loading/reload-mune-2parts.sfs),
-[Minmus](../../../../diag/ground/checking/loading/reload-minmus-2parts.sfs) and
-[Gilly](../../../../diag/ground/checking/loading/reload-gilly-2parts.sfs). Each save loaded six times
+[Kerbin](../../diag/checking/loading/reload-kerbin-2parts.sfs),
+[the Mun](../../diag/checking/loading/reload-mune-2parts.sfs),
+[Minmus](../../diag/checking/loading/reload-minmus-2parts.sfs) and
+[Gilly](../../diag/checking/loading/reload-gilly-2parts.sfs). Each save loaded six times
 without this mod, then six times with it, both instruments recording at each load.
 
 **By eye**: each save loaded ten times in a row, ten seconds apart, while a player watched the capsule and
@@ -66,82 +66,82 @@ In the log with this mod, its safeguard never fired, and every body was reported
 double precision.
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Kerbin, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Kerbin, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-fix.jpg" alt="With this mod, the capsule on Kerbin, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Kerbin, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Kerbin, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Kerbin, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-fix.jpg" alt="With this mod, the capsule on Kerbin, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-fix.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Kerbin, six loads" width="96"></a>
 </p>
 
 <details>
 <summary>The tables of Kerbin</summary>
 
-![Without this mod, the capsule on Kerbin, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-without-this-mod.jpg)
+![Without this mod, the capsule on Kerbin, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-without-this-mod.jpg)
 
-![Without this mod, the ground under the capsule on Kerbin, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-without-this-mod.jpg)
+![Without this mod, the ground under the capsule on Kerbin, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-without-this-mod.jpg)
 
-![With this mod, the capsule on Kerbin, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-fix.jpg)
+![With this mod, the capsule on Kerbin, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-landed-vessel-fix.jpg)
 
-![With this mod, the ground under the capsule on Kerbin, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-fix.jpg)
+![With this mod, the ground under the capsule on Kerbin, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/kerbin-terrain-height-fix.jpg)
 
 </details>
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on the Mun, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on the Mun, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-fix.jpg" alt="With this mod, the capsule on the Mun, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on the Mun, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on the Mun, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on the Mun, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-fix.jpg" alt="With this mod, the capsule on the Mun, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-fix.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on the Mun, six loads" width="96"></a>
 </p>
 
 <details>
 <summary>The tables of the Mun</summary>
 
-![Without this mod, the capsule on the Mun, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-without-this-mod.jpg)
+![Without this mod, the capsule on the Mun, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-without-this-mod.jpg)
 
-![Without this mod, the ground under the capsule on the Mun, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-without-this-mod.jpg)
+![Without this mod, the ground under the capsule on the Mun, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-without-this-mod.jpg)
 
-![With this mod, the capsule on the Mun, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-fix.jpg)
+![With this mod, the capsule on the Mun, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-landed-vessel-fix.jpg)
 
-![With this mod, the ground under the capsule on the Mun, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-fix.jpg)
+![With this mod, the ground under the capsule on the Mun, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/mune-terrain-height-fix.jpg)
 
 </details>
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Minmus, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Minmus, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-fix.jpg" alt="With this mod, the capsule on Minmus, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Minmus, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Minmus, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Minmus, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-fix.jpg" alt="With this mod, the capsule on Minmus, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-fix.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Minmus, six loads" width="96"></a>
 </p>
 
 <details>
 <summary>The tables of Minmus</summary>
 
-![Without this mod, the capsule on Minmus, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-without-this-mod.jpg)
+![Without this mod, the capsule on Minmus, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-without-this-mod.jpg)
 
-![Without this mod, the ground under the capsule on Minmus, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-without-this-mod.jpg)
+![Without this mod, the ground under the capsule on Minmus, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-without-this-mod.jpg)
 
-![With this mod, the capsule on Minmus, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-fix.jpg)
+![With this mod, the capsule on Minmus, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-landed-vessel-fix.jpg)
 
-![With this mod, the ground under the capsule on Minmus, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-fix.jpg)
+![With this mod, the ground under the capsule on Minmus, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/minmus-terrain-height-fix.jpg)
 
 </details>
 
 <p class="thumbs">
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Gilly, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-without-this-mod.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Gilly, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-fix.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-fix.jpg" alt="With this mod, the capsule on Gilly, six loads" width="96"></a>
-<a href="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-fix.jpg"><img src="../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Gilly, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-without-this-mod.jpg" alt="Without this mod, the capsule on Gilly, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the capsule on Gilly, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-fix.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-fix.jpg" alt="With this mod, the capsule on Gilly, six loads" width="96"></a>
+<a href="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-fix.jpg"><img src="../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-fix.jpg" alt="With this mod, the ground under the capsule on Gilly, six loads" width="96"></a>
 </p>
 
 <details>
 <summary>The tables of Gilly</summary>
 
-![Without this mod, the capsule on Gilly, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-without-this-mod.jpg)
+![Without this mod, the capsule on Gilly, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-without-this-mod.jpg)
 
-![Without this mod, the ground under the capsule on Gilly, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-without-this-mod.jpg)
+![Without this mod, the ground under the capsule on Gilly, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-without-this-mod.jpg)
 
-![With this mod, the capsule on Gilly, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-fix.jpg)
+![With this mod, the capsule on Gilly, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-landed-vessel-fix.jpg)
 
-![With this mod, the ground under the capsule on Gilly, six loads](../../../../imgs/ground/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-fix.jpg)
+![With this mod, the ground under the capsule on Gilly, six loads](../../imgs/non-regression/kopernicus/a-landed-craft-reloaded-in-flight/gilly-terrain-height-fix.jpg)
 
 </details>
 
@@ -152,4 +152,4 @@ around it stayed whole and still while the flight loaded. Without it, on Kerbin,
 jumped as it went off rails, as the table above expects.
 
 The logs, what the script printed and every line it recorded, are in
-[`diag`](../../../../diag/ground/README.md#with-kopernicus).
+[`diag`](../../diag/README.md#with-kopernicus).
