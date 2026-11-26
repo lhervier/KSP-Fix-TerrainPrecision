@@ -14,7 +14,7 @@ throughout.
 
 ## The save
 
-[`switch-kerbin.sfs`](../diag/checking/switching/switch-kerbin.sfs), a sandbox game of
+[`switch-kerbin.sfs.zip`](../diag/checking/switching/switch-kerbin.sfs.zip), a sandbox game of
 KSP 1.12.5, made without this mod. Copy it into the folder of a sandbox game and load it from that
 game. It holds two craft, landed on the flat grass west of the KSC, 1.97 km apart on a north–south
 line:
@@ -69,8 +69,8 @@ step for step, and takes the screenshots. It drives KSP through
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
 install. Anyone can read it top to bottom: it follows the three steps above in the same order.
 
-1. Install KSP-Util-MCPServer next to both instruments — and this mod, for the series with it — copy
-   [the save](../diag/checking/switching/switch-kerbin.sfs) into a sandbox game, start
+1. Install KSP-Util-MCPServer next to both instruments — and this mod, for the series with it — unzip
+   [the save](../diag/checking/switching/switch-kerbin.sfs.zip) into a sandbox game, start
    KSP and wait for the main menu.
 2. Run `python run-switching.py --folder <your sandbox game> --rounds 6 --out screenshots`.
 

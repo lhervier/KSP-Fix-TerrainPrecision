@@ -18,7 +18,7 @@ at every loading.
 
 ## The save
 
-[`runway-kerbin.sfs`](../diag/checking/loading/runway-kerbin.sfs), a sandbox game of KSP
+[`runway-kerbin.sfs.zip`](../diag/checking/loading/runway-kerbin.sfs.zip), a sandbox game of KSP
 1.12.5. Copy it into the folder of a sandbox game and load it from that game. It holds two identical
 craft, each a Mk1 command pod on an empty FL-T100 tank:
 
@@ -38,7 +38,7 @@ slide.
 
 ### The same on the Mun, with a runway placed by a mod
 
-[`runway-mun-kk.sfs`](../diag/checking/loading/runway-mun-kk.sfs) holds the same two
+[`runway-mun-kk.sfs.zip`](../diag/checking/loading/runway-mun-kk.sfs.zip) holds the same two
 craft on the Mun, beside a runway placed there by
 [Kerbal Konstructs](https://github.com/KSP-RO/Kerbal-Konstructs) 1.12.3, the mod players use to add
 bases of their own. The runway is the one of the KSC, which the mod offers as a model.
@@ -46,7 +46,7 @@ bases of their own. The runway is the one of the KSC, which the mod offers as a 
 The save alone does not hold the runway: Kerbal Konstructs keeps it in two files of its own. Install
 Kerbal Konstructs and what it requires, copy the `GameData` folder of
 [`docs/statics/diag/checking/loading/runway-mun-kk/`](../diag/checking/loading/runway-mun-kk/GameData/KerbalKonstructs/NewInstances/)
-into the folder of KSP so that it merges with the `GameData` there, then copy and load the save as
+into the folder of KSP so that it merges with the `GameData` there, then unzip and load the save as
 above. It holds:
 
 - **on the ground**, landed at latitude −0.0662°, longitude −74.2867°. It is the craft you are flying
@@ -107,8 +107,8 @@ HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — 
 install. Anyone can read it top to bottom: it follows the three steps above in the same order.
 
 1. Install KSP-Util-MCPServer next to both instruments — and this mod, for the series with it: the script
-   records in both windows at the same moment. Copy
-   [the save](../diag/checking/loading/runway-kerbin.sfs) into a sandbox game, start KSP
+   records in both windows at the same moment. Unzip
+   [the save](../diag/checking/loading/runway-kerbin.sfs.zip) into a sandbox game, start KSP
    and wait for the main menu.
 2. Run `python run-runway.py --folder <your sandbox game> --loads 6 --out screenshots`. On the Mun, add
    `--save runway-mun-kk`, with Kerbal Konstructs installed and the two files of its runway copied into

@@ -35,7 +35,7 @@ instruments, [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-Lan
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol; this mod with its
 defaults (at `logLevel = Debug`), or not.
 
-**The save**, [`approach-moon-rss.sfs`](../../diag/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-rss.sfs),
+**The save**, [`approach-moon-rss.sfs.zip`](../../diag/non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-rss.sfs.zip),
 made without this mod: the two craft of
 [the approach protocol](../../checking/approach-protocol.md) in the Sea of Tranquillity, at
 the landing site of Apollo 11, in the lunar morning. The craft the readings are about, a Mk1 command pod on

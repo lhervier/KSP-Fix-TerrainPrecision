@@ -2,7 +2,7 @@
 
 It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
 Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer and KSP Diag - Landed Vessel, KSP Diag -
-Terrain Height or both installed, copy switch-kerbin.sfs into a sandbox game, wait for the main menu, then run:
+Terrain Height or both installed, unzip switch-kerbin.sfs.zip into a sandbox game, wait for the main menu, then run:
 
     python run-switching.py --folder <your sandbox game> --rounds 6 --out out
 

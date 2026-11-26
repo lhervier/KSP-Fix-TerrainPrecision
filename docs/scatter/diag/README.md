@@ -46,17 +46,17 @@ colliders](../non-regression/kopernicus/scatter-with-colliders.md#the-protocol).
 
 The saves:
 
-- [`reference-kerbin.sfs`](checking/loading/reference-kerbin.sfs) and [`reference-mune.sfs`](checking/loading/reference-mune.sfs)
+- [`reference-kerbin.sfs.zip`](checking/loading/reference-kerbin.sfs.zip) and [`reference-mune.sfs.zip`](checking/loading/reference-mune.sfs.zip)
   — a single Mk1 command pod landed on Kerbin, about 8 km north-west of the KSC, where the scatter is
   grass and trees, and on the Mun, where it is rocks;
-- [`driving-kerbin.sfs`](../../ground/diag/checking/driving/driving-kerbin.sfs) — the rover of
+- [`driving-kerbin.sfs.zip`](../../ground/diag/checking/driving/driving-kerbin.sfs.zip) — the rover of
   [the driving protocol](../../ground/diag/README.md#the-driving-protocol), on the grass south of the runway of the KSC;
-- [`cactus-kerbin.sfs`](checking/driving/cactus-kerbin.sfs) — the same rover in a
+- [`cactus-kerbin.sfs.zip`](checking/driving/cactus-kerbin.sfs.zip) — the same rover in a
   desert of Kerbin, 497 m north of a cactus, facing it: the save of the film;
-- [`ref-mune-5km.sfs`](checking/flight/ref-mune-5km.sfs) — a single Mk1 command pod in a circular equatorial
+- [`ref-mune-5km.sfs.zip`](checking/flight/ref-mune-5km.sfs.zip) — a single Mk1 command pod in a circular equatorial
   orbit 5 km over the Mun, the same save as
   [PQSBench's](https://github.com/lhervier/KSP-Util-PQSBench/blob/main/perfs/README.md);
-- [`ref-kerbin-scatter-collider-eva.sfs`](non-regression/kopernicus/scatter-with-colliders/ref-kerbin-scatter-collider-eva.sfs) — a Mk1 command pod
+- [`ref-kerbin-scatter-collider-eva.sfs.zip`](non-regression/kopernicus/scatter-with-colliders/ref-kerbin-scatter-collider-eva.sfs.zip) — a Mk1 command pod
   landed in a desert of Kerbin, with Jebediah out on EVA, standing on a boulder next to it.
 
 ### The scatter: the objects, over twelve loads
@@ -280,7 +280,7 @@ requires, Deferred, and this mod at `logLevel = Debug`, or not: each session is 
 On Parallax Continued 1.0.5, with both instruments and
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer):
 
-- [`capsule-on-a-rock-mun.sfs`](non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock-mun.sfs) — a Mk1
+- [`capsule-on-a-rock-mun.sfs.zip`](non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock-mun.sfs.zip) — a Mk1
   capsule on an empty FL-T100 fuel tank, landed on top of a rock of the Mun. Loaded twelve times by
   `run-loading.py` with an hour of time warp before each load, then the same in a KSP started again:
   `rock-session1-*` and `rock-session2-*` in
@@ -293,7 +293,7 @@ On Parallax Continued 1.0.4 rebuilt to orient its objects as 1.0.5 does, with
 [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders) and
 [KSP Diag - Floating Origin](https://github.com/lhervier/KSP-Diag-FloatingOrigin):
 
-- [`rocks-eve-jeb.sfs`](non-regression/parallax/its-scatter-grows-the-same-at-every-load/rocks-eve-jeb.sfs) —
+- [`rocks-eve-jeb.sfs.zip`](non-regression/parallax/its-scatter-grows-the-same-at-every-load/rocks-eve-jeb.sfs.zip) —
   Jebediah Kerman on EVA on the ground of Eve, among rocks and plants.
 - [`the-same-objects/`](non-regression/parallax/its-scatter-grows-the-same-at-every-load/the-same-objects/) — that
   save loaded again at once, twelve times, without this mod (`without-this-mod/`) and with it

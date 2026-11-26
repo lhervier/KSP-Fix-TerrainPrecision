@@ -2,7 +2,7 @@
 
 It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
 Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer, KSP Diag - Landed Vessel and KSP Diag
-- Terrain Height installed, copy runway-kerbin.sfs into a sandbox game, wait for the main menu, then run:
+- Terrain Height installed, unzip runway-kerbin.sfs.zip into a sandbox game, wait for the main menu, then run:
 
     python run-runway.py --folder <your sandbox game> --loads 6 --out out
 

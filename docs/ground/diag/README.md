@@ -15,19 +15,19 @@ KSPTextureLoader, the RSS textures). Read in
 The saves, a capsule on a small flat fuel tank, made by
 [Making the save](../checking/making-the-save.md):
 
-- [`reload-kerbin-2parts.sfs`](checking/loading/reload-kerbin-2parts.sfs) — on the
+- [`reload-kerbin-2parts.sfs.zip`](checking/loading/reload-kerbin-2parts.sfs.zip) — on the
   levelled grass of the KSC, just south-west of the west end of the runway;
-- [`reload-mune-2parts.sfs`](checking/loading/reload-mune-2parts.sfs) — on flat ground on
+- [`reload-mune-2parts.sfs.zip`](checking/loading/reload-mune-2parts.sfs.zip) — on flat ground on
   the Mun;
-- [`reload-minmus-2parts.sfs`](checking/loading/reload-minmus-2parts.sfs) — on the frozen
+- [`reload-minmus-2parts.sfs.zip`](checking/loading/reload-minmus-2parts.sfs.zip) — on the frozen
   flats of Minmus;
-- [`reload-gilly-2parts.sfs`](checking/loading/reload-gilly-2parts.sfs) — on Gilly;
-- [`reload-moon-rss-resave.sfs`](checking/loading/reload-moon-rss-resave.sfs) — on flat
+- [`reload-gilly-2parts.sfs.zip`](checking/loading/reload-gilly-2parts.sfs.zip) — on Gilly;
+- [`reload-moon-rss-resave.sfs.zip`](checking/loading/reload-moon-rss-resave.sfs.zip) — on flat
   ground on the Moon, made with this mod; it loads only on Real Solar System;
-- [`reload-earth-rss-resave.sfs`](checking/loading/reload-earth-rss-resave.sfs) — on the
+- [`reload-earth-rss-resave.sfs.zip`](checking/loading/reload-earth-rss-resave.sfs.zip) — on the
   grass about 1.4 km west of the KSC on Earth, made with this mod; it loads only on Real Solar System.
 
-Copy a save into the folder of a sandbox game and load it from that game.
+Unzip a save into the folder of a sandbox game and load it from that game.
 
 - [`loading-stock.log.gz`](checking/loading/loading-stock.log.gz) and
   [`loading-fix.log.gz`](checking/loading/loading-fix.log.gz) — the `KSP.log` of the session the
@@ -68,7 +68,7 @@ Copy a save into the folder of a sandbox game and load it from that game.
 The install of [The loading protocol](#the-loading-protocol), on Kerbin: the six rounds of
 [the switching protocol](../checking/switching-protocol.md), played by its script,
 [`run-switching.py`](automation/run-switching.py), on
-[`switch-kerbin.sfs`](checking/switching/switch-kerbin.sfs), a capsule landed on the grass
+[`switch-kerbin.sfs.zip`](checking/switching/switch-kerbin.sfs.zip), a capsule landed on the grass
 west of the KSC and a rover 1.97 km to the south of it. Read in
 [Switching to a craft far away](../checking/switching.md).
 
@@ -86,7 +86,7 @@ west of the KSC and a rover 1.97 km to the south of it. Read in
 The install of [The loading protocol](#the-loading-protocol), on Kerbin: the six round trips of
 [the approach protocol](../checking/approach-protocol.md), in a single flight,
 played by its script, [`run-approach.py`](automation/run-approach.py), on
-[`approach-kerbin.sfs`](checking/approach/approach-kerbin.sfs), a capsule landed on the
+[`approach-kerbin.sfs.zip`](checking/approach/approach-kerbin.sfs.zip), a capsule landed on the
 flat grass west of the KSC and a rover 26 m from it. Read in
 [Coming back to a craft left parked](../checking/approach.md).
 
@@ -115,8 +115,8 @@ moved. Read in
 The saves, [`Diag2-Rover`](checking/driving/Diag2-Rover.craft) alone on the grass south of
 the runway of the KSC, facing due south:
 
-- [`driving-kerbin.sfs`](checking/driving/driving-kerbin.sfs) — on Kerbin;
-- [`driving-earth-rss.sfs`](checking/driving/driving-earth-rss.sfs) — on Earth, by the KSC
+- [`driving-kerbin.sfs.zip`](checking/driving/driving-kerbin.sfs.zip) — on Kerbin;
+- [`driving-earth-rss.sfs.zip`](checking/driving/driving-earth-rss.sfs.zip) — on Earth, by the KSC
   at Cape Canaveral; it loads only on Real Solar System.
 
 The logs:
@@ -248,7 +248,7 @@ Community Category Kit and Community Resource Pack, both instruments and
 session is here twice, `-without-this-mod` and `-fix`. Read in
 [Kerbal Planetary Base Systems: a base on the ground](../non-regression/kerbal-planetary-base-systems/a-base-on-the-ground.md).
 
-- [`kpbs-kerbin-hull-2.sfs`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/kpbs-kerbin-hull-2.sfs) — a base of
+- [`kpbs-kerbin-hull-2.sfs.zip`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/kpbs-kerbin-hull-2.sfs.zip) — a base of
   28 parts of Kerbal Planetary Base Systems, legs retracted, on a slope of Kerbin.
 - [`loading-kpbs-without-this-mod.log.gz`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-without-this-mod.log.gz) and
   [`loading-kpbs-fix.log.gz`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-fix.log.gz) — that save, loaded six
@@ -278,7 +278,7 @@ On Parallax Continued 1.0.5, with both instruments and
   line it recorded, one `KSP.log` per session (`loading-without-this-mod.log.gz`, `loading-fix.log.gz`);
   the screenshots of the tables in
   [`docs/ground/imgs/non-regression/parallax/loading-a-craft-on-its-ground/`](../imgs/non-regression/parallax/loading-a-craft-on-its-ground).
-- [`approach-kerbin-tundra.sfs`](non-regression/parallax/coming-back-to-a-craft-on-its-ground/approach-kerbin-tundra.sfs) — the
+- [`approach-kerbin-tundra.sfs.zip`](non-regression/parallax/coming-back-to-a-craft-on-its-ground/approach-kerbin-tundra.sfs.zip) — the
   two craft of [the approach protocol](#the-approach-protocol) in the tundra of Kerbin, at 72° north.
   Six round trips by `run-approach.py --heading 135`: `approach-*` in
   [`coming-back-to-a-craft-on-its-ground/`](non-regression/parallax/coming-back-to-a-craft-on-its-ground/), with the
@@ -297,10 +297,10 @@ a fixed metre, and hold the line where it refused part of Earth's terrain.
 Two saves are only used by [The ground workaround](../non-regression/real-solar-system/the-ground-workaround.md),
 next to the two of [The loading protocol](#the-loading-protocol):
 
-- [`reload-moon-rss.sfs`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss.sfs) —
+- [`reload-moon-rss.sfs.zip`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss.sfs.zip) —
   a capsule on an empty FL-T100, landed on flat ground on the Moon, made without this mod;
   `reload-moon-rss-resave.sfs` is the same craft, saved again at a later load;
-- [`reload-earth-rss-landed.sfs`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed.sfs) —
+- [`reload-earth-rss-landed.sfs.zip`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed.sfs.zip) —
   `reload-earth-rss-resave.sfs` with one line changed in the file: the situation of the craft, from
   `PRELAUNCH` to `LANDED`.
 
@@ -368,14 +368,14 @@ With this mod:
 - [`launch-earth-rss-fix.log.gz`](limits/stock/the-seam-between-subdivision-levels/launch-earth-rss-fix.log.gz) — no instrument, MechJeb2 2.15.0.0
   added to the install: one session, a small rocket launched from the VAB onto the launchpad at Cape
   Canaveral, then flown towards orbit, the flight started over three times. The launch was saved
-  afterwards as [`rss-launch-to-earth-orbit.sfs`](limits/stock/the-seam-between-subdivision-levels/rss-launch-to-earth-orbit.sfs), which needs MechJeb2
+  afterwards as [`rss-launch-to-earth-orbit.sfs.zip`](limits/stock/the-seam-between-subdivision-levels/rss-launch-to-earth-orbit.sfs.zip), which needs MechJeb2
   to load. Used in [The seam between subdivision levels](../limits/stock/the-seam-between-subdivision-levels.md).
 
 [The approach protocol](#the-approach-protocol) on the Moon, with both instruments and
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) added, read in
 [Coming back to a craft left parked, on the Moon](../non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon.md):
 
-- [`approach-moon-rss.sfs`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-rss.sfs) —
+- [`approach-moon-rss.sfs.zip`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-rss.sfs.zip) —
   the two craft of the approach protocol in the Sea of Tranquillity, the rover set for the low gravity of
   the Moon. Six round trips by
   `run-approach.py --save approach-moon-rss --speed 10 --slow-from 150 --home-speed 2`, without this
@@ -400,7 +400,7 @@ made as the map view's *Switch To* does, with both instruments and
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) added, read in
 [Switching to a craft left parked, on the Moon](../non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon.md):
 
-- [`switch-moon-rss.sfs`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-rss.sfs) —
+- [`switch-moon-rss.sfs.zip`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-rss.sfs.zip) —
   the two craft of `approach-moon-rss.sfs`, the rover driven about 3 km due south, flown, the capsule its
   target. Six switches by
   `run-switching.py --save switch-moon-rss --rounds 6 --scene-shots`, in each of the three sessions below.

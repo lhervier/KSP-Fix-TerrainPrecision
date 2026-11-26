@@ -58,7 +58,7 @@ With that change in Kerbal Konstructs, this mod's patch has nothing left to do.
 ## Checked
 
 With Kerbal Konstructs 1.12.3 and CustomPreLaunchChecks 1.8.1, which it requires, and this mod at
-`logLevel = Debug`. The save, [`non-reg-runway-mune-kk.sfs`](../../diag/limits/kerbal-konstructs/the-group-editor/non-reg-runway-mune-kk.sfs),
+`logLevel = Debug`. The save, [`non-reg-runway-mune-kk.sfs.zip`](../../diag/limits/kerbal-konstructs/the-group-editor/non-reg-runway-mune-kk.sfs.zip),
 is a pod landed on the Mun beside a runway of Kerbal Konstructs, whose two files go in
 `GameData/KerbalKonstructs/NewInstances` ([`docs/statics/diag/limits/kerbal-konstructs/the-group-editor/non-reg-runway-mune-kk/GameData`](../../diag/limits/kerbal-konstructs/the-group-editor/non-reg-runway-mune-kk/GameData)).
 In flight, `Ctrl+K` → *Edit Groups* → `MuneBase` opens the group editor, in *Group* mode. Dragging the

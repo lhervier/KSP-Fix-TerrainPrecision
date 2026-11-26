@@ -21,7 +21,7 @@ file says KSP 1.8 to 1.11, but it holds no code, and it works on 1.12.5. What th
 what a record holds, are in
 [its page](https://github.com/lhervier/KSP-Diag-Scatter/blob/main/docs/what-it-measures.md#7-the-collider-of-each-object).
 
-The save: [`ref-kerbin-scatter-collider-eva.sfs`](../../diag/non-regression/kopernicus/scatter-with-colliders/ref-kerbin-scatter-collider-eva.sfs), a Mk1
+The save: [`ref-kerbin-scatter-collider-eva.sfs.zip`](../../diag/non-regression/kopernicus/scatter-with-colliders/ref-kerbin-scatter-collider-eva.sfs.zip), a Mk1
 command pod landed in a desert of Kerbin (latitude −5.6080°, longitude −143.5447°), with Jebediah out on
 EVA, standing on a boulder next to it. Copy it into the folder of a sandbox game and load it from that
 game.

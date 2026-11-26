@@ -37,7 +37,7 @@ record holds, are in [its page](https://github.com/lhervier/KSP-Diag-Scatter/blo
 series: terrain scatter on, and the log written at once, steps 1 and 2 of
 [the protocol load after load](../../checking/loading-protocol.md#the-protocol).
 
-**Over a flight.** Load [`ref-mune-5km.sfs`](../../diag/checking/flight/ref-mune-5km.sfs), copied into the folder of a sandbox
+**Over a flight.** Load [`ref-mune-5km.sfs.zip`](../../diag/checking/flight/ref-mune-5km.sfs.zip), copied into the folder of a sandbox
 game: a Mk1 command pod in a circular equatorial orbit 5 km over the Mun. Flying that low, the terrain
 keeps building the quads ahead of the pod and destroying those behind it, sending their holders through
 the pool all the way, and some of the Mun's relief rises above the orbit, so the pod crashes after a
@@ -50,9 +50,9 @@ as the craft flown, frozen where it hit the relief, and pauses a minute later: t
 for one when the pod stops moving while the game runs.
 
 **Across scene switches.** Leaving a body switches its terrain off, and stock then destroys that body's
-holders. Load [`reference-mune.sfs`](../../diag/checking/loading/reference-mune.sfs) from the Space Center, copied
+holders. Load [`reference-mune.sfs.zip`](../../diag/checking/loading/reference-mune.sfs.zip) from the Space Center, copied
 into the folder of a sandbox game, and press *Record the holder pools* once the terrain has settled; go
-back to the Space Center, and press it there; load [`reference-kerbin.sfs`](../../diag/checking/loading/reference-kerbin.sfs),
+back to the Space Center, and press it there; load [`reference-kerbin.sfs.zip`](../../diag/checking/loading/reference-kerbin.sfs.zip),
 and press it once the terrain has settled. Copy `KSP.log` before relaunching KSP. Expected: the Mun's pool
 in the first record only, Kerbin's from the second on, and `0 broken rules` in all three. The same script
 plays it: `python run-scatter-holders.py scenes --folder <your sandbox game> --out out`.
@@ -67,7 +67,7 @@ that does not hang from its pool's container or still has a quad, a count that d
 holder in no pool.
 
 It is taken during a flight, where the terrain keeps building quads ahead of the craft and destroying
-those behind it: the save [`ref-mune-5km.sfs`](../../diag/checking/flight/ref-mune-5km.sfs),
+those behind it: the save [`ref-mune-5km.sfs.zip`](../../diag/checking/flight/ref-mune-5km.sfs.zip),
 a Mk1 command pod in a circular equatorial orbit 5 km over the Mun, loaded once, one record 30 s into the
 flight, then every two minutes, and one after the pod crashed into the relief, about 617 s into the flight.
 Once on stock, once with this mod ([The protocol](#the-protocol)). The records are in

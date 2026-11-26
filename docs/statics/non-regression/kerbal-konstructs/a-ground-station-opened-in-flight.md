@@ -38,7 +38,7 @@ station of Kerbal Konstructs is open a few tens of metres away, it goes to that 
 
 ## The save
 
-[`kk-ground-station.sfs`](../../diag/non-regression/kerbal-konstructs/a-ground-station-opened-in-flight/kk-ground-station.sfs): a career game, a Mk1 pod on the
+[`kk-ground-station.sfs.zip`](../../diag/non-regression/kerbal-konstructs/a-ground-station-opened-in-flight/kk-ground-station.sfs.zip): a career game, a Mk1 pod on the
 launchpad of the KSC. CommNet is on, and so is *Enable CommNet GroundStations*, in the difficulty options
 of Kerbal Konstructs, off by default: without it, Kerbal Konstructs adds no ground station. In the same
 options, *Open everything* is off: it would open every station at once. The other options are left as
@@ -53,7 +53,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 which it requires, and this mod with `logLevel = Debug` in its settings, so that `KSP.log` shows each
 static it takes out of its sphere and puts back.
 
-1. Copy `kk-ground-station.sfs` into the folder of a game under `saves`, and load it.
+1. Unzip `kk-ground-station.sfs.zip` into the folder of a game under `saves`, and load it.
 2. Open the part action window of the pod and read the first hop of the signal: the KSC.
 3. Open the statics editor of Kerbal Konstructs (`Ctrl+K`). Under *Edit Groups*, *Spawn new Group*
    creates `NewGroup` at the pod and opens its group editor: *Save&Close*. *Set Active Group*: choose

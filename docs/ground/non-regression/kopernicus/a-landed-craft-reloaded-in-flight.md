@@ -32,10 +32,10 @@ defaults (at `logLevel = Debug`), or not.
 **The protocol**: [the loading protocol](../../checking/loading-protocol.md), played by its
 script, [`run-loading.py`](../../diag/automation/run-loading.py), on its four saves: a Mk1
 capsule on a flat FL-T100 tank, landed on
-[Kerbin](../../diag/checking/loading/reload-kerbin-2parts.sfs),
-[the Mun](../../diag/checking/loading/reload-mune-2parts.sfs),
-[Minmus](../../diag/checking/loading/reload-minmus-2parts.sfs) and
-[Gilly](../../diag/checking/loading/reload-gilly-2parts.sfs). Each save loaded six times
+[Kerbin](../../diag/checking/loading/reload-kerbin-2parts.sfs.zip),
+[the Mun](../../diag/checking/loading/reload-mune-2parts.sfs.zip),
+[Minmus](../../diag/checking/loading/reload-minmus-2parts.sfs.zip) and
+[Gilly](../../diag/checking/loading/reload-gilly-2parts.sfs.zip). Each save loaded six times
 without this mod, then six times with it, both instruments recording at each load.
 
 **By eye**: each save loaded ten times in a row, ten seconds apart, while a player watched the capsule and

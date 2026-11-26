@@ -2,7 +2,7 @@
 
 It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
 Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer and KSP Diag - Scatter installed, terrain
-scatter on and LOG_INSTANT_FLUSH = True in settings.cfg, copy ref-mune-5km.sfs into a sandbox game, wait for
+scatter on and LOG_INSTANT_FLUSH = True in settings.cfg, unzip ref-mune-5km.sfs.zip into a sandbox game, wait for
 the main menu, then run:
 
     python run-scatter-flight.py --folder <your sandbox game> --save ref-mune-5km --out out

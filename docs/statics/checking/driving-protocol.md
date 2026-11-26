@@ -42,12 +42,12 @@ move, where the script, parking on the same spots, finds no change at all.
 
 ## The save
 
-[`driving-runway-kerbin.sfs`](../diag/checking/driving/driving-runway-kerbin.sfs) holds
+[`driving-runway-kerbin.sfs.zip`](../diag/checking/driving/driving-runway-kerbin.sfs.zip) holds
 [`Diag2-Rover`](../../ground/diag/checking/driving/Diag2-Rover.craft) alone, on the grass by the
 north edge of the runway of the KSC, near its western end, at latitude −0.0416°, longitude −74.7263°,
 facing east. No target is set.
 
-[`driving-runway-earth-rss.sfs`](../diag/checking/driving/driving-runway-earth-rss.sfs) is
+[`driving-runway-earth-rss.sfs.zip`](../diag/checking/driving/driving-runway-earth-rss.sfs.zip) is
 the same on Earth, in Real Solar System: the rover alone on the grass by the north edge of the runway of
 the KSC at Cape Canaveral, near its western end, about 65 m north of its axis, at latitude 28.6134°,
 longitude −80.6175°, facing east. Real Solar System has to be built without its runway fix, which keeps
@@ -128,7 +128,7 @@ HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — 
 install. Anyone can read it top to bottom: it follows the four steps above in the same order.
 
 1. Install KSP-Util-MCPServer next to Diag TerrainHeight and Diag FloatingOrigin — and this mod, for the
-   series with it — copy [the save](../diag/checking/driving/driving-runway-kerbin.sfs)
+   series with it — unzip [the save](../diag/checking/driving/driving-runway-kerbin.sfs.zip)
    into a sandbox game, start KSP and wait for the main menu.
 2. Run `python run-driving-runway.py --folder <your sandbox game> --moves 2 --out screenshots`. On
    Earth, add `--save driving-runway-earth-rss --radius 6371000`: the radius of the body turns the

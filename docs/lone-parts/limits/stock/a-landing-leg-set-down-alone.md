@@ -39,9 +39,9 @@ where it still makes a small hop. A wheel set down alone is fixed by this mod al
 [Checking parts lying alone: a wheel dropped in EVA construction](../../checking/wheel-drop.md)), and settles the
 same way with both mods.
 
-*The saves.* [`landing-leg-kerbin.sfs`](../../diag/limits/landing-leg/landing-leg-kerbin.sfs) and
-[`landing-leg-minmus.sfs`](../../diag/limits/landing-leg/landing-leg-minmus.sfs): Bill Kerman on
-EVA next to a lander with eight LT-1 landing legs, four of them on the ground. Copy a save into the folder of a
+*The saves.* [`landing-leg-kerbin.sfs.zip`](../../diag/limits/landing-leg/landing-leg-kerbin.sfs.zip) and
+[`landing-leg-minmus.sfs.zip`](../../diag/limits/landing-leg/landing-leg-minmus.sfs.zip): Bill Kerman on
+EVA next to a lander with eight LT-1 landing legs, four of them on the ground. Unzip a save into the folder of a
 sandbox game and load it from that game; take one of the legs that do not touch the ground with the *Place* tool,
 and set it down on its foot, away from Bill and the lander. Played with KSP 1.12.5 and KSP Community Fixes 1.41.1:
 without this mod; with this mod; with this mod and Suspension Bounce Fix.

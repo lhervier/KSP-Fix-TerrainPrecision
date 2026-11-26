@@ -17,7 +17,7 @@ the craft arrives on it where it did, level by level.
 A new career at the Custom difficulty: the largest starting funds and science (500 000 and 5 000), funds
 penalties at 10 %, for the upgrades below, and *Bypass Entry Purchase After Research* on. The Research and
 Development upgraded twice, to its last level, and the nodes the craft below need researched. That career is
-[`career-with-the-parts.sfs`](../../diag/non-regression/stock/destroyed-buildings/career-with-the-parts.sfs): copied as `persistent.sfs` into
+[`career-with-the-parts.sfs.zip`](../../diag/non-regression/stock/destroyed-buildings/career-with-the-parts.sfs.zip): copied as `persistent.sfs` into
 a new folder of `saves`, it opens at the space centre. Its building impact damage multiplier is at 1, the
 largest, for [Destroyed buildings](destroyed-buildings.md); it changes nothing here. Then, at each level of
 the launchpad and the runway, starting from the first, the one a new career starts with:

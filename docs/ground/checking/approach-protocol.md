@@ -14,7 +14,7 @@ back, and the window follows the parked craft throughout.
 
 ## The save
 
-[`approach-kerbin.sfs`](../diag/checking/approach/approach-kerbin.sfs), a sandbox game
+[`approach-kerbin.sfs.zip`](../diag/checking/approach/approach-kerbin.sfs.zip), a sandbox game
 of KSP 1.12.5. Copy it into the folder of a sandbox game and load it from that game. It holds two
 craft, 26 m apart on the flat grass west of the KSC:
 
@@ -124,8 +124,8 @@ install. Anyone can read it top to bottom: it follows the steps above in the sam
 
 1. Install KSP-Util-MCPServer next to both instruments — and this mod, for the series with it: the script
    records in both windows at the same moment, and waits on the reading of KSP Diag - Terrain Height to
-   know the parked craft has settled. Copy
-   [the save](../diag/checking/approach/approach-kerbin.sfs) into a sandbox game, start
+   know the parked craft has settled. Unzip
+   [the save](../diag/checking/approach/approach-kerbin.sfs.zip) into a sandbox game, start
    KSP and wait for the main menu.
 2. Run `python run-approach.py --folder <your sandbox game> --trips 6 --out screenshots`.
 

@@ -94,8 +94,8 @@ in flight a third reads the quads the ground is made of; a fourth reads the scat
 is without this mod, the second with it.
 
 Every campaign is run in KSP 1.12.5 with Harmony, ModuleManager and KSP Community Fixes 1.41.1; *on stock* means that
-install without this mod. Each run keeps its save and its `KSP.log`, compressed, without the loading of the game's
-assets. The scripts drive KSP through
+install without this mod. Each run keeps its save, zipped, and its `KSP.log`, compressed, without the loading of the
+game's assets. The scripts drive KSP through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), and need nothing but Python 3.
 
 ## What every fix shares

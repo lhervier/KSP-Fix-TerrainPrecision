@@ -17,7 +17,7 @@ mod, or not. The game is played in French: the parts are named in French in the 
 
 ## The protocol
 
-Copy [`lone-parts-mun.sfs`](../diag/checking/loading/lone-parts-mun.sfs) into the folder of
+Unzip [`lone-parts-mun.sfs.zip`](../diag/checking/loading/lone-parts-mun.sfs.zip) into the folder of
 a sandbox game and load it: Récas Kerman on EVA on the Mun, next to a crane and a truck, and around them six
 parts lying alone, each a craft of a single part: two TR-2L rover wheels, two Z-400 batteries, SP-W 3x2
 solar panels and a cubic octagonal strut. They were taken off the crane in EVA construction and dropped

@@ -4,11 +4,11 @@ Part of [Terrain Precision Fix](../../../README.md), [parts lying alone](../READ
 
 KSP 1.12.5 on Windows, played in French, `GameData` holding Harmony, ModuleManager, KSP Community Fixes
 1.41.1, KSP Diag - Landed Vessel, KSP-Util-MCPServer, and this mod or not. Each configuration is a single
-session of KSP. Copy a save into the folder of a sandbox game and load it from that game.
+session of KSP. Unzip a save into the folder of a sandbox game and load it from that game.
 
 ## Loading the same save
 
-[`lone-parts-mun.sfs`](checking/loading/lone-parts-mun.sfs), loaded ten times per configuration by
+[`lone-parts-mun.sfs.zip`](checking/loading/lone-parts-mun.sfs.zip), loaded ten times per configuration by
 [`run-lone-parts.py`](automation/run-lone-parts.py). Read in
 [Checking parts lying alone: loading the same save](../checking/loading.md).
 
@@ -27,8 +27,8 @@ session of KSP. Copy a save into the folder of a sandbox game and load it from t
 
 ## A wheel dropped in EVA construction
 
-[`wheel-drop-kerbin.sfs`](checking/wheel-drop/wheel-drop-kerbin.sfs) and
-[`wheel-drop-mun.sfs`](checking/wheel-drop/wheel-drop-mun.sfs), five drops per configuration by
+[`wheel-drop-kerbin.sfs.zip`](checking/wheel-drop/wheel-drop-kerbin.sfs.zip) and
+[`wheel-drop-mun.sfs.zip`](checking/wheel-drop/wheel-drop-mun.sfs.zip), five drops per configuration by
 [`run-wheel-drop.py`](automation/run-wheel-drop.py). Read in
 [Checking parts lying alone: a wheel dropped in EVA construction](../checking/wheel-drop.md).
 In [`checking/wheel-drop/`](checking/wheel-drop/), for each body (`kerbin`, `mun`) and each configuration
@@ -37,7 +37,7 @@ In [`checking/wheel-drop/`](checking/wheel-drop/), for each body (`kerbin`, `mun
 
 ## On the runway
 
-[`lone-parts-runway.sfs`](checking/runway/lone-parts-runway.sfs), made around the rover of
+[`lone-parts-runway.sfs.zip`](checking/runway/lone-parts-runway.sfs.zip), made around the rover of
 [`Diag2-Rover.craft`](checking/runway/Diag2-Rover.craft), loaded ten times per configuration by
 [`run-lone-parts.py`](automation/run-lone-parts.py). Read in
 [Checking parts lying alone: on the runway](../checking/runway.md). In
@@ -46,7 +46,7 @@ In [`checking/wheel-drop/`](checking/wheel-drop/), for each body (`kerbin`, `mun
 
 ## A landing leg set down alone
 
-[`landing-leg-kerbin.sfs`](limits/landing-leg/landing-leg-kerbin.sfs) and
-[`landing-leg-minmus.sfs`](limits/landing-leg/landing-leg-minmus.sfs), a leg set down by hand in EVA construction,
+[`landing-leg-kerbin.sfs.zip`](limits/landing-leg/landing-leg-kerbin.sfs.zip) and
+[`landing-leg-minmus.sfs.zip`](limits/landing-leg/landing-leg-minmus.sfs.zip), a leg set down by hand in EVA construction,
 without this mod, with it, and with it and Suspension Bounce Fix. Read in
 [A landing leg set down alone](../limits/stock/a-landing-leg-set-down-alone.md).

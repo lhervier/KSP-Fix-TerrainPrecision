@@ -13,7 +13,7 @@ rocks along a flight shows where they are drawn once they have come through that
 
 ## The save
 
-[`ref-mune-5km.sfs`](../diag/checking/flight/ref-mune-5km.sfs), a sandbox game of
+[`ref-mune-5km.sfs.zip`](../diag/checking/flight/ref-mune-5km.sfs.zip), a sandbox game of
 KSP 1.12.5: a single Mk1 command pod in a circular equatorial orbit 5 km over the Mun, the same save as
 [PQSBench's](https://github.com/lhervier/KSP-Util-PQSBench/blob/main/perfs/README.md). Some of the Mun's
 relief rises above that orbit, so the pod crashes into it after a while. Copy it into the folder of a
@@ -37,7 +37,7 @@ the two presses are a second apart.
 
 [`run-scatter-flight.py`](../diag/automation/run-scatter-flight.py) plays this protocol through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), with nothing but Python 3: start KSP with
-KSP-Util-MCPServer and Diag Scatter installed, copy the save into a sandbox game, wait for the main menu, then
+KSP-Util-MCPServer and Diag Scatter installed, unzip the save into a sandbox game, wait for the main menu, then
 run `python run-scatter-flight.py --folder <your sandbox game> --out out`. It presses *Record the rocks* at
 30 s and every two minutes after it, counted from the end of the load, five times, then once more after the
 crash. The game keeps the wrecked pod as the craft flown, frozen where it hit the relief, and pauses a

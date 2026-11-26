@@ -11,7 +11,7 @@ Community Fixes 1.41.1, KSP Diag - Landed Vessel, KSP-Util-MCPServer and this mo
 moving. Read in
 [Checking the ROCs: loading the same save](../checking/loading.md).
 
-The save, [`roc-mune-jeb.sfs`](checking/loading/roc-mune-jeb.sfs): Jebediah Kerman standing on a small Mun
+The save, [`roc-mune-jeb.sfs.zip`](checking/loading/roc-mune-jeb.sfs.zip): Jebediah Kerman standing on a small Mun
 stone, the pod Jebediah stepped out of standing 6 m away. Copy it into the folder of a sandbox game and load
 it from that game.
 

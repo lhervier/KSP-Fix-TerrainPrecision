@@ -3,8 +3,8 @@ moves the floating origin at every frame, then the craft landed on that static i
 
 It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
 Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer, KSP Diag - Terrain Height and Kerbal Konstructs
-with the launch pad of warp-static-mun-kk/ installed, put warp-static-mun-kk.sfs and the rover's craft file in
-the game, wait for the main menu, then run:
+with the launch pad of warp-static-mun-kk/ installed, unzip warp-static-mun-kk.sfs.zip into
+the game and put the rover's craft file in it, wait for the main menu, then run:
 
     python run-time-warp-flyover.py --folder <the game> --save warp-static-mun-kk --out out
 

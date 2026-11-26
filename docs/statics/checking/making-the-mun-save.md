@@ -1,7 +1,7 @@
 # Making the save on the Mun
 
 Part of [Terrain Precision Fix](../../../README.md), [the statics](../README.md#checked), for [the runway protocol](loading-protocol.md): how
-[`runway-mun-kk.sfs`](../diag/checking/loading/runway-mun-kk.sfs) was made, two
+[`runway-mun-kk.sfs.zip`](../diag/checking/loading/runway-mun-kk.sfs.zip) was made, two
 identical craft on the Mun, one on a runway placed by
 [Kerbal Konstructs](https://github.com/KSP-RO/Kerbal-Konstructs) 1.12.3 and one on the ground beside
 it. You only need it to make your own; the published save and the two files of the runway are enough

@@ -11,9 +11,9 @@ The install of [The loading protocol](../../ground/diag/README.md#the-loading-pr
 
 The saves:
 
-- [`runway-kerbin.sfs`](checking/loading/runway-kerbin.sfs) — two identical craft, one on
+- [`runway-kerbin.sfs.zip`](checking/loading/runway-kerbin.sfs.zip) — two identical craft, one on
   the grass beside the runway of the KSC and one on the runway, 152 m apart;
-- [`runway-mun-kk.sfs`](checking/loading/runway-mun-kk.sfs) — the same on the Mun: one craft
+- [`runway-mun-kk.sfs.zip`](checking/loading/runway-mun-kk.sfs.zip) — the same on the Mun: one craft
   on a runway placed by [Kerbal Konstructs](https://github.com/KSP-RO/Kerbal-Konstructs) 1.12.3 and one
   on the ground 42 m away. The runway itself is in the two files of
   [`runway-mun-kk/GameData/KerbalKonstructs/NewInstances/`](checking/loading/runway-mun-kk/GameData/KerbalKonstructs/NewInstances/):
@@ -41,7 +41,7 @@ The logs, without this mod (`-stock`) and with it (`-fix`):
 The install of [The driving protocol](../../ground/diag/README.md#the-driving-protocol): the moves of the origin of
 [the protocol of the runway and the grass while the world moves](../checking/driving-protocol.md),
 played by its script, [`run-driving-runway.py`](automation/run-driving-runway.py), from
-[`driving-runway-kerbin.sfs`](checking/driving/driving-runway-kerbin.sfs), `Diag2-Rover`
+[`driving-runway-kerbin.sfs.zip`](checking/driving/driving-runway-kerbin.sfs.zip), `Diag2-Rover`
 alone on the grass by the north edge of the runway of the KSC. Read in
 [Checking the statics: driving on while the world moves](../checking/driving.md#by-the-runway-of-the-ksc). Earth is under
 [On Real Solar System](#on-real-solar-system).
@@ -101,7 +101,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), this mod at
 `logLevel = Debug`,
 and KSP-Util-MCPServer, which plays the test through [`automation/run-scene-changes.py`](automation/run-scene-changes.py):
-a new career at the Custom difficulty (on Kerbin, the same as [`career-with-the-parts.sfs`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs)),
+a new career at the Custom difficulty (on Kerbin, the same as [`career-with-the-parts.sfs.zip`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs.zip)),
 `Diag3-Rocket.craft` on the launchpad, eleven arrivals in flight through every way of leaving
 it, and `Diag3-Rover.craft` launched from the SPH onto the runway; one script per way in
 [`automation/scene-changes/`](automation/scene-changes/). On Earth, Real Solar System 20.1.3.0 and what it
@@ -139,7 +139,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 `logLevel = Debug`,
 and KSP-Util-MCPServer, which plays the test through
 [`automation/run-destroyed-buildings.py`](automation/run-destroyed-buildings.py): a new career at the Custom
-difficulty (the same as [`career-with-the-parts.sfs`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs), which a player can start
+difficulty (the same as [`career-with-the-parts.sfs.zip`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs.zip), which a player can start
 from), [`VAB-Dropper.craft`](non-regression/stock/destroyed-buildings/VAB-Dropper.craft) dropped twice onto the VAB from the
 launchpad, `Diag3-Rover.craft` launched from the SPH onto the runway around the VAB in ruins, the VAB
 repaired, and `Diag3-Rocket.craft` launched from it; three arrivals on the launchpad, two on the runway.
@@ -165,7 +165,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 `logLevel = Debug`,
 and KSP-Util-MCPServer, which plays the test through
 [`automation/run-facility-levels.py`](automation/run-facility-levels.py): a new career at the Custom
-difficulty (the same as [`career-with-the-parts.sfs`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs)), `Diag3-Rocket.craft` launched onto the launchpad and `Diag3-Rover.craft` onto the runway, four
+difficulty (the same as [`career-with-the-parts.sfs.zip`](non-regression/stock/destroyed-buildings/career-with-the-parts.sfs.zip)), `Diag3-Rocket.craft` launched onto the launchpad and `Diag3-Rover.craft` onto the runway, four
 arrivals on each at each of their three levels. Played again without this mod. Read in
 [Facility levels](../non-regression/stock/facility-levels.md).
 
@@ -214,7 +214,7 @@ pad of [`non-regression/stock/time-warp/warp-static-mun-kk/`](non-regression/sto
 `logLevel = Debug`,
 and KSP-Util-MCPServer, which plays the test through
 [`automation/run-time-warp-flyover.py`](automation/run-time-warp-flyover.py): the capsule of
-[`warp-static-mun-kk.sfs`](non-regression/stock/time-warp/warp-static-mun-kk.sfs) on that launch pad, near the highest point of the Mun's
+[`warp-static-mun-kk.sfs.zip`](non-regression/stock/time-warp/warp-static-mun-kk.sfs.zip) on that launch pad, near the highest point of the Mun's
 equator, read before and after `Diag3-Rover.craft`, put on a low orbit of the Mun, passes over it in time
 warp at 10×. Played again without this mod. Read in
 [Time warp](../non-regression/stock/time-warp.md#in-flight-low-over-a-static).
@@ -254,7 +254,7 @@ which it requires, no instrument, this mod at `logLevel = Debug`.
   saved with *Save&Close*, then the save loaded again. Read in
   [Kerbal Konstructs: the group editor](../limits/kerbal-konstructs/the-group-editor.md).
 - [`kk-ground-station-fix.log.gz`](non-regression/kerbal-konstructs/a-ground-station-opened-in-flight/kk-ground-station-fix.log.gz) —
-  [`kk-ground-station.sfs`](non-regression/kerbal-konstructs/a-ground-station-opened-in-flight/kk-ground-station.sfs), a career game, a pod on the launchpad: a water tower
+  [`kk-ground-station.sfs.zip`](non-regression/kerbal-konstructs/a-ground-station-opened-in-flight/kk-ground-station.sfs.zip), a career game, a pod on the launchpad: a water tower
   of Kerbal Konstructs set up beside it, in flight, as a closed CommNet ground station, then opened from
   the facility manager of Kerbal Konstructs. Read in
   [Kerbal Konstructs: a ground station opened in flight](../non-regression/kerbal-konstructs/a-ground-station-opened-in-flight.md).
@@ -350,6 +350,6 @@ a fixed metre, and hold the line where it refused part of Earth's terrain.
 - [`station-kourou-rss-fix.log.gz`](non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss-fix.log.gz) —
   [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) added: one session, a rover driven by its `drive_to` tool
   in 500 m legs toward the CommNet ground station of Kourou, from 28.86 km to 27.30 km, then
-  [`station-kourou-rss.sfs`](non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs) loaded and driven from 27.83 km to 27.30 km by
+  [`station-kourou-rss.sfs.zip`](non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs.zip) loaded and driven from 27.83 km to 27.30 km by
   [`automation/run-station-approach.py`](automation/run-station-approach.py). Read in
   [A CommNet ground station from a planet pack](../non-regression/real-solar-system/a-commnet-ground-station.md).

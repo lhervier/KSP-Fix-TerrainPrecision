@@ -27,9 +27,9 @@ never a save during the series. It is played by the same script,
 
 **→ Full chapter: [The protocol: loading the same save](../../ground/checking/loading-protocol.md)**
 
-The save, [`roc-mune-jeb.sfs`](../diag/checking/loading/roc-mune-jeb.sfs): Jebediah Kerman
+The save, [`roc-mune-jeb.sfs.zip`](../diag/checking/loading/roc-mune-jeb.sfs.zip): Jebediah Kerman
 standing on a small Mun stone, on the Mun (latitude −12.4400°, longitude 91.7898°), the pod Jebediah stepped
-out of standing 6 m away. The stone carries one convex collider. Copy the save into the folder of a sandbox
+out of standing 6 m away. The stone carries one convex collider. Unzip the save into the folder of a sandbox
 game and load it from that game.
 
 A kerbal is a craft of a single part, and KSP sets such a craft back onto the ground itself at load when it

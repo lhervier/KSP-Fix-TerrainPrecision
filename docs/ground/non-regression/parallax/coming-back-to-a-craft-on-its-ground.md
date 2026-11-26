@@ -27,7 +27,7 @@ it requires, Deferred, both instruments,
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol; this mod with its
 defaults (at `logLevel = Debug`), or not.
 
-**The save**, [`approach-kerbin-tundra.sfs`](../../diag/non-regression/parallax/coming-back-to-a-craft-on-its-ground/approach-kerbin-tundra.sfs),
+**The save**, [`approach-kerbin-tundra.sfs.zip`](../../diag/non-regression/parallax/coming-back-to-a-craft-on-its-ground/approach-kerbin-tundra.sfs.zip),
 made without this mod: the two craft of the approach protocol, in the tundra of Kerbin at 72° north, around
 midday. The craft the readings are about, a Mk1 command pod on an FL-T100 tank, is landed at latitude
 72.0008°, longitude 29.9958°, and is the target of the rover, landed 26 m to its south-east, facing

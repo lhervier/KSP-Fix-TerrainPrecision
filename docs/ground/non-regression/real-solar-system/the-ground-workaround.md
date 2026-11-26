@@ -182,17 +182,17 @@ The workaround may well have other uses, outside the scope of this fix.
 
 ## The saves
 
-- [`reload-moon-rss.sfs`](../../diag/non-regression/real-solar-system/the-ground-workaround/reload-moon-rss.sfs),
+- [`reload-moon-rss.sfs.zip`](../../diag/non-regression/real-solar-system/the-ground-workaround/reload-moon-rss.sfs.zip),
   made without this mod, and
-  [`reload-moon-rss-resave.sfs`](../../diag/checking/loading/reload-moon-rss-resave.sfs),
+  [`reload-moon-rss-resave.sfs.zip`](../../diag/checking/loading/reload-moon-rss-resave.sfs.zip),
   the same craft saved again at a later load — the Moon, latitude 28.61°, longitude −80.62°, on flat
   ground;
-- [`reload-earth-rss-resave.sfs`](../../diag/checking/loading/reload-earth-rss-resave.sfs)
-  and [`reload-earth-rss-landed.sfs`](../../diag/non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed.sfs) —
+- [`reload-earth-rss-resave.sfs.zip`](../../diag/checking/loading/reload-earth-rss-resave.sfs.zip)
+  and [`reload-earth-rss-landed.sfs.zip`](../../diag/non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed.sfs.zip) —
   Earth, latitude 28.611°, longitude −80.619°, on the grass about 1.4 km west of the KSC, 74 m above
   sea level.
   `reload-earth-rss-landed.sfs` is `reload-earth-rss-resave.sfs` with one line changed in the file:
   the situation of the craft, from `PRELAUNCH` to `LANDED`, the situation in which the workaround runs.
 
-Copy a save into the folder of a sandbox game and load it from that game. The logs of every series of
+Unzip a save into the folder of a sandbox game and load it from that game. The logs of every series of
 this page are listed in [`diag`](../../diag/README.md#on-real-solar-system).

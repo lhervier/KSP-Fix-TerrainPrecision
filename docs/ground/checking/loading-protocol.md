@@ -14,7 +14,7 @@ The protocol loads a save holding one craft landed on bare ground, on a spot whe
 and nothing else. The saves it was played on are in
 [`diag`](../diag/README.md#the-loading-protocol): a capsule on a small flat fuel tank on each of
 the four worlds of stock KSP, `reload-kerbin-2parts.sfs` and the same for `mune`, `minmus` and
-`gilly`. Copy one into the folder of a sandbox game and load it from that game.
+`gilly`. Unzip one into the folder of a sandbox game and load it from that game.
 
 **→ Full chapter: [Making the save](making-the-save.md)**
 

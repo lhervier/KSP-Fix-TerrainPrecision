@@ -31,7 +31,7 @@ each line of Diag FloatingOrigin says whether the world moved since the line bef
 
 ## The save
 
-[`driving-kerbin.sfs`](../diag/checking/driving/driving-kerbin.sfs), a sandbox game of
+[`driving-kerbin.sfs.zip`](../diag/checking/driving/driving-kerbin.sfs.zip), a sandbox game of
 KSP 1.12.5. Copy it into the folder of a sandbox game and load it from that game. It holds a single
 craft, [`Diag2-Rover`](../diag/checking/driving/Diag2-Rover.craft), a crewed rover on
 four wheels, with batteries and solar panels to recharge them, landed on the flat grass south of the
@@ -48,7 +48,7 @@ drive due south until it is off the runway and on the grass. Stop, put the brake
 
 ### The same on Earth, in Real Solar System
 
-[`driving-earth-rss.sfs`](../diag/checking/driving/driving-earth-rss.sfs) holds the same
+[`driving-earth-rss.sfs.zip`](../diag/checking/driving/driving-earth-rss.sfs.zip) holds the same
 rover on Earth, on the grass south of the runway of the KSC at Cape Canaveral, at latitude 28.6119°,
 longitude −80.6176°. It only loads in an install with
 [Real Solar System](https://github.com/KSP-RO/RealSolarSystem) and what it requires. It was made the same
@@ -138,7 +138,7 @@ HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — 
 install. Anyone can read it top to bottom: it follows the three records above in the same order.
 
 1. Install KSP-Util-MCPServer next to Diag TerrainHeight and Diag FloatingOrigin — and this mod, for the
-   series with it — copy [the save](../diag/checking/driving/driving-kerbin.sfs) into a
+   series with it — unzip [the save](../diag/checking/driving/driving-kerbin.sfs.zip) into a
    sandbox game, start KSP and wait for the main menu.
 2. Run `python run-driving.py --folder <your sandbox game> --moves 3 --out screenshots`. On Earth, add
    `--save driving-earth-rss --before 499 --radius 6371000`: the rover stops 499 m from the origin

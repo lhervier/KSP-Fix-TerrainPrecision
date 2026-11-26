@@ -17,7 +17,7 @@ it requires, [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-Lan
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) and this mod with its
 defaults. [The loading protocol](../../checking/loading-protocol.md), played by its script,
 [`run-loading.py`](../../diag/automation/run-loading.py), on
-[`reload-mune-2parts.sfs`](../../diag/checking/loading/reload-mune-2parts.sfs), six loads:
+[`reload-mune-2parts.sfs.zip`](../../diag/checking/loading/reload-mune-2parts.sfs.zip), six loads:
 
 - with Parallax's rock colliders on (its default), *Ground under craft* spreads over about 0.9 mm, and
   *Moved* stays between −1 and −2 mm at every load;

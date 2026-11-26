@@ -21,7 +21,8 @@ and its screenshots in
 A file that several pages use is in the folder of the page that measures with it. The scripts that play
 the protocols are in the `automation/` folder of each fix.
 
-Each `KSP.log` is kept compressed, as `.log.gz`, without the lines of the game loading its parts, textures,
+Each save is zipped, as `<name>.sfs.zip`: unzip it into the folder of a game under `saves`, and load it from that
+game. Each `KSP.log` is kept compressed, as `.log.gz`, without the lines of the game loading its parts, textures,
 models and user interface. Every other line is as KSP wrote it, the plugins it loaded among them, and the first
 line of each log says it was filtered.
 

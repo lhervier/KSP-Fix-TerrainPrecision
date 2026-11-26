@@ -11,10 +11,10 @@ instrument and KSP-Util-MCPServer — and this mod, or not. The game is played i
 
 ## The protocol
 
-Copy the save into the folder of a sandbox game and load it:
-[`wheel-drop-kerbin.sfs`](../diag/checking/wheel-drop/wheel-drop-kerbin.sfs), Bill Kerman
+Unzip the save into the folder of a sandbox game and load it:
+[`wheel-drop-kerbin.sfs.zip`](../diag/checking/wheel-drop/wheel-drop-kerbin.sfs.zip), Bill Kerman
 on EVA on the grass north-west of the runway, between two rovers, Jebediah Kerman beside him to help lift
-the wheel; or [`wheel-drop-mun.sfs`](../diag/checking/wheel-drop/wheel-drop-mun.sfs), Récas
+the wheel; or [`wheel-drop-mun.sfs.zip`](../diag/checking/wheel-drop/wheel-drop-mun.sfs.zip), Récas
 Kerman on EVA next to a crane on the Mun. Then, by hand, five times:
 
 1. load the save;

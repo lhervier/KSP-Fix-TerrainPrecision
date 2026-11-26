@@ -9,7 +9,7 @@ script are those of [Loading the same save](loading.md).
 
 ## The protocol
 
-Copy [`lone-parts-runway.sfs`](../diag/checking/runway/lone-parts-runway.sfs) into the
+Unzip [`lone-parts-runway.sfs.zip`](../diag/checking/runway/lone-parts-runway.sfs.zip) into the
 folder of a sandbox game and load it: Bill Kerman on EVA on the runway of the KSC, next to the rover of
 [`Diag2-Rover.craft`](../diag/checking/runway/Diag2-Rover.craft), and around them six parts
 lying alone, each a craft of a single part, taken off the rover in EVA construction and dropped there: two

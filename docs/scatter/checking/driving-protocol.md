@@ -15,7 +15,7 @@ the few metres do.
 
 ## The save
 
-[`driving-kerbin.sfs`](../../ground/diag/checking/driving/driving-kerbin.sfs), the save of
+[`driving-kerbin.sfs.zip`](../../ground/diag/checking/driving/driving-kerbin.sfs.zip), the save of
 [the protocol of the ground](../../ground/checking/driving-protocol.md#the-save): a sandbox game of KSP 1.12.5, a rover alone on the
 flat grass south of the runway of the KSC, facing due south. The scatter there is grass. Copy it into the
 folder of a sandbox game and load it from that game.
@@ -44,7 +44,7 @@ alone.
 
 [`run-scatter-driving.py`](../diag/automation/run-scatter-driving.py) plays this protocol through
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), with nothing but Python 3: start KSP with
-KSP-Util-MCPServer and Diag Scatter installed, copy the save into a sandbox game, wait for the main menu, then
+KSP-Util-MCPServer and Diag Scatter installed, unzip the save into a sandbox game, wait for the main menu, then
 run `python run-scatter-driving.py --folder <your sandbox game> --loads 6 --out out`. It stops 498 m from
 the origin, records each time once the counts have settled, writes the number and the closing line of each
 record to `lines.json`, and never saves the game. The records stay in `KSP.log`;
@@ -55,7 +55,7 @@ per record.
 
 The grass is too small to see a jump of a few centimetres. The film on
 [the page of measurements](driving.md#seen-in-the-game) was taken on a cactus in a desert of Kerbin, with
-[`cactus-kerbin.sfs`](../diag/checking/driving/cactus-kerbin.sfs): the same rover,
+[`cactus-kerbin.sfs.zip`](../diag/checking/driving/cactus-kerbin.sfs.zip): the same rover,
 497 m north of a cactus, facing it. The jump to film is the one the terrain fix leaves alone, so this mod
 is installed with its scatter fix turned off, `fixScatter = false` in its settings. Diag FloatingOrigin is
 installed as well, its window at the bottom of the screen, so that *Origin distance* shows in the film.

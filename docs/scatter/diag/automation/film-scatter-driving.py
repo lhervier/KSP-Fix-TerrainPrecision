@@ -1,7 +1,7 @@
 """Sets up and plays one move of the floating origin under a rover, for filming the scatter as it happens.
 
 It drives KSP through KSP-Util-MCPServer, and needs nothing but Python 3. Start KSP with KSP-Util-MCPServer, KSP Diag -
-Scatter, KSP Diag - Floating Origin and the mod to film installed, terrain scatter on, copy cactus-kerbin.sfs
+Scatter, KSP Diag - Floating Origin and the mod to film installed, terrain scatter on, unzip cactus-kerbin.sfs.zip
 into a sandbox game, then run it twice, starting the recording in between:
 
     python film-scatter-driving.py prepare --folder <your sandbox game>

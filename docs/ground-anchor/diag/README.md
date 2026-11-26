@@ -7,7 +7,7 @@ Part of [Terrain Precision Fix](../../../README.md), [the ground anchor](../READ
 KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel),
 [KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight), and this mod at
-`logLevel = Debug`, or not: [`ground-anchor-kerbin.sfs`](checking/anchoring/ground-anchor-kerbin.sfs), Bill Kerman places a
+`logLevel = Debug`, or not: [`ground-anchor-kerbin.sfs.zip`](checking/anchoring/ground-anchor-kerbin.sfs.zip), Bill Kerman places a
 ground anchor on the desert of Kerbin beside the rover of [`Diag3-Rover.craft`](checking/anchoring/Diag3-Rover.craft),
 alone, then with one of the rover's batteries attached on top of it; quicksave and quickload twice,
 played by hand. Three sessions: without this mod, with this mod and `fixGroundAnchorLoad = false`, and with
@@ -21,7 +21,7 @@ this mod as installed. Read in
 - [`ground-anchor-kerbin-fix.log.gz`](checking/anchoring/ground-anchor-kerbin-fix.log.gz).
 
 Below 50 frames per second: the same install, *Frame Limit* at 30 and KSP-Util-MCPServer, the base of
-[`anchor-base-desert-airfield.sfs`](checking/anchoring/anchor-base-desert-airfield.sfs) loaded, then ten quicksaves and quickloads
+[`anchor-base-desert-airfield.sfs.zip`](checking/anchoring/anchor-base-desert-airfield.sfs.zip) loaded, then ten quicksaves and quickloads
 played by [`automation/run-anchor-on-a-static.py`](automation/run-anchor-on-a-static.py) with `--from-save`
 and `--only base`. Three sessions: without this mod, with this mod and `fixGroundAnchorRivet = false`, and
 with this mod as installed. Read in

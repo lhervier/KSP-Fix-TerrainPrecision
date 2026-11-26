@@ -20,7 +20,7 @@ scatter fix on.
 The instrument reads the scatter along a flight, following
 [The protocol: the scatter, along a flight](flight-protocol.md), played by its script,
 [`run-scatter-flight.py`](../diag/automation/run-scatter-flight.py):
-the save [`ref-mune-5km.sfs`](../diag/checking/flight/ref-mune-5km.sfs),
+the save [`ref-mune-5km.sfs.zip`](../diag/checking/flight/ref-mune-5km.sfs.zip),
 a Mk1 command pod in a circular equatorial orbit 5 km over the Mun, loaded once, one record 30 s into the
 flight, then every two minutes, and one after the pod crashed into the relief, about 620 s into the flight.
 The records are in

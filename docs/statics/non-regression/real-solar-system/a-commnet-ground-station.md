@@ -38,7 +38,7 @@ here: no player sees it or touches it, and CommNet, the one thing it does for a 
 
 ## The save
 
-[`station-kourou-rss.sfs`](../../diag/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs): a rover on Earth, landed at latitude
+[`station-kourou-rss.sfs.zip`](../../diag/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs.zip): a rover on Earth, landed at latitude
 5.23899°, longitude −53.01984°, facing east, 27.83 km due west of the ground station of Kourou (latitude
 5.23938°, longitude −52.768487°), so a little beyond the 27.5 km at which this mod takes the station out.
 
@@ -55,7 +55,7 @@ Integrator, KSPTextureLoader, Real Solar System 20.1.3.0 and its textures, and t
 `logLevel = Debug` in its settings, so that `KSP.log` shows each static it takes out of its sphere and puts
 back.
 
-1. Copy `station-kourou-rss.sfs` into the folder of a game under `saves`, and load it.
+1. Unzip `station-kourou-rss.sfs.zip` into the folder of a game under `saves`, and load it.
 2. Open the part action window of the rover's cabin and read the distance of the first CommNet hop.
 3. Drive the rover due east, a little more than 500 m, to 27.3 km of the station; by hand, or with
    [`docs/statics/diag/automation/run-station-approach.py`](../../diag/automation/run-station-approach.py), which
@@ -97,7 +97,7 @@ of it after. Log: [`station-kourou-rss-fix.log.gz`](../../diag/non-regression/re
 
 ### The published save and script
 
-[`station-kourou-rss.sfs`](../../diag/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs) loaded, then
+[`station-kourou-rss.sfs.zip`](../../diag/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss.sfs.zip) loaded, then
 [`run-station-approach.py`](../../diag/automation/run-station-approach.py) run: about 530 m driven east.
 The station was taken out on the way, corrected by 111.51 mm. The floating origin shifted once on that
 leg, about 30 m before the end, so while the station was out.

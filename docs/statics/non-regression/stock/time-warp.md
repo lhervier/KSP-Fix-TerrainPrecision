@@ -90,7 +90,7 @@ both sessions, are in
 The static is a launch pad placed with [Kerbal Konstructs](https://github.com/KSP-RO/Kerbal-Konstructs)
 1.12.3 (*KSC LaunchPad lv 1*, of its *Squad KSC* statics): stock has no static on the Mun a craft can stand
 on. It stands near the highest point of the Mun's equator, at latitude −0.2773°, longitude −132.9521°, with a
-capsule landed on it. The save is [`warp-static-mun-kk.sfs`](../../diag/non-regression/stock/time-warp/warp-static-mun-kk.sfs), and
+capsule landed on it. The save is [`warp-static-mun-kk.sfs.zip`](../../diag/non-regression/stock/time-warp/warp-static-mun-kk.sfs.zip), and
 the launch pad is in [`docs/statics/diag/non-regression/stock/time-warp/warp-static-mun-kk/`](../../diag/non-regression/stock/time-warp/warp-static-mun-kk/), to copy into the
 `GameData` of KSP with Kerbal Konstructs installed. Then:
 

@@ -18,7 +18,7 @@ stock*, below, means that install without this mod.
 
 ## The protocol
 
-Copy [`ground-anchor-kerbin.sfs`](../diag/checking/anchoring/ground-anchor-kerbin.sfs) into the folder of a sandbox game and
+Unzip [`ground-anchor-kerbin.sfs.zip`](../diag/checking/anchoring/ground-anchor-kerbin.sfs.zip) into the folder of a sandbox game and
 load it: Bill Kerman on EVA on the desert of Kerbin, with a ground anchor in his inventory, beside the
 rover of [`Diag3-Rover.craft`](../diag/checking/anchoring/Diag3-Rover.craft). Then, by hand:
 
@@ -113,8 +113,8 @@ step or two ([the rivet, one frame late](../the-culprit.md#the-rivet-one-frame-l
 frames per second, that is every load. This mod fixes it with a setting of its own, `fixGroundAnchorRivet`
 ([The fix: the ground anchor](../the-fix.md#the-rivet)).
 
-The protocol: in KSP's settings, *Graphics*, *Frame Limit* at 30. Copy
-[`anchor-base-desert-airfield.sfs`](../diag/checking/anchoring/anchor-base-desert-airfield.sfs) into the folder of a sandbox
+The protocol: in KSP's settings, *Graphics*, *Frame Limit* at 30. Unzip
+[`anchor-base-desert-airfield.sfs.zip`](../diag/checking/anchoring/anchor-base-desert-airfield.sfs.zip) into the folder of a sandbox
 game and load it: on the runway of the Desert Airfield, an anchor with one of the rover's batteries on it,
 placed on stock and saved after a few loads, where stock left it, about 11 cm above the runway. Set the anchor
 as target and *Record* in KSP Diag - Landed Vessel; then, ten times, quicksave, quickload, *Record*. Three

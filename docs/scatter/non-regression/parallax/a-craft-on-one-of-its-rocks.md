@@ -17,7 +17,7 @@ it requires, Deferred, both instruments,
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol; this mod with its
 defaults (at `logLevel = Debug`), or not.
 
-**The save**, [`capsule-on-a-rock-mun.sfs`](../../diag/non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock-mun.sfs):
+**The save**, [`capsule-on-a-rock-mun.sfs.zip`](../../diag/non-regression/parallax/a-craft-on-one-of-its-rocks/capsule-on-a-rock-mun.sfs.zip):
 a Mk1 capsule on an empty FL-T100 fuel tank, landed on top of a rock of the Mun. A craft of two parts on
 purpose: KSP puts a craft of a single part back down on whatever is under it at every load
 (`Vessel.CheckGroundCollision`), which would hide where the rock came back.

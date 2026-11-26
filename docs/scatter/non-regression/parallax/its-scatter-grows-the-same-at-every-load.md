@@ -17,7 +17,7 @@ KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1,
 1.0.5 does, so that nothing turns from one load to the next, with its stock textures and what it requires, and
 [KSP Diag - Colliders](https://github.com/lhervier/KSP-Diag-Colliders); this mod, or not.
 
-Copy [`rocks-eve-jeb.sfs`](../../diag/non-regression/parallax/its-scatter-grows-the-same-at-every-load/rocks-eve-jeb.sfs)
+Unzip [`rocks-eve-jeb.sfs.zip`](../../diag/non-regression/parallax/its-scatter-grows-the-same-at-every-load/rocks-eve-jeb.sfs.zip)
 into the folder of a sandbox game and load it: a kerbal on the ground of Eve, among rocks and plants. Look
 at him from straight above, from some 40 m, and take a screenshot; load the same save again at once, with
 no time played, and take the same screenshot; twelve times. Then the same without this mod, and with it.

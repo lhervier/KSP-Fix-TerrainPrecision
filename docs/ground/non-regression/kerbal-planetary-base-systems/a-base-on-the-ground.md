@@ -62,7 +62,7 @@ with Community Category Kit and Community Resource Pack, which it requires, both
 [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer), which plays the protocol; this mod with its
 defaults (at `logLevel = Debug`), or not.
 
-**The save**, [`kpbs-kerbin-hull-2.sfs`](../../diag/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/kpbs-kerbin-hull-2.sfs):
+**The save**, [`kpbs-kerbin-hull-2.sfs.zip`](../../diag/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/kpbs-kerbin-hull-2.sfs.zip):
 a base of 28 parts — a central hub, habitats, a greenhouse, a centrifuge, cupolas, airlocks and a drill —
 built in the SPH and set down by hand on a slope of about 7° on Kerbin, west of the KSC, where the ground is
 not flat on purpose. Its ten legs are retracted: it rests on its hulls. It follows the rules of

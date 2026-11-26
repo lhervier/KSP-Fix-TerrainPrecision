@@ -21,7 +21,7 @@ penalties at 10 %, for the upgrades below; *Bypass Entry Purchase After Research
 building impact damage multiplier, 1: at the Normal difficulty, the drop below does not bring the VAB down.
 The Research and Development upgraded twice, to its last level, and the nodes the craft below need
 researched; the launchpad upgraded once, to its second level, the first that takes 54 t. That career, before
-the upgrade of the launchpad, is [`career-with-the-parts.sfs`](../../diag/non-regression/stock/destroyed-buildings/career-with-the-parts.sfs):
+the upgrade of the launchpad, is [`career-with-the-parts.sfs.zip`](../../diag/non-regression/stock/destroyed-buildings/career-with-the-parts.sfs.zip):
 copied as `persistent.sfs` into a new folder of `saves`, it opens at the space centre. Then:
 
 1. the menu of the VAB, at the space centre: no repairs needed;

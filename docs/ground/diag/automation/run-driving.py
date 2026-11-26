@@ -2,7 +2,7 @@
 
 It drives KSP through KSP-Util-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
 Python 3: no AI, no package to install. Start KSP with KSP-Util-MCPServer, KSP Diag - Terrain Height and Diag
-FloatingOrigin installed, copy driving-kerbin.sfs into a sandbox game, wait for the main menu, then run:
+FloatingOrigin installed, unzip driving-kerbin.sfs.zip into a sandbox game, wait for the main menu, then run:
 
     python run-driving.py --folder <your sandbox game> --moves 3 --out out
 

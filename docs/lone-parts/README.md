@@ -16,7 +16,7 @@ takes it away, how that is checked, and what is still to check.
 
 *KSP 1.12 without this mod, with [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes)
 and [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServer) as the only mods installed. On the
-Mun, the save [`wheel-drop-mun.sfs`](diag/checking/wheel-drop/wheel-drop-mun.sfs): in EVA
+Mun, the save [`wheel-drop-mun.sfs.zip`](diag/checking/wheel-drop/wheel-drop-mun.sfs.zip): in EVA
 construction, Récas Kerman takes a wheel off the crane and sets it down on the ground a few metres away,
 nothing touched afterwards. The countdown, added to the film, runs from the moment the wheel is let go to
 the moment it moves.*

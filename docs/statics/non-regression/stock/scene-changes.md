@@ -22,7 +22,7 @@ A new career at the Custom difficulty, set up for the two craft below to be buil
 funds and science (500 000 and 5 000), funds penalties at 10 %, *Bypass Entry Purchase After Research* on;
 the Research and Development upgraded twice, to its last level, and the nodes the craft need researched;
 every other facility at its first level. On Kerbin, that career is
-[`career-with-the-parts.sfs`](../../diag/non-regression/stock/destroyed-buildings/career-with-the-parts.sfs): copied as `persistent.sfs` into
+[`career-with-the-parts.sfs.zip`](../../diag/non-regression/stock/destroyed-buildings/career-with-the-parts.sfs.zip): copied as `persistent.sfs` into
 a new folder of `saves`, it opens at the space centre. A craft on the launchpad, then, in turn, leaving the
 flight and coming back to the craft each time:
 

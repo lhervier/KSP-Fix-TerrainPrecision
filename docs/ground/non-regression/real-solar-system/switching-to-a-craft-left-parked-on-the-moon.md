@@ -35,7 +35,7 @@ requires (Kopernicus 248, Modular Flight Integrator, KSPTextureLoader, the RSS t
   [Turning it off](the-ground-workaround.md#what-it-does)
   ([`rss-20.1.3-without-its-ground-workaround.diff`](../../diag/non-regression/real-solar-system/the-ground-workaround/rss-20.1.3-without-its-ground-workaround.diff)).
 
-**The save**, [`switch-moon-rss.sfs`](../../diag/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-rss.sfs),
+**The save**, [`switch-moon-rss.sfs.zip`](../../diag/non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-rss.sfs.zip),
 made without this mod from the save of
 [Coming back to a craft left parked, on the Moon](coming-back-to-a-craft-left-parked-on-the-moon.md#the-test):
 the same Mk1 command pod on an FL-T100 tank, landed at latitude 0.6741°, longitude 23.4730°, and the same
