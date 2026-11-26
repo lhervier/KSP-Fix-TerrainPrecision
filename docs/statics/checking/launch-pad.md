@@ -20,13 +20,13 @@ So a capsule is launched from it in six sessions, one launch each, and the deck 
 time. It is [the launch pad protocol](launch-pad-protocol.md), played by its
 script, [`run-launch-pad.py`](../diag/automation/run-launch-pad.py), once without this mod and once with
 it. The sessions without this mod are logged in
-[`launch-pad-stock-1.log`](../diag/checking/launch-pad/launch-pad-stock-1.log) to
-[`launch-pad-stock-6.log`](../diag/checking/launch-pad/launch-pad-stock-6.log), with what the
+[`launch-pad-stock-1.log.gz`](../diag/checking/launch-pad/launch-pad-stock-1.log.gz) to
+[`launch-pad-stock-6.log.gz`](../diag/checking/launch-pad/launch-pad-stock-6.log.gz), with what the
 script printed in [`launch-pad-stock-script.txt`](../diag/checking/launch-pad/launch-pad-stock-script.txt)
 and every line it recorded in [`launch-pad-stock-lines.json`](../diag/checking/launch-pad/launch-pad-stock-lines.json).
 The sessions with this mod are logged in
-[`launch-pad-fix-1.log`](../diag/checking/launch-pad/launch-pad-fix-1.log) to
-[`launch-pad-fix-6.log`](../diag/checking/launch-pad/launch-pad-fix-6.log); what the script printed is in
+[`launch-pad-fix-1.log.gz`](../diag/checking/launch-pad/launch-pad-fix-1.log.gz) to
+[`launch-pad-fix-6.log.gz`](../diag/checking/launch-pad/launch-pad-fix-6.log.gz); what the script printed is in
 [`launch-pad-fix-script.txt`](../diag/checking/launch-pad/launch-pad-fix-script.txt), and every line it recorded in
 [`launch-pad-fix-lines.json`](../diag/checking/launch-pad/launch-pad-fix-lines.json).
 
@@ -53,7 +53,7 @@ one line of this mod in each: the launch pad taken out of its terrain sphere whi
 
 **With this mod**, in that same install, with this mod as the only difference, the first launch:
 
-![With this mod, the capsule on the deck of the Desert Launch Site, read by Diag TerrainHeight](../imgs/checking/launch-pad/table-1-fix.png)
+![With this mod, the capsule on the deck of the Desert Launch Site, read by Diag TerrainHeight](../imgs/checking/launch-pad/table-1-fix.jpg)
 
 The deck spreads over 592.8 mm without this mod, and 0.001 mm with it.
 
@@ -79,11 +79,11 @@ itself, on the sand in session 5.
 
 | | |
 |---|---|
-| ![Launch 1](../imgs/checking/launch-pad/foot-1-fix.png) | ![Launch 2](../imgs/checking/launch-pad/foot-2-fix.png) |
+| ![Launch 1](../imgs/checking/launch-pad/foot-1-fix.jpg) | ![Launch 2](../imgs/checking/launch-pad/foot-2-fix.jpg) |
 | launch 1 | launch 2 |
-| ![Launch 3](../imgs/checking/launch-pad/foot-3-fix.png) | ![Launch 4](../imgs/checking/launch-pad/foot-4-fix.png) |
+| ![Launch 3](../imgs/checking/launch-pad/foot-3-fix.jpg) | ![Launch 4](../imgs/checking/launch-pad/foot-4-fix.jpg) |
 | launch 3 | launch 4 |
-| ![Launch 5](../imgs/checking/launch-pad/foot-5-fix.png) | ![Launch 6](../imgs/checking/launch-pad/foot-6-fix.png) |
+| ![Launch 5](../imgs/checking/launch-pad/foot-5-fix.jpg) | ![Launch 6](../imgs/checking/launch-pad/foot-6-fix.jpg) |
 | launch 5 | launch 6 |
 
 ## What the measurements say

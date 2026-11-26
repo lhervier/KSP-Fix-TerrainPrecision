@@ -53,7 +53,7 @@ just as well by hand.
 The menus show each facility at each level, with this mod as without it (launchpad on the left, runway on
 the right):
 
-![The menus of the launchpad and the runway, at each level](../../imgs/non-regression/stock/facility-levels/facility-levels-menus.png)
+![The menus of the launchpad and the runway, at each level](../../imgs/non-regression/stock/facility-levels/facility-levels-menus.jpg)
 
 At each level, the craft stands on the model of that level, at a height of its own: with this mod, at the
 same height at every arrival, higher at each level; without it, around the same heights, within the spread

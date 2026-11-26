@@ -28,8 +28,8 @@ its two saves, played by its script, [`run-runway.py`](../diag/automation/run-ru
 ## The craft on a runway
 
 **On a runway, and on the ground beside it, on stock.** The sessions are logged in
-[`runway-stock.log`](../diag/checking/loading/runway-stock.log) and
-[`runway-mun-kk-stock.log`](../diag/checking/loading/runway-mun-kk-stock.log), with what the
+[`runway-stock.log.gz`](../diag/checking/loading/runway-stock.log.gz) and
+[`runway-mun-kk-stock.log.gz`](../diag/checking/loading/runway-mun-kk-stock.log.gz), with what the
 script printed and every line it recorded beside them. The odd lines are on the ground, the even lines
 on the runway, after switching to it; the bottom line is the reading in progress, not a record.
 
@@ -72,18 +72,18 @@ The step is the runway minus the ground: on Kerbin, 4.3 m, the height of the dec
 | Mun, on the Kerbal Konstructs runway, with this mod | **−3.709 mm** | −25.041 mm | −25.029 mm | −25.030 mm | −25.024 mm | −25.029 mm |
 
 **On a runway, with this mod**, in that same install, on those same saves, with this mod as the only
-difference. The sessions are logged in [`runway-fix.log`](../diag/checking/loading/runway-fix.log) and
-[`runway-mun-kk-fix.log`](../diag/checking/loading/runway-mun-kk-fix.log), with what the script printed and every
+difference. The sessions are logged in [`runway-fix.log.gz`](../diag/checking/loading/runway-fix.log.gz) and
+[`runway-mun-kk-fix.log.gz`](../diag/checking/loading/runway-mun-kk-fix.log.gz), with what the script printed and every
 line it recorded beside them. *On rails* still reads the same height, within three thousandths of a
 millimetre.
 
 On Kerbin, on the runway of the KSC:
 
-![Six loadings on Kerbin with this mod, read by Diag LandedVessel: the craft on the grass, then the craft on the runway](../imgs/checking/loading/landed-vessel/six-loads-fix.png)
+![Six loadings on Kerbin with this mod, read by Diag LandedVessel: the craft on the grass, then the craft on the runway](../imgs/checking/loading/landed-vessel/six-loads-fix.jpg)
 
 On the Mun, on a runway placed by Kerbal Konstructs:
 
-![Six loadings on the Mun with this mod, read by Diag LandedVessel: the craft on the ground, then the craft on the runway placed by Kerbal Konstructs](../imgs/checking/loading/landed-vessel/six-loads-mun-kk-fix.png)
+![Six loadings on the Mun with this mod, read by Diag LandedVessel: the craft on the ground, then the craft on the runway placed by Kerbal Konstructs](../imgs/checking/loading/landed-vessel/six-loads-mun-kk-fix.jpg)
 
 On Kerbin, the craft on the grass comes to rest across a spread of 89.5 mm without this mod, and
 0.076 mm with it; the craft on the runway, 116.8 mm without it, and 0.208 mm with it; the step between
@@ -126,11 +126,11 @@ the same digits as on stock.
 
 On Kerbin, on the runway of the KSC:
 
-![Six loadings on Kerbin with this mod, read by Diag TerrainHeight: the ground under the craft on the grass, then under the craft on the runway](../imgs/checking/loading/terrain-height/six-loads-fix.png)
+![Six loadings on Kerbin with this mod, read by Diag TerrainHeight: the ground under the craft on the grass, then under the craft on the runway](../imgs/checking/loading/terrain-height/six-loads-fix.jpg)
 
 On the Mun, on a runway placed by Kerbal Konstructs:
 
-![Six loadings on the Mun with this mod, read by Diag TerrainHeight: the ground under the craft on the ground, then under the craft on the runway placed by Kerbal Konstructs](../imgs/checking/loading/terrain-height/six-loads-mun-kk-fix.png)
+![Six loadings on the Mun with this mod, read by Diag TerrainHeight: the ground under the craft on the ground, then under the craft on the runway placed by Kerbal Konstructs](../imgs/checking/loading/terrain-height/six-loads-mun-kk-fix.jpg)
 
 On Kerbin, the grass spreads over 89.5 mm without this mod, and 0.013 mm with it; the deck of the runway,
 over 116.5 mm without it, and 0.177 mm with it; the step between the two, over 38.3 mm without it, and
@@ -156,7 +156,7 @@ hundredths for the craft. Where the remainder of the runway comes from is not es
 hundred times smaller than what stock does.
 
 **On the Mun, the first loading reads another surface.** Listing every collider under each craft at each
-loading ([`runway-mun-kk-colliders-fix.log`](../diag/checking/loading/runway-mun-kk-colliders-fix.log),
+loading ([`runway-mun-kk-colliders-fix.log.gz`](../diag/checking/loading/runway-mun-kk-colliders-fix.log.gz),
 four loadings with this mod): at the first loading of the session, one more collider of the runway is
 active under the craft, a section of the deck, `Section3_Mesh`, 21.3 mm above the deck's own
 `runway_collider`; from the second loading on, it is gone, and the craft rests on `runway_collider`,

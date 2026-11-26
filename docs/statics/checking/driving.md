@@ -37,7 +37,7 @@ Across each move, in millimetres:
 | with both fixes | 1 | +0.007 | −0.019 | −0.026 | 0.034 |
 | | 2 | −0.002 | −0.068 | −0.066 | 0.102 |
 
-**On stock**, one run, logged in [`driving-runway-stock.log`](../diag/checking/driving/driving-runway-stock.log); what
+**On stock**, one run, logged in [`driving-runway-stock.log.gz`](../diag/checking/driving/driving-runway-stock.log.gz); what
 the script printed is in [`driving-runway-stock-script.txt`](../diag/checking/driving/driving-runway-stock-script.txt),
 and every line it recorded in [`driving-runway-stock-lines.json`](../diag/checking/driving/driving-runway-stock-lines.json).
 G stood 474 to 481 m from the origin of the world before each move, and the rover stopped 14 to 15 cm
@@ -65,7 +65,7 @@ a spot spread over up to 26.7 mm, as much as a move does
 
 **With the terrain fix alone**, an earlier run, played with an earlier version of the script, `fixStatics = false` in this mod's settings, the only line changed. The
 session is logged in
-[`driving-runway-diag2-fix-terrain-only.log`](../diag/checking/driving/driving-runway-diag2-fix-terrain-only.log),
+[`driving-runway-diag2-fix-terrain-only.log.gz`](../diag/checking/driving/driving-runway-diag2-fix-terrain-only.log.gz),
 what the script printed in
 [`driving-runway-diag2-fix-terrain-only-script.txt`](../diag/checking/driving/driving-runway-diag2-fix-terrain-only-script.txt)
 and every line it recorded in
@@ -74,17 +74,17 @@ At the second move, the rover stalled against the lip of the deck on its way to 
 from the spot, at the same place each time: its readings there agree to 0.017 mm. On the last visit to
 P, after the move, it stopped 9.7 m away, and that line is left out: P has one line after that move.
 
-![With the terrain fix alone, the first move, read by Diag TerrainHeight](../imgs/checking/driving/terrain-only-move1-diag2.png)
+![With the terrain fix alone, the first move, read by Diag TerrainHeight](../imgs/checking/driving/terrain-only-move1-diag2.jpg)
 
 **With both fixes**, this mod as it is installed, the same script as on stock. The session is logged in
-[`driving-runway-diag2-fix.log`](../diag/checking/driving/driving-runway-diag2-fix.log), what the script
+[`driving-runway-diag2-fix.log.gz`](../diag/checking/driving/driving-runway-diag2-fix.log.gz), what the script
 printed in [`driving-runway-diag2-fix-script.txt`](../diag/checking/driving/driving-runway-diag2-fix-script.txt) and
 every line it recorded in
 [`driving-runway-diag2-fix-lines.json`](../diag/checking/driving/driving-runway-diag2-fix-lines.json). G stood 476 to
 482 m from the origin before each move, and the rover stopped 12 to 17 cm from each spot. The third
 move is left out, as on stock: the lines taken at a spot there spread over up to 26.7 mm.
 
-![With both fixes, the first move, read by Diag TerrainHeight](../imgs/checking/driving/fix-move1-diag2.png)
+![With both fixes, the first move, read by Diag TerrainHeight](../imgs/checking/driving/fix-move1-diag2.jpg)
 
 ## By the runway of the KSC at Cape Canaveral
 
@@ -98,7 +98,7 @@ Across each move, in millimetres:
 | | 2 | +0.119 | −0.001 | −0.119 | 0.282 |
 
 **On stock**, one run, two moves, logged in
-[`driving-runway-earth-rss-stock.log`](../diag/checking/driving/driving-runway-earth-rss-stock.log); what the script
+[`driving-runway-earth-rss-stock.log.gz`](../diag/checking/driving/driving-runway-earth-rss-stock.log.gz); what the script
 printed is in [`driving-runway-earth-rss-stock-script.txt`](../diag/checking/driving/driving-runway-earth-rss-stock-script.txt),
 and every line it recorded in [`driving-runway-earth-rss-stock-lines.json`](../diag/checking/driving/driving-runway-earth-rss-stock-lines.json).
 G stood 475 to 477 m from the origin of the world before each move, and the rover stopped 13 to 16 cm
@@ -116,7 +116,7 @@ The other screenshots, read by both instruments, are `earth-stock-move*.png` in
 [`docs/statics/imgs/checking/driving/`](../imgs/checking/driving).
 
 **With this mod**, on the same save. The session is logged in
-[`driving-runway-earth-rss-diag2-fix.log`](../diag/checking/driving/driving-runway-earth-rss-diag2-fix.log),
+[`driving-runway-earth-rss-diag2-fix.log.gz`](../diag/checking/driving/driving-runway-earth-rss-diag2-fix.log.gz),
 what the script printed in
 [`driving-runway-earth-rss-diag2-fix-script.txt`](../diag/checking/driving/driving-runway-earth-rss-diag2-fix-script.txt)
 and every line it recorded in
@@ -126,7 +126,7 @@ Diag FloatingOrigin reads a move of 500.0 m, to within three centimetres, on the
 this mod taking the KSC out of its sphere once, as the save loads, and holding it there through both
 moves.
 
-![On Earth, with this mod, the first move, read by Diag TerrainHeight](../imgs/checking/driving/earth-fix-move1-diag2.png)
+![On Earth, with this mod, the first move, read by Diag TerrainHeight](../imgs/checking/driving/earth-fix-move1-diag2.jpg)
 
 The screenshots of every move by the runway, on Kerbin and on Earth, read by both instruments, are in
 [`docs/statics/imgs/checking/driving/`](../imgs/checking/driving).

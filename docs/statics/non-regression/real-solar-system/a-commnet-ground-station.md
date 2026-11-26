@@ -87,13 +87,13 @@ back.
 
 | At the start, 27.8 km | At the end, 27.3 km |
 |---|---|
-| ![The rover at 27.8 km of the station, its cabin's part action window open](../../imgs/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-before.png) | ![The rover at 27.3 km of the station, its cabin's part action window open](../../imgs/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-after.png) |
+| ![The rover at 27.8 km of the station, its cabin's part action window open](../../imgs/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-before.jpg) | ![The rover at 27.3 km of the station, its cabin's part action window open](../../imgs/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-after.jpg) |
 
 ## The readings
 
 Two sessions with this mod. The distance is the one the part action window of the rover's cabin shows for
 the first hop, rounded to 100 m. The station is under its sphere before the rover crosses 27.5 km, and out
-of it after. Log: [`station-kourou-rss-fix.log`](../../diag/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss-fix.log).
+of it after. Log: [`station-kourou-rss-fix.log.gz`](../../diag/non-regression/real-solar-system/a-commnet-ground-station/station-kourou-rss-fix.log.gz).
 
 ### The published save and script
 

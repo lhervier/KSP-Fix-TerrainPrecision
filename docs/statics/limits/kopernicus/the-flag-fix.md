@@ -28,9 +28,9 @@ in the last two runs, from the space centre too. Three runs, each in a KSP start
 
 | run | the flag by the launchpad | log |
 |---|---|---|
-| without this mod | twitches, in flight | [`kopernicus-flag-glitch-without-this-mod.log`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-glitch-without-this-mod.log) |
-| this mod, `patchKopernicus = false`, `logLevel = Debug` | steady in flight, twitches at the space centre | [`kopernicus-flag-glitch-statics-fix.log`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-glitch-statics-fix.log) |
-| this mod, `fixStatics = false`, `patchKopernicus = false`, `logLevel = Debug` | twitches, in flight and at the space centre | [`kopernicus-flag-glitch-statics-fix-off.log`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-glitch-statics-fix-off.log) |
+| without this mod | twitches, in flight | [`kopernicus-flag-glitch-without-this-mod.log.gz`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-glitch-without-this-mod.log.gz) |
+| this mod, `patchKopernicus = false`, `logLevel = Debug` | steady in flight, twitches at the space centre | [`kopernicus-flag-glitch-statics-fix.log.gz`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-glitch-statics-fix.log.gz) |
+| this mod, `fixStatics = false`, `patchKopernicus = false`, `logLevel = Debug` | twitches, in flight and at the space centre | [`kopernicus-flag-glitch-statics-fix-off.log.gz`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-glitch-statics-fix-off.log.gz) |
 
 Kopernicus never fixes the flags in these runs. What holds the flag in flight is the statics fix alone:
 the second run's log shows the KSC taken out of its sphere three seconds into the flight, and the third
@@ -105,19 +105,19 @@ later, it spawns a second pod on the launchpad; 30 seconds after that, it ends.
 1. From the main menu, *Missions*, then play *KSC flag fix*. Switch the clock to universal time: a craft
    waiting on the runway keeps its mission elapsed time at zero.
 
-   ![The mission started: the pod on the runway, the clock in universal time](../../imgs/limits/kopernicus/the-flag-fix/00-start-mission.png)
+   ![The mission started: the pod on the runway, the clock in universal time](../../imgs/limits/kopernicus/the-flag-fix/00-start-mission.jpg)
 
 2. 30 seconds in, the second pod appears on the launchpad.
 
-   ![The second pod on the launchpad, 1.6 km away on the stock system, 1.8 km in Real Solar System](../../imgs/limits/kopernicus/the-flag-fix/10-wait-for-capsule2.png)
+   ![The second pod on the launchpad, 1.6 km away on the stock system, 1.8 km in Real Solar System](../../imgs/limits/kopernicus/the-flag-fix/10-wait-for-capsule2.jpg)
 
 3. 30 seconds later, the mission ends: close its window.
 
-   ![The end of the mission, and the button that closes its window](../../imgs/limits/kopernicus/the-flag-fix/30-end-of-mission.png)
+   ![The end of the mission, and the button that closes its window](../../imgs/limits/kopernicus/the-flag-fix/30-end-of-mission.jpg)
 
 4. Switch to the second pod, and look at the flag by the launchpad.
 
-   ![The second pod on the launchpad, the flag by it](../../imgs/limits/kopernicus/the-flag-fix/40-switch-and-observe.png)
+   ![The second pod on the launchpad, the flag by it](../../imgs/limits/kopernicus/the-flag-fix/40-switch-and-observe.jpg)
 
 5. Quit KSP, and read `KSP.log`.
 
@@ -125,9 +125,9 @@ Three runs, each in a KSP started afresh:
 
 | run | `settings.cfg` of this mod | in `KSP.log`, when the second pod appears | log |
 |---|---|---|---|
-| without this mod | — | nothing | [`kopernicus-flag-fix-without-this-mod.log`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-fix-without-this-mod.log) |
-| this mod, Kopernicus unpatched | `patchKopernicus = false`, `logLevel = Debug` | `Exception handling event OnKSCFacilityUpgraded in class RuntimeUtility:System.NullReferenceException` … `at Kopernicus.RuntimeUtility.RuntimeUtility.FixFlags ()` | [`kopernicus-flag-fix-patch-off.log`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-fix-patch-off.log) |
-| this mod, Kopernicus patched | `patchKopernicus = true`, `logLevel = Debug` | nothing | [`kopernicus-flag-fix-patch-on.log`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-fix-patch-on.log) |
+| without this mod | — | nothing | [`kopernicus-flag-fix-without-this-mod.log.gz`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-fix-without-this-mod.log.gz) |
+| this mod, Kopernicus unpatched | `patchKopernicus = false`, `logLevel = Debug` | `Exception handling event OnKSCFacilityUpgraded in class RuntimeUtility:System.NullReferenceException` … `at Kopernicus.RuntimeUtility.RuntimeUtility.FixFlags ()` | [`kopernicus-flag-fix-patch-off.log.gz`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-fix-patch-off.log.gz) |
+| this mod, Kopernicus patched | `patchKopernicus = true`, `logLevel = Debug` | nothing | [`kopernicus-flag-fix-patch-on.log.gz`](../../diag/limits/kopernicus/the-flag-fix/kopernicus-flag-fix-patch-on.log.gz) |
 
 In both runs with this mod, the log shows the KSC taken out of its sphere a few seconds into the
 flight, then, at the instant the second pod appears, put back under it and taken out again: the game

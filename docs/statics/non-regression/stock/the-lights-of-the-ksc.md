@@ -33,11 +33,11 @@ with its defaults at `logLevel = Debug`. Then the same without this mod.
 At night, with this mod, the KSC out of its sphere since the rover arrived on the runway: the lights along
 the runway are on, and so are the windows of the VAB and of the buildings beside it.
 
-![The KSC at night, from the runway: its lights on](../../imgs/non-regression/stock/the-lights-of-the-ksc/time-warp-night.png)
+![The KSC at night, from the runway: its lights on](../../imgs/non-regression/stock/the-lights-of-the-ksc/time-warp-night.jpg)
 
 At noon, they are off:
 
-![The KSC at noon, from the runway: its lights off](../../imgs/non-regression/stock/the-lights-of-the-ksc/time-warp-noon.png)
+![The KSC at noon, from the runway: its lights off](../../imgs/non-regression/stock/the-lights-of-the-ksc/time-warp-noon.jpg)
 
 Without this mod, the same screenshots show the same lights on at night and off at noon.
 

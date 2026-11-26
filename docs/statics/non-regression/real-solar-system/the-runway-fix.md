@@ -105,21 +105,21 @@ loads, as Diag Terrain Height reads them:
 Past the edge, the runway stands **116.5 mm higher** than before it at 26 loads of the 30. At the four
 others, it stands 0.5 to 3.2 mm lower: no step.
 
-![The table of Diag Terrain Height after four loads](../../imgs/non-regression/real-solar-system/the-runway-fix/20-without-runway-fix-table.png)
+![The table of Diag Terrain Height after four loads](../../imgs/non-regression/real-solar-system/the-runway-fix/20-without-runway-fix-table.jpg)
 
 *Without the runway fix, without this mod: the table of Diag Terrain Height after the first four loads of
 the first launch, three lines a load: the grass, before the edge, past it.*
 
-![The rover astride the edge, nose up](../../imgs/non-regression/real-solar-system/the-runway-fix/21-without-runway-fix-step.png)
+![The rover astride the edge, nose up](../../imgs/non-regression/real-solar-system/the-runway-fix/21-without-runway-fix-step.jpg)
 
 *The same session: a load with the step, the rover backed onto the edge, its back wheels on `End09`
 (magenta), its front wheels on `Section4` (cyan).*
 
-![The rover astride the edge, Section4 below End09](../../imgs/non-regression/real-solar-system/the-runway-fix/22-without-runway-fix-step-down.png)
+![The rover astride the edge, Section4 below End09](../../imgs/non-regression/real-solar-system/the-runway-fix/22-without-runway-fix-step-down.jpg)
 
 *The same session: a load where the collider of `Section4` (cyan) lies below that of `End09` (magenta).*
 
-![The rover astride the edge, in the air above the deck](../../imgs/non-regression/real-solar-system/the-runway-fix/23-without-runway-fix-step-in-the-air.png)
+![The rover astride the edge, in the air above the deck](../../imgs/non-regression/real-solar-system/the-runway-fix/23-without-runway-fix-step-in-the-air.jpg)
 
 *The same session, another launch: a load with the step, the runway at its highest of the thirty loads.*
 
@@ -136,12 +136,12 @@ The runway stands at the same height at every load, and so does the grass:
 Past the edge, the runway stands 3.1 or 3.2 mm lower than before it at every load: the slope of the deck
 over 18 m, with no step.
 
-![The table of Diag Terrain Height after four loads, with this mod](../../imgs/non-regression/real-solar-system/the-runway-fix/30-with-this-mod-table.png)
+![The table of Diag Terrain Height after four loads, with this mod](../../imgs/non-regression/real-solar-system/the-runway-fix/30-with-this-mod-table.jpg)
 
 *Without the runway fix, with this mod: the table of Diag Terrain Height after the first four loads of the
 first launch.*
 
-![The rover astride the edge, level](../../imgs/non-regression/real-solar-system/the-runway-fix/31-with-this-mod-astride.png)
+![The rover astride the edge, level](../../imgs/non-regression/real-solar-system/the-runway-fix/31-with-this-mod-astride.jpg)
 
 *The same session: the rover backed onto the edge, at the first load.*
 

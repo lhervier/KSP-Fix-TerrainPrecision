@@ -71,18 +71,18 @@ Rockomax32.BW Exploded!! - blast awesomeness: 0.5
 Back on the launchpad, the VAB stands again, both ways: a *Revert to Launch* made while it collapses puts
 it back. The second drop brings it down for good, the KSC out of its sphere again:
 
-![The VAB collapsed](../../imgs/non-regression/stock/destroyed-buildings/destroyed-buildings-collapsed.png)
+![The VAB collapsed](../../imgs/non-regression/stock/destroyed-buildings/destroyed-buildings-collapsed.jpg)
 
 At the space centre, its menu asks for its repairs, 2 396 funds at these funds penalties, both ways:
 
-![The menu of the VAB, at the space centre](../../imgs/non-regression/stock/destroyed-buildings/destroyed-buildings-menu.png)
+![The menu of the VAB, at the space centre](../../imgs/non-regression/stock/destroyed-buildings/destroyed-buildings-menu.jpg)
 
 From the runway, the next flight shows the VAB in ruins, and so does the quickload; once repaired, it
 stands again, both ways:
 
-![The ruins of the VAB, from the runway](../../imgs/non-regression/stock/destroyed-buildings/destroyed-buildings-ruins.png)
+![The ruins of the VAB, from the runway](../../imgs/non-regression/stock/destroyed-buildings/destroyed-buildings-ruins.jpg)
 
-![The VAB repaired, from the launchpad](../../imgs/non-regression/stock/destroyed-buildings/destroyed-buildings-repaired.png)
+![The VAB repaired, from the launchpad](../../imgs/non-regression/stock/destroyed-buildings/destroyed-buildings-repaired.jpg)
 
 The height of the facility under the craft above the ground KSP computes, lowest and highest over its
 arrivals: three on the launchpad

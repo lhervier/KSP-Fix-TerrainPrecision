@@ -67,6 +67,6 @@ follows the gizmo and stays where it is let go, the latitude and longitude the e
 no more than the distance dragged, and once the save is loaded again the runway is where it was left.
 The log says the patch is applied, and the group stays out of its sphere throughout, put back under it
 only while Kerbal Konstructs places it anew after each drag:
-[`kk-group-editor-fix.log`](../../diag/limits/kerbal-konstructs/the-group-editor/kk-group-editor-fix.log). Only the gizmo goes
+[`kk-group-editor-fix.log.gz`](../../diag/limits/kerbal-konstructs/the-group-editor/kk-group-editor-fix.log.gz). Only the gizmo goes
 through the read this mod patches: the keys and the arrows of the editor's window move a group by
 latitude and longitude, which mean the same thing wherever it hangs.

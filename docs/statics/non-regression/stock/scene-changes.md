@@ -116,7 +116,7 @@ the game, and none of them about the statics:
 
 - on Kerbin and on Earth, a `NullReferenceException` of the Knowledge Base when the map view changes its
   focus (`KnowledgeBase.OnMapFocusChange`), which an earlier session on Earth without this mod shows too
-  ([`scene-changes-earth-rss-without-this-mod-earlier.log`](../../diag/non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-earlier.log)),
+  ([`scene-changes-earth-rss-without-this-mod-earlier.log.gz`](../../diag/non-regression/stock/scene-changes/scene-changes-earth-rss-without-this-mod-earlier.log.gz)),
   and so does the session of [Destroyed buildings](destroyed-buildings.md) without this mod;
 - on Earth, as KSP quits at the end of the session, a `NullReferenceException` of the tooltip of a crew
   hatch (`CrewHatchController.HideTooltip`);

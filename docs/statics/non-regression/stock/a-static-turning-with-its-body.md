@@ -91,7 +91,7 @@ the Mun from 5 km up:
 }
 ```
 
-![The ground of the Mun torn apart between two quads](../../imgs/non-regression/stock/a-static-turning-with-its-body/the-mun-turning-from-5-km.png)
+![The ground of the Mun torn apart between two quads](../../imgs/non-regression/stock/a-static-turning-with-its-body/the-mun-turning-from-5-km.jpg)
 
 *KSP 1.12.5 with Harmony, ModuleManager, KSP Community Fixes 1.41.1, Kopernicus 248 and the patch above,
 KSP Diag - Floating Origin at the top, without this mod: a craft moved from orbit to orbit of the Mun
