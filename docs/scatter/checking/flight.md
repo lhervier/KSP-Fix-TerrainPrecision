@@ -24,8 +24,8 @@ the save [`ref-mune-5km.sfs`](../diag/checking/flight/ref-mune-5km.sfs),
 a Mk1 command pod in a circular equatorial orbit 5 km over the Mun, loaded once, one record 30 s into the
 flight, then every two minutes, and one after the pod crashed into the relief, about 620 s into the flight.
 The records are in
-[`mun-5km-stock-rocks.log`](../diag/checking/flight/mun-5km-stock-rocks.log) and
-[`mun-5km-fix-rocks.log`](../diag/checking/flight/mun-5km-fix-rocks.log),
+[`mun-5km-stock-rocks.log.gz`](../diag/checking/flight/mun-5km-stock-rocks.log.gz) and
+[`mun-5km-fix-rocks.log.gz`](../diag/checking/flight/mun-5km-fix-rocks.log.gz),
 six each, with what the script printed beside them
 ([`diag`](../diag/README.md#the-scatter-the-objects-over-a-flight)). On stock, the record after the
 crash was taken by hand: the script did not see the crash, the game keeping the wrecked pod as the craft

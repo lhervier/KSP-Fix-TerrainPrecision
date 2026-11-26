@@ -93,8 +93,8 @@ move. Nothing else changed between the two frames, a sixth of a second apart: th
 right after this move: the 148 holders around the rover jumped by −47.2 to −48.1 mm, and the 50 vertices
 measured on the 5 cactus of the nearest quad by −44.9 to −46.7 mm against the ground, which moved by
 0.3 mm at most
-([`cactus-fix-no-scatter-before.log`](../diag/checking/driving/cactus-fix-no-scatter-before.log),
-[`cactus-fix-no-scatter-after.log`](../diag/checking/driving/cactus-fix-no-scatter-after.log)). Each load
+([`cactus-fix-no-scatter-before.log.gz`](../diag/checking/driving/cactus-fix-no-scatter-before.log.gz),
+[`cactus-fix-no-scatter-after.log.gz`](../diag/checking/driving/cactus-fix-no-scatter-after.log.gz)). Each load
 draws its own jump, small or large; this take was kept for being one of the largest. How it was filmed is
 in [the protocol](driving-protocol.md#filming-it).
 

@@ -71,8 +71,8 @@ those behind it: the save [`ref-mune-5km.sfs`](../../diag/checking/flight/ref-mu
 a Mk1 command pod in a circular equatorial orbit 5 km over the Mun, loaded once, one record 30 s into the
 flight, then every two minutes, and one after the pod crashed into the relief, about 617 s into the flight.
 Once on stock, once with this mod ([The protocol](#the-protocol)). The records are in
-[`mun-5km-stock-holders.log`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-stock-holders.log) and
-[`mun-5km-fix-holders.log`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-fix-holders.log), six each,
+[`mun-5km-stock-holders.log.gz`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-stock-holders.log.gz) and
+[`mun-5km-fix-holders.log.gz`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-fix-holders.log.gz), six each,
 with what the script printed beside them
 ([`mun-5km-stock-script.txt`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-stock-script.txt),
 [`mun-5km-fix-script.txt`](../../diag/non-regression/stock/the-scatter-holders/mun-5km-fix-script.txt)) and what it
@@ -106,8 +106,8 @@ none travels on a quad to the next body.
 The same install, on stock and with this mod, one session each, following [the protocol](#the-protocol):
 `reference-mune.sfs` loaded from the Space Center, back to the Space Center, then `reference-kerbin.sfs`,
 with a record in each of the three scenes. The records are in
-[`scenes-stock-holders.log`](../../diag/non-regression/stock/the-scatter-holders/scenes-stock-holders.log) and
-[`scenes-fix-holders.log`](../../diag/non-regression/stock/the-scatter-holders/scenes-fix-holders.log), with what the
+[`scenes-stock-holders.log.gz`](../../diag/non-regression/stock/the-scatter-holders/scenes-stock-holders.log.gz) and
+[`scenes-fix-holders.log.gz`](../../diag/non-regression/stock/the-scatter-holders/scenes-fix-holders.log.gz), with what the
 script printed ([`scenes-stock-script.txt`](../../diag/non-regression/stock/the-scatter-holders/scenes-stock-script.txt),
 [`scenes-fix-script.txt`](../../diag/non-regression/stock/the-scatter-holders/scenes-fix-script.txt)) and what it
 recorded ([`scenes-stock-lines.json`](../../diag/non-regression/stock/the-scatter-holders/scenes-stock-lines.json),
