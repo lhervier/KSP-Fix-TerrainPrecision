@@ -18,8 +18,8 @@ capsule, and physics takes it over. Six rounds, each starting by loading the sam
 [the switching protocol](switching-protocol.md), with a save made without this
 mod, played by its script, [`run-switching.py`](../diag/automation/run-switching.py), once without this
 mod and once with it, both instruments recording at the same moments. The sessions are logged in
-[`switching-stock.log`](../diag/checking/switching/switching-stock.log) and
-[`switching-fix.log`](../diag/checking/switching/switching-fix.log), with what the script
+[`switching-stock.log.gz`](../diag/checking/switching/switching-stock.log.gz) and
+[`switching-fix.log.gz`](../diag/checking/switching/switching-fix.log.gz), with what the script
 printed and every line it recorded beside them ([`diag`](../diag/README.md#the-switching-protocol)).
 
 **→ Full chapter: [The protocol: switching to a craft far away](switching-protocol.md)**
@@ -44,7 +44,7 @@ once the switch has handed the capsule to physics:
 rails* still reads the same height, within a thousandth of a millimetre. The first line of each round
 is taken as the save opens, the second after the switch:
 
-![With this mod, six rounds of loading the save and switching to the capsule, read by Diag LandedVessel](../imgs/checking/switching/landed-vessel/six-rounds-fix.png)
+![With this mod, six rounds of loading the save and switching to the capsule, read by Diag LandedVessel](../imgs/checking/switching/landed-vessel/six-rounds-fix.jpg)
 
 The capsule comes to rest across a spread of 112.0 mm without this mod, and 0.028 mm with it.
 
@@ -67,7 +67,7 @@ thousandths of a millimetre.
 
 **With this mod**, in that same install, the same session:
 
-![With this mod, six rounds of loading the save and switching to the capsule, read by Diag TerrainHeight](../imgs/checking/switching/terrain-height/six-rounds-fix.png)
+![With this mod, six rounds of loading the save and switching to the capsule, read by Diag TerrainHeight](../imgs/checking/switching/terrain-height/six-rounds-fix.jpg)
 
 All twelve lines, before and after the switch, read between −1.694 and −1.696 mm.
 

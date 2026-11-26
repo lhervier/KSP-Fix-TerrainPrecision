@@ -29,12 +29,12 @@ The saves, a capsule on a small flat fuel tank, made by
 
 Copy a save into the folder of a sandbox game and load it from that game.
 
-- [`loading-stock.log`](checking/loading/loading-stock.log) and
-  [`loading-fix.log`](checking/loading/loading-fix.log) — the `KSP.log` of the session the
+- [`loading-stock.log.gz`](checking/loading/loading-stock.log.gz) and
+  [`loading-fix.log.gz`](checking/loading/loading-fix.log.gz) — the `KSP.log` of the session the
   four saves of the stock worlds were played in, one after the other, together with a lone capsule on
   the same spots, a series no longer published; without this mod, then with it.
-- [`loading-rss-stock.log`](checking/loading/loading-rss-stock.log) and
-  [`loading-rss-fix.log`](checking/loading/loading-rss-fix.log) — the same on Real Solar
+- [`loading-rss-stock.log.gz`](checking/loading/loading-rss-stock.log.gz) and
+  [`loading-rss-fix.log.gz`](checking/loading/loading-rss-fix.log.gz) — the same on Real Solar
   System, the Moon then Earth.
 - for each save, without this mod (`-stock`) and with it (`-fix`), what the script printed
   (`-script.txt`), and every line it recorded, in both instruments (`-lines.json`):
@@ -72,12 +72,12 @@ The install of [The loading protocol](#the-loading-protocol), on Kerbin: the six
 west of the KSC and a rover 1.97 km to the south of it. Read in
 [Switching to a craft far away](../checking/switching.md).
 
-- [`switching-stock.log`](checking/switching/switching-stock.log) — the `KSP.log` of the
+- [`switching-stock.log.gz`](checking/switching/switching-stock.log.gz) — the `KSP.log` of the
   session without this mod; what the script printed in
   [`switching-stock-script.txt`](checking/switching/switching-stock-script.txt), and every
   line it recorded, in both instruments, in
   [`switching-stock-lines.json`](checking/switching/switching-stock-lines.json).
-- [`switching-fix.log`](checking/switching/switching-fix.log) — the same with this mod; what
+- [`switching-fix.log.gz`](checking/switching/switching-fix.log.gz) — the same with this mod; what
   the script printed in [`switching-fix-script.txt`](checking/switching/switching-fix-script.txt),
   and every line it recorded in [`switching-fix-lines.json`](checking/switching/switching-fix-lines.json).
 
@@ -90,15 +90,15 @@ played by its script, [`run-approach.py`](automation/run-approach.py), on
 flat grass west of the KSC and a rover 26 m from it. Read in
 [Coming back to a craft left parked](../checking/approach.md).
 
-- [`approach-stock.log`](checking/approach/approach-stock.log) — the `KSP.log` of the
+- [`approach-stock.log.gz`](checking/approach/approach-stock.log.gz) — the `KSP.log` of the
   session without this mod; what the script printed in
   [`approach-stock-script.txt`](checking/approach/approach-stock-script.txt), and every line
   it recorded, in both instruments, in
   [`approach-stock-lines.json`](checking/approach/approach-stock-lines.json).
-- [`approach-fix.log`](checking/approach/approach-fix.log) — the same with this mod; what
+- [`approach-fix.log.gz`](checking/approach/approach-fix.log.gz) — the same with this mod; what
   the script printed in [`approach-fix-script.txt`](checking/approach/approach-fix-script.txt),
   and every line it recorded in [`approach-fix-lines.json`](checking/approach/approach-fix-lines.json).
-- [`approach-diag1-stock.log`](checking/approach/approach-diag1-stock.log) — the `KSP.log`
+- [`approach-diag1-stock.log.gz`](checking/approach/approach-diag1-stock.log.gz) — the `KSP.log`
   of an earlier session without this mod, kept for the record: its round trips stayed within range of
   the parked craft, so the game never unloaded it and there was nothing to read.
 
@@ -121,23 +121,23 @@ the runway of the KSC, facing due south:
 
 The logs:
 
-- [`driving-stock.log`](checking/driving/driving-stock.log) and
-  [`driving-diag2-fix.log`](checking/driving/driving-diag2-fix.log) — on Kerbin, without this
+- [`driving-stock.log.gz`](checking/driving/driving-stock.log.gz) and
+  [`driving-diag2-fix.log.gz`](checking/driving/driving-diag2-fix.log.gz) — on Kerbin, without this
   mod and with it; what the script printed in
   [`driving-stock-script.txt`](checking/driving/driving-stock-script.txt) and
   [`driving-diag2-fix-script.txt`](checking/driving/driving-diag2-fix-script.txt), and every
   line it recorded in [`driving-stock-lines.json`](checking/driving/driving-stock-lines.json)
   and [`driving-diag2-fix-lines.json`](checking/driving/driving-diag2-fix-lines.json).
-- [`driving-earth-rss-stock.log`](checking/driving/driving-earth-rss-stock.log) and
-  [`driving-earth-rss-diag2-fix.log`](checking/driving/driving-earth-rss-diag2-fix.log) — on
+- [`driving-earth-rss-stock.log.gz`](checking/driving/driving-earth-rss-stock.log.gz) and
+  [`driving-earth-rss-diag2-fix.log.gz`](checking/driving/driving-earth-rss-diag2-fix.log.gz) — on
   Earth, the same; what the script printed in
   [`driving-earth-rss-stock-script.txt`](checking/driving/driving-earth-rss-stock-script.txt)
   and [`driving-earth-rss-diag2-fix-script.txt`](checking/driving/driving-earth-rss-diag2-fix-script.txt),
   and every line it recorded in
   [`driving-earth-rss-stock-lines.json`](checking/driving/driving-earth-rss-stock-lines.json)
   and [`driving-earth-rss-diag2-fix-lines.json`](checking/driving/driving-earth-rss-diag2-fix-lines.json).
-- [`driving-earth-rss-stock-1.log`](checking/driving/driving-earth-rss-stock-1.log) and
-  [`driving-earth-rss-stock-2.log`](checking/driving/driving-earth-rss-stock-2.log) — two
+- [`driving-earth-rss-stock-1.log.gz`](checking/driving/driving-earth-rss-stock-1.log.gz) and
+  [`driving-earth-rss-stock-2.log.gz`](checking/driving/driving-earth-rss-stock-2.log.gz) — two
   earlier runs on Earth without this mod, played by hand and watched, where the rover was seen to jump.
 
 ## The protocol of the quads of the highest level, in flight
@@ -149,33 +149,29 @@ one flight of [the protocol of the quads of the highest level, in flight](../che
 [`run-flight.py`](automation/run-flight.py), and read by [`analyse-flight.py`](automation/analyse-flight.py).
 Read in [Checking the ground: in flight](../checking/flight.md).
 
-- [`flight-kerbin-stock.log`](checking/flight/flight-kerbin-stock.log) — on Kerbin, from the launchpad of the Space Center, 72 *Logs*, without this mod; what the script printed in
+- [`flight-kerbin-stock.log.gz`](checking/flight/flight-kerbin-stock.log.gz) — on Kerbin, from the launchpad of the Space Center, 72 *Logs*, without this mod; what the script printed in
   [`flight-kerbin-stock-script.txt`](checking/flight/flight-kerbin-stock-script.txt), what each *Log* answered in
-  [`flight-kerbin-stock-readings.json`](checking/flight/flight-kerbin-stock-readings.json), the two files of the *Logs* in
-  [`flight-kerbin-stock-logs.csv`](checking/flight/flight-kerbin-stock-logs.csv) and [`flight-kerbin-stock-quads.zip`](checking/flight/flight-kerbin-stock-quads.zip)
-  (zipped: 42 MB once unzipped), and what `analyse-flight.py` printed in
+  [`flight-kerbin-stock-readings.json`](checking/flight/flight-kerbin-stock-readings.json), the index of the *Logs* in
+  [`flight-kerbin-stock-logs.csv`](checking/flight/flight-kerbin-stock-logs.csv) (the quads they wrote, some 40 MB, are not kept: replaying the protocol writes them again), and what `analyse-flight.py` printed in
   [`flight-kerbin-stock-analysis.txt`](checking/flight/flight-kerbin-stock-analysis.txt).
-- [`flight-earth-rss-stock.log`](checking/flight/flight-earth-rss-stock.log) — on Earth, Real Solar System 20.1.3.0 as released and what it requires added, from the
+- [`flight-earth-rss-stock.log.gz`](checking/flight/flight-earth-rss-stock.log.gz) — on Earth, Real Solar System 20.1.3.0 as released and what it requires added, from the
   launchpad of Cape Canaveral, 55 *Logs*, without this mod; what the script printed in
   [`flight-earth-rss-stock-script.txt`](checking/flight/flight-earth-rss-stock-script.txt), what each *Log* answered in
-  [`flight-earth-rss-stock-readings.json`](checking/flight/flight-earth-rss-stock-readings.json), the two files of the *Logs* in
-  [`flight-earth-rss-stock-logs.csv`](checking/flight/flight-earth-rss-stock-logs.csv) and [`flight-earth-rss-stock-quads.zip`](checking/flight/flight-earth-rss-stock-quads.zip)
-  (zipped: 40 MB once unzipped), and what `analyse-flight.py` printed in
+  [`flight-earth-rss-stock-readings.json`](checking/flight/flight-earth-rss-stock-readings.json), the index of the *Logs* in
+  [`flight-earth-rss-stock-logs.csv`](checking/flight/flight-earth-rss-stock-logs.csv) (the quads they wrote, some 40 MB, are not kept: replaying the protocol writes them again), and what `analyse-flight.py` printed in
   [`flight-earth-rss-stock-analysis.txt`](checking/flight/flight-earth-rss-stock-analysis.txt).
-- [`flight-kerbin-fix.log`](checking/flight/flight-kerbin-fix.log) — on Kerbin, from the launchpad of the
+- [`flight-kerbin-fix.log.gz`](checking/flight/flight-kerbin-fix.log.gz) — on Kerbin, from the launchpad of the
   Space Center, 73 *Logs*; what the script printed in [`flight-kerbin-fix-script.txt`](checking/flight/flight-kerbin-fix-script.txt), what each *Log*
-  answered in [`flight-kerbin-fix-readings.json`](checking/flight/flight-kerbin-fix-readings.json), the two
-  files of the *Logs* in [`flight-kerbin-fix-logs.csv`](checking/flight/flight-kerbin-fix-logs.csv) and
-  [`flight-kerbin-fix-quads.zip`](checking/flight/flight-kerbin-fix-quads.zip) (zipped: 43 MB once unzipped),
+  answered in [`flight-kerbin-fix-readings.json`](checking/flight/flight-kerbin-fix-readings.json), the index of the *Logs* in [`flight-kerbin-fix-logs.csv`](checking/flight/flight-kerbin-fix-logs.csv) (the quads they wrote, some 40 MB,
+  are not kept: replaying the protocol writes them again),
   and what `analyse-flight.py` printed in
   [`flight-kerbin-fix-analysis.txt`](checking/flight/flight-kerbin-fix-analysis.txt).
-- [`flight-earth-rss-fix.log`](checking/flight/flight-earth-rss-fix.log) — on Earth, Real Solar System
+- [`flight-earth-rss-fix.log.gz`](checking/flight/flight-earth-rss-fix.log.gz) — on Earth, Real Solar System
   20.1.3.0 as released and what it requires added, from the launchpad of Cape Canaveral, 56 *Logs*; what
   the script printed in [`flight-earth-rss-fix-script.txt`](checking/flight/flight-earth-rss-fix-script.txt),
   what each *Log* answered in [`flight-earth-rss-fix-readings.json`](checking/flight/flight-earth-rss-fix-readings.json),
-  the two files of the *Logs* in [`flight-earth-rss-fix-logs.csv`](checking/flight/flight-earth-rss-fix-logs.csv)
-  and [`flight-earth-rss-fix-quads.zip`](checking/flight/flight-earth-rss-fix-quads.zip) (zipped: 41 MB once
-  unzipped), and what `analyse-flight.py` printed in
+  the index of the *Logs* in [`flight-earth-rss-fix-logs.csv`](checking/flight/flight-earth-rss-fix-logs.csv)
+  (the quads they wrote, some 40 MB, are not kept: replaying the protocol writes them again), and what `analyse-flight.py` printed in
   [`flight-earth-rss-fix-analysis.txt`](checking/flight/flight-earth-rss-fix-analysis.txt).
 
 ## The seam between subdivision levels
@@ -189,20 +185,20 @@ launch by the script of [the protocol of the seam](../limits/stock/the-seam-betw
 [Measured without this mod](../limits/stock/the-seam-between-subdivision-levels.md#measured-without-this-mod) and
 [The seam with this mod](../limits/stock/the-seam-between-subdivision-levels.md#the-seam-with-this-mod).
 
-- [`revert-earth-rss-stock.log`](limits/stock/the-seam-between-subdivision-levels/revert-earth-rss-stock.log) — on Earth, Real Solar System
+- [`revert-earth-rss-stock.log.gz`](limits/stock/the-seam-between-subdivision-levels/revert-earth-rss-stock.log.gz) — on Earth, Real Solar System
   20.1.3.0 as released and what it requires added, at Cape Canaveral, without this mod, with
   `--candidates 8 --max-reverts 80`: 79 loads, the screenshots taken at 8 of them; what the script
   printed in [`revert-earth-rss-stock-script.txt`](limits/stock/the-seam-between-subdivision-levels/revert-earth-rss-stock-script.txt),
   and every reading in [`revert-earth-rss-stock-readings.json`](limits/stock/the-seam-between-subdivision-levels/revert-earth-rss-stock-readings.json).
-- [`revert-kerbin-stock.log`](limits/stock/the-seam-between-subdivision-levels/revert-kerbin-stock.log) — on Kerbin, at the Space Center,
+- [`revert-kerbin-stock.log.gz`](limits/stock/the-seam-between-subdivision-levels/revert-kerbin-stock.log.gz) — on Kerbin, at the Space Center,
   without this mod, seven loads; what the script printed in
   [`revert-kerbin-stock-script.txt`](limits/stock/the-seam-between-subdivision-levels/revert-kerbin-stock-script.txt), and every reading in
   [`revert-kerbin-stock-readings.json`](limits/stock/the-seam-between-subdivision-levels/revert-kerbin-stock-readings.json).
-- [`revert-earth-rss-fix-diag4.log`](limits/stock/the-seam-between-subdivision-levels/revert-earth-rss-fix-diag4.log) — on Earth, Real Solar
+- [`revert-earth-rss-fix-diag4.log.gz`](limits/stock/the-seam-between-subdivision-levels/revert-earth-rss-fix-diag4.log.gz) — on Earth, Real Solar
   System 20.1.3.0 as released and what it requires added, at Cape Canaveral, nine loads; what the
   script printed in [`revert-earth-rss-fix-diag4-script.txt`](limits/stock/the-seam-between-subdivision-levels/revert-earth-rss-fix-diag4-script.txt),
   and every reading in [`revert-earth-rss-fix-diag4-readings.json`](limits/stock/the-seam-between-subdivision-levels/revert-earth-rss-fix-diag4-readings.json).
-- [`revert-kerbin-fix-diag4.log`](limits/stock/the-seam-between-subdivision-levels/revert-kerbin-fix-diag4.log) — on Kerbin, at the Space
+- [`revert-kerbin-fix-diag4.log.gz`](limits/stock/the-seam-between-subdivision-levels/revert-kerbin-fix-diag4.log.gz) — on Kerbin, at the Space
   Center, ten loads; what the script printed in
   [`revert-kerbin-fix-diag4-script.txt`](limits/stock/the-seam-between-subdivision-levels/revert-kerbin-fix-diag4-script.txt), and every
   reading in [`revert-kerbin-fix-diag4-readings.json`](limits/stock/the-seam-between-subdivision-levels/revert-kerbin-fix-diag4-readings.json).
@@ -234,12 +230,12 @@ protocols through the scripts of [`automation/`](automation). Read in
   [the runway protocol](../../statics/checking/loading-protocol.md).
 - [`automation/run-approach.py`](automation/run-approach.py) — plays
   [the approach protocol](../checking/approach-protocol.md).
-- [`runway-deferred-fix.log`](non-regression/deferred/drawing-the-ground/runway-deferred-fix.log) — the six loadings of `runway-kerbin.sfs`;
+- [`runway-deferred-fix.log.gz`](non-regression/deferred/drawing-the-ground/runway-deferred-fix.log.gz) — the six loadings of `runway-kerbin.sfs`;
   the lines read are in [`runway-deferred-fix-lines.json`](non-regression/deferred/drawing-the-ground/runway-deferred-fix-lines.json).
-- [`runway-without-deferred-fix.log`](non-regression/deferred/drawing-the-ground/runway-without-deferred-fix.log) — the same script on the
+- [`runway-without-deferred-fix.log.gz`](non-regression/deferred/drawing-the-ground/runway-without-deferred-fix.log.gz) — the same script on the
   same install, Deferred and Shabby taken out; the lines read are in
   [`runway-without-deferred-fix-lines.json`](non-regression/deferred/drawing-the-ground/runway-without-deferred-fix-lines.json).
-- [`approach-deferred-fix.log`](non-regression/deferred/drawing-the-ground/approach-deferred-fix.log) — the six round trips of
+- [`approach-deferred-fix.log.gz`](non-regression/deferred/drawing-the-ground/approach-deferred-fix.log.gz) — the six round trips of
   `approach-kerbin.sfs`, in a single flight; the lines read are in
   [`approach-deferred-fix-lines.json`](non-regression/deferred/drawing-the-ground/approach-deferred-fix-lines.json).
 
@@ -254,8 +250,8 @@ session is here twice, `-without-this-mod` and `-fix`. Read in
 
 - [`kpbs-kerbin-hull-2.sfs`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/kpbs-kerbin-hull-2.sfs) — a base of
   28 parts of Kerbal Planetary Base Systems, legs retracted, on a slope of Kerbin.
-- [`loading-kpbs-without-this-mod.log`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-without-this-mod.log) and
-  [`loading-kpbs-fix.log`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-fix.log) — that save, loaded six
+- [`loading-kpbs-without-this-mod.log.gz`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-without-this-mod.log.gz) and
+  [`loading-kpbs-fix.log.gz`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-fix.log.gz) — that save, loaded six
   times by `run-loading.py`, both instruments at once; what the script printed in
   [`loading-kpbs-without-this-mod-script.txt`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-without-this-mod-script.txt)
   and [`loading-kpbs-fix-script.txt`](non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/loading-kpbs-fix-script.txt), every
@@ -311,21 +307,21 @@ next to the two of [The loading protocol](#the-loading-protocol):
 Without this mod, played by hand, watching the craft, Real Solar System as released unless said
 otherwise:
 
-- [`reload-moon-rss-stock.log`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-stock.log) —
+- [`reload-moon-rss-stock.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-stock.log.gz) —
   Diag LandedVessel: six loads of `reload-moon-rss.sfs`, then one of a save taken after the sixth.
-- [`reload-moon-rss-vgpeoff-stock.log`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-vgpeoff-stock.log) —
+- [`reload-moon-rss-vgpeoff-stock.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-vgpeoff-stock.log.gz) —
   Diag LandedVessel: the first load of `reload-moon-rss.sfs` with Real Solar System's
   `VesselGroundPositionEnhancer` turned off, by an empty assembly named `WorldStabilizer` in `GameData`.
-- [`reload-moon-rss-stock-14loads.log`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-stock-14loads.log) —
+- [`reload-moon-rss-stock-14loads.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-stock-14loads.log.gz) —
   Diag LandedVessel: fourteen loads of `reload-moon-rss.sfs`.
-- [`reload-moon-rss-stock-tipped.log`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-stock-tipped.log) —
+- [`reload-moon-rss-stock-tipped.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-stock-tipped.log.gz) —
   Diag TerrainHeight: the first load of `reload-moon-rss-resave.sfs`, where the craft tipped over.
-- [`reload-earth-rss-stock.log`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-stock.log) —
+- [`reload-earth-rss-stock.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-stock.log.gz) —
   Diag LandedVessel alone: six loads of `reload-earth-rss-resave.sfs`.
-- [`reload-moon-rss-resave-stock-diag2.log`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-resave-stock-diag2.log) —
+- [`reload-moon-rss-resave-stock-diag2.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-resave-stock-diag2.log.gz) —
   Diag TerrainHeight: six loads of `reload-moon-rss-resave.sfs`, where the craft jumped once and tipped
   over once.
-- [`reload-earth-rss-landed-stock.log`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-stock.log) —
+- [`reload-earth-rss-landed-stock.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-stock.log.gz) —
   not by hand: both instruments and KSP-Util-MCPServer, six loads of `reload-earth-rss-landed.sfs` played by
   [`automation/run-loading.py`](automation/run-loading.py); what the script printed in
   [`reload-earth-rss-landed-stock-script.txt`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-stock-script.txt),
@@ -334,31 +330,31 @@ otherwise:
 
 With this mod:
 
-- [`reload-moon-rss-fix.log`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-fix.log) — Diag LandedVessel, Real Solar System's
+- [`reload-moon-rss-fix.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-fix.log.gz) — Diag LandedVessel, Real Solar System's
   component turned off by an empty assembly named `WorldStabilizer`: one load of
   `reload-moon-rss.sfs`, the save made without this mod, then that save taken again as
   `reload-moon-rss-resave.sfs` and loaded six times. *First safeguard.*
-- [`reload-moon-rss-fix-vgpe-on.log`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-fix-vgpe-on.log) — Diag LandedVessel, Real Solar
+- [`reload-moon-rss-fix-vgpe-on.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-fix-vgpe-on.log.gz) — Diag LandedVessel, Real Solar
   System as released: the loads of `reload-moon-rss-resave.sfs`, six of them recorded. *First
   safeguard.*
-- [`reload-moon-rss-fix-diag2.log`](checking/loading/reload-moon-rss-fix-diag2.log) — Diag TerrainHeight: six loads of
+- [`reload-moon-rss-fix-diag2.log.gz`](checking/loading/reload-moon-rss-fix-diag2.log.gz) — Diag TerrainHeight: six loads of
   `reload-moon-rss-resave.sfs`.
-- [`reload-moon-rss-fix-24loads.log`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-fix-24loads.log) — no instrument:
+- [`reload-moon-rss-fix-24loads.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-fix-24loads.log.gz) — no instrument:
   24 loads of `reload-moon-rss-resave.sfs` in a row. *First safeguard.*
-- [`reload-earth-rss-fix.log`](checking/loading/reload-earth-rss-fix.log) — Diag LandedVessel: six loads of
+- [`reload-earth-rss-fix.log.gz`](checking/loading/reload-earth-rss-fix.log.gz) — Diag LandedVessel: six loads of
   `reload-earth-rss-resave.sfs`, the craft in *prelaunch*.
-- [`reload-earth-rss-fix-diag2.log`](checking/loading/reload-earth-rss-fix-diag2.log) — Diag TerrainHeight: the same six
+- [`reload-earth-rss-fix-diag2.log.gz`](checking/loading/reload-earth-rss-fix-diag2.log.gz) — Diag TerrainHeight: the same six
   loads.
-- [`reload-earth-rss-fix-chain.log`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-fix-chain.log) — no instrument, one
+- [`reload-earth-rss-fix-chain.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-fix-chain.log.gz) — no instrument, one
   session: 27 loads of `reload-earth-rss-landed.sfs`, the craft *landed*, then, after going back to the
   space centre, 24 of `reload-earth-rss-resave.sfs`, the craft in *prelaunch*.
-- [`reload-earth-rss-landed-fix.log`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-fix.log) —
+- [`reload-earth-rss-landed-fix.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-fix.log.gz) —
   both instruments and KSP-Util-MCPServer, six loads of `reload-earth-rss-landed.sfs` played by
   [`automation/run-loading.py`](automation/run-loading.py); what the script printed in
   [`reload-earth-rss-landed-fix-script.txt`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-fix-script.txt),
   every line of both instruments in
   [`reload-earth-rss-landed-fix-readings.json`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-fix-readings.json).
-- [`reload-rss-without-workaround-fix.log`](non-regression/real-solar-system/the-ground-workaround/reload-rss-without-workaround-fix.log) —
+- [`reload-rss-without-workaround-fix.log.gz`](non-regression/real-solar-system/the-ground-workaround/reload-rss-without-workaround-fix.log.gz) —
   the same, Real Solar System built from the sources of its release 20.1.3.0 with the change
   [`rss-20.1.3-without-its-ground-workaround.diff`](non-regression/real-solar-system/the-ground-workaround/rss-20.1.3-without-its-ground-workaround.diff),
   which keeps its `VesselGroundPositionEnhancer` from doing anything: one session, six loads of
@@ -369,7 +365,7 @@ With this mod:
   [`reload-earth-rss-landed-without-workaround-fix-readings.json`](non-regression/real-solar-system/the-ground-workaround/reload-earth-rss-landed-without-workaround-fix-readings.json)
   and [`reload-moon-rss-resave-without-workaround-fix-readings.json`](non-regression/real-solar-system/the-ground-workaround/reload-moon-rss-resave-without-workaround-fix-readings.json).
 
-- [`launch-earth-rss-fix.log`](limits/stock/the-seam-between-subdivision-levels/launch-earth-rss-fix.log) — no instrument, MechJeb2 2.15.0.0
+- [`launch-earth-rss-fix.log.gz`](limits/stock/the-seam-between-subdivision-levels/launch-earth-rss-fix.log.gz) — no instrument, MechJeb2 2.15.0.0
   added to the install: one session, a small rocket launched from the VAB onto the launchpad at Cape
   Canaveral, then flown towards orbit, the flight started over three times. The launch was saved
   afterwards as [`rss-launch-to-earth-orbit.sfs`](limits/stock/the-seam-between-subdivision-levels/rss-launch-to-earth-orbit.sfs), which needs MechJeb2
@@ -384,14 +380,14 @@ With this mod:
   the Moon. Six round trips by
   `run-approach.py --save approach-moon-rss --speed 10 --slow-from 150 --home-speed 2`, without this
   mod, then with it, each in one flight.
-- [`approach-moon-without-this-mod.log`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-without-this-mod.log) —
+- [`approach-moon-without-this-mod.log.gz`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-without-this-mod.log.gz) —
   the `KSP.log` of the session without this mod. Before the six round trips, it also holds the making of
   the save (its rover's wheels set, the save written), the rover driven about 1.3 km to try its speeds and
   its braking, and the save loaded again before the script loads it. What the script printed in
   [`approach-moon-without-this-mod-script.txt`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-without-this-mod-script.txt),
   and every line it recorded in
   [`approach-moon-without-this-mod-lines.json`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-without-this-mod-lines.json).
-- [`approach-moon-fix.log`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-fix.log) —
+- [`approach-moon-fix.log.gz`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-fix.log.gz) —
   the same with this mod; what the script printed in
   [`approach-moon-fix-script.txt`](non-regression/real-solar-system/coming-back-to-a-craft-left-parked-on-the-moon/approach-moon-fix-script.txt),
   and every line it recorded in
@@ -408,17 +404,17 @@ made as the map view's *Switch To* does, with both instruments and
   the two craft of `approach-moon-rss.sfs`, the rover driven about 3 km due south, flown, the capsule its
   target. Six switches by
   `run-switching.py --save switch-moon-rss --rounds 6 --scene-shots`, in each of the three sessions below.
-- [`switch-moon-without-this-mod.log`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-without-this-mod.log) —
+- [`switch-moon-without-this-mod.log.gz`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-without-this-mod.log.gz) —
   without this mod; what the script printed in
   [`switch-moon-without-this-mod-script.txt`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-without-this-mod-script.txt),
   and every line it recorded in
   [`switch-moon-without-this-mod-lines.json`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-without-this-mod-lines.json).
-- [`switch-moon-fix.log`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix.log) —
+- [`switch-moon-fix.log.gz`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix.log.gz) —
   the same with this mod; what the script printed in
   [`switch-moon-fix-script.txt`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix-script.txt),
   and every line it recorded in
   [`switch-moon-fix-lines.json`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix-lines.json).
-- [`switch-moon-fix-workaround-built-out.log`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix-workaround-built-out.log) —
+- [`switch-moon-fix-workaround-built-out.log.gz`](non-regression/real-solar-system/switching-to-a-craft-left-parked-on-the-moon/switch-moon-fix-workaround-built-out.log.gz) —
   the same with this mod, Real Solar System built with the change
   [`rss-20.1.3-without-its-ground-workaround.diff`](non-regression/real-solar-system/the-ground-workaround/rss-20.1.3-without-its-ground-workaround.diff);
   what the script printed in

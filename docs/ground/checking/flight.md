@@ -40,19 +40,19 @@ From the launchpad of the Space Center; the highest subdivision level of Kerbin 
 engine lit and the clamp still holding; the craft then rose to 957 m and reached 653 m/s, and the last
 *Log* was taken 30 m above the sea. The world moved 2,365 times: once as the scene opened, none while
 the craft was slower than 100 m/s, then every frame from about 235 m/s on. 356 quads of level 10 were
-written, most of them in several *Logs*. The session is logged in [`flight-kerbin-stock.log`](../diag/checking/flight/flight-kerbin-stock.log); what the script printed is in
+written, most of them in several *Logs*. The session is logged in [`flight-kerbin-stock.log.gz`](../diag/checking/flight/flight-kerbin-stock.log.gz); what the script printed is in
 [`flight-kerbin-stock-script.txt`](../diag/checking/flight/flight-kerbin-stock-script.txt), what each *Log* answered in
-[`flight-kerbin-stock-readings.json`](../diag/checking/flight/flight-kerbin-stock-readings.json), the two files of the *Logs* in
-[`flight-kerbin-stock-logs.csv`](../diag/checking/flight/flight-kerbin-stock-logs.csv) and [`flight-kerbin-stock-quads.zip`](../diag/checking/flight/flight-kerbin-stock-quads.zip) (zipped: 42 MB once unzipped), and what
+[`flight-kerbin-stock-readings.json`](../diag/checking/flight/flight-kerbin-stock-readings.json), the index of the *Logs* in
+[`flight-kerbin-stock-logs.csv`](../diag/checking/flight/flight-kerbin-stock-logs.csv) (the quads they wrote, some 40 MB, are not kept: replaying the protocol writes them again), and what
 `analyse-flight.py` printed in [`flight-kerbin-stock-analysis.txt`](../diag/checking/flight/flight-kerbin-stock-analysis.txt). Of the 9,103 shared edges between cousins, 2,940 have a step of more than 1 mm, 1,882 of more
 than 5 mm, and 1,120 of more than 10 mm.
 
 **With this mod**, in that same install, with this mod as the only difference, at `logLevel = Debug`.
-The session is logged in [`flight-kerbin-fix.log`](../diag/checking/flight/flight-kerbin-fix.log); what
+The session is logged in [`flight-kerbin-fix.log.gz`](../diag/checking/flight/flight-kerbin-fix.log.gz); what
 the script printed is in [`flight-kerbin-fix-script.txt`](../diag/checking/flight/flight-kerbin-fix-script.txt), what
 each *Log* answered in [`flight-kerbin-fix-readings.json`](../diag/checking/flight/flight-kerbin-fix-readings.json),
-the two files of the *Logs* in [`flight-kerbin-fix-logs.csv`](../diag/checking/flight/flight-kerbin-fix-logs.csv) and
-[`flight-kerbin-fix-quads.zip`](../diag/checking/flight/flight-kerbin-fix-quads.zip), and what `analyse-flight.py`
+the index of the *Logs* in [`flight-kerbin-fix-logs.csv`](../diag/checking/flight/flight-kerbin-fix-logs.csv) (the quads they wrote, some 40 MB,
+are not kept: replaying the protocol writes them again), and what `analyse-flight.py`
 printed in [`flight-kerbin-fix-analysis.txt`](../diag/checking/flight/flight-kerbin-fix-analysis.txt). 73 *Logs*:
 the same flight to within a few metres, up to 954 m and 654 m/s, the floating origin moved 2,361 times,
 every frame from about 236 m/s on.
@@ -83,18 +83,18 @@ a lower and shorter curve there than on Kerbin.
 **On stock**, one flight, 55 *Logs* over 52 seconds of game time, up to 565 m and 488 m/s, the last
 *Log* taken 30 m above the sea. The world moved 1,392 times: once as the scene opened, none while the
 craft was slower than 100 m/s, then every frame from about 238 m/s on. 224 quads of level 11 were
-written. The session is logged in [`flight-earth-rss-stock.log`](../diag/checking/flight/flight-earth-rss-stock.log); what the script printed is in
+written. The session is logged in [`flight-earth-rss-stock.log.gz`](../diag/checking/flight/flight-earth-rss-stock.log.gz); what the script printed is in
 [`flight-earth-rss-stock-script.txt`](../diag/checking/flight/flight-earth-rss-stock-script.txt), what each *Log* answered in
-[`flight-earth-rss-stock-readings.json`](../diag/checking/flight/flight-earth-rss-stock-readings.json), the two files of the *Logs* in
-[`flight-earth-rss-stock-logs.csv`](../diag/checking/flight/flight-earth-rss-stock-logs.csv) and [`flight-earth-rss-stock-quads.zip`](../diag/checking/flight/flight-earth-rss-stock-quads.zip) (zipped: 40 MB once unzipped), and what
+[`flight-earth-rss-stock-readings.json`](../diag/checking/flight/flight-earth-rss-stock-readings.json), the index of the *Logs* in
+[`flight-earth-rss-stock-logs.csv`](../diag/checking/flight/flight-earth-rss-stock-logs.csv) (the quads they wrote, some 40 MB, are not kept: replaying the protocol writes them again), and what
 `analyse-flight.py` printed in [`flight-earth-rss-stock-analysis.txt`](../diag/checking/flight/flight-earth-rss-stock-analysis.txt).
 
 **With this mod**, in that same install, with this mod as the only difference, at `logLevel = Debug`.
-The session is logged in [`flight-earth-rss-fix.log`](../diag/checking/flight/flight-earth-rss-fix.log);
+The session is logged in [`flight-earth-rss-fix.log.gz`](../diag/checking/flight/flight-earth-rss-fix.log.gz);
 what the script printed is in [`flight-earth-rss-fix-script.txt`](../diag/checking/flight/flight-earth-rss-fix-script.txt),
 what each *Log* answered in [`flight-earth-rss-fix-readings.json`](../diag/checking/flight/flight-earth-rss-fix-readings.json),
-the two files of the *Logs* in [`flight-earth-rss-fix-logs.csv`](../diag/checking/flight/flight-earth-rss-fix-logs.csv)
-and [`flight-earth-rss-fix-quads.zip`](../diag/checking/flight/flight-earth-rss-fix-quads.zip), and what
+the index of the *Logs* in [`flight-earth-rss-fix-logs.csv`](../diag/checking/flight/flight-earth-rss-fix-logs.csv)
+(the quads they wrote, some 40 MB, are not kept: replaying the protocol writes them again), and what
 `analyse-flight.py` printed in [`flight-earth-rss-fix-analysis.txt`](../diag/checking/flight/flight-earth-rss-fix-analysis.txt).
 56 *Logs*, up to 613 m and 503 m/s, the floating origin moved 1,492 times, every frame from about
 236 m/s on: on Earth, the two flights differ by some fifty metres at the top of their curve.

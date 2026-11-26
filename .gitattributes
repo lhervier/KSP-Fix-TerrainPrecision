@@ -18,6 +18,7 @@
 *.pdb binary
 *.exe binary
 *.zip binary
+*.gz binary
 *.png binary
 *.jpg binary
 *.gif binary

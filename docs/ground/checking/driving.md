@@ -20,7 +20,7 @@ one run of three shifts on each body, without this mod and with it.
 
 ## On Kerbin
 
-**On stock**, one run. The session is logged in [`driving-stock.log`](../diag/checking/driving/driving-stock.log);
+**On stock**, one run. The session is logged in [`driving-stock.log.gz`](../diag/checking/driving/driving-stock.log.gz);
 what the script printed is in [`driving-stock-script.txt`](../diag/checking/driving/driving-stock-script.txt), and
 every line it recorded in [`driving-stock-lines.json`](../diag/checking/driving/driving-stock-lines.json). On the
 three lines of each shift, **Ground KSP computes** reads the same digits to within six thousandths of a
@@ -50,7 +50,7 @@ computes for that spot — in millimetres:
 </details>
 
 **With this mod**, in that same install, on that same save, with this mod as the only difference. The
-session is logged in [`driving-diag2-fix.log`](../diag/checking/driving/driving-diag2-fix.log); what the
+session is logged in [`driving-diag2-fix.log.gz`](../diag/checking/driving/driving-diag2-fix.log.gz); what the
 script printed is in [`driving-diag2-fix-script.txt`](../diag/checking/driving/driving-diag2-fix-script.txt), and
 every line it recorded in [`driving-diag2-fix-lines.json`](../diag/checking/driving/driving-diag2-fix-lines.json).
 On the three lines of each shift, **Ground KSP computes** reads the same digits to within six
@@ -65,16 +65,16 @@ centimetres, on each line taken just after a shift, and none on each line taken 
 | 3 | −517.280 | −514.190 | −511.705 | +3.089 | +2.485 |
 
 <p class="thumbs">
-<a href="../imgs/checking/driving/diag3-fix.png"><img src="../imgs/checking/driving/diag3-fix.png" alt="One run on Kerbin with this mod, read by Diag FloatingOrigin: nine lines, three shifts" width="96"></a>
-<a href="../imgs/checking/driving/diag2-fix.png"><img src="../imgs/checking/driving/diag2-fix.png" alt="One run on Kerbin with this mod, read by Diag TerrainHeight: nine lines, three shifts" width="96"></a>
+<a href="../imgs/checking/driving/diag3-fix.jpg"><img src="../imgs/checking/driving/diag3-fix.jpg" alt="One run on Kerbin with this mod, read by Diag FloatingOrigin: nine lines, three shifts" width="96"></a>
+<a href="../imgs/checking/driving/diag2-fix.jpg"><img src="../imgs/checking/driving/diag2-fix.jpg" alt="One run on Kerbin with this mod, read by Diag TerrainHeight: nine lines, three shifts" width="96"></a>
 </p>
 
 <details>
 <summary>The 2 screenshots</summary>
 
-![One run on Kerbin with this mod, read by Diag FloatingOrigin: nine lines, three shifts](../imgs/checking/driving/diag3-fix.png)
+![One run on Kerbin with this mod, read by Diag FloatingOrigin: nine lines, three shifts](../imgs/checking/driving/diag3-fix.jpg)
 
-![One run on Kerbin with this mod, read by Diag TerrainHeight: nine lines, three shifts](../imgs/checking/driving/diag2-fix.png)
+![One run on Kerbin with this mod, read by Diag TerrainHeight: nine lines, three shifts](../imgs/checking/driving/diag2-fix.jpg)
 
 </details>
 
@@ -88,7 +88,7 @@ changes by about a centimetre per metre, so the rover stops within two metres of
 two metres on.
 
 **On stock**, one run. The session is logged in
-[`driving-earth-rss-stock.log`](../diag/checking/driving/driving-earth-rss-stock.log); what the script printed is in
+[`driving-earth-rss-stock.log.gz`](../diag/checking/driving/driving-earth-rss-stock.log.gz); what the script printed is in
 [`driving-earth-rss-stock-script.txt`](../diag/checking/driving/driving-earth-rss-stock-script.txt), and every line it
 recorded in [`driving-earth-rss-stock-lines.json`](../diag/checking/driving/driving-earth-rss-stock-lines.json).
 **Ground KSP computes** changes by up to 86 mm between two lines of a shift, which the rover reads 0.7
@@ -115,7 +115,7 @@ to 1.4 m apart. In *Difference*, in millimetres:
 </details>
 
 **With this mod**, in that same install, on that same save. The session is logged in
-[`driving-earth-rss-diag2-fix.log`](../diag/checking/driving/driving-earth-rss-diag2-fix.log); what the
+[`driving-earth-rss-diag2-fix.log.gz`](../diag/checking/driving/driving-earth-rss-diag2-fix.log.gz); what the
 script printed is in [`driving-earth-rss-diag2-fix-script.txt`](../diag/checking/driving/driving-earth-rss-diag2-fix-script.txt),
 and every line it recorded in [`driving-earth-rss-diag2-fix-lines.json`](../diag/checking/driving/driving-earth-rss-diag2-fix-lines.json).
 Diag FloatingOrigin reads one shift of 500.0 m, to within two centimetres, on each line taken just
@@ -129,16 +129,16 @@ makes as the scene opens on Earth. In *Difference*, in millimetres:
 | 3 | −18.674 | +28.258 | +64.241 | +46.933 | +35.983 |
 
 <p class="thumbs">
-<a href="../imgs/checking/driving/earth-diag3-fix.png"><img src="../imgs/checking/driving/earth-diag3-fix.png" alt="One run on Earth with this mod, read by Diag FloatingOrigin: nine lines, three shifts" width="96"></a>
-<a href="../imgs/checking/driving/earth-diag2-fix.png"><img src="../imgs/checking/driving/earth-diag2-fix.png" alt="One run on Earth with this mod, read by Diag TerrainHeight: nine lines, three shifts" width="96"></a>
+<a href="../imgs/checking/driving/earth-diag3-fix.jpg"><img src="../imgs/checking/driving/earth-diag3-fix.jpg" alt="One run on Earth with this mod, read by Diag FloatingOrigin: nine lines, three shifts" width="96"></a>
+<a href="../imgs/checking/driving/earth-diag2-fix.jpg"><img src="../imgs/checking/driving/earth-diag2-fix.jpg" alt="One run on Earth with this mod, read by Diag TerrainHeight: nine lines, three shifts" width="96"></a>
 </p>
 
 <details>
 <summary>The 2 screenshots</summary>
 
-![One run on Earth with this mod, read by Diag FloatingOrigin: nine lines, three shifts](../imgs/checking/driving/earth-diag3-fix.png)
+![One run on Earth with this mod, read by Diag FloatingOrigin: nine lines, three shifts](../imgs/checking/driving/earth-diag3-fix.jpg)
 
-![One run on Earth with this mod, read by Diag TerrainHeight: nine lines, three shifts](../imgs/checking/driving/earth-diag2-fix.png)
+![One run on Earth with this mod, read by Diag TerrainHeight: nine lines, three shifts](../imgs/checking/driving/earth-diag2-fix.jpg)
 
 </details>
 
@@ -155,8 +155,8 @@ with no shift on a slope, one shift kept and the two others just short of the ru
 and the scene does not change: the quads under the rover are placed again through a new rounding of the
 frame, and land somewhere else. On Earth, in two earlier runs played by hand and watched, the rover was
 seen to jump at the two shifts where the ground rose under it, by 156 and 150 mm
-([`driving-earth-rss-stock-1.log`](../diag/checking/driving/driving-earth-rss-stock-1.log),
-[`driving-earth-rss-stock-2.log`](../diag/checking/driving/driving-earth-rss-stock-2.log)).
+([`driving-earth-rss-stock-1.log.gz`](../diag/checking/driving/driving-earth-rss-stock-1.log.gz),
+[`driving-earth-rss-stock-2.log.gz`](../diag/checking/driving/driving-earth-rss-stock-2.log.gz)).
 
 **With this mod, a shift moves nothing.** On Kerbin, on the flat grass, *Difference* changes by 0.18 and
 0.49 mm across the two shifts, against 26.6 mm on stock at the second; on Earth, by 8 to 52 mm, against

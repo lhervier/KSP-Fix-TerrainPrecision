@@ -93,22 +93,22 @@ Spread over the six loads, read off the screenshots below:
 | *Ground KSP computes* (KSP Diag - Terrain Height) | 17.445 mm | 0.409 mm |
 
 <p class="thumbs">
-<a href="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-without-this-mod.png"><img src="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-without-this-mod.png" alt="Without this mod, the base of Kerbal Planetary Base Systems, six loads of the same save, on Kerbin" width="96"></a>
-<a href="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-without-this-mod.png"><img src="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-without-this-mod.png" alt="Without this mod, the ground under the base, six loads of the same save, on Kerbin" width="96"></a>
-<a href="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-fix.png"><img src="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-fix.png" alt="With this mod, the base of Kerbal Planetary Base Systems, six loads of the same save, on Kerbin" width="96"></a>
-<a href="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-fix.png"><img src="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-fix.png" alt="With this mod, the ground under the base, six loads of the same save, on Kerbin" width="96"></a>
+<a href="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-without-this-mod.jpg"><img src="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-without-this-mod.jpg" alt="Without this mod, the base of Kerbal Planetary Base Systems, six loads of the same save, on Kerbin" width="96"></a>
+<a href="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-without-this-mod.jpg"><img src="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-without-this-mod.jpg" alt="Without this mod, the ground under the base, six loads of the same save, on Kerbin" width="96"></a>
+<a href="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-fix.jpg"><img src="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-fix.jpg" alt="With this mod, the base of Kerbal Planetary Base Systems, six loads of the same save, on Kerbin" width="96"></a>
+<a href="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-fix.jpg"><img src="../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-fix.jpg" alt="With this mod, the ground under the base, six loads of the same save, on Kerbin" width="96"></a>
 </p>
 
 <details>
 <summary>The 4 screenshots, without this mod then with it</summary>
 
-![Without this mod, the base of Kerbal Planetary Base Systems, six loads of the same save, on Kerbin](../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-without-this-mod.png)
+![Without this mod, the base of Kerbal Planetary Base Systems, six loads of the same save, on Kerbin](../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-without-this-mod.jpg)
 
-![Without this mod, the ground under the base, six loads of the same save, on Kerbin](../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-without-this-mod.png)
+![Without this mod, the ground under the base, six loads of the same save, on Kerbin](../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-without-this-mod.jpg)
 
-![With this mod, the base of Kerbal Planetary Base Systems, six loads of the same save, on Kerbin](../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-fix.png)
+![With this mod, the base of Kerbal Planetary Base Systems, six loads of the same save, on Kerbin](../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/landed-vessel-fix.jpg)
 
-![With this mod, the ground under the base, six loads of the same save, on Kerbin](../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-fix.png)
+![With this mod, the ground under the base, six loads of the same save, on Kerbin](../../imgs/non-regression/kerbal-planetary-base-systems/a-base-on-the-ground/terrain-height-fix.jpg)
 
 </details>
 

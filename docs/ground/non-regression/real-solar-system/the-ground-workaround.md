@@ -123,7 +123,7 @@ the third load, after its *Record*:
 
 On Earth, with the craft *landed*, where the workaround runs at every load, by script:
 
-![Six loads of reload-earth-rss-landed.sfs, on Earth, without this mod, Real Solar System as released](../../imgs/non-regression/real-solar-system/the-ground-workaround/40-earth-landed-stock.png)
+![Six loads of reload-earth-rss-landed.sfs, on Earth, without this mod, Real Solar System as released](../../imgs/non-regression/real-solar-system/the-ground-workaround/40-earth-landed-stock.jpg)
 
 *Without this mod, Real Solar System as released, Diag LandedVessel: six loads of
 `reload-earth-rss-landed.sfs`, played by `run-loading.py`. `KSP.log` holds a `Moving Vessel` line for
@@ -164,7 +164,7 @@ and switching to one far away
 **Without the workaround, this mod keeps the craft in place on its own.** On the Moon, the workaround
 off, over six loads read by Diag LandedVessel:
 
-![Six loads on the Moon, with this mod and without Real Solar System's workaround](../../imgs/non-regression/real-solar-system/the-ground-workaround/30-moon-fix.png)
+![Six loads on the Moon, with this mod and without Real Solar System's workaround](../../imgs/non-regression/real-solar-system/the-ground-workaround/30-moon-fix.jpg)
 
 *With this mod, Real Solar System's workaround off, Diag LandedVessel: six loads of `reload-moon-rss-resave.sfs`,
 a spread of 0.364 mm, against 0.395 mm with it on.*
@@ -173,7 +173,7 @@ The workaround built out, by script, six loads on the Moon and six on Earth with
 where the workaround would otherwise run at every load: the craft came to rest across 0.653 mm and
 0.312 mm, and no `Moving Vessel` line was logged. On Earth:
 
-![Six loads of reload-earth-rss-landed.sfs, on Earth, with this mod and Real Solar System built without its workaround](../../imgs/non-regression/real-solar-system/the-ground-workaround/45-earth-landed-workaround-off-fix.png)
+![Six loads of reload-earth-rss-landed.sfs, on Earth, with this mod and Real Solar System built without its workaround](../../imgs/non-regression/real-solar-system/the-ground-workaround/45-earth-landed-workaround-off-fix.jpg)
 
 *With this mod, Real Solar System built without its workaround, Diag LandedVessel: six loads of
 `reload-earth-rss-landed.sfs`, played by `run-loading.py`.*

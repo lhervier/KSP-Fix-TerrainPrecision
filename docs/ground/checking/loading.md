@@ -117,30 +117,30 @@ The six series, read off the screenshots below:
 | Earth | 292.4 mm | 0.189 mm |
 
 <p class="thumbs">
-<a href="../imgs/checking/loading/landed-vessel/00-kerbin-fix.png"><img src="../imgs/checking/loading/landed-vessel/00-kerbin-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on Kerbin" width="96"></a>
-<a href="../imgs/checking/loading/landed-vessel/10-mune-fix.png"><img src="../imgs/checking/loading/landed-vessel/10-mune-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on the Mun" width="96"></a>
-<a href="../imgs/checking/loading/landed-vessel/20-minmus-fix.png"><img src="../imgs/checking/loading/landed-vessel/20-minmus-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on Minmus" width="96"></a>
-<a href="../imgs/checking/loading/landed-vessel/30-gilly-fix.png"><img src="../imgs/checking/loading/landed-vessel/30-gilly-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on Gilly" width="96"></a>
-<a href="../imgs/checking/loading/landed-vessel/40-moon-fix.png"><img src="../imgs/checking/loading/landed-vessel/40-moon-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on the Moon" width="96"></a>
-<a href="../imgs/checking/loading/landed-vessel/50-earth-fix.png"><img src="../imgs/checking/loading/landed-vessel/50-earth-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on Earth" width="96"></a>
+<a href="../imgs/checking/loading/landed-vessel/00-kerbin-fix.jpg"><img src="../imgs/checking/loading/landed-vessel/00-kerbin-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on Kerbin" width="96"></a>
+<a href="../imgs/checking/loading/landed-vessel/10-mune-fix.jpg"><img src="../imgs/checking/loading/landed-vessel/10-mune-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on the Mun" width="96"></a>
+<a href="../imgs/checking/loading/landed-vessel/20-minmus-fix.jpg"><img src="../imgs/checking/loading/landed-vessel/20-minmus-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on Minmus" width="96"></a>
+<a href="../imgs/checking/loading/landed-vessel/30-gilly-fix.jpg"><img src="../imgs/checking/loading/landed-vessel/30-gilly-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on Gilly" width="96"></a>
+<a href="../imgs/checking/loading/landed-vessel/40-moon-fix.jpg"><img src="../imgs/checking/loading/landed-vessel/40-moon-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on the Moon" width="96"></a>
+<a href="../imgs/checking/loading/landed-vessel/50-earth-fix.jpg"><img src="../imgs/checking/loading/landed-vessel/50-earth-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on Earth" width="96"></a>
 </p>
 
 <details>
 <summary>The 6 screenshots</summary>
 
-![With this mod, the capsule on its tank, six loads of the same save, on Kerbin](../imgs/checking/loading/landed-vessel/00-kerbin-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Kerbin](../imgs/checking/loading/landed-vessel/00-kerbin-fix.jpg)
 
-![With this mod, the capsule on its tank, six loads of the same save, on the Mun](../imgs/checking/loading/landed-vessel/10-mune-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on the Mun](../imgs/checking/loading/landed-vessel/10-mune-fix.jpg)
 
-![With this mod, the capsule on its tank, six loads of the same save, on Minmus](../imgs/checking/loading/landed-vessel/20-minmus-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Minmus](../imgs/checking/loading/landed-vessel/20-minmus-fix.jpg)
 
-![With this mod, the capsule on its tank, six loads of the same save, on Gilly](../imgs/checking/loading/landed-vessel/30-gilly-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Gilly](../imgs/checking/loading/landed-vessel/30-gilly-fix.jpg)
 
-![With this mod, the capsule on its tank, six loads of the same save, on the Moon](../imgs/checking/loading/landed-vessel/40-moon-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on the Moon](../imgs/checking/loading/landed-vessel/40-moon-fix.jpg)
 
 *Real Solar System's own workaround ran at every load and never had to move the craft: no `Moving Vessel` line — see [Real Solar System's own workaround](../non-regression/real-solar-system/the-ground-workaround.md).*
 
-![With this mod, the capsule on its tank, six loads of the same save, on Earth](../imgs/checking/loading/landed-vessel/50-earth-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Earth](../imgs/checking/loading/landed-vessel/50-earth-fix.jpg)
 
 *The craft is in prelaunch, where stock runs the same pass at every load, and it never had to move the craft: no `Moving Vessel` line — see [Real Solar System's own workaround](../non-regression/real-solar-system/the-ground-workaround.md).*
 
@@ -228,30 +228,30 @@ Read off the screenshots below:
 | Earth | −43.698 to +248.589 mm | +121.669 to +121.952 mm | 292.3 mm | 0.283 mm |
 
 <p class="thumbs">
-<a href="../imgs/checking/loading/terrain-height/00-kerbin-fix.png"><img src="../imgs/checking/loading/terrain-height/00-kerbin-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on Kerbin" width="96"></a>
-<a href="../imgs/checking/loading/terrain-height/10-mune-fix.png"><img src="../imgs/checking/loading/terrain-height/10-mune-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on the Mun" width="96"></a>
-<a href="../imgs/checking/loading/terrain-height/20-minmus-fix.png"><img src="../imgs/checking/loading/terrain-height/20-minmus-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on Minmus" width="96"></a>
-<a href="../imgs/checking/loading/terrain-height/30-gilly-fix.png"><img src="../imgs/checking/loading/terrain-height/30-gilly-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on Gilly" width="96"></a>
-<a href="../imgs/checking/loading/terrain-height/40-moon-fix.png"><img src="../imgs/checking/loading/terrain-height/40-moon-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on the Moon" width="96"></a>
-<a href="../imgs/checking/loading/terrain-height/50-earth-fix.png"><img src="../imgs/checking/loading/terrain-height/50-earth-fix.png" alt="With this mod, the capsule on its tank, six loads of the same save, on Earth" width="96"></a>
+<a href="../imgs/checking/loading/terrain-height/00-kerbin-fix.jpg"><img src="../imgs/checking/loading/terrain-height/00-kerbin-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on Kerbin" width="96"></a>
+<a href="../imgs/checking/loading/terrain-height/10-mune-fix.jpg"><img src="../imgs/checking/loading/terrain-height/10-mune-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on the Mun" width="96"></a>
+<a href="../imgs/checking/loading/terrain-height/20-minmus-fix.jpg"><img src="../imgs/checking/loading/terrain-height/20-minmus-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on Minmus" width="96"></a>
+<a href="../imgs/checking/loading/terrain-height/30-gilly-fix.jpg"><img src="../imgs/checking/loading/terrain-height/30-gilly-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on Gilly" width="96"></a>
+<a href="../imgs/checking/loading/terrain-height/40-moon-fix.jpg"><img src="../imgs/checking/loading/terrain-height/40-moon-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on the Moon" width="96"></a>
+<a href="../imgs/checking/loading/terrain-height/50-earth-fix.jpg"><img src="../imgs/checking/loading/terrain-height/50-earth-fix.jpg" alt="With this mod, the capsule on its tank, six loads of the same save, on Earth" width="96"></a>
 </p>
 
 <details>
 <summary>The 6 screenshots</summary>
 
-![With this mod, the capsule on its tank, six loads of the same save, on Kerbin](../imgs/checking/loading/terrain-height/00-kerbin-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Kerbin](../imgs/checking/loading/terrain-height/00-kerbin-fix.jpg)
 
-![With this mod, the capsule on its tank, six loads of the same save, on the Mun](../imgs/checking/loading/terrain-height/10-mune-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on the Mun](../imgs/checking/loading/terrain-height/10-mune-fix.jpg)
 
-![With this mod, the capsule on its tank, six loads of the same save, on Minmus](../imgs/checking/loading/terrain-height/20-minmus-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Minmus](../imgs/checking/loading/terrain-height/20-minmus-fix.jpg)
 
-![With this mod, the capsule on its tank, six loads of the same save, on Gilly](../imgs/checking/loading/terrain-height/30-gilly-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Gilly](../imgs/checking/loading/terrain-height/30-gilly-fix.jpg)
 
-![With this mod, the capsule on its tank, six loads of the same save, on the Moon](../imgs/checking/loading/terrain-height/40-moon-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on the Moon](../imgs/checking/loading/terrain-height/40-moon-fix.jpg)
 
 *Real Solar System's own workaround ran at every load and never had to move the craft: no `Moving Vessel` line — see [Real Solar System's own workaround](../non-regression/real-solar-system/the-ground-workaround.md).*
 
-![With this mod, the capsule on its tank, six loads of the same save, on Earth](../imgs/checking/loading/terrain-height/50-earth-fix.png)
+![With this mod, the capsule on its tank, six loads of the same save, on Earth](../imgs/checking/loading/terrain-height/50-earth-fix.jpg)
 
 *The craft is in prelaunch, where stock runs the same pass at every load, and it never had to move the craft: no `Moving Vessel` line — see [Real Solar System's own workaround](../non-regression/real-solar-system/the-ground-workaround.md).*
 

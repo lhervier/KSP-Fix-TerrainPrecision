@@ -214,9 +214,9 @@ screenshot.
 
 **Load 12, the finer quad 1.26 m above**, the camera 37.0 km from the craft:
 
-![Without this mod, on Earth, load 12: grassland under a blue sky, the yellow line standing in the middle, a thin dark line running from its foot down to the right](../../imgs/limits/stock/the-seam-between-subdivision-levels/earth-stock-largest-gap.png)
+![Without this mod, on Earth, load 12: grassland under a blue sky, the yellow line standing in the middle, a thin dark line running from its foot down to the right](../../imgs/limits/stock/the-seam-between-subdivision-levels/earth-stock-largest-gap.jpg)
 
-![The same place, the same camera, with the triangles: a red area on the left, a green band on the right, meeting along the dark line](../../imgs/limits/stock/the-seam-between-subdivision-levels/earth-stock-seams.png)
+![The same place, the same camera, with the triangles: a red area on the left, a green band on the right, meeting along the dark line](../../imgs/limits/stock/the-seam-between-subdivision-levels/earth-stock-seams.jpg)
 
 *Without this mod, on Real Solar System as released: the craft on the launchpad at Cape Canaveral, load
 12, the camera beyond the seam and looking back towards the craft; KSP Diag - Terrain Quads drawing the
@@ -239,9 +239,9 @@ quads of level 10 and 20 quads of level 9, 448 shared vertices. In millimetres:
 
 **Load 7, the finer quad 131 mm above**, the camera 8.4 km from the craft:
 
-![Without this mod, on Kerbin, load 7: green hills, the yellow line standing in the middle](../../imgs/limits/stock/the-seam-between-subdivision-levels/kerbin-stock-largest-gap.png)
+![Without this mod, on Kerbin, load 7: green hills, the yellow line standing in the middle](../../imgs/limits/stock/the-seam-between-subdivision-levels/kerbin-stock-largest-gap.jpg)
 
-![The same place, the same camera, with the triangles: a green band on the left, a red one on the right, meeting at the foot of the line](../../imgs/limits/stock/the-seam-between-subdivision-levels/kerbin-stock-seams.png)
+![The same place, the same camera, with the triangles: a green band on the left, a red one on the right, meeting at the foot of the line](../../imgs/limits/stock/the-seam-between-subdivision-levels/kerbin-stock-seams.jpg)
 
 *Without this mod, on stock KSP: the craft on the launchpad at the Space Center, load 7, the same way.*
 
@@ -316,9 +316,9 @@ metres:
 
 **Load 9, the finer quad 1.51 m above**, the camera 33.3 km from the craft:
 
-![With this mod, on Earth, load 9: grassland under a blue sky, the yellow line standing in the middle](../../imgs/limits/stock/the-seam-between-subdivision-levels/earth-fix-largest-gap.png)
+![With this mod, on Earth, load 9: grassland under a blue sky, the yellow line standing in the middle](../../imgs/limits/stock/the-seam-between-subdivision-levels/earth-fix-largest-gap.jpg)
 
-![The same place, the same camera, with the triangles of the two quads drawn](../../imgs/limits/stock/the-seam-between-subdivision-levels/earth-fix-seams.png)
+![The same place, the same camera, with the triangles of the two quads drawn](../../imgs/limits/stock/the-seam-between-subdivision-levels/earth-fix-seams.jpg)
 
 *With this mod, on Real Solar System as released: the craft on the launchpad at Cape Canaveral, load 9,
 the camera beyond the seam and looking back towards the craft; KSP Diag - Terrain Quads drawing the yellow
@@ -342,9 +342,9 @@ line only, then the triangles of the coarser quad in red and of the finer one in
 
 **Load 10, the finer quad 193 mm above**, the camera 8.4 km from the craft:
 
-![With this mod, on Kerbin, load 10: a beach between the sea and green hills, the yellow line standing in the middle](../../imgs/limits/stock/the-seam-between-subdivision-levels/kerbin-fix-largest-gap.png)
+![With this mod, on Kerbin, load 10: a beach between the sea and green hills, the yellow line standing in the middle](../../imgs/limits/stock/the-seam-between-subdivision-levels/kerbin-fix-largest-gap.jpg)
 
-![The same place, the same camera, with the triangles of the two quads drawn](../../imgs/limits/stock/the-seam-between-subdivision-levels/kerbin-fix-seams.png)
+![The same place, the same camera, with the triangles of the two quads drawn](../../imgs/limits/stock/the-seam-between-subdivision-levels/kerbin-fix-seams.jpg)
 
 *With this mod, on stock KSP: the craft on the launchpad at the Space Center, load 10, the same way.*
 
@@ -370,13 +370,13 @@ always some distance away from the camera, never under the craft. On Earth under
 where it is largest, that distance is large.
 
 On a launch from Cape Canaveral with this mod, on Real Solar System as released plus MechJeb (the
-session is [`launch-earth-rss-fix.log`](../../diag/limits/stock/the-seam-between-subdivision-levels/launch-earth-rss-fix.log), at
+session is [`launch-earth-rss-fix.log.gz`](../../diag/limits/stock/the-seam-between-subdivision-levels/launch-earth-rss-fix.log.gz), at
 `logLevel = Debug`), the quads of the highest level placed around the launchpad were 180, 14 wide by
 16 long, each about 5 km across: the edge of the corrected zone ran 25 to 35 km from the pad. Seen from
 high above the craft, a gap of a metre or two that far away is a fraction of a pixel, even in a
 screenshot of 7680 × 4320 with the stock field of view of 60°, and nothing shows in this one:
 
-[![With this mod, on Real Solar System: a rocket on the launchpad at Cape Canaveral, seen from high above](../../imgs/limits/stock/the-seam-between-subdivision-levels/launchpad-earth-fix-small.jpg)](../../imgs/limits/stock/the-seam-between-subdivision-levels/launchpad-earth-fix-8k.png)
+[![With this mod, on Real Solar System: a rocket on the launchpad at Cape Canaveral, seen from high above](../../imgs/limits/stock/the-seam-between-subdivision-levels/launchpad-earth-fix-small.jpg)](../../imgs/limits/stock/the-seam-between-subdivision-levels/launchpad-earth-fix-8k.jpg)
 
 *With this mod, on Real Solar System as released: a small rocket on the launchpad at Cape Canaveral,
 the camera zoomed out, screenshot taken at 7680 × 4320 (`SCREENSHOT_SUPERSIZE = 4` in `settings.cfg`,

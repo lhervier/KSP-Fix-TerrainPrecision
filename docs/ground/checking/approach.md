@@ -19,8 +19,8 @@ scene is never changed: one single flight, six round trips in a row, on Kerbin. 
 [the approach protocol](approach-protocol.md), on its save,
 `approach-kerbin.sfs`, played by its script, [`run-approach.py`](../diag/automation/run-approach.py),
 once without this mod and once with it, both instruments recording at the same moments. The sessions
-are logged in [`approach-stock.log`](../diag/checking/approach/approach-stock.log) and
-[`approach-fix.log`](../diag/checking/approach/approach-fix.log), with what the script
+are logged in [`approach-stock.log.gz`](../diag/checking/approach/approach-stock.log.gz) and
+[`approach-fix.log.gz`](../diag/checking/approach/approach-fix.log.gz), with what the script
 printed and every line it recorded beside them ([`diag`](../diag/README.md#the-approach-protocol)).
 
 **→ Full chapter: [The protocol: coming back to a craft left parked](approach-protocol.md)**
@@ -53,10 +53,10 @@ same save, read −17.572 mm.
 **With this mod**, in that same install, on that same save, with this mod as the only difference. One
 screenshot per round trip again:
 
-![With this mod, the first round trip, read by Diag LandedVessel](../imgs/checking/approach/landed-vessel/1-fix.png)
+![With this mod, the first round trip, read by Diag LandedVessel](../imgs/checking/approach/landed-vessel/1-fix.jpg)
 
 The five others are in [`docs/ground/imgs/checking/approach/landed-vessel`](../imgs/checking/approach/landed-vessel),
-`2-fix.png` to `6-fix.png`.
+`2-fix.jpg` to `6-fix.jpg`.
 
 | round trip | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -95,10 +95,10 @@ still packed, to the moment physics takes it over, it moves by 0.023 mm at most.
 
 **With this mod**, in that same install, the same session:
 
-![With this mod, the first round trip, read by Diag TerrainHeight](../imgs/checking/approach/terrain-height/1-fix.png)
+![With this mod, the first round trip, read by Diag TerrainHeight](../imgs/checking/approach/terrain-height/1-fix.jpg)
 
 The five others are in [`docs/ground/imgs/checking/approach/terrain-height`](../imgs/checking/approach/terrain-height),
-`2-fix.png` to `6-fix.png`.
+`2-fix.jpg` to `6-fix.jpg`.
 
 | round trip | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
