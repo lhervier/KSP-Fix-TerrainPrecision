@@ -29,8 +29,8 @@ protocol, and [KSP-Util-MCPServer](https://github.com/lhervier/KSP-Util-MCPServe
 mod at `logLevel = Debug`, or not: each session is here twice, `-without-this-mod` and `-fix`. Read in
 [Principia: the bodies it moves and turns](../non-regression/principia/the-bodies-it-moves-and-turns.md).
 
-- [`loading-principia-without-this-mod.log`](non-regression/principia/the-bodies-it-moves-and-turns/loading-principia-without-this-mod.log) and
-  [`loading-principia-fix.log`](non-regression/principia/the-bodies-it-moves-and-turns/loading-principia-fix.log) — the four saves of
+- [`loading-principia-without-this-mod.log.gz`](non-regression/principia/the-bodies-it-moves-and-turns/loading-principia-without-this-mod.log.gz) and
+  [`loading-principia-fix.log.gz`](non-regression/principia/the-bodies-it-moves-and-turns/loading-principia-fix.log.gz) — the four saves of
   [the loading protocol](../../ground/checking/loading-protocol.md),
   each loaded six times by `run-loading.py`, both instruments at once; what the script printed in
   [`loading-principia-without-this-mod-script.txt`](non-regression/principia/the-bodies-it-moves-and-turns/loading-principia-without-this-mod-script.txt)
@@ -38,11 +38,12 @@ mod at `logLevel = Debug`, or not: each session is here twice, `-without-this-mo
   with the save it was recorded on, in
   [`loading-principia-without-this-mod-lines.json`](non-regression/principia/the-bodies-it-moves-and-turns/loading-principia-without-this-mod-lines.json)
   and [`loading-principia-fix-lines.json`](non-regression/principia/the-bodies-it-moves-and-turns/loading-principia-fix-lines.json).
-- [`flight-principia-without-this-mod.log`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod.log) and
-  [`flight-principia-fix.log`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix.log) — one flight each of
+- [`flight-principia-without-this-mod.log.gz`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod.log.gz) and
+  [`flight-principia-fix.log.gz`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix.log.gz) — one flight each of
   [the protocol of the quads of the highest level, in flight](../../ground/checking/flight-protocol.md),
   from the launchpad of the Space Center, KSP Diag - Terrain Quads and KSP Diag - Floating Origin; for each,
   as for the flights of [In flight](../../ground/diag/README.md#the-protocol-of-the-quads-of-the-highest-level-in-flight), what the
-  script printed, the readings, the logs, the quads (49 MB once unzipped) and the analysis:
-  - without this mod: [`flight-principia-without-this-mod-script.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-script.txt), [`flight-principia-without-this-mod-readings.json`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-readings.json), [`flight-principia-without-this-mod-logs.csv`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-logs.csv), [`flight-principia-without-this-mod-quads.zip`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-quads.zip) and [`flight-principia-without-this-mod-analysis.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-analysis.txt);
-  - with this mod: [`flight-principia-fix-script.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-script.txt), [`flight-principia-fix-readings.json`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-readings.json), [`flight-principia-fix-logs.csv`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-logs.csv), [`flight-principia-fix-quads.zip`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-quads.zip) and [`flight-principia-fix-analysis.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-analysis.txt).
+  script printed, the readings, the index of the *Logs* and the analysis (the quads they wrote, some 50 MB, are not
+  kept: replaying the protocol writes them again):
+  - without this mod: [`flight-principia-without-this-mod-script.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-script.txt), [`flight-principia-without-this-mod-readings.json`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-readings.json), [`flight-principia-without-this-mod-logs.csv`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-logs.csv) and [`flight-principia-without-this-mod-analysis.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-without-this-mod-analysis.txt);
+  - with this mod: [`flight-principia-fix-script.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-script.txt), [`flight-principia-fix-readings.json`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-readings.json), [`flight-principia-fix-logs.csv`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-logs.csv) and [`flight-principia-fix-analysis.txt`](non-regression/principia/the-bodies-it-moves-and-turns/flight-principia-fix-analysis.txt).

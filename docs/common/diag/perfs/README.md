@@ -23,8 +23,8 @@ of mission time.
 
 | log | starts at | game time | real time | quads of the highest level built |
 |---|---|---|---|---|
-| [`mun-05km-fix-calibrate-1.log`](runs/mun-05km-fix-calibrate-1.log) | UT 54.64 | 70.08 s | 70.22 s | 704 |
-| [`mun-05km-fix-calibrate-2.log`](runs/mun-05km-fix-calibrate-2.log) | UT 54.76 | 70.16 s | 70.28 s | 704 |
+| [`mun-05km-fix-calibrate-1.log.gz`](runs/mun-05km-fix-calibrate-1.log.gz) | UT 54.64 | 70.08 s | 70.22 s | 704 |
+| [`mun-05km-fix-calibrate-2.log.gz`](runs/mun-05km-fix-calibrate-2.log.gz) | UT 54.76 | 70.16 s | 70.28 s | 704 |
 
 The figures come from their `BENCH run` lines, and match the stock runs': same save, same craft, same
 stretch of the same orbit, the same quads built. Their result lines, as logged:
@@ -56,15 +56,15 @@ it; it also recorded, at both, that KSP's window was in front of the others, in 
 
 | configuration | run | captured from | to | frames captured | CSV | `KSP.log` |
 |---|---|---|---|---|---|---|
-| stock | 1 | 30.026 s | 100.04 s | 6 612 | [csv](runs/profiler/mun-05km-stock-1.csv) | [log](runs/profiler/mun-05km-stock-1.log) |
-| stock | 2 | 30.037 s | 100.02 s | 6 574 | [csv](runs/profiler/mun-05km-stock-2.csv) | [log](runs/profiler/mun-05km-stock-2.log) |
-| stock | 3 | 30.030 s | 100.02 s | 6 707 | [csv](runs/profiler/mun-05km-stock-3.csv) | [log](runs/profiler/mun-05km-stock-3.log) |
-| Stock Quad Cache | 1 | 29.994 s | 100.10 s | 6 649 | [csv](runs/profiler/mun-05km-stockquadcache-1.csv) | [log](runs/profiler/mun-05km-stockquadcache-1.log) |
-| Stock Quad Cache | 2 | 29.981 s | 100.10 s | 6 737 | [csv](runs/profiler/mun-05km-stockquadcache-2.csv) | [log](runs/profiler/mun-05km-stockquadcache-2.log) |
-| Stock Quad Cache | 3 | 29.993 s | 100.12 s | 6 758 | [csv](runs/profiler/mun-05km-stockquadcache-3.csv) | [log](runs/profiler/mun-05km-stockquadcache-3.log) |
-| this mod | 1 | 30.020 s | 100.10 s | 6 730 | [csv](runs/profiler/mun-05km-fix-1.csv) | [log](runs/profiler/mun-05km-fix-1.log) |
-| this mod | 2 | 30.000 s | 100.08 s | 6 654 | [csv](runs/profiler/mun-05km-fix-2.csv) | [log](runs/profiler/mun-05km-fix-2.log) |
-| this mod | 3 | 30.016 s | 100.12 s | 6 749 | [csv](runs/profiler/mun-05km-fix-3.csv) | [log](runs/profiler/mun-05km-fix-3.log) |
+| stock | 1 | 30.026 s | 100.04 s | 6 612 | [csv](runs/profiler/mun-05km-stock-1.csv) | [log](runs/profiler/mun-05km-stock-1.log.gz) |
+| stock | 2 | 30.037 s | 100.02 s | 6 574 | [csv](runs/profiler/mun-05km-stock-2.csv) | [log](runs/profiler/mun-05km-stock-2.log.gz) |
+| stock | 3 | 30.030 s | 100.02 s | 6 707 | [csv](runs/profiler/mun-05km-stock-3.csv) | [log](runs/profiler/mun-05km-stock-3.log.gz) |
+| Stock Quad Cache | 1 | 29.994 s | 100.10 s | 6 649 | [csv](runs/profiler/mun-05km-stockquadcache-1.csv) | [log](runs/profiler/mun-05km-stockquadcache-1.log.gz) |
+| Stock Quad Cache | 2 | 29.981 s | 100.10 s | 6 737 | [csv](runs/profiler/mun-05km-stockquadcache-2.csv) | [log](runs/profiler/mun-05km-stockquadcache-2.log.gz) |
+| Stock Quad Cache | 3 | 29.993 s | 100.12 s | 6 758 | [csv](runs/profiler/mun-05km-stockquadcache-3.csv) | [log](runs/profiler/mun-05km-stockquadcache-3.log.gz) |
+| this mod | 1 | 30.020 s | 100.10 s | 6 730 | [csv](runs/profiler/mun-05km-fix-1.csv) | [log](runs/profiler/mun-05km-fix-1.log.gz) |
+| this mod | 2 | 30.000 s | 100.08 s | 6 654 | [csv](runs/profiler/mun-05km-fix-2.csv) | [log](runs/profiler/mun-05km-fix-2.log.gz) |
+| this mod | 3 | 30.016 s | 100.12 s | 6 749 | [csv](runs/profiler/mun-05km-fix-3.csv) | [log](runs/profiler/mun-05km-fix-3.log.gz) |
 
 *The log lines quoted on this page come from runs of earlier versions of these mods, when their log prefixes were `[TerrainPrecisionFix]` and `[StockQuadCache]`; they are now `[KSPFixTerrainPrecision]` and `[KSPFixStockQuadCache]`.*
 
@@ -85,9 +85,9 @@ The runs of this mod alone are the ones of [What a frame pays](#what-a-frame-pay
 
 | configuration | run | captured from | to | frames captured | CSV | `KSP.log` |
 |---|---|---|---|---|---|---|
-| this mod and the scatter fix | 1 | 29.992 s | 100.10 s | 6 685 | [csv](runs/profiler/mun-05km-fix-scatter-1.csv) | [log](runs/profiler/mun-05km-fix-scatter-1.log) |
-| this mod and the scatter fix | 2 | 30.011 s | 100.14 s | 6 719 | [csv](runs/profiler/mun-05km-fix-scatter-2.csv) | [log](runs/profiler/mun-05km-fix-scatter-2.log) |
-| this mod and the scatter fix | 3 | 30.018 s | 99.92 s | 6 584 | [csv](runs/profiler/mun-05km-fix-scatter-3.csv) | [log](runs/profiler/mun-05km-fix-scatter-3.log) |
+| this mod and the scatter fix | 1 | 29.992 s | 100.10 s | 6 685 | [csv](runs/profiler/mun-05km-fix-scatter-1.csv) | [log](runs/profiler/mun-05km-fix-scatter-1.log.gz) |
+| this mod and the scatter fix | 2 | 30.011 s | 100.14 s | 6 719 | [csv](runs/profiler/mun-05km-fix-scatter-2.csv) | [log](runs/profiler/mun-05km-fix-scatter-2.log.gz) |
+| this mod and the scatter fix | 3 | 30.018 s | 99.92 s | 6 584 | [csv](runs/profiler/mun-05km-fix-scatter-3.csv) | [log](runs/profiler/mun-05km-fix-scatter-3.log.gz) |
 
 Every frame count is under the profiler's 10 000 ceiling, so each capture ended on *Stop*.
 

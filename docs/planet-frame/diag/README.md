@@ -11,10 +11,10 @@ Modular Flight Integrator, KSPTextureLoader, the RSS textures), as released. Thi
 `logLevel = Debug`, so each log also holds one line per quad placed, with how far it was moved. Read in
 [This mod's safeguard](../safeguard.md).
 
-- [`reload-venus-mars-rss-fix.log`](safeguard/reload-venus-mars-rss-fix.log) — no instrument, one
+- [`reload-venus-mars-rss-fix.log.gz`](safeguard/reload-venus-mars-rss-fix.log.gz) — no instrument, one
   session: six loads of [`reload-venus-rss.sfs`](safeguard/reload-venus-rss.sfs), then six of
   [`reload-mars-rss.sfs`](safeguard/reload-mars-rss.sfs). The six loads after them, on a second site of Mars,
   are not used.
-- [`reload-mercury-rss-fix.log`](safeguard/reload-mercury-rss-fix.log) — no instrument: six loads of
+- [`reload-mercury-rss-fix.log.gz`](safeguard/reload-mercury-rss-fix.log.gz) — no instrument: six loads of
   [`reload-mercury-rss.sfs`](safeguard/reload-mercury-rss.sfs). Each one logs KSP moving the craft down 22.4 m,
   the terrain detail its save describes.
