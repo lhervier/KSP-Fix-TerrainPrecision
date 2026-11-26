@@ -1,6 +1,6 @@
 # The runs: the ROCs
 
-Part of [Terrain Precision Fix](../../../README.md), [the ROCs](../README.md): the saves and the `KSP.log` of every session, with this mod and its fix of the surface features turned off, and with this mod as installed. The script is the ground's, in [`../ground/automation/`](../../ground/diag/automation).
+Part of [Terrain Precision Fix](../../../README.md), [the ROCs](../README.md): the saves and the `KSP.log` of every session ([filtered](../../common/diag/README.md)), with this mod and its fix of the surface features turned off, and with this mod as installed. The script is the ground's, in [`../ground/automation/`](../../ground/diag/automation).
 
 ## Loading the same save
 

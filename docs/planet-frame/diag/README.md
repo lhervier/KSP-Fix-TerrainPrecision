@@ -1,7 +1,7 @@
 # The runs: the safeguard
 
 Part of [Terrain Precision Fix](../../../README.md), [Planet Frame](../README.md#the-safeguard): the saves and the
-`KSP.log` of [This mod's safeguard](../safeguard.md) on Venus, Mars and Mercury in Real Solar System.
+`KSP.log` ([filtered](../../common/diag/README.md)) of [This mod's safeguard](../safeguard.md) on Venus, Mars and Mercury in Real Solar System.
 
 ## On Real Solar System
 

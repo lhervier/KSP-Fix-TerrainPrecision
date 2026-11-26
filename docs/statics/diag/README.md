@@ -1,6 +1,6 @@
 # The runs: the statics
 
-Part of [Terrain Precision Fix](../../../README.md), [the statics](../README.md): the saves, the scripts and the `KSP.log` of every session, without this mod and with it. The scripts are in [`automation/`](automation).
+Part of [Terrain Precision Fix](../../../README.md), [the statics](../README.md): the saves, the scripts and the `KSP.log` of every session ([filtered](../../common/diag/README.md)), without this mod and with it. The scripts are in [`automation/`](automation).
 
 ## The runway protocol
 

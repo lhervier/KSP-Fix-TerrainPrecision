@@ -1,6 +1,6 @@
 # The runs: the ground anchor
 
-Part of [Terrain Precision Fix](../../../README.md), [the ground anchor](../README.md): the saves, the scripts and the `KSP.log` of every session, without this mod and with it. The scripts are in [`automation/`](automation).
+Part of [Terrain Precision Fix](../../../README.md), [the ground anchor](../README.md): the saves, the scripts and the `KSP.log` of every session ([filtered](../../common/diag/README.md)), without this mod and with it. The scripts are in [`automation/`](automation).
 
 ## The ground anchor protocol
 

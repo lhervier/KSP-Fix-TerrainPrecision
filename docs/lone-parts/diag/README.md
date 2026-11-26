@@ -1,6 +1,6 @@
 # The runs: parts lying alone
 
-Part of [Terrain Precision Fix](../../../README.md), [parts lying alone](../README.md): the saves, the scripts and the `KSP.log` of every session, on stock, with this mod and one of its settings turned off, and with this mod as installed. The scripts are in [`automation/`](automation).
+Part of [Terrain Precision Fix](../../../README.md), [parts lying alone](../README.md): the saves, the scripts and the `KSP.log` of every session ([filtered](../../common/diag/README.md)), on stock, with this mod and one of its settings turned off, and with this mod as installed. The scripts are in [`automation/`](automation).
 
 KSP 1.12.5 on Windows, played in French, `GameData` holding Harmony, ModuleManager, KSP Community Fixes
 1.41.1, KSP Diag - Landed Vessel, KSP-Util-MCPServer, and this mod or not. Each configuration is a single
