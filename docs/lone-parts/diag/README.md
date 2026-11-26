@@ -12,16 +12,16 @@ session of KSP. Copy a save into the folder of a sandbox game and load it from t
 [`run-lone-parts.py`](automation/run-lone-parts.py). Read in
 [Checking parts lying alone: loading the same save](../checking/loading.md).
 
-- on stock: [`loading-stock.log`](checking/loading/loading-stock.log),
+- on stock: [`loading-stock.log.gz`](checking/loading/loading-stock.log.gz),
   [`loading-stock-script.txt`](checking/loading/loading-stock-script.txt),
   [`loading-stock-lines.json`](checking/loading/loading-stock-lines.json);
-- with `fixTerrain = false`: [`loading-no-terrain.log`](checking/loading/loading-no-terrain.log),
+- with `fixTerrain = false`: [`loading-no-terrain.log.gz`](checking/loading/loading-no-terrain.log.gz),
   [`loading-no-terrain-script.txt`](checking/loading/loading-no-terrain-script.txt),
   [`loading-no-terrain-lines.json`](checking/loading/loading-no-terrain-lines.json);
-- with `fixLonePartMass = false`: [`loading-no-lone-part-mass.log`](checking/loading/loading-no-lone-part-mass.log),
+- with `fixLonePartMass = false`: [`loading-no-lone-part-mass.log.gz`](checking/loading/loading-no-lone-part-mass.log.gz),
   [`loading-no-lone-part-mass-script.txt`](checking/loading/loading-no-lone-part-mass-script.txt),
   [`loading-no-lone-part-mass-lines.json`](checking/loading/loading-no-lone-part-mass-lines.json);
-- as installed: [`loading-fix.log`](checking/loading/loading-fix.log),
+- as installed: [`loading-fix.log.gz`](checking/loading/loading-fix.log.gz),
   [`loading-fix-script.txt`](checking/loading/loading-fix-script.txt),
   [`loading-fix-lines.json`](checking/loading/loading-fix-lines.json).
 
@@ -32,7 +32,7 @@ session of KSP. Copy a save into the folder of a sandbox game and load it from t
 [`run-wheel-drop.py`](automation/run-wheel-drop.py). Read in
 [Checking parts lying alone: a wheel dropped in EVA construction](../checking/wheel-drop.md).
 In [`checking/wheel-drop/`](checking/wheel-drop/), for each body (`kerbin`, `mun`) and each configuration
-(`stock`, `no-lone-part-mass`, `fix`): `wheel-drop-<body>-<configuration>.log`, `-script.txt` and
+(`stock`, `no-lone-part-mass`, `fix`): `wheel-drop-<body>-<configuration>.log.gz`, `-script.txt` and
 `-lines.json`.
 
 ## On the runway
@@ -42,7 +42,7 @@ In [`checking/wheel-drop/`](checking/wheel-drop/), for each body (`kerbin`, `mun
 [`run-lone-parts.py`](automation/run-lone-parts.py). Read in
 [Checking parts lying alone: on the runway](../checking/runway.md). In
 [`checking/runway/`](checking/runway/), for each configuration (`stock`, `no-lone-part-mass`, `fix`):
-`runway-<configuration>.log`, `-script.txt` and `-lines.json`.
+`runway-<configuration>.log.gz`, `-script.txt` and `-lines.json`.
 
 ## A landing leg set down alone
 
