@@ -77,8 +77,8 @@ the battery, as placed, then at each load.
 
 | | KSP Diag - Landed Vessel | KSP Diag - Terrain Height |
 |---|---|---|
-| **without this mod** | ![Without this mod, on the runway of the KSC: the table of KSP Diag - Landed Vessel](../../imgs/non-regression/stock/an-anchor-on-a-static/runway-without-this-mod-landed-vessel.png) | ![Without this mod, on the runway of the KSC: the table of KSP Diag - Terrain Height](../../imgs/non-regression/stock/an-anchor-on-a-static/runway-without-this-mod-terrain-height.png) |
-| **with this mod** | ![With this mod, on the runway of the KSC: the table of KSP Diag - Landed Vessel](../../imgs/non-regression/stock/an-anchor-on-a-static/runway-with-this-mod-landed-vessel.png) | ![With this mod, on the runway of the KSC: the table of KSP Diag - Terrain Height](../../imgs/non-regression/stock/an-anchor-on-a-static/runway-with-this-mod-terrain-height.png) |
+| **without this mod** | ![Without this mod, on the runway of the KSC: the table of KSP Diag - Landed Vessel](../../imgs/non-regression/stock/an-anchor-on-a-static/runway-without-this-mod-landed-vessel.jpg) | ![Without this mod, on the runway of the KSC: the table of KSP Diag - Terrain Height](../../imgs/non-regression/stock/an-anchor-on-a-static/runway-without-this-mod-terrain-height.jpg) |
+| **with this mod** | ![With this mod, on the runway of the KSC: the table of KSP Diag - Landed Vessel](../../imgs/non-regression/stock/an-anchor-on-a-static/runway-with-this-mod-landed-vessel.jpg) | ![With this mod, on the runway of the KSC: the table of KSP Diag - Terrain Height](../../imgs/non-regression/stock/an-anchor-on-a-static/runway-with-this-mod-terrain-height.jpg) |
 
 ### The runway of the Desert Airfield
 
@@ -101,8 +101,8 @@ the battery, as placed, then at each load.
 
 | | KSP Diag - Landed Vessel | KSP Diag - Terrain Height |
 |---|---|---|
-| **without this mod** | ![Without this mod, on the runway of the Desert Airfield: the table of KSP Diag - Landed Vessel](../../imgs/non-regression/stock/an-anchor-on-a-static/desert-airfield-without-this-mod-landed-vessel.png) | ![Without this mod, on the runway of the Desert Airfield: the table of KSP Diag - Terrain Height](../../imgs/non-regression/stock/an-anchor-on-a-static/desert-airfield-without-this-mod-terrain-height.png) |
-| **with this mod** | ![With this mod, on the runway of the Desert Airfield: the table of KSP Diag - Landed Vessel](../../imgs/non-regression/stock/an-anchor-on-a-static/desert-airfield-with-this-mod-landed-vessel.png) | ![With this mod, on the runway of the Desert Airfield: the table of KSP Diag - Terrain Height](../../imgs/non-regression/stock/an-anchor-on-a-static/desert-airfield-with-this-mod-terrain-height.png) |
+| **without this mod** | ![Without this mod, on the runway of the Desert Airfield: the table of KSP Diag - Landed Vessel](../../imgs/non-regression/stock/an-anchor-on-a-static/desert-airfield-without-this-mod-landed-vessel.jpg) | ![Without this mod, on the runway of the Desert Airfield: the table of KSP Diag - Terrain Height](../../imgs/non-regression/stock/an-anchor-on-a-static/desert-airfield-without-this-mod-terrain-height.jpg) |
+| **with this mod** | ![With this mod, on the runway of the Desert Airfield: the table of KSP Diag - Landed Vessel](../../imgs/non-regression/stock/an-anchor-on-a-static/desert-airfield-with-this-mod-landed-vessel.jpg) | ![With this mod, on the runway of the Desert Airfield: the table of KSP Diag - Terrain Height](../../imgs/non-regression/stock/an-anchor-on-a-static/desert-airfield-with-this-mod-terrain-height.jpg) |
 
 ### The log
 

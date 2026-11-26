@@ -52,16 +52,16 @@ of both.
 | **range** | **10.04 mm** | | **0.008 mm** | |
 
 <p class="thumbs">
-<a href="../imgs/checking/loading/landed-vessel/00-mune-rocs-fix-off.png"><img src="../imgs/checking/loading/landed-vessel/00-mune-rocs-fix-off.png" alt="With this mod and its fix of the surface features turned off, Jebediah Kerman on a Mun stone, six loads of the same save" width="96"></a>
-<a href="../imgs/checking/loading/landed-vessel/10-mune-fix.png"><img src="../imgs/checking/loading/landed-vessel/10-mune-fix.png" alt="With this mod, Jebediah Kerman on a Mun stone, six loads of the same save" width="96"></a>
+<a href="../imgs/checking/loading/landed-vessel/00-mune-rocs-fix-off.jpg"><img src="../imgs/checking/loading/landed-vessel/00-mune-rocs-fix-off.jpg" alt="With this mod and its fix of the surface features turned off, Jebediah Kerman on a Mun stone, six loads of the same save" width="96"></a>
+<a href="../imgs/checking/loading/landed-vessel/10-mune-fix.jpg"><img src="../imgs/checking/loading/landed-vessel/10-mune-fix.jpg" alt="With this mod, Jebediah Kerman on a Mun stone, six loads of the same save" width="96"></a>
 </p>
 
 <details>
 <summary>The 2 screenshots</summary>
 
-![With this mod and its fix of the surface features turned off, Jebediah Kerman on a Mun stone, six loads of the same save](../imgs/checking/loading/landed-vessel/00-mune-rocs-fix-off.png)
+![With this mod and its fix of the surface features turned off, Jebediah Kerman on a Mun stone, six loads of the same save](../imgs/checking/loading/landed-vessel/00-mune-rocs-fix-off.jpg)
 
-![With this mod, Jebediah Kerman on a Mun stone, six loads of the same save](../imgs/checking/loading/landed-vessel/10-mune-fix.png)
+![With this mod, Jebediah Kerman on a Mun stone, six loads of the same save](../imgs/checking/loading/landed-vessel/10-mune-fix.jpg)
 
 </details>
 

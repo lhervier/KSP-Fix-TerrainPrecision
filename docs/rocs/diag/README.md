@@ -15,11 +15,11 @@ The save, [`roc-mune-jeb.sfs`](checking/loading/roc-mune-jeb.sfs): Jebediah Kerm
 stone, the pod Jebediah stepped out of standing 6 m away. Copy it into the folder of a sandbox game and load
 it from that game.
 
-- [`loading-rocs-fix-off.log`](checking/loading/loading-rocs-fix-off.log) — the `KSP.log` of the session
+- [`loading-rocs-fix-off.log.gz`](checking/loading/loading-rocs-fix-off.log.gz) — the `KSP.log` of the session
   with the fix of the surface features off; what the script printed in
   [`roc-mune-jeb-rocs-fix-off-script.txt`](checking/loading/roc-mune-jeb-rocs-fix-off-script.txt), and
   every line it recorded in
   [`roc-mune-jeb-rocs-fix-off-lines.json`](checking/loading/roc-mune-jeb-rocs-fix-off-lines.json).
-- [`loading-fix.log`](checking/loading/loading-fix.log) — the same with this mod as installed; what the
+- [`loading-fix.log.gz`](checking/loading/loading-fix.log.gz) — the same with this mod as installed; what the
   script printed in [`roc-mune-jeb-fix-script.txt`](checking/loading/roc-mune-jeb-fix-script.txt), and every
   line it recorded in [`roc-mune-jeb-fix-lines.json`](checking/loading/roc-mune-jeb-fix-lines.json).

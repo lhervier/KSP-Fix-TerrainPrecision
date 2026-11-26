@@ -14,11 +14,11 @@ played by hand. Three sessions: without this mod, with this mod and `fixGroundAn
 this mod as installed. Read in
 [Checking the culprit: anchoring a base](../checking/anchoring.md).
 
-- [`ground-anchor-kerbin-without-this-mod.log`](checking/anchoring/ground-anchor-kerbin-without-this-mod.log), which
+- [`ground-anchor-kerbin-without-this-mod.log.gz`](checking/anchoring/ground-anchor-kerbin-without-this-mod.log.gz), which
   holds a first placement, given up, before the two measured;
-- [`ground-anchor-kerbin-model-fix.log`](checking/anchoring/ground-anchor-kerbin-model-fix.log), which holds a first
+- [`ground-anchor-kerbin-model-fix.log.gz`](checking/anchoring/ground-anchor-kerbin-model-fix.log.gz), which holds a first
   series of both cases before the measured one, the anchor with a battery read without it set as target;
-- [`ground-anchor-kerbin-fix.log`](checking/anchoring/ground-anchor-kerbin-fix.log).
+- [`ground-anchor-kerbin-fix.log.gz`](checking/anchoring/ground-anchor-kerbin-fix.log.gz).
 
 Below 50 frames per second: the same install, *Frame Limit* at 30 and KSP-Util-MCPServer, the base of
 [`anchor-base-desert-airfield.sfs`](checking/anchoring/anchor-base-desert-airfield.sfs) loaded, then ten quicksaves and quickloads
@@ -27,13 +27,13 @@ and `--only base`. Three sessions: without this mod, with this mod and `fixGroun
 with this mod as installed. Read in
 [Checking the culprit: anchoring a base, below 50 frames per second](../checking/anchoring.md#below-50-frames-per-second).
 
-- without this mod: [`anchor-rivet-30fps-without-this-mod.log`](checking/anchoring/anchor-rivet-30fps-without-this-mod.log), with what the script
+- without this mod: [`anchor-rivet-30fps-without-this-mod.log.gz`](checking/anchoring/anchor-rivet-30fps-without-this-mod.log.gz), with what the script
   printed in [`anchor-rivet-30fps-without-this-mod-script.txt`](checking/anchoring/anchor-rivet-30fps-without-this-mod-script.txt) and the readings
   of KSP Diag - Landed Vessel in [`anchor-rivet-30fps-without-this-mod-readings.json`](checking/anchoring/anchor-rivet-30fps-without-this-mod-readings.json);
-- with `fixGroundAnchorRivet = false`: [`anchor-rivet-30fps-rivet-fix-off.log`](checking/anchoring/anchor-rivet-30fps-rivet-fix-off.log), with what the script
+- with `fixGroundAnchorRivet = false`: [`anchor-rivet-30fps-rivet-fix-off.log.gz`](checking/anchoring/anchor-rivet-30fps-rivet-fix-off.log.gz), with what the script
   printed in [`anchor-rivet-30fps-rivet-fix-off-script.txt`](checking/anchoring/anchor-rivet-30fps-rivet-fix-off-script.txt) and the readings
   of KSP Diag - Landed Vessel in [`anchor-rivet-30fps-rivet-fix-off-readings.json`](checking/anchoring/anchor-rivet-30fps-rivet-fix-off-readings.json);
-- with this mod as installed: [`anchor-rivet-30fps-rivet-fix-on.log`](checking/anchoring/anchor-rivet-30fps-rivet-fix-on.log), with what the script
+- with this mod as installed: [`anchor-rivet-30fps-rivet-fix-on.log.gz`](checking/anchoring/anchor-rivet-30fps-rivet-fix-on.log.gz), with what the script
   printed in [`anchor-rivet-30fps-rivet-fix-on-script.txt`](checking/anchoring/anchor-rivet-30fps-rivet-fix-on-script.txt) and the readings
   of KSP Diag - Landed Vessel in [`anchor-rivet-30fps-rivet-fix-on-readings.json`](checking/anchoring/anchor-rivet-30fps-rivet-fix-on-readings.json).
 
@@ -47,10 +47,10 @@ battery on it, by hand; then [`automation/run-anchor-on-a-static.py`](automation
 reads both anchors as placed, and after each of five quicksaves and quickloads. Played again without this
 mod. Read in [An anchor on a static](../non-regression/stock/an-anchor-on-a-static.md).
 
-- [`anchor-on-a-static-with-this-mod.log`](non-regression/stock/an-anchor-on-a-static/anchor-on-a-static-with-this-mod.log), one session for
+- [`anchor-on-a-static-with-this-mod.log.gz`](non-regression/stock/an-anchor-on-a-static/anchor-on-a-static-with-this-mod.log.gz), one session for
   both runways, the Desert Airfield first, followed by three more quicksaves and quickloads there that are
-  not part of the test; [`anchor-on-a-static-runway-without-this-mod.log`](non-regression/stock/an-anchor-on-a-static/anchor-on-a-static-runway-without-this-mod.log)
-  and [`anchor-on-a-static-desert-airfield-without-this-mod.log`](non-regression/stock/an-anchor-on-a-static/anchor-on-a-static-desert-airfield-without-this-mod.log);
+  not part of the test; [`anchor-on-a-static-runway-without-this-mod.log.gz`](non-regression/stock/an-anchor-on-a-static/anchor-on-a-static-runway-without-this-mod.log.gz)
+  and [`anchor-on-a-static-desert-airfield-without-this-mod.log.gz`](non-regression/stock/an-anchor-on-a-static/anchor-on-a-static-desert-airfield-without-this-mod.log.gz);
 - what the script printed, and the readings of both instruments, for each runway with and without this mod:
   - the runway of the KSC, with this mod: [`anchor-on-a-static-runway-with-this-mod-script.txt`](non-regression/stock/an-anchor-on-a-static/anchor-on-a-static-runway-with-this-mod-script.txt) and
     [`anchor-on-a-static-runway-with-this-mod-readings.json`](non-regression/stock/an-anchor-on-a-static/anchor-on-a-static-runway-with-this-mod-readings.json);
